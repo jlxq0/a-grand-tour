@@ -262,6 +262,7 @@
     { "type": "Feature", "properties": { "name": "Bissau", "trip": 18, "country": "Guinea-Bissau" }, "geometry": { "type": "Point", "coordinates": [-15.5977, 11.8816] } },
     { "type": "Feature", "properties": { "name": "Conakry", "trip": 18, "country": "Guinea" }, "geometry": { "type": "Point", "coordinates": [-13.2317, 8.4657] } },
     { "type": "Feature", "properties": { "name": "Freetown", "trip": 18, "country": "Sierra Leone" }, "geometry": { "type": "Point", "coordinates": [-10.8047, 6.3156] } },
+    { "type": "Feature", "properties": { "name": "Monrovia", "trip": 18, "country": "Liberia" }, "geometry": { "type": "Point", "coordinates": [-10.7969, 6.3008] } },
     { "type": "Feature", "properties": { "name": "Abidjan", "trip": 18, "country": "Ivory Coast" }, "geometry": { "type": "Point", "coordinates": [-4.0305, 5.3600] } },
     { "type": "Feature", "properties": { "name": "Accra", "trip": 18, "country": "Ghana" }, "geometry": { "type": "Point", "coordinates": [-0.1869, 5.6037] } },
     { "type": "Feature", "properties": { "name": "Cape Coast", "trip": 18, "country": "Ghana" }, "geometry": { "type": "Point", "coordinates": [-1.2466, 5.1053] } },
