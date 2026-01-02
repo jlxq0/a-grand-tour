@@ -14,17 +14,35 @@ Total time on the road: 64 months. Total distance: roughly 200,000 kilometers. T
 
 ---
 
+## Planning Constraints
+
+1. **Start date** — Departure February 2027
+2. **Phase A end** — Back home by Aug 2034 (first kid starts GESS Grade 1 at age 6). Baby born Nov 2026 → turns 6 in Nov 2032 → starts school Aug 2034. GESS academic year starts mid-August.
+3. **Phase B end** — More or less open; when oldest kid is between 15-18 or so
+4. **Home/travel balance** — Roughly 50/50 over the full duration, may vary year to year up to 20% in either direction
+5. **Phase A duration** — Each trip and each home stretch roughly 10-20 weeks; occasionally 1-2 weeks outside range if it meaningfully improves the route
+6. **Phase B duration** — 7(ish) weeks during school breaks
+7. **Country count** — Maximize countries visited
+8. **Daily driving** — Usually max ~300km/day with rest days; up to ~800km highway drives possible (not desired) max twice per trip if it significantly benefits the route
+9. **Stay duration** — One night for boring stops, two nights for random cities, up to 10 nights for amazing places
+10. **Weather/climate** — Travel during optimal seasons; good weather, avoid extreme heat/cold, align with best travel times
+11. **Safety** — Skip war zones and dangerous countries
+12. **Family safety** — Route and conditions must be safe for baby/young children
+
+---
+
 ## Contents
 
-1. [Route](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#route)
-2. [Connectivity](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#connectivity)
-3. [Schedule](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#schedule)
-4. [The Vehicle](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#the-vehicle)
-5. [Traveling with Kids](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#traveling-with-kids)
-6. [Budget](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#budget)
-7. [Flights Home](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#flights-home)
-8. [Key Border Crossings](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#key-border-crossings)
-9. [Trip Details](https://claude.ai/chat/5b556875-8720-4973-ba42-a6981ba21216#trip-details)
+1. [Planning Constraints](#planning-constraints)
+2. [Route](#route)
+3. [Connectivity](#connectivity)
+4. [Schedule](#schedule)
+5. [The Vehicle](#the-vehicle)
+6. [Traveling with Kids](#traveling-with-kids)
+7. [Budget](#budget)
+8. [Flights Home](#flights-home)
+9. [Key Border Crossings](#key-border-crossings)
+10. [Trip Details](#trip-details)
 
 ---
 
