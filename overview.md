@@ -45,9 +45,9 @@ Total time on the road: 64 months. Total distance: roughly 200,000 kilometers. T
 
 ```
 PHASE A: Trips 1-5 (2027-2029)
-Dubai → Iran → Pakistan → India → Sri Lanka → Nepal → Bangladesh →
-[ship] → Thailand → Laos → Cambodia → Vietnam → Malaysia → Singapore →
-Indonesia → Timor → Australia → New Zealand
+Dubai → Iran → Pakistan → India → Nepal → Bangladesh →
+[ship] → Thailand → Laos → Cambodia → Vietnam → Malaysia →
+[ship] → Indonesia (Java + Sumatra) → Timor → Australia → New Zealand
 
 PHASE A: Trips 6-12 (2030-2033)
 Chile → Argentina → Brazil → Paraguay → Bolivia → Peru → Ecuador →
@@ -67,13 +67,13 @@ East Africa → Sudan → Egypt → Jordan → Saudi Arabia → Dubai
 |Route|Why|Cost|
 |---|---|---|
 |Sharjah → Bandar Abbas|No UAE-Iran land border|$800|
-|Tuticorin ↔ Colombo|No India-Sri Lanka ferry (round trip)|$1,600|
-|Dhaka → Bangkok|Myanmar closed|$2,500|
+|Chittagong → Laem Chabang|Myanmar closed|$2,500|
+|Johor Bahru → Jakarta|No Malaysia-Indonesia car ferry|$1,000|
 |Brisbane → Auckland|Pacific|$2,500|
 |Auckland → Valparaíso|Pacific|$5,000|
 |Cartagena → Panama|Darién Gap|$1,500|
 |Seattle → Southampton|Atlantic|$4,500|
-|**Total**||**$18,400**|
+|**Total**||**$17,800**|
 
 ---
 
@@ -102,9 +102,9 @@ After Trip 3, Starlink covers everything.
 |#|Dates|Region|Days|Countries|
 |---|---|---|---|---|
 |1|Feb–May 2027|Dubai → Iran → Pakistan → North India|114|🇦🇪🇴🇲🇮🇷🇵🇰🇮🇳|
-|2|Sep–Dec 2027|South India → Sri Lanka → Nepal → Bangladesh|117|🇮🇳🇱🇰🇳🇵🇧🇩|
-|3|Apr–Jul 2028|Thailand → SE Asia → Singapore|115|🇹🇭🇱🇦🇻🇳🇰🇭🇲🇾🇸🇬|
-|4|Nov 2028–Feb 2029|Indonesia → Timor → Australia|115|🇸🇬🇮🇩🇹🇱🇦🇺|
+|2|Sep–Dec 2027|South India → Nepal → Bangladesh|117|🇮🇳🇳🇵🇧🇩|
+|3|Apr–Jul 2028|Thailand → SE Asia → Malaysia (JB)|115|🇹🇭🇱🇦🇻🇳🇰🇭🇲🇾|
+|4|Nov 2028–Feb 2029|Indonesia (Java + Sumatra) → Timor → Australia|115|🇮🇩🇹🇱🇦🇺|
 |5|Jun–Aug 2029|New Zealand|91|🇳🇿|
 |6|Jan–Apr 2030|Chile → Patagonia → Argentina|119|🇨🇱🇦🇷|
 |7|Aug–Nov 2030|Argentina → Brazil → Bolivia → Peru|110|🇦🇷🇧🇷🇵🇾🇧🇴🇵🇪|
@@ -308,8 +308,8 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |---|---|
 |🇮🇷 Iran|Visa required, Carnet accepted, guide required for EU/US/UK citizens|
 |🇵🇰 Pakistan|Visa required, Carnet required|
-|🇱🇰 Sri Lanka|No ferry from India — must ship car (round trip)|
-|🇲🇲 Myanmar|Borders closed — ship around via Dhaka → Bangkok|
+|🇲🇲 Myanmar|Borders closed — ship around via Chittagong → Laem Chabang|
+|🇮🇩 Indonesia|No Malaysia-Indonesia car ferry — ship JB → Jakarta, use Merak-Bakauheni ferry for Sumatra|
 |🇵🇦 Darién Gap|Must ship (no road) — Cartagena → Panama|
 |🇸🇩 Sudan|Visa + permits required, eastern route only|
 |West Africa|Some countries require security assessment, Sahel region volatile|
@@ -344,28 +344,25 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 ---
 
-## Trip 2: India → Sri Lanka → Nepal → Bangladesh
+## Trip 2: India → Nepal → Bangladesh
 
 **Sep–Dec 2027 (4 months)**
 
 |Country|Days|Highlights|
 |---|---|---|
 |🇮🇳 India|14|Pick up Delhi, Agra (Taj Mahal), Varanasi|
-|🇮🇳 India|14|South to Kerala via Mumbai, Goa|
-|⛴️ Ship|2|Tuticorin → Colombo|
-|🇱🇰 Sri Lanka|18|Kandy, Ella, Galle, Sigiriya|
-|⛴️ Ship|2|Colombo → Tuticorin|
-|🇮🇳 India|10|East coast, Kolkata, Darjeeling|
+|🇮🇳 India|28|South to Kerala via Mumbai, Goa, Kochi, then east coast to Chennai|
+|🇮🇳 India|10|Kolkata, Darjeeling|
 |🇳🇵 Nepal|21|Kathmandu, Bhaktapur, Pokhara, Chitwan, Lumbini|
 |🇧🇩 Bangladesh|14|Dhaka, Sundarbans, Chittagong, Cox's Bazar|
 
-**117 days / 4 countries / ~6,000 km**
+**117 days / 3 countries / ~7,000 km**
 
-**Note:** Sri Lanka requires shipping car from Tuticorin (southern India) — no ferry service.
+**Note:** Sri Lanka skipped due to complex vehicle shipping requirements (no ferry, expensive round-trip container).
 
 **Weather:** Sep–Dec = post-monsoon. Perfect for Nepal, Bangladesh.
 
-**Store:** Dhaka — _Ship to Bangkok_  
+**Store:** Chittagong — _Ship to Laem Chabang_
 **Fly home:** Dhaka (via Bangkok or KL)
 
 ---
@@ -374,26 +371,25 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 ---
 
-## Trip 3: Thailand → SE Asia → Singapore
+## Trip 3: Thailand → SE Asia → Malaysia
 
 **Apr–Jul 2028 (4 months)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇹🇭 Thailand|3|Pick up Bangkok|
+|🇹🇭 Thailand|3|Pick up Laem Chabang|
 |🇱🇦 Laos|12|Vientiane, Vang Vieng, Luang Prabang|
 |🇻🇳 Vietnam|21|Hanoi, Ha Long Bay, Hue, Hoi An, Ho Chi Minh|
 |🇰🇭 Cambodia|10|Phnom Penh, Siem Reap (Angkor Wat)|
 |🇹🇭 Thailand|20|Bangkok, Chiang Mai, Phuket, islands|
-|🇲🇾 Malaysia|32|Penang, Cameron Highlands, KL, Melaka|
-|🇸🇬 Singapore|17|Home with the car!|
+|🇲🇾 Malaysia|49|Penang, Cameron Highlands, KL, Melaka, Johor Bahru|
 
-**115 days / 6 countries / ~8,000 km**
+**115 days / 5 countries / ~7,500 km**
 
 **Weather:** Apr–Jul = dry season SE Asia.
 
-**Store:** Singapore  
-**Fly home:** You're home!
+**Store:** Johor Bahru — _Ship car to Jakarta, fly to Singapore for home visit_
+**Fly home:** Singapore (walk across causeway!)
 
 ---
 
@@ -401,24 +397,27 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 ---
 
-## Trip 4: Singapore → Indonesia → Timor → Australia
+## Trip 4: Indonesia (Java + Sumatra) → Timor → Australia
 
 **Nov 2028–Feb 2029 (4 months)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇸🇬 Singapore|1|Pick up car|
-|⛴️ Ferry|1|Singapore → Batam|
-|🇮🇩 Indonesia|40|Sumatra ferry, Java (Bromo, Yogyakarta, Borobudur), Bali, Lombok, Flores, Komodo|
+|🇮🇩 Jakarta|2|Pick up car from port, explore|
+|🇮🇩 Sumatra|25|Merak ferry → Bakauheni, Lampung, Palembang, Jambi, Padang, Bukittinggi, Lake Toba, Medan, return south|
+|🇮🇩 Java|18|Bandung, Yogyakarta, Borobudur, Bromo|
+|🇮🇩 East Indonesia|10|Bali, Flores, Komodo|
 |🇹🇱 Timor-Leste|8|Dili, Maubisse, Atauro|
-|⛴️ Ferry|1|Dili → Darwin|
-|🇦🇺 Australia|64|Darwin, Kakadu, Katherine, Kununurra, Gibb River Road, Broome, Karijini, Ningaloo, Perth, Nullarbor, Adelaide, Great Ocean Road, Melbourne, Sydney, Brisbane|
+|⛴️ Ship|2|Dili → Darwin|
+|🇦🇺 Australia|50|Darwin, Kakadu, Kununurra, Gibb River Road, Broome, Karijini, Ningaloo, Perth, Nullarbor, Adelaide, Great Ocean Road, Melbourne, Sydney, Brisbane|
 
-**115 days / 4 countries / ~12,000 km**
+**115 days / 3 countries / ~15,000 km**
 
-**Weather:** Nov–Feb = dry season Indonesia, Australian summer. Kimberley early before wet season peaks.
+**Note:** Car shipped JB → Jakarta. Use Merak-Bakauheni ferry ($22, frequent) to access Sumatra — only way to get car there!
 
-**Store:** Brisbane — _Ship to Auckland_  
+**Weather:** Nov–Feb = dry season Indonesia, Australian summer.
+
+**Store:** Brisbane — _Ship to Auckland_
 **Fly home:** Brisbane (SIA direct)
 
 ---
