@@ -309,6 +309,7 @@
     { "type": "Feature", "properties": { "name": "Kampala", "trip": 20, "country": "Uganda" }, "geometry": { "type": "Point", "coordinates": [32.5825, 0.3476] } },
     { "type": "Feature", "properties": { "name": "Bwindi", "trip": 20, "country": "Uganda" }, "geometry": { "type": "Point", "coordinates": [29.6739, -1.0489] } },
     { "type": "Feature", "properties": { "name": "Kigali", "trip": 20, "country": "Rwanda" }, "geometry": { "type": "Point", "coordinates": [30.0619, -1.9403] } },
+    { "type": "Feature", "properties": { "name": "Bujumbura", "trip": 20, "country": "Burundi" }, "geometry": { "type": "Point", "coordinates": [29.3599, -3.3614] } },
     { "type": "Feature", "properties": { "name": "Addis Ababa", "trip": 20, "country": "Ethiopia" }, "geometry": { "type": "Point", "coordinates": [38.7578, 9.0054] } },
     { "type": "Feature", "properties": { "name": "Lalibela", "trip": 20, "country": "Ethiopia" }, "geometry": { "type": "Point", "coordinates": [38.9800, 12.0319] } },
     { "type": "Feature", "properties": { "name": "Gondar", "trip": 20, "country": "Ethiopia" }, "geometry": { "type": "Point", "coordinates": [38.0667, 13.3833] } },

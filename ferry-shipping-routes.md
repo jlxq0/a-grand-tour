@@ -22,9 +22,10 @@ All water crossings for A Grand Tour, in chronological order. Costs are estimate
 | 12 | Rosslare → Cherbourg | Ferry | 13 | Apr 2034 | $700 | 18 hrs |
 | 13 | Patras → Bari | Ferry | 17 | Jul 2038 | $400 | 17 hrs |
 | 14 | Algeciras → Tangier | Ferry | 17 | Aug 2038 | $200 | 1.5 hrs |
-| 15 | Nuweiba → Aqaba | Ferry | 21 | Jul 2042 | $300 | 4.5 hrs |
+| 15 | Brazzaville → Kinshasa | Ferry | 19 | Jul 2040 | $50 | 20 min |
+| 16 | Nuweiba → Aqaba | Ferry | 21 | Jul 2042 | $300 | 4.5 hrs |
 
-**Total Estimated: ~$22,300** (Sri Lanka removed; JB-Jakarta + Merak-Bakauheni added; Darién includes San Blas sail)
+**Total Estimated: ~$22,350** (includes Brazzaville-Kinshasa crossing)
 
 ---
 
@@ -502,7 +503,45 @@ Seattle/Tacoma → Pacific Coast → Panama Canal → Caribbean → Atlantic →
 
 ---
 
-### 15. Nuweiba → Aqaba
+### 15. Brazzaville → Kinshasa
+**Trip 19 | July 2040 | Congo River Crossing**
+
+| | |
+|---|---|
+| **Why** | Crossing from Congo-Brazzaville to DRC |
+| **Distance** | ~4 km across the Congo River |
+| **Duration** | 20 minutes |
+| **Operators** | Various local ferry operators |
+| **Schedule** | Multiple daily crossings |
+| **Est. Cost** | **$50** (vehicle + passengers) |
+
+**Key Notes:**
+- Shortest capital-to-capital distance in the world
+- Brazzaville (Republic of Congo) and Kinshasa (DRC) face each other across the river
+- Ferry departs from Beach Ngobila port in Kinshasa / similar in Brazzaville
+- Essential crossing for the Africa route avoiding conflict zones
+
+**Process:**
+1. Clear exit immigration in Brazzaville
+2. Board ferry at port
+3. 20-minute crossing
+4. Clear DRC immigration and customs in Kinshasa
+5. Drive west through DRC's Kongo Central province to Matadi, then to Angola
+
+**Requirements:**
+- DRC visa (arrange in advance)
+- Vehicle Carnet de Passage
+- Expect delays and informal "fees" — patience required
+- Allow half day for the crossing including paperwork
+
+**Tips:**
+- Use a fixer/guide familiar with the crossing
+- Have small bills ready
+- Early morning crossings tend to be less chaotic
+
+---
+
+### 16. Nuweiba → Aqaba
 **Trip 21 | July 2042 | Gulf of Aqaba**
 
 | | |
