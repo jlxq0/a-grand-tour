@@ -94,29 +94,29 @@ const colors = {
     shipping: '#9b59b6'
 };
 
-// 21 distinct colors for trips
+// 21 distinct colors for trips (alternating warm/cool to avoid similar adjacent colors)
 const tripColors = [
-    '#e74c3c', // Trip 1 - red
-    '#e67e22', // Trip 2 - orange
-    '#f1c40f', // Trip 3 - yellow
-    '#2ecc71', // Trip 4 - green
-    '#1abc9c', // Trip 5 - teal
-    '#3498db', // Trip 6 - blue
-    '#9b59b6', // Trip 7 - purple
-    '#e91e63', // Trip 8 - pink
-    '#00bcd4', // Trip 9 - cyan
-    '#8bc34a', // Trip 10 - lime
-    '#ff9800', // Trip 11 - amber
-    '#795548', // Trip 12 - brown
-    '#607d8b', // Trip 13 - blue-grey
-    '#673ab7', // Trip 14 - deep purple
-    '#009688', // Trip 15 - teal dark
-    '#ff5722', // Trip 16 - deep orange
-    '#4caf50', // Trip 17 - green dark
-    '#2196f3', // Trip 18 - blue light
-    '#9c27b0', // Trip 19 - purple dark
-    '#cddc39', // Trip 20 - lime yellow
-    '#f44336'  // Trip 21 - red dark
+    '#e74c3c', // Trip 1 - red (warm)
+    '#1abc9c', // Trip 2 - teal (cool)
+    '#e67e22', // Trip 3 - orange (warm)
+    '#3498db', // Trip 4 - blue (cool)
+    '#f1c40f', // Trip 5 - yellow (warm)
+    '#9b59b6', // Trip 6 - purple (cool)
+    '#2ecc71', // Trip 7 - green (cool - but contrasts purple)
+    '#e91e63', // Trip 8 - pink (warm)
+    '#00bcd4', // Trip 9 - cyan (cool)
+    '#795548', // Trip 10 - brown (warm)
+    '#8bc34a', // Trip 11 - lime (cool)
+    '#ff5722', // Trip 12 - deep orange (warm)
+    '#607d8b', // Trip 13 - blue-grey (cool)
+    '#ff9800', // Trip 14 - amber (warm)
+    '#673ab7', // Trip 15 - deep purple (cool)
+    '#f39c12', // Trip 16 - gold (warm)
+    '#009688', // Trip 17 - dark teal (cool)
+    '#c0392b', // Trip 18 - dark red (warm)
+    '#2196f3', // Trip 19 - light blue (cool)
+    '#d35400', // Trip 20 - pumpkin (warm)
+    '#27ae60'  // Trip 21 - emerald (cool)
 ];
 
 // Countries visited on the trip (using ISO 3166-1 alpha-2 codes for reliability)
