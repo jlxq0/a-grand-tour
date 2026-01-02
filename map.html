@@ -68,15 +68,9 @@
 </div>
 <div id="legend">
     <h3>Route Types</h3>
-    <div class="legend-item"><div class="legend-color" style="background: #27ae60;"></div>Driving</div>
+    <div class="legend-item"><div class="legend-color" style="background: linear-gradient(90deg, #e74c3c, #f1c40f, #2ecc71, #3498db, #9b59b6);"></div>Driving (by trip)</div>
     <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #3498db;"></div>Ferry</div>
-    <h3 style="margin-top: 10px; margin-bottom: 5px;">Shipping Routes</h3>
-    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #9b59b6;"></div>JB - Jakarta</div>
-    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #e67e22;"></div>Chittagong - Laem Chabang</div>
-    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #16a085;"></div>Brisbane - Auckland</div>
-    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #e91e63;"></div>Auckland - Valparaiso</div>
-    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #f39c12;"></div>Cartagena - Panama (Darien Gap)</div>
-    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #2c3e50;"></div>Seattle - Southampton</div>
+    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #9b59b6;"></div>Shipping</div>
 </div>
 <div id="controls">
     <strong>Show/Hide</strong>
@@ -96,9 +90,34 @@ const map = new mapboxgl.Map({
 });
 
 const colors = {
-    driving: '#27ae60',
-    ferry: '#3498db'
+    ferry: '#3498db',
+    shipping: '#9b59b6'
 };
+
+// 21 distinct colors for trips
+const tripColors = [
+    '#e74c3c', // Trip 1 - red
+    '#e67e22', // Trip 2 - orange
+    '#f1c40f', // Trip 3 - yellow
+    '#2ecc71', // Trip 4 - green
+    '#1abc9c', // Trip 5 - teal
+    '#3498db', // Trip 6 - blue
+    '#9b59b6', // Trip 7 - purple
+    '#e91e63', // Trip 8 - pink
+    '#00bcd4', // Trip 9 - cyan
+    '#8bc34a', // Trip 10 - lime
+    '#ff9800', // Trip 11 - amber
+    '#795548', // Trip 12 - brown
+    '#607d8b', // Trip 13 - blue-grey
+    '#673ab7', // Trip 14 - deep purple
+    '#009688', // Trip 15 - teal dark
+    '#ff5722', // Trip 16 - deep orange
+    '#4caf50', // Trip 17 - green dark
+    '#2196f3', // Trip 18 - blue light
+    '#9c27b0', // Trip 19 - purple dark
+    '#cddc39', // Trip 20 - lime yellow
+    '#f44336'  // Trip 21 - red dark
+];
 
 // Countries visited on the trip (using ISO 3166-1 alpha-2 codes for reliability)
 const visitedCountryCodes = [
@@ -116,15 +135,6 @@ const visitedCountryCodes = [
     'TZ', 'TH', 'TL', 'TG', 'TR',  // Tanzania, Thailand, Timor-Leste, Togo, Turkey
     'AE', 'UG', 'GB', 'US', 'VN', 'ZW', 'ZM', 'UY', 'EH', 'SG', 'BI'  // UAE, Uganda, UK, USA, Vietnam, Zimbabwe, Zambia, Uruguay, Western Sahara, Singapore, Burundi
 ];
-
-const shippingColors = {
-    'jb-jakarta': '#9b59b6',
-    'darien-gap': '#f39c12',
-    'chittagong-laem-chabang': '#e67e22',
-    'brisbane-auckland': '#16a085',
-    'auckland-valparaiso': '#e91e63',
-    'seattle-southampton': '#2c3e50'
-};
 
 // Load all GeoJSON data
 async function loadData() {
@@ -188,20 +198,35 @@ map.on('load', async () => {
         }
     }, 'admin-1-boundary-bg');  // Place below admin boundaries
 
-    // Add road segments
+    // Add trip number to each road feature for coloring
+    data.roads.features.forEach(f => {
+        const match = f.properties.segment.match(/Trip (\d+)/);
+        f.properties.trip = match ? parseInt(match[1]) : 1;
+    });
+
+    // Add road segments with trip-based coloring
     map.addSource('roads', { type: 'geojson', data: data.roads });
     map.addLayer({
         id: 'roads',
         type: 'line',
         source: 'roads',
         paint: {
-            'line-color': colors.driving,
+            'line-color': [
+                'match', ['get', 'trip'],
+                1, tripColors[0], 2, tripColors[1], 3, tripColors[2], 4, tripColors[3],
+                5, tripColors[4], 6, tripColors[5], 7, tripColors[6], 8, tripColors[7],
+                9, tripColors[8], 10, tripColors[9], 11, tripColors[10], 12, tripColors[11],
+                13, tripColors[12], 14, tripColors[13], 15, tripColors[14], 16, tripColors[15],
+                17, tripColors[16], 18, tripColors[17], 19, tripColors[18], 20, tripColors[19],
+                21, tripColors[20],
+                '#27ae60' // default
+            ],
             'line-width': 3,
-            'line-opacity': 0.8
+            'line-opacity': 0.85
         }
     });
 
-    // Add ferry routes
+    // Add ferry routes (thinner than roads)
     map.addSource('ferries', { type: 'geojson', data: data.ferries });
     map.addLayer({
         id: 'ferries',
@@ -209,13 +234,13 @@ map.on('load', async () => {
         source: 'ferries',
         paint: {
             'line-color': colors.ferry,
-            'line-width': 2.5,
+            'line-width': 1.5,
             'line-dasharray': [4, 3],
-            'line-opacity': 0.9
+            'line-opacity': 0.8
         }
     });
 
-    // Add shipping routes
+    // Add shipping routes (thinner than roads)
     Object.keys(data.shipping).forEach(key => {
         map.addSource(`shipping-${key}`, { type: 'geojson', data: data.shipping[key] });
         map.addLayer({
@@ -223,27 +248,29 @@ map.on('load', async () => {
             type: 'line',
             source: `shipping-${key}`,
             paint: {
-                'line-color': shippingColors[key],
-                'line-width': 2.5,
+                'line-color': colors.shipping,
+                'line-width': 1.5,
                 'line-dasharray': [6, 4],
-                'line-opacity': 0.9
+                'line-opacity': 0.8
             }
         });
     });
 
-    // Add markers for all stops
+    // Add markers for all stops (colored by trip)
     data.stops.features.forEach(stop => {
+        const props = stop.properties;
+        const tripColor = tripColors[props.trip - 1] || '#27ae60';
+
         const el = document.createElement('div');
         el.className = 'marker';
         el.style.width = '8px';
         el.style.height = '8px';
-        el.style.backgroundColor = colors.driving;
+        el.style.backgroundColor = tripColor;
         el.style.borderRadius = '50%';
         el.style.border = '2px solid white';
         el.style.boxShadow = '0 1px 3px rgba(0,0,0,0.3)';
         el.style.cursor = 'pointer';
 
-        const props = stop.properties;
         const phase = props.trip <= 13 ? 'A' : 'B';
         const popup = new mapboxgl.Popup({ offset: 10 })
             .setHTML(`
