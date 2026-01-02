@@ -100,6 +100,24 @@ const colors = {
     ferry: '#3498db'
 };
 
+// Countries visited on the trip (using Mapbox country names)
+const visitedCountries = [
+    'Albania', 'Angola', 'Argentina', 'Armenia', 'Australia', 'Austria', 'Azerbaijan',
+    'Bangladesh', 'Belgium', 'Belize', 'Benin', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Bulgaria',
+    'Cambodia', 'Cameroon', 'Canada', 'Chile', 'Colombia', 'Republic of the Congo', 'Costa Rica', 'Croatia', 'Czechia',
+    'Denmark', 'Ecuador', 'Egypt', 'El Salvador', 'Estonia', 'Ethiopia',
+    'Finland', 'France', 'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Gibraltar', 'Greece', 'Guatemala', 'Guinea-Bissau', 'Guinea', 'Guyana',
+    'Honduras', 'Hungary', 'India', 'Indonesia', 'Iran', 'Ireland', 'Italy', 'Ivory Coast',
+    'Jordan', 'Kenya', 'Kosovo', 'Kuwait', 'Laos', 'Latvia', 'Lithuania', 'Luxembourg',
+    'Malawi', 'Malaysia', 'Mauritania', 'Mexico', 'Moldova', 'Montenegro', 'Morocco', 'Mozambique',
+    'Namibia', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Nigeria', 'North Macedonia', 'Norway',
+    'Oman', 'Pakistan', 'Panama', 'Paraguay', 'Peru', 'Poland', 'Portugal', 'Romania', 'Rwanda',
+    'Saudi Arabia', 'Senegal', 'Serbia', 'Sierra Leone', 'Slovakia', 'Slovenia', 'South Africa', 'Spain', 'Sudan', 'Suriname', 'Sweden',
+    'Tanzania', 'Thailand', 'Timor-Leste', 'Togo', 'Turkey',
+    'United Arab Emirates', 'Uganda', 'United Kingdom', 'United States of America', 'Vietnam', 'Zimbabwe',
+    'French Guiana'
+];
+
 const shippingColors = {
     'jb-jakarta': '#9b59b6',
     'darien-gap': '#f39c12',
@@ -140,6 +158,28 @@ async function loadData() {
 
 map.on('load', async () => {
     const data = await loadData();
+
+    // Add country fill layer (below everything else)
+    map.addSource('countries', {
+        type: 'vector',
+        url: 'mapbox://mapbox.country-boundaries-v1'
+    });
+
+    map.addLayer({
+        id: 'country-fills',
+        type: 'fill',
+        source: 'countries',
+        'source-layer': 'country_boundaries',
+        paint: {
+            'fill-color': [
+                'case',
+                ['in', ['get', 'name_en'], ['literal', visitedCountries]],
+                'rgba(39, 174, 96, 0.15)',  // subtle green for visited
+                'rgba(231, 76, 60, 0.08)'   // subtle red for not visited
+            ],
+            'fill-opacity': 1
+        }
+    }, 'admin-1-boundary-bg');  // Place below admin boundaries
 
     // Add road segments
     map.addSource('roads', { type: 'geojson', data: data.roads });
