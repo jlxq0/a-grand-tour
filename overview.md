@@ -14,23 +14,6 @@ Total time on the road: 64 months. Total distance: roughly 200,000 kilometers. T
 
 ---
 
-## Planning Constraints
-
-1. **Start date** — Departure February 2027
-2. **Phase A end** — Back home by Aug 2034 (first kid starts GESS Grade 1 at age 6). Baby born Nov 2026 → turns 6 in Nov 2032 → starts school Aug 2034. GESS academic year starts mid-August.
-3. **Phase B end** — More or less open; when oldest kid is between 15-18 or so
-4. **Home/travel balance** — Roughly 50/50 over the full duration, may vary year to year up to 20% in either direction
-5. **Phase A duration** — Each trip and each home stretch roughly 10-20 weeks; occasionally 1-2 weeks outside range if it meaningfully improves the route
-6. **Phase B duration** — 7(ish) weeks during school breaks
-7. **Country count** — Maximize countries visited
-8. **Daily driving** — Usually max ~300km/day with rest days; up to ~800km highway drives possible (not desired) max twice per trip if it significantly benefits the route
-9. **Stay duration** — One night for boring stops, two nights for random cities, up to 10 nights for amazing places
-10. **Weather/climate** — Travel during optimal seasons; good weather, avoid extreme heat/cold, align with best travel times
-11. **Safety** — Skip war zones and dangerous countries
-12. **Family safety** — Route and conditions must be safe for baby/young children
-
----
-
 ## Contents
 
 1. [Planning Constraints](#planning-constraints)
@@ -43,6 +26,23 @@ Total time on the road: 64 months. Total distance: roughly 200,000 kilometers. T
 8. [Flights Home](#flights-home)
 9. [Key Border Crossings](#key-border-crossings)
 10. [Trip Details](#trip-details)
+
+---
+
+## Planning Constraints
+
+1. **Start date** — Departure February 2027
+2. **Phase A end** — Back home by Aug 2034 (first kid starts GESS Grade 1 at age 6)
+3. **Phase B end** — More or less open; when oldest kid is between 15-18 or so
+4. **Home/travel balance** — Roughly 50/50 over the full duration, may vary year to year up to 20% in either direction
+5. **Phase A duration** — Each trip and each home stretch roughly 10-20 weeks; occasionally 1-2 weeks outside range if it meaningfully improves the route
+6. **Phase B duration** — 7(ish) weeks during school breaks
+7. **Country count** — Maximize countries visited
+8. **Daily driving** — Usually max ~300km/day with rest days; up to ~800km highway drives possible (not desired) max twice per trip if it significantly benefits the route
+9. **Stay duration** — One night for boring stops, two or three nights for random cities/places, up to 10 nights for amazing places
+10. **Weather/climate** — Travel during optimal seasons; good weather, avoid extreme heat/cold, align with best travel times
+11. **Safety** — Skip war zones and dangerous countries
+12. **Family safety** — Route and conditions must be safe for baby/young children
 
 ---
 
@@ -62,16 +62,12 @@ Total time on the road: 64 months. Total distance: roughly 200,000 kilometers. T
 **Dubai → East → Americas → West → Dubai**
 
 ```
-PHASE A: Trips 1-5 (2027-2029)
+PHASE A: Trips 1-13 (2027-2032)
 Dubai → Iran → Pakistan → India → Nepal → Bangladesh →
 [ship] → Thailand → Laos → Cambodia → Vietnam → Malaysia →
-[ship] → Indonesia (Java + Sumatra) → Timor → Australia → New Zealand
-
-PHASE A: Trips 6-12 (2030-2033)
+[ship] → Indonesia (Java + Sumatra) → Timor → Australia → New Zealand →
 Chile → Argentina → Brazil → Paraguay → Bolivia → Peru → Ecuador →
-Colombia → [ship Darién] → Central America → Mexico → USA → Canada → Alaska
-
-PHASE A: Trip 13 (2034)
+Colombia → [ship Darién] → Central America → Mexico → USA → Canada → Alaska →
 UK → Ireland → Western Europe
 
 PHASE B: Trips 14-21 (2035-2042)
@@ -640,7 +636,7 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |🇺🇸 USA|7|Philadelphia, Washington DC|
 |🇺🇸 USA|10|Virginia, Blue Ridge Parkway|
 |🇺🇸 USA|10|Nashville, Memphis|
-|🇺🇸 USA|14|New Orleans, Gulf Coast, Florida Keys|
+|🇺🇸 USA|14|New Orleans, Gulf Coast, Miami, Florida Keys|
 
 **115 days / 2 countries / ~12,000 km**
 
@@ -762,7 +758,7 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 |🇦🇹 Austria|5|Vienna, Salzburg|
 |🇭🇺 Hungary|4|Budapest|
 |🇸🇮 Slovenia|4|Ljubljana, Bled|
-|🇭🇷 Croatia|10|Dubrovnik, Plitvice, Split|
+|🇭🇷 Croatia|10|Zagreb, Plitvice, Split, Dubrovnik|
 |🇧🇦 Bosnia|4|Sarajevo, Mostar|
 |🇲🇪 Montenegro|5|Kotor, Durmitor|
 
@@ -784,7 +780,7 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 |🇽🇰 Kosovo|3|Pristina, Prizren|
 |🇲🇰 North Macedonia|4|Ohrid, Skopje|
 |🇷🇸 Serbia|4|Belgrade|
-|🇷🇴 Romania|6|Transylvania, Transfăgărășan|
+|🇷🇴 Romania|6|Bucharest, Brașov, Transfăgărășan|
 |🇲🇩 Moldova|3|Chișinău|
 |🇧🇬 Bulgaria|4|Sofia, Plovdiv|
 |🇹🇷 Turkey|12|Istanbul, Cappadocia, east to Georgia|
@@ -808,10 +804,10 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 |🇦🇿 Azerbaijan|7|Baku, Sheki|
 |🇬🇪 Georgia|2|Transit back|
 |🇹🇷 Turkey|5|Transit west|
-|🇬🇷 Greece|12|Athens, Meteora, islands|
-|⛴️ Ferry|2|Greece → Italy|
-|🇮🇹 Italy|3|Transit|
-|🇪🇸 Spain|5|Transit via southern Spain|
+|🇬🇷 Greece|12|Athens, Meteora, Patras|
+|⛴️ Ferry|1|Patras → Bari|
+|🇮🇹 Italy|5|Bari, Rome|
+|🇪🇸 Spain|5|Barcelona, south to Gibraltar|
 |⛴️ Ferry|1|Algeciras → Tangier|
 |🇲🇦 Morocco|4|Tangier, arrival|
 
@@ -828,7 +824,7 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇲🇦 Morocco|5|Pick up, Fes, Marrakech, drive south|
+|🇲🇦 Morocco|5|Pick up Marrakech, Fes, Ouarzazate, drive south|
 |🇪🇭 Western Sahara|4|Laayoune, Dakhla, coastal desert|
 |🇲🇷 Mauritania|7|Nouakchott, desert crossing|
 |🇸🇳 Senegal|6|Dakar, Saint-Louis|
@@ -866,8 +862,8 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 |⛴️ Ferry|1|Brazzaville → Kinshasa|
 |🇨🇩 DRC|3|Kinshasa, Matadi (Kongo Central transit)|
 |🇦🇴 Angola|4|Luanda|
-|🇳🇦 Namibia|8|Etosha, Sossusvlei, Skeleton Coast|
-|🇧🇼 Botswana|5|Okavango Delta, Chobe|
+|🇳🇦 Namibia|8|Rundu, Windhoek, Etosha, Sossusvlei|
+|🇧🇼 Botswana|5|Maun, Okavango Delta, Chobe|
 |🇿🇲 Zambia|2|Livingstone|
 |🇿🇼 Zimbabwe|2|Victoria Falls|
 |🇿🇦 South Africa|6|Johannesburg, Cape Town, Garden Route|
@@ -885,13 +881,13 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇿🇦 South Africa|4|Pick up Johannesburg|
+|🇿🇦 South Africa|4|Pick up Johannesburg, Drakensberg|
 |🇱🇸 Lesotho|2|Maseru, mountain kingdom|
 |🇿🇦 South Africa|3|Kruger National Park|
 |🇸🇿 Eswatini|2|Mbabane, Mlilwane|
 |🇲🇿 Mozambique|4|Maputo, Tofo|
 |🇲🇼 Malawi|3|Blantyre, Lake Malawi|
-|🇹🇿 Tanzania|8|Serengeti, Ngorongoro, Zanzibar|
+|🇹🇿 Tanzania|8|Dar es Salaam, Zanzibar, Serengeti, Ngorongoro|
 |🇰🇪 Kenya|6|Masai Mara, Nairobi|
 |🇺🇬 Uganda|4|Kampala, Bwindi gorillas|
 |🇷🇼 Rwanda|3|Kigali|
@@ -913,8 +909,8 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 | ----------------- | ---- | ------------------------------------------------------------------- |
 | 🇪🇹 Ethiopia     | 2    | Pick up Addis, drive north to Gondar                                |
 | 🇪🇷 Eritrea      | 4    | Asmara, Italian architecture, Red Sea coast                         |
-| 🇸🇩 Sudan        | 8    | Khartoum, pyramids of Meroë                                         |
-| 🇪🇬 Egypt        | 14   | Abu Simbel, Luxor, Valley of the Kings, Cairo, Pyramids, Alexandria |
+| 🇸🇩 Sudan        | 8    | Khartoum, Meroë pyramids, Wadi Halfa                                |
+| 🇪🇬 Egypt        | 14   | Aswan, Abu Simbel, Luxor, Cairo, Pyramids                           |
 | ⛴️ Ferry          | 1    | Nuweiba → Aqaba                                                     |
 | 🇯🇴 Jordan       | 7    | Petra, Wadi Rum, Dead Sea, Amman                                    |
 | 🇸🇦 Saudi Arabia | 9    | AlUla, Jeddah, Riyadh                                               |
