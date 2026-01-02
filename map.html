@@ -24,6 +24,7 @@
         #legend h3 { margin: 0 0 10px 0; font-size: 14px; }
         .legend-item { display: flex; align-items: center; margin: 5px 0; }
         .legend-color { width: 20px; height: 4px; margin-right: 8px; border-radius: 2px; }
+        .legend-dashed { border-top: 2px dashed; height: 0; }
         #info {
             position: absolute;
             top: 10px;
@@ -63,21 +64,24 @@
 <div id="info">
     <h2>A Grand Tour</h2>
     <p>15 years | 200,000 km | 100+ countries</p>
-    <p>Feb 2027 - Aug 2042</p>
+    <p>Feb 2027 – Aug 2042</p>
 </div>
 <div id="legend">
-    <h3>Route Legs</h3>
-    <div class="legend-item"><div class="legend-color" style="background: #e74c3c;"></div>Leg 1: East (2027-2029)</div>
-    <div class="legend-item"><div class="legend-color" style="background: #3498db;"></div>Leg 2: Americas (2030-2033)</div>
-    <div class="legend-item"><div class="legend-color" style="background: #2ecc71;"></div>Leg 3: West (2034-2042)</div>
-    <div class="legend-item"><div class="legend-color" style="background: #9b59b6; height: 2px; border-style: dashed;"></div>Ship routes</div>
+    <h3>Route Types</h3>
+    <div class="legend-item"><div class="legend-color" style="background: #27ae60;"></div>Driving</div>
+    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #3498db;"></div>Ferry</div>
+    <h3 style="margin-top: 10px; margin-bottom: 5px;">Shipping Routes</h3>
+    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #9b59b6;"></div>Short (India-Sri Lanka, Darién Gap)</div>
+    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #e67e22;"></div>Chittagong → Laem Chabang</div>
+    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #16a085;"></div>Brisbane → Auckland</div>
+    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #e91e63;"></div>Auckland → Valparaíso</div>
+    <div class="legend-item"><div class="legend-color legend-dashed" style="border-color: #2c3e50;"></div>Seattle → Southampton</div>
 </div>
 <div id="controls">
     <strong>Show/Hide</strong>
-    <label><input type="checkbox" id="toggle-leg1" checked> Leg 1: East</label>
-    <label><input type="checkbox" id="toggle-leg2" checked> Leg 2: Americas</label>
-    <label><input type="checkbox" id="toggle-leg3" checked> Leg 3: West</label>
-    <label><input type="checkbox" id="toggle-ships" checked> Ship routes</label>
+    <label><input type="checkbox" id="toggle-driving" checked> Driving</label>
+    <label><input type="checkbox" id="toggle-ferry" checked> Ferries</label>
+    <label><input type="checkbox" id="toggle-shipping" checked> Shipping</label>
 </div>
 
 <script>
@@ -90,412 +94,874 @@ const map = new mapboxgl.Map({
     zoom: 1.5
 });
 
-// Major stops organized by trip with coordinates [lng, lat]
-const stops = {
-    // LEG 1: EAST (Red) - Trips 1-5
-    leg1: [
-        // Trip 1: Dubai → Iran → Pakistan → India
-        { name: "Dubai", coords: [55.2708, 25.2048], trip: 1, country: "UAE" },
-        { name: "Abu Dhabi", coords: [54.3666, 24.4539], trip: 1, country: "UAE" },
-        { name: "Muscat", coords: [58.4059, 23.5880], trip: 1, country: "Oman" },
-        { name: "Nizwa", coords: [57.5311, 22.9333], trip: 1, country: "Oman" },
-        { name: "Bandar Abbas", coords: [56.2808, 27.1865], trip: 1, country: "Iran", ship: true },
-        { name: "Shiraz", coords: [52.5311, 29.5918], trip: 1, country: "Iran" },
-        { name: "Isfahan", coords: [51.6680, 32.6546], trip: 1, country: "Iran" },
-        { name: "Yazd", coords: [54.3675, 31.8974], trip: 1, country: "Iran" },
-        { name: "Tehran", coords: [51.3890, 35.6892], trip: 1, country: "Iran" },
-        { name: "Tabriz", coords: [46.2919, 38.0800], trip: 1, country: "Iran" },
-        { name: "Quetta", coords: [67.0011, 30.1798], trip: 1, country: "Pakistan" },
-        { name: "Lahore", coords: [74.3587, 31.5204], trip: 1, country: "Pakistan" },
-        { name: "Islamabad", coords: [73.0479, 33.6844], trip: 1, country: "Pakistan" },
-        { name: "Hunza", coords: [74.6597, 36.3167], trip: 1, country: "Pakistan" },
-        { name: "Amritsar", coords: [74.8723, 31.6340], trip: 1, country: "India" },
-        { name: "Delhi", coords: [77.1025, 28.7041], trip: 1, country: "India" },
-        { name: "Jaipur", coords: [75.7873, 26.9124], trip: 1, country: "India" },
-        { name: "Jodhpur", coords: [73.0243, 26.2389], trip: 1, country: "India" },
-        { name: "Udaipur", coords: [73.7125, 24.5854], trip: 1, country: "India" },
-
-        // Trip 2: India → Sri Lanka → Nepal → Bangladesh
-        { name: "Agra", coords: [78.0081, 27.1767], trip: 2, country: "India" },
-        { name: "Varanasi", coords: [82.9913, 25.3176], trip: 2, country: "India" },
-        { name: "Mumbai", coords: [72.8777, 19.0760], trip: 2, country: "India" },
-        { name: "Goa", coords: [74.1240, 15.2993], trip: 2, country: "India" },
-        { name: "Colombo", coords: [79.8612, 6.9271], trip: 2, country: "Sri Lanka", ship: true },
-        { name: "Kandy", coords: [80.6337, 7.2906], trip: 2, country: "Sri Lanka" },
-        { name: "Galle", coords: [80.2170, 6.0535], trip: 2, country: "Sri Lanka" },
-        { name: "Kolkata", coords: [88.3639, 22.5726], trip: 2, country: "India" },
-        { name: "Darjeeling", coords: [88.2627, 27.0410], trip: 2, country: "India" },
-        { name: "Kathmandu", coords: [85.3240, 27.7172], trip: 2, country: "Nepal" },
-        { name: "Pokhara", coords: [83.9856, 28.2096], trip: 2, country: "Nepal" },
-        { name: "Dhaka", coords: [90.4125, 23.8103], trip: 2, country: "Bangladesh" },
-
-        // Trip 3: Thailand → SE Asia → Singapore
-        { name: "Bangkok", coords: [100.5018, 13.7563], trip: 3, country: "Thailand", ship: true },
-        { name: "Vientiane", coords: [102.6331, 17.9757], trip: 3, country: "Laos" },
-        { name: "Luang Prabang", coords: [102.1346, 19.8867], trip: 3, country: "Laos" },
-        { name: "Hanoi", coords: [105.8342, 21.0278], trip: 3, country: "Vietnam" },
-        { name: "Hue", coords: [107.5905, 16.4637], trip: 3, country: "Vietnam" },
-        { name: "Hoi An", coords: [108.3380, 15.8801], trip: 3, country: "Vietnam" },
-        { name: "Ho Chi Minh City", coords: [106.6297, 10.8231], trip: 3, country: "Vietnam" },
-        { name: "Phnom Penh", coords: [104.9160, 11.5564], trip: 3, country: "Cambodia" },
-        { name: "Siem Reap", coords: [103.8600, 13.3633], trip: 3, country: "Cambodia" },
-        { name: "Chiang Mai", coords: [98.9853, 18.7883], trip: 3, country: "Thailand" },
-        { name: "Penang", coords: [100.3327, 5.4141], trip: 3, country: "Malaysia" },
-        { name: "Kuala Lumpur", coords: [101.6869, 3.1390], trip: 3, country: "Malaysia" },
-        { name: "Singapore", coords: [103.8198, 1.3521], trip: 3, country: "Singapore" },
-
-        // Trip 4: Indonesia → Timor → Australia
-        { name: "Yogyakarta", coords: [110.3695, -7.7956], trip: 4, country: "Indonesia" },
-        { name: "Bali", coords: [115.1889, -8.4095], trip: 4, country: "Indonesia" },
-        { name: "Flores", coords: [121.0794, -8.6574], trip: 4, country: "Indonesia" },
-        { name: "Dili", coords: [125.5795, -8.5569], trip: 4, country: "Timor-Leste" },
-        { name: "Darwin", coords: [130.8456, -12.4634], trip: 4, country: "Australia" },
-        { name: "Broome", coords: [122.2363, -17.9614], trip: 4, country: "Australia" },
-        { name: "Perth", coords: [115.8605, -31.9505], trip: 4, country: "Australia" },
-        { name: "Adelaide", coords: [138.6007, -34.9285], trip: 4, country: "Australia" },
-        { name: "Melbourne", coords: [144.9631, -37.8136], trip: 4, country: "Australia" },
-        { name: "Sydney", coords: [151.2093, -33.8688], trip: 4, country: "Australia" },
-        { name: "Brisbane", coords: [153.0251, -27.4698], trip: 4, country: "Australia" },
-
-        // Trip 5: New Zealand
-        { name: "Auckland", coords: [174.7633, -36.8485], trip: 5, country: "New Zealand", ship: true },
-        { name: "Rotorua", coords: [176.2497, -38.1368], trip: 5, country: "New Zealand" },
-        { name: "Wellington", coords: [174.7762, -41.2865], trip: 5, country: "New Zealand" },
-        { name: "Christchurch", coords: [172.6362, -43.5321], trip: 5, country: "New Zealand" },
-        { name: "Queenstown", coords: [168.6626, -45.0312], trip: 5, country: "New Zealand" },
-        { name: "Milford Sound", coords: [167.9256, -44.6414], trip: 5, country: "New Zealand" },
-    ],
-
-    // LEG 2: AMERICAS (Blue) - Trips 6-12
-    leg2: [
-        // Trip 6: Chile → Patagonia → Argentina
-        { name: "Valparaíso", coords: [-71.6273, -33.0472], trip: 6, country: "Chile", ship: true },
-        { name: "Santiago", coords: [-70.6483, -33.4489], trip: 6, country: "Chile" },
-        { name: "Pucón", coords: [-71.9545, -39.2823], trip: 6, country: "Chile" },
-        { name: "Puerto Varas", coords: [-72.9854, -41.3167], trip: 6, country: "Chile" },
-        { name: "Torres del Paine", coords: [-72.9658, -50.9423], trip: 6, country: "Chile" },
-        { name: "El Calafate", coords: [-72.2753, -50.3402], trip: 6, country: "Argentina" },
-        { name: "Ushuaia", coords: [-68.3030, -54.8019], trip: 6, country: "Argentina" },
-        { name: "Puerto Madryn", coords: [-65.0368, -42.7692], trip: 6, country: "Argentina" },
-        { name: "Buenos Aires", coords: [-58.3816, -34.6037], trip: 6, country: "Argentina" },
-
-        // Trip 7: Argentina → Brazil → Bolivia → Peru
-        { name: "Iguazu Falls", coords: [-54.4409, -25.6953], trip: 7, country: "Argentina/Brazil" },
-        { name: "Asunción", coords: [-57.5759, -25.2637], trip: 7, country: "Paraguay" },
-        { name: "Brasília", coords: [-47.8825, -15.7942], trip: 7, country: "Brazil" },
-        { name: "Santa Cruz", coords: [-63.1812, -17.7833], trip: 7, country: "Bolivia" },
-        { name: "Sucre", coords: [-65.2550, -19.0196], trip: 7, country: "Bolivia" },
-        { name: "Uyuni", coords: [-66.8250, -20.4604], trip: 7, country: "Bolivia" },
-        { name: "La Paz", coords: [-68.1193, -16.4897], trip: 7, country: "Bolivia" },
-        { name: "Puno", coords: [-70.0219, -15.8402], trip: 7, country: "Peru" },
-        { name: "Arequipa", coords: [-71.5375, -16.4090], trip: 7, country: "Peru" },
-        { name: "Cusco", coords: [-71.9675, -13.5320], trip: 7, country: "Peru" },
-        { name: "Lima", coords: [-77.0428, -12.0464], trip: 7, country: "Peru" },
-
-        // Trip 8: Peru → Ecuador → Colombia → Central America
-        { name: "Guayaquil", coords: [-79.8891, -2.1894], trip: 8, country: "Ecuador" },
-        { name: "Quito", coords: [-78.4678, -0.1807], trip: 8, country: "Ecuador" },
-        { name: "Bogotá", coords: [-74.0721, 4.7110], trip: 8, country: "Colombia" },
-        { name: "Medellín", coords: [-75.5636, 6.2442], trip: 8, country: "Colombia" },
-        { name: "Cartagena", coords: [-75.5144, 10.3910], trip: 8, country: "Colombia" },
-        { name: "Panama City", coords: [-79.5197, 8.9824], trip: 8, country: "Panama", ship: true },
-        { name: "San José", coords: [-84.0907, 9.9281], trip: 8, country: "Costa Rica" },
-        { name: "Managua", coords: [-86.2362, 12.1150], trip: 8, country: "Nicaragua" },
-        { name: "Tegucigalpa", coords: [-87.1921, 14.0723], trip: 8, country: "Honduras" },
-        { name: "San Salvador", coords: [-89.2182, 13.6929], trip: 8, country: "El Salvador" },
-        { name: "Guatemala City", coords: [-90.5069, 14.6349], trip: 8, country: "Guatemala" },
-        { name: "Antigua", coords: [-90.7295, 14.5586], trip: 8, country: "Guatemala" },
-
-        // Trip 9: Central America → Mexico
-        { name: "Belize City", coords: [-88.1962, 17.5046], trip: 9, country: "Belize" },
-        { name: "Tulum", coords: [-87.4290, 20.2114], trip: 9, country: "Mexico" },
-        { name: "Mérida", coords: [-89.5926, 20.9674], trip: 9, country: "Mexico" },
-        { name: "Palenque", coords: [-91.9822, 17.5089], trip: 9, country: "Mexico" },
-        { name: "San Cristóbal", coords: [-92.6376, 16.7370], trip: 9, country: "Mexico" },
-        { name: "Oaxaca", coords: [-96.7266, 17.0732], trip: 9, country: "Mexico" },
-        { name: "Mexico City", coords: [-99.1332, 19.4326], trip: 9, country: "Mexico" },
-        { name: "Guanajuato", coords: [-101.2574, 21.0190], trip: 9, country: "Mexico" },
-        { name: "Guadalajara", coords: [-103.3496, 20.6597], trip: 9, country: "Mexico" },
-        { name: "Puerto Vallarta", coords: [-105.2353, 20.6534], trip: 9, country: "Mexico" },
-
-        // Trip 10: Mexico → USA Southwest
-        { name: "La Paz (Baja)", coords: [-110.3128, 24.1426], trip: 10, country: "Mexico" },
-        { name: "Cabo San Lucas", coords: [-109.9167, 22.8905], trip: 10, country: "Mexico" },
-        { name: "Tijuana", coords: [-117.0382, 32.5149], trip: 10, country: "Mexico" },
-        { name: "San Diego", coords: [-117.1611, 32.7157], trip: 10, country: "USA" },
-        { name: "Los Angeles", coords: [-118.2437, 34.0522], trip: 10, country: "USA" },
-        { name: "Las Vegas", coords: [-115.1398, 36.1699], trip: 10, country: "USA" },
-        { name: "Grand Canyon", coords: [-112.1401, 36.0544], trip: 10, country: "USA" },
-        { name: "Monument Valley", coords: [-110.1135, 36.9980], trip: 10, country: "USA" },
-        { name: "Moab", coords: [-109.5498, 38.5733], trip: 10, country: "USA" },
-        { name: "Denver", coords: [-104.9903, 39.7392], trip: 10, country: "USA" },
-        { name: "Santa Fe", coords: [-105.9378, 35.6870], trip: 10, country: "USA" },
-        { name: "Austin", coords: [-97.7431, 30.2672], trip: 10, country: "USA" },
-
-        // Trip 11: USA Midwest + East + Canada
-        { name: "Kansas City", coords: [-94.5786, 39.0997], trip: 11, country: "USA" },
-        { name: "Chicago", coords: [-87.6298, 41.8781], trip: 11, country: "USA" },
-        { name: "Detroit", coords: [-83.0458, 42.3314], trip: 11, country: "USA" },
-        { name: "Toronto", coords: [-79.3832, 43.6532], trip: 11, country: "Canada" },
-        { name: "Montreal", coords: [-73.5673, 45.5017], trip: 11, country: "Canada" },
-        { name: "Quebec City", coords: [-71.2082, 46.8139], trip: 11, country: "Canada" },
-        { name: "Boston", coords: [-71.0589, 42.3601], trip: 11, country: "USA" },
-        { name: "New York City", coords: [-74.0060, 40.7128], trip: 11, country: "USA" },
-        { name: "Washington DC", coords: [-77.0369, 38.9072], trip: 11, country: "USA" },
-        { name: "Nashville", coords: [-86.7816, 36.1627], trip: 11, country: "USA" },
-        { name: "New Orleans", coords: [-90.0715, 29.9511], trip: 11, country: "USA" },
-        { name: "Miami", coords: [-80.1918, 25.7617], trip: 11, country: "USA" },
-        { name: "Minneapolis", coords: [-93.2650, 44.9778], trip: 11, country: "USA" },
-
-        // Trip 12: Northern USA → Canada → Alaska
-        { name: "Badlands", coords: [-102.3397, 43.8554], trip: 12, country: "USA" },
-        { name: "Yellowstone", coords: [-110.5885, 44.4280], trip: 12, country: "USA" },
-        { name: "Glacier NP", coords: [-113.7870, 48.7596], trip: 12, country: "USA" },
-        { name: "Calgary", coords: [-114.0719, 51.0447], trip: 12, country: "Canada" },
-        { name: "Banff", coords: [-115.5708, 51.1784], trip: 12, country: "Canada" },
-        { name: "Jasper", coords: [-118.0814, 52.8737], trip: 12, country: "Canada" },
-        { name: "Vancouver", coords: [-123.1207, 49.2827], trip: 12, country: "Canada" },
-        { name: "Whitehorse", coords: [-135.0568, 60.7212], trip: 12, country: "Canada" },
-        { name: "Fairbanks", coords: [-147.7164, 64.8378], trip: 12, country: "USA" },
-        { name: "Denali", coords: [-151.1926, 63.1148], trip: 12, country: "USA" },
-        { name: "Anchorage", coords: [-149.9003, 61.2181], trip: 12, country: "USA" },
-        { name: "Seattle", coords: [-122.3321, 47.6062], trip: 12, country: "USA" },
-    ],
-
-    // LEG 3: WEST (Green) - Trips 13-21
-    leg3: [
-        // Trip 13: UK → Ireland → Western Europe
-        { name: "Southampton", coords: [-1.4044, 50.9097], trip: 13, country: "UK", ship: true },
-        { name: "London", coords: [-0.1278, 51.5074], trip: 13, country: "UK" },
-        { name: "Edinburgh", coords: [-3.1883, 55.9533], trip: 13, country: "UK" },
-        { name: "Isle of Skye", coords: [-6.2293, 57.2736], trip: 13, country: "UK" },
-        { name: "Belfast", coords: [-5.9301, 54.5973], trip: 13, country: "UK" },
-        { name: "Dublin", coords: [-6.2603, 53.3498], trip: 13, country: "Ireland" },
-        { name: "Cork", coords: [-8.4863, 51.8969], trip: 13, country: "Ireland" },
-        { name: "Paris", coords: [2.3522, 48.8566], trip: 13, country: "France" },
-        { name: "Brussels", coords: [4.3517, 50.8503], trip: 13, country: "Belgium" },
-        { name: "Amsterdam", coords: [4.9041, 52.3676], trip: 13, country: "Netherlands" },
-        { name: "Frankfurt", coords: [8.6821, 50.1109], trip: 13, country: "Germany" },
-        { name: "Munich", coords: [11.5820, 48.1351], trip: 13, country: "Germany" },
-
-        // Trip 14: Nordics + Baltics
-        { name: "Copenhagen", coords: [12.5683, 55.6761], trip: 14, country: "Denmark" },
-        { name: "Oslo", coords: [10.7522, 59.9139], trip: 14, country: "Norway" },
-        { name: "Bergen", coords: [5.3221, 60.3913], trip: 14, country: "Norway" },
-        { name: "Lofoten", coords: [14.5615, 68.2092], trip: 14, country: "Norway" },
-        { name: "Stockholm", coords: [18.0686, 59.3293], trip: 14, country: "Sweden" },
-        { name: "Helsinki", coords: [24.9384, 60.1699], trip: 14, country: "Finland" },
-        { name: "Tallinn", coords: [24.7536, 59.4370], trip: 14, country: "Estonia" },
-        { name: "Riga", coords: [24.1052, 56.9496], trip: 14, country: "Latvia" },
-        { name: "Vilnius", coords: [25.2797, 54.6872], trip: 14, country: "Lithuania" },
-
-        // Trip 15: Poland → Western Balkans
-        { name: "Warsaw", coords: [21.0122, 52.2297], trip: 15, country: "Poland" },
-        { name: "Krakow", coords: [19.9450, 50.0647], trip: 15, country: "Poland" },
-        { name: "Prague", coords: [14.4378, 50.0755], trip: 15, country: "Czechia" },
-        { name: "Vienna", coords: [16.3738, 48.2082], trip: 15, country: "Austria" },
-        { name: "Budapest", coords: [19.0402, 47.4979], trip: 15, country: "Hungary" },
-        { name: "Ljubljana", coords: [14.5058, 46.0569], trip: 15, country: "Slovenia" },
-        { name: "Zagreb", coords: [15.9819, 45.8150], trip: 15, country: "Croatia" },
-        { name: "Dubrovnik", coords: [18.0944, 42.6507], trip: 15, country: "Croatia" },
-        { name: "Sarajevo", coords: [18.4131, 43.8563], trip: 15, country: "Bosnia" },
-        { name: "Kotor", coords: [18.7712, 42.4247], trip: 15, country: "Montenegro" },
-        { name: "Podgorica", coords: [19.2636, 42.4304], trip: 15, country: "Montenegro" },
-
-        // Trip 16: Eastern Balkans → Turkey → Caucasus
-        { name: "Tirana", coords: [19.8187, 41.3275], trip: 16, country: "Albania" },
-        { name: "Pristina", coords: [21.1655, 42.6629], trip: 16, country: "Kosovo" },
-        { name: "Skopje", coords: [21.4314, 41.9981], trip: 16, country: "North Macedonia" },
-        { name: "Belgrade", coords: [20.4489, 44.7866], trip: 16, country: "Serbia" },
-        { name: "Bucharest", coords: [26.1025, 44.4268], trip: 16, country: "Romania" },
-        { name: "Sofia", coords: [23.3219, 42.6977], trip: 16, country: "Bulgaria" },
-        { name: "Istanbul", coords: [28.9784, 41.0082], trip: 16, country: "Turkey" },
-        { name: "Cappadocia", coords: [34.8289, 38.6431], trip: 16, country: "Turkey" },
-        { name: "Tbilisi", coords: [44.8271, 41.7151], trip: 16, country: "Georgia" },
-
-        // Trip 17: Caucasus → Greece → Morocco
-        { name: "Yerevan", coords: [44.5152, 40.1872], trip: 17, country: "Armenia" },
-        { name: "Baku", coords: [49.8671, 40.4093], trip: 17, country: "Azerbaijan" },
-        { name: "Athens", coords: [23.7275, 37.9838], trip: 17, country: "Greece" },
-        { name: "Meteora", coords: [21.6306, 39.7217], trip: 17, country: "Greece" },
-        { name: "Tangier", coords: [-5.8326, 35.7595], trip: 17, country: "Morocco" },
-        { name: "Marrakech", coords: [-7.9811, 31.6295], trip: 17, country: "Morocco" },
-
-        // Trip 18: Morocco → West Africa
-        { name: "Fes", coords: [-5.0078, 34.0181], trip: 18, country: "Morocco" },
-        { name: "Nouakchott", coords: [-15.9785, 18.0735], trip: 18, country: "Mauritania" },
-        { name: "Dakar", coords: [-17.4677, 14.7167], trip: 18, country: "Senegal" },
-        { name: "Banjul", coords: [-16.5885, 13.4549], trip: 18, country: "Gambia" },
-        { name: "Bissau", coords: [-15.5977, 11.8816], trip: 18, country: "Guinea-Bissau" },
-        { name: "Freetown", coords: [-13.2317, 8.4657], trip: 18, country: "Sierra Leone" },
-        { name: "Monrovia", coords: [-10.8047, 6.3156], trip: 18, country: "Liberia" },
-        { name: "Abidjan", coords: [-4.0305, 5.3600], trip: 18, country: "Ivory Coast" },
-        { name: "Accra", coords: [-0.1869, 5.6037], trip: 18, country: "Ghana" },
-
-        // Trip 19: Central → Southern Africa
-        { name: "Lomé", coords: [1.2255, 6.1256], trip: 19, country: "Togo" },
-        { name: "Cotonou", coords: [2.3158, 6.3654], trip: 19, country: "Benin" },
-        { name: "Lagos", coords: [3.3792, 6.5244], trip: 19, country: "Nigeria" },
-        { name: "Yaoundé", coords: [11.5021, 3.8480], trip: 19, country: "Cameroon" },
-        { name: "Libreville", coords: [9.4673, 0.4162], trip: 19, country: "Gabon" },
-        { name: "Brazzaville", coords: [15.2663, -4.2634], trip: 19, country: "Congo" },
-        { name: "Luanda", coords: [13.2343, -8.8390], trip: 19, country: "Angola" },
-        { name: "Windhoek", coords: [17.0658, -22.5609], trip: 19, country: "Namibia" },
-        { name: "Sossusvlei", coords: [15.2938, -24.7275], trip: 19, country: "Namibia" },
-        { name: "Maun", coords: [23.4162, -19.9833], trip: 19, country: "Botswana" },
-        { name: "Victoria Falls", coords: [25.8572, -17.9243], trip: 19, country: "Zimbabwe" },
-        { name: "Johannesburg", coords: [28.0473, -26.2041], trip: 19, country: "South Africa" },
-
-        // Trip 20: East Africa
-        { name: "Kruger NP", coords: [31.4854, -24.0119], trip: 20, country: "South Africa" },
-        { name: "Maputo", coords: [32.5892, -25.9692], trip: 20, country: "Mozambique" },
-        { name: "Lusaka", coords: [28.2871, -15.3875], trip: 20, country: "Zambia" },
-        { name: "Dar es Salaam", coords: [39.2083, -6.7924], trip: 20, country: "Tanzania" },
-        { name: "Zanzibar", coords: [39.1880, -6.1659], trip: 20, country: "Tanzania" },
-        { name: "Nairobi", coords: [36.8219, -1.2921], trip: 20, country: "Kenya" },
-        { name: "Kampala", coords: [32.5825, 0.3476], trip: 20, country: "Uganda" },
-        { name: "Kigali", coords: [30.0619, -1.9403], trip: 20, country: "Rwanda" },
-        { name: "Addis Ababa", coords: [38.7578, 9.0054], trip: 20, country: "Ethiopia" },
-        { name: "Lalibela", coords: [38.9800, 12.0319], trip: 20, country: "Ethiopia" },
-
-        // Trip 21: Egypt → Middle East → Dubai
-        { name: "Khartoum", coords: [32.5599, 15.5007], trip: 21, country: "Sudan" },
-        { name: "Meroë", coords: [33.7489, 16.9386], trip: 21, country: "Sudan" },
-        { name: "Abu Simbel", coords: [31.6258, 22.3372], trip: 21, country: "Egypt" },
-        { name: "Luxor", coords: [32.6421, 25.6872], trip: 21, country: "Egypt" },
-        { name: "Cairo", coords: [31.2357, 30.0444], trip: 21, country: "Egypt" },
-        { name: "Petra", coords: [35.4444, 30.3285], trip: 21, country: "Jordan" },
-        { name: "Amman", coords: [35.9106, 31.9454], trip: 21, country: "Jordan" },
-        { name: "AlUla", coords: [37.9236, 26.6175], trip: 21, country: "Saudi Arabia" },
-        { name: "Jeddah", coords: [39.1925, 21.4858], trip: 21, country: "Saudi Arabia" },
-        { name: "Riyadh", coords: [46.6753, 24.7136], trip: 21, country: "Saudi Arabia" },
-        { name: "Kuwait City", coords: [47.9783, 29.3759], trip: 21, country: "Kuwait" },
-        { name: "Dubai (End)", coords: [55.2708, 25.2048], trip: 21, country: "UAE" },
-    ]
+const colors = {
+    driving: '#27ae60',
+    ferry: '#3498db',
+    shipping: '#9b59b6'
 };
 
-// Ship routes (dashed lines)
-const shipRoutes = [
-    { from: [55.3, 25.3], to: [56.28, 27.18], name: "Sharjah → Bandar Abbas" },
-    { from: [78.15, 8.78], to: [79.86, 6.93], name: "Tuticorin → Colombo" },
-    { from: [90.41, 23.81], to: [100.50, 13.76], name: "Dhaka → Bangkok" },
-    { from: [153.03, -27.47], to: [174.76, -36.85], name: "Brisbane → Auckland" },
-    { from: [174.76, -36.85], to: [-71.63, -33.05], name: "Auckland → Valparaíso" },
-    { from: [-75.51, 10.39], to: [-79.52, 8.98], name: "Cartagena → Panama City" },
-    { from: [-122.33, 47.61], to: [-1.40, 50.91], name: "Seattle → Southampton" },
+// All stops organized by trip (1-21)
+const stops = [
+    // Trip 1: Dubai → Iran → Pakistan → India
+    { name: "Dubai", coords: [55.2708, 25.2048], trip: 1, country: "UAE" },
+    { name: "Abu Dhabi", coords: [54.3666, 24.4539], trip: 1, country: "UAE" },
+    { name: "Muscat", coords: [58.4059, 23.5880], trip: 1, country: "Oman" },
+    { name: "Nizwa", coords: [57.5311, 22.9333], trip: 1, country: "Oman" },
+    { name: "Sharjah", coords: [55.4033, 25.3463], trip: 1, country: "UAE" },
+    // FERRY: Sharjah → Bandar Abbas
+    { name: "Bandar Abbas", coords: [56.2808, 27.1865], trip: 1, country: "Iran" },
+    { name: "Shiraz", coords: [52.5311, 29.5918], trip: 1, country: "Iran" },
+    { name: "Isfahan", coords: [51.6680, 32.6546], trip: 1, country: "Iran" },
+    { name: "Yazd", coords: [54.3675, 31.8974], trip: 1, country: "Iran" },
+    { name: "Tehran", coords: [51.3890, 35.6892], trip: 1, country: "Iran" },
+    { name: "Tabriz", coords: [46.2919, 38.0800], trip: 1, country: "Iran" },
+    { name: "Quetta", coords: [67.0011, 30.1798], trip: 1, country: "Pakistan" },
+    { name: "Lahore", coords: [74.3587, 31.5204], trip: 1, country: "Pakistan" },
+    { name: "Islamabad", coords: [73.0479, 33.6844], trip: 1, country: "Pakistan" },
+    { name: "Hunza", coords: [74.6597, 36.3167], trip: 1, country: "Pakistan" },
+    { name: "Amritsar", coords: [74.8723, 31.6340], trip: 1, country: "India" },
+    { name: "Delhi", coords: [77.1025, 28.7041], trip: 1, country: "India" },
+    { name: "Jaipur", coords: [75.7873, 26.9124], trip: 1, country: "India" },
+    { name: "Jodhpur", coords: [73.0243, 26.2389], trip: 1, country: "India" },
+    { name: "Udaipur", coords: [73.7125, 24.5854], trip: 1, country: "India" },
+
+    // Trip 2: India → Sri Lanka → Nepal → Bangladesh
+    { name: "Agra", coords: [78.0081, 27.1767], trip: 2, country: "India" },
+    { name: "Varanasi", coords: [82.9913, 25.3176], trip: 2, country: "India" },
+    { name: "Mumbai", coords: [72.8777, 19.0760], trip: 2, country: "India" },
+    { name: "Goa", coords: [74.1240, 15.2993], trip: 2, country: "India" },
+    { name: "Tuticorin", coords: [78.1348, 8.7642], trip: 2, country: "India" },
+    // SHIP: Tuticorin → Colombo
+    { name: "Colombo", coords: [79.8612, 6.9271], trip: 2, country: "Sri Lanka" },
+    { name: "Kandy", coords: [80.6337, 7.2906], trip: 2, country: "Sri Lanka" },
+    { name: "Galle", coords: [80.2170, 6.0535], trip: 2, country: "Sri Lanka" },
+    // SHIP: Colombo → Tuticorin (return)
+    { name: "Kolkata", coords: [88.3639, 22.5726], trip: 2, country: "India" },
+    { name: "Darjeeling", coords: [88.2627, 27.0410], trip: 2, country: "India" },
+    { name: "Kathmandu", coords: [85.3240, 27.7172], trip: 2, country: "Nepal" },
+    { name: "Pokhara", coords: [83.9856, 28.2096], trip: 2, country: "Nepal" },
+    { name: "Dhaka", coords: [90.4125, 23.8103], trip: 2, country: "Bangladesh" },
+    { name: "Chittagong", coords: [91.83, 22.33], trip: 2, country: "Bangladesh" },
+    // SHIP: Chittagong → Laem Chabang (via Strait of Malacca)
+
+    // Trip 3: Thailand → SE Asia → Singapore
+    { name: "Laem Chabang", coords: [100.88, 13.08], trip: 3, country: "Thailand" },
+    { name: "Bangkok", coords: [100.5018, 13.7563], trip: 3, country: "Thailand" },
+    { name: "Chiang Mai", coords: [98.9853, 18.7883], trip: 3, country: "Thailand" },
+    { name: "Vientiane", coords: [102.6331, 17.9757], trip: 3, country: "Laos" },
+    { name: "Luang Prabang", coords: [102.1346, 19.8867], trip: 3, country: "Laos" },
+    { name: "Hanoi", coords: [105.8342, 21.0278], trip: 3, country: "Vietnam" },
+    { name: "Hue", coords: [107.5905, 16.4637], trip: 3, country: "Vietnam" },
+    { name: "Hoi An", coords: [108.3380, 15.8801], trip: 3, country: "Vietnam" },
+    { name: "Ho Chi Minh City", coords: [106.6297, 10.8231], trip: 3, country: "Vietnam" },
+    { name: "Phnom Penh", coords: [104.9160, 11.5564], trip: 3, country: "Cambodia" },
+    { name: "Siem Reap", coords: [103.8600, 13.3633], trip: 3, country: "Cambodia" },
+    { name: "Penang", coords: [100.3327, 5.4141], trip: 3, country: "Malaysia" },
+    { name: "Kuala Lumpur", coords: [101.6869, 3.1390], trip: 3, country: "Malaysia" },
+    { name: "Singapore", coords: [103.8198, 1.3521], trip: 3, country: "Singapore" },
+
+    // Trip 4: Indonesia → Timor → Australia
+    // FERRY: Singapore → Batam
+    { name: "Batam", coords: [104.0305, 1.0456], trip: 4, country: "Indonesia" },
+    { name: "Yogyakarta", coords: [110.3695, -7.7956], trip: 4, country: "Indonesia" },
+    { name: "Bali", coords: [115.1889, -8.4095], trip: 4, country: "Indonesia" },
+    { name: "Flores", coords: [121.0794, -8.6574], trip: 4, country: "Indonesia" },
+    { name: "Dili", coords: [125.5795, -8.5569], trip: 4, country: "Timor-Leste" },
+    // FERRY: Dili → Darwin
+    { name: "Darwin", coords: [130.8456, -12.4634], trip: 4, country: "Australia" },
+    { name: "Broome", coords: [122.2363, -17.9614], trip: 4, country: "Australia" },
+    { name: "Perth", coords: [115.8605, -31.9505], trip: 4, country: "Australia" },
+    { name: "Adelaide", coords: [138.6007, -34.9285], trip: 4, country: "Australia" },
+    { name: "Melbourne", coords: [144.9631, -37.8136], trip: 4, country: "Australia" },
+    { name: "Sydney", coords: [151.2093, -33.8688], trip: 4, country: "Australia" },
+    { name: "Brisbane", coords: [153.0251, -27.4698], trip: 4, country: "Australia" },
+    // SHIP: Brisbane → Auckland
+
+    // Trip 5: New Zealand
+    { name: "Auckland", coords: [174.7633, -36.8485], trip: 5, country: "New Zealand" },
+    { name: "Rotorua", coords: [176.2497, -38.1368], trip: 5, country: "New Zealand" },
+    { name: "Napier", coords: [176.9120, -39.4928], trip: 5, country: "New Zealand" },
+    { name: "Wellington", coords: [174.7762, -41.2865], trip: 5, country: "New Zealand" },
+    // FERRY: Wellington → Picton
+    { name: "Picton", coords: [174.0010, -41.2906], trip: 5, country: "New Zealand" },
+    { name: "Christchurch", coords: [172.6362, -43.5321], trip: 5, country: "New Zealand" },
+    { name: "Mt Cook", coords: [170.0962, -43.7340], trip: 5, country: "New Zealand" },
+    { name: "Queenstown", coords: [168.6626, -45.0312], trip: 5, country: "New Zealand" },
+    { name: "Milford Sound", coords: [167.9256, -44.6414], trip: 5, country: "New Zealand" },
+    { name: "Wanaka", coords: [169.1320, -44.7032], trip: 5, country: "New Zealand" },
+    { name: "Auckland (dep)", coords: [174.7633, -36.8485], trip: 5, country: "New Zealand" },
+    // SHIP: Auckland → Valparaíso
+
+    // Trip 6: Chile → Patagonia → Argentina
+    { name: "Valparaíso", coords: [-71.6273, -33.0472], trip: 6, country: "Chile" },
+    { name: "Santiago", coords: [-70.6483, -33.4489], trip: 6, country: "Chile" },
+    { name: "Pucón", coords: [-71.9545, -39.2823], trip: 6, country: "Chile" },
+    { name: "Puerto Varas", coords: [-72.9854, -41.3167], trip: 6, country: "Chile" },
+    { name: "Chiloé", coords: [-73.7706, -42.4695], trip: 6, country: "Chile" },
+    { name: "Torres del Paine", coords: [-72.9658, -50.9423], trip: 6, country: "Chile" },
+    { name: "El Calafate", coords: [-72.2753, -50.3402], trip: 6, country: "Argentina" },
+    { name: "Ushuaia", coords: [-68.3030, -54.8019], trip: 6, country: "Argentina" },
+    { name: "Puerto Madryn", coords: [-65.0368, -42.7692], trip: 6, country: "Argentina" },
+    { name: "Buenos Aires", coords: [-58.3816, -34.6037], trip: 6, country: "Argentina" },
+
+    // Trip 7: Argentina → Brazil → Bolivia → Peru
+    { name: "Iguazu Falls", coords: [-54.4409, -25.6953], trip: 7, country: "Argentina/Brazil" },
+    { name: "Asunción", coords: [-57.5759, -25.2637], trip: 7, country: "Paraguay" },
+    { name: "Brasília", coords: [-47.8825, -15.7942], trip: 7, country: "Brazil" },
+    { name: "Santa Cruz", coords: [-63.1812, -17.7833], trip: 7, country: "Bolivia" },
+    { name: "Sucre", coords: [-65.2550, -19.0196], trip: 7, country: "Bolivia" },
+    { name: "Uyuni", coords: [-66.8250, -20.4604], trip: 7, country: "Bolivia" },
+    { name: "La Paz", coords: [-68.1193, -16.4897], trip: 7, country: "Bolivia" },
+    { name: "Puno", coords: [-70.0219, -15.8402], trip: 7, country: "Peru" },
+    { name: "Arequipa", coords: [-71.5375, -16.4090], trip: 7, country: "Peru" },
+    { name: "Cusco", coords: [-71.9675, -13.5320], trip: 7, country: "Peru" },
+    { name: "Lima", coords: [-77.0428, -12.0464], trip: 7, country: "Peru" },
+
+    // Trip 8: Peru → Ecuador → Colombia → Central America
+    { name: "Guayaquil", coords: [-79.8891, -2.1894], trip: 8, country: "Ecuador" },
+    { name: "Cuenca", coords: [-79.0045, -2.9001], trip: 8, country: "Ecuador" },
+    { name: "Quito", coords: [-78.4678, -0.1807], trip: 8, country: "Ecuador" },
+    { name: "Bogotá", coords: [-74.0721, 4.7110], trip: 8, country: "Colombia" },
+    { name: "Medellín", coords: [-75.5636, 6.2442], trip: 8, country: "Colombia" },
+    { name: "Cartagena", coords: [-75.5144, 10.3910], trip: 8, country: "Colombia" },
+    // SHIP: Cartagena → Panama City (Darién Gap)
+    { name: "Panama City", coords: [-79.5197, 8.9824], trip: 8, country: "Panama" },
+    { name: "San José", coords: [-84.0907, 9.9281], trip: 8, country: "Costa Rica" },
+    { name: "Managua", coords: [-86.2362, 12.1150], trip: 8, country: "Nicaragua" },
+    { name: "Tegucigalpa", coords: [-87.1921, 14.0723], trip: 8, country: "Honduras" },
+    { name: "San Salvador", coords: [-89.2182, 13.6929], trip: 8, country: "El Salvador" },
+    { name: "Guatemala City", coords: [-90.5069, 14.6349], trip: 8, country: "Guatemala" },
+    { name: "Antigua", coords: [-90.7295, 14.5586], trip: 8, country: "Guatemala" },
+
+    // Trip 9: Central America → Mexico
+    { name: "Belize City", coords: [-88.1962, 17.5046], trip: 9, country: "Belize" },
+    { name: "Tulum", coords: [-87.4290, 20.2114], trip: 9, country: "Mexico" },
+    { name: "Mérida", coords: [-89.5926, 20.9674], trip: 9, country: "Mexico" },
+    { name: "Palenque", coords: [-91.9822, 17.5089], trip: 9, country: "Mexico" },
+    { name: "San Cristóbal", coords: [-92.6376, 16.7370], trip: 9, country: "Mexico" },
+    { name: "Oaxaca", coords: [-96.7266, 17.0732], trip: 9, country: "Mexico" },
+    { name: "Mexico City", coords: [-99.1332, 19.4326], trip: 9, country: "Mexico" },
+    { name: "Guanajuato", coords: [-101.2574, 21.0190], trip: 9, country: "Mexico" },
+    { name: "Guadalajara", coords: [-103.3496, 20.6597], trip: 9, country: "Mexico" },
+    { name: "Puerto Vallarta", coords: [-105.2353, 20.6534], trip: 9, country: "Mexico" },
+    { name: "Copper Canyon", coords: [-107.7586, 27.5111], trip: 9, country: "Mexico" },
+
+    // Trip 10: Mexico → USA Southwest
+    { name: "La Paz (Baja)", coords: [-110.3128, 24.1426], trip: 10, country: "Mexico" },
+    { name: "Cabo San Lucas", coords: [-109.9167, 22.8905], trip: 10, country: "Mexico" },
+    { name: "Ensenada", coords: [-116.5964, 31.8667], trip: 10, country: "Mexico" },
+    { name: "Tijuana", coords: [-117.0382, 32.5149], trip: 10, country: "Mexico" },
+    { name: "San Diego", coords: [-117.1611, 32.7157], trip: 10, country: "USA" },
+    { name: "Los Angeles", coords: [-118.2437, 34.0522], trip: 10, country: "USA" },
+    { name: "Las Vegas", coords: [-115.1398, 36.1699], trip: 10, country: "USA" },
+    { name: "Grand Canyon", coords: [-112.1401, 36.0544], trip: 10, country: "USA" },
+    { name: "Monument Valley", coords: [-110.1135, 36.9980], trip: 10, country: "USA" },
+    { name: "Moab", coords: [-109.5498, 38.5733], trip: 10, country: "USA" },
+    { name: "Denver", coords: [-104.9903, 39.7392], trip: 10, country: "USA" },
+    { name: "Santa Fe", coords: [-105.9378, 35.6870], trip: 10, country: "USA" },
+    { name: "Big Bend", coords: [-103.2502, 29.2500], trip: 10, country: "USA" },
+    { name: "Austin", coords: [-97.7431, 30.2672], trip: 10, country: "USA" },
+
+    // Trip 11: USA Midwest + East + Canada
+    { name: "Kansas City", coords: [-94.5786, 39.0997], trip: 11, country: "USA" },
+    { name: "St Louis", coords: [-90.1994, 38.6270], trip: 11, country: "USA" },
+    { name: "Chicago", coords: [-87.6298, 41.8781], trip: 11, country: "USA" },
+    { name: "Detroit", coords: [-83.0458, 42.3314], trip: 11, country: "USA" },
+    { name: "Niagara Falls", coords: [-79.0377, 43.0896], trip: 11, country: "USA/Canada" },
+    { name: "Toronto", coords: [-79.3832, 43.6532], trip: 11, country: "Canada" },
+    { name: "Ottawa", coords: [-75.6972, 45.4215], trip: 11, country: "Canada" },
+    { name: "Montreal", coords: [-73.5673, 45.5017], trip: 11, country: "Canada" },
+    { name: "Quebec City", coords: [-71.2082, 46.8139], trip: 11, country: "Canada" },
+    { name: "Boston", coords: [-71.0589, 42.3601], trip: 11, country: "USA" },
+    { name: "New York City", coords: [-74.0060, 40.7128], trip: 11, country: "USA" },
+    { name: "Philadelphia", coords: [-75.1652, 39.9526], trip: 11, country: "USA" },
+    { name: "Washington DC", coords: [-77.0369, 38.9072], trip: 11, country: "USA" },
+    { name: "Blue Ridge Parkway", coords: [-79.8190, 37.5407], trip: 11, country: "USA" },
+    { name: "Nashville", coords: [-86.7816, 36.1627], trip: 11, country: "USA" },
+    { name: "Memphis", coords: [-90.0490, 35.1495], trip: 11, country: "USA" },
+    { name: "New Orleans", coords: [-90.0715, 29.9511], trip: 11, country: "USA" },
+    { name: "Miami", coords: [-80.1918, 25.7617], trip: 11, country: "USA" },
+    { name: "Minneapolis", coords: [-93.2650, 44.9778], trip: 11, country: "USA" },
+
+    // Trip 12: Northern USA → Canada → Alaska
+    { name: "Badlands", coords: [-102.3397, 43.8554], trip: 12, country: "USA" },
+    { name: "Mt Rushmore", coords: [-103.4591, 43.8791], trip: 12, country: "USA" },
+    { name: "Yellowstone", coords: [-110.5885, 44.4280], trip: 12, country: "USA" },
+    { name: "Grand Teton", coords: [-110.6818, 43.7904], trip: 12, country: "USA" },
+    { name: "Glacier NP", coords: [-113.7870, 48.7596], trip: 12, country: "USA" },
+    { name: "Calgary", coords: [-114.0719, 51.0447], trip: 12, country: "Canada" },
+    { name: "Banff", coords: [-115.5708, 51.1784], trip: 12, country: "Canada" },
+    { name: "Jasper", coords: [-118.0814, 52.8737], trip: 12, country: "Canada" },
+    { name: "Vancouver", coords: [-123.1207, 49.2827], trip: 12, country: "Canada" },
+    { name: "Victoria", coords: [-123.3656, 48.4284], trip: 12, country: "Canada" },
+    { name: "Dawson Creek", coords: [-120.2377, 55.7596], trip: 12, country: "Canada" },
+    { name: "Whitehorse", coords: [-135.0568, 60.7212], trip: 12, country: "Canada" },
+    { name: "Dawson City", coords: [-139.4320, 64.0600], trip: 12, country: "Canada" },
+    { name: "Fairbanks", coords: [-147.7164, 64.8378], trip: 12, country: "USA" },
+    { name: "Denali", coords: [-151.1926, 63.1148], trip: 12, country: "USA" },
+    { name: "Anchorage", coords: [-149.9003, 61.2181], trip: 12, country: "USA" },
+    { name: "Seattle", coords: [-122.3321, 47.6062], trip: 12, country: "USA" },
+    // SHIP: Seattle → Southampton
+
+    // Trip 13: UK → Ireland → Western Europe
+    { name: "Southampton", coords: [-1.4044, 50.9097], trip: 13, country: "UK" },
+    { name: "London", coords: [-0.1278, 51.5074], trip: 13, country: "UK" },
+    { name: "Bath", coords: [-2.3599, 51.3758], trip: 13, country: "UK" },
+    { name: "Lake District", coords: [-3.0886, 54.4609], trip: 13, country: "UK" },
+    { name: "Edinburgh", coords: [-3.1883, 55.9533], trip: 13, country: "UK" },
+    { name: "Isle of Skye", coords: [-6.2293, 57.2736], trip: 13, country: "UK" },
+    { name: "Cairnryan", coords: [-5.0173, 54.9727], trip: 13, country: "UK" },
+    // FERRY: Cairnryan → Belfast
+    { name: "Belfast", coords: [-5.9301, 54.5973], trip: 13, country: "UK" },
+    { name: "Giants Causeway", coords: [-6.5117, 55.2408], trip: 13, country: "UK" },
+    { name: "Dublin", coords: [-6.2603, 53.3498], trip: 13, country: "Ireland" },
+    { name: "Ring of Kerry", coords: [-9.7046, 51.9611], trip: 13, country: "Ireland" },
+    { name: "Cork", coords: [-8.4863, 51.8969], trip: 13, country: "Ireland" },
+    { name: "Rosslare", coords: [-6.3389, 52.2544], trip: 13, country: "Ireland" },
+    // FERRY: Rosslare → Cherbourg
+    { name: "Cherbourg", coords: [-1.6147, 49.6337], trip: 13, country: "France" },
+    { name: "Normandy", coords: [-0.3708, 49.1829], trip: 13, country: "France" },
+    { name: "Paris", coords: [2.3522, 48.8566], trip: 13, country: "France" },
+    { name: "Brussels", coords: [4.3517, 50.8503], trip: 13, country: "Belgium" },
+    { name: "Amsterdam", coords: [4.9041, 52.3676], trip: 13, country: "Netherlands" },
+    { name: "Luxembourg", coords: [6.1296, 49.8153], trip: 13, country: "Luxembourg" },
+    { name: "Frankfurt", coords: [8.6821, 50.1109], trip: 13, country: "Germany" },
+    { name: "Munich", coords: [11.5820, 48.1351], trip: 13, country: "Germany" },
+
+    // Trip 14: Nordics + Baltics
+    { name: "Copenhagen", coords: [12.5683, 55.6761], trip: 14, country: "Denmark" },
+    { name: "Oslo", coords: [10.7522, 59.9139], trip: 14, country: "Norway" },
+    { name: "Bergen", coords: [5.3221, 60.3913], trip: 14, country: "Norway" },
+    { name: "Atlantic Road", coords: [7.3535, 63.0172], trip: 14, country: "Norway" },
+    { name: "Lofoten", coords: [14.5615, 68.2092], trip: 14, country: "Norway" },
+    { name: "Stockholm", coords: [18.0686, 59.3293], trip: 14, country: "Sweden" },
+    { name: "Helsinki", coords: [24.9384, 60.1699], trip: 14, country: "Finland" },
+    { name: "Tallinn", coords: [24.7536, 59.4370], trip: 14, country: "Estonia" },
+    { name: "Riga", coords: [24.1052, 56.9496], trip: 14, country: "Latvia" },
+    { name: "Vilnius", coords: [25.2797, 54.6872], trip: 14, country: "Lithuania" },
+
+    // Trip 15: Poland → Western Balkans
+    { name: "Warsaw", coords: [21.0122, 52.2297], trip: 15, country: "Poland" },
+    { name: "Krakow", coords: [19.9450, 50.0647], trip: 15, country: "Poland" },
+    { name: "Prague", coords: [14.4378, 50.0755], trip: 15, country: "Czechia" },
+    { name: "Bratislava", coords: [17.1077, 48.1486], trip: 15, country: "Slovakia" },
+    { name: "Vienna", coords: [16.3738, 48.2082], trip: 15, country: "Austria" },
+    { name: "Salzburg", coords: [13.0550, 47.8095], trip: 15, country: "Austria" },
+    { name: "Budapest", coords: [19.0402, 47.4979], trip: 15, country: "Hungary" },
+    { name: "Ljubljana", coords: [14.5058, 46.0569], trip: 15, country: "Slovenia" },
+    { name: "Lake Bled", coords: [14.1086, 46.3683], trip: 15, country: "Slovenia" },
+    { name: "Zagreb", coords: [15.9819, 45.8150], trip: 15, country: "Croatia" },
+    { name: "Plitvice", coords: [15.6211, 44.8654], trip: 15, country: "Croatia" },
+    { name: "Split", coords: [16.4402, 43.5081], trip: 15, country: "Croatia" },
+    { name: "Dubrovnik", coords: [18.0944, 42.6507], trip: 15, country: "Croatia" },
+    { name: "Mostar", coords: [17.8078, 43.3438], trip: 15, country: "Bosnia" },
+    { name: "Sarajevo", coords: [18.4131, 43.8563], trip: 15, country: "Bosnia" },
+    { name: "Kotor", coords: [18.7712, 42.4247], trip: 15, country: "Montenegro" },
+    { name: "Podgorica", coords: [19.2636, 42.4304], trip: 15, country: "Montenegro" },
+
+    // Trip 16: Eastern Balkans → Turkey → Caucasus
+    { name: "Tirana", coords: [19.8187, 41.3275], trip: 16, country: "Albania" },
+    { name: "Pristina", coords: [21.1655, 42.6629], trip: 16, country: "Kosovo" },
+    { name: "Skopje", coords: [21.4314, 41.9981], trip: 16, country: "North Macedonia" },
+    { name: "Ohrid", coords: [20.7919, 41.1231], trip: 16, country: "North Macedonia" },
+    { name: "Belgrade", coords: [20.4489, 44.7866], trip: 16, country: "Serbia" },
+    { name: "Bucharest", coords: [26.1025, 44.4268], trip: 16, country: "Romania" },
+    { name: "Transylvania", coords: [25.6012, 46.0700], trip: 16, country: "Romania" },
+    { name: "Chișinău", coords: [28.8638, 47.0105], trip: 16, country: "Moldova" },
+    { name: "Sofia", coords: [23.3219, 42.6977], trip: 16, country: "Bulgaria" },
+    { name: "Plovdiv", coords: [24.7453, 42.1354], trip: 16, country: "Bulgaria" },
+    { name: "Istanbul", coords: [28.9784, 41.0082], trip: 16, country: "Turkey" },
+    { name: "Cappadocia", coords: [34.8289, 38.6431], trip: 16, country: "Turkey" },
+    { name: "Tbilisi", coords: [44.8271, 41.7151], trip: 16, country: "Georgia" },
+    { name: "Kazbegi", coords: [44.6199, 42.6614], trip: 16, country: "Georgia" },
+
+    // Trip 17: Caucasus → Greece → Morocco
+    { name: "Yerevan", coords: [44.5152, 40.1872], trip: 17, country: "Armenia" },
+    { name: "Lake Sevan", coords: [45.0196, 40.3588], trip: 17, country: "Armenia" },
+    { name: "Baku", coords: [49.8671, 40.4093], trip: 17, country: "Azerbaijan" },
+    { name: "Tbilisi (return)", coords: [44.8271, 41.7151], trip: 17, country: "Georgia" },
+    { name: "Athens", coords: [23.7275, 37.9838], trip: 17, country: "Greece" },
+    { name: "Meteora", coords: [21.6306, 39.7217], trip: 17, country: "Greece" },
+    { name: "Patras", coords: [21.7346, 38.2466], trip: 17, country: "Greece" },
+    // FERRY: Patras → Bari
+    { name: "Bari", coords: [16.8719, 41.1171], trip: 17, country: "Italy" },
+    { name: "Rome", coords: [12.4964, 41.9028], trip: 17, country: "Italy" },
+    { name: "Barcelona", coords: [2.1734, 41.3851], trip: 17, country: "Spain" },
+    { name: "Algeciras", coords: [-5.4536, 36.1408], trip: 17, country: "Spain" },
+    // FERRY: Algeciras → Tangier
+    { name: "Tangier", coords: [-5.8326, 35.7595], trip: 17, country: "Morocco" },
+    { name: "Fes", coords: [-5.0078, 34.0181], trip: 17, country: "Morocco" },
+    { name: "Marrakech", coords: [-7.9811, 31.6295], trip: 17, country: "Morocco" },
+
+    // Trip 18: Morocco → West Africa
+    { name: "Sahara", coords: [-5.5333, 30.0333], trip: 18, country: "Morocco" },
+    { name: "Nouakchott", coords: [-15.9785, 18.0735], trip: 18, country: "Mauritania" },
+    { name: "Saint-Louis", coords: [-16.4818, 16.0326], trip: 18, country: "Senegal" },
+    { name: "Dakar", coords: [-17.4677, 14.7167], trip: 18, country: "Senegal" },
+    { name: "Banjul", coords: [-16.5885, 13.4549], trip: 18, country: "Gambia" },
+    { name: "Bissau", coords: [-15.5977, 11.8816], trip: 18, country: "Guinea-Bissau" },
+    { name: "Freetown", coords: [-13.2317, 8.4657], trip: 18, country: "Sierra Leone" },
+    { name: "Monrovia", coords: [-10.8047, 6.3156], trip: 18, country: "Liberia" },
+    { name: "Abidjan", coords: [-4.0305, 5.3600], trip: 18, country: "Ivory Coast" },
+    { name: "Accra", coords: [-0.1869, 5.6037], trip: 18, country: "Ghana" },
+    { name: "Cape Coast", coords: [-1.2466, 5.1053], trip: 18, country: "Ghana" },
+
+    // Trip 19: Central → Southern Africa
+    { name: "Lomé", coords: [1.2255, 6.1256], trip: 19, country: "Togo" },
+    { name: "Cotonou", coords: [2.3158, 6.3654], trip: 19, country: "Benin" },
+    { name: "Lagos", coords: [3.3792, 6.5244], trip: 19, country: "Nigeria" },
+    { name: "Yaoundé", coords: [11.5021, 3.8480], trip: 19, country: "Cameroon" },
+    { name: "Libreville", coords: [9.4673, 0.4162], trip: 19, country: "Gabon" },
+    { name: "Brazzaville", coords: [15.2663, -4.2634], trip: 19, country: "Congo" },
+    { name: "Luanda", coords: [13.2343, -8.8390], trip: 19, country: "Angola" },
+    { name: "Etosha", coords: [16.3254, -18.8556], trip: 19, country: "Namibia" },
+    { name: "Sossusvlei", coords: [15.2938, -24.7275], trip: 19, country: "Namibia" },
+    { name: "Windhoek", coords: [17.0658, -22.5609], trip: 19, country: "Namibia" },
+    { name: "Okavango Delta", coords: [22.8372, -19.2868], trip: 19, country: "Botswana" },
+    { name: "Chobe", coords: [25.1264, -18.3644], trip: 19, country: "Botswana" },
+    { name: "Victoria Falls", coords: [25.8572, -17.9243], trip: 19, country: "Zimbabwe" },
+    { name: "Johannesburg", coords: [28.0473, -26.2041], trip: 19, country: "South Africa" },
+
+    // Trip 20: East Africa
+    { name: "Kruger NP", coords: [31.4854, -24.0119], trip: 20, country: "South Africa" },
+    { name: "Mlilwane", coords: [31.1869, -26.4728], trip: 20, country: "Eswatini" },
+    { name: "Maputo", coords: [32.5892, -25.9692], trip: 20, country: "Mozambique" },
+    { name: "South Luangwa", coords: [31.8500, -13.0833], trip: 20, country: "Zambia" },
+    { name: "Dar es Salaam", coords: [39.2083, -6.7924], trip: 20, country: "Tanzania" },
+    { name: "Zanzibar", coords: [39.1880, -6.1659], trip: 20, country: "Tanzania" },
+    { name: "Serengeti", coords: [34.8333, -2.3333], trip: 20, country: "Tanzania" },
+    { name: "Ngorongoro", coords: [35.5857, -3.2408], trip: 20, country: "Tanzania" },
+    { name: "Masai Mara", coords: [35.1439, -1.4061], trip: 20, country: "Kenya" },
+    { name: "Nairobi", coords: [36.8219, -1.2921], trip: 20, country: "Kenya" },
+    { name: "Kampala", coords: [32.5825, 0.3476], trip: 20, country: "Uganda" },
+    { name: "Bwindi", coords: [29.6739, -1.0489], trip: 20, country: "Uganda" },
+    { name: "Kigali", coords: [30.0619, -1.9403], trip: 20, country: "Rwanda" },
+    { name: "Addis Ababa", coords: [38.7578, 9.0054], trip: 20, country: "Ethiopia" },
+    { name: "Lalibela", coords: [38.9800, 12.0319], trip: 20, country: "Ethiopia" },
+    { name: "Simien Mountains", coords: [38.0667, 13.3833], trip: 20, country: "Ethiopia" },
+
+    // Trip 21: Egypt → Middle East → Dubai
+    { name: "Khartoum", coords: [32.5599, 15.5007], trip: 21, country: "Sudan" },
+    { name: "Meroë", coords: [33.7489, 16.9386], trip: 21, country: "Sudan" },
+    { name: "Abu Simbel", coords: [31.6258, 22.3372], trip: 21, country: "Egypt" },
+    { name: "Luxor", coords: [32.6421, 25.6872], trip: 21, country: "Egypt" },
+    { name: "Cairo", coords: [31.2357, 30.0444], trip: 21, country: "Egypt" },
+    { name: "Nuweiba", coords: [34.6651, 29.0261], trip: 21, country: "Egypt" },
+    // FERRY: Nuweiba → Aqaba
+    { name: "Aqaba", coords: [35.0063, 29.5267], trip: 21, country: "Jordan" },
+    { name: "Petra", coords: [35.4444, 30.3285], trip: 21, country: "Jordan" },
+    { name: "Wadi Rum", coords: [35.4241, 29.5722], trip: 21, country: "Jordan" },
+    { name: "Dead Sea", coords: [35.5500, 31.5000], trip: 21, country: "Jordan" },
+    { name: "Amman", coords: [35.9106, 31.9454], trip: 21, country: "Jordan" },
+    { name: "AlUla", coords: [37.9236, 26.6175], trip: 21, country: "Saudi Arabia" },
+    { name: "Jeddah", coords: [39.1925, 21.4858], trip: 21, country: "Saudi Arabia" },
+    { name: "Riyadh", coords: [46.6753, 24.7136], trip: 21, country: "Saudi Arabia" },
+    { name: "Kuwait City", coords: [47.9783, 29.3759], trip: 21, country: "Kuwait" },
+    { name: "Dubai (End)", coords: [55.2708, 25.2048], trip: 21, country: "UAE" },
 ];
 
-const colors = {
-    leg1: '#e74c3c',
-    leg2: '#3498db',
-    leg3: '#2ecc71',
-    ship: '#9b59b6'
+// Road segments - breaks at water crossings
+const roadSegments = [
+    // Trip 1: Dubai to Sharjah
+    { coords: [[55.2708, 25.2048], [54.3666, 24.4539], [58.4059, 23.5880], [57.5311, 22.9333], [55.4033, 25.3463]] },
+    // Trip 1: Bandar Abbas onwards through Iran, Pakistan, India
+    { coords: [[56.2808, 27.1865], [52.5311, 29.5918], [51.6680, 32.6546], [54.3675, 31.8974], [51.3890, 35.6892], [46.2919, 38.0800], [67.0011, 30.1798], [74.3587, 31.5204], [73.0479, 33.6844], [74.6597, 36.3167], [74.8723, 31.6340], [77.1025, 28.7041], [75.7873, 26.9124], [73.0243, 26.2389], [73.7125, 24.5854]] },
+    // Trip 2: India to Tuticorin
+    { coords: [[73.7125, 24.5854], [78.0081, 27.1767], [82.9913, 25.3176], [72.8777, 19.0760], [74.1240, 15.2993], [78.1348, 8.7642]] },
+    // Trip 2: Sri Lanka
+    { coords: [[79.8612, 6.9271], [80.6337, 7.2906], [80.2170, 6.0535], [79.8612, 6.9271]] },
+    // Trip 2: Back to India via east coast, Nepal, Bangladesh to Chittagong (port)
+    { coords: [[78.1348, 8.7642], [80.2707, 13.0827], [85.8245, 20.2961], [88.3639, 22.5726], [88.2627, 27.0410], [85.3240, 27.7172], [83.9856, 28.2096], [90.4125, 23.8103], [91.83, 22.33]] },
+    // Trip 3: Laem Chabang to Bangkok, then Thailand, SE Asia, Singapore
+    { coords: [[100.88, 13.08], [100.5018, 13.7563], [98.9853, 18.7883], [102.6331, 17.9757], [102.1346, 19.8867], [105.8342, 21.0278], [107.5905, 16.4637], [108.3380, 15.8801], [106.6297, 10.8231], [104.9160, 11.5564], [103.8600, 13.3633], [100.3327, 5.4141], [101.6869, 3.1390], [103.8198, 1.3521]] },
+    // Trip 4: Indonesia
+    { coords: [[104.0305, 1.0456], [110.3695, -7.7956], [115.1889, -8.4095], [121.0794, -8.6574], [125.5795, -8.5569]] },
+    // Trip 4: Australia
+    { coords: [[130.8456, -12.4634], [122.2363, -17.9614], [115.8605, -31.9505], [138.6007, -34.9285], [144.9631, -37.8136], [151.2093, -33.8688], [153.0251, -27.4698]] },
+    // Trip 5: NZ North Island to Wellington
+    { coords: [[174.7633, -36.8485], [176.2497, -38.1368], [176.9120, -39.4928], [174.7762, -41.2865]] },
+    // Trip 5: NZ South Island
+    { coords: [[174.0010, -41.2906], [172.6362, -43.5321], [170.0962, -43.7340], [168.6626, -45.0312], [167.9256, -44.6414], [169.1320, -44.7032], [172.6362, -43.5321], [174.0010, -41.2906]] },
+    // Trip 5: Back to Auckland
+    { coords: [[174.7762, -41.2865], [174.7633, -36.8485]] },
+    // Trip 6: Chile and Argentina
+    { coords: [[-71.6273, -33.0472], [-70.6483, -33.4489], [-71.9545, -39.2823], [-72.9854, -41.3167], [-73.7706, -42.4695], [-72.9658, -50.9423], [-72.2753, -50.3402], [-68.3030, -54.8019], [-65.0368, -42.7692], [-58.3816, -34.6037]] },
+    // Trip 7: South America
+    { coords: [[-58.3816, -34.6037], [-54.4409, -25.6953], [-57.5759, -25.2637], [-47.8825, -15.7942], [-63.1812, -17.7833], [-65.2550, -19.0196], [-66.8250, -20.4604], [-68.1193, -16.4897], [-70.0219, -15.8402], [-71.5375, -16.4090], [-71.9675, -13.5320], [-77.0428, -12.0464]] },
+    // Trip 8: Peru, Ecuador, Colombia to Cartagena
+    { coords: [[-77.0428, -12.0464], [-79.8891, -2.1894], [-79.0045, -2.9001], [-78.4678, -0.1807], [-74.0721, 4.7110], [-75.5636, 6.2442], [-75.5144, 10.3910]] },
+    // Trip 8: Panama to Guatemala
+    { coords: [[-79.5197, 8.9824], [-84.0907, 9.9281], [-86.2362, 12.1150], [-87.1921, 14.0723], [-89.2182, 13.6929], [-90.5069, 14.6349], [-90.7295, 14.5586]] },
+    // Trip 9: Central America and Mexico
+    { coords: [[-90.7295, 14.5586], [-88.1962, 17.5046], [-87.4290, 20.2114], [-89.5926, 20.9674], [-91.9822, 17.5089], [-92.6376, 16.7370], [-96.7266, 17.0732], [-99.1332, 19.4326], [-101.2574, 21.0190], [-103.3496, 20.6597], [-105.2353, 20.6534], [-107.7586, 27.5111]] },
+    // Trip 10: Mexico and USA Southwest
+    { coords: [[-107.7586, 27.5111], [-110.3128, 24.1426], [-109.9167, 22.8905], [-116.5964, 31.8667], [-117.0382, 32.5149], [-117.1611, 32.7157], [-118.2437, 34.0522], [-115.1398, 36.1699], [-112.1401, 36.0544], [-110.1135, 36.9980], [-109.5498, 38.5733], [-104.9903, 39.7392], [-105.9378, 35.6870], [-103.2502, 29.2500], [-97.7431, 30.2672]] },
+    // Trip 11: USA Midwest and East
+    { coords: [[-97.7431, 30.2672], [-94.5786, 39.0997], [-90.1994, 38.6270], [-87.6298, 41.8781], [-83.0458, 42.3314], [-79.0377, 43.0896], [-79.3832, 43.6532], [-75.6972, 45.4215], [-73.5673, 45.5017], [-71.2082, 46.8139], [-71.0589, 42.3601], [-74.0060, 40.7128], [-75.1652, 39.9526], [-77.0369, 38.9072], [-79.8190, 37.5407], [-86.7816, 36.1627], [-90.0490, 35.1495], [-90.0715, 29.9511], [-80.1918, 25.7617]] },
+    // Trip 11-12 connection
+    { coords: [[-80.1918, 25.7617], [-93.2650, 44.9778]] },
+    // Trip 12: Northern USA, Canada, Alaska
+    { coords: [[-93.2650, 44.9778], [-102.3397, 43.8554], [-103.4591, 43.8791], [-110.5885, 44.4280], [-110.6818, 43.7904], [-113.7870, 48.7596], [-114.0719, 51.0447], [-115.5708, 51.1784], [-118.0814, 52.8737], [-123.1207, 49.2827], [-123.3656, 48.4284], [-120.2377, 55.7596], [-135.0568, 60.7212], [-139.4320, 64.0600], [-147.7164, 64.8378], [-151.1926, 63.1148], [-149.9003, 61.2181], [-122.3321, 47.6062]] },
+    // Trip 13: UK to Cairnryan
+    { coords: [[-1.4044, 50.9097], [-0.1278, 51.5074], [-2.3599, 51.3758], [-3.0886, 54.4609], [-3.1883, 55.9533], [-6.2293, 57.2736], [-5.0173, 54.9727]] },
+    // Trip 13: Northern Ireland and Ireland
+    { coords: [[-5.9301, 54.5973], [-6.5117, 55.2408], [-6.2603, 53.3498], [-9.7046, 51.9611], [-8.4863, 51.8969], [-6.3389, 52.2544]] },
+    // Trip 13: France to Germany
+    { coords: [[-1.6147, 49.6337], [-0.3708, 49.1829], [2.3522, 48.8566], [4.3517, 50.8503], [4.9041, 52.3676], [6.1296, 49.8153], [8.6821, 50.1109], [11.5820, 48.1351]] },
+    // Trip 14: Nordics and Baltics
+    { coords: [[11.5820, 48.1351], [12.5683, 55.6761], [10.7522, 59.9139], [5.3221, 60.3913], [7.3535, 63.0172], [14.5615, 68.2092], [18.0686, 59.3293], [24.9384, 60.1699], [24.7536, 59.4370], [24.1052, 56.9496], [25.2797, 54.6872]] },
+    // Trip 15: Poland to Balkans
+    { coords: [[25.2797, 54.6872], [21.0122, 52.2297], [19.9450, 50.0647], [14.4378, 50.0755], [17.1077, 48.1486], [16.3738, 48.2082], [13.0550, 47.8095], [19.0402, 47.4979], [14.5058, 46.0569], [14.1086, 46.3683], [15.9819, 45.8150], [15.6211, 44.8654], [16.4402, 43.5081], [18.0944, 42.6507], [17.8078, 43.3438], [18.4131, 43.8563], [18.7712, 42.4247], [19.2636, 42.4304]] },
+    // Trip 16: Eastern Balkans to Caucasus
+    { coords: [[19.2636, 42.4304], [19.8187, 41.3275], [21.1655, 42.6629], [21.4314, 41.9981], [20.7919, 41.1231], [20.4489, 44.7866], [26.1025, 44.4268], [25.6012, 46.0700], [28.8638, 47.0105], [23.3219, 42.6977], [24.7453, 42.1354], [28.9784, 41.0082], [34.8289, 38.6431], [44.8271, 41.7151], [44.6199, 42.6614]] },
+    // Trip 17: Caucasus
+    { coords: [[44.8271, 41.7151], [44.5152, 40.1872], [45.0196, 40.3588], [49.8671, 40.4093], [44.8271, 41.7151]] },
+    // Trip 17: Turkey to Greece
+    { coords: [[44.8271, 41.7151], [28.9784, 41.0082], [23.7275, 37.9838], [21.6306, 39.7217], [21.7346, 38.2466]] },
+    // Trip 17: Italy to Morocco
+    { coords: [[16.8719, 41.1171], [12.4964, 41.9028], [2.1734, 41.3851], [-5.4536, 36.1408]] },
+    // Trip 17-18: Morocco
+    { coords: [[-5.8326, 35.7595], [-5.0078, 34.0181], [-7.9811, 31.6295]] },
+    // Trip 18: Morocco to West Africa
+    { coords: [[-7.9811, 31.6295], [-5.5333, 30.0333], [-15.9785, 18.0735], [-16.4818, 16.0326], [-17.4677, 14.7167], [-16.5885, 13.4549], [-15.5977, 11.8816], [-13.2317, 8.4657], [-10.8047, 6.3156], [-4.0305, 5.3600], [-0.1869, 5.6037], [-1.2466, 5.1053]] },
+    // Trip 19: Central to Southern Africa
+    { coords: [[-0.1869, 5.6037], [1.2255, 6.1256], [2.3158, 6.3654], [3.3792, 6.5244], [11.5021, 3.8480], [9.4673, 0.4162], [15.2663, -4.2634], [13.2343, -8.8390], [16.3254, -18.8556], [15.2938, -24.7275], [17.0658, -22.5609], [22.8372, -19.2868], [25.1264, -18.3644], [25.8572, -17.9243], [28.0473, -26.2041]] },
+    // Trip 20: East Africa
+    { coords: [[28.0473, -26.2041], [31.4854, -24.0119], [31.1869, -26.4728], [32.5892, -25.9692], [31.8500, -13.0833], [39.2083, -6.7924], [39.1880, -6.1659], [34.8333, -2.3333], [35.5857, -3.2408], [35.1439, -1.4061], [36.8219, -1.2921], [32.5825, 0.3476], [29.6739, -1.0489], [30.0619, -1.9403], [38.7578, 9.0054], [38.9800, 12.0319], [38.0667, 13.3833]] },
+    // Trip 21: Ethiopia to Egypt
+    { coords: [[38.0667, 13.3833], [32.5599, 15.5007], [33.7489, 16.9386], [31.6258, 22.3372], [32.6421, 25.6872], [31.2357, 30.0444], [34.6651, 29.0261]] },
+    // Trip 21: Jordan to Dubai
+    { coords: [[35.0063, 29.5267], [35.4444, 30.3285], [35.4241, 29.5722], [35.5500, 31.5000], [35.9106, 31.9454], [37.9236, 26.6175], [39.1925, 21.4858], [46.6753, 24.7136], [47.9783, 29.3759], [55.2708, 25.2048]] },
+];
+
+// Ferry routes with real OpenStreetMap data (detailed waypoints)
+const ferryRoutes = [
+    // Simple ferry crossings (not in OSM with detailed routes)
+    { coords: [[55.4033, 25.3463], [56.2808, 27.1865]], name: "Sharjah → Bandar Abbas" },
+    { coords: [[103.8198, 1.3521], [104.0305, 1.0456]], name: "Singapore → Batam" },
+    // Dili → Darwin - proper route across Timor Sea (avoiding Timor island)
+    { coords: [
+        [125.5795, -8.5569],   // Dili port
+        [125.7, -8.45],        // Heading north from Dili
+        [126.0, -8.3],         // Off the north coast
+        [126.5, -8.2],         // East of Dili, clear of coast
+        [127.0, -8.3],         // Turning southeast
+        [127.5, -8.5],         // Heading into Timor Sea
+        [128.0, -9.0],         // Open Timor Sea
+        [128.5, -9.5],         // Mid crossing
+        [129.0, -10.0],        // Continuing south
+        [129.5, -10.5],        // Approaching Australian waters
+        [130.0, -11.0],        // Near Australian coast
+        [130.3, -11.5],        // Approaching Darwin
+        [130.5, -12.0],        // Darwin approach
+        [130.7, -12.3],        // Final approach
+        [130.8456, -12.4634]   // Darwin port
+    ], name: "Dili → Darwin" },
+
+    // Wellington → Picton (Interislander) - 80 waypoints from OSM
+    { coords: [
+        [174.0053646, -41.2849832], [174.0077116, -41.2830412], [174.0091721, -41.2814969],
+        [174.0127645, -41.2774115], [174.0151496, -41.2736719], [174.0175294, -41.2698757],
+        [174.0198024, -41.2670200], [174.0236334, -41.2619807], [174.0321849, -41.2499865],
+        [174.0344736, -41.2480745], [174.0371465, -41.2468305], [174.0408429, -41.2453930],
+        [174.1300823, -41.2254236], [174.1413130, -41.2235998], [174.1473018, -41.2231206],
+        [174.1499623, -41.2235971], [174.1518658, -41.2247424], [174.1542809, -41.2265589],
+        [174.1555517, -41.2292349], [174.1572107, -41.2389277], [174.1577226, -41.2425848],
+        [174.1596538, -41.2449080], [174.1622895, -41.2456888], [174.1650486, -41.2461641],
+        [174.1693363, -41.2458821], [174.1980655, -41.2407937], [174.2067421, -41.2397383],
+        [174.2212310, -41.2394435], [174.2513004, -41.2394503], [174.2539340, -41.2391539],
+        [174.2580357, -41.2373226], [174.2672941, -41.2296449], [174.2768050, -41.2231102],
+        [174.2836291, -41.2188945], [174.2968970, -41.2133284], [174.3093983, -41.2110253],
+        [174.3154044, -41.2106039], [174.3185107, -41.2111367], [174.3212957, -41.2125318],
+        [174.6284937, -41.3733682], [174.6694525, -41.3866276], [174.7084659, -41.3902863],
+        [174.7525288, -41.3890671], [174.7747376, -41.3877124], [174.8133130, -41.3870606],
+        [174.8166847, -41.3867310], [174.8198395, -41.3858437], [174.8227472, -41.3847681],
+        [174.8258039, -41.3830157], [174.8288629, -41.3809636], [174.8306432, -41.3794044],
+        [174.8321396, -41.3775436], [174.8334691, -41.3739999], [174.8524298, -41.3288604],
+        [174.8569951, -41.2878772], [174.8567174, -41.2862644], [174.8564150, -41.2841519],
+        [174.8562029, -41.2827967], [174.8559086, -41.2815885], [174.8554328, -41.2800940],
+        [174.8549180, -41.2791463], [174.8537014, -41.2774547], [174.8528561, -41.2765725],
+        [174.8519539, -41.2757116], [174.8507244, -41.2748021], [174.8494942, -41.2740846],
+        [174.8480578, -41.2734510], [174.8466241, -41.2729890], [174.8444506, -41.2724944],
+        [174.7954019, -41.2703803], [174.7941603, -41.2701395], [174.7929300, -41.2697964],
+        [174.7919161, -41.2693925], [174.7908503, -41.2688750], [174.7901830, -41.2683672],
+        [174.7894641, -41.2677366], [174.7888323, -41.2669195], [174.7885101, -41.2664457],
+        [174.7882052, -41.2659073], [174.7877560, -41.2644466]
+    ], name: "Wellington → Picton" },
+
+    // Belfast → Cairnryan (Stena Line) - 19 waypoints from OSM
+    { coords: [
+        [-5.0367916, 54.9850171], [-5.0383683, 54.9856854], [-5.0401814, 54.9864988],
+        [-5.0565496, 54.9987228], [-5.0690953, 55.0148629], [-5.0834054, 55.0268725],
+        [-5.1009838, 55.0334437], [-5.1658713, 55.0342057], [-5.1735833, 55.0320720],
+        [-5.2985715, 54.9916629], [-5.3084110, 54.9855598], [-5.3615975, 54.9235615],
+        [-5.4432387, 54.8309973], [-5.6290812, 54.7447517], [-5.8210500, 54.6786201],
+        [-5.8421896, 54.6639321], [-5.8474039, 54.6592453], [-5.8742310, 54.6382914],
+        [-5.8793977, 54.6365573]
+    ], name: "Cairnryan → Belfast" },
+
+    // Rosslare → Cherbourg (Brittany Ferries/Stena Line) - 33 waypoints from OSM
+    { coords: [
+        [-6.3365657, 52.2538273], [-6.3398095, 52.2565743], [-6.3405656, 52.2593099],
+        [-6.3381258, 52.2613886], [-6.3346147, 52.2629498], [-6.3286233, 52.2629960],
+        [-6.3199723, 52.2611678], [-6.2914427, 52.2504638], [-6.2542881, 52.2252660],
+        [-6.2401244, 52.2040710], [-5.9895507, 50.7890658], [-5.9826812, 50.7357075],
+        [-5.8439236, 49.9465777], [-5.5195542, 49.8113802], [-1.8985709, 49.7875402],
+        [-1.6535783, 49.6727100], [-1.6495250, 49.6712100], [-1.6474000, 49.6705533],
+        [-1.6432167, 49.6694283], [-1.6428505, 49.6693267], [-1.6418636, 49.6690528],
+        [-1.6406256, 49.6687093], [-1.6372652, 49.6677767], [-1.6362383, 49.6674917],
+        [-1.6208950, 49.6634850], [-1.6191917, 49.6629267], [-1.6180933, 49.6622133],
+        [-1.6171583, 49.6615683], [-1.6161183, 49.6604600], [-1.6151650, 49.6584600],
+        [-1.6135405, 49.6523666], [-1.6133845, 49.6517816], [-1.6129412, 49.6492644]
+    ], name: "Rosslare → Cherbourg" },
+
+    // Patras → Bari (via Ionian & Adriatic Sea) - avoiding Greek coast
+    { coords: [
+        [21.7346, 38.2466],    // Patras port
+        [21.68, 38.24],        // Leaving port heading west
+        [21.55, 38.22],        // West through Rio-Antirrio strait
+        [21.4, 38.2],          // Exiting Gulf of Patras
+        [21.2, 38.15],         // Past Cape Araxos
+        [21.0, 38.1],          // Open water - clear of Peloponnese
+        [20.7, 38.2],          // Ionian Sea
+        [20.4, 38.4],          // Heading northwest
+        [20.1, 38.7],          // West of Greek islands
+        [19.8, 39.0],          // Open Ionian Sea
+        [19.5, 39.3],          // Continuing north
+        [19.2, 39.6],          // Past Corfu (to the west)
+        [18.9, 39.9],          // Entering Adriatic
+        [18.5, 40.2],          // Adriatic Sea
+        [18.1, 40.5],          // Mid Adriatic
+        [17.7, 40.8],          // Approaching Italian coast
+        [17.3, 41.0],          // Near Bari
+        [16.95, 41.1],         // Bari approach
+        [16.8719, 41.1171]     // Bari port
+    ], name: "Patras → Bari" },
+
+    // Algeciras → Tangier Med (FRS/Balearia) - 23 waypoints from OSM
+    { coords: [
+        [-5.4382718, 36.1313115], [-5.4349289, 36.1334484], [-5.4339311, 36.1351338],
+        [-5.4317220, 36.1438552], [-5.4301480, 36.1480304], [-5.4298708, 36.1485363],
+        [-5.4294082, 36.1489442], [-5.4288086, 36.1492115], [-5.4281111, 36.1493106],
+        [-5.4274122, 36.1492184], [-5.4267900, 36.1489454], [-5.4173586, 36.1440948],
+        [-5.4152179, 36.1419525], [-5.4086122, 36.1234119], [-5.4051258, 36.1087755],
+        [-5.4056639, 36.0703179], [-5.4039005, 36.0124500], [-5.4083637, 35.9955079],
+        [-5.5018589, 35.9195671], [-5.5148451, 35.9084623], [-5.5204780, 35.8829161],
+        [-5.5202992, 35.8811473], [-5.5189891, 35.8769122]
+    ], name: "Algeciras → Tangier" },
+
+    // Nuweiba → Aqaba (AB Maritime) - 27 waypoints from OSM
+    { coords: [
+        [34.7940820, 29.3755908], [34.7940363, 29.3755117], [34.7940203, 29.3754671],
+        [34.7940205, 29.3754294], [34.7940332, 29.3753924], [34.7940696, 29.3753623],
+        [34.7944770, 29.3751989], [34.7945329, 29.3751568], [34.7945591, 29.3751070],
+        [34.7946721, 29.3744379], [34.7951306, 29.3730947], [34.7960412, 29.3719396],
+        [34.7973156, 29.3710848], [34.7988299, 29.3706131], [34.8004374, 29.3705705],
+        [34.9689852, 29.4091377], [34.9728256, 29.4093623], [34.9769399, 29.4089904],
+        [34.9785340, 29.4087930], [34.9787050, 29.4088170], [34.9788260, 29.4088660],
+        [34.9789840, 29.4090180], [34.9790460, 29.4093460], [34.9791030, 29.4094180],
+        [34.9792850, 29.4094470], [34.9796520, 29.4093890], [34.9796513, 29.4093734]
+    ], name: "Nuweiba → Aqaba" },
+
+];
+
+// Shipping routes - each major route gets its own color
+// Now with MANY more waypoints following real shipping lanes
+const shippingRoutes = {
+    // Short shipping (purple)
+    short: [
+        { coords: [
+            [78.1348, 8.7642],   // Tuticorin
+            [78.2, 8.5], [78.4, 8.2], [78.6, 8.0], [78.8, 7.8], [79.0, 7.6],
+            [79.2, 7.4], [79.4, 7.2], [79.6, 7.0], [79.8612, 6.9271]  // Colombo
+        ], name: "Tuticorin → Colombo" },
+        // Cartagena → Panama City - by sea around Darién (not over land!)
+        { coords: [
+            [-75.5144, 10.3910],  // Cartagena port
+            [-75.7, 10.5],        // Heading out to sea
+            [-76.0, 10.7],        // Caribbean Sea
+            [-76.5, 10.8],        // Open water
+            [-77.0, 10.9],        // West along coast
+            [-77.5, 10.5],        // Passing Gulf of Urabá
+            [-78.0, 10.0],        // Continuing west
+            [-78.5, 9.8],         // Off Panama coast
+            [-79.0, 9.6],         // Approaching Panama
+            [-79.3, 9.5],         // San Blas area
+            [-79.5, 9.4],         // Near Colón
+            [-79.7, 9.35],        // Approaching Colón
+            [-79.9, 9.3],         // Off Colón port
+            [-80.0, 9.1],         // South around coast
+            [-79.9, 9.0],         // Approaching Pacific side
+            [-79.6, 8.95],        // Panama City approach
+            [-79.5197, 8.9824]    // Panama City port
+        ], name: "Cartagena → Panama City" },
+    ],
+    // Chittagong → Laem Chabang (orange) - via Strait of Malacca with ~60 waypoints
+    chittagongLaemChabang: [
+        { coords: [
+            // Chittagong departure
+            [91.83, 22.33], [91.75, 22.0], [91.65, 21.7], [91.55, 21.4], [91.45, 21.1],
+            [91.35, 20.8], [91.2, 20.5], [91.0, 20.0], [90.8, 19.5], [90.6, 19.0],
+            // Bay of Bengal (heading south)
+            [90.4, 18.5], [90.2, 18.0], [90.0, 17.5], [89.8, 17.0], [89.8, 16.5],
+            [90.0, 16.0], [90.3, 15.5], [90.6, 15.0], [91.0, 14.5], [91.5, 14.0],
+            // Andaman Sea (staying east of Andaman Islands)
+            [92.0, 13.5], [92.5, 13.0], [93.0, 12.5], [93.5, 12.0], [94.0, 11.5],
+            [94.5, 11.0], [95.0, 10.5], [95.5, 10.0], [96.0, 9.5], [96.5, 9.0],
+            // Approaching Malacca Strait
+            [97.0, 8.5], [97.5, 8.0], [98.0, 7.5], [98.3, 7.0], [98.5, 6.5],
+            // Malacca Strait (the narrow channel - west side)
+            [98.8, 6.0], [99.2, 5.5], [99.6, 5.0], [100.0, 4.5], [100.3, 4.0],
+            [100.6, 3.5], [100.9, 3.0], [101.3, 2.5], [101.8, 2.0], [102.4, 1.5],
+            // Singapore Strait - SOUTH of Singapore island (staying below lat 1.15)
+            [103.0, 1.15], [103.4, 1.1], [103.6, 1.1], [103.8, 1.1], [104.0, 1.15],
+            // East through Singapore Strait into South China Sea
+            [104.2, 1.2], [104.4, 1.3], [104.5, 1.5],
+            // North along east coast of Malaysia
+            [104.6, 2.0], [104.7, 2.5], [104.8, 3.0], [104.9, 3.5], [105.0, 4.0],
+            // Crossing Gulf of Thailand
+            [104.5, 5.0], [104.0, 6.0], [103.5, 7.0], [103.0, 8.0], [102.5, 9.0],
+            [102.0, 10.0], [101.5, 11.0], [101.2, 12.0], [100.9, 12.5],
+            [100.88, 13.08]  // Laem Chabang
+        ], name: "Chittagong → Laem Chabang (via Malacca)" },
+    ],
+    // Brisbane → Auckland (teal) - across Tasman Sea with ~30 waypoints
+    brisbaneAuckland: [
+        { coords: [
+            [153.0251, -27.4698],  // Brisbane
+            [153.3, -27.6], [153.6, -27.8], [154.0, -28.0], [154.5, -28.3],
+            [155.0, -28.6], [155.5, -28.9], [156.0, -29.2], [156.5, -29.5],
+            [157.0, -29.8], [157.5, -30.1], [158.0, -30.4], [158.5, -30.7],
+            [159.0, -31.0], [159.5, -31.3], [160.0, -31.6], [160.5, -31.9],
+            [161.0, -32.2], [161.5, -32.5], [162.0, -32.8], [162.5, -33.1],
+            [163.0, -33.4], [163.5, -33.7], [164.0, -34.0], [164.5, -34.2],
+            [165.0, -34.4], [165.5, -34.6], [166.0, -34.8], [166.5, -35.0],
+            [167.0, -35.2], [167.5, -35.4], [168.0, -35.5], [168.5, -35.6],
+            [169.0, -35.7], [169.5, -35.8], [170.0, -35.9], [170.5, -36.0],
+            [171.0, -36.1], [171.5, -36.2], [172.0, -36.3], [172.5, -36.4],
+            [173.0, -36.5], [173.5, -36.6], [174.0, -36.7], [174.7633, -36.8485]  // Auckland
+        ], name: "Brisbane → Auckland" },
+    ],
+    // Auckland → Valparaíso (magenta) - split at dateline with ~80 waypoints total
+    aucklandValparaiso: [
+        { coords: [
+            // Auckland to dateline
+            [174.7633, -36.8485], [175.0, -37.0], [175.3, -37.2], [175.6, -37.4],
+            [175.9, -37.6], [176.2, -37.8], [176.5, -38.0], [176.8, -38.2],
+            [177.1, -38.4], [177.4, -38.6], [177.7, -38.8], [178.0, -39.0],
+            [178.3, -39.2], [178.6, -39.4], [178.9, -39.6], [179.2, -39.8],
+            [179.5, -40.0], [179.7, -40.2], [179.9, -40.4]
+        ], name: "Auckland → Pacific (West)" },
+        { coords: [
+            // Dateline to Valparaíso (continuing at same latitude)
+            [-179.9, -40.4], [-179.5, -40.6], [-179.0, -40.8], [-178.5, -41.0],
+            [-178.0, -41.2], [-177.5, -41.4], [-177.0, -41.5], [-176.0, -41.7],
+            [-175.0, -41.9], [-174.0, -42.0], [-173.0, -42.1], [-172.0, -42.2],
+            [-171.0, -42.3], [-170.0, -42.4], [-169.0, -42.4], [-168.0, -42.4],
+            [-167.0, -42.4], [-166.0, -42.4], [-165.0, -42.3], [-164.0, -42.2],
+            [-163.0, -42.1], [-162.0, -42.0], [-161.0, -41.9], [-160.0, -41.8],
+            [-159.0, -41.7], [-158.0, -41.6], [-157.0, -41.5], [-156.0, -41.4],
+            [-155.0, -41.3], [-154.0, -41.2], [-153.0, -41.1], [-152.0, -41.0],
+            [-151.0, -40.9], [-150.0, -40.8], [-149.0, -40.7], [-148.0, -40.6],
+            [-147.0, -40.5], [-146.0, -40.4], [-145.0, -40.3], [-144.0, -40.2],
+            [-143.0, -40.1], [-142.0, -40.0], [-141.0, -39.9], [-140.0, -39.8],
+            [-138.0, -39.6], [-136.0, -39.4], [-134.0, -39.2], [-132.0, -39.0],
+            [-130.0, -38.8], [-128.0, -38.6], [-126.0, -38.4], [-124.0, -38.2],
+            [-122.0, -38.0], [-120.0, -37.8], [-118.0, -37.6], [-116.0, -37.4],
+            [-114.0, -37.2], [-112.0, -37.0], [-110.0, -36.8], [-108.0, -36.6],
+            [-106.0, -36.4], [-104.0, -36.2], [-102.0, -36.0], [-100.0, -35.8],
+            [-98.0, -35.6], [-96.0, -35.4], [-94.0, -35.2], [-92.0, -35.0],
+            [-90.0, -34.8], [-88.0, -34.6], [-86.0, -34.4], [-84.0, -34.2],
+            [-82.0, -34.0], [-80.0, -33.8], [-78.0, -33.6], [-76.0, -33.4],
+            [-74.0, -33.2], [-72.0, -33.0], [-71.6273, -33.0472]  // Valparaíso
+        ], name: "Pacific → Valparaíso (East)" },
+    ],
+    // Seattle → Southampton (dark blue) - via Panama Canal with ~100 waypoints
+    seattleSouthampton: [
+        { coords: [
+            // Seattle to Panama (Pacific coast)
+            [-122.3321, 47.6062], [-122.5, 47.4], [-122.8, 47.0], [-123.2, 46.5],
+            [-123.6, 46.0], [-124.0, 45.5], [-124.3, 45.0], [-124.5, 44.5],
+            [-124.7, 44.0], [-124.8, 43.5], [-124.8, 43.0], [-124.7, 42.5],
+            [-124.5, 42.0], [-124.3, 41.5], [-124.0, 41.0], [-123.7, 40.5],
+            [-123.3, 40.0], [-122.9, 39.5], [-122.5, 39.0], [-122.0, 38.5],
+            [-121.5, 38.0], [-121.0, 37.5], [-120.5, 37.0], [-120.0, 36.5],
+            [-119.5, 36.0], [-119.0, 35.5], [-118.5, 35.0], [-118.0, 34.5],
+            [-117.5, 34.0], [-117.0, 33.5], [-116.5, 33.0], [-116.0, 32.5],
+            [-115.5, 32.0], [-115.0, 31.5], [-114.5, 31.0], [-114.0, 30.5],
+            [-113.5, 30.0], [-113.0, 29.5], [-112.5, 29.0], [-112.0, 28.5],
+            [-111.5, 28.0], [-111.0, 27.5], [-110.5, 27.0], [-110.0, 26.5],
+            [-109.5, 26.0], [-109.0, 25.5], [-108.5, 25.0], [-108.0, 24.5],
+            [-107.5, 24.0], [-107.0, 23.5], [-106.5, 23.0], [-106.0, 22.5],
+            [-105.5, 22.0], [-105.0, 21.5], [-104.5, 21.0], [-104.0, 20.5],
+            [-103.5, 20.0], [-103.0, 19.5], [-102.5, 19.0], [-102.0, 18.5],
+            [-101.0, 18.0], [-100.0, 17.5], [-99.0, 17.0], [-98.0, 16.5],
+            [-97.0, 16.0], [-96.0, 15.5], [-95.0, 15.0], [-94.0, 14.5],
+            [-93.0, 14.0], [-92.0, 13.5], [-91.0, 13.0], [-90.0, 12.5],
+            [-89.0, 12.0], [-88.0, 11.5], [-87.0, 11.0], [-86.0, 10.5],
+            [-85.0, 10.0], [-84.0, 9.7], [-83.0, 9.5], [-82.0, 9.3],
+            [-81.0, 9.1], [-80.2, 9.0], [-79.7, 8.95], [-79.56, 8.95]  // Balboa (Pacific entrance)
+        ], name: "Seattle → Panama" },
+        { coords: [
+            // Panama Canal - from Balboa (Pacific) to Colón (Atlantic)
+            // The canal runs NORTHWEST from Pacific to Atlantic!
+            [-79.56, 8.95],   // Balboa - Pacific entrance
+            [-79.58, 8.97],   // Miraflores Locks approach
+            [-79.60, 9.00],   // Miraflores Locks
+            [-79.62, 9.03],   // Pedro Miguel Locks
+            [-79.65, 9.07],   // Culebra Cut
+            [-79.70, 9.12],   // Gaillard Cut
+            [-79.75, 9.18],   // Gatun Lake south
+            [-79.82, 9.22],   // Gatun Lake central
+            [-79.87, 9.27],   // Gatun Lake north
+            [-79.90, 9.30],   // Gatun Locks approach
+            [-79.92, 9.35],   // Gatun Locks
+            [-79.92, 9.36],   // Colón - Atlantic entrance
+            // Caribbean Sea - heading east then north
+            [-79.8, 9.5], [-79.5, 9.8], [-79.0, 10.0], [-78.5, 10.3], [-78.0, 10.6],
+            [-77.5, 10.9], [-77.0, 11.2], [-76.5, 11.5], [-76.0, 11.8], [-75.5, 12.1],
+            [-75.0, 12.4], [-74.5, 12.7], [-74.0, 13.0], [-73.5, 13.3], [-73.0, 13.6],
+            [-72.0, 14.0], [-71.0, 14.4], [-70.0, 14.8], [-69.0, 15.2], [-68.0, 15.6],
+            [-67.0, 16.0], [-66.0, 16.4], [-65.0, 16.8], [-64.0, 17.2], [-63.0, 17.6],
+            [-62.0, 18.0], [-61.0, 18.5], [-60.0, 19.0], [-59.0, 19.5], [-58.0, 20.0],
+            // Atlantic Ocean crossing
+            [-56.0, 21.0], [-54.0, 22.0], [-52.0, 23.0], [-50.0, 24.0], [-48.0, 25.0],
+            [-46.0, 26.0], [-44.0, 27.0], [-42.0, 28.0], [-40.0, 29.0], [-38.0, 30.0],
+            [-36.0, 31.0], [-34.0, 32.0], [-32.0, 33.0], [-30.0, 34.0], [-28.0, 35.0],
+            [-26.0, 36.0], [-24.0, 37.0], [-22.0, 38.0], [-20.0, 39.0], [-18.0, 40.0],
+            [-16.0, 41.0], [-14.0, 42.0], [-12.0, 43.0], [-11.0, 44.0], [-10.0, 45.0],
+            [-9.5, 46.0], [-9.0, 47.0], [-8.5, 48.0], [-8.0, 48.5], [-7.0, 49.0],
+            // English Channel approach
+            [-6.0, 49.3], [-5.0, 49.5], [-4.0, 49.7], [-3.0, 50.0], [-2.0, 50.3],
+            [-1.4044, 50.9097]  // Southampton
+        ], name: "Panama → Southampton" },
+    ],
+};
+
+const shippingColors = {
+    short: '#9b59b6',           // Purple
+    chittagongLaemChabang: '#e67e22',    // Orange
+    brisbaneAuckland: '#16a085', // Teal
+    aucklandValparaiso: '#e91e63', // Magenta/Pink
+    seattleSouthampton: '#2c3e50', // Dark blue/slate
 };
 
 map.on('load', () => {
-    // Add route lines for each leg
-    ['leg1', 'leg2', 'leg3'].forEach(leg => {
-        const coords = stops[leg].map(s => s.coords);
-
-        map.addSource(`route-${leg}`, {
-            type: 'geojson',
-            data: {
-                type: 'Feature',
-                geometry: {
-                    type: 'LineString',
-                    coordinates: coords
-                }
-            }
-        });
-
-        map.addLayer({
-            id: `route-${leg}`,
-            type: 'line',
-            source: `route-${leg}`,
-            paint: {
-                'line-color': colors[leg],
-                'line-width': 3,
-                'line-opacity': 0.7
-            }
-        });
-    });
-
-    // Add ship routes
-    map.addSource('ship-routes', {
+    // Add road segments
+    map.addSource('roads', {
         type: 'geojson',
         data: {
             type: 'FeatureCollection',
-            features: shipRoutes.map(r => ({
+            features: roadSegments.map(seg => ({
                 type: 'Feature',
-                geometry: {
-                    type: 'LineString',
-                    coordinates: [r.from, r.to]
-                },
+                geometry: { type: 'LineString', coordinates: seg.coords }
+            }))
+        }
+    });
+
+    map.addLayer({
+        id: 'roads',
+        type: 'line',
+        source: 'roads',
+        paint: {
+            'line-color': colors.driving,
+            'line-width': 3,
+            'line-opacity': 0.8
+        }
+    });
+
+    // Add ferry routes (now with multi-waypoint coords arrays)
+    map.addSource('ferries', {
+        type: 'geojson',
+        data: {
+            type: 'FeatureCollection',
+            features: ferryRoutes.map(r => ({
+                type: 'Feature',
+                geometry: { type: 'LineString', coordinates: r.coords },
                 properties: { name: r.name }
             }))
         }
     });
 
     map.addLayer({
-        id: 'ship-routes',
+        id: 'ferries',
         type: 'line',
-        source: 'ship-routes',
+        source: 'ferries',
         paint: {
-            'line-color': colors.ship,
-            'line-width': 2,
-            'line-dasharray': [4, 4],
-            'line-opacity': 0.8
+            'line-color': colors.ferry,
+            'line-width': 2.5,
+            'line-dasharray': [4, 3],
+            'line-opacity': 0.9
         }
     });
 
-    // Add markers for each leg
-    ['leg1', 'leg2', 'leg3'].forEach(leg => {
-        stops[leg].forEach(stop => {
-            const el = document.createElement('div');
-            el.className = `marker marker-${leg}`;
-            el.style.width = '10px';
-            el.style.height = '10px';
-            el.style.backgroundColor = colors[leg];
-            el.style.borderRadius = '50%';
-            el.style.border = '2px solid white';
-            el.style.boxShadow = '0 1px 3px rgba(0,0,0,0.3)';
-            el.style.cursor = 'pointer';
+    // Add shipping routes - each category with its own color
+    Object.keys(shippingRoutes).forEach(key => {
+        map.addSource(`shipping-${key}`, {
+            type: 'geojson',
+            data: {
+                type: 'FeatureCollection',
+                features: shippingRoutes[key].map(r => ({
+                    type: 'Feature',
+                    geometry: { type: 'LineString', coordinates: r.coords },
+                    properties: { name: r.name }
+                }))
+            }
+        });
 
-            const popup = new mapboxgl.Popup({ offset: 10 })
-                .setHTML(`
-                    <div class="popup-title">${stop.name}</div>
-                    <div class="popup-info">${stop.country} • Trip ${stop.trip}</div>
-                `);
-
-            new mapboxgl.Marker(el)
-                .setLngLat(stop.coords)
-                .setPopup(popup)
-                .addTo(map);
+        map.addLayer({
+            id: `shipping-${key}`,
+            type: 'line',
+            source: `shipping-${key}`,
+            paint: {
+                'line-color': shippingColors[key],
+                'line-width': 2.5,
+                'line-dasharray': [6, 4],
+                'line-opacity': 0.9
+            }
         });
     });
 
+    // Add markers for all stops
+    stops.forEach(stop => {
+        const el = document.createElement('div');
+        el.className = 'marker';
+        el.style.width = '8px';
+        el.style.height = '8px';
+        el.style.backgroundColor = colors.driving;
+        el.style.borderRadius = '50%';
+        el.style.border = '2px solid white';
+        el.style.boxShadow = '0 1px 3px rgba(0,0,0,0.3)';
+        el.style.cursor = 'pointer';
+
+        const phase = stop.trip <= 13 ? 'A' : 'B';
+        const popup = new mapboxgl.Popup({ offset: 10 })
+            .setHTML(`
+                <div class="popup-title">${stop.name}</div>
+                <div class="popup-info">${stop.country} · Trip ${stop.trip} · Phase ${phase}</div>
+            `);
+
+        new mapboxgl.Marker(el)
+            .setLngLat(stop.coords)
+            .setPopup(popup)
+            .addTo(map);
+    });
+
     // Toggle controls
-    document.getElementById('toggle-leg1').addEventListener('change', (e) => {
-        const visibility = e.target.checked ? 'visible' : 'none';
-        map.setLayoutProperty('route-leg1', 'visibility', visibility);
-        document.querySelectorAll('.marker-leg1').forEach(m => m.style.display = e.target.checked ? 'block' : 'none');
+    document.getElementById('toggle-driving').addEventListener('change', (e) => {
+        map.setLayoutProperty('roads', 'visibility', e.target.checked ? 'visible' : 'none');
+        document.querySelectorAll('.marker').forEach(m => m.style.display = e.target.checked ? 'block' : 'none');
     });
 
-    document.getElementById('toggle-leg2').addEventListener('change', (e) => {
-        const visibility = e.target.checked ? 'visible' : 'none';
-        map.setLayoutProperty('route-leg2', 'visibility', visibility);
-        document.querySelectorAll('.marker-leg2').forEach(m => m.style.display = e.target.checked ? 'block' : 'none');
+    document.getElementById('toggle-ferry').addEventListener('change', (e) => {
+        map.setLayoutProperty('ferries', 'visibility', e.target.checked ? 'visible' : 'none');
     });
 
-    document.getElementById('toggle-leg3').addEventListener('change', (e) => {
+    document.getElementById('toggle-shipping').addEventListener('change', (e) => {
         const visibility = e.target.checked ? 'visible' : 'none';
-        map.setLayoutProperty('route-leg3', 'visibility', visibility);
-        document.querySelectorAll('.marker-leg3').forEach(m => m.style.display = e.target.checked ? 'block' : 'none');
-    });
-
-    document.getElementById('toggle-ships').addEventListener('change', (e) => {
-        const visibility = e.target.checked ? 'visible' : 'none';
-        map.setLayoutProperty('ship-routes', 'visibility', visibility);
+        Object.keys(shippingRoutes).forEach(key => {
+            map.setLayoutProperty(`shipping-${key}`, 'visibility', visibility);
+        });
     });
 });
 
