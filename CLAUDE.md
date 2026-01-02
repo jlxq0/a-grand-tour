@@ -11,16 +11,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `overview.md` - Master planning document with routes, schedules, vehicle specs, and budget
 - Route data files (GeoJSON/KML) will be added per-trip as planning progresses
 
-## Route Structure
+## Structure
 
-Three main legs:
-1. **Leg 1 (East):** Dubai → Iran → Pakistan → India → SE Asia → Australia → NZ
-2. **Leg 2 (Americas):** Chile → Argentina → Brazil → Peru → Central America → USA → Canada → Alaska
-3. **Leg 3 (West):** UK → Europe → Africa → Middle East → Dubai
+21 trips split across two phases:
+- **Phase A (2027-2034):** 13 four-month trips with 3-month breaks (pre-school)
+- **Phase B (2035-2042):** 8 seven-week summer trips (school years)
 
-21 individual trips split across two phases:
-- **Phase A (2027-2034):** 13 four-month trips with 3-month breaks
-- **Phase B (2035-2042):** 8 seven-week summer trips
+Route: Dubai → East → Americas → West → Dubai (full circumnavigation)
 
 ## Mapping Tools
 

@@ -44,21 +44,22 @@ Total time on the road: 64 months. Total distance: roughly 200,000 kilometers. T
 **Dubai → East → Americas → West → Dubai**
 
 ```
-LEG 1: EAST (2027-2029)
-Dubai → Kuwait → Iran → Pakistan → India → Sri Lanka → Nepal → 
-Bangladesh → [ship] → Thailand → Laos → Cambodia → Vietnam → 
-Malaysia → Singapore → Indonesia → Timor → Australia → New Zealand
+PHASE A: Trips 1-5 (2027-2029)
+Dubai → Iran → Pakistan → India → Sri Lanka → Nepal → Bangladesh →
+[ship] → Thailand → Laos → Cambodia → Vietnam → Malaysia → Singapore →
+Indonesia → Timor → Australia → New Zealand
 
-LEG 2: AMERICAS (2030-2033)
-Chile → Argentina → Uruguay → Brazil → Guianas → Paraguay → Bolivia → 
-Peru → Ecuador → Colombia → [ship Darién] → Central America → 
-Mexico → USA → Canada → Alaska
+PHASE A: Trips 6-12 (2030-2033)
+Chile → Argentina → Brazil → Paraguay → Bolivia → Peru → Ecuador →
+Colombia → [ship Darién] → Central America → Mexico → USA → Canada → Alaska
 
-LEG 3: WEST (2034-2042)
-UK → Ireland → Iberia → Western Europe → Nordics → Baltics → 
-Central Europe → Balkans → Turkey → Caucasus → Greece → Morocco → 
-West Africa (coastal) → Central Africa → Southern Africa → East Africa → 
-Sudan → Egypt → Jordan → Saudi Arabia → Dubai
+PHASE A: Trip 13 (2034)
+UK → Ireland → Western Europe
+
+PHASE B: Trips 14-21 (2035-2042)
+Nordics → Baltics → Central Europe → Balkans → Turkey → Caucasus →
+Greece → Morocco → West Africa → Central Africa → Southern Africa →
+East Africa → Sudan → Egypt → Jordan → Saudi Arabia → Dubai
 ```
 
 **Ships (7):**

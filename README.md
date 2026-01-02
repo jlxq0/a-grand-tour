@@ -14,15 +14,15 @@ A 15-year around-the-world overland expedition (2027-2042) circumnavigating the 
 ## Route
 
 ```
-LEG 1: EAST (2027-2029)
-Dubai → Iran → Pakistan → India → SE Asia → Australia → New Zealand
+PHASE A: PRE-SCHOOL (2027-2034) — 13 trips, 4 months each
+Dubai → Iran → Pakistan → India → SE Asia → Australia → New Zealand →
+Chile → Argentina → Brazil → Peru → Central America → USA → Canada → Alaska →
+UK → Ireland → Western Europe
 
-LEG 2: AMERICAS (2030-2033)
-Chile → Argentina → Brazil → Peru → Central America → USA → Canada → Alaska
-
-LEG 3: WEST (2034-2042)
-UK → Europe → Nordics → Balkans → Caucasus → Morocco → West Africa →
-Central Africa → Southern Africa → East Africa → Egypt → Middle East → Dubai
+PHASE B: SCHOOL SUMMERS (2035-2042) — 8 trips, 7 weeks each
+Nordics → Baltics → Central Europe → Balkans → Caucasus → Morocco →
+West Africa → Central Africa → Southern Africa → East Africa →
+Egypt → Middle East → Dubai
 ```
 
 ## Files
