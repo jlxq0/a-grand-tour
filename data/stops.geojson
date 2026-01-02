@@ -281,6 +281,8 @@
     { "type": "Feature", "properties": { "name": "Malabo", "trip": 19, "country": "Equatorial Guinea" }, "geometry": { "type": "Point", "coordinates": [8.7837, 3.7504] } },
     { "type": "Feature", "properties": { "name": "Libreville", "trip": 19, "country": "Gabon" }, "geometry": { "type": "Point", "coordinates": [9.4673, 0.4162] } },
     { "type": "Feature", "properties": { "name": "Brazzaville", "trip": 19, "country": "Congo" }, "geometry": { "type": "Point", "coordinates": [15.2663, -4.2634] } },
+    { "type": "Feature", "properties": { "name": "Kinshasa", "trip": 19, "country": "DRC" }, "geometry": { "type": "Point", "coordinates": [15.2663, -4.4419] } },
+    { "type": "Feature", "properties": { "name": "Matadi", "trip": 19, "country": "DRC" }, "geometry": { "type": "Point", "coordinates": [13.4400, -5.8167] } },
     { "type": "Feature", "properties": { "name": "Luanda", "trip": 19, "country": "Angola" }, "geometry": { "type": "Point", "coordinates": [13.2343, -8.8390] } },
     { "type": "Feature", "properties": { "name": "Rundu", "trip": 19, "country": "Namibia" }, "geometry": { "type": "Point", "coordinates": [16.3254, -18.8556] } },
     { "type": "Feature", "properties": { "name": "Windhoek", "trip": 19, "country": "Namibia" }, "geometry": { "type": "Point", "coordinates": [15.2938, -24.7275] } },
