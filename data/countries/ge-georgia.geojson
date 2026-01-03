@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          44.8271,
+          41.7151
+        ]
+      },
+      "properties": {
+        "name": "Tbilisi",
+        "country": "Georgia",
+        "iso": "GE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.6199,
+          42.6614
+        ]
+      },
+      "properties": {
+        "name": "Kazbegi",
+        "country": "Georgia",
+        "iso": "GE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           41.9512,
           41.70227778
         ]

@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          16.8719,
+          41.1171
+        ]
+      },
+      "properties": {
+        "name": "Bari",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "name": "Rome",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.32639,
           41.07333
         ]

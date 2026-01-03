@@ -6,6 +6,177 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -1.4044,
+          50.9097
+        ]
+      },
+      "properties": {
+        "name": "Southampton",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1278,
+          51.5074
+        ]
+      },
+      "properties": {
+        "name": "London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.3599,
+          51.3758
+        ]
+      },
+      "properties": {
+        "name": "Bath",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.0886,
+          54.4609
+        ]
+      },
+      "properties": {
+        "name": "Lake District",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.1883,
+          55.9533
+        ]
+      },
+      "properties": {
+        "name": "Edinburgh",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2293,
+          57.2736
+        ]
+      },
+      "properties": {
+        "name": "Isle of Skye",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0173,
+          54.9727
+        ]
+      },
+      "properties": {
+        "name": "Cairnryan",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9301,
+          54.5973
+        ]
+      },
+      "properties": {
+        "name": "Belfast",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.5117,
+          55.2408
+        ]
+      },
+      "properties": {
+        "name": "Giants Causeway",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -3.088055556,
           51.77638889
         ]

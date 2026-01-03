@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -5.8326,
+          35.7595
+        ]
+      },
+      "properties": {
+        "name": "Tangier",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0078,
+          34.0181
+        ]
+      },
+      "properties": {
+        "name": "Fes",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9811,
+          31.6295
+        ]
+      },
+      "properties": {
+        "name": "Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5333,
+          30.0333
+        ]
+      },
+      "properties": {
+        "name": "Ouarzazate",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -5.55694,
           34.07389
         ]

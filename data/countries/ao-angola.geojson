@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          13.2343,
+          -8.839
+        ]
+      },
+      "properties": {
+        "name": "Luanda",
+        "country": "Angola",
+        "iso": "AO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           14.24972222,
           -6.268888889
         ]

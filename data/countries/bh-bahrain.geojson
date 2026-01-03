@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          50.5832,
+          26.2285
+        ]
+      },
+      "properties": {
+        "name": "Manama",
+        "country": "Bahrain",
+        "iso": "BH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           50.51277778,
           26.14972222
         ]

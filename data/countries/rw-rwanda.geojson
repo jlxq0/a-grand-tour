@@ -3,6 +3,25 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0619,
+          -1.9403
+        ]
+      },
+      "properties": {
+        "name": "Kigali",
+        "country": "Rwanda",
+        "iso": "RW",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": null,
       "properties": {
         "name": "Volcanoes National Park",

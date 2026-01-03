@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          85.324,
+          27.7172
+        ]
+      },
+      "properties": {
+        "name": "Kathmandu",
+        "country": "Nepal",
+        "iso": "NP",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.9856,
+          28.2096
+        ]
+      },
+      "properties": {
+        "name": "Pokhara",
+        "country": "Nepal",
+        "iso": "NP",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           84.33333,
           27.5
         ]

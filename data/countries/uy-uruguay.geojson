@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -56.1645,
+          -34.9011
+        ]
+      },
+      "properties": {
+        "name": "Montevideo",
+        "country": "Uruguay",
+        "iso": "UY",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.8442,
+          -34.4626
+        ]
+      },
+      "properties": {
+        "name": "Colonia del Sacramento",
+        "country": "Uruguay",
+        "iso": "UY",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -58.33166667,
           -33.11777778
         ]

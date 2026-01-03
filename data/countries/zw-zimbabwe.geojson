@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          25.8572,
+          -17.9243
+        ]
+      },
+      "properties": {
+        "name": "Victoria Falls",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.93333333,
           -20.28333333
         ]

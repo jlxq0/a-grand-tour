@@ -6,6 +6,139 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          130.8456,
+          -12.4634
+        ]
+      },
+      "properties": {
+        "name": "Darwin",
+        "country": "Australia",
+        "iso": "AU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 4,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.2363,
+          -17.9614
+        ]
+      },
+      "properties": {
+        "name": "Broome",
+        "country": "Australia",
+        "iso": "AU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 4,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.8605,
+          -31.9505
+        ]
+      },
+      "properties": {
+        "name": "Perth",
+        "country": "Australia",
+        "iso": "AU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 4,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          138.6007,
+          -34.9285
+        ]
+      },
+      "properties": {
+        "name": "Adelaide",
+        "country": "Australia",
+        "iso": "AU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 4,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          144.9631,
+          -37.8136
+        ]
+      },
+      "properties": {
+        "name": "Melbourne",
+        "country": "Australia",
+        "iso": "AU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 4,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.2093,
+          -33.8688
+        ]
+      },
+      "properties": {
+        "name": "Sydney",
+        "country": "Australia",
+        "iso": "AU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 4,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.0251,
+          -27.4698
+        ]
+      },
+      "properties": {
+        "name": "Brisbane",
+        "country": "Australia",
+        "iso": "AU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 4,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           150.9944444,
           -33.37833333
         ]

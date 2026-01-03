@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -4.0305,
+          5.36
+        ]
+      },
+      "properties": {
+        "name": "Abidjan",
+        "country": "Ivory Coast",
+        "iso": "CI",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -4.0,
           9.0
         ]

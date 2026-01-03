@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          32.5892,
+          -25.9692
+        ]
+      },
+      "properties": {
+        "name": "Maputo",
+        "country": "Mozambique",
+        "iso": "MZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           40.73583,
           -15.03417
         ]

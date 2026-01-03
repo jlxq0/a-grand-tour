@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.3158,
+          6.3654
+        ]
+      },
+      "properties": {
+        "name": "Cotonou",
+        "country": "Benin",
+        "iso": "BJ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.983333333,
           7.183333333
         ]

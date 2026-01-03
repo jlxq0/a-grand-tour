@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-13.2317, 8.484] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.8047,
+          6.3156
+        ]
+      },
+      "properties": {
+        "name": "Freetown",
+        "country": "Sierra Leone",
+        "iso": "SL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.2317,
+          8.484
+        ]
+      },
       "properties": {
         "name": "Freetown",
         "country": "Sierra Leone",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-13.065, 8.535] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.065,
+          8.535
+        ]
+      },
       "properties": {
         "name": "Tacugama Chimpanzee Sanctuary",
         "country": "Sierra Leone",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-13.15, 8.45] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.15,
+          8.45
+        ]
+      },
       "properties": {
         "name": "Bunce Island",
         "country": "Sierra Leone",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-13.3, 8.35] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.3,
+          8.35
+        ]
+      },
       "properties": {
         "name": "Tokeh Beach",
         "country": "Sierra Leone",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-12.95, 7.9] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.95,
+          7.9
+        ]
+      },
       "properties": {
         "name": "Banana Islands",
         "country": "Sierra Leone",

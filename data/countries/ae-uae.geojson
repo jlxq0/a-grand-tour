@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          55.2708,
+          25.2048
+        ]
+      },
+      "properties": {
+        "name": "Dubai",
+        "country": "UAE",
+        "iso": "AE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.3666,
+          24.4539
+        ]
+      },
+      "properties": {
+        "name": "Abu Dhabi",
+        "country": "UAE",
+        "iso": "AE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4033,
+          25.3463
+        ]
+      },
+      "properties": {
+        "name": "Sharjah",
+        "country": "UAE",
+        "iso": "AE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2708,
+          25.2048
+        ]
+      },
+      "properties": {
+        "name": "Dubai (End)",
+        "country": "UAE",
+        "iso": "AE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           55.80638889,
           24.06777778
         ]

@@ -3,6 +3,44 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4314,
+          41.9981
+        ]
+      },
+      "properties": {
+        "name": "Skopje",
+        "country": "North Macedonia",
+        "iso": "MK",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7919,
+          41.1231
+        ]
+      },
+      "properties": {
+        "name": "Ohrid",
+        "country": "North Macedonia",
+        "iso": "MK",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
       "geometry": null,
       "properties": {
         "name": "Sveti Jovan Kaneo",

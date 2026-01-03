@@ -3,7 +3,51 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-15.9369, 23.6848] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.2,
+          27.1536
+        ]
+      },
+      "properties": {
+        "name": "Laayoune",
+        "country": "Western Sahara",
+        "iso": "EH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.9369,
+          23.6848
+        ]
+      },
+      "properties": {
+        "name": "Dakhla",
+        "country": "Western Sahara",
+        "iso": "EH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.9369,
+          23.6848
+        ]
+      },
       "properties": {
         "name": "Dakhla",
         "country": "Western Sahara",
@@ -15,7 +59,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-13.2, 27.15] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.2,
+          27.15
+        ]
+      },
       "properties": {
         "name": "Laâyoune",
         "country": "Western Sahara",
@@ -27,7 +77,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-15.8, 23.8] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.8,
+          23.8
+        ]
+      },
       "properties": {
         "name": "Dakhla Lagoon",
         "country": "Western Sahara",
@@ -39,7 +95,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-14.5, 26.1] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.5,
+          26.1
+        ]
+      },
       "properties": {
         "name": "Sahara Desert Drive",
         "country": "Western Sahara",

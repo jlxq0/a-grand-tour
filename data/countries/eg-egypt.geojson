@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          32.6421,
+          25.6872
+        ]
+      },
+      "properties": {
+        "name": "Aswan",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6421,
+          25.6872
+        ]
+      },
+      "properties": {
+        "name": "Luxor",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2357,
+          30.0444
+        ]
+      },
+      "properties": {
+        "name": "Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6651,
+          29.0261
+        ]
+      },
+      "properties": {
+        "name": "Nuweiba",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           29.66666667,
           30.83583333
         ]

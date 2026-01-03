@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -16.4818,
+          16.0326
+        ]
+      },
+      "properties": {
+        "name": "Saint-Louis",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.4677,
+          14.7167
+        ]
+      },
+      "properties": {
+        "name": "Dakar",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -12.84583333,
           12.59333333
         ]

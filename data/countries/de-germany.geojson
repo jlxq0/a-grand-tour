@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          8.6821,
+          50.1109
+        ]
+      },
+      "properties": {
+        "name": "Frankfurt",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.582,
+          48.1351
+        ]
+      },
+      "properties": {
+        "name": "Munich",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           6.084444444,
           50.77444444
         ]

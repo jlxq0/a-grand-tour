@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          24.7536,
+          59.437
+        ]
+      },
+      "properties": {
+        "name": "Tallinn",
+        "country": "Estonia",
+        "iso": "EE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 14,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           24.73333333,
           59.43333
         ]

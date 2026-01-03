@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          18.7712,
+          42.4247
+        ]
+      },
+      "properties": {
+        "name": "Kotor",
+        "country": "Montenegro",
+        "iso": "ME",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2636,
+          42.4304
+        ]
+      },
+      "properties": {
+        "name": "Podgorica",
+        "country": "Montenegro",
+        "iso": "ME",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.0166,
           43.133
         ]

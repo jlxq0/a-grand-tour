@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          39.2083,
+          -6.7924
+        ]
+      },
+      "properties": {
+        "name": "Dar es Salaam",
+        "country": "Tanzania",
+        "iso": "TZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.188,
+          -6.1659
+        ]
+      },
+      "properties": {
+        "name": "Zanzibar",
+        "country": "Tanzania",
+        "iso": "TZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8333,
+          -2.3333
+        ]
+      },
+      "properties": {
+        "name": "Serengeti",
+        "country": "Tanzania",
+        "iso": "TZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5857,
+          -3.2408
+        ]
+      },
+      "properties": {
+        "name": "Ngorongoro",
+        "country": "Tanzania",
+        "iso": "TZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           37.36667,
           -3.06667
         ]

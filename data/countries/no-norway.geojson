@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          10.7522,
+          59.9139
+        ]
+      },
+      "properties": {
+        "name": "Oslo",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 14,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3221,
+          60.3913
+        ]
+      },
+      "properties": {
+        "name": "Bergen",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 14,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3535,
+          63.0172
+        ]
+      },
+      "properties": {
+        "name": "Atlantic Road",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 14,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5615,
+          68.2092
+        ]
+      },
+      "properties": {
+        "name": "Lofoten",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 14,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           5.32306,
           60.39722
         ]

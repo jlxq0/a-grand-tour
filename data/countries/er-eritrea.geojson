@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          38.9318,
+          15.3229
+        ]
+      },
+      "properties": {
+        "name": "Asmara",
+        "country": "Eritrea",
+        "iso": "ER",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           38.93583333,
           15.33527778
         ]

@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [8.7833, 3.75] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7837,
+          3.7504
+        ]
+      },
+      "properties": {
+        "name": "Malabo",
+        "country": "Equatorial Guinea",
+        "iso": "GQ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7833,
+          3.75
+        ]
+      },
       "properties": {
         "name": "Malabo",
         "country": "Equatorial Guinea",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [8.63, 3.58] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.63,
+          3.58
+        ]
+      },
       "properties": {
         "name": "Pico Basilé",
         "country": "Equatorial Guinea",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [9.7667, 1.85] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.7667,
+          1.85
+        ]
+      },
       "properties": {
         "name": "Bata",
         "country": "Equatorial Guinea",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [10.3, 1.65] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3,
+          1.65
+        ]
+      },
       "properties": {
         "name": "Monte Alén National Park",
         "country": "Equatorial Guinea",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [8.7, 3.42] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7,
+          3.42
+        ]
+      },
       "properties": {
         "name": "Arena Blanca Beach",
         "country": "Equatorial Guinea",

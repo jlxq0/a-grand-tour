@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-52.3269, 4.9372] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.3261,
+          4.9224
+        ]
+      },
+      "properties": {
+        "name": "Cayenne",
+        "country": "French Guiana",
+        "iso": "GF",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.3269,
+          4.9372
+        ]
+      },
       "properties": {
         "name": "Cayenne",
         "country": "French Guiana",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-52.65, 5.16] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.65,
+          5.16
+        ]
+      },
       "properties": {
         "name": "Guiana Space Centre",
         "country": "French Guiana",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-52.585, 5.29] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.585,
+          5.29
+        ]
+      },
       "properties": {
         "name": "Îles du Salut (Devil's Island)",
         "country": "French Guiana",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-52.35, 4.85] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.35,
+          4.85
+        ]
+      },
       "properties": {
         "name": "Marais de Kaw",
         "country": "French Guiana",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-53.2, 5.5] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.2,
+          5.5
+        ]
+      },
       "properties": {
         "name": "Tresor Nature Reserve",
         "country": "French Guiana",

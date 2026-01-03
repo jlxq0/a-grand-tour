@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          21.0122,
+          52.2297
+        ]
+      },
+      "properties": {
+        "name": "Warsaw",
+        "country": "Poland",
+        "iso": "PL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.945,
+          50.0647
+        ]
+      },
+      "properties": {
+        "name": "Krakow",
+        "country": "Poland",
+        "iso": "PL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.175,
           50.03888889
         ]

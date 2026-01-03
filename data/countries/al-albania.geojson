@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          19.8187,
+          41.3275
+        ]
+      },
+      "properties": {
+        "name": "Tirana",
+        "country": "Albania",
+        "iso": "AL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           20.02095,
           39.745732
         ]

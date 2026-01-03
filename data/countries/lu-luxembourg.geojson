@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          6.1296,
+          49.8153
+        ]
+      },
+      "properties": {
+        "name": "Luxembourg",
+        "country": "Luxembourg",
+        "iso": "LU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           6.13333,
           49.61
         ]

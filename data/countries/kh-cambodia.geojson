@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          104.916,
+          11.5564
+        ]
+      },
+      "properties": {
+        "name": "Phnom Penh",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.86,
+          13.3633
+        ]
+      },
+      "properties": {
+        "name": "Siem Reap",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           103.8333333,
           13.43333333
         ]

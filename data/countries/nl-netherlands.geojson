@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          4.9041,
+          52.3676
+        ]
+      },
+      "properties": {
+        "name": "Amsterdam",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.911111111,
           52.54888889
         ]

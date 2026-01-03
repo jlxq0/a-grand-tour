@@ -6,6 +6,101 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          35.0063,
+          29.5267
+        ]
+      },
+      "properties": {
+        "name": "Aqaba",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3285
+        ]
+      },
+      "properties": {
+        "name": "Petra",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4241,
+          29.5722
+        ]
+      },
+      "properties": {
+        "name": "Wadi Rum",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55,
+          31.5
+        ]
+      },
+      "properties": {
+        "name": "Dead Sea",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.9106,
+          31.9454
+        ]
+      },
+      "properties": {
+        "name": "Amman",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           35.72830556,
           32.04261111
         ]

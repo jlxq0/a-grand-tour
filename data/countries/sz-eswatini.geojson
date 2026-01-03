@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [31.1367, -26.3208] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1333,
+          -26.3167
+        ]
+      },
+      "properties": {
+        "name": "Mbabane",
+        "country": "Eswatini",
+        "iso": "SZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1367,
+          -26.3208
+        ]
+      },
       "properties": {
         "name": "Mbabane",
         "country": "Eswatini",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [31.2, -26.45] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2,
+          -26.45
+        ]
+      },
       "properties": {
         "name": "Ezulwini Valley",
         "country": "Eswatini",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [31.18, -26.48] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.18,
+          -26.48
+        ]
+      },
       "properties": {
         "name": "Mlilwane Wildlife Sanctuary",
         "country": "Eswatini",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [31.13, -26.28] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.13,
+          -26.28
+        ]
+      },
       "properties": {
         "name": "Sibebe Rock",
         "country": "Eswatini",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [31.9, -26.3] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.9,
+          -26.3
+        ]
+      },
       "properties": {
         "name": "Hlane Royal National Park",
         "country": "Eswatini",

@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          19.0402,
+          47.4979
+        ]
+      },
+      "properties": {
+        "name": "Budapest",
+        "country": "Hungary",
+        "iso": "HU",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.07067,
           47.48242
         ]

@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          3.3792,
+          6.5244
+        ]
+      },
+      "properties": {
+        "name": "Lagos",
+        "country": "Nigeria",
+        "iso": "NG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           4.55222,
           7.75556
         ]

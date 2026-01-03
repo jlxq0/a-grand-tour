@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -47.8825,
+          -15.7942
+        ]
+      },
+      "properties": {
+        "name": "Brasilia",
+        "country": "Brazil",
+        "iso": "BR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.4902,
+          -1.4558
+        ]
+      },
+      "properties": {
+        "name": "Belem",
+        "country": "Brazil",
+        "iso": "BR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.675,
+          2.8235
+        ]
+      },
+      "properties": {
+        "name": "Boa Vista",
+        "country": "Brazil",
+        "iso": "BR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.0217,
+          -3.119
+        ]
+      },
+      "properties": {
+        "name": "Manaus",
+        "country": "Brazil",
+        "iso": "BR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -48.0,
           -24.16667
         ]

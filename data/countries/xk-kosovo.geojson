@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [21.1655, 42.6629] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.1655,
+          42.6629
+        ]
+      },
+      "properties": {
+        "name": "Pristina",
+        "country": "Kosovo",
+        "iso": "XK",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.1655,
+          42.6629
+        ]
+      },
       "properties": {
         "name": "Pristina",
         "country": "Kosovo",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [20.7394, 42.2139] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.7394,
+          42.2139
+        ]
+      },
       "properties": {
         "name": "Prizren",
         "country": "Kosovo",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [20.2667, 42.55] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.2667,
+          42.55
+        ]
+      },
       "properties": {
         "name": "Visoki Dečani Monastery",
         "country": "Kosovo",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [20.8717, 42.6592] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8717,
+          42.6592
+        ]
+      },
       "properties": {
         "name": "Gračanica Monastery",
         "country": "Kosovo",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [20.53, 42.53] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.53,
+          42.53
+        ]
+      },
       "properties": {
         "name": "Rugova Gorge",
         "country": "Kosovo",
@@ -63,7 +112,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [20.9, 42.96] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9,
+          42.96
+        ]
+      },
       "properties": {
         "name": "Bear Sanctuary Pristina",
         "country": "Kosovo",

@@ -6,6 +6,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          100.88,
+          13.08
+        ]
+      },
+      "properties": {
+        "name": "Laem Chabang",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5018,
+          13.7563
+        ]
+      },
+      "properties": {
+        "name": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.9853,
+          18.7883
+        ]
+      },
+      "properties": {
+        "name": "Chiang Mai",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           103.237589,
           17.407772
         ]

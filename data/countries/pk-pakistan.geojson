@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          67.0011,
+          30.1798
+        ]
+      },
+      "properties": {
+        "name": "Quetta",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3587,
+          31.5204
+        ]
+      },
+      "properties": {
+        "name": "Lahore",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0479,
+          33.6844
+        ]
+      },
+      "properties": {
+        "name": "Islamabad",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6597,
+          36.3167
+        ]
+      },
+      "properties": {
+        "name": "Hunza",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           68.13888889,
           27.32916667
         ]

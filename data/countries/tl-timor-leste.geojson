@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [125.5736, -8.5594] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.5795,
+          -8.5569
+        ]
+      },
+      "properties": {
+        "name": "Dili",
+        "country": "Timor-Leste",
+        "iso": "TL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 4,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.5736,
+          -8.5594
+        ]
+      },
       "properties": {
         "name": "Dili",
         "country": "Timor-Leste",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [125.64, -8.53] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.64,
+          -8.53
+        ]
+      },
       "properties": {
         "name": "Cristo Rei",
         "country": "Timor-Leste",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [125.58, -8.25] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.58,
+          -8.25
+        ]
+      },
       "properties": {
         "name": "Atauro Island",
         "country": "Timor-Leste",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [127.3, -8.42] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.3,
+          -8.42
+        ]
+      },
       "properties": {
         "name": "Jaco Island",
         "country": "Timor-Leste",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [125.65, -8.85] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.65,
+          -8.85
+        ]
+      },
       "properties": {
         "name": "Mount Ramelau",
         "country": "Timor-Leste",
@@ -63,7 +112,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [126.38, -8.66] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.38,
+          -8.66
+        ]
+      },
       "properties": {
         "name": "Baucau",
         "country": "Timor-Leste",

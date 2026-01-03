@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          28.9784,
+          41.0082
+        ]
+      },
+      "properties": {
+        "name": "Istanbul",
+        "country": "Turkey",
+        "iso": "TR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8289,
+          38.6431
+        ]
+      },
+      "properties": {
+        "name": "Cappadocia",
+        "country": "Turkey",
+        "iso": "TR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           28.72361111,
           37.70833333
         ]

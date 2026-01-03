@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          14.4378,
+          50.0755
+        ]
+      },
+      "properties": {
+        "name": "Prague",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           17.37722222,
           49.3
         ]

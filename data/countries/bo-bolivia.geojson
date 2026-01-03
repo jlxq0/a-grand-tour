@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -63.1812,
+          -17.7833
+        ]
+      },
+      "properties": {
+        "name": "Santa Cruz",
+        "country": "Bolivia",
+        "iso": "BO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.255,
+          -19.0196
+        ]
+      },
+      "properties": {
+        "name": "Sucre",
+        "country": "Bolivia",
+        "iso": "BO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.825,
+          -20.4604
+        ]
+      },
+      "properties": {
+        "name": "Uyuni",
+        "country": "Bolivia",
+        "iso": "BO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.1193,
+          -16.4897
+        ]
+      },
+      "properties": {
+        "name": "La Paz",
+        "country": "Bolivia",
+        "iso": "BO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -65.749813,
           -19.599112
         ]

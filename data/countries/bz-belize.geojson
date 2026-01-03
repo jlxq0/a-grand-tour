@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -88.1962,
+          17.5046
+        ]
+      },
+      "properties": {
+        "name": "Belize City",
+        "country": "Belize",
+        "iso": "BZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 9,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -87.846213,
           17.190549
         ]

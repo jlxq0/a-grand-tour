@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -16.5885,
+          13.4549
+        ]
+      },
+      "properties": {
+        "name": "Banjul",
+        "country": "Gambia",
+        "iso": "GM",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -16.35719444,
           13.31616667
         ]

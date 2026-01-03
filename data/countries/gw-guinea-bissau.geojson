@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-15.5972, 11.8636] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.5977,
+          11.8816
+        ]
+      },
+      "properties": {
+        "name": "Bissau",
+        "country": "Guinea-Bissau",
+        "iso": "GW",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.5972,
+          11.8636
+        ]
+      },
       "properties": {
         "name": "Bissau",
         "country": "Guinea-Bissau",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-15.85, 11.25] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.85,
+          11.25
+        ]
+      },
       "properties": {
         "name": "Bijagós Archipelago",
         "country": "Guinea-Bissau",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-15.8, 11.15] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.8,
+          11.15
+        ]
+      },
       "properties": {
         "name": "Orango Islands",
         "country": "Guinea-Bissau",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-15.1, 12.2] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.1,
+          12.2
+        ]
+      },
       "properties": {
         "name": "Varela Beach",
         "country": "Guinea-Bissau",

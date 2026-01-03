@@ -6,6 +6,101 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -72.2753,
+          -50.3402
+        ]
+      },
+      "properties": {
+        "name": "El Calafate",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.303,
+          -54.8019
+        ]
+      },
+      "properties": {
+        "name": "Ushuaia",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.0368,
+          -42.7692
+        ]
+      },
+      "properties": {
+        "name": "Puerto Madryn",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3816,
+          -34.6037
+        ]
+      },
+      "properties": {
+        "name": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.4409,
+          -25.6953
+        ]
+      },
+      "properties": {
+        "name": "Iguazu Falls",
+        "country": "Argentina/Brazil",
+        "iso": "AR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -70.66666667,
           -47.15
         ]

@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -57.5759,
+          -25.2637
+        ]
+      },
+      "properties": {
+        "name": "Asuncion",
+        "country": "Paraguay",
+        "iso": "PY",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -55.702672,
           -27.131613
         ]

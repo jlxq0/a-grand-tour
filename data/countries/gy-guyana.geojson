@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-58.1553, 6.8013] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.1551,
+          6.8013
+        ]
+      },
+      "properties": {
+        "name": "Georgetown",
+        "country": "Guyana",
+        "iso": "GY",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.1553,
+          6.8013
+        ]
+      },
       "properties": {
         "name": "Georgetown",
         "country": "Guyana",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.4789, 5.1756] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.4789,
+          5.1756
+        ]
+      },
       "properties": {
         "name": "Kaieteur Falls",
         "country": "Guyana",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.3, 3.9] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.3,
+          3.9
+        ]
+      },
       "properties": {
         "name": "Rupununi Savanna",
         "country": "Guyana",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.85, 4.9] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.85,
+          4.9
+        ]
+      },
       "properties": {
         "name": "Iwokrama Rainforest",
         "country": "Guyana",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-59.15, 5.0] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -59.15,
+          5.0
+        ]
+      },
       "properties": {
         "name": "Orinduik Falls",
         "country": "Guyana",

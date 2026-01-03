@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          8.5417,
+          47.3769
+        ]
+      },
+      "properties": {
+        "name": "Zurich",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8632,
+          46.6863
+        ]
+      },
+      "properties": {
+        "name": "Interlaken",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           9.37778,
           47.42333
         ]

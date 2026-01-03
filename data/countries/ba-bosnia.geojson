@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          17.8078,
+          43.3438
+        ]
+      },
+      "properties": {
+        "name": "Mostar",
+        "country": "Bosnia",
+        "iso": "BA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4131,
+          43.8563
+        ]
+      },
+      "properties": {
+        "name": "Sarajevo",
+        "country": "Bosnia",
+        "iso": "BA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           19.288025,
           43.78144444
         ]

@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          102.6331,
+          17.9757
+        ]
+      },
+      "properties": {
+        "name": "Vientiane",
+        "country": "Laos",
+        "iso": "LA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.1346,
+          19.8867
+        ]
+      },
+      "properties": {
+        "name": "Luang Prabang",
+        "country": "Laos",
+        "iso": "LA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           103.1522222,
           19.43105556
         ]

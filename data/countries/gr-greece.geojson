@@ -6,6 +6,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.7275,
+          37.9838
+        ]
+      },
+      "properties": {
+        "name": "Athens",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6306,
+          39.7217
+        ]
+      },
+      "properties": {
+        "name": "Meteora",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7346,
+          38.2466
+        ]
+      },
+      "properties": {
+        "name": "Patras",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           23.72618,
           37.97087
         ]

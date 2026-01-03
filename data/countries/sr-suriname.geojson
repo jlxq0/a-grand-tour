@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -55.1679,
+          5.852
+        ]
+      },
+      "properties": {
+        "name": "Paramaribo",
+        "country": "Suriname",
+        "iso": "SR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -56.5,
           4.0
         ]

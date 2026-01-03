@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          24.1052,
+          56.9496
+        ]
+      },
+      "properties": {
+        "name": "Riga",
+        "country": "Latvia",
+        "iso": "LV",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 14,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           24.11667,
           56.95417
         ]

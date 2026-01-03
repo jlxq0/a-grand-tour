@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          22.8372,
+          -19.2868
+        ]
+      },
+      "properties": {
+        "name": "Maun",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.1264,
+          -18.3644
+        ]
+      },
+      "properties": {
+        "name": "Chobe",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           22.9,
           -19.28333333
         ]

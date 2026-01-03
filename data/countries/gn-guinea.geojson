@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-13.6773, 9.5092] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.2317,
+          8.4657
+        ]
+      },
+      "properties": {
+        "name": "Conakry",
+        "country": "Guinea",
+        "iso": "GN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.6773,
+          9.5092
+        ]
+      },
       "properties": {
         "name": "Conakry",
         "country": "Guinea",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-12.25, 11.35] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.25,
+          11.35
+        ]
+      },
       "properties": {
         "name": "Fouta Djallon Highlands",
         "country": "Guinea",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-13.8, 9.5] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.8,
+          9.5
+        ]
+      },
       "properties": {
         "name": "Îles de Los",
         "country": "Guinea",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-12.28, 10.38] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.28,
+          10.38
+        ]
+      },
       "properties": {
         "name": "Dalaba",
         "country": "Guinea",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-12.1, 11.5] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.1,
+          11.5
+        ]
+      },
       "properties": {
         "name": "Chutes de Ditinn",
         "country": "Guinea",

@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -89.2182,
+          13.6929
+        ]
+      },
+      "properties": {
+        "name": "San Salvador",
+        "country": "El Salvador",
+        "iso": "SV",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -89.36916667,
           13.8275
         ]

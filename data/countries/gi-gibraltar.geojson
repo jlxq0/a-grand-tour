@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-5.3536, 36.1408] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.4536,
+          36.1408
+        ]
+      },
+      "properties": {
+        "name": "Gibraltar",
+        "country": "Gibraltar",
+        "iso": "GI",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3536,
+          36.1408
+        ]
+      },
       "properties": {
         "name": "Rock of Gibraltar",
         "country": "Gibraltar",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-5.3389, 36.1228] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3389,
+          36.1228
+        ]
+      },
       "properties": {
         "name": "Gibraltar Apes Den",
         "country": "Gibraltar",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-5.345, 36.109] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.345,
+          36.109
+        ]
+      },
       "properties": {
         "name": "Europa Point",
         "country": "Gibraltar",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-5.3419, 36.1294] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3419,
+          36.1294
+        ]
+      },
       "properties": {
         "name": "St. Michael's Cave",
         "country": "Gibraltar",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-5.3478, 36.1253] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3478,
+          36.1253
+        ]
+      },
       "properties": {
         "name": "Great Siege Tunnels",
         "country": "Gibraltar",

@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-10.8047, 6.3106] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.7969,
+          6.3008
+        ]
+      },
+      "properties": {
+        "name": "Monrovia",
+        "country": "Liberia",
+        "iso": "LR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.8047,
+          6.3106
+        ]
+      },
       "properties": {
         "name": "Monrovia",
         "country": "Liberia",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-8.5, 5.35] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.5,
+          5.35
+        ]
+      },
       "properties": {
         "name": "Sapo National Park",
         "country": "Liberia",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-10.8, 6.31] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.8,
+          6.31
+        ]
+      },
       "properties": {
         "name": "Providence Island",
         "country": "Liberia",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-10.05, 6.43] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.05,
+          6.43
+        ]
+      },
       "properties": {
         "name": "Robertsport",
         "country": "Liberia",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-9.4, 6.4] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.4,
+          6.4
+        ]
+      },
       "properties": {
         "name": "Kpatawee Waterfall",
         "country": "Liberia",

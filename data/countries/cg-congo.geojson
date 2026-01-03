@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [15.2663, -4.2634] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2663,
+          -4.2634
+        ]
+      },
+      "properties": {
+        "name": "Brazzaville",
+        "country": "Congo",
+        "iso": "CG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2663,
+          -4.2634
+        ]
+      },
       "properties": {
         "name": "Brazzaville",
         "country": "Congo",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [14.85, 1.25] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.85,
+          1.25
+        ]
+      },
       "properties": {
         "name": "Odzala-Kokoua National Park",
         "country": "Congo",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [11.8636, -4.7761] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8636,
+          -4.7761
+        ]
+      },
       "properties": {
         "name": "Pointe-Noire",
         "country": "Congo",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [15.05, -4.17] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.05,
+          -4.17
+        ]
+      },
       "properties": {
         "name": "Les Rapides",
         "country": "Congo",

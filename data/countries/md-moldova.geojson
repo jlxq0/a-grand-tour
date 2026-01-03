@@ -3,7 +3,32 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [28.8575, 47.0105] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8638,
+          47.0105
+        ]
+      },
+      "properties": {
+        "name": "Chisinau",
+        "country": "Moldova",
+        "iso": "MD",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8575,
+          47.0105
+        ]
+      },
       "properties": {
         "name": "Chișinău",
         "country": "Moldova",
@@ -15,7 +40,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [28.97, 47.3] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.97,
+          47.3
+        ]
+      },
       "properties": {
         "name": "Orheiul Vechi",
         "country": "Moldova",
@@ -27,7 +58,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [28.75, 47.0] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.75,
+          47.0
+        ]
+      },
       "properties": {
         "name": "Mileștii Mici",
         "country": "Moldova",
@@ -39,7 +76,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [28.78, 47.14] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.78,
+          47.14
+        ]
+      },
       "properties": {
         "name": "Cricova Winery",
         "country": "Moldova",
@@ -51,7 +94,13 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [29.5, 46.85] },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.5,
+          46.85
+        ]
+      },
       "properties": {
         "name": "Tiraspol (Transnistria)",
         "country": "Moldova",

@@ -6,6 +6,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          38.7578,
+          9.0054
+        ]
+      },
+      "properties": {
+        "name": "Addis Ababa",
+        "country": "Ethiopia",
+        "iso": "ET",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.98,
+          12.0319
+        ]
+      },
+      "properties": {
+        "name": "Lalibela",
+        "country": "Ethiopia",
+        "iso": "ET",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.0667,
+          13.3833
+        ]
+      },
+      "properties": {
+        "name": "Gondar",
+        "country": "Ethiopia",
+        "iso": "ET",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           38.71861,
           14.13019
         ]

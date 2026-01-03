@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          16.3738,
+          48.2082
+        ]
+      },
+      "properties": {
+        "name": "Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.055,
+          47.8095
+        ]
+      },
+      "properties": {
+        "name": "Salzburg",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           15.43861111,
           47.07305556
         ]

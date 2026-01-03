@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          49.8671,
+          40.4093
+        ]
+      },
+      "properties": {
+        "name": "Baku",
+        "country": "Azerbaijan",
+        "iso": "AZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           49.375,
           40.125
         ]

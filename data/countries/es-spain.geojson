@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          2.1734,
+          41.3851
+        ]
+      },
+      "properties": {
+        "name": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -3.59444,
           37.17667
         ]

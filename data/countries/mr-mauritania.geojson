@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -15.9785,
+          18.0735
+        ]
+      },
+      "properties": {
+        "name": "Nouakchott",
+        "country": "Mauritania",
+        "iso": "MR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -11.62361,
           20.92889
         ]

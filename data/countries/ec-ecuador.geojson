@@ -6,6 +6,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -79.8891,
+          -2.1894
+        ]
+      },
+      "properties": {
+        "name": "Guayaquil",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0045,
+          -2.9001
+        ]
+      },
+      "properties": {
+        "name": "Cuenca",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.4678,
+          -0.1807
+        ]
+      },
+      "properties": {
+        "name": "Quito",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -78.51208333,
           -0.22
         ]

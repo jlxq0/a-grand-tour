@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          105.8342,
+          21.0278
+        ]
+      },
+      "properties": {
+        "name": "Hanoi",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.5905,
+          16.4637
+        ]
+      },
+      "properties": {
+        "name": "Hue",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.338,
+          15.8801
+        ]
+      },
+      "properties": {
+        "name": "Hoi An",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6297,
+          10.8231
+        ]
+      },
+      "properties": {
+        "name": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 3,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           105.838623,
           21.03752
         ]

@@ -6,6 +6,120 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          56.2808,
+          27.1865
+        ]
+      },
+      "properties": {
+        "name": "Bandar Abbas",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.5311,
+          29.5918
+        ]
+      },
+      "properties": {
+        "name": "Shiraz",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.668,
+          32.6546
+        ]
+      },
+      "properties": {
+        "name": "Isfahan",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.3675,
+          31.8974
+        ]
+      },
+      "properties": {
+        "name": "Yazd",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.389,
+          35.6892
+        ]
+      },
+      "properties": {
+        "name": "Tehran",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.2919,
+          38.08
+        ]
+      },
+      "properties": {
+        "name": "Tabriz",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           45.47333333,
           38.97888889
         ]

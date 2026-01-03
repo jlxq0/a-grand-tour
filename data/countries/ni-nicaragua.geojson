@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -86.2362,
+          12.115
+        ]
+      },
+      "properties": {
+        "name": "Managua",
+        "country": "Nicaragua",
+        "iso": "NI",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -86.87805556,
           12.435
         ]

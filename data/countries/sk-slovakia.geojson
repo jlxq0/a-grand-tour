@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          17.1077,
+          48.1486
+        ]
+      },
+      "properties": {
+        "name": "Bratislava",
+        "country": "Slovakia",
+        "iso": "SK",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           21.27555556,
           49.29277778
         ]

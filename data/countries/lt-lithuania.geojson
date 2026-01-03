@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          25.2797,
+          54.6872
+        ]
+      },
+      "properties": {
+        "name": "Vilnius",
+        "country": "Lithuania",
+        "iso": "LT",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 14,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           24.83055556,
           54.88777778
         ]

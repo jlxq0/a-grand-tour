@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -90.5069,
+          14.6349
+        ]
+      },
+      "properties": {
+        "name": "Guatemala City",
+        "country": "Guatemala",
+        "iso": "GT",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.7295,
+          14.5586
+        ]
+      },
+      "properties": {
+        "name": "Antigua",
+        "country": "Guatemala",
+        "iso": "GT",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -90.73381,
           14.556504
         ]

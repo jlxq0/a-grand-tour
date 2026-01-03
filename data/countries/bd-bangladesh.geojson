@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          90.4125,
+          23.8103
+        ]
+      },
+      "properties": {
+        "name": "Dhaka",
+        "country": "Bangladesh",
+        "iso": "BD",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.83,
+          22.33
+        ]
+      },
+      "properties": {
+        "name": "Chittagong",
+        "country": "Bangladesh",
+        "iso": "BD",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           89.8,
           22.66667
         ]

@@ -6,6 +6,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -74.0721,
+          4.711
+        ]
+      },
+      "properties": {
+        "name": "Bogota",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5636,
+          6.2442
+        ]
+      },
+      "properties": {
+        "name": "Medellin",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5144,
+          10.391
+        ]
+      },
+      "properties": {
+        "name": "Cartagena",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -72.79722222,
           0.525277778
         ]

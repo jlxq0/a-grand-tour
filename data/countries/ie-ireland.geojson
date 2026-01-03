@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -6.2603,
+          53.3498
+        ]
+      },
+      "properties": {
+        "name": "Dublin",
+        "country": "Ireland",
+        "iso": "IE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.7046,
+          51.9611
+        ]
+      },
+      "properties": {
+        "name": "Ring of Kerry",
+        "country": "Ireland",
+        "iso": "IE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.4863,
+          51.8969
+        ]
+      },
+      "properties": {
+        "name": "Cork",
+        "country": "Ireland",
+        "iso": "IE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3389,
+          52.2544
+        ]
+      },
+      "properties": {
+        "name": "Rosslare",
+        "country": "Ireland",
+        "iso": "IE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 13,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -6.45,
           53.69167
         ]

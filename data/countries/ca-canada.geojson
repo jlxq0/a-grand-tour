@@ -6,6 +6,234 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -79.3832,
+          43.6532
+        ]
+      },
+      "properties": {
+        "name": "Toronto",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6972,
+          45.4215
+        ]
+      },
+      "properties": {
+        "name": "Ottawa",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5673,
+          45.5017
+        ]
+      },
+      "properties": {
+        "name": "Montreal",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2082,
+          46.8139
+        ]
+      },
+      "properties": {
+        "name": "Quebec City",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.0719,
+          51.0447
+        ]
+      },
+      "properties": {
+        "name": "Calgary",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.5708,
+          51.1784
+        ]
+      },
+      "properties": {
+        "name": "Banff",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0814,
+          52.8737
+        ]
+      },
+      "properties": {
+        "name": "Jasper",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1207,
+          49.2827
+        ]
+      },
+      "properties": {
+        "name": "Vancouver",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.3656,
+          48.4284
+        ]
+      },
+      "properties": {
+        "name": "Victoria",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.2377,
+          55.7596
+        ]
+      },
+      "properties": {
+        "name": "Dawson Creek",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.0568,
+          60.7212
+        ]
+      },
+      "properties": {
+        "name": "Whitehorse",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -139.432,
+          64.06
+        ]
+      },
+      "properties": {
+        "name": "Dawson City",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -116.4797222,
           51.42472222
         ]

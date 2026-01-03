@@ -6,6 +6,101 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          28.0473,
+          -26.2041
+        ]
+      },
+      "properties": {
+        "name": "Johannesburg",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4241,
+          -33.9249
+        ]
+      },
+      "properties": {
+        "name": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0464,
+          -34.0356
+        ]
+      },
+      "properties": {
+        "name": "Garden Route",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.4854,
+          -24.0119
+        ]
+      },
+      "properties": {
+        "name": "Kruger",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.1869,
+          -26.4728
+        ]
+      },
+      "properties": {
+        "name": "Drakensberg",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           31.01388889,
           -25.97388889
         ]

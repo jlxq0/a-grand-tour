@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          1.2255,
+          6.1256
+        ]
+      },
+      "properties": {
+        "name": "Lome",
+        "country": "Togo",
+        "iso": "TG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           1.133333333,
           10.06666667
         ]

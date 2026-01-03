@@ -6,6 +6,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          37.9236,
+          26.6175
+        ]
+      },
+      "properties": {
+        "name": "AlUla",
+        "country": "Saudi Arabia",
+        "iso": "SA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1925,
+          21.4858
+        ]
+      },
+      "properties": {
+        "name": "Jeddah",
+        "country": "Saudi Arabia",
+        "iso": "SA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6753,
+          24.7136
+        ]
+      },
+      "properties": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "iso": "SA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 21,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           49.63056944,
           25.40216667
         ]

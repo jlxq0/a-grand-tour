@@ -6,6 +6,652 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -117.0382,
+          32.5149
+        ]
+      },
+      "properties": {
+        "name": "San Diego",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      "properties": {
+        "name": "Los Angeles",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1398,
+          36.1699
+        ]
+      },
+      "properties": {
+        "name": "Las Vegas",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1401,
+          36.0544
+        ]
+      },
+      "properties": {
+        "name": "Grand Canyon",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.1135,
+          36.998
+        ]
+      },
+      "properties": {
+        "name": "Monument Valley",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.5498,
+          38.5733
+        ]
+      },
+      "properties": {
+        "name": "Moab",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9903,
+          39.7392
+        ]
+      },
+      "properties": {
+        "name": "Denver",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.9378,
+          35.687
+        ]
+      },
+      "properties": {
+        "name": "Santa Fe",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.2502,
+          29.25
+        ]
+      },
+      "properties": {
+        "name": "Big Bend",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7431,
+          30.2672
+        ]
+      },
+      "properties": {
+        "name": "Austin",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 10,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5786,
+          39.0997
+        ]
+      },
+      "properties": {
+        "name": "Kansas City",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1994,
+          38.627
+        ]
+      },
+      "properties": {
+        "name": "St Louis",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      "properties": {
+        "name": "Chicago",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      "properties": {
+        "name": "Detroit",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0377,
+          43.0896
+        ]
+      },
+      "properties": {
+        "name": "Niagara Falls",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ]
+      },
+      "properties": {
+        "name": "Boston",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006,
+          40.7128
+        ]
+      },
+      "properties": {
+        "name": "New York",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1652,
+          39.9526
+        ]
+      },
+      "properties": {
+        "name": "Philadelphia",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0369,
+          38.9072
+        ]
+      },
+      "properties": {
+        "name": "Washington DC",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.819,
+          37.5407
+        ]
+      },
+      "properties": {
+        "name": "Shenandoah",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.7816,
+          36.1627
+        ]
+      },
+      "properties": {
+        "name": "Nashville",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.049,
+          35.1495
+        ]
+      },
+      "properties": {
+        "name": "Memphis",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      "properties": {
+        "name": "New Orleans",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1918,
+          25.7617
+        ]
+      },
+      "properties": {
+        "name": "Miami",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.265,
+          44.9778
+        ]
+      },
+      "properties": {
+        "name": "Minneapolis",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 11,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.3397,
+          43.8554
+        ]
+      },
+      "properties": {
+        "name": "Badlands",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.4591,
+          43.8791
+        ]
+      },
+      "properties": {
+        "name": "Mt Rushmore",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.5885,
+          44.428
+        ]
+      },
+      "properties": {
+        "name": "Yellowstone",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.6818,
+          43.7904
+        ]
+      },
+      "properties": {
+        "name": "Grand Teton",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.787,
+          48.7596
+        ]
+      },
+      "properties": {
+        "name": "Glacier NP",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.7164,
+          64.8378
+        ]
+      },
+      "properties": {
+        "name": "Fairbanks",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.1926,
+          63.1148
+        ]
+      },
+      "properties": {
+        "name": "Denali",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.9003,
+          61.2181
+        ]
+      },
+      "properties": {
+        "name": "Anchorage",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3321,
+          47.6062
+        ]
+      },
+      "properties": {
+        "name": "Seattle",
+        "country": "USA",
+        "iso": "US",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 12,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -90.06138889,
           38.65861111
         ]

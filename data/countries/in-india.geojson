@@ -6,6 +6,253 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          74.8723,
+          31.634
+        ]
+      },
+      "properties": {
+        "name": "Amritsar",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1025,
+          28.7041
+        ]
+      },
+      "properties": {
+        "name": "Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7873,
+          26.9124
+        ]
+      },
+      "properties": {
+        "name": "Jaipur",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0243,
+          26.2389
+        ]
+      },
+      "properties": {
+        "name": "Jodhpur",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7125,
+          24.5854
+        ]
+      },
+      "properties": {
+        "name": "Udaipur",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 1,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0081,
+          27.1767
+        ]
+      },
+      "properties": {
+        "name": "Agra",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.9913,
+          25.3176
+        ]
+      },
+      "properties": {
+        "name": "Varanasi",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8777,
+          19.076
+        ]
+      },
+      "properties": {
+        "name": "Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.124,
+          15.2993
+        ]
+      },
+      "properties": {
+        "name": "Goa",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.2673,
+          9.9312
+        ]
+      },
+      "properties": {
+        "name": "Kochi",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2707,
+          13.0827
+        ]
+      },
+      "properties": {
+        "name": "Chennai",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3639,
+          22.5726
+        ]
+      },
+      "properties": {
+        "name": "Kolkata",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.2627,
+          27.041
+        ]
+      },
+      "properties": {
+        "name": "Darjeeling",
+        "country": "India",
+        "iso": "IN",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 2,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           78.021528,
           27.179806
         ]

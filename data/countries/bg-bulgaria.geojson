@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          23.3219,
+          42.6977
+        ]
+      },
+      "properties": {
+        "name": "Sofia",
+        "country": "Bulgaria",
+        "iso": "BG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7453,
+          42.1354
+        ]
+      },
+      "properties": {
+        "name": "Plovdiv",
+        "country": "Bulgaria",
+        "iso": "BG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           27.73602778,
           42.65911111
         ]

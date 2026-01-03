@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -0.1869,
+          5.6037
+        ]
+      },
+      "properties": {
+        "name": "Accra",
+        "country": "Ghana",
+        "iso": "GH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2466,
+          5.1053
+        ]
+      },
+      "properties": {
+        "name": "Cape Coast",
+        "country": "Ghana",
+        "iso": "GH",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 18,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -1.625833333,
           6.401111111
         ]

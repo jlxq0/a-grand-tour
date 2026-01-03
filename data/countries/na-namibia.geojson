@@ -6,6 +6,63 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          16.3254,
+          -18.8556
+        ]
+      },
+      "properties": {
+        "name": "Rundu",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2938,
+          -24.7275
+        ]
+      },
+      "properties": {
+        "name": "Windhoek",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.0658,
+          -22.5609
+        ]
+      },
+      "properties": {
+        "name": "Sossusvlei",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           15.40777778,
           -24.88527778
         ]

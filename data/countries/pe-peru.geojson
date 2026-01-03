@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -70.0219,
+          -15.8402
+        ]
+      },
+      "properties": {
+        "name": "Puno",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.5375,
+          -16.409
+        ]
+      },
+      "properties": {
+        "name": "Arequipa",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9675,
+          -13.532
+        ]
+      },
+      "properties": {
+        "name": "Cusco",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0428,
+          -12.0464
+        ]
+      },
+      "properties": {
+        "name": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 7,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -79.074737,
           -8.107836
         ]

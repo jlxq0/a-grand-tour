@@ -6,6 +6,82 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          15.9819,
+          45.815
+        ]
+      },
+      "properties": {
+        "name": "Zagreb",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6211,
+          44.8654
+        ]
+      },
+      "properties": {
+        "name": "Plitvice",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4402,
+          43.5081
+        ]
+      },
+      "properties": {
+        "name": "Split",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0944,
+          42.6507
+        ]
+      },
+      "properties": {
+        "name": "Dubrovnik",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 15,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           13.59333333,
           45.22858333
         ]

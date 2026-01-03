@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          20.4489,
+          44.7866
+        ]
+      },
+      "properties": {
+        "name": "Belgrade",
+        "country": "Serbia",
+        "iso": "RS",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           22.18611111,
           43.89930556
         ]

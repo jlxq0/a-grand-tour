@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          44.5152,
+          40.1872
+        ]
+      },
+      "properties": {
+        "name": "Yerevan",
+        "country": "Armenia",
+        "iso": "AM",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.0196,
+          40.3588
+        ]
+      },
+      "properties": {
+        "name": "Lake Sevan",
+        "country": "Armenia",
+        "iso": "AM",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           44.29514,
           40.15931
         ]

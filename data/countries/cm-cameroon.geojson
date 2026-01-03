@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          11.5021,
+          3.848
+        ]
+      },
+      "properties": {
+        "name": "Yaounde",
+        "country": "Cameroon",
+        "iso": "CM",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           13.0,
           3.0
         ]

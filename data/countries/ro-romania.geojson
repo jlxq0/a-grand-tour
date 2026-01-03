@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          26.1025,
+          44.4268
+        ]
+      },
+      "properties": {
+        "name": "Bucharest",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.6012,
+          46.07
+        ]
+      },
+      "properties": {
+        "name": "Brasov",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 16,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           25.71277778,
           47.77833333
         ]

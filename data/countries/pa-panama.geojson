@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -79.5197,
+          8.9824
+        ]
+      },
+      "properties": {
+        "name": "Panama City",
+        "country": "Panama",
+        "iso": "PA",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -79.54055556,
           8.951111111
         ]

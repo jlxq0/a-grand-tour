@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          32.5825,
+          0.3476
+        ]
+      },
+      "properties": {
+        "name": "Kampala",
+        "country": "Uganda",
+        "iso": "UG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.6739,
+          -1.0489
+        ]
+      },
+      "properties": {
+        "name": "Bwindi",
+        "country": "Uganda",
+        "iso": "UG",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           29.66138889,
           -1.080555556
         ]

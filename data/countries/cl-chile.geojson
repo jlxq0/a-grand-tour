@@ -6,6 +6,120 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -71.6273,
+          -33.0472
+        ]
+      },
+      "properties": {
+        "name": "Valparaiso",
+        "country": "Chile",
+        "iso": "CL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.6483,
+          -33.4489
+        ]
+      },
+      "properties": {
+        "name": "Santiago",
+        "country": "Chile",
+        "iso": "CL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.9545,
+          -39.2823
+        ]
+      },
+      "properties": {
+        "name": "Pucon",
+        "country": "Chile",
+        "iso": "CL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9854,
+          -41.3167
+        ]
+      },
+      "properties": {
+        "name": "Puerto Varas",
+        "country": "Chile",
+        "iso": "CL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.7706,
+          -42.4695
+        ]
+      },
+      "properties": {
+        "name": "Chiloe",
+        "country": "Chile",
+        "iso": "CL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.9658,
+          -50.9423
+        ]
+      },
+      "properties": {
+        "name": "Torres del Paine",
+        "country": "Chile",
+        "iso": "CL",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 6,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -73.76666667,
           -42.5
         ]

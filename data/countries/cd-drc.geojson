@@ -6,6 +6,44 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          15.2663,
+          -4.4419
+        ]
+      },
+      "properties": {
+        "name": "Kinshasa",
+        "country": "DRC",
+        "iso": "CD",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.44,
+          -5.8167
+        ]
+      },
+      "properties": {
+        "name": "Matadi",
+        "country": "DRC",
+        "iso": "CD",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 19,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           29.25,
           4.0
         ]

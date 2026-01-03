@@ -6,6 +6,196 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          174.7633,
+          -36.8485
+        ]
+      },
+      "properties": {
+        "name": "Auckland",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.2497,
+          -38.1368
+        ]
+      },
+      "properties": {
+        "name": "Rotorua",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.912,
+          -39.4928
+        ]
+      },
+      "properties": {
+        "name": "Napier",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.7762,
+          -41.2865
+        ]
+      },
+      "properties": {
+        "name": "Wellington",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          174.001,
+          -41.2906
+        ]
+      },
+      "properties": {
+        "name": "Picton",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          172.6362,
+          -43.5321
+        ]
+      },
+      "properties": {
+        "name": "Christchurch",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          170.0962,
+          -43.734
+        ]
+      },
+      "properties": {
+        "name": "Mt Cook",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.6626,
+          -45.0312
+        ]
+      },
+      "properties": {
+        "name": "Queenstown",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.9256,
+          -44.6414
+        ]
+      },
+      "properties": {
+        "name": "Milford Sound",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.132,
+          -44.7032
+        ]
+      },
+      "properties": {
+        "name": "Wanaka",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 5,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           166.1044444,
           -50.75
         ]

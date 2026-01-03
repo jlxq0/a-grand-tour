@@ -6,6 +6,25 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          27.4833,
+          -29.3167
+        ]
+      },
+      "properties": {
+        "name": "Maseru",
+        "country": "Lesotho",
+        "iso": "LS",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 20,
+        "nights": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           29.12305556,
           -29.76527778
         ]
