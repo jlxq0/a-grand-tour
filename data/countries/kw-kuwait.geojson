@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [47.9653, 29.3759] },
+      "properties": {
+        "name": "Kuwait City",
+        "country": "Kuwait",
+        "iso": "KW",
+        "source": "Suggestion",
+        "category": "City",
+        "why_notable": "Modern Gulf capital, reconstruction after 1990 invasion"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [48.0006, 29.3869] },
+      "properties": {
+        "name": "Kuwait Towers",
+        "country": "Kuwait",
+        "iso": "KW",
+        "source": "1000Places",
+        "category": "Cultural",
+        "why_notable": "Iconic 1979 landmark, viewing sphere, symbol of modern Kuwait"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [47.9717, 29.3767] },
+      "properties": {
+        "name": "Grand Mosque",
+        "country": "Kuwait",
+        "iso": "KW",
+        "source": "Suggestion",
+        "category": "Cultural",
+        "why_notable": "Largest mosque in Kuwait, stunning architecture, free tours"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [47.975, 29.377] },
+      "properties": {
+        "name": "Souq Al-Mubarakiya",
+        "country": "Kuwait",
+        "iso": "KW",
+        "source": "Suggestion",
+        "category": "Cultural",
+        "why_notable": "Historic market, spices, gold, traditional Kuwaiti experience"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [48.18, 29.08] },
+      "properties": {
+        "name": "Failaka Island",
+        "country": "Kuwait",
+        "iso": "KW",
+        "source": "Suggestion",
+        "category": "Cultural",
+        "why_notable": "Ancient Greek settlement ruins, abandoned Iraqi invasion remnants"
+      }
+    }
+  ]
+}

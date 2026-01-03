@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.7833, 3.75] },
+      "properties": {
+        "name": "Malabo",
+        "country": "Equatorial Guinea",
+        "iso": "GQ",
+        "source": "Suggestion",
+        "category": "City",
+        "why_notable": "Capital on Bioko Island, Spanish colonial, Pico Basilé volcano backdrop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.63, 3.58] },
+      "properties": {
+        "name": "Pico Basilé",
+        "country": "Equatorial Guinea",
+        "iso": "GQ",
+        "source": "Suggestion",
+        "category": "Natural",
+        "why_notable": "3011m volcano, highest point, cloud forest, endemic primates"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [9.7667, 1.85] },
+      "properties": {
+        "name": "Bata",
+        "country": "Equatorial Guinea",
+        "iso": "GQ",
+        "source": "Suggestion",
+        "category": "City",
+        "why_notable": "Largest city (mainland), Atlantic beaches, gateway to interior"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [10.3, 1.65] },
+      "properties": {
+        "name": "Monte Alén National Park",
+        "country": "Equatorial Guinea",
+        "iso": "GQ",
+        "source": "Suggestion",
+        "category": "Natural",
+        "why_notable": "Primary rainforest, gorillas, forest elephants, remote wilderness"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.7, 3.42] },
+      "properties": {
+        "name": "Arena Blanca Beach",
+        "country": "Equatorial Guinea",
+        "iso": "GQ",
+        "source": "Suggestion",
+        "category": "Natural",
+        "why_notable": "Black sand beaches of Bioko, sea turtle nesting (Nov-Feb)"
+      }
+    }
+  ]
+}

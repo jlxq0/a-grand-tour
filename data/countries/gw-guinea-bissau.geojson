@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-15.5972, 11.8636] },
+      "properties": {
+        "name": "Bissau",
+        "country": "Guinea-Bissau",
+        "iso": "GW",
+        "source": "Suggestion",
+        "category": "City",
+        "why_notable": "Crumbling colonial capital, vibrant markets, Portuguese-African culture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-15.85, 11.25] },
+      "properties": {
+        "name": "Bijagós Archipelago",
+        "country": "Guinea-Bissau",
+        "iso": "GW",
+        "source": "UNESCO",
+        "category": "Natural",
+        "why_notable": "UNESCO Biosphere, 88 islands, hippos swimming in sea, traditional culture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-15.8, 11.15] },
+      "properties": {
+        "name": "Orango Islands",
+        "country": "Guinea-Bissau",
+        "iso": "GW",
+        "source": "Suggestion",
+        "category": "Natural",
+        "why_notable": "Saltwater hippos, sea turtles, matriarchal Bijagó society"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-15.1, 12.2] },
+      "properties": {
+        "name": "Varela Beach",
+        "country": "Guinea-Bissau",
+        "iso": "GW",
+        "source": "Suggestion",
+        "category": "Natural",
+        "why_notable": "Remote northern beach, fishing villages, off-grid paradise"
+      }
+    }
+  ]
+}

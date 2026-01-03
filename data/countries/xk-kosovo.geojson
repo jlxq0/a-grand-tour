@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [21.1655, 42.6629] },
+      "properties": {
+        "name": "Pristina",
+        "country": "Kosovo",
+        "iso": "XK",
+        "source": "Suggestion",
+        "category": "City",
+        "why_notable": "Capital, Newborn monument, Bill Clinton statue, buzzing cafe culture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [20.7394, 42.2139] },
+      "properties": {
+        "name": "Prizren",
+        "country": "Kosovo",
+        "iso": "XK",
+        "source": "LP500",
+        "category": "City",
+        "why_notable": "Ottoman old town, stone bridge, fortress, Kosovo's prettiest city"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [20.2667, 42.55] },
+      "properties": {
+        "name": "Visoki Dečani Monastery",
+        "country": "Kosovo",
+        "iso": "XK",
+        "source": "UNESCO",
+        "category": "Cultural",
+        "why_notable": "14th-century Serbian Orthodox, stunning frescoes, KFOR protected"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [20.8717, 42.6592] },
+      "properties": {
+        "name": "Gračanica Monastery",
+        "country": "Kosovo",
+        "iso": "XK",
+        "source": "UNESCO",
+        "category": "Cultural",
+        "why_notable": "Byzantine masterpiece, 14th-century frescoes, Serbian enclave"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [20.53, 42.53] },
+      "properties": {
+        "name": "Rugova Gorge",
+        "country": "Kosovo",
+        "iso": "XK",
+        "source": "Suggestion",
+        "category": "Natural",
+        "why_notable": "Dramatic canyon, Via Ferrata, hiking, Peja's gateway to Albanian Alps"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [20.9, 42.96] },
+      "properties": {
+        "name": "Bear Sanctuary Pristina",
+        "country": "Kosovo",
+        "iso": "XK",
+        "source": "Suggestion",
+        "category": "Wildlife",
+        "why_notable": "Rescued brown bears from restaurants, run by Four Paws"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.1367, -26.3208] },
+      "properties": {
+        "name": "Mbabane",
+        "country": "Eswatini",
+        "iso": "SZ",
+        "source": "Suggestion",
+        "category": "City",
+        "why_notable": "Capital in the hills, Swazi Market, cool highland climate"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.2, -26.45] },
+      "properties": {
+        "name": "Ezulwini Valley",
+        "country": "Eswatini",
+        "iso": "SZ",
+        "source": "Suggestion",
+        "category": "Cultural",
+        "why_notable": "Royal Valley, Mantenga Cultural Village, traditional dancing"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.18, -26.48] },
+      "properties": {
+        "name": "Mlilwane Wildlife Sanctuary",
+        "country": "Eswatini",
+        "iso": "SZ",
+        "source": "LP500",
+        "category": "Natural",
+        "why_notable": "Hike or mountain bike with zebras, warthogs, antelopes - no predators"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.13, -26.28] },
+      "properties": {
+        "name": "Sibebe Rock",
+        "country": "Eswatini",
+        "iso": "SZ",
+        "source": "Suggestion",
+        "category": "Natural",
+        "why_notable": "World's second largest monolith after Uluru, guided hikes"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.9, -26.3] },
+      "properties": {
+        "name": "Hlane Royal National Park",
+        "country": "Eswatini",
+        "iso": "SZ",
+        "source": "Suggestion",
+        "category": "Natural",
+        "why_notable": "Lions, elephants, rhinos - Eswatini's biggest game reserve"
+      }
+    }
+  ]
+}
