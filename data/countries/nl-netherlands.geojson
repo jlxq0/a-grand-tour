@@ -1,0 +1,432 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.911111111,
+          52.54888889
+        ]
+      },
+      "properties": {
+        "name": "Droogmakerij de Beemster (Beemster Polder)",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.791388889,
+          52.555
+        ]
+      },
+      "properties": {
+        "name": "Dutch Water Defence Lines",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.90222,
+          12.10194
+        ]
+      },
+      "properties": {
+        "name": "Historic Area of Willemstad, Inner City and Harbour, Curaçao",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.67889,
+          52.84583
+        ]
+      },
+      "properties": {
+        "name": "Ir.D.F. Woudagemaal (D.F. Wouda Steam Pumping Station)",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.649444444,
+          51.8825
+        ]
+      },
+      "properties": {
+        "name": "Mill Network at Kinderdijk-Elshout",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.147555556,
+          52.08533333
+        ]
+      },
+      "properties": {
+        "name": "Rietveld Schröderhuis (Rietveld Schröder House)",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.771666667,
+          52.63861111
+        ]
+      },
+      "properties": {
+        "name": "Schokland and Surroundings",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.887777778,
+          52.365
+        ]
+      },
+      "properties": {
+        "name": "Seventeenth-Century Canal Ring Area of Amsterdam inside the Singelgracht",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2010",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.418333333,
+          51.92333333
+        ]
+      },
+      "properties": {
+        "name": "Van Nellefabriek",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Anne Frank Huis",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Van Gogh Museum",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rijksmuseum",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mill Complex at Kinderdijk",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Anne Frank House",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Amsterdam Cafe Society",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tulip Time",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Oude Kerk Amsterdam",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pulitzer Hotel Amsterdam",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Red-Light District Amsterdam",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rijksmuseum",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Van Gogh Museum",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kroller-Muller Museum",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Delft",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mauritshuis The Hague",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Manoir Inter Scaldes",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "European Fine Arts Fair",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "North Sea Jazz Festival",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0942,
+          52.5089
+        ]
+      },
+      "properties": {
+        "name": "De Librije",
+        "city": "Zwolle",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Jonnie Boer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0922,
+          52.5139
+        ]
+      },
+      "properties": {
+        "name": "De Librije",
+        "city": "Zwolle",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.0375,
+          51.4456
+        ]
+      },
+      "properties": {
+        "name": "Inter Scaldes",
+        "city": "Kruiningen",
+        "country": "Netherlands",
+        "iso": "NL",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    }
+  ]
+}

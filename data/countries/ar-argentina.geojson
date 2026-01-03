@@ -1,0 +1,618 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.66666667,
+          -47.15
+        ]
+      },
+      "properties": {
+        "name": "Cueva de las Manos, Río Pinturas",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.286073,
+          -25.577357
+        ]
+      },
+      "properties": {
+        "name": "Iguazu National Park",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.0,
+          -30.0
+        ]
+      },
+      "properties": {
+        "name": "Ischigualasto / Talampaya Natural Parks",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.19111,
+          -31.42056
+        ]
+      },
+      "properties": {
+        "name": "Jesuit Block and Estancias of Córdoba",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.8728,
+          -42.8528
+        ]
+      },
+      "properties": {
+        "name": "Los Alerces National Park",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2017",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.24944,
+          -50.0
+        ]
+      },
+      "properties": {
+        "name": "Los Glaciares National Park",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.0,
+          -42.5
+        ]
+      },
+      "properties": {
+        "name": "Península Valdés",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.34886111,
+          -23.19986111
+        ]
+      },
+      "properties": {
+        "name": "Quebrada de Humahuaca",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.829336111,
+          46.46841389
+        ]
+      },
+      "properties": {
+        "name": "The Architectural Work of Le Corbusier, an Outstanding Contribution to the Modern Movement",
+        "country": "Argentina,Belgium,France,Germany,India,Japan,Switzerland",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.59166667,
+          -18.25
+        ]
+      },
+      "properties": {
+        "name": "Qhapaq Ñan, Andean Road System",
+        "country": "Argentina,Bolivia (Plurinational State of),Chile,Colombia,Ecuador,Peru",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.26583333,
+          -28.54333333
+        ]
+      },
+      "properties": {
+        "name": "Jesuit Missions of the Guaranis: San Ignacio Mini, Santa Ana, Nuestra Señora de Loreto and Santa Maria Mayor (Argentina), Ruins of Sao Miguel das Missoes (Brazil)",
+        "country": "Argentina,Brazil",
+        "iso": "AR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Iguazu Falls",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Monte Fitz Roy",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Parque Nacional Nahuel Huapi",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Perito Moreno Glacier",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Boca Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Recoleta Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Recoleta Cemetery Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Cabrera Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tango Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Teatro Colon Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Estancia La Portena",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Estancias Argentina",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Iguazu Falls",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Estancia Huechahue",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Los Glaciares Patagonia",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bariloche",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tren a Las Nubes",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.427,
+          -34.5875
+        ]
+      },
+      "properties": {
+        "name": "Don Julio",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Pablo Rivero"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.435,
+          -34.589
+        ]
+      },
+      "properties": {
+        "name": "Tegui",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Germán Martitegui"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4225,
+          -34.5847
+        ]
+      },
+      "properties": {
+        "name": "Don Julio",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4475,
+          -34.5847
+        ]
+      },
+      "properties": {
+        "name": "Tegui",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.427,
+          -34.5875
+        ]
+      },
+      "properties": {
+        "name": "Don Julio",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Parrilla",
+        "why_notable": "World's 50 Best, legendary steak"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.363,
+          -34.636
+        ]
+      },
+      "properties": {
+        "name": "El Obrero",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Bodegón",
+        "why_notable": "La Boca institution, Boca Juniors shrine"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3801,
+          -34.6089
+        ]
+      },
+      "properties": {
+        "name": "Cafe Tortoni",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Cafe",
+        "why_notable": "Oldest cafe in Argentina, since 1858"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3631,
+          -34.6392
+        ]
+      },
+      "properties": {
+        "name": "El Farolito",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "steakhouse",
+        "why_notable": "La Boca classic parrilla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.4258,
+          -34.5853
+        ]
+      },
+      "properties": {
+        "name": "La Cabrera",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "steakhouse",
+        "why_notable": "Palermo steakhouse legend"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.3886,
+          -34.6017
+        ]
+      },
+      "properties": {
+        "name": "El Cuartito",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "pizza",
+        "why_notable": "Buenos Aires pizza since 1934"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.395,
+          -34.5875
+        ]
+      },
+      "properties": {
+        "name": "Alvear Palace Hotel",
+        "city": "Buenos Aires",
+        "country": "Argentina",
+        "iso": "AR",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Belle Époque elegance in Recoleta"
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.02095,
+          39.745732
+        ]
+      },
+      "properties": {
+        "name": "Butrint",
+        "country": "Albania",
+        "iso": "AL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1992",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.14083333,
+          40.07416667
+        ]
+      },
+      "properties": {
+        "name": "Historic Centres of Berat and Gjirokastra ",
+        "country": "Albania",
+        "iso": "AL",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.18333333,
+          48.9
+        ]
+      },
+      "properties": {
+        "name": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
+        "country": "Albania,Austria,Belgium,Bosnia and Herzegovina,Bulgaria,Croatia,Czechia,France,Germany,Italy,North Macedonia,Poland,Romania,Slovakia,Slovenia,Spain,Switzerland,Ukraine",
+        "iso": "AL",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.70416667,
+          40.99183333
+        ]
+      },
+      "properties": {
+        "name": "Natural and Cultural Heritage of the Ohrid region",
+        "country": "Albania,North Macedonia",
+        "iso": "AL",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Butrint",
+        "country": "Albania",
+        "iso": "AL",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

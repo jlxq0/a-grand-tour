@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "New Caledonia",
+        "country": "New Caledonia",
+        "iso": "NC",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

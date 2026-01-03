@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Morne Trois Pitons Dominica",
+        "country": "Dominica",
+        "iso": "DM",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

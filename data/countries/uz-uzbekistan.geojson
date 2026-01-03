@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Registan Square Samarkand",
+        "country": "Uzbekistan",
+        "iso": "UZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bukhara",
+        "country": "Uzbekistan",
+        "iso": "UZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Registan Square Samarkand",
+        "country": "Uzbekistan",
+        "iso": "UZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.749813,
+          -19.599112
+        ]
+      },
+      "properties": {
+        "name": "City of Potosí",
+        "country": "Bolivia (Plurinational State of)",
+        "iso": "BO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.820485,
+          -18.178323
+        ]
+      },
+      "properties": {
+        "name": "Fuerte de Samaipata",
+        "country": "Bolivia (Plurinational State of)",
+        "iso": "BO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -65.259592,
+          -19.04799
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Sucre",
+        "country": "Bolivia (Plurinational State of)",
+        "iso": "BO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.5,
+          -16.0
+        ]
+      },
+      "properties": {
+        "name": "Jesuit Missions of the Chiquitos",
+        "country": "Bolivia (Plurinational State of)",
+        "iso": "BO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1990",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.86667,
+          -14.26667
+        ]
+      },
+      "properties": {
+        "name": "Noel Kempff Mercado National Park",
+        "country": "Bolivia (Plurinational State of)",
+        "iso": "BO",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -68.673278,
+          -16.555003
+        ]
+      },
+      "properties": {
+        "name": "Tiwanaku: Spiritual and Political Centre of the Tiwanaku Culture",
+        "country": "Bolivia (Plurinational State of)",
+        "iso": "BO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Salar De Uyuni",
+        "country": "Bolivia",
+        "iso": "BO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Isla Del Sol",
+        "country": "Bolivia",
+        "iso": "BO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Copacabana La Paz",
+        "country": "Bolivia",
+        "iso": "BO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mercado De Hechiceria",
+        "country": "Bolivia",
+        "iso": "BO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

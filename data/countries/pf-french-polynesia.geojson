@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bora Bora",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Moorea",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Marquesas Islands",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bora Bora",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Huahine",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Maupiti",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Moorea",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Heiva I Tahiti",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tetiaroa",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rangiroa",
+        "country": "French Polynesia",
+        "iso": "PF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

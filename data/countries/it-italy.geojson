@@ -1,0 +1,2344 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.32639,
+          41.07333
+        ]
+      },
+      "properties": {
+        "name": "18th-Century Royal Palace at Caserta with the Park, the Aqueduct of Vanvitelli, and the San Leucio Complex",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.169555556,
+          45.97455556
+        ]
+      },
+      "properties": {
+        "name": "<I>Sacri Monti</I> of Piedmont and Lombardy",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.35305556,
+          38.11083333
+        ]
+      },
+      "properties": {
+        "name": "Arab-Norman Palermo and the Cathedral Churches of Cefalú and Monreale",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2015",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3675,
+          45.76833333
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Area and the Patriarchal Basilica of Aquileia",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.59333333,
+          37.28972222
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Area of Agrigento",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.48333333,
+          40.75
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Areas of Pompei, Herculaneum and Torre Annunziata",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.62244444,
+          43.06616667
+        ]
+      },
+      "properties": {
+        "name": "Assisi, the Basilica of San Francesco and Other Franciscan Sites",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.88066667,
+          45.39911111
+        ]
+      },
+      "properties": {
+        "name": "Botanical Garden (Orto Botanico), Padua",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.27094444,
+          41.08480556
+        ]
+      },
+      "properties": {
+        "name": "Castel del Monte",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.92568,
+          44.64624
+        ]
+      },
+      "properties": {
+        "name": "Cathedral, Torre Civica and Piazza Grande, Modena",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1705,
+          45.46588889
+        ]
+      },
+      "properties": {
+        "name": "Church and Dominican Convent of Santa Maria delle Grazie with “The Last Supper” by Leonardo da Vinci",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1980",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.26666667,
+          40.28333333
+        ]
+      },
+      "properties": {
+        "name": "Cilento and Vallo di Diano National Park with the Archeological Sites of Paestum and Velia, and the Certosa di Padula",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.99388889,
+          45.43861111
+        ]
+      },
+      "properties": {
+        "name": "City of Verona",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.54944444,
+          45.54916667
+        ]
+      },
+      "properties": {
+        "name": "City of Vicenza and the Palladian Villas of the Veneto",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.60277778,
+          40.63333333
+        ]
+      },
+      "properties": {
+        "name": "Costiera Amalfitana",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.53833,
+          45.59333
+        ]
+      },
+      "properties": {
+        "name": "Crespi d'Adda",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.19625,
+          44.42041667
+        ]
+      },
+      "properties": {
+        "name": "Early Christian Monuments of Ravenna",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.10188889,
+          42.00683333
+        ]
+      },
+      "properties": {
+        "name": "Etruscan Necropolises of Cerveteri and Tarquinia",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.61944444,
+          44.83777778
+        ]
+      },
+      "properties": {
+        "name": "Ferrara, City of the Renaissance, and its Po Delta",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.931111111,
+          44.41222222
+        ]
+      },
+      "properties": {
+        "name": "Genoa: <i>Le Strade Nuove</i> and the system of the<i> Palazzi dei Rolli</i>",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.25611,
+          43.77306
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Florence",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1982",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.26277778,
+          40.85138889
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Naples",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.04167,
+          43.46806
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of San Gimignano",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1990",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.33166667,
+          43.31861111
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Siena",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.63333,
+          43.725
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Urbino",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.67861111,
+          43.07694444
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of the City of Pienza",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.94558333,
+          38.48786111
+        ]
+      },
+      "properties": {
+        "name": "Isole Eolie (Aeolian Islands)",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.869166667,
+          45.4575
+        ]
+      },
+      "properties": {
+        "name": "Ivrea, industrial city of the 20th century",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.06891667,
+          36.89319444
+        ]
+      },
+      "properties": {
+        "name": "Late Baroque Towns of the Val di Noto (South-Eastern Sicily)",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2002",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.22611111,
+          45.95302778
+        ]
+      },
+      "properties": {
+        "name": "Le Colline del Prosecco di Conegliano e Valdobbiadene",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.43305556,
+          46.09416667
+        ]
+      },
+      "properties": {
+        "name": "Longobards in Italy. Places of the Power (568-774 A.D.)",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.79444444,
+          45.15944444
+        ]
+      },
+      "properties": {
+        "name": "Mantua and Sabbioneta",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.30416667,
+          43.85777778
+        ]
+      },
+      "properties": {
+        "name": "Medici Villas and Gardens in Tuscany",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2013",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.99666667,
+          37.75611111
+        ]
+      },
+      "properties": {
+        "name": "Mount Etna",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2013",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.87961111,
+          45.41188889
+        ]
+      },
+      "properties": {
+        "name": "Padua’s fourteenth-century fresco cycles",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.39638889,
+          43.72305556
+        ]
+      },
+      "properties": {
+        "name": "Piazza del Duomo, Pisa",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.72917,
+          44.10694
+        ]
+      },
+      "properties": {
+        "name": "Portovenere, Cinque Terre, and the Islands (Palmaria, Tino and Tinetto)",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.68572,
+          45.07253
+        ]
+      },
+      "properties": {
+        "name": "Residences of the Royal House of Savoy",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.29733333,
+          45.95705556
+        ]
+      },
+      "properties": {
+        "name": "Rock Drawings in Valcamonica",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.991388889,
+          39.70583333
+        ]
+      },
+      "properties": {
+        "name": "Su Nuraxi di Barumini",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.29306,
+          37.05944
+        ]
+      },
+      "properties": {
+        "name": "Syracuse and the Rocky Necropolis of Pantalica",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.23694,
+          40.7825
+        ]
+      },
+      "properties": {
+        "name": "The <I>Trulli</I> of Alberobello",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.16305556,
+          46.61305556
+        ]
+      },
+      "properties": {
+        "name": "The Dolomites",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2009",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.33277778,
+          44.49138889
+        ]
+      },
+      "properties": {
+        "name": "The Porticoes of Bologna",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.61027778,
+          40.66638889
+        ]
+      },
+      "properties": {
+        "name": "The Sassi and the Park of the Rupestrian Churches of Matera",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.55,
+          43.06666667
+        ]
+      },
+      "properties": {
+        "name": "Val d'Orcia",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.33894444,
+          45.43430556
+        ]
+      },
+      "properties": {
+        "name": "Venice and its Lagoon",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.77197222,
+          41.94416667
+        ]
+      },
+      "properties": {
+        "name": "Villa Adriana (Tivoli)",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.33417,
+          37.36611
+        ]
+      },
+      "properties": {
+        "name": "Villa Romana del Casale",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.79625,
+          41.96391667
+        ]
+      },
+      "properties": {
+        "name": "Villa d'Este, Tivoli",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.963611111,
+          44.60861111
+        ]
+      },
+      "properties": {
+        "name": "Vineyard Landscape of Piedmont: Langhe-Roero and Monferrato",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.49230556,
+          41.89022222
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Rome, the Properties of the Holy See in that City Enjoying Extraterritorial Rights and San Paolo Fuori le Mura",
+        "country": "Holy See,Italy",
+        "iso": "IT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1980",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Colosseum",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Piazza San Marco",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pompeii",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pantheon",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Florence Cathedral",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Uffizi Gallery",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mt. Etna",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "San Gimignano",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Piazza Del Campo Siena",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cinque Terre",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Duomo Milan",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Capri",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pisa",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Alberobello",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Capri",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Naples Archaeological Museum",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Spaccanapoli Naples",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pompeii",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Amalfi Coast",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Positano",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ravello",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Paestum",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sorrento",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Quadrilatero Bologna",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Piazza Del Duomo Florence",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ravenna",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Posta Vecchia",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rome",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hotel Hassler Roma",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sistine Chapel",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cinque Terre",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Portofino",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bellagio Lake Como",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Villa D'Este Tivoli",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palazzo Ducale Mantua",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Milan",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Duomo Milan",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Last Supper Milan",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Scala Milan",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rocca Scaligera Sirmione",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Borromean Islands",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rossini Opera Festival",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Urbino",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Costa Smeralda Sardinia",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Aeolian Islands",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Valley of Temples Agrigento",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mount Etna",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palermo",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Taormina",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Focacceria San Francesco Palermo",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Florence",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Uffizi Gallery",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Villa San Michele",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lucca",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Montalcino",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pienza",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Il Pellicano",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "San Gimignano",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Piazza Del Campo Siena",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Basilica of San Francesco Assisi",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palazzo Terranova",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Gubbio",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Passeggiata",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Spoleto Festival",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mont Blanc Crossing",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Asolo",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cortina D'Ampezzo",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Scrovegni Chapel Padua",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Venice",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Carnevale Venice",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hotel Cipriani Venice",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Venice Simplon-Orient-Express",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Verona",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.9217,
+          44.6488
+        ]
+      },
+      "properties": {
+        "name": "Osteria Francescana",
+        "city": "Modena",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Massimo Bottura"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0357,
+          44.7003
+        ]
+      },
+      "properties": {
+        "name": "Piazza Duomo",
+        "city": "Alba",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Enrico Crippa"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7894,
+          45.4292
+        ]
+      },
+      "properties": {
+        "name": "Le Calandre",
+        "city": "Rubano",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Massimiliano Alajmo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.775,
+          45.6689
+        ]
+      },
+      "properties": {
+        "name": "Da Vittorio",
+        "city": "Brusaporto",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Cerea Brothers"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2164,
+          43.7179
+        ]
+      },
+      "properties": {
+        "name": "Uliassi",
+        "city": "Senigallia",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Mauro Uliassi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1655,
+          45.4501
+        ]
+      },
+      "properties": {
+        "name": "Enrico Bartolini al Mudec",
+        "city": "Milan",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Enrico Bartolini"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1,
+          41.7833
+        ]
+      },
+      "properties": {
+        "name": "Reale",
+        "city": "Castel di Sangro",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Niko Romito"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7867,
+          45.4306
+        ]
+      },
+      "properties": {
+        "name": "Le Calandre",
+        "city": "Rubano",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3769,
+          45.1528
+        ]
+      },
+      "properties": {
+        "name": "Dal Pescatore",
+        "city": "Canneto sull'Oglio",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0356,
+          44.7008
+        ]
+      },
+      "properties": {
+        "name": "Piazza Duomo",
+        "city": "Alba",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1072,
+          41.7839
+        ]
+      },
+      "properties": {
+        "name": "Reale",
+        "city": "Castel di Sangro",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9189,
+          46.5739
+        ]
+      },
+      "properties": {
+        "name": "St. Hubertus",
+        "city": "San Cassiano",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.2172,
+          43.7142
+        ]
+      },
+      "properties": {
+        "name": "Uliassi",
+        "city": "Senigallia",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4547,
+          41.932
+        ]
+      },
+      "properties": {
+        "name": "La Pergola",
+        "city": "Rome",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.5556,
+          45.625
+        ]
+      },
+      "properties": {
+        "name": "Lido 84",
+        "city": "Gardone Riviera",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.0969,
+          45.3492
+        ]
+      },
+      "properties": {
+        "name": "Antica Osteria Cera",
+        "city": "Campagna Lupia",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.3756,
+          40.6069
+        ]
+      },
+      "properties": {
+        "name": "Don Alfonso 1890",
+        "city": "Sant'Agata sui Due Golfi",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2558,
+          43.7696
+        ]
+      },
+      "properties": {
+        "name": "All'Antico Vinaio",
+        "city": "Florence",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Street Food",
+        "why_notable": "World-famous schiacciata sandwiches"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4709,
+          41.8863
+        ]
+      },
+      "properties": {
+        "name": "Da Enzo al 29",
+        "city": "Rome",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Trattoria",
+        "why_notable": "Best carbonara in Trastevere"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2636,
+          40.8498
+        ]
+      },
+      "properties": {
+        "name": "Pizzeria Da Michele",
+        "city": "Naples",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Pizzeria",
+        "why_notable": "Only 2 pizzas since 1870, Eat Pray Love"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2633,
+          40.8506
+        ]
+      },
+      "properties": {
+        "name": "Da Michele",
+        "city": "Naples",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "pizza",
+        "why_notable": "Naples' most famous pizzeria since 1870"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2589,
+          40.8508
+        ]
+      },
+      "properties": {
+        "name": "Sorbillo",
+        "city": "Naples",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "pizza",
+        "why_notable": "Legendary Neapolitan pizza dynasty"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4753,
+          41.89
+        ]
+      },
+      "properties": {
+        "name": "Da Enzo al 29",
+        "city": "Rome",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "trattoria",
+        "why_notable": "Best cacio e pepe in Rome"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4486,
+          41.9072
+        ]
+      },
+      "properties": {
+        "name": "Pizzarium",
+        "city": "Rome",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "pizza",
+        "why_notable": "Bonci's famous pizza al taglio"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2558,
+          43.7689
+        ]
+      },
+      "properties": {
+        "name": "All'Antico Vinaio",
+        "city": "Florence",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "sandwich",
+        "why_notable": "World's best sandwich shop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2536,
+          43.7756
+        ]
+      },
+      "properties": {
+        "name": "Trattoria Mario",
+        "city": "Florence",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "trattoria",
+        "why_notable": "Florentine lunch institution since 1953"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.2167,
+          45.9833
+        ]
+      },
+      "properties": {
+        "name": "Grand Hotel Tremezzo",
+        "city": "Lake Como",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Art Nouveau palace on Lake Como"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3422,
+          45.4268
+        ]
+      },
+      "properties": {
+        "name": "Belmond Hotel Cipriani",
+        "city": "Venice",
+        "country": "Italy",
+        "iso": "IT",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Private island escape in Venice lagoon"
+      }
+    }
+  ]
+}

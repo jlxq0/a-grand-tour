@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8333333,
+          13.43333333
+        ]
+      },
+      "properties": {
+        "name": "Angkor",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1992",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.0430556,
+          12.8725
+        ]
+      },
+      "properties": {
+        "name": "Temple Zone of Sambor Prei Kuk, Archaeological Site of Ancient Ishanapura",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2017",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.6838889,
+          14.38833333
+        ]
+      },
+      "properties": {
+        "name": "Temple of Preah Vihear",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Angkor Wat",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Killing Fields Phnom Penh",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Silver Pagoda Phnom Penh",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Angkor Wat",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.856,
+          13.3531
+        ]
+      },
+      "properties": {
+        "name": "Pub Street Food Stalls",
+        "city": "Siem Reap",
+        "country": "Cambodia",
+        "iso": "KH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Street Food",
+        "why_notable": "Cambodian street food, amok fish"
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0,
+          3.0
+        ]
+      },
+      "properties": {
+        "name": "Dja Faunal Reserve",
+        "country": "Cameroon",
+        "iso": "CM",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43861111,
+          47.07305556
+        ]
+      },
+      "properties": {
+        "name": "City of Graz – Historic Centre and Schloss Eggenberg",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.64638889,
+          47.55944444
+        ]
+      },
+      "properties": {
+        "name": "Hallstatt-Dachstein / Salzkammergut Cultural Landscape",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3699,
+          48.2094
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.04333333,
+          47.80055556
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of the City of Salzburg",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.31333333,
+          48.18666667
+        ]
+      },
+      "properties": {
+        "name": "Palace and Gardens of Schönbrunn",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.82797222,
+          47.64877778
+        ]
+      },
+      "properties": {
+        "name": "Semmering Railway",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.43416667,
+          48.36444444
+        ]
+      },
+      "properties": {
+        "name": "Wachau Cultural Landscape",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.866944444,
+          50.49222222
+        ]
+      },
+      "properties": {
+        "name": "The Great Spa Towns of Europe",
+        "country": "Austria,Belgium,Czechia,France,Germany,Italy,United Kingdom of Great Britain and Northern Ireland",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2075,
+          47.27833333
+        ]
+      },
+      "properties": {
+        "name": "Prehistoric Pile Dwellings around the Alps",
+        "country": "Austria,France,Germany,Italy,Slovenia,Switzerland",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.86138889,
+          48.11519444
+        ]
+      },
+      "properties": {
+        "name": "Frontiers of the Roman Empire – The Danube Limes (Western Segment)",
+        "country": "Austria,Germany,Slovakia",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.72272222,
+          47.71927778
+        ]
+      },
+      "properties": {
+        "name": "Fertö / Neusiedlersee Cultural Landscape",
+        "country": "Austria,Hungary",
+        "iso": "AT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "MQ Museumsquartier Wien",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grossglockner Hochalpenstrasse",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Salzwelten Hallstatt",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Melk",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Eisriesenwelt",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bregenz Festival",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Melk Abbey",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old Graz",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grossglockner Road",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kitzbuhel",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Salzburg Festival",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Opera Ball Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3813,
+          48.2039
+        ]
+      },
+      "properties": {
+        "name": "Steirereck",
+        "city": "Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Heinz Reitbauer"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3738,
+          48.2082
+        ]
+      },
+      "properties": {
+        "name": "Amador",
+        "city": "Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Juan Amador"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3817,
+          48.2038
+        ]
+      },
+      "properties": {
+        "name": "Steirereck",
+        "city": "Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3692,
+          48.2081
+        ]
+      },
+      "properties": {
+        "name": "Silvio Nickol",
+        "city": "Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3694,
+          48.2033
+        ]
+      },
+      "properties": {
+        "name": "Sacher Hotel",
+        "city": "Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Home of the original Sachertorte"
+      }
+    }
+  ]
+}

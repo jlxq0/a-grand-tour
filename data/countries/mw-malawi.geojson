@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.27916667,
+          -14.29333333
+        ]
+      },
+      "properties": {
+        "name": "Chongoni Rock-Art Area",
+        "country": "Malawi",
+        "iso": "MW",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.88333,
+          -14.03333
+        ]
+      },
+      "properties": {
+        "name": "Lake Malawi National Park",
+        "country": "Malawi",
+        "iso": "MW",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Nyika Plateau Malawi",
+        "country": "Malawi",
+        "iso": "MW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.71277778,
+          47.77833333
+        ]
+      },
+      "properties": {
+        "name": "Churches of Moldavia",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.31194444,
+          45.62305556
+        ]
+      },
+      "properties": {
+        "name": "Dacian Fortresses of the Orastie Mountains",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.5,
+          45.08333
+        ]
+      },
+      "properties": {
+        "name": "Danube Delta",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.79222222,
+          46.21777778
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Sighişoara",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.01666667,
+          45.18333333
+        ]
+      },
+      "properties": {
+        "name": "Monastery of Horezu",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.13055556,
+          46.30611111
+        ]
+      },
+      "properties": {
+        "name": "Roșia Montană Mining Landscape",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.77305556,
+          46.13583333
+        ]
+      },
+      "properties": {
+        "name": "Villages with Fortified Churches in Transylvania",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.05583333,
+          47.82083333
+        ]
+      },
+      "properties": {
+        "name": "Wooden Churches of Maramureş",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Danube Delta",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Carpathian Forest",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bucovina",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Centrul Vechi Bucharest",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Painted Monasteries Romania",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Dracula's Castle Romania",
+        "country": "Romania",
+        "iso": "RO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

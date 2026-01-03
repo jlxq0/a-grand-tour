@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Djenne",
+        "country": "Mali",
+        "iso": "ML",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Timbuktu",
+        "country": "Mali",
+        "iso": "ML",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

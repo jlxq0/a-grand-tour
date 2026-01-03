@@ -1,0 +1,635 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.37778,
+          47.42333
+        ]
+      },
+      "properties": {
+        "name": "Abbey of St Gall",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.44765,
+          46.62945
+        ]
+      },
+      "properties": {
+        "name": "Benedictine Convent of St John at Müstair",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.832777778,
+          47.10388889
+        ]
+      },
+      "properties": {
+        "name": "La Chaux-de-Fonds / Le Locle, Watchmaking Town Planning",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2009",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.746111111,
+          46.49194444
+        ]
+      },
+      "properties": {
+        "name": "Lavaux, Vineyard Terraces",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.45028,
+          46.94806
+        ]
+      },
+      "properties": {
+        "name": "Old City of Berne",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.033333333,
+          46.5
+        ]
+      },
+      "properties": {
+        "name": "Swiss Alps Jungfrau-Aletsch",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.25,
+          46.91666667
+        ]
+      },
+      "properties": {
+        "name": "Swiss Tectonic Arena Sardona",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.02242,
+          46.19314
+        ]
+      },
+      "properties": {
+        "name": "Three Castles, Defensive Wall and Ramparts of the Market-Town of Bellinzona",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.913888889,
+          45.88888889
+        ]
+      },
+      "properties": {
+        "name": "Monte San Giorgio",
+        "country": "Italy,Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.846388889,
+          46.49833333
+        ]
+      },
+      "properties": {
+        "name": "Rhaetian Railway in the Albula / Bernina Landscapes",
+        "country": "Italy,Switzerland",
+        "iso": "CH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Matterhorn",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Eiger",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Geneva",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jungfraujoch",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Schilthorn",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Glacier of Aletsch",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Restaurant Bruderholz Basel",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Gstaad",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jungfraujoch",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kandersteg",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Murren",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "St. Moritz Glacier Express",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Schlosshotel Chaste",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Davos-Klosters",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lucerne Festival",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Park Hotel Vitznau",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rheinhotel Fischerzunft",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lugano Villas",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Saas Fee",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Verbier",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Zermatt",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Winter Alpine Balloon Festival",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hotel De Ville Crissier",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Montreux Jazz Festival",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Petermann's Kunststuben",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Dolder Grand Hotel Zurich",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.5789,
+          46.5458
+        ]
+      },
+      "properties": {
+        "name": "Restaurant de l'Hôtel de Ville",
+        "city": "Crissier",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Franck Giovannini"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4481,
+          46.7286
+        ]
+      },
+      "properties": {
+        "name": "Schloss Schauenstein",
+        "city": "Fürstenau",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Andreas Caminada"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.4486,
+          46.7289
+        ]
+      },
+      "properties": {
+        "name": "Schloss Schauenstein",
+        "city": "Fürstenau",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.595,
+          47.5572
+        ]
+      },
+      "properties": {
+        "name": "Cheval Blanc",
+        "city": "Basel",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5028,
+          46.9986
+        ]
+      },
+      "properties": {
+        "name": "Memories",
+        "city": "Bad Ragaz",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8428,
+          46.4986
+        ]
+      },
+      "properties": {
+        "name": "Badrutt's Palace Hotel",
+        "city": "St. Moritz",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Invented winter tourism, alpine glamour"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.5,
+          47.0
+        ]
+      },
+      "properties": {
+        "name": "Grand Hotel Quellenhof",
+        "city": "Bad Ragaz",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Thermal spa tradition, alpine wellness"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.1833,
+          46.6167
+        ]
+      },
+      "properties": {
+        "name": "Hotel & Spa Therme Vals",
+        "city": "Vals",
+        "country": "Switzerland",
+        "iso": "CH",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Peter Zumthor's architectural masterpiece"
+      }
+    }
+  ]
+}

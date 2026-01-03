@@ -1,0 +1,120 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.9,
+          -19.28333333
+        ]
+      },
+      "properties": {
+        "name": "Okavango Delta",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.73333333,
+          -18.75
+        ]
+      },
+      "properties": {
+        "name": "Tsodilo",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Okavango Delta",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chobe National Park",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kalahari Desert",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chobe National Park",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jack's Camp",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Abu's Camp",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Okavango Delta",
+        "country": "Botswana",
+        "iso": "BW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

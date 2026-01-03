@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Taipei 101",
+        "country": "Taiwan",
+        "iso": "TW",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      },
+      "properties": {
+        "name": "Din Tai Fung",
+        "city": "Taipei",
+        "country": "Taiwan",
+        "iso": "TW",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "dumplings",
+        "why_notable": "World's best soup dumplings"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5244,
+          25.0876
+        ]
+      },
+      "properties": {
+        "name": "Shilin Night Market",
+        "city": "Taipei",
+        "country": "Taiwan",
+        "iso": "TW",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "night_market",
+        "why_notable": "Taiwan's largest night market"
+      }
+    }
+  ]
+}

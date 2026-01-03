@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.35719444,
+          13.31616667
+        ]
+      },
+      "properties": {
+        "name": "Kunta Kinteh Island and Related Sites",
+        "country": "Gambia (the)",
+        "iso": "GM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.5225,
+          13.69111111
+        ]
+      },
+      "properties": {
+        "name": "Stone Circles of Senegambia",
+        "country": "Gambia (the),Senegal",
+        "iso": "GM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    }
+  ]
+}

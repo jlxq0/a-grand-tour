@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.85539,
+          -17.92453
+        ]
+      },
+      "properties": {
+        "name": "Mosi-oa-Tunya / Victoria Falls",
+        "country": "Zambia,Zimbabwe",
+        "iso": "ZM",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1989",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "South Luangwa National Park",
+        "country": "Zambia",
+        "iso": "ZM",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Zambezi",
+        "country": "Zambia",
+        "iso": "ZM",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tongabezi Lodge Victoria Falls",
+        "country": "Zambia",
+        "iso": "ZM",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

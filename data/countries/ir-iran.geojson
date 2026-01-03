@@ -1,0 +1,574 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.47333333,
+          38.97888889
+        ]
+      },
+      "properties": {
+        "name": "Armenian Monastic Ensembles of Iran",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.36666667,
+          29.11683
+        ]
+      },
+      "properties": {
+        "name": "Bam and its Cultural Landscape",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.43666667,
+          34.38833333
+        ]
+      },
+      "properties": {
+        "name": "Bisotun",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.47785,
+          35.10735833
+        ]
+      },
+      "properties": {
+        "name": "Cultural Landscape of Hawraman/Uramanat",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.37555556,
+          30.16805556
+        ]
+      },
+      "properties": {
+        "name": "Cultural Landscape of Maymand",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2015",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.42051111,
+          35.68036667
+        ]
+      },
+      "properties": {
+        "name": "Golestan Palace",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2013",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.169,
+          37.25802778
+        ]
+      },
+      "properties": {
+        "name": "Gonbad-e Qābus",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.36916667,
+          31.90138889
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Yazd",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2017",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.72427778,
+          37.42147222
+        ]
+      },
+      "properties": {
+        "name": "Hyrcanian Forests",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.83888889,
+          30.21611111
+        ]
+      },
+      "properties": {
+        "name": "Lut Desert",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.68527778,
+          32.66972222
+        ]
+      },
+      "properties": {
+        "name": "Masjed-e Jāmé of Isfahan  ",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.67777778,
+          32.65745
+        ]
+      },
+      "properties": {
+        "name": "Meidan Emam, Esfahan",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.16729,
+          30.19383
+        ]
+      },
+      "properties": {
+        "name": "Pasargadae",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.89028,
+          29.93444
+        ]
+      },
+      "properties": {
+        "name": "Persepolis",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.57045,
+          29.77748056
+        ]
+      },
+      "properties": {
+        "name": "Sassanid Archaeological Landscape of Fars Region",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          61.32777778,
+          30.59388889
+        ]
+      },
+      "properties": {
+        "name": "Shahr-i Sokhta",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.29138889,
+          38.24861111
+        ]
+      },
+      "properties": {
+        "name": "Sheikh Safi al-din Khānegāh and Shrine Ensemble in Ardabil",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2010",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.83583333,
+          32.01861111
+        ]
+      },
+      "properties": {
+        "name": "Shushtar Historical Hydraulic System",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2009",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.79667,
+          36.43528
+        ]
+      },
+      "properties": {
+        "name": "Soltaniyeh",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.25611111,
+          32.18944444
+        ]
+      },
+      "properties": {
+        "name": "Susa",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2015",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.29305556,
+          38.08138889
+        ]
+      },
+      "properties": {
+        "name": "Tabriz Historic Bazaar Complex",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2010",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.235,
+          36.60388889
+        ]
+      },
+      "properties": {
+        "name": "Takht-e Soleyman",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.522118,
+          32.00857
+        ]
+      },
+      "properties": {
+        "name": "Tchogha Zanbil",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.16666667,
+          30.16666667
+        ]
+      },
+      "properties": {
+        "name": "The Persian Garden",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.65444444,
+          34.29
+        ]
+      },
+      "properties": {
+        "name": "The Persian Qanat",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.39833333,
+          35.65830556
+        ]
+      },
+      "properties": {
+        "name": "Trans-Iranian Railway",
+        "country": "Iran (Islamic Republic of)",
+        "iso": "IR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Naqsh-E Jahan",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Persepolis",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pol-E Khaju Isfahan",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Royal Square Isfahan",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Persepolis",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.389,
+          35.6892
+        ]
+      },
+      "properties": {
+        "name": "Moslem Restaurant",
+        "city": "Tehran",
+        "country": "Iran",
+        "iso": "IR",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Famous tahdig and kebab"
+      }
+    }
+  ]
+}

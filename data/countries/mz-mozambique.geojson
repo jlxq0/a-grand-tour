@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          40.73583,
+          -15.03417
+        ]
+      },
+      "properties": {
+        "name": "Island of Mozambique",
+        "country": "Mozambique",
+        "iso": "MZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bazaruto Archipelago",
+        "country": "Mozambique",
+        "iso": "MZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Island of Mozambique",
+        "country": "Mozambique",
+        "iso": "MZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

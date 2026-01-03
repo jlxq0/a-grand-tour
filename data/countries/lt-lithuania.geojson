@@ -1,0 +1,84 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.83055556,
+          54.88777778
+        ]
+      },
+      "properties": {
+        "name": "Kernavė  Archaeological Site (Cultural Reserve of Kernavė)",
+        "country": "Lithuania",
+        "iso": "LT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.29306,
+          54.68667
+        ]
+      },
+      "properties": {
+        "name": "Vilnius Historic Centre",
+        "country": "Lithuania",
+        "iso": "LT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.96239,
+          55.27458
+        ]
+      },
+      "properties": {
+        "name": "Curonian Spit",
+        "country": "Lithuania,Russian Federation",
+        "iso": "LT",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hill of Crosses",
+        "country": "Lithuania",
+        "iso": "LT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Trakai Castle",
+        "country": "Lithuania",
+        "iso": "LT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

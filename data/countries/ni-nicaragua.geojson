@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.87805556,
+          12.435
+        ]
+      },
+      "properties": {
+        "name": "León Cathedral",
+        "country": "Nicaragua",
+        "iso": "NI",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.616336,
+          12.40047
+        ]
+      },
+      "properties": {
+        "name": "Ruins of León Viejo",
+        "country": "Nicaragua",
+        "iso": "NI",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ometepe Island",
+        "country": "Nicaragua",
+        "iso": "NI",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

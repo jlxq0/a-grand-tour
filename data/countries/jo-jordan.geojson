@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.72830556,
+          32.04261111
+        ]
+      },
+      "properties": {
+        "name": "As-Salt - The Place of Tolerance and Urban Hospitality",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55277778,
+          31.83722222
+        ]
+      },
+      "properties": {
+        "name": "Baptism Site “Bethany Beyond the Jordan” (Al-Maghtas)",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2015",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.44333,
+          30.33056
+        ]
+      },
+      "properties": {
+        "name": "Petra",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.58730556,
+          31.80180556
+        ]
+      },
+      "properties": {
+        "name": "Quseir Amra",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.92056,
+          31.50167
+        ]
+      },
+      "properties": {
+        "name": "Um er-Rasas (Kastrom Mefa'a)",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.43388889,
+          29.63972222
+        ]
+      },
+      "properties": {
+        "name": "Wadi Rum Protected Area",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Petra",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Wadi Rum",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jerash",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Petra",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.9317,
+          31.9539
+        ]
+      },
+      "properties": {
+        "name": "Hashem Restaurant",
+        "city": "Amman",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Best falafel in Jordan, open since 1952"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.9303,
+          31.9522
+        ]
+      },
+      "properties": {
+        "name": "Hashem",
+        "city": "Amman",
+        "country": "Jordan",
+        "iso": "JO",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "falafel",
+        "why_notable": "24-hour falafel since 1952"
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.53605556,
+          22.99888889
+        ]
+      },
+      "properties": {
+        "name": "<i>Aflaj</i> Irrigation Systems of Oman",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          59.37811111,
+          22.69522222
+        ]
+      },
+      "properties": {
+        "name": "Ancient City of Qalhat",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.745,
+          23.26986
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Sites of Bat, Al-Khutm and Al-Ayn",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.30111,
+          22.96417
+        ]
+      },
+      "properties": {
+        "name": "Bahla Fort",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.64759,
+          18.25333
+        ]
+      },
+      "properties": {
+        "name": "Land of Frankincense",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ras Al-Jinz",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Nizwa",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mutrah Souq",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Al Bustan Palace Oman",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Nizwa",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old Fort Route Oman",
+        "country": "Oman",
+        "iso": "OM",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

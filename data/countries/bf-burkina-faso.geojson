@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.487777778,
+          11.88416667
+        ]
+      },
+      "properties": {
+        "name": "W-Arly-Pendjari Complex",
+        "country": "Benin,Burkina Faso,Niger",
+        "iso": "BF",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    }
+  ]
+}

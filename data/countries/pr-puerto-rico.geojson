@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Horned Dorset Puerto Rico",
+        "country": "Puerto Rico",
+        "iso": "PR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old San Juan",
+        "country": "Puerto Rico",
+        "iso": "PR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Vieques",
+        "country": "Puerto Rico",
+        "iso": "PR",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

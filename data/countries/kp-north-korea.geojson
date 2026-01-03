@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mansudae Grand Monument Pyongyang",
+        "country": "North Korea",
+        "iso": "KP",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

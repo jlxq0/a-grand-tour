@@ -1,0 +1,683 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.237589,
+          17.407772
+        ]
+      },
+      "properties": {
+        "name": "Ban Chiang Archaeological Site",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1992",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.05,
+          14.33
+        ]
+      },
+      "properties": {
+        "name": "Dong Phayayen-Khao Yai Forest Complex",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.56056,
+          14.34778
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Ayutthaya",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.78972,
+          17.00722
+        ]
+      },
+      "properties": {
+        "name": "Historic Town of Sukhothai and Associated Historic Towns",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.40016667,
+          12.86566667
+        ]
+      },
+      "properties": {
+        "name": "Kaeng Krachan Forest Complex",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.91667,
+          15.33333
+        ]
+      },
+      "properties": {
+        "name": "Thungyai-Huai Kha Khaeng Wildlife Sanctuaries",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ko Tao",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ayutthaya",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ko Phi Phi",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chatuchak Weekend Market Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Wat Pho Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Phang Nga Bay",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Khao Sok National Park",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grand Palace Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ayutthaya",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Thai Massage",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chatuchak Market Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grand Palace Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Oriental Hotel Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sukhothai Hotel Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hill Tribes Thailand",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Four Seasons Chiang Mai",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Koh Phi Phi",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Koh Samui",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Phang Nga Bay",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mae Hong Son",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Phuket",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5385,
+          13.7286
+        ]
+      },
+      "properties": {
+        "name": "Gaggan Anand",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Gaggan Anand"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5144,
+          13.7234
+        ]
+      },
+      "properties": {
+        "name": "Le Normandie",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Arnaud Dunand-Sauthier"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5364,
+          13.7469
+        ]
+      },
+      "properties": {
+        "name": "Gaggan Anand",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5286,
+          13.7244
+        ]
+      },
+      "properties": {
+        "name": "Le Du",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5794,
+          13.7178
+        ]
+      },
+      "properties": {
+        "name": "Sühring",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5167,
+          13.7208
+        ]
+      },
+      "properties": {
+        "name": "Mezzaluna",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5775,
+          13.7003
+        ]
+      },
+      "properties": {
+        "name": "Sorn",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5508,
+          13.7999
+        ]
+      },
+      "properties": {
+        "name": "Chatuchak Weekend Market",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Market",
+        "why_notable": "World's largest weekend market, endless street food"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.51,
+          13.739
+        ]
+      },
+      "properties": {
+        "name": "Yaowarat (Chinatown)",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Street Food",
+        "why_notable": "Best street food in Bangkok after dark"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5018,
+          13.7535
+        ]
+      },
+      "properties": {
+        "name": "Jay Fai",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Street Food",
+        "why_notable": "Michelin-starred street food, legendary crab omelette"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5018,
+          13.7535
+        ]
+      },
+      "properties": {
+        "name": "Raan Jay Fai",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Street Food",
+        "why_notable": "1-star Michelin street vendor, drunken noodles"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5018,
+          13.7563
+        ]
+      },
+      "properties": {
+        "name": "Raan Jay Fai",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "street_food",
+        "why_notable": "Michelin-starred street food - crab omelette"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5036,
+          13.7517
+        ]
+      },
+      "properties": {
+        "name": "Thip Samai",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "street_food",
+        "why_notable": "Best Pad Thai in Bangkok since 1966"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5667,
+          13.7475
+        ]
+      },
+      "properties": {
+        "name": "Wattana Panich",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "street_food",
+        "why_notable": "50-year perpetual beef broth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5711,
+          13.7647
+        ]
+      },
+      "properties": {
+        "name": "Kuang Seafood",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "seafood",
+        "why_notable": "Tom Yum Goong institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.28,
+          7.9765
+        ]
+      },
+      "properties": {
+        "name": "Amanpuri",
+        "city": "Phuket",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "First Aman resort, set the ultra-luxury standard"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5144,
+          13.7234
+        ]
+      },
+      "properties": {
+        "name": "Mandarin Oriental Bangkok",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "iso": "TH",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Authors' Wing, legendary river setting"
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0,
+          9.0
+        ]
+      },
+      "properties": {
+        "name": "Comoé National Park",
+        "country": "Côte d'Ivoire",
+        "iso": "CI",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.736388889,
+          5.195833333
+        ]
+      },
+      "properties": {
+        "name": "Historic Town of Grand-Bassam",
+        "country": "Côte d'Ivoire",
+        "iso": "CI",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.410166667,
+          10.49031667
+        ]
+      },
+      "properties": {
+        "name": "Sudanese style mosques in northern Côte d’Ivoire",
+        "country": "Côte d'Ivoire",
+        "iso": "CI",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.095277778,
+          5.648888889
+        ]
+      },
+      "properties": {
+        "name": "Taï National Park",
+        "country": "Côte d'Ivoire",
+        "iso": "CI",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1982",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.39097,
+          7.60318
+        ]
+      },
+      "properties": {
+        "name": "Mount Nimba Strict Nature Reserve",
+        "country": "Côte d'Ivoire,Guinea",
+        "iso": "CI",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    }
+  ]
+}

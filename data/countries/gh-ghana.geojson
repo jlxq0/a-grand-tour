@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.625833333,
+          6.401111111
+        ]
+      },
+      "properties": {
+        "name": "Asante Traditional Buildings",
+        "country": "Ghana",
+        "iso": "GH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1980",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.49361,
+          5.39103
+        ]
+      },
+      "properties": {
+        "name": "Forts and Castles, Volta, Greater Accra, Central and Western Regions",
+        "country": "Ghana",
+        "iso": "GH",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Accra",
+        "country": "Ghana",
+        "iso": "GH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

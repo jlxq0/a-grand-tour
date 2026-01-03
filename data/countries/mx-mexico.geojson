@@ -1,0 +1,1230 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.7786111,
+          20.86305556
+        ]
+      },
+      "properties": {
+        "name": "Agave Landscape and Ancient Industrial Facilities of Tequila",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.73728333,
+          18.05302778
+        ]
+      },
+      "properties": {
+        "name": "Ancient Maya City and Protected Tropical Forests of Calakmul, Campeche",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2002",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.66256667,
+          19.83527778
+        ]
+      },
+      "properties": {
+        "name": "Aqueduct of Padre Tembleque Hydraulic System",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2015",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.29639,
+          18.803972
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Monuments Zone of Xochicalco",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -107.948122,
+          30.367128
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Zone of Paquimé, Casas Grandes",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.9752778,
+          18.78805556
+        ]
+      },
+      "properties": {
+        "name": "Archipiélago de Revillagigedo",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.3791667,
+          22.60805556
+        ]
+      },
+      "properties": {
+        "name": "Camino Real de Tierra Adentro",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2010",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.18805556,
+          19.33222222
+        ]
+      },
+      "properties": {
+        "name": "Central University City Campus of the <i>Universidad Nacional Autónoma de México</i> (UNAM)",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.89777778,
+          18.93472222
+        ]
+      },
+      "properties": {
+        "name": "Earliest 16th-Century Monasteries on the Slopes of Popocatepetl",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.9166667,
+          32.0
+        ]
+      },
+      "properties": {
+        "name": "El Pinacate and Gran Desierto de Altar Biosphere Reserve",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2013",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.377642,
+          20.446095
+        ]
+      },
+      "properties": {
+        "name": "El Tajin, Pre-Hispanic City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1992",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.46411111,
+          21.20438889
+        ]
+      },
+      "properties": {
+        "name": "Franciscan Missions in the Sierra Gorda of Querétaro",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13278,
+          19.41833
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Mexico City and Xochimilco",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.190376,
+          19.700927
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Morelia",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.725885,
+          17.061579
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Oaxaca and Archaeological Site of Monte Albán",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.197769,
+          19.045967
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Puebla",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.573531,
+          22.775484
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Zacatecas",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.53722,
+          19.84639
+        ]
+      },
+      "properties": {
+        "name": "Historic Fortified Town of Campeche",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.392135,
+          20.593292
+        ]
+      },
+      "properties": {
+        "name": "Historic Monuments Zone of Querétaro",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.658676,
+          18.613459
+        ]
+      },
+      "properties": {
+        "name": "Historic Monuments Zone of Tlacotalpan",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.25556,
+          21.01694
+        ]
+      },
+      "properties": {
+        "name": "Historic Town of Guanajuato and Adjacent Mines",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.337798,
+          20.676888
+        ]
+      },
+      "properties": {
+        "name": "Hospicio Cabañas, Guadalajara",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.54583,
+          27.62667
+        ]
+      },
+      "properties": {
+        "name": "Islands and Protected Areas of the Gulf of California",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.19235334,
+          19.41119788
+        ]
+      },
+      "properties": {
+        "name": "Luis Barragán House and Studio",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.2416667,
+          19.60638889
+        ]
+      },
+      "properties": {
+        "name": "Monarch Butterfly Biosphere Reserve",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.05,
+          17.48333
+        ]
+      },
+      "properties": {
+        "name": "Pre-Hispanic City and National Park of Palenque",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.568654,
+          20.682739
+        ]
+      },
+      "properties": {
+        "name": "Pre-Hispanic City of Chichen-Itza",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.84167,
+          19.69167
+        ]
+      },
+      "properties": {
+        "name": "Pre-Hispanic City of Teotihuacan",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.77027778,
+          20.36166667
+        ]
+      },
+      "properties": {
+        "name": "Pre-Hispanic Town of Uxmal",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.42111111,
+          16.95083333
+        ]
+      },
+      "properties": {
+        "name": "Prehistoric Caves of Yagul and Mitla in the Central Valley of Oaxaca",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2010",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.7463889,
+          20.91444444
+        ]
+      },
+      "properties": {
+        "name": "Protective town of San Miguel and the Sanctuary of Jesús Nazareno de Atotonilco",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.020427,
+          27.626963
+        ]
+      },
+      "properties": {
+        "name": "Rock Paintings of the Sierra de San Francisco",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.79167,
+          19.38333
+        ]
+      },
+      "properties": {
+        "name": "Sian Ka'an",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.18715278,
+          17.98996111
+        ]
+      },
+      "properties": {
+        "name": "Tehuacán-Cuicatlán Valley: originary habitat of Mesoamerica",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.22778,
+          27.79222
+        ]
+      },
+      "properties": {
+        "name": "Whale Sanctuary of El Vizcaino",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palenque",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chichen Itza",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Teotihuacan",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Copper Canyon",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tulum",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Xochimilco",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ancient Maya City Calakmul",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Zocalo Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Isla Mujeres",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Las Ventanas Cabo",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Whale Watching Baja",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Na Bolom Chiapas",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palenque",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Copper Canyon",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cervantes Festival",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "San Miguel De Allende",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Acapulco Princess",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museum of Anthropology",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Zihuatanejo",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Michoacan",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Monarch Butterflies",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chichen Itza",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Maroma Resort Riviera Maya",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hacienda Xcanatun",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.182,
+          19.4285
+        ]
+      },
+      "properties": {
+        "name": "Quintonil",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Jorge Vallejo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.182,
+          19.4285
+        ]
+      },
+      "properties": {
+        "name": "Pujol",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Enrique Olvera"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1883,
+          19.432
+        ]
+      },
+      "properties": {
+        "name": "Pujol",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1703,
+          19.4161
+        ]
+      },
+      "properties": {
+        "name": "Contramar",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.22,
+          19.2958
+        ]
+      },
+      "properties": {
+        "name": "Sud 777",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1606,
+          19.4217
+        ]
+      },
+      "properties": {
+        "name": "Rosetta",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1425,
+          19.4271
+        ]
+      },
+      "properties": {
+        "name": "Mercado de San Juan",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Market",
+        "why_notable": "Gourmet market, exotic meats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.14,
+          19.434
+        ]
+      },
+      "properties": {
+        "name": "El Huequito",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Tacos",
+        "why_notable": "Tacos al pastor since 1959"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1667,
+          19.4203
+        ]
+      },
+      "properties": {
+        "name": "Tacos El Califa de León",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Tacos",
+        "why_notable": "First Michelin-starred taco stand"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.172,
+          19.415
+        ]
+      },
+      "properties": {
+        "name": "Los Panchos",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Carnitas",
+        "why_notable": "Best carnitas since 1945"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1506,
+          19.4353
+        ]
+      },
+      "properties": {
+        "name": "Tacos El Califa de León",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "tacos",
+        "why_notable": "First Michelin-starred taco stand"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1403,
+          19.435
+        ]
+      },
+      "properties": {
+        "name": "El Huequito",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "tacos",
+        "why_notable": "Inventor of tacos al pastor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1567,
+          19.4172
+        ]
+      },
+      "properties": {
+        "name": "Los Panchos",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "carnitas",
+        "why_notable": "Legendary carnitas since 1945"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.1414,
+          19.4342
+        ]
+      },
+      "properties": {
+        "name": "Taqueria Los Cocuyos",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "tacos",
+        "why_notable": "24-hour street tacos"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.7247,
+          17.0658
+        ]
+      },
+      "properties": {
+        "name": "Don Vergas",
+        "city": "Oaxaca",
+        "country": "Mexico",
+        "iso": "MX",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "tlayudas",
+        "why_notable": "Famous tlayudas at the market"
+      }
+    }
+  ]
+}

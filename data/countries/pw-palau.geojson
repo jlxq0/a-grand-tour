@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jellyfish Lake Palau",
+        "country": "Palau",
+        "iso": "PW",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palau",
+        "country": "Palau",
+        "iso": "PW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.93333333,
+          -20.28333333
+        ]
+      },
+      "properties": {
+        "name": "Great Zimbabwe National Monument",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.37666667,
+          -20.15833333
+        ]
+      },
+      "properties": {
+        "name": "Khami Ruins National Monument",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.40805556,
+          -15.81944444
+        ]
+      },
+      "properties": {
+        "name": "Mana Pools National Park, Sapi and Chewore Safari Areas",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.5,
+          -20.5
+        ]
+      },
+      "properties": {
+        "name": "Matobo Hills",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Victoria Falls",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Great Zimbabwe",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hwange National Park",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mana Pools",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Matobo National Park",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Victoria Falls",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.0335,
+          -17.8252
+        ]
+      },
+      "properties": {
+        "name": "The Lawns",
+        "city": "Harare",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Sunday roast tradition"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.8425,
+          -17.9287
+        ]
+      },
+      "properties": {
+        "name": "Victoria Falls Hotel",
+        "city": "Victoria Falls",
+        "country": "Zimbabwe",
+        "iso": "ZW",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Edwardian elegance overlooking the Falls bridge"
+      }
+    }
+  ]
+}

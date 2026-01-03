@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Manta Ray Turks and Caicos",
+        "country": "Turks and Caicos",
+        "iso": "TC",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Piton",
+        "country": "Saint Lucia",
+        "iso": "LC",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Anse Chastanet St Lucia",
+        "country": "St Lucia",
+        "iso": "LC",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

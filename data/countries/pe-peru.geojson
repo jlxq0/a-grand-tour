@@ -1,0 +1,570 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.074737,
+          -8.107836
+        ]
+      },
+      "properties": {
+        "name": "Chan Chan Archaeological Zone",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.23591667,
+          -9.556861111
+        ]
+      },
+      "properties": {
+        "name": "Chankillo Archaeoastronomical Complex",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.1784535,
+          -9.592772544
+        ]
+      },
+      "properties": {
+        "name": "Chavin (Archaeological Site)",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.980004,
+          -13.517276
+        ]
+      },
+      "properties": {
+        "name": "City of Cuzco",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0304,
+          -12.046542
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.533443,
+          -13.184934
+        ]
+      },
+      "properties": {
+        "name": "Historic Sanctuary of Machu Picchu",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.536777,
+          -16.398353
+        ]
+      },
+      "properties": {
+        "name": "Historical Centre of the City of Arequipa",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.4,
+          -9.33333
+        ]
+      },
+      "properties": {
+        "name": "Huascarán National Park",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.14861,
+          -14.72583
+        ]
+      },
+      "properties": {
+        "name": "Lines and Geoglyphs of Nasca and Palpa",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.75,
+          -12.25
+        ]
+      },
+      "properties": {
+        "name": "Manú National Park",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.25,
+          -7.75
+        ]
+      },
+      "properties": {
+        "name": "Río Abiseo National Park",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "1990",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.52138889,
+          -10.89166667
+        ]
+      },
+      "properties": {
+        "name": "Sacred City of Caral-Supe",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2009",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Machu Picchu",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Choquequirao",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "The Nazca Lines",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Canon Del Colca",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Monasterio Santa Catalina Arequipa",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cuzco",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Manu National Park",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Nazca Lines",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Titicaca",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Peruvian Amazon",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Machu Picchu",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.022,
+          -12.152
+        ]
+      },
+      "properties": {
+        "name": "Central",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Virgilio Martínez"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.035,
+          -12.119
+        ]
+      },
+      "properties": {
+        "name": "Maido",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Mitsuharu Tsumura"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0222,
+          -12.1519
+        ]
+      },
+      "properties": {
+        "name": "Kjolle",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0344,
+          -12.1131
+        ]
+      },
+      "properties": {
+        "name": "Astrid y Gastón",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.028,
+          -12.114
+        ]
+      },
+      "properties": {
+        "name": "Mercado de Surquillo",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Market",
+        "why_notable": "Local market for ceviche ingredients"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.031,
+          -12.121
+        ]
+      },
+      "properties": {
+        "name": "La Lucha Sanguchería",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Sandwiches",
+        "why_notable": "Peru's best sandwiches, chicharron"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.036,
+          -12.117
+        ]
+      },
+      "properties": {
+        "name": "El Mercado",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Ceviche",
+        "why_notable": "Rafael Osterling's market-style ceviche"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0314,
+          -12.1128
+        ]
+      },
+      "properties": {
+        "name": "Lomo Saltado at Panchita",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "criollo",
+        "why_notable": "Gastón Acurio's criolla restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.03,
+          -12.1178
+        ]
+      },
+      "properties": {
+        "name": "Cevicheria La Mar",
+        "city": "Lima",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "ceviche",
+        "why_notable": "Lima's best ceviche"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.545,
+          -13.1631
+        ]
+      },
+      "properties": {
+        "name": "Belmond Sanctuary Lodge",
+        "city": "Machu Picchu",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Only hotel at Machu Picchu gates"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.5269,
+          -13.1547
+        ]
+      },
+      "properties": {
+        "name": "Inkaterra Machu Picchu",
+        "city": "Aguas Calientes",
+        "country": "Peru",
+        "iso": "PE",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Cloud forest eco-lodge near ruins"
+      }
+    }
+  ]
+}

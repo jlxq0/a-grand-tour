@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.5,
+          4.0
+        ]
+      },
+      "properties": {
+        "name": "Central Suriname Nature Reserve",
+        "country": "Suriname",
+        "iso": "SR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.15,
+          5.82611
+        ]
+      },
+      "properties": {
+        "name": "Historic Inner City of Paramaribo",
+        "country": "Suriname",
+        "iso": "SR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2002",
+        "danger": false
+      }
+    }
+  ]
+}

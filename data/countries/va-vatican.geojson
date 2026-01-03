@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "St. Peter's Basilica Vatican",
+        "country": "Vatican",
+        "iso": "VA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Vatican Museum",
+        "country": "Vatican",
+        "iso": "VA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

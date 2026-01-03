@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Habitation Lagrange Martinique",
+        "country": "Martinique",
+        "iso": "MQ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

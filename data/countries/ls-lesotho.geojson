@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.12305556,
+          -29.76527778
+        ]
+      },
+      "properties": {
+        "name": "Maloti-Drakensberg Park",
+        "country": "Lesotho,South Africa",
+        "iso": "LS",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    }
+  ]
+}

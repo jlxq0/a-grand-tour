@@ -1,0 +1,147 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.51208333,
+          -0.22
+        ]
+      },
+      "properties": {
+        "name": "City of Quito",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1978",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.501319,
+          -0.68986
+        ]
+      },
+      "properties": {
+        "name": "Galápagos Islands",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1978",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.004382,
+          -2.897447
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Santa Ana de los Ríos de Cuenca",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.33333,
+          -1.83333
+        ]
+      },
+      "properties": {
+        "name": "Sangay National Park",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Galapagos Islands",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cotopaxi",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Galapagos Islands",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sacha Lodge Amazon",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Otavalo",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Riobamba Express",
+        "country": "Ecuador",
+        "iso": "EC",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

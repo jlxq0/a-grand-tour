@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.36916667,
+          13.8275
+        ]
+      },
+      "properties": {
+        "name": "Joya de Cerén Archaeological Site",
+        "country": "El Salvador",
+        "iso": "SV",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ruta De Las Flores",
+        "country": "El Salvador",
+        "iso": "SV",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

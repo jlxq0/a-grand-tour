@@ -1,0 +1,329 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          166.1044444,
+          -50.75
+        ]
+      },
+      "properties": {
+        "name": "New Zealand Sub-Antarctic Islands",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          167.3196111,
+          -45.03602778
+        ]
+      },
+      "properties": {
+        "name": "Te Wahipounamu – South West New Zealand",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1990",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          175.5622222,
+          -39.29083333
+        ]
+      },
+      "properties": {
+        "name": "Tongariro National Park",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "1990",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Fiordland National Park",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Abel Tasman National Park",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Franz Josef Glacier",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Wanaka",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stewart Island",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bay of Islands",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Redwoods Whakarewarewa",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Waitomo Caves",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museum of New Zealand Te Papa",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bay of Islands",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Huka Lodge",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Wharekauhau",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rotorua",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Marlborough Wine Region",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grasmere Lodge",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grand Traverse South Island",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Doubtful Sound",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mount Cook National Park",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bungee Jumping Queenstown",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.6626,
+          -45.0311
+        ]
+      },
+      "properties": {
+        "name": "Fergburger",
+        "city": "Queenstown",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Burgers",
+        "why_notable": "New Zealand's most famous burger"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.0847,
+          -38.6428
+        ]
+      },
+      "properties": {
+        "name": "Huka Lodge",
+        "city": "Taupo",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Fly-fishing lodge, Queen Elizabeth II stayed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          168.5333,
+          -45.0167
+        ]
+      },
+      "properties": {
+        "name": "Blanket Bay",
+        "city": "Queenstown",
+        "country": "New Zealand",
+        "iso": "NZ",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Lake Wakatipu luxury lodge"
+      }
+    }
+  ]
+}

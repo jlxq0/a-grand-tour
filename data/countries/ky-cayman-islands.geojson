@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stingray City Grand Cayman",
+        "country": "Cayman Islands",
+        "iso": "KY",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bloody Bay Wall Cayman Islands",
+        "country": "Cayman Islands",
+        "iso": "KY",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

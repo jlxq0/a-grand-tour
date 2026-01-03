@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.40777778,
+          -24.88527778
+        ]
+      },
+      "properties": {
+        "name": "Namib Sand Sea",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2013",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.37258333,
+          -20.59558333
+        ]
+      },
+      "properties": {
+        "name": "Twyfelfontein or /Ui-//aes",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sossusvlei",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Etosha National Park",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Skeleton Coast",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kolmanskop",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Etosha National Park",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Skeleton Coast",
+        "country": "Namibia",
+        "iso": "NA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

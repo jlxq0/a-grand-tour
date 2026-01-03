@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tajik National Park Pamirs",
+        "country": "Tajikistan",
+        "iso": "TJ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

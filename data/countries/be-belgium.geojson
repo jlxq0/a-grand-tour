@@ -1,0 +1,389 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.47375,
+          51.03097222
+        ]
+      },
+      "properties": {
+        "name": "Flemish Béguinages",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.22527,
+          51.20891
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Brugge",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.35242,
+          50.84668
+        ]
+      },
+      "properties": {
+        "name": "La Grand-Place, Brussels",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.838333333,
+          50.43527778
+        ]
+      },
+      "properties": {
+        "name": "Major Mining Sites of Wallonia",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.36223,
+          50.82806
+        ]
+      },
+      "properties": {
+        "name": "Major Town Houses of the Architect Victor Horta (Brussels)",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.97879,
+          50.43077
+        ]
+      },
+      "properties": {
+        "name": "Neolithic Flint Mines at Spiennes (Mons)",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.38926,
+          50.60603
+        ]
+      },
+      "properties": {
+        "name": "Notre-Dame Cathedral in Tournai",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.39778,
+          51.21833
+        ]
+      },
+      "properties": {
+        "name": "Plantin-Moretus House-Workshops-Museum Complex",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.416111111,
+          50.835
+        ]
+      },
+      "properties": {
+        "name": "Stoclet House",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2009",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.13722,
+          50.48111
+        ]
+      },
+      "properties": {
+        "name": "The Four Lifts on the Canal du Centre and their Environs, La Louvière and Le Roeulx (Hainaut)",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.23139,
+          50.17444
+        ]
+      },
+      "properties": {
+        "name": "Belfries of Belgium and France",
+        "country": "Belgium,France",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.391588889,
+          53.04222222
+        ]
+      },
+      "properties": {
+        "name": "Colonies of Benevolence",
+        "country": "Belgium,Netherlands",
+        "iso": "BE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Grand-Place Brussels",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Flanders Fields",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cathedral of Our Lady Antwerp",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bruges",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Comme Chez Soi",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grand Place Brussels",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Leon De Bruxelles",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mary Chocolatier",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Abbaye D'Orval",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.3478,
+          50.8467
+        ]
+      },
+      "properties": {
+        "name": "Comme Chez Soi",
+        "city": "Brussels",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.1956,
+          51.1367
+        ]
+      },
+      "properties": {
+        "name": "Hertog Jan",
+        "city": "Bruges",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.4956,
+          50.9378
+        ]
+      },
+      "properties": {
+        "name": "Hof van Cleve",
+        "city": "Kruishoutem",
+        "country": "Belgium",
+        "iso": "BE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    }
+  ]
+}

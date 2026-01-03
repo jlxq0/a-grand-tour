@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -11.62361,
+          20.92889
+        ]
+      },
+      "properties": {
+        "name": "Ancient <I>Ksour</I> of Ouadane, Chinguetti, Tichitt and Oualata",
+        "country": "Mauritania",
+        "iso": "MR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.10889,
+          20.23472
+        ]
+      },
+      "properties": {
+        "name": "Banc d'Arguin National Park",
+        "country": "Mauritania",
+        "iso": "MR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1989",
+        "danger": false
+      }
+    }
+  ]
+}

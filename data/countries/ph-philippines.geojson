@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bacuit Archipelago",
+        "country": "Philippines",
+        "iso": "PH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Banaue Rice Terraces",
+        "country": "Philippines",
+        "iso": "PH",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Banaue Rice Terraces",
+        "country": "Philippines",
+        "iso": "PH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Taal Volcano",
+        "country": "Philippines",
+        "iso": "PH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Amanpulo",
+        "country": "Philippines",
+        "iso": "PH",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          123.8854,
+          10.3157
+        ]
+      },
+      "properties": {
+        "name": "Cebu Lechon - Zubuchon",
+        "city": "Cebu",
+        "country": "Philippines",
+        "iso": "PH",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "local",
+        "why_notable": "Best lechon in Philippines - Bourdain"
+      }
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.66666667,
+          30.83583333
+        ]
+      },
+      "properties": {
+        "name": "Abu Mena",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6,
+          25.73333
+        ]
+      },
+      "properties": {
+        "name": "Ancient Thebes with its Necropolis",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.26111,
+          30.05
+        ]
+      },
+      "properties": {
+        "name": "Historic Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.13041,
+          29.97604
+        ]
+      },
+      "properties": {
+        "name": "Memphis and its Necropolis – the Pyramid Fields from Giza to Dahshur",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.62580556,
+          22.33722222
+        ]
+      },
+      "properties": {
+        "name": "Nubian Monuments from Abu Simbel to Philae",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.97543,
+          28.55623
+        ]
+      },
+      "properties": {
+        "name": "Saint Catherine Area",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2002",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.18333,
+          29.33333
+        ]
+      },
+      "properties": {
+        "name": "Wadi Al-Hitan (Whale Valley)",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "The Pyramids of Giza",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sinai",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Valley of the Kings",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Abu Simbel",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Egyptian Museum Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Karnak Temple Luxor",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Temple of Luxor",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pyramids of Giza",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museum of Islamic Art Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Khan El-Khalili Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Egyptian Museum Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Red Sea Diving",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sinai",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Abu Simbel",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old Cataract Hotel Aswan",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Nile Cruise",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Winter Palace Luxor",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Siwa Oasis",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2357,
+          30.0444
+        ]
+      },
+      "properties": {
+        "name": "Nasr El-Ghazali",
+        "city": "Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Best koshari in Cairo since 1950"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.24,
+          30.05
+        ]
+      },
+      "properties": {
+        "name": "Felfela",
+        "city": "Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Egyptian comfort food institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8894,
+          24.0875
+        ]
+      },
+      "properties": {
+        "name": "Old Cataract Hotel",
+        "city": "Aswan",
+        "country": "Egypt",
+        "iso": "EG",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Nile views, Agatha Christie wrote here"
+      }
+    }
+  ]
+}

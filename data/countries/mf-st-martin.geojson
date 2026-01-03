@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Samanna St Martin",
+        "country": "St Martin",
+        "iso": "MF",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

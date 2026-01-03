@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.50222222,
+          46.04333333
+        ]
+      },
+      "properties": {
+        "name": "The works of Jože Plečnik in Ljubljana – Human Centred Urban Design",
+        "country": "Slovenia",
+        "iso": "SI",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.0,
+          45.66667
+        ]
+      },
+      "properties": {
+        "name": "Škocjan Caves",
+        "country": "Slovenia",
+        "iso": "SI",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Bled",
+        "country": "Slovenia",
+        "iso": "SI",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Postojna Cave",
+        "country": "Slovenia",
+        "iso": "SI",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5831,
+          46.2486
+        ]
+      },
+      "properties": {
+        "name": "Hiša Franko",
+        "city": "Kobarid",
+        "country": "Slovenia",
+        "iso": "SI",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Ana Roš"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.506,
+          46.0514
+        ]
+      },
+      "properties": {
+        "name": "Pekarna Tartine",
+        "city": "Ljubljana",
+        "country": "Slovenia",
+        "iso": "SI",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Bakery",
+        "why_notable": "Famous burek and štruklji"
+      }
+    }
+  ]
+}

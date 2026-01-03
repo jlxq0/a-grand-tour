@@ -1,0 +1,891 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.4797222,
+          51.42472222
+        ]
+      },
+      "properties": {
+        "name": "Canadian Rocky Mountain Parks",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.4922222,
+          50.76777778
+        ]
+      },
+      "properties": {
+        "name": "Dinosaur Provincial Park",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.53138889,
+          49.6125
+        ]
+      },
+      "properties": {
+        "name": "Gros Morne National Park",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.6520528,
+          49.70840556
+        ]
+      },
+      "properties": {
+        "name": "Head-Smashed-In Buffalo Jump",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.21055556,
+          46.80944444
+        ]
+      },
+      "properties": {
+        "name": "Historic District of Old Québec",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.43583333,
+          45.70972222
+        ]
+      },
+      "properties": {
+        "name": "Joggins Fossil Cliffs",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.30722222,
+          45.11833333
+        ]
+      },
+      "properties": {
+        "name": "Landscape of Grand Pré",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.55,
+          51.58472222
+        ]
+      },
+      "properties": {
+        "name": "L’Anse aux Meadows National Historic Site",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1978",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.35305556,
+          48.105
+        ]
+      },
+      "properties": {
+        "name": "Miguasha National Park",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.21111111,
+          46.635
+        ]
+      },
+      "properties": {
+        "name": "Mistaken Point",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -125.5894444,
+          61.54722222
+        ]
+      },
+      "properties": {
+        "name": "Nahanni National Park",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1978",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.30916667,
+          44.37611111
+        ]
+      },
+      "properties": {
+        "name": "Old Town Lunenburg",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.41127778,
+          51.82641667
+        ]
+      },
+      "properties": {
+        "name": "Pimachiowin Aki",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.42952222,
+          51.726925
+        ]
+      },
+      "properties": {
+        "name": "Red Bay Basque Whaling Station",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2013",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.765125,
+          44.99438611
+        ]
+      },
+      "properties": {
+        "name": "Rideau Canal",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -131.2202778,
+          52.095
+        ]
+      },
+      "properties": {
+        "name": "S<U>G</U>ang Gwaay",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.2933333,
+          59.35833333
+        ]
+      },
+      "properties": {
+        "name": "Wood Buffalo National Park",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.6333333,
+          49.075
+        ]
+      },
+      "properties": {
+        "name": "Writing-on-Stone / Áísínai’pi",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -140.9919722,
+          61.19758333
+        ]
+      },
+      "properties": {
+        "name": "Kluane / Wrangell-St. Elias / Glacier Bay / Tatshenshini-Alsek",
+        "country": "Canada,United States of America",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.9041667,
+          48.99605556
+        ]
+      },
+      "properties": {
+        "name": "Waterton Glacier International Peace Park",
+        "country": "Canada,United States of America",
+        "iso": "CA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museum of Anthropology Vancouver",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Haida Gwaii",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Moraine Lake Through Paradise Valley",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old Quebec",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Athabasca Glacier",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bay of Fundy",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jasper National Park",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Burgess Shale",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "L'anse Aux Meadows",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grouse Mountain Vancouver",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jasper Banff Icefields",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Canadian Rockies by Train",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Gulf Islands BC",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Heli-Skiing BC",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Nimmo Bay",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Whistler Blackcomb",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sun Yat-Sen Garden Vancouver",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Granville Island Vancouver",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pacific Rim National Park",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Aerie Resort Vancouver Island",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stubbs Island Whale Watching",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Royal BC Museum Victoria",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Polar Bear Safari Churchill",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bay of Fundy",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Gros Morne Newfoundland",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cabot Trail Nova Scotia",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Niagara Falls",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rideau Canal Ottawa",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Art Gallery of Ontario",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Four Seasons Toronto",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Prince Edward Island",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Charlevoix Quebec",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Massawippi",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Montreal Summer Festivals",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Vieux-Montreal",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mont Tremblant",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Carnaval Quebec",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5775,
+          45.5182
+        ]
+      },
+      "properties": {
+        "name": "Schwartz's Deli",
+        "city": "Montreal",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Deli",
+        "why_notable": "Smoked meat since 1928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3715,
+          43.6489
+        ]
+      },
+      "properties": {
+        "name": "St. Lawrence Market",
+        "city": "Toronto",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Market",
+        "why_notable": "National Geographic's best food market"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5778,
+          45.5178
+        ]
+      },
+      "properties": {
+        "name": "Schwartz's",
+        "city": "Montreal",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "deli",
+        "why_notable": "Montreal smoked meat since 1928"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5806,
+          45.4794
+        ]
+      },
+      "properties": {
+        "name": "Joe Beef",
+        "city": "Montreal",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "iconic",
+        "why_notable": "Montreal's most storied restaurant"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.1833,
+          49.7167
+        ]
+      },
+      "properties": {
+        "name": "Fogo Island Inn",
+        "city": "Fogo Island",
+        "country": "Canada",
+        "iso": "CA",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Architectural wonder on remote Newfoundland island"
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.29514,
+          40.15931
+        ]
+      },
+      "properties": {
+        "name": "Cathedral and Churches of Echmiatsin and the Archaeological Site of Zvartnots",
+        "country": "Armenia",
+        "iso": "AM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.71028,
+          41.095
+        ]
+      },
+      "properties": {
+        "name": "Monasteries of Haghpat and Sanahin",
+        "country": "Armenia",
+        "iso": "AM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.818525,
+          40.140439
+        ]
+      },
+      "properties": {
+        "name": "Monastery of Geghard and the Upper Azat Valley",
+        "country": "Armenia",
+        "iso": "AM",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ararat",
+        "country": "Armenia",
+        "iso": "AM",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

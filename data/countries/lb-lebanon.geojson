@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Baalbek",
+        "country": "Lebanon",
+        "iso": "LB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5022,
+          33.8833
+        ]
+      },
+      "properties": {
+        "name": "Falafel Arax",
+        "city": "Beirut",
+        "country": "Lebanon",
+        "iso": "LB",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "falafel",
+        "why_notable": "Best falafel in Beirut"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4847,
+          33.8969
+        ]
+      },
+      "properties": {
+        "name": "Em Sherif",
+        "city": "Beirut",
+        "country": "Lebanon",
+        "iso": "LB",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "lebanese",
+        "why_notable": "Traditional Lebanese fine dining"
+      }
+    }
+  ]
+}

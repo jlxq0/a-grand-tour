@@ -1,0 +1,106 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.1522222,
+          19.43105556
+        ]
+      },
+      "properties": {
+        "name": "Megalithic Jar Sites in Xiengkhuang – Plain of Jars",
+        "country": "Lao People's Democratic Republic",
+        "iso": "LA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.13333,
+          19.88889
+        ]
+      },
+      "properties": {
+        "name": "Town of Luang Prabang",
+        "country": "Lao People's Democratic Republic",
+        "iso": "LA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8222222,
+          14.84833333
+        ]
+      },
+      "properties": {
+        "name": "Vat Phou and Associated Ancient Settlements within the Champasak Cultural Landscape",
+        "country": "Lao People's Democratic Republic",
+        "iso": "LA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Vat Phou",
+        "country": "Laos",
+        "iso": "LA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Wat Phou",
+        "country": "Laos",
+        "iso": "LA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Luang Prabang",
+        "country": "Laos",
+        "iso": "LA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mekong Cruise Laos",
+        "country": "Laos",
+        "iso": "LA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

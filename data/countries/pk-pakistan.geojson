@@ -1,0 +1,130 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          68.13888889,
+          27.32916667
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Ruins at Moenjodaro",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1980",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.94583333,
+          34.32083333
+        ]
+      },
+      "properties": {
+        "name": "Buddhist Ruins of Takht-i-Bahi and Neighbouring City Remains at Sahr-i-Bahlol",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1980",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.30972222,
+          31.59027778
+        ]
+      },
+      "properties": {
+        "name": "Fort and Shalamar Gardens in Lahore",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.9,
+          24.76666667
+        ]
+      },
+      "properties": {
+        "name": "Historical Monuments at Makli, Thatta",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.58888889,
+          32.9625
+        ]
+      },
+      "properties": {
+        "name": "Rohtas Fort",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8875,
+          33.77916667
+        ]
+      },
+      "properties": {
+        "name": "Taxila",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1980",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Fort and Shalimar Gardens Lahore",
+        "country": "Pakistan",
+        "iso": "PK",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

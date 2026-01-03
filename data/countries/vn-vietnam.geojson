@@ -1,0 +1,493 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.838623,
+          21.03752
+        ]
+      },
+      "properties": {
+        "name": "Central Sector of the Imperial Citadel of Thang Long - Hanoi",
+        "country": "Viet Nam",
+        "iso": "VN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2010",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.6047222,
+          20.07805556
+        ]
+      },
+      "properties": {
+        "name": "Citadel of the Ho Dynasty",
+        "country": "Viet Nam",
+        "iso": "VN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.57778,
+          16.46944
+        ]
+      },
+      "properties": {
+        "name": "Complex of Hué Monuments",
+        "country": "Viet Nam",
+        "iso": "VN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.1,
+          20.9
+        ]
+      },
+      "properties": {
+        "name": "Ha Long Bay",
+        "country": "Viet Nam",
+        "iso": "VN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.3333333,
+          15.88333333
+        ]
+      },
+      "properties": {
+        "name": "Hoi An Ancient Town",
+        "country": "Viet Nam",
+        "iso": "VN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.109169,
+          15.773843
+        ]
+      },
+      "properties": {
+        "name": "My Son Sanctuary",
+        "country": "Viet Nam",
+        "iso": "VN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.15125,
+          17.53722222
+        ]
+      },
+      "properties": {
+        "name": "Phong Nha-Ke Bang National Park",
+        "country": "Viet Nam",
+        "iso": "VN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8963889,
+          20.25666667
+        ]
+      },
+      "properties": {
+        "name": "Trang An Landscape Complex",
+        "country": "Viet Nam",
+        "iso": "VN",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hanoi's Old Quarter",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Halong Bay",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hoi An",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Phong Nha-Ke Bang National Park",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cu Chi Tunnels",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Phu Quoc Island",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mekong Delta",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Dalat",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Halong Bay",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cha Ca La Vong Hanoi",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old Quarter Hanoi",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pho Hoa",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rex Bar Saigon",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hoi An",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mekong Delta",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sapa",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.848,
+          21.013
+        ]
+      },
+      "properties": {
+        "name": "Bun Cha Huong Lien (Obama Bun Cha)",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Where Obama and Bourdain ate bun cha"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8506,
+          21.0355
+        ]
+      },
+      "properties": {
+        "name": "Pho Gia Truyen",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Legendary pho since 1951"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.326,
+          15.8794
+        ]
+      },
+      "properties": {
+        "name": "Banh Mi Phuong",
+        "city": "Hoi An",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Street Food",
+        "why_notable": "Anthony Bourdain's favorite banh mi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8497,
+          21.0372
+        ]
+      },
+      "properties": {
+        "name": "Pho Gia Truyen",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "noodles",
+        "why_notable": "Hanoi's most famous pho since 1947"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.8531,
+          21.02
+        ]
+      },
+      "properties": {
+        "name": "Bun Cha Huong Lien",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "street_food",
+        "why_notable": "Obama Bun Cha - Bourdain episode"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.3294,
+          15.88
+        ]
+      },
+      "properties": {
+        "name": "Banh Mi Phuong",
+        "city": "Hoi An",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "street_food",
+        "why_notable": "Best banh mi in Vietnam - Bourdain"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6922,
+          10.7742
+        ]
+      },
+      "properties": {
+        "name": "Com Nieu Sai Gon",
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "local",
+        "why_notable": "Clay pot rice thrown to tables"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6936,
+          10.7711
+        ]
+      },
+      "properties": {
+        "name": "Quan An Ngon",
+        "city": "Ho Chi Minh City",
+        "country": "Vietnam",
+        "iso": "VN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "local",
+        "why_notable": "Street food in colonial villa"
+      }
+    }
+  ]
+}

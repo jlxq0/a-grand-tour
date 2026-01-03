@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.702672,
+          -27.131613
+        ]
+      },
+      "properties": {
+        "name": "Jesuit Missions of La Santísima Trinidad de Paraná and Jesús de Tavarangue",
+        "country": "Paraguay",
+        "iso": "PY",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    }
+  ]
+}

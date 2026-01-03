@@ -1,0 +1,223 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.79722222,
+          0.525277778
+        ]
+      },
+      "properties": {
+        "name": "Chiribiquete National Park – “The Maloca of the Jaguar”",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.773082,
+          4.889476
+        ]
+      },
+      "properties": {
+        "name": "Coffee Cultural Landscape of Colombia",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.423084,
+          9.240492
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Santa Cruz de Mompox",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.146271,
+          7.803975
+        ]
+      },
+      "properties": {
+        "name": "Los Katíos National Park",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.607572,
+          4.003344
+        ]
+      },
+      "properties": {
+        "name": "Malpelo Fauna and Flora Sanctuary",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.03333333,
+          2.583333333
+        ]
+      },
+      "properties": {
+        "name": "National Archeological Park of Tierradentro",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.53333333,
+          10.41666667
+        ]
+      },
+      "properties": {
+        "name": "Port, Fortresses and Group of Monuments, Cartagena",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.23333333,
+          1.916666667
+        ]
+      },
+      "properties": {
+        "name": "San Agustín Archaeological Park",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tayrona National Park",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Malecon De Riohacha",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museo Del Oro Bogota",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cartagena",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Gold Museum Bogota",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cartagena",
+        "country": "Colombia",
+        "iso": "CO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

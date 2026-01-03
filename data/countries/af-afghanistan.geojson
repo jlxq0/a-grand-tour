@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Minaret of Jam",
+        "country": "Afghanistan",
+        "iso": "AF",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

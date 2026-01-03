@@ -1,0 +1,2049 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.088055556,
+          51.77638889
+        ]
+      },
+      "properties": {
+        "name": "Blaenavon Industrial Landscape",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.361388889,
+          51.84194444
+        ]
+      },
+      "properties": {
+        "name": "Blenheim Palace",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.083333333,
+          51.28
+        ]
+      },
+      "properties": {
+        "name": "Canterbury Cathedral, St Augustine's Abbey, and St Martin's Church",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.276944444,
+          53.13972222
+        ]
+      },
+      "properties": {
+        "name": "Castles and Town Walls of King Edward in Gwynedd",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.358611111,
+          51.38138889
+        ]
+      },
+      "properties": {
+        "name": "City of Bath",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.383611111,
+          50.13611111
+        ]
+      },
+      "properties": {
+        "name": "Cornwall and West Devon Mining Landscape",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.488055556,
+          53.02888889
+        ]
+      },
+      "properties": {
+        "name": "Derwent Valley Mills",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.989888889,
+          50.70555556
+        ]
+      },
+      "properties": {
+        "name": "Dorset and East Devon Coast",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.576111111,
+          54.77472222
+        ]
+      },
+      "properties": {
+        "name": "Durham Castle and Cathedral",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.485277778,
+          55.25
+        ]
+      },
+      "properties": {
+        "name": "Giant's Causeway and Causeway Coast",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.342061111,
+          36.12266944
+        ]
+      },
+      "properties": {
+        "name": "Gorham's Cave Complex",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.928611111,
+          -40.32472222
+        ]
+      },
+      "properties": {
+        "name": "Gough and Inaccessible Islands",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.188666667,
+          58.99605556
+        ]
+      },
+      "properties": {
+        "name": "Heart of Neolithic Orkney",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -128.3333333,
+          -24.36666667
+        ]
+      },
+      "properties": {
+        "name": "Henderson Island",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.67777778,
+          32.37944444
+        ]
+      },
+      "properties": {
+        "name": "Historic Town of St George and Related Fortifications, Bermuda",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.472777778,
+          52.62638889
+        ]
+      },
+      "properties": {
+        "name": "Ironbridge Gorge",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.303861111,
+          53.23391667
+        ]
+      },
+      "properties": {
+        "name": "Jodrell Bank Observatory",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.003777778,
+          51.48116667
+        ]
+      },
+      "properties": {
+        "name": "Maritime Greenwich",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.783055556,
+          55.66333333
+        ]
+      },
+      "properties": {
+        "name": "New Lanark",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.216666667,
+          55.95
+        ]
+      },
+      "properties": {
+        "name": "Old and New Towns of Edinburgh",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.128611111,
+          51.49972222
+        ]
+      },
+      "properties": {
+        "name": "Palace of Westminster and Westminster Abbey including Saint Margaret’s Church",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.087777778,
+          52.97027778
+        ]
+      },
+      "properties": {
+        "name": "Pontcysyllte Aqueduct and Canal",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2009",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.294027778,
+          51.48194444
+        ]
+      },
+      "properties": {
+        "name": "Royal Botanic Gardens, Kew",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.788333333,
+          53.83916667
+        ]
+      },
+      "properties": {
+        "name": "Saltaire",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.576666667,
+          57.81722222
+        ]
+      },
+      "properties": {
+        "name": "St Kilda",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.825277778,
+          51.17888889
+        ]
+      },
+      "properties": {
+        "name": "Stonehenge, Avebury and Associated Sites",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.573055556,
+          54.11611111
+        ]
+      },
+      "properties": {
+        "name": "Studley Royal Park including the Ruins of Fountains Abbey",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.082416667,
+          54.47661111
+        ]
+      },
+      "properties": {
+        "name": "The English Lake District",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2017",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.388888889,
+          56.00111111
+        ]
+      },
+      "properties": {
+        "name": "The Forth Bridge",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2015",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.115,
+          53.12083333
+        ]
+      },
+      "properties": {
+        "name": "The Slate Landscape of Northwest Wales",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.076111111,
+          51.50805556
+        ]
+      },
+      "properties": {
+        "name": "Tower of London",
+        "country": "United Kingdom of Great Britain and Northern Ireland",
+        "iso": "GB",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "British Museum",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake District",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tate Modern",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Edinburgh Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stonehenge",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Isle of Skye",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Giant's Causeway",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "St. Paul's Cathedral",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Skara Brae",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Roman Baths Bath",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Edinburgh Royal Mile",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Snowdonia",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Glencoe",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "York Minster",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Portmeirion",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Canterbury Cathedral",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Natural History Museum London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Eden Project",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "St. David's Cathedral",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bamburgh Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Caernarfon",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ben Nevis",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Brecon Beacons",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tintern Abbey",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kelvingrove Art Gallery Glasgow",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Loch Lomond",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hadrian's Wall",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Callanish Standing Stones",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Avebury",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Belfast",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Iona",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stirling",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "St Fagans National History Museum",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tower of London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Fingals Cave",
+        "country": "UK",
+        "iso": "GB",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Windsor Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chester",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Penzance & Land's End",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "St. Ives",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hotel Tresanton",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chatsworth House",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Burgh Island Hotel",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Gidleigh Park",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Arundell Arms",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Royal Pavilion",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Glyndebourne Festival",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cotswolds",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chewton Glen",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Winchester Cathedral",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Osborne House",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Canterbury Cathedral",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Leeds Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sissinghurst Castle Gardens",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake District",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chelsea Flower Show",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "The Connaught Hotel",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Afternoon Tea at the Ritz",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hadrian's Wall",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Newark Antiques Show",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Le Manoir Aux Quat'saisons",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Oxford and Cambridge",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Blenheim Palace",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ludlow",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bath",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "St. Andrew's Cathedral",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stratford-Upon-Avon",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Warwick Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Salisbury Cathedral",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stourhead Garden",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stonehenge",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Castle Howard",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "York Minster",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Scottish Golf",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Castle Trail Scotland",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "The Hebrides",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kinloch Lodge",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Scotch Whisky Trail",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Highland Games",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Skibo Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Loch Ness",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Inverlochy Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Airds Hotel",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Balmoral Hotel Edinburgh",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Edinburgh Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Edinburgh Festivals",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hogmanay",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Royal Scotsman",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "MacKintosh Trail",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "One Devonshire Gardens",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Balfour Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kinnaird Estate",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Altnaharrie Inn",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "The Trossachs",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Caernarfon Castle",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bodnant Gardens",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Snowdonia",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Llangollen Eisteddfod",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Portmeirion",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hay-On-Wye",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Dylan Thomas Boathouse",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tintern Abbey",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "St. David's Cathedral",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Giant's Causeway",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Royal Portrush",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mourne Mountains",
+        "country": "UK",
+        "iso": "GB",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7016,
+          51.5082
+        ]
+      },
+      "properties": {
+        "name": "The Fat Duck",
+        "city": "Bray",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Heston Blumenthal"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1636,
+          51.4853
+        ]
+      },
+      "properties": {
+        "name": "Restaurant Gordon Ramsay",
+        "city": "London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Gordon Ramsay"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1956,
+          51.5065
+        ]
+      },
+      "properties": {
+        "name": "Core by Clare Smyth",
+        "city": "London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Clare Smyth"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2013,
+          51.5155
+        ]
+      },
+      "properties": {
+        "name": "The Ledbury",
+        "city": "London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Brett Graham"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.7033,
+          51.5078
+        ]
+      },
+      "properties": {
+        "name": "The Fat Duck",
+        "city": "Bray",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1638,
+          51.4851
+        ]
+      },
+      "properties": {
+        "name": "Restaurant Gordon Ramsay",
+        "city": "London",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1523,
+          51.5074
+        ]
+      },
+      "properties": {
+        "name": "Alain Ducasse at The Dorchester",
+        "city": "London",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1921,
+          51.513
+        ]
+      },
+      "properties": {
+        "name": "Core by Clare Smyth",
+        "city": "London",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2014,
+          51.517
+        ]
+      },
+      "properties": {
+        "name": "The Ledbury",
+        "city": "London",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.142,
+          51.5123
+        ]
+      },
+      "properties": {
+        "name": "Sketch (The Lecture Room)",
+        "city": "London",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8992,
+          53.5547
+        ]
+      },
+      "properties": {
+        "name": "Moor Hall",
+        "city": "Aughton",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.9547,
+          54.2136
+        ]
+      },
+      "properties": {
+        "name": "L'Enclume",
+        "city": "Cartmel",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.137,
+          51.5094
+        ]
+      },
+      "properties": {
+        "name": "Ikoyi",
+        "city": "London",
+        "country": "United Kingdom",
+        "iso": "GB",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1474,
+          51.5126
+        ]
+      },
+      "properties": {
+        "name": "Claridge's",
+        "city": "London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Art deco masterpiece, royal favorite"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1205,
+          51.51
+        ]
+      },
+      "properties": {
+        "name": "The Savoy",
+        "city": "London",
+        "country": "UK",
+        "iso": "GB",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Pioneer of luxury hospitality, Thames views"
+      }
+    }
+  ]
+}

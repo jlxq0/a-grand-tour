@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.133333333,
+          10.06666667
+        ]
+      },
+      "properties": {
+        "name": "Koutammakou, the Land of the Batammariba",
+        "country": "Togo",
+        "iso": "TG",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    }
+  ]
+}

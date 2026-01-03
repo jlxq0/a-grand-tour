@@ -1,0 +1,441 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.37722222,
+          49.3
+        ]
+      },
+      "properties": {
+        "name": "Gardens and Castle at Kroměříž",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.41944,
+          50.08972
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Prague",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1992",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.45397222,
+          49.18413889
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Telč",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1992",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.31502778,
+          48.81069444
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Český Krumlov",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1992",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.27261111,
+          48.96963889
+        ]
+      },
+      "properties": {
+        "name": "Holašovice Historic Village",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.25045833,
+          49.59393611
+        ]
+      },
+      "properties": {
+        "name": "Holy Trinity Column in Olomouc",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.87888889,
+          49.21722222
+        ]
+      },
+      "properties": {
+        "name": "Jewish Quarter and St Procopius' Basilica in Třebíč",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.26666667,
+          49.95
+        ]
+      },
+      "properties": {
+        "name": "Kutná Hora: Historical Town Centre with the Church of St Barbara and the Cathedral of Our Lady at Sedlec",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.48425833,
+          50.05665
+        ]
+      },
+      "properties": {
+        "name": "Landscape for Breeding and Training of Ceremonial Carriage Horses at Kladruby nad Labem",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.775,
+          48.77583
+        ]
+      },
+      "properties": {
+        "name": "Lednice-Valtice Cultural Landscape",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.31444,
+          49.87361
+        ]
+      },
+      "properties": {
+        "name": "Litomyšl Castle",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.94205833,
+          49.5802
+        ]
+      },
+      "properties": {
+        "name": "Pilgrimage Church of St John of Nepomuk at Zelená Hora",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.61605556,
+          49.20718333
+        ]
+      },
+      "properties": {
+        "name": "Tugendhat Villa in Brno",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.83734444,
+          50.40652778
+        ]
+      },
+      "properties": {
+        "name": "Erzgebirge/Krušnohoří Mining Region",
+        "country": "Czechia,Germany",
+        "iso": "CZ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Charles Bridge",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old Town Square Prague",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Prague Castle",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sedlec Ossuary",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Karlstejn Castle",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Carlsbad",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cesky Krumlov",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Prague Castle",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Charles Bridge Prague",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Estates Theater Prague",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old Town Square Prague",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "U Fleku Prague",
+        "country": "Czechia",
+        "iso": "CZ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4211,
+          50.0875
+        ]
+      },
+      "properties": {
+        "name": "Atelier",
+        "city": "Prague",
+        "country": "Czech Republic",
+        "iso": "CZ",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4197,
+          50.0875
+        ]
+      },
+      "properties": {
+        "name": "Field",
+        "city": "Prague",
+        "country": "Czech Republic",
+        "iso": "CZ",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    }
+  ]
+}

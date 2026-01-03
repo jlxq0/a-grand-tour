@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.983333333,
+          7.183333333
+        ]
+      },
+      "properties": {
+        "name": "Royal Palaces of Abomey",
+        "country": "Benin",
+        "iso": "BJ",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    }
+  ]
+}

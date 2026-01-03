@@ -1,0 +1,230 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.59333333,
+          45.22858333
+        ]
+      },
+      "properties": {
+        "name": "Episcopal Complex of the Euphrasian Basilica in the Historic Centre of Poreč",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.25136111,
+          43.51708333
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Trogir",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.43916667,
+          43.50888889
+        ]
+      },
+      "properties": {
+        "name": "Historical Complex of Split with the Palace of Diocletian",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.10886111,
+          42.64142111
+        ]
+      },
+      "properties": {
+        "name": "Old City of Dubrovnik",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.61444,
+          44.87778
+        ]
+      },
+      "properties": {
+        "name": "Plitvice Lakes National Park",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.63861111,
+          43.18166667
+        ]
+      },
+      "properties": {
+        "name": "Stari Grad Plain",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.89038,
+          43.73629
+        ]
+      },
+      "properties": {
+        "name": "The Cathedral of St James in Šibenik",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.663611111,
+          45.70333333
+        ]
+      },
+      "properties": {
+        "name": "Venetian Works of Defence between the 16th and 17th Centuries: <em>Stato da Terra</em> – Western <em>Stato da Mar</em>",
+        "country": "Croatia,Italy,Montenegro",
+        "iso": "HR",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2017",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Dubrovnik",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Plitvice Lakes National Park",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palace of Diocletian Split",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.89,
+          43.735
+        ]
+      },
+      "properties": {
+        "name": "Pelegrini",
+        "city": "Šibenik",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Rudolf Štefan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.27,
+          45.2917
+        ]
+      },
+      "properties": {
+        "name": "Draga di Lovrana",
+        "city": "Lovran",
+        "country": "Croatia",
+        "iso": "HR",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Deni Srdoč"
+      }
+    }
+  ]
+}

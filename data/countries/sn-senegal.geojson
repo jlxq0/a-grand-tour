@@ -1,0 +1,130 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.84583333,
+          12.59333333
+        ]
+      },
+      "properties": {
+        "name": "Bassari Country: Bassari, Fula and Bedik Cultural Landscapes",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.237906,
+          16.414602
+        ]
+      },
+      "properties": {
+        "name": "Djoudj National Bird Sanctuary",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.40083,
+          14.66722
+        ]
+      },
+      "properties": {
+        "name": "Island of Gorée",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1978",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.50444,
+          16.02778
+        ]
+      },
+      "properties": {
+        "name": "Island of Saint-Louis",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -12.899781,
+          12.841271
+        ]
+      },
+      "properties": {
+        "name": "Niokolo-Koba National Park",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.49861111,
+          13.83527778
+        ]
+      },
+      "properties": {
+        "name": "Saloum Delta",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Goree Island",
+        "country": "Senegal",
+        "iso": "SN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

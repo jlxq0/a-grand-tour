@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.288025,
+          43.78144444
+        ]
+      },
+      "properties": {
+        "name": "Mehmed Paša Sokolović Bridge in Višegrad",
+        "country": "Bosnia and Herzegovina",
+        "iso": "BA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.815,
+          43.33730556
+        ]
+      },
+      "properties": {
+        "name": "Old Bridge Area of the Old City of Mostar",
+        "country": "Bosnia and Herzegovina",
+        "iso": "BA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.92405278,
+          43.09221389
+        ]
+      },
+      "properties": {
+        "name": "Stećci Medieval Tombstone Graveyards",
+        "country": "Bosnia and Herzegovina,Croatia,Montenegro,Serbia",
+        "iso": "BA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Stari Most Bridge Mostar",
+        "country": "Bosnia",
+        "iso": "BA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.431,
+          43.859
+        ]
+      },
+      "properties": {
+        "name": "Ćevabdžinica Željo",
+        "city": "Sarajevo",
+        "country": "Bosnia",
+        "iso": "BA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Best ćevapi in Bosnia"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0166,
+          43.133
+        ]
+      },
+      "properties": {
+        "name": "Durmitor National Park",
+        "country": "Montenegro",
+        "iso": "ME",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1980",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7,
+          42.48333
+        ]
+      },
+      "properties": {
+        "name": "Natural and Culturo-Historical Region of Kotor",
+        "country": "Montenegro",
+        "iso": "ME",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bay of Kotor",
+        "country": "Montenegro",
+        "iso": "ME",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Monastery of Ostrog",
+        "country": "Montenegro",
+        "iso": "ME",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

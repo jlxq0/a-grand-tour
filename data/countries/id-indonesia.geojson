@@ -1,0 +1,348 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.20361,
+          -7.60778
+        ]
+      },
+      "properties": {
+        "name": "Borobudur Temple Compounds",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.4027778,
+          -8.259166667
+        ]
+      },
+      "properties": {
+        "name": "Cultural Landscape of Bali Province: the <em>Subak</em> System as a Manifestation of the <em>Tri Hita Karana</em> Philosophy",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.48944,
+          -8.54333
+        ]
+      },
+      "properties": {
+        "name": "Komodo National Park",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.83333,
+          -4.75
+        ]
+      },
+      "properties": {
+        "name": "Lorentz National Park",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.7378833,
+          -0.766625556
+        ]
+      },
+      "properties": {
+        "name": "Ombilin Coal Mining Heritage of Sawahlunto",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.49167,
+          -7.75222
+        ]
+      },
+      "properties": {
+        "name": "Prambanan Temple Compounds",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.8166667,
+          -7.4
+        ]
+      },
+      "properties": {
+        "name": "Sangiran Early Man Site",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.5,
+          -2.5
+        ]
+      },
+      "properties": {
+        "name": "Tropical Rainforest Heritage of Sumatra",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.3333333,
+          -6.75
+        ]
+      },
+      "properties": {
+        "name": "Ujung Kulon National Park",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Gunung Leuser National Park",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Borobudur Java",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Komodo Island",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Heart of Bali",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Four Seasons Jimbaran",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Amandari Bali",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Baliem Valley Papua",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Amanjiwo Java",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Yogyakarta",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lombok",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Amanwana Moyo",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Torajaland",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8131,
+          -6.1347
+        ]
+      },
+      "properties": {
+        "name": "Cafe Batavia",
+        "city": "Jakarta",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "colonial",
+        "why_notable": "Colonial-era cafe in Old Jakarta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7986,
+          -6.2264
+        ]
+      },
+      "properties": {
+        "name": "Sate Khas Senayan",
+        "city": "Jakarta",
+        "country": "Indonesia",
+        "iso": "ID",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "satay",
+        "why_notable": "Jakarta's famous satay spot"
+      }
+    }
+  ]
+}

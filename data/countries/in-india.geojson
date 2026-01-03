@@ -1,0 +1,1518 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.021528,
+          27.179806
+        ]
+      },
+      "properties": {
+        "name": "Agra Fort",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.70025,
+          20.553111
+        ]
+      },
+      "properties": {
+        "name": "Ajanta Caves",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.44388889,
+          25.13666667
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Site of Nalanda Mahavihara at Nalanda, Bihar",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.73972,
+          23.47944
+        ]
+      },
+      "properties": {
+        "name": "Buddhist Monuments at Sanchi",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1989",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53333333,
+          22.48333333
+        ]
+      },
+      "properties": {
+        "name": "Champaner-Pavagadh Archaeological Park",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.83620278,
+          18.94012222
+        ]
+      },
+      "properties": {
+        "name": "Chhatrapati Shivaji Terminus (formerly Victoria Terminus)",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.91167,
+          15.50222
+        ]
+      },
+      "properties": {
+        "name": "Churches and Convents of Goa",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.21330278,
+          23.88840833
+        ]
+      },
+      "properties": {
+        "name": "Dholavira: a Harappan City",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.93583,
+          18.96667
+        ]
+      },
+      "properties": {
+        "name": "Elephanta Caves",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.17917,
+          20.02639
+        ]
+      },
+      "properties": {
+        "name": "Ellora Caves",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.6665,
+          27.097528
+        ]
+      },
+      "properties": {
+        "name": "Fatehpur Sikri",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.58333333,
+          31.83333333
+        ]
+      },
+      "properties": {
+        "name": "Great Himalayan National Park Conservation Area",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.1325,
+          10.78305556
+        ]
+      },
+      "properties": {
+        "name": "Great Living Chola Temples",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.47167,
+          15.31444
+        ]
+      },
+      "properties": {
+        "name": "Group of Monuments at Hampi",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.19167,
+          12.61667
+        ]
+      },
+      "properties": {
+        "name": "Group of Monuments at Mahabalipuram",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.81667,
+          15.94833
+        ]
+      },
+      "properties": {
+        "name": "Group of Monuments at Pattadakal",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.64611111,
+          24.88333333
+        ]
+      },
+      "properties": {
+        "name": "Hill Forts of Rajasthan",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2013",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.58805556,
+          23.02638889
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Ahmadabad",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2017",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.25056,
+          28.59333
+        ]
+      },
+      "properties": {
+        "name": "Humayun's Tomb, Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.82186111,
+          26.92427778
+        ]
+      },
+      "properties": {
+        "name": "Jaipur City, Rajasthan",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.94320556,
+          18.25913333
+        ]
+      },
+      "properties": {
+        "name": "Kakatiya Rudreshwara (Ramappa) Temple, Telangana",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.41666667,
+          26.66666667
+        ]
+      },
+      "properties": {
+        "name": "Kaziranga National Park",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.50861111,
+          27.15888889
+        ]
+      },
+      "properties": {
+        "name": "Keoladeo National Park",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.92222,
+          24.85222
+        ]
+      },
+      "properties": {
+        "name": "Khajuraho Group of Monuments",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.37722222,
+          27.76472222
+        ]
+      },
+      "properties": {
+        "name": "Khangchendzonga National Park",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.99389,
+          24.69528
+        ]
+      },
+      "properties": {
+        "name": "Mahabodhi Temple Complex at Bodh Gaya",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2002",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.03055556,
+          26.725
+        ]
+      },
+      "properties": {
+        "name": "Manas Wildlife Sanctuary",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.93583,
+          11.51028
+        ]
+      },
+      "properties": {
+        "name": "Mountain Railways of India",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.66667,
+          30.71667
+        ]
+      },
+      "properties": {
+        "name": "Nanda Devi and Valley of Flowers National Parks  ",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.18528,
+          28.52583
+        ]
+      },
+      "properties": {
+        "name": "Qutb Minar and its Monuments, Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.10166667,
+          23.85888889
+        ]
+      },
+      "properties": {
+        "name": "Rani-ki-Vav (the Queen’s Stepwell) at Patan, Gujarat",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.24083333,
+          28.65555556
+        ]
+      },
+      "properties": {
+        "name": "Red Fort Complex",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.58333333,
+          22.92777778
+        ]
+      },
+      "properties": {
+        "name": "Rock Shelters of Bhimbetka",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.09472,
+          19.8875
+        ]
+      },
+      "properties": {
+        "name": "Sun Temple, Konârak",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.89583333,
+          21.945
+        ]
+      },
+      "properties": {
+        "name": "Sundarbans National Park",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.04222,
+          27.17417
+        ]
+      },
+      "properties": {
+        "name": "Taj Mahal",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.825,
+          26.92472222
+        ]
+      },
+      "properties": {
+        "name": "The Jantar Mantar, Jaipur",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2010",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.83008333,
+          18.92980556
+        ]
+      },
+      "properties": {
+        "name": "Victorian Gothic and Art Deco Ensembles of Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.24972222,
+          8.529722222
+        ]
+      },
+      "properties": {
+        "name": "Western Ghats",
+        "country": "India",
+        "iso": "IN",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Taj Mahal",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jaisalmer Rajasthan",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Dashashwamedh Ghat Varanasi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Amber Fort",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Madurai Meenakshi Amman Temple",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Group of Monuments at Hampi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Old Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Golden Temple Amritsar",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Fatehpur Sikri",
+        "country": "India",
+        "iso": "IN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palace on Wheels India",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Chapslee Shimla",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ladakh",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kerala Backwaters",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Khajuraho",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ajanta Ellora Caves",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Taj Mahal Hotel Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palace of Winds Jaipur",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jaisalmer",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Umaid Bhawan Palace",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pushkar Camel Fair",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Samode Hotels",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Palace Udaipur",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Trekking Sikkim",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Taj Mahal",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ghats of Varanasi",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Marble Palace Kolkata",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Darjeeling",
+        "country": "India",
+        "iso": "IN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1859,
+          28.5987
+        ]
+      },
+      "properties": {
+        "name": "Indian Accent",
+        "city": "New Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Manish Mehrotra"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2197,
+          28.6328
+        ]
+      },
+      "properties": {
+        "name": "Indian Accent",
+        "city": "New Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8264,
+          19.0022
+        ]
+      },
+      "properties": {
+        "name": "Masque",
+        "city": "Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.234,
+          28.6506
+        ]
+      },
+      "properties": {
+        "name": "Karim's",
+        "city": "Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Mughlai cuisine since 1913, near Jama Masjid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.23,
+          28.656
+        ]
+      },
+      "properties": {
+        "name": "Paranthe Wali Gali",
+        "city": "Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Street Food",
+        "why_notable": "Historic paratha alley, 100+ years old"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8317,
+          18.9217
+        ]
+      },
+      "properties": {
+        "name": "Leopold Cafe",
+        "city": "Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Iconic since 1871, Shantaram fame"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.835,
+          18.934
+        ]
+      },
+      "properties": {
+        "name": "Britannia & Co",
+        "city": "Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Legendary Parsi cafe, berry pulao"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.8267,
+          26.9239
+        ]
+      },
+      "properties": {
+        "name": "Laxmi Mishthan Bhandar",
+        "city": "Jaipur",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Famous pyaaz kachori since 1954"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.01,
+          25.31
+        ]
+      },
+      "properties": {
+        "name": "Blue Lassi",
+        "city": "Varanasi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Legendary lassi shop by the ghats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2334,
+          28.6507
+        ]
+      },
+      "properties": {
+        "name": "Karim's",
+        "city": "Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "mughlai",
+        "why_notable": "Mughlai cuisine since 1913, Old Delhi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.2297,
+          28.6567
+        ]
+      },
+      "properties": {
+        "name": "Paranthe Wali Gali",
+        "city": "Delhi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "street_food",
+        "why_notable": "Historic paratha alley since 1872"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8319,
+          18.9217
+        ]
+      },
+      "properties": {
+        "name": "Leopold Cafe",
+        "city": "Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "historic",
+        "why_notable": "Mumbai institution since 1871"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8353,
+          18.9342
+        ]
+      },
+      "properties": {
+        "name": "Britannia & Co",
+        "city": "Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "parsi",
+        "why_notable": "Legendary Parsi berry pulao since 1923"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5781,
+          12.9639
+        ]
+      },
+      "properties": {
+        "name": "MTR",
+        "city": "Bangalore",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "south_indian",
+        "why_notable": "South Indian breakfast since 1924"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8314,
+          18.9281
+        ]
+      },
+      "properties": {
+        "name": "Trishna",
+        "city": "Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "seafood",
+        "why_notable": "Famous butter garlic crab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3639,
+          22.5726
+        ]
+      },
+      "properties": {
+        "name": "Indian Coffee House",
+        "city": "Kolkata",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "historic",
+        "why_notable": "Intellectual hangout since 1876"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3556,
+          22.5414
+        ]
+      },
+      "properties": {
+        "name": "Arsalan",
+        "city": "Kolkata",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "biryani",
+        "why_notable": "Kolkata biryani institution"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.0106,
+          25.3176
+        ]
+      },
+      "properties": {
+        "name": "Lanka Ashok Dining Hall",
+        "city": "Varanasi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "vegetarian",
+        "why_notable": "Simple thali on the ghats"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.0097,
+          25.3103
+        ]
+      },
+      "properties": {
+        "name": "Blue Lassi",
+        "city": "Varanasi",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "dessert",
+        "why_notable": "Famous lassi shop since 1925"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2578,
+          13.0694
+        ]
+      },
+      "properties": {
+        "name": "Saravana Bhavan",
+        "city": "Chennai",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "south_indian",
+        "why_notable": "Global South Indian chain HQ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.3511,
+          22.5564
+        ]
+      },
+      "properties": {
+        "name": "Peter Cat",
+        "city": "Kolkata",
+        "country": "India",
+        "iso": "IN",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "iconic",
+        "why_notable": "Legendary Chelo Kebab"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6815,
+          24.5732
+        ]
+      },
+      "properties": {
+        "name": "The Oberoi Udaivilas",
+        "city": "Udaipur",
+        "country": "India",
+        "iso": "IN",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Palatial lakeside resort, Mewar architecture"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6805,
+          24.5755
+        ]
+      },
+      "properties": {
+        "name": "Taj Lake Palace",
+        "city": "Udaipur",
+        "country": "India",
+        "iso": "IN",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Floating palace on Lake Pichola"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.8332,
+          18.9217
+        ]
+      },
+      "properties": {
+        "name": "The Taj Mahal Palace",
+        "city": "Mumbai",
+        "country": "India",
+        "iso": "IN",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Gateway of India landmark, Indian hospitality icon"
+      }
+    }
+  ]
+}

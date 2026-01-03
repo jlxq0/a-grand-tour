@@ -1,0 +1,386 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.55694,
+          34.07389
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Site of Volubilis",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.55833,
+          33.88333
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Meknes",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.12889,
+          31.04722
+        ]
+      },
+      "properties": {
+        "name": "Ksar of Ait-Ben-Haddou",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -9.770305556,
+          31.51411111
+        ]
+      },
+      "properties": {
+        "name": "Medina of Essaouira (formerly Mogador)",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.97778,
+          34.06111
+        ]
+      },
+      "properties": {
+        "name": "Medina of Fez",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.98667,
+          31.63139
+        ]
+      },
+      "properties": {
+        "name": "Medina of Marrakesh",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.36667,
+          35.57083
+        ]
+      },
+      "properties": {
+        "name": "Medina of Tétouan (formerly known as Titawin)",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.50194,
+          33.25667
+        ]
+      },
+      "properties": {
+        "name": "Portuguese City of Mazagan (El Jadida)",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.822777778,
+          34.02416667
+        ]
+      },
+      "properties": {
+        "name": "Rabat, Modern Capital and Historic City: a Shared Heritage",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Medina of Fez",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Majorelle Gardens",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Essaouira",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Fes El Bali",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Imilchil Betrothal Fair",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "High Atlas Mountains",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Mamounia Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Djemaa El-Fna Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Yacout Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Great Sahara",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Gazelle D'Or",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9891,
+          31.6258
+        ]
+      },
+      "properties": {
+        "name": "Jemaa el-Fnaa Food Stalls",
+        "city": "Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Street Food",
+        "why_notable": "UNESCO-listed square, tagine and snails"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.9773,
+          34.0622
+        ]
+      },
+      "properties": {
+        "name": "Cafe Clock",
+        "city": "Fez",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Local",
+        "why_notable": "Famous camel burger in the medina"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9965,
+          31.6235
+        ]
+      },
+      "properties": {
+        "name": "La Mamounia",
+        "city": "Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Winston Churchill's favorite, legendary gardens"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9958,
+          31.6284
+        ]
+      },
+      "properties": {
+        "name": "Royal Mansour",
+        "city": "Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "King's private riads, artisan craftsmanship"
+      }
+    }
+  ]
+}

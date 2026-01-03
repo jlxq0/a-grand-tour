@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5,
+          -0.5
+        ]
+      },
+      "properties": {
+        "name": "Ecosystem and Relict Cultural Landscape of Lopé-Okanda",
+        "country": "Gabon",
+        "iso": "GA",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.64083333,
+          0.406111111
+        ]
+      },
+      "properties": {
+        "name": "Ivindo National Park",
+        "country": "Gabon",
+        "iso": "GA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    }
+  ]
+}

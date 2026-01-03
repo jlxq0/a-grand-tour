@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Fete Des Cuisinieres Guadeloupe",
+        "country": "Guadeloupe",
+        "iso": "GP",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Guadeloupe Isles",
+        "country": "Guadeloupe",
+        "iso": "GP",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

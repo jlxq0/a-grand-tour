@@ -1,0 +1,598 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.01388889,
+          -25.97388889
+        ]
+      },
+      "properties": {
+        "name": "Barberton Makhonjwa Mountains",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.475,
+          -34.36111111
+        ]
+      },
+      "properties": {
+        "name": "Cape Floral Region Protected Areas",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.17694,
+          -24.15861
+        ]
+      },
+      "properties": {
+        "name": "Fossil Hominid Sites of South Africa",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.23889,
+          -22.1925
+        ]
+      },
+      "properties": {
+        "name": "Mapungubwe Cultural Landscape",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.20388889,
+          -28.6
+        ]
+      },
+      "properties": {
+        "name": "Richtersveld Cultural and Botanical Landscape",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.36666667,
+          -33.8
+        ]
+      },
+      "properties": {
+        "name": "Robben Island",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.26,
+          -26.86
+        ]
+      },
+      "properties": {
+        "name": "Vredefort Dome",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.55,
+          -27.83889
+        ]
+      },
+      "properties": {
+        "name": "iSimangaliso Wetland Park",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.37458333,
+          -25.68761111
+        ]
+      },
+      "properties": {
+        "name": "ǂKhomani Cultural Landscape",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2017",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Table Mountain",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kruger National Park",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Isimangaliso Wetland Park",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Robben Island",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Drakensburg Mountains",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Blyde River Canyon",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mount Nelson Hotel Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Table Mountain",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Phinda Game Reserve",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Drakensberg Mountains",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sabi Sabi Game Reserve",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cape Winelands",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Palace of the Lost City",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rovos Rail",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Groot Constantia",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Garden Route",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hermanus",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.42,
+          -33.9256
+        ]
+      },
+      "properties": {
+        "name": "The Test Kitchen",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3833,
+          -34.015
+        ]
+      },
+      "properties": {
+        "name": "La Colombe",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4189,
+          -33.92
+        ]
+      },
+      "properties": {
+        "name": "FYN",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.8833,
+          -32.8111
+        ]
+      },
+      "properties": {
+        "name": "Wolfgat",
+        "city": "Paternoster",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.562,
+          -33.978
+        ]
+      },
+      "properties": {
+        "name": "Mzolis",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Braai",
+        "why_notable": "Township braai institution, Gugulethu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.461,
+          -33.929
+        ]
+      },
+      "properties": {
+        "name": "Neighbourgoods Market",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Market",
+        "why_notable": "Saturday food market in Old Biscuit Mill"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3897,
+          -33.9192
+        ]
+      },
+      "properties": {
+        "name": "The Codfather",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "seafood",
+        "why_notable": "Cape Town sushi/seafood legend"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.5492,
+          -33.9828
+        ]
+      },
+      "properties": {
+        "name": "Mzoli's",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "braai",
+        "why_notable": "Gugulethu township braai"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4189,
+          -33.9331
+        ]
+      },
+      "properties": {
+        "name": "Addis in Cape",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "ethiopian",
+        "why_notable": "Best Ethiopian in Cape Town"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.8833,
+          -33.8
+        ]
+      },
+      "properties": {
+        "name": "Four Cousins Farm Kitchen",
+        "city": "Robertson",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "farm",
+        "why_notable": "Winelands farm lunch"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.0433,
+          -26.1439
+        ]
+      },
+      "properties": {
+        "name": "Khoisan Kitchen",
+        "city": "Johannesburg",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "local",
+        "why_notable": "Traditional African cuisine"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4108,
+          -33.9308
+        ]
+      },
+      "properties": {
+        "name": "Mount Nelson Hotel",
+        "city": "Cape Town",
+        "country": "South Africa",
+        "iso": "ZA",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Pink palace, Table Mountain views, high tea tradition"
+      }
+    }
+  ]
+}

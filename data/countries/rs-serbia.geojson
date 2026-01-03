@@ -1,0 +1,92 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.18611111,
+          43.89930556
+        ]
+      },
+      "properties": {
+        "name": "Gamzigrad-Romuliana, Palace of Galerius",
+        "country": "Serbia",
+        "iso": "RS",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.26555556,
+          42.66111111
+        ]
+      },
+      "properties": {
+        "name": "Medieval Monuments in Kosovo",
+        "country": "Serbia",
+        "iso": "RS",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.42278,
+          43.11889
+        ]
+      },
+      "properties": {
+        "name": "Stari Ras and Sopoćani",
+        "country": "Serbia",
+        "iso": "RS",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.53667,
+          43.48611
+        ]
+      },
+      "properties": {
+        "name": "Studenica Monastery",
+        "country": "Serbia",
+        "iso": "RS",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kalemegdan Belgrade",
+        "country": "Serbia",
+        "iso": "RS",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Four Seasons Nevis",
+        "country": "St Kitts and Nevis",
+        "iso": "KN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Golden Lemon St Kitts",
+        "country": "St Kitts and Nevis",
+        "iso": "KN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rawlins Plantation St Kitts",
+        "country": "St Kitts and Nevis",
+        "iso": "KN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

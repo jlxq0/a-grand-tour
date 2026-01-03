@@ -1,0 +1,71 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Carthage",
+        "country": "Tunisia",
+        "iso": "TN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bardo Museum Tunis",
+        "country": "Tunisia",
+        "iso": "TN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Matmata and Tataouine",
+        "country": "Tunisia",
+        "iso": "TN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Amphitheatre of El Jem",
+        "country": "Tunisia",
+        "iso": "TN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bardo Museum Tunis",
+        "country": "Tunisia",
+        "iso": "TN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sidi Bou Said",
+        "country": "Tunisia",
+        "iso": "TN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

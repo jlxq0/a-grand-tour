@@ -1,0 +1,350 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.32306,
+          60.39722
+        ]
+      },
+      "properties": {
+        "name": "Bryggen",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.593611111,
+          59.87861111
+        ]
+      },
+      "properties": {
+        "name": "Rjukan-Notodden Industrial Heritage Site",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2015",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.18333,
+          69.95
+        ]
+      },
+      "properties": {
+        "name": "Rock Art of Alta",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.38555556,
+          62.57388889
+        ]
+      },
+      "properties": {
+        "name": "Røros Mining Town and the Circumference",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1980",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.322972404,
+          61.29806111
+        ]
+      },
+      "properties": {
+        "name": "Urnes Stave Church",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1979",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.75,
+          65.61667
+        ]
+      },
+      "properties": {
+        "name": "Vegaøyan – The Vega Archipelago",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.16667,
+          62.11667
+        ]
+      },
+      "properties": {
+        "name": "West Norwegian Fjords – Geirangerfjord and Nærøyfjord",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2005",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bryggen",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "West Norwegian Fjords",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Vigelandspark Oslo",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pulpit Rock",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Oslo Opera House",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bergen Troldhaugen",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Norwegian Coastal Voyage",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lofoten Islands",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Munch Museum Oslo",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Vikingskiphuset Oslo",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Geirangerfjord",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Northern Lights",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hardangerfjord",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "North Pole",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.758,
+          59.907
+        ]
+      },
+      "properties": {
+        "name": "Maaemo",
+        "city": "Oslo",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Esben Holmboe Bang"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7606,
+          59.9056
+        ]
+      },
+      "properties": {
+        "name": "Maaemo",
+        "city": "Oslo",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.05,
+          57.9833
+        ]
+      },
+      "properties": {
+        "name": "Under",
+        "city": "Lindesnes",
+        "country": "Norway",
+        "iso": "NO",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    }
+  ]
+}

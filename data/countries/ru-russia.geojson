@@ -1,0 +1,192 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Baikal",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hermitage",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Red Square Moscow",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kizhi Pogost",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tsarskoye Selo St Petersburg",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Church of Our Savior on Spilled Blood St Petersburg",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sanduny Baths Moscow",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Trans-Siberian Railway",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Red Square Moscow",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bolshoi Moscow",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Moscow Underground",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tretyakov Gallery",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Waterways of the Czars",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "White Nights Festival St Petersburg",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hermitage St Petersburg",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Pavlovsk",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Petrodvorets",
+        "country": "Russia",
+        "iso": "RU",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

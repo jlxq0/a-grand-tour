@@ -1,0 +1,387 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Great Wall of China",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Tiger Leaping Gorge",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Forbidden City Beijing",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Potala Palace Lhasa",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "The Peak Hong Kong",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Temple of Confucius Qufu",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Grand Buddha Leshan",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Terracotta Warriors",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mogao Caves",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Summer Palace Beijing",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "The Bund Shanghai",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cultural Landscape of Honghe Hani Rice Terraces",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Kailash",
+        "country": "Tibet",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Jokhang Temple Lhasa",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "798 Art District Beijing",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Manasarovar",
+        "country": "Tibet",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sunday Market Kashgar",
+        "country": "China",
+        "iso": "CN",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Classic Restaurants Beijing",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Forbidden City",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Great Wall of China",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Beijing Hutongs",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Li River Cruise",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Peninsula Hong Kong",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Victoria Harbour Hong Kong",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Humble Administrator's Garden Suzhou",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Shanghai Museum",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Terra Cotta Warriors",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Three Gorges",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lhasa",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mount Kailash",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sunday Market Kashgar",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Xishuangbanna",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "West Lake Hangzhou",
+        "country": "China",
+        "iso": "CN",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.27,
+          39.99
+        ]
+      },
+      "properties": {
+        "name": "Aman at Summer Palace",
+        "city": "Beijing",
+        "country": "China",
+        "iso": "CN",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "Within Summer Palace grounds"
+      }
+    }
+  ]
+}

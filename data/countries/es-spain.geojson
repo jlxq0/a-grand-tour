@@ -1,0 +1,1790 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.59444,
+          37.17667
+        ]
+      },
+      "properties": {
+        "name": "Alhambra, Generalife and Albayzín, Granada",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.544444444,
+          37.025
+        ]
+      },
+      "properties": {
+        "name": "Antequera Dolmens Site",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2016",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.60934,
+          40.03645
+        ]
+      },
+      "properties": {
+        "name": "Aranjuez Cultural Landscape",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.33778,
+          38.91611
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Ensemble of Mérida",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.259305556,
+          41.11472222
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Ensemble of Tarraco",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.547222222,
+          42.37138889
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Site of Atapuerca",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.704011111,
+          42.34073333
+        ]
+      },
+      "properties": {
+        "name": "Burgos Cathedral",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.867694444,
+          37.88588889
+        ]
+      },
+      "properties": {
+        "name": "Caliphate City of Medina Azahara",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.803611111,
+          42.50472222
+        ]
+      },
+      "properties": {
+        "name": "Catalan Romanesque Churches of the Vall de Boí",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.99155,
+          37.38384
+        ]
+      },
+      "properties": {
+        "name": "Cathedral, Alcázar and Archivo de Indias in Seville",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.116166667,
+          43.38252778
+        ]
+      },
+      "properties": {
+        "name": "Cave of Altamira and Paleolithic Cave Art of Northern Spain",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.694722222,
+          39.73083333
+        ]
+      },
+      "properties": {
+        "name": "Cultural Landscape of the Serra de Tramuntana",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.358861,
+          36.9477
+        ]
+      },
+      "properties": {
+        "name": "Doñana National Park",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.23722222,
+          28.12625
+        ]
+      },
+      "properties": {
+        "name": "Garajonay National Park",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.779722222,
+          37.87919444
+        ]
+      },
+      "properties": {
+        "name": "Historic Centre of Cordoba",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.029416667,
+          39.86688889
+        ]
+      },
+      "properties": {
+        "name": "Historic City of Toledo",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.13174,
+          40.07662
+        ]
+      },
+      "properties": {
+        "name": "Historic Walled Town of Cuenca",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.435194444,
+          38.91113889
+        ]
+      },
+      "properties": {
+        "name": "Ibiza, Biodiversity and Culture",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.378444444,
+          39.47441667
+        ]
+      },
+      "properties": {
+        "name": "La Lonja de la Seda de Valencia",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.77075,
+          42.46939
+        ]
+      },
+      "properties": {
+        "name": "Las Médulas",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.126416667,
+          40.58175
+        ]
+      },
+      "properties": {
+        "name": "Monastery and Site of the Escurial, Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.84303,
+          43.36262
+        ]
+      },
+      "properties": {
+        "name": "Monuments of Oviedo and the Kingdom of the Asturias",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.10722,
+          40.34389
+        ]
+      },
+      "properties": {
+        "name": "Mudejar Architecture of Aragon",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.6645,
+          40.96525
+        ]
+      },
+      "properties": {
+        "name": "Old City of Salamanca",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1988",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.37,
+          39.47444
+        ]
+      },
+      "properties": {
+        "name": "Old Town of Cáceres",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.11675,
+          40.94847222
+        ]
+      },
+      "properties": {
+        "name": "Old Town of Segovia and its Aqueduct",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.70012,
+          40.65645
+        ]
+      },
+      "properties": {
+        "name": "Old Town of Ávila with its Extra-Muros Churches",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.175,
+          41.38778
+        ]
+      },
+      "properties": {
+        "name": "Palau de la Música Catalana and Hospital de Sant Pau, Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.716666667,
+          38.26666667
+        ]
+      },
+      "properties": {
+        "name": "Palmeral of Elche",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.687055556,
+          40.41533333
+        ]
+      },
+      "properties": {
+        "name": "Paseo del Prado and Buen Retiro, a landscape of Arts and Sciences",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.0825,
+          41.38083
+        ]
+      },
+      "properties": {
+        "name": "Poblet Monastery",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.37122,
+          38.01131
+        ]
+      },
+      "properties": {
+        "name": "Renaissance Monumental Ensembles of Úbeda and Baeza",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2003",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.66119444,
+          28.04438889
+        ]
+      },
+      "properties": {
+        "name": "Risco Caido and the Sacred Mountains of Gran Canaria Cultural Landscape",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.03331,
+          39.78995
+        ]
+      },
+      "properties": {
+        "name": "Rock Art of the Mediterranean Basin on the Iberian Peninsula",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.55333,
+          43.01111
+        ]
+      },
+      "properties": {
+        "name": "Roman Walls of Lugo",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.414722222,
+          43.335
+        ]
+      },
+      "properties": {
+        "name": "Routes of Santiago de Compostela: <i>Camino Francés</i> and Routes of Northern Spain ",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.3275,
+          39.45285
+        ]
+      },
+      "properties": {
+        "name": "Royal Monastery of Santa María de Guadalupe",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.31177778,
+          28.47788889
+        ]
+      },
+      "properties": {
+        "name": "San Cristóbal de La Laguna",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.86496,
+          42.32586
+        ]
+      },
+      "properties": {
+        "name": "San Millán Yuso and Suso Monasteries",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.54468,
+          42.88076
+        ]
+      },
+      "properties": {
+        "name": "Santiago de Compostela (Old Town)",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.64361111,
+          28.27138889
+        ]
+      },
+      "properties": {
+        "name": "Teide National Park",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2007",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.406388889,
+          43.38583333
+        ]
+      },
+      "properties": {
+        "name": "Tower of Hercules",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2009",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.368055556,
+          40.48138889
+        ]
+      },
+      "properties": {
+        "name": "University and Historic Precinct of Alcalá de Henares",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.016833333,
+          43.323175
+        ]
+      },
+      "properties": {
+        "name": "Vizcaya Bridge",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.152972,
+          41.41338
+        ]
+      },
+      "properties": {
+        "name": "Works of Antoni Gaudí ",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0005,
+          42.68542
+        ]
+      },
+      "properties": {
+        "name": "Pyrénées - Mont Perdu",
+        "country": "France,Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C/N",
+        "year_inscribed": "1997",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.661111111,
+          40.6975
+        ]
+      },
+      "properties": {
+        "name": "Prehistoric Rock Art Sites in the Côa Valley and Siega Verde",
+        "country": "Portugal,Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.838888889,
+          38.77527778
+        ]
+      },
+      "properties": {
+        "name": "Heritage of Mercury. Almadén and Idrija",
+        "country": "Slovenia,Spain",
+        "iso": "ES",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Alhambra",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sagrada Familia",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mezquita of Cordoba",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cave of Altamira",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museo Del Prado",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Alcazar Seville",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Picos De Europa",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museo Guggenheim Bilbao",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Teatre-Museu Dalí",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museu Picasso Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Santiago De Compostela",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Segovia",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Camp Nou Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Plaza Mayor Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Arcos De La Frontera",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Mezquita Cordoba",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Alhambra Granada",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Seville",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Guggenheim Bilbao",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "San Sebastian",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Altamira Caves",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Avila",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Leon",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Plaza Mayor Salamanca",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Meson De Candido Segovia",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Toledo Cathedral",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Catalan National Art Museum Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sagrada Familia",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Museu Picasso Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cadaques",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Santiago De Compostela",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "La Residencia Mallorca",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.808,
+          41.9926
+        ]
+      },
+      "properties": {
+        "name": "El Celler de Can Roca",
+        "city": "Girona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Roca Brothers"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.159,
+          41.3879
+        ]
+      },
+      "properties": {
+        "name": "Disfrutar",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Oriol Castro"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6783,
+          43.105
+        ]
+      },
+      "properties": {
+        "name": "Asador Etxebarri",
+        "city": "Axpe",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Victor Arguinzoniz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9525,
+          43.3248
+        ]
+      },
+      "properties": {
+        "name": "Arzak",
+        "city": "San Sebastián",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Juan Mari Arzak"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0178,
+          43.2642
+        ]
+      },
+      "properties": {
+        "name": "Martín Berasategui",
+        "city": "Lasarte-Oria",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Martín Berasategui"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6878,
+          40.457
+        ]
+      },
+      "properties": {
+        "name": "DiverXO",
+        "city": "Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "David Muñoz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1367,
+          41.4103
+        ]
+      },
+      "properties": {
+        "name": "ABaC",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Jordi Cruz"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.165,
+          41.392
+        ]
+      },
+      "properties": {
+        "name": "Lasarte",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Paolo Casagrande"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1061,
+          38.8408
+        ]
+      },
+      "properties": {
+        "name": "Quique Dacosta",
+        "city": "Dénia",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Quique Dacosta"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9019,
+          43.2694
+        ]
+      },
+      "properties": {
+        "name": "Mugaritz",
+        "city": "San Sebastián",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9515,
+          43.3224
+        ]
+      },
+      "properties": {
+        "name": "Arzak",
+        "city": "San Sebastián",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0172,
+          43.2727
+        ]
+      },
+      "properties": {
+        "name": "Martín Berasategui",
+        "city": "Lasarte-Oria",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1654,
+          41.3768
+        ]
+      },
+      "properties": {
+        "name": "Tickets",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.166,
+          41.391
+        ]
+      },
+      "properties": {
+        "name": "Moments",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.0019,
+          43.3111
+        ]
+      },
+      "properties": {
+        "name": "Akelarre",
+        "city": "San Sebastián",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1367,
+          41.4071
+        ]
+      },
+      "properties": {
+        "name": "ABaC",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1644,
+          41.3889
+        ]
+      },
+      "properties": {
+        "name": "Lasarte",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6892,
+          40.4589
+        ]
+      },
+      "properties": {
+        "name": "DiverXO",
+        "city": "Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.6863,
+          40.428
+        ]
+      },
+      "properties": {
+        "name": "Smoked Room",
+        "city": "Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.709,
+          40.4153
+        ]
+      },
+      "properties": {
+        "name": "Mercado de San Miguel",
+        "city": "Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Market",
+        "why_notable": "Historic iron market, tapas paradise"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1719,
+          41.3816
+        ]
+      },
+      "properties": {
+        "name": "La Boqueria",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Market",
+        "why_notable": "Iconic market since 1217"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1598,
+          41.3935
+        ]
+      },
+      "properties": {
+        "name": "Cerveceria Catalana",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "Tapas",
+        "why_notable": "Best tapas in Barcelona"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1617,
+          41.3947
+        ]
+      },
+      "properties": {
+        "name": "Cerveceria Catalana",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "tapas",
+        "why_notable": "Best tapas in Barcelona"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.1826,
+          41.3835
+        ]
+      },
+      "properties": {
+        "name": "Cal Pep",
+        "city": "Barcelona",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "tapas",
+        "why_notable": "Counter-only tapas legend"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7089,
+          40.4153
+        ]
+      },
+      "properties": {
+        "name": "Mercado de San Miguel",
+        "city": "Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "market",
+        "why_notable": "Historic iron market with tapas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7078,
+          40.4144
+        ]
+      },
+      "properties": {
+        "name": "Sobrino de Botin",
+        "city": "Madrid",
+        "country": "Spain",
+        "iso": "ES",
+        "source": "LocalEatery",
+        "category": "Restaurant",
+        "type": "historic",
+        "why_notable": "World's oldest restaurant (1725)"
+      }
+    }
+  ]
+}

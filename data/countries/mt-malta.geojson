@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hal Saflieni Hypogeum",
+        "country": "Malta",
+        "iso": "MT",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    }
+  ]
+}

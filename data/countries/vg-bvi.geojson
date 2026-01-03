@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Guana Island",
+        "country": "British Virgin Islands",
+        "iso": "VG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Little Dix Bay",
+        "country": "British Virgin Islands",
+        "iso": "VG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Necker Island",
+        "country": "British Virgin Islands",
+        "iso": "VG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sailing BVI",
+        "country": "British Virgin Islands",
+        "iso": "VG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sandcastle Jost Van Dyke",
+        "country": "British Virgin Islands",
+        "iso": "VG",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}

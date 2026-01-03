@@ -1,0 +1,54 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.13333,
+          49.61
+        ]
+      },
+      "properties": {
+        "name": "City of Luxembourg: its Old Quarters and Fortifications",
+        "country": "Luxembourg",
+        "iso": "LU",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Luxembourg City",
+        "country": "Luxembourg",
+        "iso": "LU",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.1269,
+          49.6097
+        ]
+      },
+      "properties": {
+        "name": "Mosconi",
+        "city": "Luxembourg City",
+        "country": "Luxembourg",
+        "iso": "LU",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    }
+  ]
+}

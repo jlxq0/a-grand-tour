@@ -1,0 +1,1477 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.084444444,
+          50.77444444
+        ]
+      },
+      "properties": {
+        "name": "Aachen Cathedral ",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1978",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.56858,
+          49.65369
+        ]
+      },
+      "properties": {
+        "name": "Abbey and Altenmünster of Lorsch",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1991",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.454111111,
+          54.46194444
+        ]
+      },
+      "properties": {
+        "name": "Archaeological Border complex of Hedeby and the Danevirke",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3295,
+          50.97477778
+        ]
+      },
+      "properties": {
+        "name": "Bauhaus and its Sites in Weimar, Dessau and Bernau",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.393055556,
+          51.31583333
+        ]
+      },
+      "properties": {
+        "name": "Bergpark Wilhelmshöhe",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2013",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.45,
+          52.44833333
+        ]
+      },
+      "properties": {
+        "name": "Berlin Modernism Housing Estates",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2008",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.41025,
+          51.77827778
+        ]
+      },
+      "properties": {
+        "name": "Carolingian Westwork and Civitas Corvey",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2014",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.909777778,
+          50.82502778
+        ]
+      },
+      "properties": {
+        "name": "Castles of Augustusburg and Falkenlust at Brühl",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1984",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.765555556,
+          48.38777778
+        ]
+      },
+      "properties": {
+        "name": "Caves and Ice Age Art in the Swabian Jura",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2017",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.32861,
+          50.9775
+        ]
+      },
+      "properties": {
+        "name": "Classical Weimar",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1998",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.15,
+          51.78333
+        ]
+      },
+      "properties": {
+        "name": "Collegiate Church, Castle and Old Town of Quedlinburg",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.957222222,
+          50.94111111
+        ]
+      },
+      "properties": {
+        "name": "Cologne Cathedral",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.812222222,
+          51.98388889
+        ]
+      },
+      "properties": {
+        "name": "Fagus Factory in Alfeld",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2011",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.42083,
+          51.8425
+        ]
+      },
+      "properties": {
+        "name": "Garden Kingdom of Dessau-Wörlitz",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.69167,
+          53.86667
+        ]
+      },
+      "properties": {
+        "name": "Hanseatic City of Lübeck",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.08527778,
+          54.3025
+        ]
+      },
+      "properties": {
+        "name": "Historic Centres of Stralsund and Wismar",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2002",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.65278,
+          51.86472
+        ]
+      },
+      "properties": {
+        "name": "Luther Memorials in Eisleben and Wittenberg",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1996",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.57861111,
+          49.94444444
+        ]
+      },
+      "properties": {
+        "name": "Margravial Opera House Bayreuth",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2012",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6675,
+          49.87638889
+        ]
+      },
+      "properties": {
+        "name": "Mathildenhöhe Darmstadt",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.81306,
+          49.00083
+        ]
+      },
+      "properties": {
+        "name": "Maulbronn Monastery Complex",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.75389,
+          49.91667
+        ]
+      },
+      "properties": {
+        "name": "Messel Pit Fossil Site",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "1995",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.34,
+          51.82
+        ]
+      },
+      "properties": {
+        "name": "Mines of Rammelsberg, Historic Town of Goslar and Upper Harz Water Management  System",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1992",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.061305556,
+          47.69872222
+        ]
+      },
+      "properties": {
+        "name": "Monastic Island of Reichenau",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2000",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.39861111,
+          52.51972222
+        ]
+      },
+      "properties": {
+        "name": "Museumsinsel (Museum Island), Berlin",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.804,
+          51.15480556
+        ]
+      },
+      "properties": {
+        "name": "Naumburg Cathedral",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2018",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.09916667,
+          49.02055556
+        ]
+      },
+      "properties": {
+        "name": "Old town of Regensburg with Stadtamhof",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2006",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.03333333,
+          52.4
+        ]
+      },
+      "properties": {
+        "name": "Palaces and Parks of Potsdam and Berlin",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1990",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.90013889,
+          47.68127778
+        ]
+      },
+      "properties": {
+        "name": "Pilgrimage Church of Wies",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1983",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.633333333,
+          49.75
+        ]
+      },
+      "properties": {
+        "name": "Roman Monuments, Cathedral of St Peter and Church of Our Lady in Trier",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1986",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.439538889,
+          49.31621111
+        ]
+      },
+      "properties": {
+        "name": "ShUM Sites of Speyer, Worms and Mainz",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.999444444,
+          53.54555556
+        ]
+      },
+      "properties": {
+        "name": "Speicherstadt and Kontorhaus District with Chilehaus",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2015",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.442388889,
+          49.31722222
+        ]
+      },
+      "properties": {
+        "name": "Speyer Cathedral",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.94389,
+          52.15278
+        ]
+      },
+      "properties": {
+        "name": "St Mary's Cathedral and St Michael's Church at Hildesheim",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1985",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.807472222,
+          53.07597222
+        ]
+      },
+      "properties": {
+        "name": "Town Hall and Roland on the Marketplace of Bremen",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.88888889,
+          49.89166667
+        ]
+      },
+      "properties": {
+        "name": "Town of Bamberg",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1993",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.694166667,
+          50.17361111
+        ]
+      },
+      "properties": {
+        "name": "Upper Middle Rhine Valley",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2002",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.844222222,
+          49.24872222
+        ]
+      },
+      "properties": {
+        "name": "Völklingen Ironworks",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1994",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.307,
+          50.96677778
+        ]
+      },
+      "properties": {
+        "name": "Wartburg Castle",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1999",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.902,
+          48.36547222
+        ]
+      },
+      "properties": {
+        "name": "Water Management System of Augsburg",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2019",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.93889,
+          49.79278
+        ]
+      },
+      "properties": {
+        "name": "Würzburg Residence with the Court Gardens and Residence Square",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1981",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.046111111,
+          51.49138889
+        ]
+      },
+      "properties": {
+        "name": "Zollverein Coal Mine Industrial Complex in Essen",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2001",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.556111111,
+          53.52861111
+        ]
+      },
+      "properties": {
+        "name": "Wadden Sea",
+        "country": "Denmark,Germany,Netherlands",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "N",
+        "year_inscribed": "2009",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.601,
+          54.99261111
+        ]
+      },
+      "properties": {
+        "name": "Frontiers of the Roman Empire",
+        "country": "Germany,United Kingdom of Great Britain and Northern Ireland",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "1987",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.433,
+          52.18033333
+        ]
+      },
+      "properties": {
+        "name": "Frontiers of the Roman Empire – The Lower German Limes",
+        "country": "Germany,Netherlands",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2021",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.72644444,
+          51.57930556
+        ]
+      },
+      "properties": {
+        "name": "Muskauer Park / Park Mużakowski",
+        "country": "Germany,Poland",
+        "iso": "DE",
+        "source": "UNESCO",
+        "category": "C",
+        "year_inscribed": "2004",
+        "danger": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Berlin Wall",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Schloss Neuschwanstein",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Reichstag Building",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cologne Cathedral",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Zwinger Dresden",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Brandenburg Gate Berlin",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Black Forest",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Baden-Baden",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hotel Traube Tonbach",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lake Constance",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Alpine Road Germany",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Romantic Road Bavaria",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Bamberg",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Wurzburg Residenz",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Neuschwanstein Castle",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Alte Pinakothek Munich",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Christkindlmarkt",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Deutsches Museum Munich",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Oktoberfest",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Oberammergau",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Regensburg",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Berlin Philharmonic",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Brandenburg Gate",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Berlin Museums",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sans Souci Potsdam",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Zwinger Dresden",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Summer Music Festivals",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Rhine Valley",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Cologne Cathedral",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Heidelberg Schloss",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Quedlinburg",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Hotel Vier Jahreszeiten Munich",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Lubeck",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Sylt",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Weimar",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1396,
+          50.9938
+        ]
+      },
+      "properties": {
+        "name": "Vendôme",
+        "city": "Bergisch Gladbach",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Joachim Wissler"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.775,
+          47.6917
+        ]
+      },
+      "properties": {
+        "name": "Überfahrt",
+        "city": "Rottach-Egern",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Christian Jürgens"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.4067,
+          49.4756
+        ]
+      },
+      "properties": {
+        "name": "Victor's Fine Dining",
+        "city": "Perl",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Christian Bau"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3756,
+          48.5046
+        ]
+      },
+      "properties": {
+        "name": "Schwarzwaldstube",
+        "city": "Baiersbronn",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Torsten Michel"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.1281,
+          50.9983
+        ]
+      },
+      "properties": {
+        "name": "Vendôme",
+        "city": "Bergisch Gladbach",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3744,
+          48.5011
+        ]
+      },
+      "properties": {
+        "name": "Schwarzwaldstube",
+        "city": "Baiersbronn",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7583,
+          47.6836
+        ]
+      },
+      "properties": {
+        "name": "Überfahrt",
+        "city": "Rottach-Egern",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.35,
+          48.5167
+        ]
+      },
+      "properties": {
+        "name": "Restaurant Bareiss",
+        "city": "Baiersbronn",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3879,
+          52.5074
+        ]
+      },
+      "properties": {
+        "name": "Tim Raue",
+        "city": "Berlin",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.3897,
+          52.5308
+        ]
+      },
+      "properties": {
+        "name": "Rutz",
+        "city": "Berlin",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7872,
+          52.4292
+        ]
+      },
+      "properties": {
+        "name": "Aqua",
+        "city": "Wolfsburg",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.2,
+          47.4667
+        ]
+      },
+      "properties": {
+        "name": "Hotel & Schloss Elmau",
+        "city": "Elmau",
+        "country": "Germany",
+        "iso": "DE",
+        "source": "Hotel",
+        "category": "Accommodation",
+        "why_notable": "G7 summit venue, Alpine cultural retreat"
+      }
+    }
+  ]
+}

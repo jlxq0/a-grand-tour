@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Shackleton's Hut",
+        "country": "Antarctica",
+        "iso": "AQ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Ross Ice Shelf",
+        "country": "Antarctica",
+        "iso": "AQ",
+        "source": "LP500",
+        "category": "Destination"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "Antarctica",
+        "country": "Antarctica",
+        "iso": "AQ",
+        "source": "1000Places",
+        "category": "Destination"
+      }
+    }
+  ]
+}
