@@ -3,612 +3,112 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.8456,
-          -6.2088
-        ]
-      },
-      "properties": {
-        "name": "Jakarta",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [106.8456, -6.2088] },
+      "properties": { "name": "Jakarta", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.0198,
-          -5.9333
-        ]
-      },
-      "properties": {
-        "name": "Merak",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [106.0198, -5.9333] },
+      "properties": { "name": "Merak", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.75,
-          -5.8667
-        ]
-      },
-      "properties": {
-        "name": "Bakauheni",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [105.75, -5.8667] },
+      "properties": { "name": "Bakauheni", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.2616,
-          -5.3971
-        ]
-      },
-      "properties": {
-        "name": "Bandar Lampung",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [105.2616, -5.3971] },
+      "properties": { "name": "Bandar Lampung", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          104.7458,
-          -2.9761
-        ]
-      },
-      "properties": {
-        "name": "Palembang",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [104.7458, -2.9761] },
+      "properties": { "name": "Palembang", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.6131,
-          -1.5883
-        ]
-      },
-      "properties": {
-        "name": "Jambi",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [103.6131, -1.5883] },
+      "properties": { "name": "Jambi", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.3543,
-          -0.9471
-        ]
-      },
-      "properties": {
-        "name": "Padang",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [100.3543, -0.9471] },
+      "properties": { "name": "Padang", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.3691,
-          -0.3055
-        ]
-      },
-      "properties": {
-        "name": "Bukittinggi",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [100.3691, -0.3055] },
+      "properties": { "name": "Bukittinggi", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.8564,
-          2.6147
-        ]
-      },
-      "properties": {
-        "name": "Lake Toba",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [98.8564, 2.6147] },
+      "properties": { "name": "Lake Toba", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          98.6722,
-          3.5952
-        ]
-      },
-      "properties": {
-        "name": "Medan",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [98.6722, 3.5952] },
+      "properties": { "name": "Medan", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          107.6191,
-          -6.9175
-        ]
-      },
-      "properties": {
-        "name": "Bandung",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [107.6191, -6.9175] },
+      "properties": { "name": "Bandung", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          110.3695,
-          -7.7956
-        ]
-      },
-      "properties": {
-        "name": "Yogyakarta",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [110.3695, -7.7956] },
+      "properties": { "name": "Yogyakarta", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.1889,
-          -8.4095
-        ]
-      },
-      "properties": {
-        "name": "Bali",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [115.1889, -8.4095] },
+      "properties": { "name": "Bali", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.0794,
-          -8.6574
-        ]
-      },
-      "properties": {
-        "name": "Flores",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [121.0794, -8.6574] },
+      "properties": { "name": "Flores", "country": "Indonesia", "iso": "ID", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          110.20361,
-          -7.60778
-        ]
-      },
-      "properties": {
-        "name": "Borobudur Temple Compounds",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1991",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [110.2036, -7.6078] },
+      "properties": { "name": "Borobudur", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Cultural", "score": 10, "why_notable": "World's largest Buddhist temple, 9th century, 2,672 relief panels, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.4027778,
-          -8.259166667
-        ]
-      },
-      "properties": {
-        "name": "Cultural Landscape of Bali Province: the <em>Subak</em> System as a Manifestation of the <em>Tri Hita Karana</em> Philosophy",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2012",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [119.4894, -8.5433] },
+      "properties": { "name": "Komodo National Park", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Komodo dragons, world's largest lizards, pristine diving, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.48944,
-          -8.54333
-        ]
-      },
-      "properties": {
-        "name": "Komodo National Park",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1991",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [115.4028, -8.2592] },
+      "properties": { "name": "Bali - Rice Terraces & Temples", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Iconic rice terraces (Tegallalang), ancient temples, spiritual culture, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          137.83333,
-          -4.75
-        ]
-      },
-      "properties": {
-        "name": "Lorentz National Park",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1999",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [110.4917, -7.7522] },
+      "properties": { "name": "Prambanan Temple", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Largest Hindu temple in Indonesia, 9th century, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.7378833,
-          -0.766625556
-        ]
-      },
-      "properties": {
-        "name": "Ombilin Coal Mining Heritage of Sawahlunto",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2019",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [98.8564, 2.6147] },
+      "properties": { "name": "Lake Toba", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's largest volcanic lake, Batak culture, Samosir Island" }
+    },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [130.5, -0.5] }, "properties": { "name": "Raja Ampat", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "World's most biodiverse marine area, pristine islands, ultimate diving" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [112.95, -7.94] }, "properties": { "name": "Mount Bromo", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Otherworldly volcanic landscape, sunrise over sea of sand, active crater" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [121.76, -8.2] }, "properties": { "name": "Kelimutu Tri-Color Lakes", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Three volcanic lakes in different colors, mystical sunrise spot" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [115.43, -8.35] }, "properties": { "name": "Ubud Cultural Heartland", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Art galleries, monkey forest, rice paddies, spiritual Bali" } },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.8131, -6.1347] },
+      "properties": { "name": "Cafe Batavia", "city": "Jakarta", "country": "Indonesia", "iso": "ID", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Colonial-era cafe in Old Jakarta" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          110.49167,
-          -7.75222
-        ]
-      },
-      "properties": {
-        "name": "Prambanan Temple Compounds",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1991",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          110.8166667,
-          -7.4
-        ]
-      },
-      "properties": {
-        "name": "Sangiran Early Man Site",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1996",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          101.5,
-          -2.5
-        ]
-      },
-      "properties": {
-        "name": "Tropical Rainforest Heritage of Sumatra",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2004",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          105.3333333,
-          -6.75
-        ]
-      },
-      "properties": {
-        "name": "Ujung Kulon National Park",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1991",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Gunung Leuser National Park",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Borobudur Java",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Komodo Island",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Heart of Bali",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Four Seasons Jimbaran",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Amandari Bali",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Baliem Valley Papua",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Amanjiwo Java",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Yogyakarta",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Lombok",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Amanwana Moyo",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Torajaland",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.8131,
-          -6.1347
-        ]
-      },
-      "properties": {
-        "name": "Cafe Batavia",
-        "city": "Jakarta",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "colonial",
-        "why_notable": "Colonial-era cafe in Old Jakarta"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          106.7986,
-          -6.2264
-        ]
-      },
-      "properties": {
-        "name": "Sate Khas Senayan",
-        "city": "Jakarta",
-        "country": "Indonesia",
-        "iso": "ID",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "satay",
-        "why_notable": "Jakarta's famous satay spot"
-      }
+      "geometry": { "type": "Point", "coordinates": [106.7986, -6.2264] },
+      "properties": { "name": "Sate Khas Senayan", "city": "Jakarta", "country": "Indonesia", "iso": "ID", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Jakarta's famous satay spot" }
     }
   ]
 }

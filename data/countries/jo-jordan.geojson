@@ -3,296 +3,53 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.0063,
-          29.5267
-        ]
-      },
-      "properties": {
-        "name": "Aqaba",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 21,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [35.0063, 29.5267] },
+      "properties": { "name": "Aqaba", "country": "Jordan", "iso": "JO", "source": "Route", "category": "Stop", "trip": 21, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.4444,
-          30.3285
-        ]
-      },
-      "properties": {
-        "name": "Petra",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 21,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [35.4444, 30.3285] },
+      "properties": { "name": "Petra", "country": "Jordan", "iso": "JO", "source": "Route", "category": "Stop", "trip": 21, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.4241,
-          29.5722
-        ]
-      },
-      "properties": {
-        "name": "Wadi Rum",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 21,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [35.4241, 29.5722] },
+      "properties": { "name": "Wadi Rum", "country": "Jordan", "iso": "JO", "source": "Route", "category": "Stop", "trip": 21, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.55,
-          31.5
-        ]
-      },
-      "properties": {
-        "name": "Dead Sea",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 21,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [35.55, 31.5] },
+      "properties": { "name": "Dead Sea", "country": "Jordan", "iso": "JO", "source": "Route", "category": "Stop", "trip": 21, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.9106,
-          31.9454
-        ]
-      },
-      "properties": {
-        "name": "Amman",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 21,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [35.9106, 31.9454] },
+      "properties": { "name": "Amman", "country": "Jordan", "iso": "JO", "source": "Route", "category": "Stop", "trip": 21, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.72830556,
-          32.04261111
-        ]
-      },
-      "properties": {
-        "name": "As-Salt - The Place of Tolerance and Urban Hospitality",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2021",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [35.4433, 30.3306] },
+      "properties": { "name": "Petra", "country": "Jordan", "iso": "JO", "source": "Sight", "category": "Cultural", "score": 10, "why_notable": "Rose-red city carved into rock, Treasury, New Seven Wonders of the World, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.55277778,
-          31.83722222
-        ]
-      },
-      "properties": {
-        "name": "Baptism Site “Bethany Beyond the Jordan” (Al-Maghtas)",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2015",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [35.4339, 29.6397] },
+      "properties": { "name": "Wadi Rum", "country": "Jordan", "iso": "JO", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Mars-like desert landscape, Lawrence of Arabia, Bedouin camps, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.44333,
-          30.33056
-        ]
-      },
-      "properties": {
-        "name": "Petra",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1985",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [35.55, 31.5] },
+      "properties": { "name": "Dead Sea", "country": "Jordan", "iso": "JO", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Lowest point on Earth, unique floating experience, mineral-rich waters" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.58730556,
-          31.80180556
-        ]
-      },
-      "properties": {
-        "name": "Quseir Amra",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1985",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [35.8961, 32.2746] },
+      "properties": { "name": "Jerash", "country": "Jordan", "iso": "JO", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Best-preserved Roman provincial city, colonnaded streets, oval plaza" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.92056,
-          31.50167
-        ]
-      },
-      "properties": {
-        "name": "Um er-Rasas (Kastrom Mefa'a)",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2004",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.43388889,
-          29.63972222
-        ]
-      },
-      "properties": {
-        "name": "Wadi Rum Protected Area",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "UNESCO",
-        "category": "C/N",
-        "year_inscribed": "2011",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Petra",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Wadi Rum",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Jerash",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Petra",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.9317,
-          31.9539
-        ]
-      },
-      "properties": {
-        "name": "Hashem Restaurant",
-        "city": "Amman",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Local",
-        "why_notable": "Best falafel in Jordan, open since 1952"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.9303,
-          31.9522
-        ]
-      },
-      "properties": {
-        "name": "Hashem",
-        "city": "Amman",
-        "country": "Jordan",
-        "iso": "JO",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "falafel",
-        "why_notable": "24-hour falafel since 1952"
-      }
+      "geometry": { "type": "Point", "coordinates": [35.9303, 31.9522] },
+      "properties": { "name": "Hashem", "city": "Amman", "country": "Jordan", "iso": "JO", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Best falafel in Jordan, open 24 hours since 1952" }
     }
   ]
 }

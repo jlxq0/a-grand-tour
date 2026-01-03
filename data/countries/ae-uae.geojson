@@ -3,405 +3,68 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.2708,
-          25.2048
-        ]
-      },
-      "properties": {
-        "name": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 1,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [55.2708, 25.2048] },
+      "properties": { "name": "Dubai", "country": "UAE", "iso": "AE", "source": "Route", "category": "Stop", "trip": 1, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          54.3666,
-          24.4539
-        ]
-      },
-      "properties": {
-        "name": "Abu Dhabi",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 1,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [54.3666, 24.4539] },
+      "properties": { "name": "Abu Dhabi", "country": "UAE", "iso": "AE", "source": "Route", "category": "Stop", "trip": 1, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.4033,
-          25.3463
-        ]
-      },
-      "properties": {
-        "name": "Sharjah",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 1,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [55.4033, 25.3463] },
+      "properties": { "name": "Sharjah", "country": "UAE", "iso": "AE", "source": "Route", "category": "Stop", "trip": 1, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.2708,
-          25.2048
-        ]
-      },
-      "properties": {
-        "name": "Dubai (End)",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 21,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [55.2708, 25.2048] },
+      "properties": { "name": "Dubai (End)", "country": "UAE", "iso": "AE", "source": "Route", "category": "Stop", "trip": 21, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.80638889,
-          24.06777778
-        ]
-      },
-      "properties": {
-        "name": "Cultural Sites of Al Ain (Hafit, Hili, Bidaa Bint Saud and Oases Areas)",
-        "country": "United Arab Emirates",
-        "iso": "AE",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2011",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [55.2744, 25.1972] },
+      "properties": { "name": "Burj Khalifa", "country": "UAE", "iso": "AE", "source": "Sight", "category": "Landmark", "score": 9, "why_notable": "World's tallest building, iconic Dubai skyline" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Burj Khalifa",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [54.4744, 24.4128] },
+      "properties": { "name": "Sheikh Zayed Grand Mosque", "country": "UAE", "iso": "AE", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Stunning white marble mosque, one of world's largest" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Sheikh Zayed Grand Mosque",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [55.2672, 25.1869] },
+      "properties": { "name": "Tresind Studio", "city": "Dubai", "country": "UAE", "iso": "AE", "source": "Michelin", "category": "Restaurant", "stars": 2 }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Al Ain",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [55.2797, 25.2167] },
+      "properties": { "name": "Il Ristorante Niko Romito", "city": "Dubai", "country": "UAE", "iso": "AE", "source": "Michelin", "category": "Restaurant", "stars": 2 }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Burj Al Arab",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [55.3003, 25.2631] },
+      "properties": { "name": "Al Ustad Special Kebab", "city": "Dubai", "country": "UAE", "iso": "AE", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Legendary kebab since 1978" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Gold Souk Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [55.278, 25.234] },
+      "properties": { "name": "Ravi Restaurant", "city": "Dubai", "country": "UAE", "iso": "AE", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Iconic Pakistani, celebrities to laborers" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.2803,
-          25.2172
-        ]
-      },
-      "properties": {
-        "name": "Zuma",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 1
-      }
+      "geometry": { "type": "Point", "coordinates": [55.1183, 25.0506] },
+      "properties": { "name": "Bu Qtair", "city": "Dubai", "country": "UAE", "iso": "AE", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Beach shack fish - no menu, legendary" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.1175,
-          25.1311
-        ]
-      },
-      "properties": {
-        "name": "Ossiano",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 1
-      }
+      "geometry": { "type": "Point", "coordinates": [54.3173, 24.4615] },
+      "properties": { "name": "Emirates Palace", "city": "Abu Dhabi", "country": "UAE", "iso": "AE", "source": "Hotel", "category": "Accommodation", "why_notable": "$3 billion palace hotel, gold-leaf everything" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.145,
-          25.0975
-        ]
-      },
-      "properties": {
-        "name": "Stay",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.2672,
-          25.1869
-        ]
-      },
-      "properties": {
-        "name": "Tresind Studio",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.2797,
-          25.2167
-        ]
-      },
-      "properties": {
-        "name": "Il Ristorante Niko Romito",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.3003,
-          25.2631
-        ]
-      },
-      "properties": {
-        "name": "Al Ustad Special Kebab",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Local",
-        "why_notable": "Legendary kebab since 1978"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.278,
-          25.234
-        ]
-      },
-      "properties": {
-        "name": "Ravi Restaurant",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Local",
-        "why_notable": "Iconic Pakistani, celebrities to laborers"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.2708,
-          25.2044
-        ]
-      },
-      "properties": {
-        "name": "Reem Al Bawadi",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "arabic",
-        "why_notable": "Traditional Emirati food"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.2994,
-          25.2636
-        ]
-      },
-      "properties": {
-        "name": "Al Ustad Special Kabab",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "kebab",
-        "why_notable": "Best kebabs in Dubai since 1978"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.1183,
-          25.0506
-        ]
-      },
-      "properties": {
-        "name": "Bu Qtair",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "seafood",
-        "why_notable": "Beach shack fish - no menu"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          54.3173,
-          24.4615
-        ]
-      },
-      "properties": {
-        "name": "Emirates Palace",
-        "city": "Abu Dhabi",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Hotel",
-        "category": "Accommodation",
-        "why_notable": "$3 billion palace hotel, gold-leaf everything"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.1852,
-          25.1412
-        ]
-      },
-      "properties": {
-        "name": "Burj Al Arab",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Hotel",
-        "category": "Accommodation",
-        "why_notable": "Sail-shaped icon, self-proclaimed 7-star"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          55.1389,
-          25.0936
-        ]
-      },
-      "properties": {
-        "name": "One&Only Royal Mirage",
-        "city": "Dubai",
-        "country": "UAE",
-        "iso": "AE",
-        "source": "Hotel",
-        "category": "Accommodation",
-        "why_notable": "Arabian palace on Jumeirah beach"
-      }
+      "geometry": { "type": "Point", "coordinates": [55.1852, 25.1412] },
+      "properties": { "name": "Burj Al Arab", "city": "Dubai", "country": "UAE", "iso": "AE", "source": "Hotel", "category": "Accommodation", "why_notable": "Sail-shaped icon, self-proclaimed 7-star" }
     }
   ]
 }

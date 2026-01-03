@@ -3,90 +3,18 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.1869,
-          5.6037
-        ]
-      },
-      "properties": {
-        "name": "Accra",
-        "country": "Ghana",
-        "iso": "GH",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 18,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-0.1869, 5.6037] },
+      "properties": { "name": "Accra", "country": "Ghana", "iso": "GH", "source": "Route", "category": "Stop", "trip": 18, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.2466,
-          5.1053
-        ]
-      },
-      "properties": {
-        "name": "Cape Coast",
-        "country": "Ghana",
-        "iso": "GH",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 18,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-1.2466, 5.1053] },
+      "properties": { "name": "Cape Coast", "country": "Ghana", "iso": "GH", "source": "Route", "category": "Stop", "trip": 18, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.625833333,
-          6.401111111
-        ]
-      },
-      "properties": {
-        "name": "Asante Traditional Buildings",
-        "country": "Ghana",
-        "iso": "GH",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1980",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -0.49361,
-          5.39103
-        ]
-      },
-      "properties": {
-        "name": "Forts and Castles, Volta, Greater Accra, Central and Western Regions",
-        "country": "Ghana",
-        "iso": "GH",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1979",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Accra",
-        "country": "Ghana",
-        "iso": "GH",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [-1.2466, 5.1053] },
+      "properties": { "name": "Cape Coast Castle & Slave Forts", "country": "Ghana", "iso": "GH", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Slave trade history, Door of No Return, UNESCO, profound memorial" }
     }
   ]
 }

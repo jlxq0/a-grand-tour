@@ -3,79 +3,8 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          50.5832,
-          26.2285
-        ]
-      },
-      "properties": {
-        "name": "Manama",
-        "country": "Bahrain",
-        "iso": "BH",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 1,
-        "nights": ""
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          50.51277778,
-          26.14972222
-        ]
-      },
-      "properties": {
-        "name": "Dilmun Burial Mounds",
-        "country": "Bahrain",
-        "iso": "BH",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2019",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          50.61351,
-          26.24128
-        ]
-      },
-      "properties": {
-        "name": "Pearling, Testimony of an Island Economy",
-        "country": "Bahrain",
-        "iso": "BH",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2012",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          50.52722222,
-          26.23306
-        ]
-      },
-      "properties": {
-        "name": "Qal’at al-Bahrain – Ancient Harbour and Capital of Dilmun",
-        "country": "Bahrain",
-        "iso": "BH",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2005",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [50.5832, 26.2285] },
+      "properties": { "name": "Manama", "country": "Bahrain", "iso": "BH", "source": "Route", "category": "Stop", "trip": 1, "nights": "" }
     }
   ]
 }

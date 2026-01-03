@@ -3,109 +3,18 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          90.4125,
-          23.8103
-        ]
-      },
-      "properties": {
-        "name": "Dhaka",
-        "country": "Bangladesh",
-        "iso": "BD",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 2,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [90.4125, 23.8103] },
+      "properties": { "name": "Dhaka", "country": "Bangladesh", "iso": "BD", "source": "Route", "category": "Stop", "trip": 2, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          91.83,
-          22.33
-        ]
-      },
-      "properties": {
-        "name": "Chittagong",
-        "country": "Bangladesh",
-        "iso": "BD",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 2,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [91.83, 22.33] },
+      "properties": { "name": "Chittagong", "country": "Bangladesh", "iso": "BD", "source": "Route", "category": "Stop", "trip": 2, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          89.8,
-          22.66667
-        ]
-      },
-      "properties": {
-        "name": "Historic Mosque City of Bagerhat",
-        "country": "Bangladesh",
-        "iso": "BD",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1985",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          88.98333333,
-          25.03333333
-        ]
-      },
-      "properties": {
-        "name": "Ruins of the Buddhist Vihara at Paharpur",
-        "country": "Bangladesh",
-        "iso": "BD",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1985",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          89.18333,
-          21.95
-        ]
-      },
-      "properties": {
-        "name": "The Sundarbans",
-        "country": "Bangladesh",
-        "iso": "BD",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1997",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Old Dhaka",
-        "country": "Bangladesh",
-        "iso": "BD",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [89.1833, 21.95] },
+      "properties": { "name": "The Sundarbans", "country": "Bangladesh", "iso": "BD", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's largest mangrove forest, Bengal tigers, UNESCO" }
     }
   ]
 }

@@ -3,253 +3,28 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          38.7578,
-          9.0054
-        ]
-      },
-      "properties": {
-        "name": "Addis Ababa",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 20,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [38.7578, 9.0054] },
+      "properties": { "name": "Addis Ababa", "country": "Ethiopia", "iso": "ET", "source": "Route", "category": "Stop", "trip": 20, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          38.98,
-          12.0319
-        ]
-      },
-      "properties": {
-        "name": "Lalibela",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 20,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [38.98, 12.0319] },
+      "properties": { "name": "Lalibela", "country": "Ethiopia", "iso": "ET", "source": "Route", "category": "Stop", "trip": 20, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          38.0667,
-          13.3833
-        ]
-      },
-      "properties": {
-        "name": "Gondar",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 20,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [38.0667, 13.3833] },
+      "properties": { "name": "Gondar", "country": "Ethiopia", "iso": "ET", "source": "Route", "category": "Stop", "trip": 20, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          38.71861,
-          14.13019
-        ]
-      },
-      "properties": {
-        "name": "Aksum",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1980",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [39.0404, 12.0294] },
+      "properties": { "name": "Rock-Hewn Churches of Lalibela", "country": "Ethiopia", "iso": "ET", "source": "Sight", "category": "Cultural", "score": 10, "why_notable": "11 medieval churches carved from solid rock, 'New Jerusalem', UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.4697,
-          12.607909
-        ]
-      },
-      "properties": {
-        "name": "Fasil Ghebbi, Gondar Region",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1979",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          42.13777778,
-          9.308888889
-        ]
-      },
-      "properties": {
-        "name": "Harar Jugol, the Fortified Historic Town",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2006",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.4,
-          5.3
-        ]
-      },
-      "properties": {
-        "name": "Konso Cultural Landscape",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2011",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          40.57939,
-          11.10006
-        ]
-      },
-      "properties": {
-        "name": "Lower Valley of the Awash",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1980",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.96666667,
-          4.8
-        ]
-      },
-      "properties": {
-        "name": "Lower Valley of the Omo",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1980",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          39.04042,
-          12.02935
-        ]
-      },
-      "properties": {
-        "name": "Rock-Hewn Churches, Lalibela",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1978",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          38.06666667,
-          13.18333333
-        ]
-      },
-      "properties": {
-        "name": "Simien National Park",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1978",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          38.6121,
-          8.43491
-        ]
-      },
-      "properties": {
-        "name": "Tiya",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1980",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Gonder",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Lalibela",
-        "country": "Ethiopia",
-        "iso": "ET",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [38.0667, 13.1833] },
+      "properties": { "name": "Simien Mountains National Park", "country": "Ethiopia", "iso": "ET", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Dramatic escarpments, gelada baboons, Ethiopian wolves, UNESCO" }
     }
   ]
 }

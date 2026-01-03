@@ -3,109 +3,23 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          19.8187,
-          41.3275
-        ]
-      },
-      "properties": {
-        "name": "Tirana",
-        "country": "Albania",
-        "iso": "AL",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 16,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [19.8187, 41.3275] },
+      "properties": { "name": "Tirana", "country": "Albania", "iso": "AL", "source": "Route", "category": "Stop", "trip": 16, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.02095,
-          39.745732
-        ]
-      },
-      "properties": {
-        "name": "Butrint",
-        "country": "Albania",
-        "iso": "AL",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1992",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [20.0210, 39.7457] },
+      "properties": { "name": "Butrint", "country": "Albania", "iso": "AL", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Ancient Greek/Roman ruins in stunning lagoon setting, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.14083333,
-          40.07416667
-        ]
-      },
-      "properties": {
-        "name": "Historic Centres of Berat and Gjirokastra ",
-        "country": "Albania",
-        "iso": "AL",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2005",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [20.0789, 40.0669] },
+      "properties": { "name": "Gjirokastra", "country": "Albania", "iso": "AL", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Ottoman stone city, UNESCO, castle views" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          22.18333333,
-          48.9
-        ]
-      },
-      "properties": {
-        "name": "Ancient and Primeval Beech Forests of the Carpathians and Other Regions of Europe",
-        "country": "Albania,Austria,Belgium,Bosnia and Herzegovina,Bulgaria,Croatia,Czechia,France,Germany,Italy,North Macedonia,Poland,Romania,Slovakia,Slovenia,Spain,Switzerland,Ukraine",
-        "iso": "AL",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2007",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.70416667,
-          40.99183333
-        ]
-      },
-      "properties": {
-        "name": "Natural and Cultural Heritage of the Ohrid region",
-        "country": "Albania,North Macedonia",
-        "iso": "AL",
-        "source": "UNESCO",
-        "category": "C/N",
-        "year_inscribed": "1979",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Butrint",
-        "country": "Albania",
-        "iso": "AL",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [19.9522, 40.7058] },
+      "properties": { "name": "Berat", "country": "Albania", "iso": "AL", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "City of a thousand windows, Ottoman architecture, UNESCO" }
     }
   ]
 }

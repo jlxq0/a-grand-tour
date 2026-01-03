@@ -3,164 +3,33 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          16.3254,
-          -18.8556
-        ]
-      },
-      "properties": {
-        "name": "Rundu",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 19,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [16.3254, -18.8556] },
+      "properties": { "name": "Rundu", "country": "Namibia", "iso": "NA", "source": "Route", "category": "Stop", "trip": 19, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          15.2938,
-          -24.7275
-        ]
-      },
-      "properties": {
-        "name": "Windhoek",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 19,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [15.2938, -24.7275] },
+      "properties": { "name": "Windhoek", "country": "Namibia", "iso": "NA", "source": "Route", "category": "Stop", "trip": 19, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          17.0658,
-          -22.5609
-        ]
-      },
-      "properties": {
-        "name": "Sossusvlei",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 19,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [17.0658, -22.5609] },
+      "properties": { "name": "Sossusvlei", "country": "Namibia", "iso": "NA", "source": "Route", "category": "Stop", "trip": 19, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          15.40777778,
-          -24.88527778
-        ]
-      },
-      "properties": {
-        "name": "Namib Sand Sea",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2013",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [15.2917, -24.75] },
+      "properties": { "name": "Sossusvlei & Deadvlei", "country": "Namibia", "iso": "NA", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "World's tallest red sand dunes, iconic Deadvlei, Namib Desert, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.37258333,
-          -20.59558333
-        ]
-      },
-      "properties": {
-        "name": "Twyfelfontein or /Ui-//aes",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2007",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [16.0, -18.8] },
+      "properties": { "name": "Etosha National Park", "country": "Namibia", "iso": "NA", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "One of Africa's greatest wildlife parks, vast salt pan, waterhole viewing" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Sossusvlei",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Etosha National Park",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Skeleton Coast",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Kolmanskop",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Etosha National Park",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Skeleton Coast",
-        "country": "Namibia",
-        "iso": "NA",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [13.5, -19.5] },
+      "properties": { "name": "Skeleton Coast", "country": "Namibia", "iso": "NA", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Eerie shipwreck coastline, seal colonies, desert meets ocean" }
     }
   ]
 }

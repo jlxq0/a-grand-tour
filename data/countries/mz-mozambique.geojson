@@ -3,63 +3,18 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          32.5892,
-          -25.9692
-        ]
-      },
-      "properties": {
-        "name": "Maputo",
-        "country": "Mozambique",
-        "iso": "MZ",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 20,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [32.5892, -25.9692] },
+      "properties": { "name": "Maputo", "country": "Mozambique", "iso": "MZ", "source": "Route", "category": "Stop", "trip": 20, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          40.73583,
-          -15.03417
-        ]
-      },
-      "properties": {
-        "name": "Island of Mozambique",
-        "country": "Mozambique",
-        "iso": "MZ",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1991",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [40.7358, -15.0342] },
+      "properties": { "name": "Island of Mozambique", "country": "Mozambique", "iso": "MZ", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Portuguese colonial architecture, historic trading post, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Bazaruto Archipelago",
-        "country": "Mozambique",
-        "iso": "MZ",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Island of Mozambique",
-        "country": "Mozambique",
-        "iso": "MZ",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [35.5, -21.65] },
+      "properties": { "name": "Bazaruto Archipelago", "country": "Mozambique", "iso": "MZ", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Marine paradise, dugongs, pristine beaches" }
     }
   ]
 }

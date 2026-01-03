@@ -199,6 +199,10 @@
         "source": "1000Places",
         "category": "Destination"
       }
-    }
+    },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-90.5, -0.69] }, "properties": { "name": "Galápagos Islands", "country": "Ecuador", "iso": "EC", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "Darwin's living laboratory, unique wildlife, giant tortoises, UNESCO" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-78.51, -0.22] }, "properties": { "name": "Quito Historic Center", "country": "Ecuador", "iso": "EC", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Best-preserved colonial center in Americas, Mitad del Mundo, UNESCO" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-78.44, -0.68] }, "properties": { "name": "Cotopaxi Volcano", "country": "Ecuador", "iso": "EC", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Perfect snow-capped cone, highest active volcano, dramatic landscape" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-78.3, -1.47] }, "properties": { "name": "Baños & Swing at End of World", "country": "Ecuador", "iso": "EC", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Adventure town, famous swing over canyon, waterfalls, hot springs" } }
   ]
 }

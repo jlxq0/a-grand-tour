@@ -3,156 +3,23 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          22.8372,
-          -19.2868
-        ]
-      },
-      "properties": {
-        "name": "Maun",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 19,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [22.8372, -19.2868] },
+      "properties": { "name": "Maun", "country": "Botswana", "iso": "BW", "source": "Route", "category": "Stop", "trip": 19, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          25.1264,
-          -18.3644
-        ]
-      },
-      "properties": {
-        "name": "Chobe",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 19,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [25.1264, -18.3644] },
+      "properties": { "name": "Chobe", "country": "Botswana", "iso": "BW", "source": "Route", "category": "Stop", "trip": 19, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          22.9,
-          -19.28333333
-        ]
-      },
-      "properties": {
-        "name": "Okavango Delta",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2014",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [22.9, -19.2833] },
+      "properties": { "name": "Okavango Delta", "country": "Botswana", "iso": "BW", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "Africa's greatest wetland, mokoro safaris, incredible wildlife, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          21.73333333,
-          -18.75
-        ]
-      },
-      "properties": {
-        "name": "Tsodilo",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2001",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Okavango Delta",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Chobe National Park",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Kalahari Desert",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Chobe National Park",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Jack's Camp",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Abu's Camp",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Okavango Delta",
-        "country": "Botswana",
-        "iso": "BW",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [25.1167, -18.5167] },
+      "properties": { "name": "Chobe National Park", "country": "Botswana", "iso": "BW", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "World's largest elephant herds, river safaris, predators" }
     }
   ]
 }

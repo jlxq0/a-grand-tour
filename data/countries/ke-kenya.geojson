@@ -3,372 +3,43 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.1439,
-          -1.4061
-        ]
-      },
-      "properties": {
-        "name": "Masai Mara",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 20,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [35.1439, -1.4061] },
+      "properties": { "name": "Masai Mara", "country": "Kenya", "iso": "KE", "source": "Route", "category": "Stop", "trip": 20, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.8219,
-          -1.2921
-        ]
-      },
-      "properties": {
-        "name": "Nairobi",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 20,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [36.8219, -1.2921] },
+      "properties": { "name": "Nairobi", "country": "Kenya", "iso": "KE", "source": "Route", "category": "Stop", "trip": 20, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          39.67944444,
-          -4.062777778
-        ]
-      },
-      "properties": {
-        "name": "Fort Jesus, Mombasa",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2011",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [35.25, -1.5] },
+      "properties": { "name": "Masai Mara National Reserve", "country": "Kenya", "iso": "KE", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "World's greatest wildlife spectacle, Great Migration, big five safari" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.24,
-          -0.4425
-        ]
-      },
-      "properties": {
-        "name": "Kenya Lake System in the Great Rift Valley",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2011",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [37.2, -2.65] },
+      "properties": { "name": "Amboseli National Park", "country": "Kenya", "iso": "KE", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Elephants with Kilimanjaro backdrop, classic African vista" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.50366667,
-          3.051305556
-        ]
-      },
-      "properties": {
-        "name": "Lake Turkana National Parks",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1997",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [37.3156, -0.155] },
+      "properties": { "name": "Mount Kenya", "country": "Kenya", "iso": "KE", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Africa's second highest peak, glaciers on the equator, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          40.8525,
-          -2.284444444
-        ]
-      },
-      "properties": {
-        "name": "Lamu Old Town",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2001",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [36.7836, -1.29] },
+      "properties": { "name": "Mama Oliech", "city": "Nairobi", "country": "Kenya", "iso": "KE", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Obama's famous fish lunch spot" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          37.31555556,
-          -0.155
-        ]
-      },
-      "properties": {
-        "name": "Mount Kenya National Park/Natural Forest",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1997",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [36.7886, -1.3272] },
+      "properties": { "name": "Carnivore", "city": "Nairobi", "country": "Kenya", "iso": "KE", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Famous nyama choma (grilled meat) experience" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          39.59611111,
-          -3.931944444
-        ]
-      },
-      "properties": {
-        "name": "Sacred Mijikenda Kaya Forests",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2008",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.326107,
-          -0.891338056
-        ]
-      },
-      "properties": {
-        "name": "Thimlich Ohinga Archaeological Site",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2018",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Masai Mara",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Amboseli National Park",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Mt. Kenya",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Ol Donyo Wuas",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Wildlife Reserves Kenya",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Peponi Hotel Lamu",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Masai Mara",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Governor's Camp",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Mount Kenya Safari Club",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.783,
-          -1.278
-        ]
-      },
-      "properties": {
-        "name": "Mama Oliech",
-        "city": "Nairobi",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Local",
-        "why_notable": "Obama's favorite fish fry"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.762,
-          -1.334
-        ]
-      },
-      "properties": {
-        "name": "Carnivore Restaurant",
-        "city": "Nairobi",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Restaurant",
-        "why_notable": "Famous game meat nyama choma"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.7836,
-          -1.29
-        ]
-      },
-      "properties": {
-        "name": "Mama Oliech",
-        "city": "Nairobi",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "local",
-        "why_notable": "Obama's fish lunch spot"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.7886,
-          -1.3272
-        ]
-      },
-      "properties": {
-        "name": "Carnivore",
-        "city": "Nairobi",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "bbq",
-        "why_notable": "Famous nyama choma experience"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          36.7447,
-          -1.3758
-        ]
-      },
-      "properties": {
-        "name": "Giraffe Manor",
-        "city": "Nairobi",
-        "country": "Kenya",
-        "iso": "KE",
-        "source": "Hotel",
-        "category": "Accommodation",
-        "why_notable": "Giraffes join you for breakfast"
-      }
+      "geometry": { "type": "Point", "coordinates": [36.7447, -1.3758] },
+      "properties": { "name": "Giraffe Manor", "city": "Nairobi", "country": "Kenya", "iso": "KE", "source": "Hotel", "category": "Accommodation", "why_notable": "Giraffes join you for breakfast" }
     }
   ]
 }

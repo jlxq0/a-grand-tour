@@ -3,109 +3,23 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.5152,
-          40.1872
-        ]
-      },
-      "properties": {
-        "name": "Yerevan",
-        "country": "Armenia",
-        "iso": "AM",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 17,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [44.5152, 40.1872] },
+      "properties": { "name": "Yerevan", "country": "Armenia", "iso": "AM", "source": "Route", "category": "Stop", "trip": 17, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          45.0196,
-          40.3588
-        ]
-      },
-      "properties": {
-        "name": "Lake Sevan",
-        "country": "Armenia",
-        "iso": "AM",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 17,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [45.0196, 40.3588] },
+      "properties": { "name": "Lake Sevan", "country": "Armenia", "iso": "AM", "source": "Route", "category": "Stop", "trip": 17, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.29514,
-          40.15931
-        ]
-      },
-      "properties": {
-        "name": "Cathedral and Churches of Echmiatsin and the Archaeological Site of Zvartnots",
-        "country": "Armenia",
-        "iso": "AM",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2000",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [44.8185, 40.1404] },
+      "properties": { "name": "Geghard Monastery", "country": "Armenia", "iso": "AM", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Stunning cave monastery carved into cliffs, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.71028,
-          41.095
-        ]
-      },
-      "properties": {
-        "name": "Monasteries of Haghpat and Sanahin",
-        "country": "Armenia",
-        "iso": "AM",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1996",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          44.818525,
-          40.140439
-        ]
-      },
-      "properties": {
-        "name": "Monastery of Geghard and the Upper Azat Valley",
-        "country": "Armenia",
-        "iso": "AM",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2000",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Ararat",
-        "country": "Armenia",
-        "iso": "AM",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [44.2951, 40.1593] },
+      "properties": { "name": "Echmiadzin Cathedral", "country": "Armenia", "iso": "AM", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Oldest cathedral in world (303 AD), Armenian holy site, UNESCO" }
     }
   ]
 }

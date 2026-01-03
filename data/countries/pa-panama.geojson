@@ -3,142 +3,18 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.5197,
-          8.9824
-        ]
-      },
-      "properties": {
-        "name": "Panama City",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 8,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-79.5197, 8.9824] },
+      "properties": { "name": "Panama City", "country": "Panama", "iso": "PA", "source": "Route", "category": "Stop", "trip": 8, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.54055556,
-          8.951111111
-        ]
-      },
-      "properties": {
-        "name": "Archaeological Site of Panamá Viejo and Historic District of Panamá",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1997",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-79.6, 9.1] },
+      "properties": { "name": "Panama Canal", "country": "Panama", "iso": "PA", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Engineering marvel connecting oceans, world-changing waterway, Miraflores Locks" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -81.766,
-          7.433
-        ]
-      },
-      "properties": {
-        "name": "Coiba National Park and its Special Zone of Marine Protection",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2005",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -77.54722222,
-          7.736111111
-        ]
-      },
-      "properties": {
-        "name": "Darien National Park",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1981",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.65583333,
-          9.553888889
-        ]
-      },
-      "properties": {
-        "name": "Fortifications on the Caribbean Side of Panama: Portobelo-San Lorenzo",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1980",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "San Blas Islands",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Panama Canal",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Panama Canal",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "San Blas Islands",
-        "country": "Panama",
-        "iso": "PA",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [-78.8, 9.55] },
+      "properties": { "name": "San Blas Islands (Guna Yala)", "country": "Panama", "iso": "PA", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "365 pristine islands, indigenous Kuna culture, Caribbean paradise" }
     }
   ]
 }

@@ -3,259 +3,33 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          26.1025,
-          44.4268
-        ]
-      },
-      "properties": {
-        "name": "Bucharest",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 16,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [26.1025, 44.4268] },
+      "properties": { "name": "Bucharest", "country": "Romania", "iso": "RO", "source": "Route", "category": "Stop", "trip": 16, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          25.6012,
-          46.07
-        ]
-      },
-      "properties": {
-        "name": "Brasov",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 16,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [25.6012, 46.07] },
+      "properties": { "name": "Brasov", "country": "Romania", "iso": "RO", "source": "Route", "category": "Stop", "trip": 16, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          25.71277778,
-          47.77833333
-        ]
-      },
-      "properties": {
-        "name": "Churches of Moldavia",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1993",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [25.3675, 45.515] },
+      "properties": { "name": "Transylvania - Bran Castle & Villages", "country": "Romania", "iso": "RO", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Dracula's Castle, fortified churches, Carpathian mountains, gothic atmosphere, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.31194444,
-          45.62305556
-        ]
-      },
-      "properties": {
-        "name": "Dacian Fortresses of the Orastie Mountains",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1999",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [25.7128, 47.7783] },
+      "properties": { "name": "Painted Monasteries of Bucovina", "country": "Romania", "iso": "RO", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Extraordinary exterior frescoes, medieval treasures, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          29.5,
-          45.08333
-        ]
-      },
-      "properties": {
-        "name": "Danube Delta",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1991",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [29.5, 45.0833] },
+      "properties": { "name": "Danube Delta", "country": "Romania", "iso": "RO", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Europe's best-preserved delta, 300 bird species, unique ecosystem, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          24.79222222,
-          46.21777778
-        ]
-      },
-      "properties": {
-        "name": "Historic Centre of Sighişoara",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1999",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          24.01666667,
-          45.18333333
-        ]
-      },
-      "properties": {
-        "name": "Monastery of Horezu",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1993",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.13055556,
-          46.30611111
-        ]
-      },
-      "properties": {
-        "name": "Roșia Montană Mining Landscape",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2021",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          24.77305556,
-          46.13583333
-        ]
-      },
-      "properties": {
-        "name": "Villages with Fortified Churches in Transylvania",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1993",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          24.05583333,
-          47.82083333
-        ]
-      },
-      "properties": {
-        "name": "Wooden Churches of Maramureş",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1999",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Danube Delta",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Carpathian Forest",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Bucovina",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Centrul Vechi Bucharest",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Painted Monasteries Romania",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Dracula's Castle Romania",
-        "country": "Romania",
-        "iso": "RO",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [24.7922, 46.2178] },
+      "properties": { "name": "Sighisoara", "country": "Romania", "iso": "RO", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Birthplace of Vlad the Impaler, preserved medieval citadel, UNESCO" }
     }
   ]
 }

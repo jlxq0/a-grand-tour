@@ -3,237 +3,33 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -63.1812,
-          -17.7833
-        ]
-      },
-      "properties": {
-        "name": "Santa Cruz",
-        "country": "Bolivia",
-        "iso": "BO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 7,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-63.1812, -17.7833] },
+      "properties": { "name": "Santa Cruz", "country": "Bolivia", "iso": "BO", "source": "Route", "category": "Stop", "trip": 7, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -65.255,
-          -19.0196
-        ]
-      },
-      "properties": {
-        "name": "Sucre",
-        "country": "Bolivia",
-        "iso": "BO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 7,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-65.255, -19.0196] },
+      "properties": { "name": "Sucre", "country": "Bolivia", "iso": "BO", "source": "Route", "category": "Stop", "trip": 7, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -66.825,
-          -20.4604
-        ]
-      },
-      "properties": {
-        "name": "Uyuni",
-        "country": "Bolivia",
-        "iso": "BO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 7,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-66.825, -20.4604] },
+      "properties": { "name": "Uyuni", "country": "Bolivia", "iso": "BO", "source": "Route", "category": "Stop", "trip": 7, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.1193,
-          -16.4897
-        ]
-      },
-      "properties": {
-        "name": "La Paz",
-        "country": "Bolivia",
-        "iso": "BO",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 7,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-68.1193, -16.4897] },
+      "properties": { "name": "La Paz", "country": "Bolivia", "iso": "BO", "source": "Route", "category": "Stop", "trip": 7, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -65.749813,
-          -19.599112
-        ]
-      },
-      "properties": {
-        "name": "City of Potosí",
-        "country": "Bolivia (Plurinational State of)",
-        "iso": "BO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1987",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-67.5, -20.1333] },
+      "properties": { "name": "Salar de Uyuni", "country": "Bolivia", "iso": "BO", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "World's largest salt flat, surreal mirror effect, bucket list" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -63.820485,
-          -18.178323
-        ]
-      },
-      "properties": {
-        "name": "Fuerte de Samaipata",
-        "country": "Bolivia (Plurinational State of)",
-        "iso": "BO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1998",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -65.259592,
-          -19.04799
-        ]
-      },
-      "properties": {
-        "name": "Historic City of Sucre",
-        "country": "Bolivia (Plurinational State of)",
-        "iso": "BO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1991",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -60.5,
-          -16.0
-        ]
-      },
-      "properties": {
-        "name": "Jesuit Missions of the Chiquitos",
-        "country": "Bolivia (Plurinational State of)",
-        "iso": "BO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1990",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -60.86667,
-          -14.26667
-        ]
-      },
-      "properties": {
-        "name": "Noel Kempff Mercado National Park",
-        "country": "Bolivia (Plurinational State of)",
-        "iso": "BO",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2000",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -68.673278,
-          -16.555003
-        ]
-      },
-      "properties": {
-        "name": "Tiwanaku: Spiritual and Political Centre of the Tiwanaku Culture",
-        "country": "Bolivia (Plurinational State of)",
-        "iso": "BO",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2000",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Salar De Uyuni",
-        "country": "Bolivia",
-        "iso": "BO",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Isla Del Sol",
-        "country": "Bolivia",
-        "iso": "BO",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Copacabana La Paz",
-        "country": "Bolivia",
-        "iso": "BO",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Mercado De Hechiceria",
-        "country": "Bolivia",
-        "iso": "BO",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [-69.08, -16.02] },
+      "properties": { "name": "Lake Titicaca", "country": "Bolivia", "iso": "BO", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's highest navigable lake, Inca sacred site, Isla del Sol" }
     }
   ]
 }

@@ -3,112 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.4536,
-          36.1408
-        ]
-      },
-      "properties": {
-        "name": "Gibraltar",
-        "country": "Gibraltar",
-        "iso": "GI",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 17,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-5.4536, 36.1408] },
+      "properties": { "name": "Gibraltar", "country": "Gibraltar", "iso": "GI", "source": "Route", "category": "Stop", "trip": 17, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.3536,
-          36.1408
-        ]
-      },
-      "properties": {
-        "name": "Rock of Gibraltar",
-        "country": "Gibraltar",
-        "iso": "GI",
-        "source": "LP500",
-        "category": "Natural",
-        "why_notable": "Iconic limestone ridge, 426m high, Pillars of Hercules"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.3389,
-          36.1228
-        ]
-      },
-      "properties": {
-        "name": "Gibraltar Apes Den",
-        "country": "Gibraltar",
-        "iso": "GI",
-        "source": "Suggestion",
-        "category": "Wildlife",
-        "why_notable": "Barbary macaques, Europe's only wild monkeys, cheeky thieves"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.345,
-          36.109
-        ]
-      },
-      "properties": {
-        "name": "Europa Point",
-        "country": "Gibraltar",
-        "iso": "GI",
-        "source": "Suggestion",
-        "category": "Viewpoint",
-        "why_notable": "Southern tip, views of Africa (14km away), lighthouse, mosque"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.3419,
-          36.1294
-        ]
-      },
-      "properties": {
-        "name": "St. Michael's Cave",
-        "country": "Gibraltar",
-        "iso": "GI",
-        "source": "Suggestion",
-        "category": "Natural",
-        "why_notable": "Stunning stalactite caves inside the Rock, concert venue"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -5.3478,
-          36.1253
-        ]
-      },
-      "properties": {
-        "name": "Great Siege Tunnels",
-        "country": "Gibraltar",
-        "iso": "GI",
-        "source": "Suggestion",
-        "category": "Cultural",
-        "why_notable": "18th-century military tunnels, 50km network inside Rock"
-      }
+      "geometry": { "type": "Point", "coordinates": [-5.3536, 36.1408] },
+      "properties": { "name": "Rock of Gibraltar", "country": "Gibraltar", "iso": "GI", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Iconic limestone monolith, Pillars of Hercules, views of Africa 14km away" }
     }
   ]
 }

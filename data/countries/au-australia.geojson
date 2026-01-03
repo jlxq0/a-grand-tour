@@ -3,1042 +3,113 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          130.8456,
-          -12.4634
-        ]
-      },
-      "properties": {
-        "name": "Darwin",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [130.8456, -12.4634] },
+      "properties": { "name": "Darwin", "country": "Australia", "iso": "AU", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          122.2363,
-          -17.9614
-        ]
-      },
-      "properties": {
-        "name": "Broome",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [122.2363, -17.9614] },
+      "properties": { "name": "Broome", "country": "Australia", "iso": "AU", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          115.8605,
-          -31.9505
-        ]
-      },
-      "properties": {
-        "name": "Perth",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [115.8605, -31.9505] },
+      "properties": { "name": "Perth", "country": "Australia", "iso": "AU", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.6007,
-          -34.9285
-        ]
-      },
-      "properties": {
-        "name": "Adelaide",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [138.6007, -34.9285] },
+      "properties": { "name": "Adelaide", "country": "Australia", "iso": "AU", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          144.9631,
-          -37.8136
-        ]
-      },
-      "properties": {
-        "name": "Melbourne",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [144.9631, -37.8136] },
+      "properties": { "name": "Melbourne", "country": "Australia", "iso": "AU", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.2093,
-          -33.8688
-        ]
-      },
-      "properties": {
-        "name": "Sydney",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [151.2093, -33.8688] },
+      "properties": { "name": "Sydney", "country": "Australia", "iso": "AU", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          153.0251,
-          -27.4698
-        ]
-      },
-      "properties": {
-        "name": "Brisbane",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 4,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [153.0251, -27.4698] },
+      "properties": { "name": "Brisbane", "country": "Australia", "iso": "AU", "source": "Route", "category": "Stop", "trip": 4, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          150.9944444,
-          -33.37833333
-        ]
-      },
-      "properties": {
-        "name": "Australian Convict Sites",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2010",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [147.7, -18.2861] },
+      "properties": { "name": "Great Barrier Reef", "country": "Australia", "iso": "AU", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "World's largest coral reef system, snorkeling/diving paradise, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          138.7166667,
-          -19.08333333
-        ]
-      },
-      "properties": {
-        "name": "Australian Fossil Mammal Sites (Riversleigh / Naracoorte)",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1994",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [131.0, -25.3333] },
+      "properties": { "name": "Uluru-Kata Tjuta", "country": "Australia", "iso": "AU", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "Australia's most iconic landmark, sacred Aboriginal site, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          141.8852778,
-          -38.08111111
-        ]
-      },
-      "properties": {
-        "name": "Budj Bim Cultural Landscape",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2019",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [151.2153, -33.8567] },
+      "properties": { "name": "Sydney Opera House", "country": "Australia", "iso": "AU", "source": "Sight", "category": "Cultural", "score": 10, "why_notable": "20th century architectural masterpiece, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          150.05,
-          -28.25
-        ]
-      },
-      "properties": {
-        "name": "Gondwana Rainforests of Australia",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1986",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [132.8333, -12.8333] },
+      "properties": { "name": "Kakadu National Park", "country": "Australia", "iso": "AU", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Aboriginal rock art spanning 20,000 years, crocs, waterfalls, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          147.7,
-          -18.28611111
-        ]
-      },
-      "properties": {
-        "name": "Great Barrier Reef",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1981",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [143.1055, -38.6619] },
+      "properties": { "name": "Great Ocean Road & Twelve Apostles", "country": "Australia", "iso": "AU", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Iconic 243km coastal drive, dramatic limestone stacks" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          150.0,
-          -33.7
-        ]
-      },
-      "properties": {
-        "name": "Greater Blue Mountains Area",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2000",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [113.8103, -22.5625] },
+      "properties": { "name": "Ningaloo Coast", "country": "Australia", "iso": "AU", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Whale shark diving, pristine reef accessible from shore, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          73.5,
-          -53.1
-        ]
-      },
-      "properties": {
-        "name": "Heard and McDonald Islands",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1997",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [145.0333, -37.85] },
+      "properties": { "name": "Attica", "city": "Melbourne", "country": "Australia", "iso": "AU", "source": "Michelin", "category": "Restaurant", "stars": 2 }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          132.8333333,
-          -12.83333333
-        ]
-      },
-      "properties": {
-        "name": "Kakadu National Park",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "C/N",
-        "year_inscribed": "1981",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [144.9667, -37.82] },
+      "properties": { "name": "Vue de monde", "city": "Melbourne", "country": "Australia", "iso": "AU", "source": "Michelin", "category": "Restaurant", "stars": 2 }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          153.1333333,
-          -25.21666667
-        ]
-      },
-      "properties": {
-        "name": "K’gari (Fraser Island) ",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1992",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [151.2103, -33.8569] },
+      "properties": { "name": "Quay", "city": "Sydney", "country": "Australia", "iso": "AU", "source": "Michelin", "category": "Restaurant", "stars": 2 }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          159.0883333,
-          -31.56555556
-        ]
-      },
-      "properties": {
-        "name": "Lord Howe Island Group",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1982",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [151.1786, -33.8917] },
+      "properties": { "name": "Sixpenny", "city": "Sydney", "country": "Australia", "iso": "AU", "source": "Michelin", "category": "Restaurant", "stars": 1 }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          158.8955556,
-          -54.59472222
-        ]
-      },
-      "properties": {
-        "name": "Macquarie Island",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1997",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [144.9568, -37.8075] },
+      "properties": { "name": "Queen Victoria Market", "city": "Melbourne", "country": "Australia", "iso": "AU", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Melbourne's historic market since 1878" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.8102778,
-          -22.5625
-        ]
-      },
-      "properties": {
-        "name": "Ningaloo Coast",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2011",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [151.193, -33.871] },
+      "properties": { "name": "Sydney Fish Market", "city": "Sydney", "country": "Australia", "iso": "AU", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Southern hemisphere's largest fish market" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          128.5,
-          -17.5
-        ]
-      },
-      "properties": {
-        "name": "Purnululu National Park",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2003",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [144.969, -37.8167] },
+      "properties": { "name": "Chin Chin", "city": "Melbourne", "country": "Australia", "iso": "AU", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Melbourne's hottest restaurant" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          144.9702778,
-          -37.80611111
-        ]
-      },
-      "properties": {
-        "name": "Royal Exhibition Building and Carlton Gardens",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2004",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [131.0369, -25.3444] },
+      "properties": { "name": "Longitude 131°", "city": "Uluru", "country": "Australia", "iso": "AU", "source": "Hotel", "category": "Accommodation", "why_notable": "Luxury tents facing Uluru" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.4361111,
-          -25.48611111
-        ]
-      },
-      "properties": {
-        "name": "Shark Bay, Western Australia",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1991",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.2152778,
-          -33.85666667
-        ]
-      },
-      "properties": {
-        "name": "Sydney Opera House",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2007",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          146.2305556,
-          -43.11847222
-        ]
-      },
-      "properties": {
-        "name": "Tasmanian Wilderness",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "C/N",
-        "year_inscribed": "1982",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          131.0,
-          -25.33333333
-        ]
-      },
-      "properties": {
-        "name": "Ulu<U>r</U>u-Kata Tju<U>t</U>a National Park",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "C/N",
-        "year_inscribed": "1987",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          144.9666667,
-          -15.65
-        ]
-      },
-      "properties": {
-        "name": "Wet Tropics of Queensland",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1988",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          143.0,
-          -34.0
-        ]
-      },
-      "properties": {
-        "name": "Willandra Lakes Region",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "UNESCO",
-        "category": "C/N",
-        "year_inscribed": "1981",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Great Barrier Reef",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Twelve Apostles",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Museum of Old and New Art",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Cradle Mountain",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Uluru",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Kakadu National Park",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Sydney Opera House",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Blue Mountains",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Ningaloo Marine National Park",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Port Arthur",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Blue Mountains Sydney",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Hunter Valley",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Sydney Opera House",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Arnhem Land",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Uluru",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Seven Spirit Bay",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Kakadu National Park",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Tiwi Islands",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Cape Tribulation",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Fraser Island",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Great Barrier Reef",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Hayman Island",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Heron Island",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Lizard Island",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Barossa Valley",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Kangaroo Island",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Cradle Mountain Tasmania",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Freycinet Tasmania",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Great Ocean Road",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Cable Beach Broome",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "El Questro",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Margaret River",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          145.0333,
-          -37.85
-        ]
-      },
-      "properties": {
-        "name": "Attica",
-        "city": "Melbourne",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          144.9667,
-          -37.82
-        ]
-      },
-      "properties": {
-        "name": "Vue de monde",
-        "city": "Melbourne",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.2103,
-          -33.8569
-        ]
-      },
-      "properties": {
-        "name": "Quay",
-        "city": "Sydney",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 2
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.1786,
-          -33.8917
-        ]
-      },
-      "properties": {
-        "name": "Sixpenny",
-        "city": "Sydney",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Michelin",
-        "category": "Restaurant",
-        "stars": 1
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          144.9568,
-          -37.8075
-        ]
-      },
-      "properties": {
-        "name": "Queen Victoria Market",
-        "city": "Melbourne",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Market",
-        "why_notable": "Melbourne's historic market since 1878"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          151.193,
-          -33.871
-        ]
-      },
-      "properties": {
-        "name": "Sydney Fish Market",
-        "city": "Sydney",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Market",
-        "why_notable": "Southern hemisphere's largest fish market"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          144.969,
-          -37.8167
-        ]
-      },
-      "properties": {
-        "name": "Chin Chin",
-        "city": "Melbourne",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Southeast Asian",
-        "why_notable": "Melbourne's hottest restaurant"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          131.0369,
-          -25.3444
-        ]
-      },
-      "properties": {
-        "name": "Longitude 131°",
-        "city": "Uluru",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Hotel",
-        "category": "Accommodation",
-        "why_notable": "Luxury tents facing Uluru"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          136.7,
-          -36.05
-        ]
-      },
-      "properties": {
-        "name": "Southern Ocean Lodge",
-        "city": "Kangaroo Island",
-        "country": "Australia",
-        "iso": "AU",
-        "source": "Hotel",
-        "category": "Accommodation",
-        "why_notable": "Cliff-top eco-luxury, wildlife haven"
-      }
+      "geometry": { "type": "Point", "coordinates": [136.7, -36.05] },
+      "properties": { "name": "Southern Ocean Lodge", "city": "Kangaroo Island", "country": "Australia", "iso": "AU", "source": "Hotel", "category": "Accommodation", "why_notable": "Cliff-top eco-luxury, wildlife haven" }
     }
   ]
 }

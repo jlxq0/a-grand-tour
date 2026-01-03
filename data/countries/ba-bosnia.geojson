@@ -3,129 +3,23 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          17.8078,
-          43.3438
-        ]
-      },
-      "properties": {
-        "name": "Mostar",
-        "country": "Bosnia",
-        "iso": "BA",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 15,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [17.8078, 43.3438] },
+      "properties": { "name": "Mostar", "country": "Bosnia", "iso": "BA", "source": "Route", "category": "Stop", "trip": 15, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          18.4131,
-          43.8563
-        ]
-      },
-      "properties": {
-        "name": "Sarajevo",
-        "country": "Bosnia",
-        "iso": "BA",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 15,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [18.4131, 43.8563] },
+      "properties": { "name": "Sarajevo", "country": "Bosnia", "iso": "BA", "source": "Route", "category": "Stop", "trip": 15, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          19.288025,
-          43.78144444
-        ]
-      },
-      "properties": {
-        "name": "Mehmed Paša Sokolović Bridge in Višegrad",
-        "country": "Bosnia and Herzegovina",
-        "iso": "BA",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2007",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [17.815, 43.3373] },
+      "properties": { "name": "Stari Most (Old Bridge of Mostar)", "country": "Bosnia", "iso": "BA", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Iconic 16th-century Ottoman bridge, symbol of reconciliation, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          17.815,
-          43.33730556
-        ]
-      },
-      "properties": {
-        "name": "Old Bridge Area of the Old City of Mostar",
-        "country": "Bosnia and Herzegovina",
-        "iso": "BA",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2005",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          17.92405278,
-          43.09221389
-        ]
-      },
-      "properties": {
-        "name": "Stećci Medieval Tombstone Graveyards",
-        "country": "Bosnia and Herzegovina,Croatia,Montenegro,Serbia",
-        "iso": "BA",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2016",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Stari Most Bridge Mostar",
-        "country": "Bosnia",
-        "iso": "BA",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          18.431,
-          43.859
-        ]
-      },
-      "properties": {
-        "name": "Ćevabdžinica Željo",
-        "city": "Sarajevo",
-        "country": "Bosnia",
-        "iso": "BA",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Local",
-        "why_notable": "Best ćevapi in Bosnia"
-      }
+      "geometry": { "type": "Point", "coordinates": [18.431, 43.859] },
+      "properties": { "name": "Ćevabdžinica Željo", "city": "Sarajevo", "country": "Bosnia", "iso": "BA", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Best ćevapi in Bosnia" }
     }
   ]
 }

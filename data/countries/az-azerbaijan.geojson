@@ -3,90 +3,18 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          49.8671,
-          40.4093
-        ]
-      },
-      "properties": {
-        "name": "Baku",
-        "country": "Azerbaijan",
-        "iso": "AZ",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 17,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [49.8671, 40.4093] },
+      "properties": { "name": "Baku", "country": "Azerbaijan", "iso": "AZ", "source": "Route", "category": "Stop", "trip": 17, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          49.375,
-          40.125
-        ]
-      },
-      "properties": {
-        "name": "Gobustan Rock Art Cultural Landscape",
-        "country": "Azerbaijan",
-        "iso": "AZ",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2007",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [49.8333, 40.3667] },
+      "properties": { "name": "Walled City of Baku", "country": "Azerbaijan", "iso": "AZ", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Medieval walled city with Shirvanshah's Palace and Maiden Tower, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          47.1875,
-          41.20333333
-        ]
-      },
-      "properties": {
-        "name": "Historic Centre of Sheki with the Khan’s Palace",
-        "country": "Azerbaijan",
-        "iso": "AZ",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2019",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          49.83333333,
-          40.36666667
-        ]
-      },
-      "properties": {
-        "name": "Walled City of Baku with the Shirvanshah's Palace and Maiden Tower",
-        "country": "Azerbaijan",
-        "iso": "AZ",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2000",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Heydar Aliyev Cultural Centre",
-        "country": "Azerbaijan",
-        "iso": "AZ",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [49.8678, 40.3958] },
+      "properties": { "name": "Heydar Aliyev Centre", "country": "Azerbaijan", "iso": "AZ", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Stunning Zaha Hadid architecture, undulating white curves" }
     }
   ]
 }

@@ -3,112 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -58.1551,
-          6.8013
-        ]
-      },
-      "properties": {
-        "name": "Georgetown",
-        "country": "Guyana",
-        "iso": "GY",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 7,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-58.1551, 6.8013] },
+      "properties": { "name": "Georgetown", "country": "Guyana", "iso": "GY", "source": "Route", "category": "Stop", "trip": 7, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -58.1553,
-          6.8013
-        ]
-      },
-      "properties": {
-        "name": "Georgetown",
-        "country": "Guyana",
-        "iso": "GY",
-        "source": "Suggestion",
-        "category": "City",
-        "why_notable": "Capital, wooden colonial architecture, St. George's Cathedral, Stabroek Market"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -59.4789,
-          5.1756
-        ]
-      },
-      "properties": {
-        "name": "Kaieteur Falls",
-        "country": "Guyana",
-        "iso": "GY",
-        "source": "1000Places",
-        "category": "Natural",
-        "why_notable": "World's largest single-drop waterfall (226m), 5x height of Niagara, remote jungle"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -59.3,
-          3.9
-        ]
-      },
-      "properties": {
-        "name": "Rupununi Savanna",
-        "country": "Guyana",
-        "iso": "GY",
-        "source": "Suggestion",
-        "category": "Natural",
-        "why_notable": "Vast grasslands, indigenous villages, giant anteaters, jaguars, cowboy culture"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -59.85,
-          4.9
-        ]
-      },
-      "properties": {
-        "name": "Iwokrama Rainforest",
-        "country": "Guyana",
-        "iso": "GY",
-        "source": "Suggestion",
-        "category": "Natural",
-        "why_notable": "371,000 hectares pristine rainforest, canopy walkway, jaguar tracking"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -59.15,
-          5.0
-        ]
-      },
-      "properties": {
-        "name": "Orinduik Falls",
-        "country": "Guyana",
-        "iso": "GY",
-        "source": "Suggestion",
-        "category": "Natural",
-        "why_notable": "Cascading terraced falls on Brazil border, jasper rock, natural jacuzzi"
-      }
+      "geometry": { "type": "Point", "coordinates": [-59.4789, 5.1756] },
+      "properties": { "name": "Kaieteur Falls", "country": "Guyana", "iso": "GY", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's largest single-drop waterfall (226m), 5x Niagara's height, remote jungle" }
     }
   ]
 }

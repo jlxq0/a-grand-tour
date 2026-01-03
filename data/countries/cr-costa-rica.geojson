@@ -3,175 +3,18 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -84.0907,
-          9.9281
-        ]
-      },
-      "properties": {
-        "name": "San Jose",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 8,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-84.0907, 9.9281] },
+      "properties": { "name": "San Jose", "country": "Costa Rica", "iso": "CR", "source": "Route", "category": "Stop", "trip": 8, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -85.61666667,
-          10.85
-        ]
-      },
-      "properties": {
-        "name": "Area de Conservación Guanacaste",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1999",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-83.5, 8.5] },
+      "properties": { "name": "Corcovado National Park", "country": "Costa Rica", "iso": "CR", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "\"Most biologically intense place on Earth\" - National Geographic" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -87.06666667,
-          5.533333333
-        ]
-      },
-      "properties": {
-        "name": "Cocos Island National Park",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1997",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -83.502539,
-          8.938453
-        ]
-      },
-      "properties": {
-        "name": "Precolumbian Chiefdom Settlements with Stone Spheres of the Diquís",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2014",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -82.93880556,
-          9.407083333
-        ]
-      },
-      "properties": {
-        "name": "Talamanca Range-La Amistad Reserves / La Amistad National Park",
-        "country": "Costa Rica,Panama",
-        "iso": "CR",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1983",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Parque Nacional Corcovado",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Bosque Nuboso Monteverde",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Parque Nacional Manuel Antonio",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Arenal Volcano",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Tortuguero National Park",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Corcovado National Park",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Manuel Antonio",
-        "country": "Costa Rica",
-        "iso": "CR",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [-84.7833, 10.3] },
+      "properties": { "name": "Monteverde Cloud Forest", "country": "Costa Rica", "iso": "CR", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Famous cloud forest reserve, quetzals, incredible biodiversity" }
     }
   ]
 }

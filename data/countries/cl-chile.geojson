@@ -3,417 +3,76 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.6273,
-          -33.0472
-        ]
-      },
-      "properties": {
-        "name": "Valparaiso",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 6,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-71.6273, -33.0472] },
+      "properties": { "name": "Valparaiso", "country": "Chile", "iso": "CL", "source": "Route", "category": "Stop", "trip": 6, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6483,
-          -33.4489
-        ]
-      },
-      "properties": {
-        "name": "Santiago",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 6,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-70.6483, -33.4489] },
+      "properties": { "name": "Santiago", "country": "Chile", "iso": "CL", "source": "Route", "category": "Stop", "trip": 6, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.9545,
-          -39.2823
-        ]
-      },
-      "properties": {
-        "name": "Pucon",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 6,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-71.9545, -39.2823] },
+      "properties": { "name": "Pucon", "country": "Chile", "iso": "CL", "source": "Route", "category": "Stop", "trip": 6, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -72.9854,
-          -41.3167
-        ]
-      },
-      "properties": {
-        "name": "Puerto Varas",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 6,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-72.9854, -41.3167] },
+      "properties": { "name": "Puerto Varas", "country": "Chile", "iso": "CL", "source": "Route", "category": "Stop", "trip": 6, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.7706,
-          -42.4695
-        ]
-      },
-      "properties": {
-        "name": "Chiloe",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 6,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-73.7706, -42.4695] },
+      "properties": { "name": "Chiloe", "country": "Chile", "iso": "CL", "source": "Route", "category": "Stop", "trip": 6, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -72.9658,
-          -50.9423
-        ]
-      },
-      "properties": {
-        "name": "Torres del Paine",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 6,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-72.9658, -50.9423] },
+      "properties": { "name": "Torres del Paine", "country": "Chile", "iso": "CL", "source": "Route", "category": "Stop", "trip": 6, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.76666667,
-          -42.5
-        ]
-      },
-      "properties": {
-        "name": "Churches of Chiloé",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2000",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-72.9658, -50.9423] },
+      "properties": { "name": "Torres del Paine National Park", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "Iconic granite towers, world-class trekking, Patagonia's crown jewel" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -71.628,
-          -33.04063889
-        ]
-      },
-      "properties": {
-        "name": "Historic Quarter of the Seaport City of Valparaíso",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2003",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-109.3657, -27.0744] },
+      "properties": { "name": "Easter Island (Rapa Nui)", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Cultural", "score": 10, "why_notable": "Mysterious moai statues, most isolated inhabited island, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -69.79406,
-          -20.20582
-        ]
-      },
-      "properties": {
-        "name": "Humberstone and Santa Laura Saltpeter Works",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2005",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-68.2, -23.0] },
+      "properties": { "name": "Atacama Desert", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Driest desert on Earth, El Tatio geysers, world's best stargazing" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -109.365683,
-          -27.074403
-        ]
-      },
-      "properties": {
-        "name": "Rapa Nui National Park",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1995",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-68.2833, -22.9167] },
+      "properties": { "name": "Valle de la Luna", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Moon-like landscape, dramatic sunset viewpoint" }
+    },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-72.668, -46.655] }, "properties": { "name": "Marble Caves (Capillas de Mármol)", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Swirling blue marble caverns, General Carrera Lake, boat access only" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-72.5, -45.0] }, "properties": { "name": "Carretera Austral", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Epic 1200km Patagonian road, fjords, glaciers, hanging bridges" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-71.6, -33.0] }, "properties": { "name": "Valparaíso", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Colorful hillside city, street art, funiculars, bohemian port, UNESCO" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-73.63, -42.47] }, "properties": { "name": "Chiloé Island", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Wooden churches, palafito houses, unique culture, UNESCO" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-69.33, -18.17] }, "properties": { "name": "Lauca National Park", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "High altitude flamingos, snow-capped volcanoes, vicuñas" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-72.17, -41.33] }, "properties": { "name": "Lake District & Osorno Volcano", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Snow-capped conical volcano, emerald lakes, German heritage" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-72.11, -48.75] }, "properties": { "name": "San Rafael Glacier", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Tidewater glacier calving into lagoon, boat access" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-73.1, -53.15] }, "properties": { "name": "Punta Arenas & Strait of Magellan", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Gateway to Antarctica, penguin colonies, end of the world feel" } },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-70.65, -33.433] },
+      "properties": { "name": "Mercado Central", "city": "Santiago", "country": "Chile", "iso": "CL", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Historic seafood market in iconic iron building" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.32157222,
-          -18.48196111
-        ]
-      },
-      "properties": {
-        "name": "Settlement and Artificial Mummification of the Chinchorro Culture in the Arica and Parinacota Region",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2021",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-73.1, -51.0167] },
+      "properties": { "name": "explora Patagonia", "city": "Torres del Paine", "country": "Chile", "iso": "CL", "source": "Hotel", "category": "Accommodation", "why_notable": "All-inclusive adventure lodge in Torres del Paine" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.38277778,
-          -34.08444444
-        ]
-      },
-      "properties": {
-        "name": "Sewell Mining Town",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2006",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Torres Del Paine National Park",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Anakena Beach Easter Island",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Valle De La Luna Atacama",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Chile Wine Roads",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Easter Island",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Portillo",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Cruising Chilean Coast",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Torres Del Paine",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.65,
-          -33.433
-        ]
-      },
-      "properties": {
-        "name": "Mercado Central",
-        "city": "Santiago",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Market",
-        "why_notable": "Fresh seafood market, iconic building"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.653,
-          -33.431
-        ]
-      },
-      "properties": {
-        "name": "La Vega Central",
-        "city": "Santiago",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Market",
-        "why_notable": "Largest fruit/veg market in South America"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -70.6508,
-          -33.4344
-        ]
-      },
-      "properties": {
-        "name": "Mercado Central",
-        "city": "Santiago",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "market",
-        "why_notable": "Historic seafood market"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -73.1,
-          -51.0167
-        ]
-      },
-      "properties": {
-        "name": "explora Patagonia",
-        "city": "Torres del Paine",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "Hotel",
-        "category": "Accommodation",
-        "why_notable": "All-inclusive adventure in Torres del Paine"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -72.5,
-          -51.7333
-        ]
-      },
-      "properties": {
-        "name": "The Singular Patagonia",
-        "city": "Puerto Natales",
-        "country": "Chile",
-        "iso": "CL",
-        "source": "Hotel",
-        "category": "Accommodation",
-        "why_notable": "Former cold storage plant turned design hotel"
-      }
+      "geometry": { "type": "Point", "coordinates": [-72.5, -51.7333] },
+      "properties": { "name": "The Singular Patagonia", "city": "Puerto Natales", "country": "Chile", "iso": "CL", "source": "Hotel", "category": "Accommodation", "why_notable": "Former cold storage plant turned design hotel" }
     }
   ]
 }

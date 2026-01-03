@@ -3,249 +3,38 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          85.324,
-          27.7172
-        ]
-      },
-      "properties": {
-        "name": "Kathmandu",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 2,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [85.324, 27.7172] },
+      "properties": { "name": "Kathmandu", "country": "Nepal", "iso": "NP", "source": "Route", "category": "Stop", "trip": 2, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          83.9856,
-          28.2096
-        ]
-      },
-      "properties": {
-        "name": "Pokhara",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 2,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [83.9856, 28.2096] },
+      "properties": { "name": "Pokhara", "country": "Nepal", "iso": "NP", "source": "Route", "category": "Stop", "trip": 2, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          84.33333,
-          27.5
-        ]
-      },
-      "properties": {
-        "name": "Chitwan National Park",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1984",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [86.925, 27.9881] },
+      "properties": { "name": "Mount Everest (Sagarmatha)", "country": "Nepal", "iso": "NP", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "World's highest peak, roof of the world, base camp trek, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          85.30858,
-          27.70395
-        ]
-      },
-      "properties": {
-        "name": "Kathmandu Valley ",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1979",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [85.3085, 27.704] },
+      "properties": { "name": "Kathmandu Valley", "country": "Nepal", "iso": "NP", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Durbar Squares, Boudhanath, Swayambhunath, Pashupatinath, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          83.27611,
-          27.46889
-        ]
-      },
-      "properties": {
-        "name": "Lumbini, the Birthplace of the Lord Buddha",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1997",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [84.0, 28.5] },
+      "properties": { "name": "Annapurna Circuit", "country": "Nepal", "iso": "NP", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's best trekking circuit, Thorong La pass, diverse landscapes" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          86.91306,
-          27.96528
-        ]
-      },
-      "properties": {
-        "name": "Sagarmatha National Park",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1979",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [84.3333, 27.5] },
+      "properties": { "name": "Chitwan National Park", "country": "Nepal", "iso": "NP", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "One-horned rhinos, Bengal tigers, jungle safari, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Everest Base Camp Trek",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Bhaktapur Durbar Square",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Boudhanath Stupa Kathmandu",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Chitwan National Park",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Swayambhunath Stupa Kathmandu",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Annapurna Nepal",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Durbar Square Kathmandu",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Bhaktapur",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Mount Everest",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Kingdom of Mustang",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Fish Tail Lodge Pokhara",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Chitwan National Park",
-        "country": "Nepal",
-        "iso": "NP",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [83.2761, 27.4689] },
+      "properties": { "name": "Lumbini", "country": "Nepal", "iso": "NP", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Birthplace of Buddha, sacred pilgrimage site, UNESCO" }
     }
   ]
 }

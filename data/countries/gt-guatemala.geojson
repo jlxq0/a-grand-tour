@@ -3,164 +3,28 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -90.5069,
-          14.6349
-        ]
-      },
-      "properties": {
-        "name": "Guatemala City",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 8,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-90.5069, 14.6349] },
+      "properties": { "name": "Guatemala City", "country": "Guatemala", "iso": "GT", "source": "Route", "category": "Stop", "trip": 8, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -90.7295,
-          14.5586
-        ]
-      },
-      "properties": {
-        "name": "Antigua",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 8,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-90.7295, 14.5586] },
+      "properties": { "name": "Antigua", "country": "Guatemala", "iso": "GT", "source": "Route", "category": "Stop", "trip": 8, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -90.73381,
-          14.556504
-        ]
-      },
-      "properties": {
-        "name": "Antigua Guatemala",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1979",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-89.6167, 17.2167] },
+      "properties": { "name": "Tikal", "country": "Guatemala", "iso": "GT", "source": "Sight", "category": "Cultural", "score": 10, "why_notable": "Greatest Mayan city, jungle pyramids rising above canopy, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -89.04025,
-          15.27059
-        ]
-      },
-      "properties": {
-        "name": "Archaeological Park and Ruins of Quirigua",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1981",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [-90.7338, 14.5565] },
+      "properties": { "name": "Antigua Guatemala", "country": "Guatemala", "iso": "GT", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Colonial gem beneath volcanoes, cobblestone streets, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -89.61666667,
-          17.21666667
-        ]
-      },
-      "properties": {
-        "name": "Tikal National Park",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "UNESCO",
-        "category": "C/N",
-        "year_inscribed": "1979",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Tikal National Park",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Lago Atitlan",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Antigua Guatemala",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Lake Atitlan",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Tikal",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Chichicastenango Market",
-        "country": "Guatemala",
-        "iso": "GT",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [-91.2, 14.7] },
+      "properties": { "name": "Lake Atitlan", "country": "Guatemala", "iso": "GT", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Volcanic crater lake, Mayan villages, 'most beautiful lake in the world'" }
     }
   ]
 }

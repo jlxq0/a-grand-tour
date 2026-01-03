@@ -3,93 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -87.1921,
-          14.0723
-        ]
-      },
-      "properties": {
-        "name": "Tegucigalpa",
-        "country": "Honduras",
-        "iso": "HN",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 8,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [-87.1921, 14.0723] },
+      "properties": { "name": "Tegucigalpa", "country": "Honduras", "iso": "HN", "source": "Route", "category": "Stop", "trip": 8, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -89.13333,
-          14.85
-        ]
-      },
-      "properties": {
-        "name": "Maya Site of Copan",
-        "country": "Honduras",
-        "iso": "HN",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "1980",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -84.675,
-          15.74444444
-        ]
-      },
-      "properties": {
-        "name": "Río Plátano Biosphere Reserve",
-        "country": "Honduras",
-        "iso": "HN",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "1982",
-        "danger": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Copan",
-        "country": "Honduras",
-        "iso": "HN",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Bay Islands",
-        "country": "Honduras",
-        "iso": "HN",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Roatan",
-        "country": "Honduras",
-        "iso": "HN",
-        "source": "1000Places",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [-89.1333, 14.85] },
+      "properties": { "name": "Copan", "country": "Honduras", "iso": "HN", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Major Mayan city, elaborate stelae and hieroglyphics, UNESCO" }
     }
   ]
 }

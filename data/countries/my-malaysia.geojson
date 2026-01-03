@@ -3,324 +3,53 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.3327,
-          5.4141
-        ]
-      },
-      "properties": {
-        "name": "Penang",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 3,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [100.3327, 5.4141] },
+      "properties": { "name": "Penang", "country": "Malaysia", "iso": "MY", "source": "Route", "category": "Stop", "trip": 3, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          101.6869,
-          3.139
-        ]
-      },
-      "properties": {
-        "name": "Kuala Lumpur",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 3,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [101.6869, 3.139] },
+      "properties": { "name": "Kuala Lumpur", "country": "Malaysia", "iso": "MY", "source": "Route", "category": "Stop", "trip": 3, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          103.7414,
-          1.4927
-        ]
-      },
-      "properties": {
-        "name": "Johor Bahru",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 3,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [103.7414, 1.4927] },
+      "properties": { "name": "Johor Bahru", "country": "Malaysia", "iso": "MY", "source": "Route", "category": "Stop", "trip": 3, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.9723278,
-          5.067908333
-        ]
-      },
-      "properties": {
-        "name": "Archaeological Heritage of the Lenggong Valley",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2012",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [100.3458, 5.4214] },
+      "properties": { "name": "George Town, Penang", "country": "Malaysia", "iso": "MY", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "UNESCO street art city, best street food in Asia, colonial heritage" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.91667,
-          4.13333
-        ]
-      },
-      "properties": {
-        "name": "Gunung Mulu National Park",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2000",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [116.5, 6.25] },
+      "properties": { "name": "Mount Kinabalu", "country": "Malaysia", "iso": "MY", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Southeast Asia's highest peak, biodiversity hotspot, UNESCO" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.5,
-          6.25
-        ]
-      },
-      "properties": {
-        "name": "Kinabalu Park",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "UNESCO",
-        "category": "N",
-        "year_inscribed": "2000",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [118.63, 4.115] },
+      "properties": { "name": "Sipadan Island", "country": "Malaysia", "iso": "MY", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's top 5 dive site, sea turtles, hammerhead sharks" }
     },
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.3458333,
-          5.421388889
-        ]
-      },
-      "properties": {
-        "name": "Melaka and George Town, Historic Cities of the Straits of Malacca",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "UNESCO",
-        "category": "C",
-        "year_inscribed": "2008",
-        "danger": false
-      }
+      "geometry": { "type": "Point", "coordinates": [101.71, 3.1455] },
+      "properties": { "name": "Jalan Alor", "city": "Kuala Lumpur", "country": "Malaysia", "iso": "MY", "source": "LocalEatery", "category": "Restaurant", "why_notable": "KL's most famous hawker street" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Kota Kinabalu",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [100.3108, 5.4375] },
+      "properties": { "name": "Penang Gurney Drive Hawker Centre", "city": "Penang", "country": "Malaysia", "iso": "MY", "source": "LocalEatery", "category": "Restaurant", "why_notable": "UNESCO food city, char kway teow heaven" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Pulau Sipadan",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [100.3314, 5.4164] },
+      "properties": { "name": "Penang Road Famous Teochew Chendul", "city": "Penang", "country": "Malaysia", "iso": "MY", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Best cendol in Malaysia" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Petronas Towers",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Sipadan",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Headhunters Trail Borneo",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Datai Langkawi",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Pangkor Laut Resort",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Penang",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "1000Places",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          101.71,
-          3.1455
-        ]
-      },
-      "properties": {
-        "name": "Jalan Alor",
-        "city": "Kuala Lumpur",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Street Food",
-        "why_notable": "KL's most famous hawker street"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.3108,
-          5.4375
-        ]
-      },
-      "properties": {
-        "name": "Penang Gurney Drive Hawker Centre",
-        "city": "Penang",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "Hawker",
-        "why_notable": "UNESCO food city, char kway teow heaven"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          100.3314,
-          5.4164
-        ]
-      },
-      "properties": {
-        "name": "Penang Road Famous Teochew Chendul",
-        "city": "Penang",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "dessert",
-        "why_notable": "Best cendol in Malaysia"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          101.6958,
-          3.1469
-        ]
-      },
-      "properties": {
-        "name": "Restoran Soong Kee",
-        "city": "Kuala Lumpur",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "local",
-        "why_notable": "Legendary beef ball noodles"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          101.7117,
-          3.1478
-        ]
-      },
-      "properties": {
-        "name": "Hutong Lot 10",
-        "city": "Kuala Lumpur",
-        "country": "Malaysia",
-        "iso": "MY",
-        "source": "LocalEatery",
-        "category": "Restaurant",
-        "type": "food_court",
-        "why_notable": "Best of Malaysian hawker in one place"
-      }
+      "geometry": { "type": "Point", "coordinates": [101.7117, 3.1478] },
+      "properties": { "name": "Hutong Lot 10", "city": "Kuala Lumpur", "country": "Malaysia", "iso": "MY", "source": "LocalEatery", "category": "Restaurant", "why_notable": "Best of Malaysian hawker in one place" }
     }
   ]
 }

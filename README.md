@@ -6,11 +6,11 @@
 
 ## Summary
 
-In February 2027, we pick up a fully-built Toyota Land Cruiser 300 in Dubai and head east. Over the next 15 years, we'll circumnavigate the globe by road — through the mountains of Pakistan, the temples of Southeast Asia, the outback of Australia, the length of the Americas from Patagonia to Alaska, across Europe, and down through Africa — ending back in Dubai in August 2042, where we sell the car and close the circle.
+In February 2027, we pick up a fully-built Toyota Land Cruiser 300 in Dubai and head east. Over the next 17 years, we'll circumnavigate the globe by road — through the mountains of Pakistan, the temples of Southeast Asia, the outback of Australia, the length of the Americas from Patagonia to Alaska, across Europe, and down through Africa — ending back in Dubai in August 2044, where we sell the car and close the circle.
 
-The trip is split into two phases. Phase A (2027–2034) covers the big continuous journey while our kids are pre-school age: thirteen trips of about four months each, with three months home in Singapore between each one. Phase B (2035–2042) shifts to summer holidays once school starts: eight seven-week trips through Europe and Africa.
+The trip is split into two phases. Phase A (2027–2034) covers the big continuous journey while our kids are pre-school age: thirteen trips of about four months each, with three months home in Singapore between each one. Phase B (2035–2044) shifts to summer holidays once school starts: ten seven-week trips through Europe and Africa.
 
-Total time on the road: 64 months. Total distance: roughly 200,000 kilometers. Total cost: SGD 760,000 over 15 years, including the vehicle. By the end, the kids will be teenagers who've seen more of the world than most people see in a lifetime.
+Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. Total cost: SGD 810,000 over 17 years, including the vehicle. By the end, the kids will be teenagers who've seen more of the world than most people see in a lifetime.
 
 ---
 
@@ -49,10 +49,10 @@ Total time on the road: 64 months. Total distance: roughly 200,000 kilometers. T
 |||
 |---|---|
 |**Vehicle**|Toyota Land Cruiser 300 GR Sport Diesel|
-|**Duration**|2027–2042 (15 years)|
-|**Travel time**|64 months|
-|**Distance**|~200,000 km|
-|**Cost**|SGD 760,000|
+|**Duration**|2027–2044 (17 years)|
+|**Travel time**|70 months|
+|**Distance**|~210,000 km|
+|**Cost**|SGD 810,000|
 |**Crew**|Julian, Nathalie + kids|
 
 ---
@@ -70,10 +70,11 @@ Chile → Argentina → Brazil → Paraguay → Bolivia → Peru → Ecuador →
 Colombia → [ship Darién] → Central America → Mexico → USA → Canada → Alaska →
 UK → Ireland → Western Europe
 
-PHASE B: Trips 14-21 (2035-2042)
+PHASE B: Trips 14-23 (2035-2044)
 Nordics → Baltics → Central Europe → Balkans → Turkey → Caucasus →
-Greece → Morocco → West Africa → Central Africa → Southern Africa →
-East Africa → Sudan → Egypt → Jordan → Saudi Arabia → Dubai
+Greece → Italy → Spain → Portugal → Morocco → West Africa →
+Central Africa → Southern Africa → East Africa → Sudan → Egypt →
+Jordan → Saudi Arabia → Dubai
 ```
 
 **Ships (7):**
@@ -112,36 +113,38 @@ After Trip 3, Starlink covers everything.
 
 # Schedule
 
-## Phase A: Pre-School — 13 trips, 50 months on the road (Feb 2027 – Jul 2034)
+## Phase A: Pre-School — 13 trips, 48 months on the road (Feb 2027 – Jul 2034)
 
 |#|Dates|Region|Days|Countries|
 |---|---|---|---|---|
 |1|Feb–May 2027|Dubai → Qatar → Bahrain → Oman → Iran → Pakistan → North India|114|🇦🇪🇶🇦🇧🇭🇴🇲🇮🇷🇵🇰🇮🇳|
-|2|Sep–Dec 2027|South India → Nepal → Bangladesh|117|🇮🇳🇳🇵🇧🇩|
-|3|Apr–Jul 2028|Thailand → SE Asia → Malaysia (JB)|115|🇹🇭🇱🇦🇻🇳🇰🇭🇲🇾|
+|2|Sep–Dec 2027|South India → Nepal → Bangladesh|111|🇮🇳🇳🇵🇧🇩|
+|3|Apr–Jul 2028|Thailand → SE Asia → Malaysia (JB)|104|🇹🇭🇱🇦🇻🇳🇰🇭🇲🇾|
 |4|Nov 2028–Feb 2029|Indonesia (Java + Sumatra) → Timor → Australia|115|🇮🇩🇹🇱🇦🇺|
 |5|Jun–Aug 2029|New Zealand|91|🇳🇿|
 |6|Jan–Apr 2030|Chile → Patagonia → Argentina → Uruguay|119|🇨🇱🇦🇷🇺🇾|
-|7|Aug–Nov 2030|Argentina → Brazil → Guianas → Bolivia → Peru|110|🇦🇷🇧🇷🇬🇫🇸🇷🇬🇾🇵🇾🇧🇴🇵🇪|
+|7|Aug–Nov 2030|Argentina → Brazil → Guianas → Bolivia → Peru|108|🇦🇷🇧🇷🇬🇫🇸🇷🇬🇾🇵🇾🇧🇴🇵🇪|
 |8|Mar–Jun 2031|Peru → Ecuador → Colombia → Central America|116|🇵🇪🇪🇨🇨🇴🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹|
 |9|Oct 2031–Jan 2032|Central America → Mexico|114|🇬🇹🇧🇿🇲🇽|
 |10|May–Aug 2032|Mexico → USA Southwest|117|🇲🇽🇺🇸|
 |11|Dec 2032–Mar 2033|USA Midwest + East + Canada|115|🇺🇸🇨🇦|
 |12|Jul–Oct 2033|Canada → Alaska|117|🇨🇦🇺🇸|
-|13|Feb–May 2034|UK → Ireland → Western Europe → Switzerland|110|🇬🇧🇮🇪🇫🇷🇧🇪🇳🇱🇱🇺🇨🇭🇩🇪|
+|13|Feb–May 2034|UK → Ireland → Western Europe → Switzerland|108|🇬🇧🇮🇪🇫🇷🇧🇪🇳🇱🇱🇺🇨🇭🇩🇪|
 
-## Phase B: School Summers — 8 trips, 14 months on the road (Jun–Aug 2035–2042)
+## Phase B: School Summers — 10 trips, 22 months on the road (Jun–Aug 2035–2044)
 
 |Summer|Region|Countries|
 |---|---|---|
 |2035|Nordics + Baltics|🇩🇰🇳🇴🇸🇪🇫🇮🇪🇪🇱🇻🇱🇹|
 |2036|Poland → Western Balkans|🇵🇱🇨🇿🇸🇰🇦🇹🇭🇺🇸🇮🇭🇷🇧🇦🇲🇪|
 |2037|Eastern Balkans → Turkey → Caucasus|🇦🇱🇽🇰🇲🇰🇷🇸🇷🇴🇲🇩🇧🇬🇹🇷🇬🇪|
-|2038|Caucasus → Greece → Morocco|🇦🇲🇦🇿🇬🇷🇲🇦|
-|2039|Morocco → Western Sahara → West Africa (coastal)|🇲🇦🇪🇭🇲🇷🇸🇳🇬🇲🇬🇼🇬🇳🇸🇱🇱🇷🇨🇮🇬🇭|
-|2040|Central → Southern Africa|🇹🇬🇧🇯🇳🇬🇨🇲🇬🇶🇬🇦🇨🇬🇨🇩🇦🇴🇳🇦🇧🇼🇿🇲🇿🇼🇿🇦|
-|2041|East Africa|🇿🇦🇱🇸🇸🇿🇲🇿🇲🇼🇹🇿🇰🇪🇺🇬🇷🇼🇧🇮🇪🇹|
-|2042|Eritrea → Egypt → Middle East → Dubai (END)|🇪🇷🇸🇩🇪🇬🇯🇴🇸🇦🇰🇼🇦🇪|
+|2038|Caucasus → Greece|🇦🇲🇦🇿🇬🇷|
+|2039|Italy|🇮🇹|
+|2040|Spain + Portugal → Morocco|🇪🇸🇵🇹🇲🇦|
+|2041|West Africa (coastal)|🇲🇦🇪🇭🇲🇷🇸🇳🇬🇲🇬🇼🇬🇳🇸🇱🇱🇷🇨🇮🇬🇭|
+|2042|Central → Southern Africa|🇹🇬🇧🇯🇳🇬🇨🇲🇬🇶🇬🇦🇨🇬🇨🇩🇦🇴🇳🇦🇧🇼🇿🇲🇿🇼🇿🇦|
+|2043|East Africa|🇿🇦🇱🇸🇸🇿🇲🇿🇲🇼🇹🇿🇰🇪🇺🇬🇷🇼🇧🇮🇪🇹|
+|2044|Egypt → Middle East → Dubai (END)|🇪🇷🇸🇩🇪🇬🇯🇴🇸🇦🇰🇼🇦🇪|
 
 ---
 
@@ -273,15 +276,15 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |Item|SGD|
 |---|---|
 |LC300 + build|175,000|
-|Phase A (50 mo × $9,500)|475,000|
-|Phase B (14 mo × $9,500)|133,000|
+|Phase A (48 mo × $9,500)|456,000|
+|Phase B (22 mo × $9,500)|209,000|
 |Shipping (7 ships)|18,400|
 |Iran guide|1,500|
 |Ferries|5,000|
-|Contingency|10,000|
-|**Subtotal**|**817,900**|
-|LC300 resale (15yo)|-60,000|
-|**NET TOTAL**|**~758,000**|
+|Contingency|15,000|
+|**Subtotal**|**879,900**|
+|LC300 resale (17yo)|-55,000|
+|**NET TOTAL**|**~825,000**|
 
 ---
 
@@ -307,11 +310,13 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |14|Vilnius|🟡 Star Alliance via FRA|Lufthansa to Frankfurt (2h), SIA home (12h). ~16h|
 |15|Podgorica|🟡 Star Alliance via VIE/FRA|Austrian to Vienna or Lufthansa to Frankfurt, SIA home. ~18h|
 |16|Tbilisi|🟡 Star Alliance via IST|Turkish to Istanbul (2h), SIA home (10h). ~14h|
-|17|Marrakech|🟡 Star Alliance via FRA|Lufthansa to Frankfurt (4h), SIA home (12h). ~18h|
-|18|Accra|🟡 Ethiopian via ADD|Ethiopian to Addis (4h), Ethiopian to SIN (10h). Star Alliance throughout. ~16h|
-|19|Johannesburg|🟢 SIA direct|10h 30m|
-|20|Addis Ababa|🟡 Ethiopian direct|Ethiopian ADD-SIN direct (10h). Star Alliance.|
-|21|Dubai|🟢 SIA direct|7h|
+|17|Athens|🟡 Star Alliance via FRA|Lufthansa to Frankfurt (3h), SIA home (12h). ~17h|
+|18|Barcelona|🟡 Star Alliance via FRA|Lufthansa to Frankfurt (2h), SIA home (12h). ~16h|
+|19|Marrakech|🟡 Star Alliance via FRA|Lufthansa to Frankfurt (4h), SIA home (12h). ~18h|
+|20|Accra|🟡 Ethiopian via ADD|Ethiopian to Addis (4h), Ethiopian to SIN (10h). Star Alliance. ~16h|
+|21|Johannesburg|🟢 SIA direct|10h 30m|
+|22|Addis Ababa|🟡 Ethiopian direct|Ethiopian ADD-SIN direct (10h). Star Alliance.|
+|23|Dubai|🟢 SIA direct|7h|
 
 **Key hubs:** Frankfurt (LH → SIA), Tokyo Narita (ANA → SIA), San Francisco (UA → SIA), Istanbul (TK → SIA), Addis Ababa (ET → SIN)
 
@@ -372,9 +377,9 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |🇮🇳 India|28|South to Kerala via Mumbai, Goa, Kochi, then east coast to Chennai|
 |🇮🇳 India|10|Kolkata, Darjeeling|
 |🇳🇵 Nepal|21|Kathmandu, Bhaktapur, Pokhara, Chitwan, Lumbini|
-|🇧🇩 Bangladesh|14|Dhaka, Sundarbans, Chittagong, Cox's Bazar|
+|🇧🇩 Bangladesh|8|Dhaka, Chittagong, Cox's Bazar|
 
-**117 days / 3 countries / ~7,000 km**
+**111 days / 3 countries / ~7,000 km**
 
 **Note:** Sri Lanka skipped due to complex vehicle shipping requirements (no ferry, expensive round-trip container).
 
@@ -397,12 +402,12 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |---|---|---|
 |🇹🇭 Thailand|3|Pick up Laem Chabang|
 |🇱🇦 Laos|12|Vientiane, Vang Vieng, Luang Prabang|
-|🇻🇳 Vietnam|21|Hanoi, Ha Long Bay, Hue, Hoi An, Ho Chi Minh|
+|🇻🇳 Vietnam|26|Hanoi, Ha Long Bay, Hue, Hoi An, Ho Chi Minh, Sapa|
 |🇰🇭 Cambodia|10|Phnom Penh, Siem Reap (Angkor Wat)|
-|🇹🇭 Thailand|20|Bangkok, Chiang Mai, Phuket, islands|
-|🇲🇾 Malaysia|49|Penang, Cameron Highlands, KL, Melaka, Johor Bahru|
+|🇹🇭 Thailand|25|Bangkok, Chiang Mai, Phuket, Phi Phi, Phang Nga|
+|🇲🇾 Malaysia|28|Penang, Cameron Highlands, KL, Melaka, Johor Bahru|
 
-**115 days / 5 countries / ~7,500 km**
+**104 days / 5 countries / ~7,500 km**
 
 **Weather:** Apr–Jul = dry season SE Asia.
 
@@ -507,16 +512,16 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |🇦🇷🇧🇷|5|Iguazu Falls (both sides)|
 |🇵🇾 Paraguay|4|Asunción|
 |🇧🇷 Brazil|10|Brasília, north to Belém|
-|🇬🇫 French Guiana|3|Cayenne, Devil's Island|
-|🇸🇷 Suriname|3|Paramaribo|
-|🇬🇾 Guyana|4|Georgetown|
+|🇬🇫 French Guiana|2|Cayenne|
+|🇸🇷 Suriname|2|Paramaribo|
+|🇬🇾 Guyana|4|Georgetown, Kaieteur Falls|
 |🇧🇷 Brazil|10|Boa Vista, Manaus, south to Bolivia|
 |🇧🇴 Bolivia|18|Santa Cruz, Sucre, Potosí, Uyuni, La Paz|
 |🇵🇪 Peru|12|Lake Titicaca, Puno, Arequipa, Colca Canyon|
 |🇵🇪 Peru|18|Cusco, Sacred Valley, Machu Picchu|
 |🇵🇪 Peru|8|Lima, Nazca Lines, Huacachina|
 
-**110 days / 8 countries / ~12,000 km**
+**108 days / 8 countries / ~12,000 km**
 
 **Weather:** Aug–Nov = dry season Andes, good for Bolivia & Peru.
 
@@ -689,14 +694,14 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇬🇧 UK|21|Pick up Southampton, London, Cotswolds, Bath, Stonehenge|
-|🇬🇧 UK|12|Lake District, York, Edinburgh|
-|🇬🇧 UK|10|Scottish Highlands, Isle of Skye|
+|🇬🇧 UK|18|Pick up Southampton, London, Cotswolds, Bath, Stonehenge|
+|🇬🇧 UK|10|Lake District, York, Edinburgh|
+|🇬🇧 UK|7|Scottish Highlands, Isle of Skye|
 |⛴️ Ferry|1|Cairnryan → Belfast|
-|🇬🇧 UK|6|Northern Ireland (Giants Causeway)|
-|🇮🇪 Ireland|12|Dublin, Wild Atlantic Way, Ring of Kerry, Cork|
+|🇬🇧 UK|4|Northern Ireland (Giants Causeway)|
+|🇮🇪 Ireland|10|Dublin, Wild Atlantic Way, Ring of Kerry|
 |⛴️ Ferry|1|Rosslare → Cherbourg|
-|🇫🇷 France|12|Normandy, Brittany, Loire Valley, Paris|
+|🇫🇷 France|22|Normandy, Mont Saint-Michel, Loire Valley, Paris, Provence, Alps|
 |🇧🇪 Belgium|4|Brussels, Bruges, Ghent|
 |🇳🇱 Netherlands|5|Amsterdam|
 |🇱🇺 Luxembourg|2|Luxembourg City|
@@ -704,7 +709,7 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |🇨🇭 Switzerland|7|Zurich, Interlaken, Swiss Alps|
 |🇩🇪 Germany|7|Romantic Road, Munich|
 
-**110 days / 8 countries / ~7,500 km**
+**108 days / 8 countries / ~7,500 km**
 
 **Weather:** Feb–May = European spring. Improving weather.
 
@@ -719,7 +724,7 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 
 ---
 
-# Phase B: Summer Trips (2035–2042)
+# Phase B: Summer Trips (2035–2044)
 
 ---
 
@@ -793,141 +798,183 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 
 ---
 
-## Trip 17: Caucasus → Greece → Morocco
+## Trip 17: Caucasus → Greece
 
 **Jun–Aug 2038 (7 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
 |🇬🇪 Georgia|2|Pick up Tbilisi|
-|🇦🇲 Armenia|7|Yerevan, Tatev, Lake Sevan|
-|🇦🇿 Azerbaijan|7|Baku, Sheki|
-|🇬🇪 Georgia|2|Transit back|
-|🇹🇷 Turkey|5|Transit west|
-|🇬🇷 Greece|12|Athens, Meteora, Patras|
-|⛴️ Ferry|1|Patras → Bari|
-|🇮🇹 Italy|5|Bari, Rome|
-|🇪🇸 Spain|5|Barcelona, south to Gibraltar|
-|⛴️ Ferry|1|Algeciras → Tangier|
-|🇲🇦 Morocco|4|Tangier, arrival|
+|🇦🇲 Armenia|8|Yerevan, Tatev, Lake Sevan, Geghard|
+|🇦🇿 Azerbaijan|8|Baku, Sheki, mud volcanoes|
+|🇬🇪 Georgia|2|Transit back through|
+|🇹🇷 Turkey|4|Transit west to Greece|
+|🇬🇷 Greece|26|Athens, Acropolis, Meteora, Delphi, Peloponnese, Santorini, Mykonos, Crete|
 
-**50 days / 8 countries**
+**50 days / 5 countries**
 
-**Store:** Tangier or Marrakech  
-**Fly home:** Marrakech (via Paris)
+**Store:** Athens
+**Fly home:** Athens (via Frankfurt)
 
 ---
 
-## Trip 18: Morocco → Western Sahara → West Africa (coastal)
+## Trip 18: Italy
 
 **Jun–Aug 2039 (7 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇲🇦 Morocco|5|Pick up Marrakech, Fes, Ouarzazate, drive south|
-|🇪🇭 Western Sahara|4|Laayoune, Dakhla, coastal desert|
-|🇲🇷 Mauritania|7|Nouakchott, desert crossing|
-|🇸🇳 Senegal|6|Dakar, Saint-Louis|
-|🇬🇲 Gambia|3|Banjul|
-|🇬🇼 Guinea-Bissau|3|Bissau, Bijagós|
-|🇬🇳 Guinea|3|Conakry|
-|🇸🇱 Sierra Leone|4|Freetown|
-|🇱🇷 Liberia|3|Monrovia|
-|🇨🇮 Ivory Coast|4|Abidjan|
-|🇬🇭 Ghana|7|Accra, Cape Coast|
+|🇬🇷 Greece|2|Pick up Athens, ferry to Italy|
+|🇮🇹 Italy|6|Rome, Vatican, Colosseum|
+|🇮🇹 Italy|6|Pompeii, Amalfi Coast, Naples|
+|🇮🇹 Italy|6|Florence, Tuscany, Siena|
+|🇮🇹 Italy|4|Cinque Terre|
+|🇮🇹 Italy|6|Dolomites|
+|🇮🇹 Italy|5|Venice|
+|🇮🇹 Italy|4|Lake Como, Milan|
+|🇫🇷 France|3|Drive to Nice|
+|🇪🇸 Spain|8|Costa Brava, Barcelona|
 
-**49 days / 11 countries**
+**50 days / 4 countries**
 
-**Note:** West Africa requires careful security planning. Coastal route avoids Sahel conflict zones.
-
-**Store:** Accra  
-**Fly home:** Accra (via Paris or Amsterdam)
+**Store:** Barcelona
+**Fly home:** Barcelona (via Frankfurt)
 
 ---
 
-## Trip 19: Central → Southern Africa
+## Trip 19: Spain + Portugal → Morocco
 
 **Jun–Aug 2040 (7 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇬🇭 Ghana|2|Pick up Accra|
-|🇹🇬 Togo|2|Lomé|
-|🇧🇯 Benin|2|Ouidah, Cotonou|
-|🇳🇬 Nigeria|3|Lagos (transit)|
-|🇨🇲 Cameroon|4|Yaoundé, Douala|
-|🇬🇶 Equatorial Guinea|—|Malabo (island — fly/visit optional)|
-|🇬🇦 Gabon|3|Libreville|
-|🇨🇬 Congo|3|Brazzaville|
-|⛴️ Ferry|1|Brazzaville → Kinshasa|
-|🇨🇩 DRC|3|Kinshasa, Matadi (Kongo Central transit)|
-|🇦🇴 Angola|4|Luanda|
-|🇳🇦 Namibia|8|Rundu, Windhoek, Etosha, Sossusvlei|
-|🇧🇼 Botswana|5|Maun, Okavango Delta, Chobe|
-|🇿🇲 Zambia|2|Livingstone|
-|🇿🇼 Zimbabwe|2|Victoria Falls|
-|🇿🇦 South Africa|6|Johannesburg, Cape Town, Garden Route|
+|🇪🇸 Spain|4|Pick up Barcelona|
+|🇪🇸 Spain|5|Valencia, Andalusia drive|
+|🇪🇸 Spain|8|Granada (Alhambra), Seville, Córdoba|
+|🇪🇸 Spain|4|Madrid, Toledo|
+|🇵🇹 Portugal|5|Lisbon, Sintra|
+|🇵🇹 Portugal|4|Porto, Douro Valley|
+|🇵🇹 Portugal|3|Algarve|
+|🇪🇸 Spain|2|South to Algeciras|
+|⛴️ Ferry|1|Algeciras → Tangier|
+|🇲🇦 Morocco|14|Fes, Marrakech, Ait-Ben-Haddou, Sahara|
 
-**50 days / 14 countries**
+**50 days / 3 countries**
 
-**Store:** Johannesburg  
-**Fly home:** Johannesburg (SIA via Singapore)
+**Store:** Marrakech
+**Fly home:** Marrakech (via Paris)
 
 ---
 
-## Trip 20: East Africa
+## Trip 20: West Africa (coastal)
 
 **Jun–Aug 2041 (7 weeks)**
+
+|Country|Days|Highlights|
+|---|---|---|
+|🇲🇦 Morocco|3|Pick up Marrakech, drive south|
+|🇪🇭 Western Sahara|4|Laayoune, Dakhla, coastal desert|
+|🇲🇷 Mauritania|5|Nouakchott, desert crossing|
+|🇸🇳 Senegal|6|Dakar, Saint-Louis|
+|🇬🇲 Gambia|3|Banjul|
+|🇬🇼 Guinea-Bissau|3|Bissau|
+|🇬🇳 Guinea|3|Conakry|
+|🇸🇱 Sierra Leone|4|Freetown|
+|🇱🇷 Liberia|3|Monrovia|
+|🇨🇮 Ivory Coast|4|Abidjan|
+|🇬🇭 Ghana|8|Accra, Cape Coast|
+
+**46 days / 11 countries**
+
+**Note:** West Africa requires careful security planning. Coastal route avoids Sahel conflict zones.
+
+**Store:** Accra
+**Fly home:** Accra (via Paris or Amsterdam)
+
+---
+
+## Trip 21: Central → Southern Africa
+
+**Jun–Aug 2042 (7 weeks)**
+
+|Country|Days|Highlights|
+|---|---|---|
+|🇬🇭 Ghana|2|Pick up Accra|
+|🇹🇬 Togo|1|Lomé|
+|🇧🇯 Benin|1|Cotonou|
+|🇳🇬 Nigeria|2|Lagos (transit)|
+|🇨🇲 Cameroon|3|Yaoundé, Douala|
+|🇬🇦 Gabon|2|Libreville|
+|🇨🇬 Congo|2|Brazzaville|
+|⛴️ Ferry|1|Brazzaville → Kinshasa|
+|🇨🇩 DRC|2|Kinshasa, Matadi (transit)|
+|🇦🇴 Angola|3|Luanda|
+|🇳🇦 Namibia|14|Etosha, Sossusvlei, Skeleton Coast, Windhoek|
+|🇧🇼 Botswana|8|Okavango Delta, Chobe|
+|🇿🇲 Zambia|3|Livingstone, Victoria Falls|
+|🇿🇼 Zimbabwe|3|Victoria Falls, Hwange|
+|🇿🇦 South Africa|3|Johannesburg|
+
+**50 days / 14 countries**
+
+**Store:** Johannesburg
+**Fly home:** Johannesburg (SIA direct)
+
+---
+
+## Trip 22: East Africa
+
+**Jun–Aug 2043 (7 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
 |🇿🇦 South Africa|4|Pick up Johannesburg, Drakensberg|
 |🇱🇸 Lesotho|2|Maseru, mountain kingdom|
 |🇿🇦 South Africa|3|Kruger National Park|
-|🇸🇿 Eswatini|2|Mbabane, Mlilwane|
-|🇲🇿 Mozambique|4|Maputo, Tofo|
-|🇲🇼 Malawi|3|Blantyre, Lake Malawi|
-|🇹🇿 Tanzania|8|Dar es Salaam, Zanzibar, Serengeti, Ngorongoro|
+|🇸🇿 Eswatini|2|Mbabane|
+|🇲🇿 Mozambique|3|Maputo, Tofo|
+|🇲🇼 Malawi|2|Lake Malawi|
+|🇹🇿 Tanzania|14|Serengeti, Ngorongoro, Zanzibar|
 |🇰🇪 Kenya|6|Masai Mara, Nairobi|
 |🇺🇬 Uganda|4|Kampala, Bwindi gorillas|
-|🇷🇼 Rwanda|3|Kigali|
-|🇧🇮 Burundi|2|Bujumbura|
-|🇪🇹 Ethiopia|8|Addis Ababa, Lalibela, Simien Mountains, Gondar|
+|🇷🇼 Rwanda|3|Kigali, gorilla trekking|
+|🇧🇮 Burundi|1|Bujumbura (transit)|
+|🇪🇹 Ethiopia|6|Addis Ababa, Lalibela|
 
-**49 days / 12 countries**
+**50 days / 12 countries**
 
-**Store:** Addis Ababa  
+**Store:** Addis Ababa
 **Fly home:** Addis Ababa (Ethiopian to Singapore)
 
 ---
 
-## Trip 21: Eritrea → Egypt → Middle East → Dubai
+## Trip 23: Egypt → Middle East → Dubai (THE END)
 
-**Jun–Aug 2042 (7 weeks)**
+**Jun–Aug 2044 (7 weeks)**
 
 | Country           | Days | Highlights                                                          |
 | ----------------- | ---- | ------------------------------------------------------------------- |
-| 🇪🇹 Ethiopia     | 2    | Pick up Addis, drive north to Gondar                                |
-| 🇪🇷 Eritrea      | 4    | Asmara, Italian architecture, Red Sea coast                         |
-| 🇸🇩 Sudan        | 8    | Khartoum, Meroë pyramids, Wadi Halfa                                |
-| 🇪🇬 Egypt        | 14   | Aswan, Abu Simbel, Luxor, Cairo, Pyramids                           |
+| 🇪🇹 Ethiopia     | 2    | Pick up Addis, drive north                                          |
+| 🇪🇷 Eritrea      | 3    | Asmara, Italian architecture                                        |
+| 🇸🇩 Sudan        | 6    | Khartoum, Meroë pyramids                                            |
+| 🇪🇬 Egypt        | 18   | Abu Simbel, Aswan, Luxor, Valley of Kings, Cairo, Pyramids, Sphinx  |
 | ⛴️ Ferry          | 1    | Nuweiba → Aqaba                                                     |
-| 🇯🇴 Jordan       | 7    | Petra, Wadi Rum, Dead Sea, Amman                                    |
-| 🇸🇦 Saudi Arabia | 9    | AlUla, Jeddah, Riyadh                                               |
-| 🇰🇼 Kuwait       | 2    | Kuwait City                                                         |
-| 🇦🇪 UAE          | 3    | Dubai — **sell car, full circle complete**                          |
+| 🇯🇴 Jordan       | 12   | Petra (3 days), Wadi Rum, Dead Sea, Jerash, Amman                   |
+| 🇸🇦 Saudi Arabia | 6    | AlUla, Hegra                                                        |
+| 🇰🇼 Kuwait       | 1    | Kuwait City (transit)                                               |
+| 🇦🇪 UAE          | 1    | Dubai — **sell car, full circle complete**                          |
 
 **50 days / 8 countries**
 
 ---
 
-**THE END: Dubai, August 2042**
+**THE END: Dubai, August 2044**
 
 Sell LC300 in Dubai. Full circle complete.
 
 ---
 
-🇦🇪 → 🇶🇦 → 🇧🇭 → 🇴🇲 → 🇮🇷 → 🇵🇰 → 🇮🇳 → 🇳🇵 → 🇧🇩 → 🇹🇭 → 🇱🇦 → 🇻🇳 → 🇰🇭 → 🇲🇾 → 🇸🇬 → 🇮🇩 → 🇹🇱 → 🇦🇺 → 🇳🇿 → 🇨🇱 → 🇦🇷 → 🇺🇾 → 🇵🇾 → 🇧🇷 → 🇬🇫 → 🇸🇷 → 🇬🇾 → 🇧🇴 → 🇵🇪 → 🇪🇨 → 🇨🇴 → 🇵🇦 → 🇨🇷 → 🇳🇮 → 🇭🇳 → 🇸🇻 → 🇬🇹 → 🇧🇿 → 🇲🇽 → 🇺🇸 → 🇨🇦 → 🇬🇧 → 🇮🇪 → 🇫🇷 → 🇧🇪 → 🇳🇱 → 🇱🇺 → 🇨🇭 → 🇩🇪 → 🇩🇰 → 🇳🇴 → 🇸🇪 → 🇫🇮 → 🇪🇪 → 🇱🇻 → 🇱🇹 → 🇵🇱 → 🇨🇿 → 🇸🇰 → 🇦🇹 → 🇭🇺 → 🇸🇮 → 🇭🇷 → 🇧🇦 → 🇲🇪 → 🇦🇱 → 🇽🇰 → 🇲🇰 → 🇷🇸 → 🇷🇴 → 🇲🇩 → 🇧🇬 → 🇹🇷 → 🇬🇪 → 🇦🇲 → 🇦🇿 → 🇬🇷 → 🇮🇹 → 🇪🇸 → 🇲🇦 → 🇪🇭 → 🇲🇷 → 🇸🇳 → 🇬🇲 → 🇬🇼 → 🇬🇳 → 🇸🇱 → 🇱🇷 → 🇨🇮 → 🇬🇭 → 🇹🇬 → 🇧🇯 → 🇳🇬 → 🇨🇲 → 🇬🇶 → 🇬🇦 → 🇨🇬 → 🇨🇩 → 🇦🇴 → 🇳🇦 → 🇧🇼 → 🇿🇲 → 🇿🇼 → 🇿🇦 → 🇱🇸 → 🇸🇿 → 🇲🇿 → 🇲🇼 → 🇹🇿 → 🇰🇪 → 🇺🇬 → 🇷🇼 → 🇧🇮 → 🇪🇹 → 🇪🇷 → 🇸🇩 → 🇪🇬 → 🇯🇴 → 🇸🇦 → 🇰🇼 → 🇦🇪
+🇦🇪 → 🇶🇦 → 🇧🇭 → 🇴🇲 → 🇮🇷 → 🇵🇰 → 🇮🇳 → 🇳🇵 → 🇧🇩 → 🇹🇭 → 🇱🇦 → 🇻🇳 → 🇰🇭 → 🇲🇾 → 🇸🇬 → 🇮🇩 → 🇹🇱 → 🇦🇺 → 🇳🇿 → 🇨🇱 → 🇦🇷 → 🇺🇾 → 🇵🇾 → 🇧🇷 → 🇬🇫 → 🇸🇷 → 🇬🇾 → 🇧🇴 → 🇵🇪 → 🇪🇨 → 🇨🇴 → 🇵🇦 → 🇨🇷 → 🇳🇮 → 🇭🇳 → 🇸🇻 → 🇬🇹 → 🇧🇿 → 🇲🇽 → 🇺🇸 → 🇨🇦 → 🇬🇧 → 🇮🇪 → 🇫🇷 → 🇧🇪 → 🇳🇱 → 🇱🇺 → 🇨🇭 → 🇩🇪 → 🇩🇰 → 🇳🇴 → 🇸🇪 → 🇫🇮 → 🇪🇪 → 🇱🇻 → 🇱🇹 → 🇵🇱 → 🇨🇿 → 🇸🇰 → 🇦🇹 → 🇭🇺 → 🇸🇮 → 🇭🇷 → 🇧🇦 → 🇲🇪 → 🇦🇱 → 🇽🇰 → 🇲🇰 → 🇷🇸 → 🇷🇴 → 🇲🇩 → 🇧🇬 → 🇹🇷 → 🇬🇪 → 🇦🇲 → 🇦🇿 → 🇬🇷 → 🇮🇹 → 🇪🇸 → 🇵🇹 → 🇲🇦 → 🇪🇭 → 🇲🇷 → 🇸🇳 → 🇬🇲 → 🇬🇼 → 🇬🇳 → 🇸🇱 → 🇱🇷 → 🇨🇮 → 🇬🇭 → 🇹🇬 → 🇧🇯 → 🇳🇬 → 🇨🇲 → 🇬🇦 → 🇨🇬 → 🇨🇩 → 🇦🇴 → 🇳🇦 → 🇧🇼 → 🇿🇲 → 🇿🇼 → 🇿🇦 → 🇱🇸 → 🇸🇿 → 🇲🇿 → 🇲🇼 → 🇹🇿 → 🇰🇪 → 🇺🇬 → 🇷🇼 → 🇧🇮 → 🇪🇹 → 🇪🇷 → 🇸🇩 → 🇪🇬 → 🇯🇴 → 🇸🇦 → 🇰🇼 → 🇦🇪
 
 _Julian, Nathalie & Family_  
 _December 2025_

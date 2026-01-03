@@ -3,55 +3,18 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.0619,
-          -1.9403
-        ]
-      },
-      "properties": {
-        "name": "Kigali",
-        "country": "Rwanda",
-        "iso": "RW",
-        "source": "Route",
-        "category": "Stop",
-        "trip": 20,
-        "nights": ""
-      }
+      "geometry": { "type": "Point", "coordinates": [30.0619, -1.9403] },
+      "properties": { "name": "Kigali", "country": "Rwanda", "iso": "RW", "source": "Route", "category": "Stop", "trip": 20, "nights": "" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Volcanoes National Park",
-        "country": "Rwanda",
-        "iso": "RW",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [29.5286, -1.4583] },
+      "properties": { "name": "Volcanoes National Park - Gorilla Trekking", "country": "Rwanda", "iso": "RW", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "Only place to trek mountain gorillas, Dian Fossey, life-changing experience" }
     },
     {
       "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Genocide Memorial Kigali",
-        "country": "Rwanda",
-        "iso": "RW",
-        "source": "LP500",
-        "category": "Destination"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": null,
-      "properties": {
-        "name": "Nyungwe Forest National Park",
-        "country": "Rwanda",
-        "iso": "RW",
-        "source": "LP500",
-        "category": "Destination"
-      }
+      "geometry": { "type": "Point", "coordinates": [30.0564, -1.9536] },
+      "properties": { "name": "Kigali Genocide Memorial", "country": "Rwanda", "iso": "RW", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "1994 genocide memorial, sobering and important history" }
     }
   ]
 }
