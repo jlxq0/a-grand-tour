@@ -87,6 +87,16 @@
         <div class="legend-line" style="border-color: #9b59b6;"></div>
         Shipping
     </label>
+    <label class="control-item">
+        <input type="checkbox" id="toggle-routes" checked>
+        <div class="legend-line" style="border-color: #e67e22; border-style: solid;"></div>
+        Driving Routes
+    </label>
+    <label class="control-item">
+        <input type="checkbox" id="toggle-scenic" checked>
+        <div class="legend-line" style="border-color: #e91e63; border-style: solid; border-width: 3px;"></div>
+        Scenic Routes
+    </label>
     <label class="control-item" style="margin-top: 10px; padding-top: 8px; border-top: 1px solid #eee;">
         <input type="checkbox" id="toggle-countries" checked>
         Country Fill
@@ -152,6 +162,13 @@ const shippingFiles = [
     'brisbane-auckland', 'auckland-valparaiso', 'seattle-southampton'
 ];
 
+// Trip route files
+const tripFiles = [
+    'trip-01', 'trip-02', 'trip-03', 'trip-04', 'trip-05', 'trip-06', 'trip-07',
+    'trip-08', 'trip-09', 'trip-10', 'trip-11', 'trip-12', 'trip-13', 'trip-14',
+    'trip-15', 'trip-16', 'trip-17', 'trip-18', 'trip-19', 'trip-20', 'trip-21'
+];
+
 // Store markers by category for toggling
 const markers = {
     sights: [],
@@ -168,14 +185,17 @@ function getCategory(source) {
 
 // Load all data
 async function loadData() {
-    const [ferries, ...rest] = await Promise.all([
+    const [ferries, scenicRoutes, ...rest] = await Promise.all([
         fetch('data/ferries.geojson').then(r => r.json()),
+        fetch('data/scenic-routes.geojson').then(r => r.json()).catch(() => ({ features: [] })),
         ...countryFiles.map(f => fetch(`data/countries/${f}.geojson`).then(r => r.json()).catch(() => ({ features: [] }))),
-        ...shippingFiles.map(f => fetch(`data/shipping/${f}.geojson`).then(r => r.json()).catch(() => ({ features: [] })))
+        ...shippingFiles.map(f => fetch(`data/shipping/${f}.geojson`).then(r => r.json()).catch(() => ({ features: [] }))),
+        ...tripFiles.map(f => fetch(`data/trips/${f}.geojson`).then(r => r.json()).catch(() => ({ features: [] })))
     ]);
 
     const countries = rest.slice(0, countryFiles.length);
-    const shipping = rest.slice(countryFiles.length);
+    const shipping = rest.slice(countryFiles.length, countryFiles.length + shippingFiles.length);
+    const trips = rest.slice(countryFiles.length + shippingFiles.length);
 
     // Merge all country features with their ISO code
     const allFeatures = [];
@@ -187,7 +207,19 @@ async function loadData() {
         });
     });
 
-    return { ferries, allFeatures, shipping };
+    // Extract route LineStrings from trip files
+    const tripRoutes = [];
+    trips.forEach((trip, i) => {
+        const tripNum = i + 1;
+        (trip.features || []).forEach(f => {
+            if (f.geometry && f.geometry.type === 'LineString') {
+                f.properties.trip = tripNum;
+                tripRoutes.push(f);
+            }
+        });
+    });
+
+    return { ferries, scenicRoutes, allFeatures, shipping, tripRoutes };
 }
 
 function createMarker(feature) {
@@ -332,6 +364,53 @@ map.on('load', async () => {
         }
     });
 
+    // Add trip driving routes
+    const tripRoutesGeoJSON = {
+        type: 'FeatureCollection',
+        features: data.tripRoutes
+    };
+    map.addSource('trip-routes', { type: 'geojson', data: tripRoutesGeoJSON });
+    map.addLayer({
+        id: 'trip-routes',
+        type: 'line',
+        source: 'trip-routes',
+        paint: {
+            'line-color': '#e67e22',
+            'line-width': 2,
+            'line-opacity': 0.7
+        }
+    });
+
+    // Add scenic routes
+    map.addSource('scenic-routes', { type: 'geojson', data: data.scenicRoutes });
+    map.addLayer({
+        id: 'scenic-routes',
+        type: 'line',
+        source: 'scenic-routes',
+        paint: {
+            'line-color': '#e91e63',
+            'line-width': 3,
+            'line-opacity': 0.85
+        }
+    });
+
+    // Add scenic route popups
+    map.on('click', 'scenic-routes', (e) => {
+        const props = e.features[0].properties;
+        const html = `
+            <div class="popup-title">${props.name}</div>
+            <div class="popup-subtitle">${props.country}</div>
+            <div class="popup-info">${props.length_km} km · Rating: ${props.rating}/10</div>
+            <div class="popup-notable">${props.notes}</div>
+        `;
+        new mapboxgl.Popup({ offset: 10, maxWidth: '280px' })
+            .setLngLat(e.lngLat)
+            .setHTML(html)
+            .addTo(map);
+    });
+    map.on('mouseenter', 'scenic-routes', () => { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', 'scenic-routes', () => { map.getCanvas().style.cursor = ''; });
+
     // Add all markers
     data.allFeatures.forEach(feature => {
         const result = createMarker(feature);
@@ -358,6 +437,14 @@ map.on('load', async () => {
 
     document.getElementById('toggle-shipping').addEventListener('change', e => {
         map.setLayoutProperty('shipping', 'visibility', e.target.checked ? 'visible' : 'none');
+    });
+
+    document.getElementById('toggle-routes').addEventListener('change', e => {
+        map.setLayoutProperty('trip-routes', 'visibility', e.target.checked ? 'visible' : 'none');
+    });
+
+    document.getElementById('toggle-scenic').addEventListener('change', e => {
+        map.setLayoutProperty('scenic-routes', 'visibility', e.target.checked ? 'visible' : 'none');
     });
 
     document.getElementById('toggle-countries').addEventListener('change', e => {

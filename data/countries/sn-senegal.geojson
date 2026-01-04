@@ -13,11 +13,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-17.4008, 14.6672] },
-      "properties": { "name": "Gorée Island", "country": "Senegal", "iso": "SN", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Door of No Return, slave trade memorial, sobering history, UNESCO" }
-    },
-    {
-      "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-16.5044, 16.0278] },
       "properties": { "name": "Saint-Louis", "country": "Senegal", "iso": "SN", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "French colonial island city, faded grandeur, first French settlement in Africa, UNESCO" }
     }

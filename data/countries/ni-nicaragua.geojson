@@ -3,13 +3,22 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-86.2362, 12.115] },
-      "properties": { "name": "Managua", "country": "Nicaragua", "iso": "NI", "source": "Route", "category": "Stop", "trip": 8, "nights": "" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-85.55, 11.5] },
-      "properties": { "name": "Ometepe Island", "country": "Nicaragua", "iso": "NI", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Twin volcanic island in Lake Nicaragua, cloud forests, petroglyphs" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.2362,
+          12.115
+        ]
+      },
+      "properties": {
+        "name": "Managua",
+        "country": "Nicaragua",
+        "iso": "NI",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 8,
+        "nights": ""
+      }
     }
   ]
 }

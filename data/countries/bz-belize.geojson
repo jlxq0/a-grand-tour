@@ -8,8 +8,8 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-87.5347, 17.3158] },
-      "properties": { "name": "Belize Barrier Reef & Great Blue Hole", "country": "Belize", "iso": "BZ", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's second largest barrier reef, iconic Blue Hole sinkhole, UNESCO" }
+      "geometry": { "type": "Point", "coordinates": [-88.77, 17.25] },
+      "properties": { "name": "Belize Jungle & Mayan Ruins", "country": "Belize", "iso": "BZ", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "ATM Cave, Caracol, Xunantunich, jungle lodges" }
     }
   ]
 }

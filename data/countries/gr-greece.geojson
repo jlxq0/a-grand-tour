@@ -3,68 +3,212 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [23.7275, 37.9838] },
-      "properties": { "name": "Athens", "country": "Greece", "iso": "GR", "source": "Route", "category": "Stop", "trip": 17, "nights": "" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7275,
+          37.9838
+        ]
+      },
+      "properties": {
+        "name": "Athens",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [21.6306, 39.7217] },
-      "properties": { "name": "Meteora", "country": "Greece", "iso": "GR", "source": "Route", "category": "Stop", "trip": 17, "nights": "" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6306,
+          39.7217
+        ]
+      },
+      "properties": {
+        "name": "Meteora",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [21.7346, 38.2466] },
-      "properties": { "name": "Patras", "country": "Greece", "iso": "GR", "source": "Route", "category": "Stop", "trip": 17, "nights": "" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7346,
+          38.2466
+        ]
+      },
+      "properties": {
+        "name": "Patras",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 17,
+        "nights": ""
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [23.7262, 37.9709] },
-      "properties": { "name": "Acropolis of Athens", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Cultural", "score": 10, "why_notable": "Parthenon, birthplace of Western civilization, symbol of ancient Greece, UNESCO" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7262,
+          37.9709
+        ]
+      },
+      "properties": {
+        "name": "Acropolis of Athens",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Sight",
+        "category": "Cultural",
+        "score": 10,
+        "why_notable": "Parthenon, birthplace of Western civilization, symbol of ancient Greece, UNESCO"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [21.6333, 39.7167] },
-      "properties": { "name": "Meteora Monasteries", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Six monasteries perched on dramatic rock pillars, UNESCO" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6333,
+          39.7167
+        ]
+      },
+      "properties": {
+        "name": "Meteora Monasteries",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Sight",
+        "category": "Cultural",
+        "score": 9,
+        "why_notable": "Six monasteries perched on dramatic rock pillars, UNESCO"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [22.4962, 38.4815] },
-      "properties": { "name": "Delphi", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Ancient Oracle, navel of the world, Temple of Apollo, UNESCO" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4962,
+          38.4815
+        ]
+      },
+      "properties": {
+        "name": "Delphi",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Sight",
+        "category": "Cultural",
+        "score": 9,
+        "why_notable": "Ancient Oracle, navel of the world, Temple of Apollo, UNESCO"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [25.4319, 36.3932] },
-      "properties": { "name": "Santorini", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Iconic caldera views, white villages, legendary sunsets, volcanic beauty" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.4319,
+          36.3932
+        ]
+      },
+      "properties": {
+        "name": "Santorini",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Sight",
+        "category": "Natural",
+        "score": 9,
+        "why_notable": "Iconic caldera views, white villages, legendary sunsets, volcanic beauty"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [21.6667, 37.65] },
-      "properties": { "name": "Ancient Olympia", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Birthplace of the Olympic Games, Temple of Zeus, UNESCO" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6667,
+          37.65
+        ]
+      },
+      "properties": {
+        "name": "Ancient Olympia",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Sight",
+        "category": "Cultural",
+        "score": 9,
+        "why_notable": "Birthplace of the Olympic Games, Temple of Zeus, UNESCO"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [22.75, 37.7333] },
-      "properties": { "name": "Mycenae", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Lion Gate, Agamemnon's citadel, Bronze Age civilization, UNESCO" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.75,
+          37.7333
+        ]
+      },
+      "properties": {
+        "name": "Mycenae",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Sight",
+        "category": "Cultural",
+        "score": 8,
+        "why_notable": "Lion Gate, Agamemnon's citadel, Bronze Age civilization, UNESCO"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [23.0806, 37.6] },
-      "properties": { "name": "Epidaurus Theatre", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Best-preserved ancient Greek theatre, perfect acoustics, UNESCO" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.0806,
+          37.6
+        ]
+      },
+      "properties": {
+        "name": "Epidaurus Theatre",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Sight",
+        "category": "Cultural",
+        "score": 8,
+        "why_notable": "Best-preserved ancient Greek theatre, perfect acoustics, UNESCO"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [28.2278, 36.4472] },
-      "properties": { "name": "Rhodes Old Town", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Medieval Knights' Quarter, Palace of Grand Master, UNESCO" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [25.1442, 35.2401] },
-      "properties": { "name": "Crete - Knossos", "country": "Greece", "iso": "GR", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Minoan Palace, Europe's oldest civilization, Minotaur's labyrinth legend" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [23.7339, 37.9692] },
-      "properties": { "name": "Spondi", "city": "Athens", "country": "Greece", "iso": "GR", "source": "Michelin", "category": "Restaurant", "stars": 2 }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.7339,
+          37.9692
+        ]
+      },
+      "properties": {
+        "name": "Spondi",
+        "city": "Athens",
+        "country": "Greece",
+        "iso": "GR",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 2
+      }
     }
   ]
 }

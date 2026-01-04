@@ -38,11 +38,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-109.3657, -27.0744] },
-      "properties": { "name": "Easter Island (Rapa Nui)", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Cultural", "score": 10, "why_notable": "Mysterious moai statues, most isolated inhabited island, UNESCO" }
-    },
-    {
-      "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-68.2, -23.0] },
       "properties": { "name": "Atacama Desert", "country": "Chile", "iso": "CL", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Driest desert on Earth, El Tatio geysers, world's best stargazing" }
     },

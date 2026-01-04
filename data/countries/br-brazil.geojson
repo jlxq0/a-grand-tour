@@ -53,11 +53,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [-32.4251, -3.8579] },
-      "properties": { "name": "Fernando de Noronha", "country": "Brazil", "iso": "BR", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Pristine marine park, world-class diving, UNESCO" }
-    },
-    {
-      "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [-60.0283, -3.1019] },
       "properties": { "name": "Amazon Rainforest", "country": "Brazil", "iso": "BR", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's largest rainforest, Meeting of the Waters, jungle lodges" }
     },

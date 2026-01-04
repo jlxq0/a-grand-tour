@@ -3,33 +3,99 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [18.0686, 59.3293] },
-      "properties": { "name": "Stockholm", "country": "Sweden", "iso": "SE", "source": "Route", "category": "Stop", "trip": 14, "nights": "" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0686,
+          59.3293
+        ]
+      },
+      "properties": {
+        "name": "Stockholm",
+        "country": "Sweden",
+        "iso": "SE",
+        "source": "Route",
+        "category": "Stop",
+        "trip": 14,
+        "nights": ""
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [18.07, 59.325] },
-      "properties": { "name": "Stockholm - Gamla Stan & Vasa", "country": "Sweden", "iso": "SE", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Beautiful medieval old town, Vasa warship museum, royal palaces, archipelago" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.07,
+          59.325
+        ]
+      },
+      "properties": {
+        "name": "Stockholm - Gamla Stan & Vasa",
+        "country": "Sweden",
+        "iso": "SE",
+        "source": "Sight",
+        "category": "Cultural",
+        "score": 9,
+        "why_notable": "Beautiful medieval old town, Vasa warship museum, royal palaces, archipelago"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [20.6, 67.85] },
-      "properties": { "name": "Icehotel Jukkasjärvi", "country": "Sweden", "iso": "SE", "source": "Sight", "category": "Experience", "score": 8, "why_notable": "World's first ice hotel, rebuilt every winter, Arctic Lapland" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.6,
+          67.85
+        ]
+      },
+      "properties": {
+        "name": "Icehotel Jukkasjärvi",
+        "country": "Sweden",
+        "iso": "SE",
+        "source": "Sight",
+        "category": "Experience",
+        "score": 8,
+        "why_notable": "World's first ice hotel, rebuilt every winter, Arctic Lapland"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [18.2958, 57.6417] },
-      "properties": { "name": "Visby", "country": "Sweden", "iso": "SE", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Best-preserved medieval city in Scandinavia, Gotland island, UNESCO" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.5833,
+          67.3333
+        ]
+      },
+      "properties": {
+        "name": "Swedish Lapland",
+        "country": "Sweden",
+        "iso": "SE",
+        "source": "Sight",
+        "category": "Natural",
+        "score": 8,
+        "why_notable": "Midnight sun, Sami culture, Arctic wilderness, UNESCO"
+      }
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [17.5833, 67.3333] },
-      "properties": { "name": "Swedish Lapland", "country": "Sweden", "iso": "SE", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Midnight sun, Sami culture, Arctic wilderness, UNESCO" }
-    },
-    {
-      "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [18.0707, 59.3343] },
-      "properties": { "name": "Frantzén", "city": "Stockholm", "country": "Sweden", "iso": "SE", "source": "Michelin", "category": "Restaurant", "stars": 3, "chef": "Björn Frantzén" }
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0707,
+          59.3343
+        ]
+      },
+      "properties": {
+        "name": "Frantzén",
+        "city": "Stockholm",
+        "country": "Sweden",
+        "iso": "SE",
+        "source": "Michelin",
+        "category": "Restaurant",
+        "stars": 3,
+        "chef": "Björn Frantzén"
+      }
     }
   ]
 }

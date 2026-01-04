@@ -28,8 +28,8 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [98.77, 7.74] },
-      "properties": { "name": "Thai Islands - Phi Phi & Phuket", "country": "Thailand", "iso": "TH", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Iconic limestone cliffs, The Beach filming location, tropical paradise" }
+      "geometry": { "type": "Point", "coordinates": [98.34, 7.89] },
+      "properties": { "name": "Phuket Old Town & Beaches", "country": "Thailand", "iso": "TH", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Sino-Portuguese architecture, tropical beaches, connected by bridge" }
     },
     {
       "type": "Feature",

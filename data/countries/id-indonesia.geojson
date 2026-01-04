@@ -96,7 +96,6 @@
       "geometry": { "type": "Point", "coordinates": [98.8564, 2.6147] },
       "properties": { "name": "Lake Toba", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's largest volcanic lake, Batak culture, Samosir Island" }
     },
-    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [130.5, -0.5] }, "properties": { "name": "Raja Ampat", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "World's most biodiverse marine area, pristine islands, ultimate diving" } },
     { "type": "Feature", "geometry": { "type": "Point", "coordinates": [112.95, -7.94] }, "properties": { "name": "Mount Bromo", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 9, "why_notable": "Otherworldly volcanic landscape, sunrise over sea of sand, active crater" } },
     { "type": "Feature", "geometry": { "type": "Point", "coordinates": [121.76, -8.2] }, "properties": { "name": "Kelimutu Tri-Color Lakes", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "Three volcanic lakes in different colors, mystical sunrise spot" } },
     { "type": "Feature", "geometry": { "type": "Point", "coordinates": [115.43, -8.35] }, "properties": { "name": "Ubud Cultural Heartland", "country": "Indonesia", "iso": "ID", "source": "Sight", "category": "Cultural", "score": 8, "why_notable": "Art galleries, monkey forest, rice paddies, spiritual Bali" } },

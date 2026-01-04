@@ -28,11 +28,6 @@
     },
     {
       "type": "Feature",
-      "geometry": { "type": "Point", "coordinates": [118.63, 4.115] },
-      "properties": { "name": "Sipadan Island", "country": "Malaysia", "iso": "MY", "source": "Sight", "category": "Natural", "score": 8, "why_notable": "World's top 5 dive site, sea turtles, hammerhead sharks" }
-    },
-    {
-      "type": "Feature",
       "geometry": { "type": "Point", "coordinates": [101.71, 3.1455] },
       "properties": { "name": "Jalan Alor", "city": "Kuala Lumpur", "country": "Malaysia", "iso": "MY", "source": "LocalEatery", "category": "Restaurant", "why_notable": "KL's most famous hawker street" }
     },

@@ -159,7 +159,7 @@
         "type": "Point",
         "coordinates": [
           37.4,
-          -9.0
+          -9
         ]
       },
       "properties": {
@@ -320,17 +320,70 @@
         "category": "Destination"
       }
     },
-    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [34.83, -2.33] }, "properties": { "name": "Serengeti National Park", "country": "Tanzania", "iso": "TZ", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "Great Wildebeest Migration, Big Five, endless plains, UNESCO" } },
-    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [35.59, -3.17] }, "properties": { "name": "Ngorongoro Crater", "country": "Tanzania", "iso": "TZ", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "World's largest intact caldera, dense wildlife, Garden of Eden, UNESCO" } },
-    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [37.36, -3.07] }, "properties": { "name": "Mount Kilimanjaro", "country": "Tanzania", "iso": "TZ", "source": "Sight", "category": "Natural", "score": 10, "why_notable": "Africa's highest peak, snow-capped equatorial mountain, UNESCO" } },
-    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [39.19, -6.16] }, "properties": { "name": "Zanzibar Stone Town", "country": "Tanzania", "iso": "TZ", "source": "Sight", "category": "Cultural", "score": 9, "why_notable": "Spice island history, Arab-African architecture, turquoise waters, UNESCO" } },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.83,
+          -2.33
+        ]
+      },
+      "properties": {
+        "name": "Serengeti National Park",
+        "country": "Tanzania",
+        "iso": "TZ",
+        "source": "Sight",
+        "category": "Natural",
+        "score": 10,
+        "why_notable": "Great Wildebeest Migration, Big Five, endless plains, UNESCO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.59,
+          -3.17
+        ]
+      },
+      "properties": {
+        "name": "Ngorongoro Crater",
+        "country": "Tanzania",
+        "iso": "TZ",
+        "source": "Sight",
+        "category": "Natural",
+        "score": 10,
+        "why_notable": "World's largest intact caldera, dense wildlife, Garden of Eden, UNESCO"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.36,
+          -3.07
+        ]
+      },
+      "properties": {
+        "name": "Mount Kilimanjaro",
+        "country": "Tanzania",
+        "iso": "TZ",
+        "source": "Sight",
+        "category": "Natural",
+        "score": 10,
+        "why_notable": "Africa's highest peak, snow-capped equatorial mountain, UNESCO"
+      }
+    },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
           34.5,
-          -2.0
+          -2
         ]
       },
       "properties": {
