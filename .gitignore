@@ -27,3 +27,5 @@ node_modules/
 
 # Reference data (routes baked into map.html)
 shipping_lanes.geojson
+route-screenshots/
+node_modules/

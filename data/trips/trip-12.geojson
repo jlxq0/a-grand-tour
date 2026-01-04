@@ -1,0 +1,403 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 12,
+    "totalKm": 8409,
+    "stopCount": 17,
+    "sightCount": 20,
+    "estimatedDrivingDays": 29,
+    "countries": [
+      "CA",
+      "US"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -114.0719,
+          51.0447
+        ]
+      },
+      "properties": {
+        "name": "Calgary",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.5708,
+          51.1784
+        ]
+      },
+      "properties": {
+        "name": "Banff",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.0814,
+          52.8737
+        ]
+      },
+      "properties": {
+        "name": "Jasper",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1207,
+          49.2827
+        ]
+      },
+      "properties": {
+        "name": "Vancouver",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.3656,
+          48.4284
+        ]
+      },
+      "properties": {
+        "name": "Victoria",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -120.2377,
+          55.7596
+        ]
+      },
+      "properties": {
+        "name": "Dawson Creek",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.0568,
+          60.7212
+        ]
+      },
+      "properties": {
+        "name": "Whitehorse",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -139.432,
+          64.06
+        ]
+      },
+      "properties": {
+        "name": "Dawson City",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -147.7164,
+          64.8378
+        ]
+      },
+      "properties": {
+        "name": "Fairbanks",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.1926,
+          63.1148
+        ]
+      },
+      "properties": {
+        "name": "Denali",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -149.9003,
+          61.2181
+        ]
+      },
+      "properties": {
+        "name": "Anchorage",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 11,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.3321,
+          47.6062
+        ]
+      },
+      "properties": {
+        "name": "Seattle",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 12,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.787,
+          48.7596
+        ]
+      },
+      "properties": {
+        "name": "Glacier NP",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 13,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.5885,
+          44.428
+        ]
+      },
+      "properties": {
+        "name": "Yellowstone",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 14,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.6818,
+          43.7904
+        ]
+      },
+      "properties": {
+        "name": "Grand Teton",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 15,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.4591,
+          43.8791
+        ]
+      },
+      "properties": {
+        "name": "Mt Rushmore",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 16,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -102.3397,
+          43.8554
+        ]
+      },
+      "properties": {
+        "name": "Badlands",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 17,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -114.0719,
+            51.0447
+          ],
+          [
+            -115.5708,
+            51.1784
+          ],
+          [
+            -118.0814,
+            52.8737
+          ],
+          [
+            -123.1207,
+            49.2827
+          ],
+          [
+            -123.3656,
+            48.4284
+          ],
+          [
+            -120.2377,
+            55.7596
+          ],
+          [
+            -135.0568,
+            60.7212
+          ],
+          [
+            -139.432,
+            64.06
+          ],
+          [
+            -147.7164,
+            64.8378
+          ],
+          [
+            -151.1926,
+            63.1148
+          ],
+          [
+            -149.9003,
+            61.2181
+          ],
+          [
+            -122.3321,
+            47.6062
+          ],
+          [
+            -113.787,
+            48.7596
+          ],
+          [
+            -110.5885,
+            44.428
+          ],
+          [
+            -110.6818,
+            43.7904
+          ],
+          [
+            -103.4591,
+            43.8791
+          ],
+          [
+            -102.3397,
+            43.8554
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 8409,
+        "stopCount": 17
+      }
+    }
+  ]
+}

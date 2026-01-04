@@ -1,0 +1,430 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 21,
+    "totalKm": 7009,
+    "stopCount": 18,
+    "sightCount": 12,
+    "estimatedDrivingDays": 24,
+    "countries": [
+      "ER",
+      "SD",
+      "EG",
+      "JO",
+      "SA",
+      "KW",
+      "AE"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.9318,
+          15.3229
+        ]
+      },
+      "properties": {
+        "name": "Asmara",
+        "country": "Eritrea",
+        "iso": "ER",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.7489,
+          16.9386
+        ]
+      },
+      "properties": {
+        "name": "Meroe",
+        "country": "Sudan",
+        "iso": "SD",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.5599,
+          15.5007
+        ]
+      },
+      "properties": {
+        "name": "Khartoum",
+        "country": "Sudan",
+        "iso": "SD",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.6258,
+          22.3372
+        ]
+      },
+      "properties": {
+        "name": "Wadi Halfa",
+        "country": "Sudan",
+        "iso": "SD",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.8994,
+          24.0875
+        ]
+      },
+      "properties": {
+        "name": "Aswan",
+        "country": "Egypt",
+        "iso": "EG",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          32.6421,
+          25.6872
+        ]
+      },
+      "properties": {
+        "name": "Luxor",
+        "country": "Egypt",
+        "iso": "EG",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6651,
+          29.0261
+        ]
+      },
+      "properties": {
+        "name": "Nuweiba",
+        "country": "Egypt",
+        "iso": "EG",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.2357,
+          30.0444
+        ]
+      },
+      "properties": {
+        "name": "Cairo",
+        "country": "Egypt",
+        "iso": "EG",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0063,
+          29.5267
+        ]
+      },
+      "properties": {
+        "name": "Aqaba",
+        "country": "Jordan",
+        "iso": "JO",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4444,
+          30.3285
+        ]
+      },
+      "properties": {
+        "name": "Petra",
+        "country": "Jordan",
+        "iso": "JO",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.4241,
+          29.5722
+        ]
+      },
+      "properties": {
+        "name": "Wadi Rum",
+        "country": "Jordan",
+        "iso": "JO",
+        "category": "Stop",
+        "order": 11,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55,
+          31.5
+        ]
+      },
+      "properties": {
+        "name": "Dead Sea",
+        "country": "Jordan",
+        "iso": "JO",
+        "category": "Stop",
+        "order": 12,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.9106,
+          31.9454
+        ]
+      },
+      "properties": {
+        "name": "Amman",
+        "country": "Jordan",
+        "iso": "JO",
+        "category": "Stop",
+        "order": 13,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.9236,
+          26.6175
+        ]
+      },
+      "properties": {
+        "name": "AlUla",
+        "country": "Saudi Arabia",
+        "iso": "SA",
+        "category": "Stop",
+        "order": 14,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.1925,
+          21.4858
+        ]
+      },
+      "properties": {
+        "name": "Jeddah",
+        "country": "Saudi Arabia",
+        "iso": "SA",
+        "category": "Stop",
+        "order": 15,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.6753,
+          24.7136
+        ]
+      },
+      "properties": {
+        "name": "Riyadh",
+        "country": "Saudi Arabia",
+        "iso": "SA",
+        "category": "Stop",
+        "order": 16,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.9783,
+          29.3759
+        ]
+      },
+      "properties": {
+        "name": "Kuwait City",
+        "country": "Kuwait",
+        "iso": "KW",
+        "category": "Stop",
+        "order": 17,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2708,
+          25.2048
+        ]
+      },
+      "properties": {
+        "name": "Dubai (End)",
+        "country": "UAE",
+        "iso": "AE",
+        "category": "Stop",
+        "order": 18,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            38.9318,
+            15.3229
+          ],
+          [
+            33.7489,
+            16.9386
+          ],
+          [
+            32.5599,
+            15.5007
+          ],
+          [
+            31.6258,
+            22.3372
+          ],
+          [
+            32.8994,
+            24.0875
+          ],
+          [
+            32.6421,
+            25.6872
+          ],
+          [
+            34.6651,
+            29.0261
+          ],
+          [
+            31.2357,
+            30.0444
+          ],
+          [
+            35.0063,
+            29.5267
+          ],
+          [
+            35.4444,
+            30.3285
+          ],
+          [
+            35.4241,
+            29.5722
+          ],
+          [
+            35.55,
+            31.5
+          ],
+          [
+            35.9106,
+            31.9454
+          ],
+          [
+            37.9236,
+            26.6175
+          ],
+          [
+            39.1925,
+            21.4858
+          ],
+          [
+            46.6753,
+            24.7136
+          ],
+          [
+            47.9783,
+            29.3759
+          ],
+          [
+            55.2708,
+            25.2048
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 7009,
+        "stopCount": 18
+      }
+    }
+  ]
+}

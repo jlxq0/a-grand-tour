@@ -1,0 +1,315 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 10,
+    "totalKm": 6288,
+    "stopCount": 13,
+    "sightCount": 22,
+    "estimatedDrivingDays": 21,
+    "countries": [
+      "MX",
+      "US"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.3128,
+          24.1426
+        ]
+      },
+      "properties": {
+        "name": "La Paz",
+        "country": "Mexico",
+        "iso": "MX",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.9167,
+          22.8905
+        ]
+      },
+      "properties": {
+        "name": "Cabo San Lucas",
+        "country": "Mexico",
+        "iso": "MX",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.5964,
+          31.8667
+        ]
+      },
+      "properties": {
+        "name": "Tijuana",
+        "country": "Mexico",
+        "iso": "MX",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.0382,
+          32.5149
+        ]
+      },
+      "properties": {
+        "name": "San Diego",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2437,
+          34.0522
+        ]
+      },
+      "properties": {
+        "name": "Los Angeles",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.1398,
+          36.1699
+        ]
+      },
+      "properties": {
+        "name": "Las Vegas",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.1401,
+          36.0544
+        ]
+      },
+      "properties": {
+        "name": "Grand Canyon",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.1135,
+          36.998
+        ]
+      },
+      "properties": {
+        "name": "Monument Valley",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -109.5498,
+          38.5733
+        ]
+      },
+      "properties": {
+        "name": "Moab",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.9378,
+          35.687
+        ]
+      },
+      "properties": {
+        "name": "Santa Fe",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.2502,
+          29.25
+        ]
+      },
+      "properties": {
+        "name": "Big Bend",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 11,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.9903,
+          39.7392
+        ]
+      },
+      "properties": {
+        "name": "Denver",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 12,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.7431,
+          30.2672
+        ]
+      },
+      "properties": {
+        "name": "Austin",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 13,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -110.3128,
+            24.1426
+          ],
+          [
+            -109.9167,
+            22.8905
+          ],
+          [
+            -116.5964,
+            31.8667
+          ],
+          [
+            -117.0382,
+            32.5149
+          ],
+          [
+            -118.2437,
+            34.0522
+          ],
+          [
+            -115.1398,
+            36.1699
+          ],
+          [
+            -112.1401,
+            36.0544
+          ],
+          [
+            -110.1135,
+            36.998
+          ],
+          [
+            -109.5498,
+            38.5733
+          ],
+          [
+            -105.9378,
+            35.687
+          ],
+          [
+            -103.2502,
+            29.25
+          ],
+          [
+            -104.9903,
+            39.7392
+          ],
+          [
+            -97.7431,
+            30.2672
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 6288,
+        "stopCount": 13
+      }
+    }
+  ]
+}

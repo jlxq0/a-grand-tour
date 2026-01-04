@@ -1,0 +1,321 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 8,
+    "totalKm": 3843,
+    "stopCount": 13,
+    "sightCount": 15,
+    "estimatedDrivingDays": 13,
+    "countries": [
+      "EC",
+      "CO",
+      "PA",
+      "CR",
+      "NI",
+      "HN",
+      "SV",
+      "GT"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.8891,
+          -2.1894
+        ]
+      },
+      "properties": {
+        "name": "Guayaquil",
+        "country": "Ecuador",
+        "iso": "EC",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0045,
+          -2.9001
+        ]
+      },
+      "properties": {
+        "name": "Cuenca",
+        "country": "Ecuador",
+        "iso": "EC",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.4678,
+          -0.1807
+        ]
+      },
+      "properties": {
+        "name": "Quito",
+        "country": "Ecuador",
+        "iso": "EC",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0721,
+          4.711
+        ]
+      },
+      "properties": {
+        "name": "Bogota",
+        "country": "Colombia",
+        "iso": "CO",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5636,
+          6.2442
+        ]
+      },
+      "properties": {
+        "name": "Medellin",
+        "country": "Colombia",
+        "iso": "CO",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5144,
+          10.391
+        ]
+      },
+      "properties": {
+        "name": "Cartagena",
+        "country": "Colombia",
+        "iso": "CO",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5197,
+          8.9824
+        ]
+      },
+      "properties": {
+        "name": "Panama City",
+        "country": "Panama",
+        "iso": "PA",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.0907,
+          9.9281
+        ]
+      },
+      "properties": {
+        "name": "San Jose",
+        "country": "Costa Rica",
+        "iso": "CR",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.2362,
+          12.115
+        ]
+      },
+      "properties": {
+        "name": "Managua",
+        "country": "Nicaragua",
+        "iso": "NI",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.1921,
+          14.0723
+        ]
+      },
+      "properties": {
+        "name": "Tegucigalpa",
+        "country": "Honduras",
+        "iso": "HN",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.2182,
+          13.6929
+        ]
+      },
+      "properties": {
+        "name": "San Salvador",
+        "country": "El Salvador",
+        "iso": "SV",
+        "category": "Stop",
+        "order": 11,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.5069,
+          14.6349
+        ]
+      },
+      "properties": {
+        "name": "Guatemala City",
+        "country": "Guatemala",
+        "iso": "GT",
+        "category": "Stop",
+        "order": 12,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.7295,
+          14.5586
+        ]
+      },
+      "properties": {
+        "name": "Antigua",
+        "country": "Guatemala",
+        "iso": "GT",
+        "category": "Stop",
+        "order": 13,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.8891,
+            -2.1894
+          ],
+          [
+            -79.0045,
+            -2.9001
+          ],
+          [
+            -78.4678,
+            -0.1807
+          ],
+          [
+            -74.0721,
+            4.711
+          ],
+          [
+            -75.5636,
+            6.2442
+          ],
+          [
+            -75.5144,
+            10.391
+          ],
+          [
+            -79.5197,
+            8.9824
+          ],
+          [
+            -84.0907,
+            9.9281
+          ],
+          [
+            -86.2362,
+            12.115
+          ],
+          [
+            -87.1921,
+            14.0723
+          ],
+          [
+            -89.2182,
+            13.6929
+          ],
+          [
+            -90.5069,
+            14.6349
+          ],
+          [
+            -90.7295,
+            14.5586
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 3843,
+        "stopCount": 13
+      }
+    }
+  ]
+}

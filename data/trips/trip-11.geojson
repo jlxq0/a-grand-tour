@@ -1,0 +1,447 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 11,
+    "totalKm": 10011,
+    "stopCount": 19,
+    "sightCount": 11,
+    "estimatedDrivingDays": 34,
+    "countries": [
+      "US",
+      "CA"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -94.5786,
+          39.0997
+        ]
+      },
+      "properties": {
+        "name": "Kansas City",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.1994,
+          38.627
+        ]
+      },
+      "properties": {
+        "name": "St Louis",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6298,
+          41.8781
+        ]
+      },
+      "properties": {
+        "name": "Chicago",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.0458,
+          42.3314
+        ]
+      },
+      "properties": {
+        "name": "Detroit",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.0377,
+          43.0896
+        ]
+      },
+      "properties": {
+        "name": "Niagara Falls",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0589,
+          42.3601
+        ]
+      },
+      "properties": {
+        "name": "Boston",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.006,
+          40.7128
+        ]
+      },
+      "properties": {
+        "name": "New York",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1652,
+          39.9526
+        ]
+      },
+      "properties": {
+        "name": "Philadelphia",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0369,
+          38.9072
+        ]
+      },
+      "properties": {
+        "name": "Washington DC",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.819,
+          37.5407
+        ]
+      },
+      "properties": {
+        "name": "Shenandoah",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.7816,
+          36.1627
+        ]
+      },
+      "properties": {
+        "name": "Nashville",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 11,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.049,
+          35.1495
+        ]
+      },
+      "properties": {
+        "name": "Memphis",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 12,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.0715,
+          29.9511
+        ]
+      },
+      "properties": {
+        "name": "New Orleans",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 13,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.1918,
+          25.7617
+        ]
+      },
+      "properties": {
+        "name": "Miami",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 14,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.265,
+          44.9778
+        ]
+      },
+      "properties": {
+        "name": "Minneapolis",
+        "country": "USA",
+        "iso": "US",
+        "category": "Stop",
+        "order": 15,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3832,
+          43.6532
+        ]
+      },
+      "properties": {
+        "name": "Toronto",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 16,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6972,
+          45.4215
+        ]
+      },
+      "properties": {
+        "name": "Ottawa",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 17,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5673,
+          45.5017
+        ]
+      },
+      "properties": {
+        "name": "Montreal",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 18,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.2082,
+          46.8139
+        ]
+      },
+      "properties": {
+        "name": "Quebec City",
+        "country": "Canada",
+        "iso": "CA",
+        "category": "Stop",
+        "order": 19,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -94.5786,
+            39.0997
+          ],
+          [
+            -90.1994,
+            38.627
+          ],
+          [
+            -87.6298,
+            41.8781
+          ],
+          [
+            -83.0458,
+            42.3314
+          ],
+          [
+            -79.0377,
+            43.0896
+          ],
+          [
+            -71.0589,
+            42.3601
+          ],
+          [
+            -74.006,
+            40.7128
+          ],
+          [
+            -75.1652,
+            39.9526
+          ],
+          [
+            -77.0369,
+            38.9072
+          ],
+          [
+            -79.819,
+            37.5407
+          ],
+          [
+            -86.7816,
+            36.1627
+          ],
+          [
+            -90.049,
+            35.1495
+          ],
+          [
+            -90.0715,
+            29.9511
+          ],
+          [
+            -80.1918,
+            25.7617
+          ],
+          [
+            -93.265,
+            44.9778
+          ],
+          [
+            -79.3832,
+            43.6532
+          ],
+          [
+            -75.6972,
+            45.4215
+          ],
+          [
+            -73.5673,
+            45.5017
+          ],
+          [
+            -71.2082,
+            46.8139
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 10011,
+        "stopCount": 19
+      }
+    }
+  ]
+}

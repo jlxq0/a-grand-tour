@@ -1,0 +1,390 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 18,
+    "totalKm": 5393,
+    "stopCount": 16,
+    "sightCount": 7,
+    "estimatedDrivingDays": 18,
+    "countries": [
+      "MA",
+      "EH",
+      "MR",
+      "SN",
+      "GM",
+      "GW",
+      "GN",
+      "SL",
+      "LR",
+      "CI",
+      "GH"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.0078,
+          34.0181
+        ]
+      },
+      "properties": {
+        "name": "Fes",
+        "country": "Morocco",
+        "iso": "MA",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.9811,
+          31.6295
+        ]
+      },
+      "properties": {
+        "name": "Marrakech",
+        "country": "Morocco",
+        "iso": "MA",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.5333,
+          30.0333
+        ]
+      },
+      "properties": {
+        "name": "Ouarzazate",
+        "country": "Morocco",
+        "iso": "MA",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.2,
+          27.1536
+        ]
+      },
+      "properties": {
+        "name": "Laayoune",
+        "country": "Western Sahara",
+        "iso": "EH",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.9369,
+          23.6848
+        ]
+      },
+      "properties": {
+        "name": "Dakhla",
+        "country": "Western Sahara",
+        "iso": "EH",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.9785,
+          18.0735
+        ]
+      },
+      "properties": {
+        "name": "Nouakchott",
+        "country": "Mauritania",
+        "iso": "MR",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.4818,
+          16.0326
+        ]
+      },
+      "properties": {
+        "name": "Saint-Louis",
+        "country": "Senegal",
+        "iso": "SN",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -17.4677,
+          14.7167
+        ]
+      },
+      "properties": {
+        "name": "Dakar",
+        "country": "Senegal",
+        "iso": "SN",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.5885,
+          13.4549
+        ]
+      },
+      "properties": {
+        "name": "Banjul",
+        "country": "Gambia",
+        "iso": "GM",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -15.5977,
+          11.8816
+        ]
+      },
+      "properties": {
+        "name": "Bissau",
+        "country": "Guinea-Bissau",
+        "iso": "GW",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.2317,
+          8.4657
+        ]
+      },
+      "properties": {
+        "name": "Conakry",
+        "country": "Guinea",
+        "iso": "GN",
+        "category": "Stop",
+        "order": 11,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.8047,
+          6.3156
+        ]
+      },
+      "properties": {
+        "name": "Freetown",
+        "country": "Sierra Leone",
+        "iso": "SL",
+        "category": "Stop",
+        "order": 12,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -10.7969,
+          6.3008
+        ]
+      },
+      "properties": {
+        "name": "Monrovia",
+        "country": "Liberia",
+        "iso": "LR",
+        "category": "Stop",
+        "order": 13,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.0305,
+          5.36
+        ]
+      },
+      "properties": {
+        "name": "Abidjan",
+        "country": "Ivory Coast",
+        "iso": "CI",
+        "category": "Stop",
+        "order": 14,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.2466,
+          5.1053
+        ]
+      },
+      "properties": {
+        "name": "Cape Coast",
+        "country": "Ghana",
+        "iso": "GH",
+        "category": "Stop",
+        "order": 15,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1869,
+          5.6037
+        ]
+      },
+      "properties": {
+        "name": "Accra",
+        "country": "Ghana",
+        "iso": "GH",
+        "category": "Stop",
+        "order": 16,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -5.0078,
+            34.0181
+          ],
+          [
+            -7.9811,
+            31.6295
+          ],
+          [
+            -5.5333,
+            30.0333
+          ],
+          [
+            -13.2,
+            27.1536
+          ],
+          [
+            -15.9369,
+            23.6848
+          ],
+          [
+            -15.9785,
+            18.0735
+          ],
+          [
+            -16.4818,
+            16.0326
+          ],
+          [
+            -17.4677,
+            14.7167
+          ],
+          [
+            -16.5885,
+            13.4549
+          ],
+          [
+            -15.5977,
+            11.8816
+          ],
+          [
+            -13.2317,
+            8.4657
+          ],
+          [
+            -10.8047,
+            6.3156
+          ],
+          [
+            -10.7969,
+            6.3008
+          ],
+          [
+            -4.0305,
+            5.36
+          ],
+          [
+            -1.2466,
+            5.1053
+          ],
+          [
+            -0.1869,
+            5.6037
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 5393,
+        "stopCount": 16
+      }
+    }
+  ]
+}

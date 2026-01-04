@@ -1,0 +1,410 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 15,
+    "totalKm": 3069,
+    "stopCount": 17,
+    "sightCount": 19,
+    "estimatedDrivingDays": 11,
+    "countries": [
+      "PL",
+      "CZ",
+      "SK",
+      "AT",
+      "HU",
+      "SI",
+      "HR",
+      "BA",
+      "ME"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.0122,
+          52.2297
+        ]
+      },
+      "properties": {
+        "name": "Warsaw",
+        "country": "Poland",
+        "iso": "PL",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.945,
+          50.0647
+        ]
+      },
+      "properties": {
+        "name": "Krakow",
+        "country": "Poland",
+        "iso": "PL",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4378,
+          50.0755
+        ]
+      },
+      "properties": {
+        "name": "Prague",
+        "country": "Czechia",
+        "iso": "CZ",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.1077,
+          48.1486
+        ]
+      },
+      "properties": {
+        "name": "Bratislava",
+        "country": "Slovakia",
+        "iso": "SK",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.3738,
+          48.2082
+        ]
+      },
+      "properties": {
+        "name": "Vienna",
+        "country": "Austria",
+        "iso": "AT",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.055,
+          47.8095
+        ]
+      },
+      "properties": {
+        "name": "Salzburg",
+        "country": "Austria",
+        "iso": "AT",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.0402,
+          47.4979
+        ]
+      },
+      "properties": {
+        "name": "Budapest",
+        "country": "Hungary",
+        "iso": "HU",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5058,
+          46.0569
+        ]
+      },
+      "properties": {
+        "name": "Ljubljana",
+        "country": "Slovenia",
+        "iso": "SI",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1086,
+          46.3683
+        ]
+      },
+      "properties": {
+        "name": "Lake Bled",
+        "country": "Slovenia",
+        "iso": "SI",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.9819,
+          45.815
+        ]
+      },
+      "properties": {
+        "name": "Zagreb",
+        "country": "Croatia",
+        "iso": "HR",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.6211,
+          44.8654
+        ]
+      },
+      "properties": {
+        "name": "Plitvice",
+        "country": "Croatia",
+        "iso": "HR",
+        "category": "Stop",
+        "order": 11,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4402,
+          43.5081
+        ]
+      },
+      "properties": {
+        "name": "Split",
+        "country": "Croatia",
+        "iso": "HR",
+        "category": "Stop",
+        "order": 12,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0944,
+          42.6507
+        ]
+      },
+      "properties": {
+        "name": "Dubrovnik",
+        "country": "Croatia",
+        "iso": "HR",
+        "category": "Stop",
+        "order": 13,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.8078,
+          43.3438
+        ]
+      },
+      "properties": {
+        "name": "Mostar",
+        "country": "Bosnia",
+        "iso": "BA",
+        "category": "Stop",
+        "order": 14,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.4131,
+          43.8563
+        ]
+      },
+      "properties": {
+        "name": "Sarajevo",
+        "country": "Bosnia",
+        "iso": "BA",
+        "category": "Stop",
+        "order": 15,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.7712,
+          42.4247
+        ]
+      },
+      "properties": {
+        "name": "Kotor",
+        "country": "Montenegro",
+        "iso": "ME",
+        "category": "Stop",
+        "order": 16,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.2636,
+          42.4304
+        ]
+      },
+      "properties": {
+        "name": "Podgorica",
+        "country": "Montenegro",
+        "iso": "ME",
+        "category": "Stop",
+        "order": 17,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            21.0122,
+            52.2297
+          ],
+          [
+            19.945,
+            50.0647
+          ],
+          [
+            14.4378,
+            50.0755
+          ],
+          [
+            17.1077,
+            48.1486
+          ],
+          [
+            16.3738,
+            48.2082
+          ],
+          [
+            13.055,
+            47.8095
+          ],
+          [
+            19.0402,
+            47.4979
+          ],
+          [
+            14.5058,
+            46.0569
+          ],
+          [
+            14.1086,
+            46.3683
+          ],
+          [
+            15.9819,
+            45.815
+          ],
+          [
+            15.6211,
+            44.8654
+          ],
+          [
+            16.4402,
+            43.5081
+          ],
+          [
+            18.0944,
+            42.6507
+          ],
+          [
+            17.8078,
+            43.3438
+          ],
+          [
+            18.4131,
+            43.8563
+          ],
+          [
+            18.7712,
+            42.4247
+          ],
+          [
+            19.2636,
+            42.4304
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 3069,
+        "stopCount": 17
+      }
+    }
+  ]
+}

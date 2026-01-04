@@ -1,0 +1,3522 @@
+{
+  "summary": {
+    "totalSights": 410,
+    "onRouteSights": 190,
+    "detourSights": 220,
+    "thresholdKm": 100
+  },
+  "detours": [
+    {
+      "name": "Lençóis Maranhenses",
+      "country": "Brazil",
+      "iso": "BR",
+      "score": 9,
+      "coords": [
+        -43.1286,
+        -2.4833
+      ],
+      "category": "Natural",
+      "nearestRoute": "Atlantic Highway (Brazil)",
+      "distanceKm": 2271
+    },
+    {
+      "name": "Cape Coast Castle & Slave Forts",
+      "country": "Ghana",
+      "iso": "GH",
+      "score": 8,
+      "coords": [
+        -1.2466,
+        5.1053
+      ],
+      "category": "Cultural",
+      "nearestRoute": "West Africa Coastal Route",
+      "distanceKm": 1748
+    },
+    {
+      "name": "Amazon Rainforest",
+      "country": "Brazil",
+      "iso": "BR",
+      "score": 8,
+      "coords": [
+        -60.0283,
+        -3.1019
+      ],
+      "category": "Natural",
+      "nearestRoute": "Death Road (North Yungas)",
+      "distanceKm": 1685
+    },
+    {
+      "name": "Kaieteur Falls",
+      "country": "Guyana",
+      "iso": "GY",
+      "score": 8,
+      "coords": [
+        -59.4789,
+        5.1756
+      ],
+      "category": "Natural",
+      "nearestRoute": "Pan-American (Ecuador to Colombia)",
+      "distanceKm": 1617
+    },
+    {
+      "name": "Island of Mozambique",
+      "country": "Mozambique",
+      "iso": "MZ",
+      "score": 8,
+      "coords": [
+        40.7358,
+        -15.0342
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Serengeti-Ngorongoro Corridor",
+      "distanceKm": 1435
+    },
+    {
+      "name": "Salvador de Bahia",
+      "country": "Brazil",
+      "iso": "BR",
+      "score": 8,
+      "coords": [
+        -38.513,
+        -12.9729
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Atlantic Highway (Brazil)",
+      "distanceKm": 1209
+    },
+    {
+      "name": "Mount Kinabalu",
+      "country": "Malaysia",
+      "iso": "MY",
+      "score": 8,
+      "coords": [
+        116.5,
+        6.25
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ho Chi Minh Road",
+      "distanceKm": 1190
+    },
+    {
+      "name": "Ningaloo Coast",
+      "country": "Australia",
+      "iso": "AU",
+      "score": 8,
+      "coords": [
+        113.8103,
+        -22.5625
+      ],
+      "category": "Natural",
+      "nearestRoute": "Gibb River Road",
+      "distanceKm": 1180
+    },
+    {
+      "name": "Lake Malawi",
+      "country": "Malawi",
+      "iso": "MW",
+      "score": 8,
+      "coords": [
+        34.8833,
+        -14.0333
+      ],
+      "category": "Natural",
+      "nearestRoute": "Botswana Safari Corridor",
+      "distanceKm": 1056
+    },
+    {
+      "name": "Recoleta Cemetery",
+      "country": "Argentina",
+      "iso": "AR",
+      "score": 8,
+      "coords": [
+        -58.3928,
+        -34.5889
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 985
+    },
+    {
+      "name": "Pantanal",
+      "country": "Brazil",
+      "iso": "BR",
+      "score": 9,
+      "coords": [
+        -57.4619,
+        -17.6703
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 966
+    },
+    {
+      "name": "Edge of the World",
+      "country": "Saudi Arabia",
+      "iso": "SA",
+      "score": 8,
+      "coords": [
+        46,
+        24.6
+      ],
+      "category": "Natural",
+      "nearestRoute": "Persian Gulf Road (Iran)",
+      "distanceKm": 852
+    },
+    {
+      "name": "Chinguetti",
+      "country": "Mauritania",
+      "iso": "MR",
+      "score": 8,
+      "coords": [
+        -12.3633,
+        20.4564
+      ],
+      "category": "Cultural",
+      "nearestRoute": "West Africa Coastal Route",
+      "distanceKm": 838
+    },
+    {
+      "name": "South Luangwa National Park",
+      "country": "Zambia",
+      "iso": "ZM",
+      "score": 8,
+      "coords": [
+        31.75,
+        -13
+      ],
+      "category": "Natural",
+      "nearestRoute": "Botswana Safari Corridor",
+      "distanceKm": 835
+    },
+    {
+      "name": "Real de Catorce",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 8,
+      "coords": [
+        -100.9,
+        23.7
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Oaxaca Mountain Road",
+      "distanceKm": 833
+    },
+    {
+      "name": "Santiago de Compostela",
+      "country": "Spain",
+      "iso": "ES",
+      "score": 8,
+      "coords": [
+        -8.5447,
+        42.8808
+      ],
+      "category": "Cultural",
+      "nearestRoute": "N-340 Andalusia Coast",
+      "distanceKm": 770
+    },
+    {
+      "name": "The Sundarbans",
+      "country": "Bangladesh",
+      "iso": "BD",
+      "score": 8,
+      "coords": [
+        89.1833,
+        21.95
+      ],
+      "category": "Natural",
+      "nearestRoute": "Nepal Himalayan Highway",
+      "distanceKm": 751
+    },
+    {
+      "name": "Tayrona National Park",
+      "country": "Colombia",
+      "iso": "CO",
+      "score": 8,
+      "coords": [
+        -74.15,
+        11.24
+      ],
+      "category": "Natural",
+      "nearestRoute": "Pan-American (Ecuador to Colombia)",
+      "distanceKm": 726
+    },
+    {
+      "name": "Mumbai & Gateway of India",
+      "country": "India",
+      "iso": "IN",
+      "score": 8,
+      "coords": [
+        72.88,
+        19.04
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Kerala Coastal Road",
+      "distanceKm": 716
+    },
+    {
+      "name": "Historic Jeddah (Al-Balad)",
+      "country": "Saudi Arabia",
+      "iso": "SA",
+      "score": 8,
+      "coords": [
+        39.1875,
+        21.4839
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Nile Valley Road",
+      "distanceKm": 707
+    },
+    {
+      "name": "Ajanta & Ellora Caves",
+      "country": "India",
+      "iso": "IN",
+      "score": 8,
+      "coords": [
+        75.7,
+        20.5
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Rajasthan Desert Circuit",
+      "distanceKm": 692
+    },
+    {
+      "name": "Iguazu Falls",
+      "country": "Argentina",
+      "iso": "AR",
+      "score": 10,
+      "coords": [
+        -54.4409,
+        -25.6953
+      ],
+      "category": "Natural",
+      "nearestRoute": "Atlantic Highway (Brazil)",
+      "distanceKm": 683
+    },
+    {
+      "name": "Cartagena Old City",
+      "country": "Colombia",
+      "iso": "CO",
+      "score": 9,
+      "coords": [
+        -75.5333,
+        10.4167
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Pan-American (Ecuador to Colombia)",
+      "distanceKm": 655
+    },
+    {
+      "name": "Big Bend National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -103.2502,
+        29.25
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route 66",
+      "distanceKm": 650
+    },
+    {
+      "name": "Guanajuato",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 8,
+      "coords": [
+        -101.2556,
+        21.0169
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Oaxaca Mountain Road",
+      "distanceKm": 637
+    },
+    {
+      "name": "Iguaçu Falls",
+      "country": "Brazil",
+      "iso": "BR",
+      "score": 10,
+      "coords": [
+        -53.8001,
+        -25.4481
+      ],
+      "category": "Natural",
+      "nearestRoute": "Atlantic Highway (Brazil)",
+      "distanceKm": 614
+    },
+    {
+      "name": "Volcanoes National Park - Gorilla Trekking",
+      "country": "Rwanda",
+      "iso": "RW",
+      "score": 10,
+      "coords": [
+        29.5286,
+        -1.4583
+      ],
+      "category": "Natural",
+      "nearestRoute": "Serengeti-Ngorongoro Corridor",
+      "distanceKm": 597
+    },
+    {
+      "name": "Kakadu National Park",
+      "country": "Australia",
+      "iso": "AU",
+      "score": 9,
+      "coords": [
+        132.8333,
+        -12.8333
+      ],
+      "category": "Natural",
+      "nearestRoute": "Gibb River Road",
+      "distanceKm": 589
+    },
+    {
+      "name": "San Miguel de Allende",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 9,
+      "coords": [
+        -100.7437,
+        20.9147
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Oaxaca Mountain Road",
+      "distanceKm": 589
+    },
+    {
+      "name": "Peninsula Valdés",
+      "country": "Argentina",
+      "iso": "AR",
+      "score": 8,
+      "coords": [
+        -63.9167,
+        -42.4833
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 574
+    },
+    {
+      "name": "Bazaruto Archipelago",
+      "country": "Mozambique",
+      "iso": "MZ",
+      "score": 8,
+      "coords": [
+        35.5,
+        -21.65
+      ],
+      "category": "Natural",
+      "nearestRoute": "Panorama Route",
+      "distanceKm": 563
+    },
+    {
+      "name": "Morelia Historic Center",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 8,
+      "coords": [
+        -101.195,
+        19.706
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Oaxaca Mountain Road",
+      "distanceKm": 554
+    },
+    {
+      "name": "Bangkok Grand Palace & Wat Pho",
+      "country": "Thailand",
+      "iso": "TH",
+      "score": 10,
+      "coords": [
+        100.491,
+        13.751
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Mae Hong Son Loop",
+      "distanceKm": 545
+    },
+    {
+      "name": "Kigali Genocide Memorial",
+      "country": "Rwanda",
+      "iso": "RW",
+      "score": 8,
+      "coords": [
+        30.0564,
+        -1.9536
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Serengeti-Ngorongoro Corridor",
+      "distanceKm": 532
+    },
+    {
+      "name": "Zanzibar Stone Town",
+      "country": "Tanzania",
+      "iso": "TZ",
+      "score": 9,
+      "coords": [
+        39.19,
+        -6.16
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Serengeti-Ngorongoro Corridor",
+      "distanceKm": 519
+    },
+    {
+      "name": "Phang Nga Bay",
+      "country": "Thailand",
+      "iso": "TH",
+      "score": 8,
+      "coords": [
+        98.5,
+        8.27
+      ],
+      "category": "Natural",
+      "nearestRoute": "Cameron Highlands Road",
+      "distanceKm": 514
+    },
+    {
+      "name": "Niagara Falls",
+      "country": "Canada",
+      "iso": "CA",
+      "score": 9,
+      "coords": [
+        -79.0742,
+        43.0896
+      ],
+      "category": "Natural",
+      "nearestRoute": "Trans-Canada (Eastern)",
+      "distanceKm": 513
+    },
+    {
+      "name": "Niagara Falls",
+      "country": "USA",
+      "iso": "US",
+      "score": 9,
+      "coords": [
+        -79.0742,
+        43.0962
+      ],
+      "category": "Natural",
+      "nearestRoute": "Trans-Canada (Eastern)",
+      "distanceKm": 513
+    },
+    {
+      "name": "Statue of Liberty & NYC Skyline",
+      "country": "USA",
+      "iso": "US",
+      "score": 10,
+      "coords": [
+        -74.0445,
+        40.6892
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Blue Ridge Parkway",
+      "distanceKm": 509
+    },
+    {
+      "name": "Wieliczka Salt Mine",
+      "country": "Poland",
+      "iso": "PL",
+      "score": 8,
+      "coords": [
+        20.0639,
+        49.9792
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 494
+    },
+    {
+      "name": "Ayutthaya",
+      "country": "Thailand",
+      "iso": "TH",
+      "score": 9,
+      "coords": [
+        100.56056,
+        14.34778
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Mae Hong Son Loop",
+      "distanceKm": 489
+    },
+    {
+      "name": "Krakow Old Town & Wawel",
+      "country": "Poland",
+      "iso": "PL",
+      "score": 9,
+      "coords": [
+        19.9372,
+        50.0614
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 484
+    },
+    {
+      "name": "Auschwitz-Birkenau",
+      "country": "Poland",
+      "iso": "PL",
+      "score": 10,
+      "coords": [
+        19.175,
+        50.0389
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 481
+    },
+    {
+      "name": "Phuket Old Town & Beaches",
+      "country": "Thailand",
+      "iso": "TH",
+      "score": 8,
+      "coords": [
+        98.34,
+        7.89
+      ],
+      "category": "Natural",
+      "nearestRoute": "Sumatra Trans Highway",
+      "distanceKm": 480
+    },
+    {
+      "name": "Drakensberg Mountains",
+      "country": "South Africa",
+      "iso": "ZA",
+      "score": 9,
+      "coords": [
+        29.4,
+        -29
+      ],
+      "category": "Natural",
+      "nearestRoute": "Panorama Route",
+      "distanceKm": 479
+    },
+    {
+      "name": "San Blas Islands (Guna Yala)",
+      "country": "Panama",
+      "iso": "PA",
+      "score": 8,
+      "coords": [
+        -78.8,
+        9.55
+      ],
+      "category": "Natural",
+      "nearestRoute": "Interamericana (Costa Rica)",
+      "distanceKm": 478
+    },
+    {
+      "name": "Budapest Historic Center",
+      "country": "Hungary",
+      "iso": "HU",
+      "score": 9,
+      "coords": [
+        19.0707,
+        47.4824
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Grossglockner High Alpine Road",
+      "distanceKm": 472
+    },
+    {
+      "name": "Old Segovia & Roman Aqueduct",
+      "country": "Spain",
+      "iso": "ES",
+      "score": 8,
+      "coords": [
+        -4.1168,
+        40.9485
+      ],
+      "category": "Cultural",
+      "nearestRoute": "N-340 Andalusia Coast",
+      "distanceKm": 470
+    },
+    {
+      "name": "Guggenheim Bilbao",
+      "country": "Spain",
+      "iso": "ES",
+      "score": 8,
+      "coords": [
+        -2.935,
+        43.2627
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Costa Brava Coastal Road",
+      "distanceKm": 468
+    },
+    {
+      "name": "Loire Valley Châteaux",
+      "country": "France",
+      "iso": "FR",
+      "score": 9,
+      "coords": [
+        0.70278,
+        47.39889
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 461
+    },
+    {
+      "name": "Monarch Butterfly Biosphere Reserve",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 8,
+      "coords": [
+        -100.2417,
+        19.6064
+      ],
+      "category": "Natural",
+      "nearestRoute": "Oaxaca Mountain Road",
+      "distanceKm": 461
+    },
+    {
+      "name": "Ancient Olympia",
+      "country": "Greece",
+      "iso": "GR",
+      "score": 9,
+      "coords": [
+        21.6667,
+        37.65
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 455
+    },
+    {
+      "name": "Great Zimbabwe",
+      "country": "Zimbabwe",
+      "iso": "ZW",
+      "score": 9,
+      "coords": [
+        30.933,
+        -20.283
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Panorama Route",
+      "distanceKm": 450
+    },
+    {
+      "name": "Heydar Aliyev Centre",
+      "country": "Azerbaijan",
+      "iso": "AZ",
+      "score": 8,
+      "coords": [
+        49.8678,
+        40.3958
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Georgia Military Highway",
+      "distanceKm": 449
+    },
+    {
+      "name": "Walled City of Baku",
+      "country": "Azerbaijan",
+      "iso": "AZ",
+      "score": 8,
+      "coords": [
+        49.8333,
+        40.3667
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Georgia Military Highway",
+      "distanceKm": 448
+    },
+    {
+      "name": "Mana Pools",
+      "country": "Zimbabwe",
+      "iso": "ZW",
+      "score": 8,
+      "coords": [
+        29.408,
+        -15.819
+      ],
+      "category": "Natural",
+      "nearestRoute": "Botswana Safari Corridor",
+      "distanceKm": 444
+    },
+    {
+      "name": "Stockholm - Gamla Stan & Vasa",
+      "country": "Sweden",
+      "iso": "SE",
+      "score": 9,
+      "coords": [
+        18.07,
+        59.325
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 439
+    },
+    {
+      "name": "Meteora Monasteries",
+      "country": "Greece",
+      "iso": "GR",
+      "score": 9,
+      "coords": [
+        21.6333,
+        39.7167
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 428
+    },
+    {
+      "name": "Kronborg Castle",
+      "country": "Denmark",
+      "iso": "DK",
+      "score": 8,
+      "coords": [
+        12.6208,
+        56.0389
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 426
+    },
+    {
+      "name": "Badlands National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 9,
+      "coords": [
+        -103.4591,
+        43.879
+      ],
+      "category": "Natural",
+      "nearestRoute": "Trail Ridge Road",
+      "distanceKm": 426
+    },
+    {
+      "name": "Mount Rushmore",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -103.4545,
+        43.8791
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Trail Ridge Road",
+      "distanceKm": 426
+    },
+    {
+      "name": "Tabriz Historic Bazaar",
+      "country": "Iran",
+      "iso": "IR",
+      "score": 8,
+      "coords": [
+        46.2931,
+        38.0814
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Georgia Military Highway",
+      "distanceKm": 421
+    },
+    {
+      "name": "Tivoli Gardens",
+      "country": "Denmark",
+      "iso": "DK",
+      "score": 8,
+      "coords": [
+        12.5683,
+        55.6761
+      ],
+      "category": "Experience",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 415
+    },
+    {
+      "name": "Copper Canyon (Barrancas del Cobre)",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 8,
+      "coords": [
+        -107.6,
+        27.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Baja California Transpeninsular",
+      "distanceKm": 413
+    },
+    {
+      "name": "Museo del Prado",
+      "country": "Spain",
+      "iso": "ES",
+      "score": 9,
+      "coords": [
+        -3.6921,
+        40.4138
+      ],
+      "category": "Cultural",
+      "nearestRoute": "N-340 Andalusia Coast",
+      "distanceKm": 408
+    },
+    {
+      "name": "Temples of Tamil Nadu",
+      "country": "India",
+      "iso": "IN",
+      "score": 8,
+      "coords": [
+        79.51,
+        11.75
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Kerala Coastal Road",
+      "distanceKm": 397
+    },
+    {
+      "name": "Matobo Hills",
+      "country": "Zimbabwe",
+      "iso": "ZW",
+      "score": 8,
+      "coords": [
+        28.5,
+        -20.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Botswana Safari Corridor",
+      "distanceKm": 397
+    },
+    {
+      "name": "Hegra (Mada'in Saleh)",
+      "country": "Saudi Arabia",
+      "iso": "SA",
+      "score": 9,
+      "coords": [
+        37.955,
+        26.7836
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Wadi Rum Desert Road",
+      "distanceKm": 392
+    },
+    {
+      "name": "Göbekli Tepe",
+      "country": "Turkey",
+      "iso": "TR",
+      "score": 8,
+      "coords": [
+        38.92236,
+        37.22324
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Cappadocia to Coast (Turkey)",
+      "distanceKm": 392
+    },
+    {
+      "name": "Kenai Fjords",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -149.4172,
+        60.9669
+      ],
+      "category": "Natural",
+      "nearestRoute": "Alaska Highway",
+      "distanceKm": 390
+    },
+    {
+      "name": "Berlin Historic Sites",
+      "country": "Germany",
+      "iso": "DE",
+      "score": 9,
+      "coords": [
+        13.3777,
+        52.5163
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Romantic Road",
+      "distanceKm": 387
+    },
+    {
+      "name": "Preikestolen (Pulpit Rock)",
+      "country": "Norway",
+      "iso": "NO",
+      "score": 8,
+      "coords": [
+        6.1861,
+        58.9864
+      ],
+      "category": "Natural",
+      "nearestRoute": "Trollstigen",
+      "distanceKm": 387
+    },
+    {
+      "name": "Danube Delta",
+      "country": "Romania",
+      "iso": "RO",
+      "score": 8,
+      "coords": [
+        29.5,
+        45.0833
+      ],
+      "category": "Natural",
+      "nearestRoute": "Transfagarasan Highway",
+      "distanceKm": 383
+    },
+    {
+      "name": "Panama Canal",
+      "country": "Panama",
+      "iso": "PA",
+      "score": 9,
+      "coords": [
+        -79.6,
+        9.1
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Interamericana (Costa Rica)",
+      "distanceKm": 382
+    },
+    {
+      "name": "Córdoba Jesuit Block",
+      "country": "Argentina",
+      "iso": "AR",
+      "score": 8,
+      "coords": [
+        -64.2,
+        -31.4
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 379
+    },
+    {
+      "name": "Rila Monastery",
+      "country": "Bulgaria",
+      "iso": "BG",
+      "score": 8,
+      "coords": [
+        23.3402,
+        42.1333
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Transfagarasan Highway",
+      "distanceKm": 372
+    },
+    {
+      "name": "Mount Kenya",
+      "country": "Kenya",
+      "iso": "KE",
+      "score": 8,
+      "coords": [
+        37.3156,
+        -0.155
+      ],
+      "category": "Natural",
+      "nearestRoute": "Serengeti-Ngorongoro Corridor",
+      "distanceKm": 367
+    },
+    {
+      "name": "Mycenae",
+      "country": "Greece",
+      "iso": "GR",
+      "score": 8,
+      "coords": [
+        22.75,
+        37.7333
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 365
+    },
+    {
+      "name": "Sanssouci Palace Potsdam",
+      "country": "Germany",
+      "iso": "DE",
+      "score": 8,
+      "coords": [
+        13.0333,
+        52.4
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Romantic Road",
+      "distanceKm": 362
+    },
+    {
+      "name": "Chartres Cathedral",
+      "country": "France",
+      "iso": "FR",
+      "score": 8,
+      "coords": [
+        1.4872,
+        48.4475
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 360
+    },
+    {
+      "name": "Butrint",
+      "country": "Albania",
+      "iso": "AL",
+      "score": 8,
+      "coords": [
+        20.021,
+        39.7457
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Dalmatian Coast Highway",
+      "distanceKm": 359
+    },
+    {
+      "name": "Delphi",
+      "country": "Greece",
+      "iso": "GR",
+      "score": 9,
+      "coords": [
+        22.4962,
+        38.4815
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 358
+    },
+    {
+      "name": "Mexico City Historic Center",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 9,
+      "coords": [
+        -99.1328,
+        19.4183
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Oaxaca Mountain Road",
+      "distanceKm": 353
+    },
+    {
+      "name": "Kutná Hora & Sedlec Ossuary",
+      "country": "Czechia",
+      "iso": "CZ",
+      "score": 8,
+      "coords": [
+        15.2667,
+        49.95
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Romantic Road",
+      "distanceKm": 352
+    },
+    {
+      "name": "Luang Prabang",
+      "country": "Laos",
+      "iso": "LA",
+      "score": 9,
+      "coords": [
+        102.1333,
+        19.8889
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Mae Hong Son Loop",
+      "distanceKm": 352
+    },
+    {
+      "name": "Teotihuacan",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 10,
+      "coords": [
+        -98.8417,
+        19.6917
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Oaxaca Mountain Road",
+      "distanceKm": 351
+    },
+    {
+      "name": "Toledo",
+      "country": "Spain",
+      "iso": "ES",
+      "score": 8,
+      "coords": [
+        -4.0294,
+        39.8669
+      ],
+      "category": "Cultural",
+      "nearestRoute": "N-340 Andalusia Coast",
+      "distanceKm": 350
+    },
+    {
+      "name": "Nemrut Dağ",
+      "country": "Turkey",
+      "iso": "TR",
+      "score": 8,
+      "coords": [
+        38.76369,
+        38.03661
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Cappadocia to Coast (Turkey)",
+      "distanceKm": 350
+    },
+    {
+      "name": "Amsterdam - Canals, Van Gogh & Rijksmuseum",
+      "country": "Netherlands",
+      "iso": "NL",
+      "score": 9,
+      "coords": [
+        4.8878,
+        52.365
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 348
+    },
+    {
+      "name": "Lascaux Cave Paintings",
+      "country": "France",
+      "iso": "FR",
+      "score": 8,
+      "coords": [
+        1.17,
+        45.0575
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Costa Brava Coastal Road",
+      "distanceKm": 346
+    },
+    {
+      "name": "Epidaurus Theatre",
+      "country": "Greece",
+      "iso": "GR",
+      "score": 8,
+      "coords": [
+        23.0806,
+        37.6
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 346
+    },
+    {
+      "name": "Notre-Dame Cathedral",
+      "country": "France",
+      "iso": "FR",
+      "score": 9,
+      "coords": [
+        2.3499,
+        48.853
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 344
+    },
+    {
+      "name": "Louvre Museum",
+      "country": "France",
+      "iso": "FR",
+      "score": 10,
+      "coords": [
+        2.3376,
+        48.8606
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 343
+    },
+    {
+      "name": "Eiffel Tower",
+      "country": "France",
+      "iso": "FR",
+      "score": 10,
+      "coords": [
+        2.2945,
+        48.8584
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 342
+    },
+    {
+      "name": "Palace of Versailles",
+      "country": "France",
+      "iso": "FR",
+      "score": 10,
+      "coords": [
+        2.1194,
+        48.805
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 341
+    },
+    {
+      "name": "Varanasi Ghats",
+      "country": "India",
+      "iso": "IN",
+      "score": 9,
+      "coords": [
+        83,
+        25.3
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Nepal Himalayan Highway",
+      "distanceKm": 339
+    },
+    {
+      "name": "Mont-Saint-Michel",
+      "country": "France",
+      "iso": "FR",
+      "score": 10,
+      "coords": [
+        -1.51056,
+        48.63556
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 334
+    },
+    {
+      "name": "Etosha National Park",
+      "country": "Namibia",
+      "iso": "NA",
+      "score": 9,
+      "coords": [
+        16,
+        -18.8
+      ],
+      "category": "Natural",
+      "nearestRoute": "Skeleton Coast",
+      "distanceKm": 334
+    },
+    {
+      "name": "Siena",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 9,
+      "coords": [
+        11.3317,
+        43.3186
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 332
+    },
+    {
+      "name": "Gjirokastra",
+      "country": "Albania",
+      "iso": "AL",
+      "score": 8,
+      "coords": [
+        20.0789,
+        40.0669
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Dalmatian Coast Highway",
+      "distanceKm": 330
+    },
+    {
+      "name": "Hampi",
+      "country": "India",
+      "iso": "IN",
+      "score": 8,
+      "coords": [
+        76.4717,
+        15.3144
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Kerala Coastal Road",
+      "distanceKm": 327
+    },
+    {
+      "name": "Kinderdijk Windmills",
+      "country": "Netherlands",
+      "iso": "NL",
+      "score": 8,
+      "coords": [
+        4.6494,
+        51.8825
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 327
+    },
+    {
+      "name": "Carlsbad Caverns",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -104.5567,
+        32.1479
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route 66",
+      "distanceKm": 327
+    },
+    {
+      "name": "Cabot Trail",
+      "country": "Canada",
+      "iso": "CA",
+      "score": 8,
+      "coords": [
+        -60.75,
+        46.8
+      ],
+      "category": "Natural",
+      "nearestRoute": "Trans-Canada (Eastern)",
+      "distanceKm": 324
+    },
+    {
+      "name": "Keukenhof Gardens",
+      "country": "Netherlands",
+      "iso": "NL",
+      "score": 8,
+      "coords": [
+        4.548,
+        52.27
+      ],
+      "category": "Natural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 324
+    },
+    {
+      "name": "La Grand-Place Brussels",
+      "country": "Belgium",
+      "iso": "BE",
+      "score": 9,
+      "coords": [
+        4.3524,
+        50.8467
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 321
+    },
+    {
+      "name": "Khajuraho Temples",
+      "country": "India",
+      "iso": "IN",
+      "score": 8,
+      "coords": [
+        79.9222,
+        24.8522
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Golden Triangle Route",
+      "distanceKm": 321
+    },
+    {
+      "name": "Mount Etna",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 8,
+      "coords": [
+        14.9967,
+        37.7561
+      ],
+      "category": "Natural",
+      "nearestRoute": "Amalfi Coast Drive",
+      "distanceKm": 321
+    },
+    {
+      "name": "Bialowieza Forest",
+      "country": "Poland",
+      "iso": "PL",
+      "score": 8,
+      "coords": [
+        23.85,
+        52.75
+      ],
+      "category": "Natural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 319
+    },
+    {
+      "name": "Sumidero Canyon",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 8,
+      "coords": [
+        -93.0917,
+        16.8333
+      ],
+      "category": "Natural",
+      "nearestRoute": "Oaxaca Mountain Road",
+      "distanceKm": 314
+    },
+    {
+      "name": "Salar de Uyuni",
+      "country": "Bolivia",
+      "iso": "BO",
+      "score": 10,
+      "coords": [
+        -67.5,
+        -20.1333
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 309
+    },
+    {
+      "name": "Assisi",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 8,
+      "coords": [
+        12.6224,
+        43.0662
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Amalfi Coast Drive",
+      "distanceKm": 308
+    },
+    {
+      "name": "San Gimignano",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 8,
+      "coords": [
+        11.0417,
+        43.4681
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 306
+    },
+    {
+      "name": "Florence & Uffizi Gallery",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 10,
+      "coords": [
+        11.2558,
+        43.7696
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Dolomites - Sella Ronda",
+      "distanceKm": 302
+    },
+    {
+      "name": "Historic Prague",
+      "country": "Czechia",
+      "iso": "CZ",
+      "score": 10,
+      "coords": [
+        14.4197,
+        50.0897
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Romantic Road",
+      "distanceKm": 301
+    },
+    {
+      "name": "Darjeeling & Tiger Hill",
+      "country": "India",
+      "iso": "IN",
+      "score": 8,
+      "coords": [
+        88.27,
+        27.04
+      ],
+      "category": "Natural",
+      "nearestRoute": "Nepal Himalayan Highway",
+      "distanceKm": 301
+    },
+    {
+      "name": "Istanbul - Hagia Sophia, Blue Mosque & Topkapi",
+      "country": "Turkey",
+      "iso": "TR",
+      "score": 10,
+      "coords": [
+        28.98,
+        41.008
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 295
+    },
+    {
+      "name": "Giverny - Monet's Garden",
+      "country": "France",
+      "iso": "FR",
+      "score": 8,
+      "coords": [
+        1.2667,
+        49.0833
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 287
+    },
+    {
+      "name": "Schönbrunn Palace",
+      "country": "Austria",
+      "iso": "AT",
+      "score": 9,
+      "coords": [
+        16.3133,
+        48.1867
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Grossglockner High Alpine Road",
+      "distanceKm": 286
+    },
+    {
+      "name": "Ouro Preto",
+      "country": "Brazil",
+      "iso": "BR",
+      "score": 8,
+      "coords": [
+        -43.5056,
+        -20.3889
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Atlantic Highway (Brazil)",
+      "distanceKm": 282
+    },
+    {
+      "name": "Angkor Wat",
+      "country": "Cambodia",
+      "iso": "KH",
+      "score": 10,
+      "coords": [
+        103.867,
+        13.4125
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Bolaven Plateau Loop",
+      "distanceKm": 281
+    },
+    {
+      "name": "Lake Ohrid",
+      "country": "North Macedonia",
+      "iso": "MK",
+      "score": 8,
+      "coords": [
+        20.785,
+        41.1125
+      ],
+      "category": "Natural",
+      "nearestRoute": "Dalmatian Coast Highway",
+      "distanceKm": 279
+    },
+    {
+      "name": "Lahore - Mughal Heritage",
+      "country": "Pakistan",
+      "iso": "PK",
+      "score": 8,
+      "coords": [
+        74.3097,
+        31.5903
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Spiti Valley Road",
+      "distanceKm": 277
+    },
+    {
+      "name": "Mohenjo-Daro",
+      "country": "Pakistan",
+      "iso": "PK",
+      "score": 8,
+      "coords": [
+        68.1389,
+        27.3292
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Rajasthan Desert Circuit",
+      "distanceKm": 277
+    },
+    {
+      "name": "Valle de la Luna",
+      "country": "Chile",
+      "iso": "CL",
+      "score": 8,
+      "coords": [
+        -68.2833,
+        -22.9167
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 276
+    },
+    {
+      "name": "Acropolis of Athens",
+      "country": "Greece",
+      "iso": "GR",
+      "score": 10,
+      "coords": [
+        23.7262,
+        37.9709
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 276
+    },
+    {
+      "name": "Crete - Knossos",
+      "country": "Greece",
+      "iso": "GR",
+      "score": 8,
+      "coords": [
+        25.1442,
+        35.2401
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 276
+    },
+    {
+      "name": "Palenque",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 9,
+      "coords": [
+        -92.05,
+        17.4833
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Ruta Maya (Yucatan Circuit)",
+      "distanceKm": 273
+    },
+    {
+      "name": "Visby",
+      "country": "Sweden",
+      "iso": "SE",
+      "score": 8,
+      "coords": [
+        18.2958,
+        57.6417
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 272
+    },
+    {
+      "name": "Atacama Desert",
+      "country": "Chile",
+      "iso": "CL",
+      "score": 9,
+      "coords": [
+        -68.2,
+        -23
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 266
+    },
+    {
+      "name": "Berat",
+      "country": "Albania",
+      "iso": "AL",
+      "score": 8,
+      "coords": [
+        19.9522,
+        40.7058
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Dalmatian Coast Highway",
+      "distanceKm": 264
+    },
+    {
+      "name": "Trakai Island Castle",
+      "country": "Lithuania",
+      "iso": "LT",
+      "score": 8,
+      "coords": [
+        24.9333,
+        54.6517
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 258
+    },
+    {
+      "name": "Northern Lights (Yukon)",
+      "country": "Canada",
+      "iso": "CA",
+      "score": 8,
+      "coords": [
+        -134.17,
+        58.3
+      ],
+      "category": "Natural",
+      "nearestRoute": "Alaska Highway",
+      "distanceKm": 256
+    },
+    {
+      "name": "Painted Monasteries of Bucovina",
+      "country": "Romania",
+      "iso": "RO",
+      "score": 8,
+      "coords": [
+        25.7128,
+        47.7783
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Transfagarasan Highway",
+      "distanceKm": 256
+    },
+    {
+      "name": "Death Valley",
+      "country": "USA",
+      "iso": "US",
+      "score": 9,
+      "coords": [
+        -116.9325,
+        36.5054
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route 66",
+      "distanceKm": 256
+    },
+    {
+      "name": "Icehotel Jukkasjärvi",
+      "country": "Sweden",
+      "iso": "SE",
+      "score": 8,
+      "coords": [
+        20.6,
+        67.85
+      ],
+      "category": "Experience",
+      "nearestRoute": "Lofoten Islands Route",
+      "distanceKm": 255
+    },
+    {
+      "name": "White Sands",
+      "country": "USA",
+      "iso": "US",
+      "score": 9,
+      "coords": [
+        -106.1711,
+        32.7872
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route 66",
+      "distanceKm": 255
+    },
+    {
+      "name": "Leaning Tower of Pisa",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 9,
+      "coords": [
+        10.3964,
+        43.7231
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 253
+    },
+    {
+      "name": "Bergen Bryggen",
+      "country": "Norway",
+      "iso": "NO",
+      "score": 8,
+      "coords": [
+        5.3231,
+        60.3972
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Trollstigen",
+      "distanceKm": 253
+    },
+    {
+      "name": "Valparaíso",
+      "country": "Chile",
+      "iso": "CL",
+      "score": 9,
+      "coords": [
+        -71.6,
+        -33
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 251
+    },
+    {
+      "name": "Cologne Cathedral",
+      "country": "Germany",
+      "iso": "DE",
+      "score": 8,
+      "coords": [
+        6.9572,
+        50.9411
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Romantic Road",
+      "distanceKm": 247
+    },
+    {
+      "name": "Sossusvlei & Deadvlei",
+      "country": "Namibia",
+      "iso": "NA",
+      "score": 10,
+      "coords": [
+        15.2917,
+        -24.75
+      ],
+      "category": "Natural",
+      "nearestRoute": "Skeleton Coast",
+      "distanceKm": 243
+    },
+    {
+      "name": "D-Day Beaches",
+      "country": "France",
+      "iso": "FR",
+      "score": 9,
+      "coords": [
+        -0.4,
+        49.35
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 241
+    },
+    {
+      "name": "Lake Atitlan",
+      "country": "Guatemala",
+      "iso": "GT",
+      "score": 8,
+      "coords": [
+        -91.2,
+        14.7
+      ],
+      "category": "Natural",
+      "nearestRoute": "Central America Coastal Route",
+      "distanceKm": 241
+    },
+    {
+      "name": "Yosemite National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 10,
+      "coords": [
+        -119.5383,
+        37.8651
+      ],
+      "category": "Natural",
+      "nearestRoute": "Pacific Coast Highway (CA-1)",
+      "distanceKm": 241
+    },
+    {
+      "name": "Historic Centre of Bruges",
+      "country": "Belgium",
+      "iso": "BE",
+      "score": 9,
+      "coords": [
+        3.2253,
+        51.2089
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 235
+    },
+    {
+      "name": "Abu Simbel",
+      "country": "Egypt",
+      "iso": "EG",
+      "score": 10,
+      "coords": [
+        31.6258,
+        22.3372
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Nile Valley Road",
+      "distanceKm": 234
+    },
+    {
+      "name": "Punta Arenas & Strait of Magellan",
+      "country": "Chile",
+      "iso": "CL",
+      "score": 8,
+      "coords": [
+        -73.1,
+        -53.15
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ruta 40",
+      "distanceKm": 231
+    },
+    {
+      "name": "Historic City of Yazd",
+      "country": "Iran",
+      "iso": "IR",
+      "score": 9,
+      "coords": [
+        54.3692,
+        31.9014
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Persian Gulf Road (Iran)",
+      "distanceKm": 230
+    },
+    {
+      "name": "Ravenna Mosaics",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 8,
+      "coords": [
+        12.1963,
+        44.4204
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Dolomites - Sella Ronda",
+      "distanceKm": 229
+    },
+    {
+      "name": "Northern Lights (Aurora)",
+      "country": "Norway",
+      "iso": "NO",
+      "score": 8,
+      "coords": [
+        19,
+        69.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Lofoten Islands Route",
+      "distanceKm": 227
+    },
+    {
+      "name": "Golden Temple (Harmandir Sahib)",
+      "country": "India",
+      "iso": "IN",
+      "score": 9,
+      "coords": [
+        74.8765,
+        31.62
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Spiti Valley Road",
+      "distanceKm": 225
+    },
+    {
+      "name": "Sheikh Zayed Grand Mosque",
+      "country": "UAE",
+      "iso": "AE",
+      "score": 9,
+      "coords": [
+        54.4744,
+        24.4128
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Hajar Mountains Road",
+      "distanceKm": 220
+    },
+    {
+      "name": "Český Krumlov",
+      "country": "Czechia",
+      "iso": "CZ",
+      "score": 9,
+      "coords": [
+        14.315,
+        48.8107
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Grossglockner High Alpine Road",
+      "distanceKm": 217
+    },
+    {
+      "name": "Snowdonia",
+      "country": "UK",
+      "iso": "GB",
+      "score": 8,
+      "coords": [
+        -4,
+        53.1
+      ],
+      "category": "Natural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 215
+    },
+    {
+      "name": "Vatican City & Sistine Chapel",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 10,
+      "coords": [
+        12.4534,
+        41.9029
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Amalfi Coast Drive",
+      "distanceKm": 214
+    },
+    {
+      "name": "Dawson City & Klondike",
+      "country": "Canada",
+      "iso": "CA",
+      "score": 8,
+      "coords": [
+        -139.1,
+        64.05
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Alaska Highway",
+      "distanceKm": 212
+    },
+    {
+      "name": "Colosseum & Roman Forum",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 10,
+      "coords": [
+        12.4922,
+        41.8902
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Amalfi Coast Drive",
+      "distanceKm": 211
+    },
+    {
+      "name": "Denali National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 9,
+      "coords": [
+        -150.5,
+        63.069
+      ],
+      "category": "Natural",
+      "nearestRoute": "Dalton Highway",
+      "distanceKm": 211
+    },
+    {
+      "name": "Antigua Guatemala",
+      "country": "Guatemala",
+      "iso": "GT",
+      "score": 8,
+      "coords": [
+        -90.7338,
+        14.5565
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Central America Coastal Route",
+      "distanceKm": 209
+    },
+    {
+      "name": "Cinque Terre",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 9,
+      "coords": [
+        9.7292,
+        44.1069
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 204
+    },
+    {
+      "name": "Sukhothai",
+      "country": "Thailand",
+      "iso": "TH",
+      "score": 8,
+      "coords": [
+        99.78972,
+        17.00722
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Mae Hong Son Loop",
+      "distanceKm": 204
+    },
+    {
+      "name": "Tofino & Pacific Rim",
+      "country": "Canada",
+      "iso": "CA",
+      "score": 9,
+      "coords": [
+        -125.9,
+        49.15
+      ],
+      "category": "Natural",
+      "nearestRoute": "Sea to Sky Highway",
+      "distanceKm": 202
+    },
+    {
+      "name": "Mount Kilimanjaro",
+      "country": "Tanzania",
+      "iso": "TZ",
+      "score": 10,
+      "coords": [
+        37.36,
+        -3.07
+      ],
+      "category": "Natural",
+      "nearestRoute": "Serengeti-Ngorongoro Corridor",
+      "distanceKm": 197
+    },
+    {
+      "name": "Pont du Gard",
+      "country": "France",
+      "iso": "FR",
+      "score": 8,
+      "coords": [
+        4.5353,
+        43.9472
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 196
+    },
+    {
+      "name": "Lake Titicaca",
+      "country": "Peru",
+      "iso": "PE",
+      "score": 8,
+      "coords": [
+        -69.9,
+        -15.85
+      ],
+      "category": "Natural",
+      "nearestRoute": "Peru Coastal Desert Road",
+      "distanceKm": 194
+    },
+    {
+      "name": "Bay of Islands",
+      "country": "New Zealand",
+      "iso": "NZ",
+      "score": 8,
+      "coords": [
+        174.09,
+        -35.21
+      ],
+      "category": "Natural",
+      "nearestRoute": "New Zealand State Highway 1 (North Island)",
+      "distanceKm": 192
+    },
+    {
+      "name": "Amboseli National Park",
+      "country": "Kenya",
+      "iso": "KE",
+      "score": 8,
+      "coords": [
+        37.2,
+        -2.65
+      ],
+      "category": "Natural",
+      "nearestRoute": "Serengeti-Ngorongoro Corridor",
+      "distanceKm": 188
+    },
+    {
+      "name": "Book of Kells - Trinity College",
+      "country": "Ireland",
+      "iso": "IE",
+      "score": 8,
+      "coords": [
+        -6.2546,
+        53.3439
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Wild Atlantic Way",
+      "distanceKm": 187
+    },
+    {
+      "name": "Killing Fields & Tuol Sleng",
+      "country": "Cambodia",
+      "iso": "KH",
+      "score": 8,
+      "coords": [
+        104.9067,
+        11.485
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Ho Chi Minh Road",
+      "distanceKm": 187
+    },
+    {
+      "name": "Washington D.C. Monuments",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -77.0469,
+        38.8895
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Blue Ridge Parkway",
+      "distanceKm": 185
+    },
+    {
+      "name": "Mount Rainier",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -121.7603,
+        46.8523
+      ],
+      "category": "Natural",
+      "nearestRoute": "Pacific Coast Highway (Oregon)",
+      "distanceKm": 181
+    },
+    {
+      "name": "Saint-Louis",
+      "country": "Senegal",
+      "iso": "SN",
+      "score": 8,
+      "coords": [
+        -16.5044,
+        16.0278
+      ],
+      "category": "Cultural",
+      "nearestRoute": "West Africa Coastal Route",
+      "distanceKm": 180
+    },
+    {
+      "name": "Santorini",
+      "country": "Greece",
+      "iso": "GR",
+      "score": 9,
+      "coords": [
+        25.4319,
+        36.3932
+      ],
+      "category": "Natural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 178
+    },
+    {
+      "name": "Echmiadzin Cathedral",
+      "country": "Armenia",
+      "iso": "AM",
+      "score": 8,
+      "coords": [
+        44.2951,
+        40.1593
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Georgia Military Highway",
+      "distanceKm": 175
+    },
+    {
+      "name": "Avignon & Papal Palace",
+      "country": "France",
+      "iso": "FR",
+      "score": 8,
+      "coords": [
+        4.8061,
+        43.9528
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 175
+    },
+    {
+      "name": "Geghard Monastery",
+      "country": "Armenia",
+      "iso": "AM",
+      "score": 8,
+      "coords": [
+        44.8185,
+        40.1404
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Georgia Military Highway",
+      "distanceKm": 172
+    },
+    {
+      "name": "Plitvice Lakes National Park",
+      "country": "Croatia",
+      "iso": "HR",
+      "score": 9,
+      "coords": [
+        15.6144,
+        44.8778
+      ],
+      "category": "Natural",
+      "nearestRoute": "Dalmatian Coast Highway",
+      "distanceKm": 166
+    },
+    {
+      "name": "Upper Middle Rhine Valley",
+      "country": "Germany",
+      "iso": "DE",
+      "score": 8,
+      "coords": [
+        7.6942,
+        50.1736
+      ],
+      "category": "Natural",
+      "nearestRoute": "Romantic Road",
+      "distanceKm": 165
+    },
+    {
+      "name": "Historic Lyon",
+      "country": "France",
+      "iso": "FR",
+      "score": 8,
+      "coords": [
+        4.8333,
+        45.7672
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 163
+    },
+    {
+      "name": "Swedish Lapland",
+      "country": "Sweden",
+      "iso": "SE",
+      "score": 8,
+      "coords": [
+        17.5833,
+        67.3333
+      ],
+      "category": "Natural",
+      "nearestRoute": "Lofoten Islands Route",
+      "distanceKm": 162
+    },
+    {
+      "name": "Mount Everest (Sagarmatha)",
+      "country": "Nepal",
+      "iso": "NP",
+      "score": 10,
+      "coords": [
+        86.925,
+        27.9881
+      ],
+      "category": "Natural",
+      "nearestRoute": "Nepal Himalayan Highway",
+      "distanceKm": 161
+    },
+    {
+      "name": "Crater Lake",
+      "country": "USA",
+      "iso": "US",
+      "score": 9,
+      "coords": [
+        -122.1,
+        42.944
+      ],
+      "category": "Natural",
+      "nearestRoute": "Pacific Coast Highway (Oregon)",
+      "distanceKm": 159
+    },
+    {
+      "name": "Matera - Sassi",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 8,
+      "coords": [
+        16.6103,
+        40.6664
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Amalfi Coast Drive",
+      "distanceKm": 157
+    },
+    {
+      "name": "Newgrange (Brú na Bóinne)",
+      "country": "Ireland",
+      "iso": "IE",
+      "score": 8,
+      "coords": [
+        -6.45,
+        53.6917
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Wild Atlantic Way",
+      "distanceKm": 156
+    },
+    {
+      "name": "City of Bath",
+      "country": "UK",
+      "iso": "GB",
+      "score": 9,
+      "coords": [
+        -2.3586,
+        51.3814
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 155
+    },
+    {
+      "name": "Milan - Duomo & Last Supper",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 8,
+      "coords": [
+        9.1705,
+        45.4659
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Stelvio Pass",
+      "distanceKm": 155
+    },
+    {
+      "name": "Abel Tasman National Park",
+      "country": "New Zealand",
+      "iso": "NZ",
+      "score": 8,
+      "coords": [
+        173,
+        -40.9
+      ],
+      "category": "Natural",
+      "nearestRoute": "New Zealand State Highway 1 (North Island)",
+      "distanceKm": 155
+    },
+    {
+      "name": "Arches National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 9,
+      "coords": [
+        -109.5925,
+        38.733
+      ],
+      "category": "Natural",
+      "nearestRoute": "Utah Scenic Byway 12",
+      "distanceKm": 154
+    },
+    {
+      "name": "Grand Teton National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 9,
+      "coords": [
+        -110.5885,
+        43.7904
+      ],
+      "category": "Natural",
+      "nearestRoute": "Beartooth Highway",
+      "distanceKm": 150
+    },
+    {
+      "name": "Alcázar & Cathedral of Seville",
+      "country": "Spain",
+      "iso": "ES",
+      "score": 9,
+      "coords": [
+        -5.9916,
+        37.3838
+      ],
+      "category": "Cultural",
+      "nearestRoute": "N-340 Andalusia Coast",
+      "distanceKm": 147
+    },
+    {
+      "name": "Mesa Verde",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -108.4618,
+        37.1853
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Monument Valley Scenic Drive",
+      "distanceKm": 144
+    },
+    {
+      "name": "Baños & Swing at End of World",
+      "country": "Ecuador",
+      "iso": "EC",
+      "score": 8,
+      "coords": [
+        -78.3,
+        -1.47
+      ],
+      "category": "Natural",
+      "nearestRoute": "Pan-American (Ecuador to Colombia)",
+      "distanceKm": 141
+    },
+    {
+      "name": "Kluane National Park",
+      "country": "Canada",
+      "iso": "CA",
+      "score": 8,
+      "coords": [
+        -140.992,
+        61.1976
+      ],
+      "category": "Natural",
+      "nearestRoute": "Alaska Highway",
+      "distanceKm": 140
+    },
+    {
+      "name": "Pamukkale",
+      "country": "Turkey",
+      "iso": "TR",
+      "score": 9,
+      "coords": [
+        29.12333,
+        37.92389
+      ],
+      "category": "Natural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 140
+    },
+    {
+      "name": "Ranthambore National Park",
+      "country": "India",
+      "iso": "IN",
+      "score": 8,
+      "coords": [
+        76.5,
+        25.75
+      ],
+      "category": "Natural",
+      "nearestRoute": "Golden Triangle Route",
+      "distanceKm": 138
+    },
+    {
+      "name": "George Town, Penang",
+      "country": "Malaysia",
+      "iso": "MY",
+      "score": 8,
+      "coords": [
+        100.3458,
+        5.4214
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Cameron Highlands Road",
+      "distanceKm": 138
+    },
+    {
+      "name": "Upper Svaneti",
+      "country": "Georgia",
+      "iso": "GE",
+      "score": 8,
+      "coords": [
+        43.01139,
+        42.91639
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Georgia Military Highway",
+      "distanceKm": 135
+    },
+    {
+      "name": "Mezquita de Córdoba",
+      "country": "Spain",
+      "iso": "ES",
+      "score": 9,
+      "coords": [
+        -4.7797,
+        37.8792
+      ],
+      "category": "Cultural",
+      "nearestRoute": "N-340 Andalusia Coast",
+      "distanceKm": 133
+    },
+    {
+      "name": "Ha Long Bay",
+      "country": "Vietnam",
+      "iso": "VN",
+      "score": 10,
+      "coords": [
+        107.1,
+        20.9
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ho Chi Minh Road",
+      "distanceKm": 130
+    },
+    {
+      "name": "Verona",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 8,
+      "coords": [
+        10.9944,
+        45.4386
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Stelvio Pass",
+      "distanceKm": 127
+    },
+    {
+      "name": "Stonehenge",
+      "country": "UK",
+      "iso": "GB",
+      "score": 10,
+      "coords": [
+        -1.8253,
+        51.1789
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 123
+    },
+    {
+      "name": "Venice",
+      "country": "Italy",
+      "iso": "IT",
+      "score": 10,
+      "coords": [
+        12.3389,
+        45.4343
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Dolomites - Sella Ronda",
+      "distanceKm": 123
+    },
+    {
+      "name": "Villa de Leyva",
+      "country": "Colombia",
+      "iso": "CO",
+      "score": 8,
+      "coords": [
+        -73.65,
+        5.72
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Pan-American (Ecuador to Colombia)",
+      "distanceKm": 122
+    },
+    {
+      "name": "Carcassonne",
+      "country": "France",
+      "iso": "FR",
+      "score": 8,
+      "coords": [
+        2.3636,
+        43.2071
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Costa Brava Coastal Road",
+      "distanceKm": 120
+    },
+    {
+      "name": "Mekong Delta",
+      "country": "Vietnam",
+      "iso": "VN",
+      "score": 8,
+      "coords": [
+        105.9,
+        10
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ho Chi Minh Road",
+      "distanceKm": 120
+    },
+    {
+      "name": "Sapa & Rice Terraces",
+      "country": "Vietnam",
+      "iso": "VN",
+      "score": 8,
+      "coords": [
+        103.85,
+        22.35
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ha Giang Loop",
+      "distanceKm": 119
+    },
+    {
+      "name": "Amazon Rainforest - Manu",
+      "country": "Peru",
+      "iso": "PE",
+      "score": 8,
+      "coords": [
+        -71.75,
+        -12.25
+      ],
+      "category": "Natural",
+      "nearestRoute": "Sacred Valley Road",
+      "distanceKm": 117
+    },
+    {
+      "name": "Lake Titicaca",
+      "country": "Bolivia",
+      "iso": "BO",
+      "score": 8,
+      "coords": [
+        -69.08,
+        -16.02
+      ],
+      "category": "Natural",
+      "nearestRoute": "Death Road (North Yungas)",
+      "distanceKm": 116
+    },
+    {
+      "name": "Espiritu Santo Island",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 8,
+      "coords": [
+        -110.1,
+        25.9
+      ],
+      "category": "Natural",
+      "nearestRoute": "Baja California Transpeninsular",
+      "distanceKm": 116
+    },
+    {
+      "name": "Isla Holbox",
+      "country": "Mexico",
+      "iso": "MX",
+      "score": 8,
+      "coords": [
+        -86.8475,
+        21.1743
+      ],
+      "category": "Natural",
+      "nearestRoute": "Ruta Maya (Yucatan Circuit)",
+      "distanceKm": 110
+    },
+    {
+      "name": "The Cotswolds",
+      "country": "UK",
+      "iso": "GB",
+      "score": 8,
+      "coords": [
+        -1.7,
+        51.85
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 109
+    },
+    {
+      "name": "Lumbini",
+      "country": "Nepal",
+      "iso": "NP",
+      "score": 8,
+      "coords": [
+        83.2761,
+        27.4689
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Nepal Himalayan Highway",
+      "distanceKm": 108
+    },
+    {
+      "name": "Burj Khalifa",
+      "country": "UAE",
+      "iso": "AE",
+      "score": 9,
+      "coords": [
+        55.2744,
+        25.1972
+      ],
+      "category": "Landmark",
+      "nearestRoute": "Hajar Mountains Road",
+      "distanceKm": 107
+    },
+    {
+      "name": "Coffee Triangle (Zona Cafetera)",
+      "country": "Colombia",
+      "iso": "CO",
+      "score": 9,
+      "coords": [
+        -75.67,
+        4.54
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Pan-American (Ecuador to Colombia)",
+      "distanceKm": 107
+    },
+    {
+      "name": "Isle of Skye",
+      "country": "UK",
+      "iso": "GB",
+      "score": 8,
+      "coords": [
+        -6.2293,
+        57.2736
+      ],
+      "category": "Natural",
+      "nearestRoute": "North Coast 500",
+      "distanceKm": 105
+    },
+    {
+      "name": "Grand Canyon",
+      "country": "USA",
+      "iso": "US",
+      "score": 10,
+      "coords": [
+        -112.1401,
+        36.0544
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route 66",
+      "distanceKm": 105
+    },
+    {
+      "name": "Copan",
+      "country": "Honduras",
+      "iso": "HN",
+      "score": 8,
+      "coords": [
+        -89.1333,
+        14.85
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Central America Coastal Route",
+      "distanceKm": 104
+    },
+    {
+      "name": "Masai Mara National Reserve",
+      "country": "Kenya",
+      "iso": "KE",
+      "score": 10,
+      "coords": [
+        35.25,
+        -1.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Serengeti-Ngorongoro Corridor",
+      "distanceKm": 103
+    },
+    {
+      "name": "The Lake District",
+      "country": "UK",
+      "iso": "GB",
+      "score": 9,
+      "coords": [
+        -3.0824,
+        54.4766
+      ],
+      "category": "Natural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 102
+    }
+  ],
+  "onRoute": [
+    {
+      "name": "Troy",
+      "country": "Turkey",
+      "iso": "TR",
+      "score": 8,
+      "coords": [
+        26.239,
+        39.95644
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Aegean Coast Road (Turkey)",
+      "distanceKm": 98
+    },
+    {
+      "name": "Lake Powell",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -111.8265,
+        36.058
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route 66",
+      "distanceKm": 97
+    },
+    {
+      "name": "Colca Canyon",
+      "country": "Peru",
+      "iso": "PE",
+      "score": 8,
+      "coords": [
+        -71.65,
+        -15.6
+      ],
+      "category": "Natural",
+      "nearestRoute": "Peru Coastal Desert Road",
+      "distanceKm": 95
+    },
+    {
+      "name": "Olympic National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 8,
+      "coords": [
+        -123.4979,
+        48.4634
+      ],
+      "category": "Natural",
+      "nearestRoute": "Sea to Sky Highway",
+      "distanceKm": 95
+    },
+    {
+      "name": "Swiss Alps Jungfrau-Aletsch",
+      "country": "Switzerland",
+      "iso": "CH",
+      "score": 9,
+      "coords": [
+        8.0333,
+        46.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 92
+    },
+    {
+      "name": "Durmitor National Park",
+      "country": "Montenegro",
+      "iso": "ME",
+      "score": 8,
+      "coords": [
+        19.0166,
+        43.133
+      ],
+      "category": "Natural",
+      "nearestRoute": "Dalmatian Coast Highway",
+      "distanceKm": 92
+    },
+    {
+      "name": "Hwange National Park",
+      "country": "Zimbabwe",
+      "iso": "ZW",
+      "score": 8,
+      "coords": [
+        26.5,
+        -18.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Botswana Safari Corridor",
+      "distanceKm": 92
+    },
+    {
+      "name": "Glacier Express",
+      "country": "Switzerland",
+      "iso": "CH",
+      "score": 8,
+      "coords": [
+        8,
+        46.5
+      ],
+      "category": "Experience",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 89
+    },
+    {
+      "name": "Canterbury Cathedral",
+      "country": "UK",
+      "iso": "GB",
+      "score": 8,
+      "coords": [
+        1.0833,
+        51.28
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 88
+    },
+    {
+      "name": "Jungfraujoch",
+      "country": "Switzerland",
+      "iso": "CH",
+      "score": 9,
+      "coords": [
+        7.9633,
+        46.5472
+      ],
+      "category": "Experience",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 87
+    },
+    {
+      "name": "Lauca National Park",
+      "country": "Chile",
+      "iso": "CL",
+      "score": 8,
+      "coords": [
+        -69.33,
+        -18.17
+      ],
+      "category": "Natural",
+      "nearestRoute": "Peru Coastal Desert Road",
+      "distanceKm": 86
+    },
+    {
+      "name": "Yellowstone National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 10,
+      "coords": [
+        -110.5885,
+        44.428
+      ],
+      "category": "Natural",
+      "nearestRoute": "Beartooth Highway",
+      "distanceKm": 86
+    },
+    {
+      "name": "Antelope Canyon",
+      "country": "USA",
+      "iso": "US",
+      "score": 10,
+      "coords": [
+        -111.3743,
+        36.8619
+      ],
+      "category": "Natural",
+      "nearestRoute": "Utah Scenic Byway 12",
+      "distanceKm": 86
+    },
+    {
+      "name": "Blenheim Palace",
+      "country": "UK",
+      "iso": "GB",
+      "score": 8,
+      "coords": [
+        -1.3614,
+        51.8419
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 85
+    },
+    {
+      "name": "Prambanan Temple",
+      "country": "Indonesia",
+      "iso": "ID",
+      "score": 8,
+      "coords": [
+        110.4917,
+        -7.7522
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Java North Coast Road",
+      "distanceKm": 85
+    },
+    {
+      "name": "Zion National Park",
+      "country": "USA",
+      "iso": "US",
+      "score": 10,
+      "coords": [
+        -113.0263,
+        37.2982
+      ],
+      "category": "Natural",
+      "nearestRoute": "Utah Scenic Byway 12",
+      "distanceKm": 84
+    },
+    {
+      "name": "Torres del Paine National Park",
+      "country": "Chile",
+      "iso": "CL",
+      "score": 10,
+      "coords": [
+        -72.9658,
+        -50.9423
+      ],
+      "category": "Natural",
+      "nearestRoute": "Road to El Chalten",
+      "distanceKm": 83
+    },
+    {
+      "name": "Waitomo Glowworm Caves",
+      "country": "New Zealand",
+      "iso": "NZ",
+      "score": 8,
+      "coords": [
+        175.1,
+        -38.26
+      ],
+      "category": "Natural",
+      "nearestRoute": "New Zealand State Highway 1 (North Island)",
+      "distanceKm": 82
+    },
+    {
+      "name": "Kaikoura",
+      "country": "New Zealand",
+      "iso": "NZ",
+      "score": 9,
+      "coords": [
+        173.68,
+        -42.42
+      ],
+      "category": "Natural",
+      "nearestRoute": "West Coast Road (NZ South Island)",
+      "distanceKm": 82
+    },
+    {
+      "name": "Mount Bromo",
+      "country": "Indonesia",
+      "iso": "ID",
+      "score": 9,
+      "coords": [
+        112.95,
+        -7.94
+      ],
+      "category": "Natural",
+      "nearestRoute": "Java North Coast Road",
+      "distanceKm": 80
+    },
+    {
+      "name": "Ometepe Island",
+      "country": "Nicaragua",
+      "iso": "NI",
+      "score": 8,
+      "coords": [
+        -85.55,
+        11.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Interamericana (Costa Rica)",
+      "distanceKm": 80
+    },
+    {
+      "name": "Horseshoe Bend",
+      "country": "USA",
+      "iso": "US",
+      "score": 10,
+      "coords": [
+        -111.5103,
+        36.879
+      ],
+      "category": "Natural",
+      "nearestRoute": "Utah Scenic Byway 12",
+      "distanceKm": 80
+    },
+    {
+      "name": "Oxford & Cambridge",
+      "country": "UK",
+      "iso": "GB",
+      "score": 8,
+      "coords": [
+        -1.25,
+        51.75
+      ],
+      "category": "Cultural",
+      "nearestRoute": "London to Edinburgh (A1/Great North Road)",
+      "distanceKm": 79
+    },
+    {
+      "name": "Hallstatt",
+      "country": "Austria",
+      "iso": "AT",
+      "score": 9,
+      "coords": [
+        13.6464,
+        47.5594
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Grossglockner High Alpine Road",
+      "distanceKm": 78
+    },
+    {
+      "name": "Old City of Berne",
+      "country": "Switzerland",
+      "iso": "CH",
+      "score": 8,
+      "coords": [
+        7.4503,
+        46.9481
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 77
+    },
+    {
+      "name": "Gorges du Verdon",
+      "country": "France",
+      "iso": "FR",
+      "score": 8,
+      "coords": [
+        6.2,
+        43.8
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 77
+    },
+    {
+      "name": "Kruger National Park",
+      "country": "South Africa",
+      "iso": "ZA",
+      "score": 10,
+      "coords": [
+        31.5,
+        -24
+      ],
+      "category": "Natural",
+      "nearestRoute": "Panorama Route",
+      "distanceKm": 77
+    },
+    {
+      "name": "Chiloé Island",
+      "country": "Chile",
+      "iso": "CL",
+      "score": 8,
+      "coords": [
+        -73.63,
+        -42.47
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Carretera Austral",
+      "distanceKm": 76
+    },
+    {
+      "name": "Pasargadae",
+      "country": "Iran",
+      "iso": "IR",
+      "score": 8,
+      "coords": [
+        53.1673,
+        30.1938
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Persian Gulf Road (Iran)",
+      "distanceKm": 76
+    },
+    {
+      "name": "Ostrog Monastery",
+      "country": "Montenegro",
+      "iso": "ME",
+      "score": 8,
+      "coords": [
+        19.0303,
+        42.6767
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Dalmatian Coast Highway",
+      "distanceKm": 75
+    },
+    {
+      "name": "Borobudur",
+      "country": "Indonesia",
+      "iso": "ID",
+      "score": 10,
+      "coords": [
+        110.2036,
+        -7.6078
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Java North Coast Road",
+      "distanceKm": 73
+    },
+    {
+      "name": "Sighisoara",
+      "country": "Romania",
+      "iso": "RO",
+      "score": 8,
+      "coords": [
+        24.7922,
+        46.2178
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Transfagarasan Highway",
+      "distanceKm": 70
+    },
+    {
+      "name": "Great Barrier Reef",
+      "country": "Australia",
+      "iso": "AU",
+      "score": 10,
+      "coords": [
+        147.7,
+        -18.2861
+      ],
+      "category": "Natural",
+      "nearestRoute": "East Coast Australia",
+      "distanceKm": 69
+    },
+    {
+      "name": "Tikal",
+      "country": "Guatemala",
+      "iso": "GT",
+      "score": 10,
+      "coords": [
+        -89.6167,
+        17.2167
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Ruta Maya (Yucatan Circuit)",
+      "distanceKm": 68
+    },
+    {
+      "name": "Skeleton Coast",
+      "country": "Namibia",
+      "iso": "NA",
+      "score": 8,
+      "coords": [
+        13.5,
+        -19.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Skeleton Coast",
+      "distanceKm": 68
+    },
+    {
+      "name": "Lake District & Osorno Volcano",
+      "country": "Chile",
+      "iso": "CL",
+      "score": 8,
+      "coords": [
+        -72.17,
+        -41.33
+      ],
+      "category": "Natural",
+      "nearestRoute": "Carretera Austral",
+      "distanceKm": 67
+    },
+    {
+      "name": "Nizwa & Interior Forts",
+      "country": "Oman",
+      "iso": "OM",
+      "score": 8,
+      "coords": [
+        57.5,
+        23
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Hajar Mountains Road",
+      "distanceKm": 67
+    },
+    {
+      "name": "Hill of Crosses",
+      "country": "Lithuania",
+      "iso": "LT",
+      "score": 8,
+      "coords": [
+        23.4167,
+        56.0167
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Baltic Coast Road",
+      "distanceKm": 64
+    },
+    {
+      "name": "Perito Moreno Glacier",
+      "country": "Argentina",
+      "iso": "AR",
+      "score": 10,
+      "coords": [
+        -73.05,
+        -50.4967
+      ],
+      "category": "Natural",
+      "nearestRoute": "Road to El Chalten",
+      "distanceKm": 63
+    },
+    {
+      "name": "Chitwan National Park",
+      "country": "Nepal",
+      "iso": "NP",
+      "score": 8,
+      "coords": [
+        84.3333,
+        27.5
+      ],
+      "category": "Natural",
+      "nearestRoute": "Nepal Himalayan Highway",
+      "distanceKm": 63
+    },
+    {
+      "name": "Giant's Causeway",
+      "country": "UK",
+      "iso": "GB",
+      "score": 9,
+      "coords": [
+        -6.4853,
+        55.25
+      ],
+      "category": "Natural",
+      "nearestRoute": "Wild Atlantic Way",
+      "distanceKm": 62
+    },
+    {
+      "name": "Lake Tekapo",
+      "country": "New Zealand",
+      "iso": "NZ",
+      "score": 8,
+      "coords": [
+        170.48,
+        -44
+      ],
+      "category": "Natural",
+      "nearestRoute": "West Coast Road (NZ South Island)",
+      "distanceKm": 62
+    },
+    {
+      "name": "Skara Brae & Orkney",
+      "country": "UK",
+      "iso": "GB",
+      "score": 8,
+      "coords": [
+        -3.1889,
+        58.996
+      ],
+      "category": "Cultural",
+      "nearestRoute": "North Coast 500",
+      "distanceKm": 60
+    },
+    {
+      "name": "Ait-Ben-Haddou",
+      "country": "Morocco",
+      "iso": "MA",
+      "score": 8,
+      "coords": [
+        -7.1289,
+        31.0472
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Morocco Grand Tour",
+      "distanceKm": 60
+    },
+    {
+      "name": "Transylvania - Bran Castle & Villages",
+      "country": "Romania",
+      "iso": "RO",
+      "score": 9,
+      "coords": [
+        25.3675,
+        45.515
+      ],
+      "category": "Cultural",
+      "nearestRoute": "Transfagarasan Highway",
+      "distanceKm": 59
+    },
+    {
+      "name": "Lake Louise",
+      "country": "Canada",
+      "iso": "CA",
+      "score": 9,
+      "coords": [
+        -117.55,
+        51.42
+      ],
+      "category": "Natural",
+      "nearestRoute": "Icefields Parkway",
+      "distanceKm": 58
+    },
+    {
+      "name": "Matterhorn",
+      "country": "Switzerland",
+      "iso": "CH",
+      "score": 10,
+      "coords": [
+        7.6583,
+        45.9767
+      ],
+      "category": "Natural",
+      "nearestRoute": "Route des Grandes Alpes",
+      "distanceKm": 55
+    },
+    {
+      "name": "Cotopaxi Volcano",
+      "country": "Ecuador",
+      "iso": "EC",
+      "score": 9,
+      "coords": [
+        -78.44,
+        -0.68
+      ],
+      "category": "Natural",
+      "nearestRoute": "Pan-American (Ecuador to Colombia)",
+      "distanceKm": 52
+    },
+    {
+      "name": "Bay of Fundy",
+      "country": "Canada",
+      "iso": "CA",
+      "score": 8,
+      "coords": [
+        -64.45,
+        45.35
+      ],
+      "category": "Natural",
+      "nearestRoute": "Trans-Canada (Eastern)",
+      "distanceKm": 51
+    },
+    {
+      "name": "Bay of Kotor",
+      "country": "Montenegro",
+      "iso": "ME",
+      "score": 9,
+      "coords": [
+        18.7,
+        42.4833
+      ],
+      "category": "Natural",
+      "nearestRoute": "Dalmatian Coast Highway",
+      "distanceKm": 51
+    }
+  ]
+}

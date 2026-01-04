@@ -1,0 +1,254 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 14,
+    "totalKm": 4115,
+    "stopCount": 10,
+    "sightCount": 13,
+    "estimatedDrivingDays": 14,
+    "countries": [
+      "NO",
+      "SE",
+      "FI",
+      "EE",
+      "LV",
+      "LT",
+      "DK"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.7522,
+          59.9139
+        ]
+      },
+      "properties": {
+        "name": "Oslo",
+        "country": "Norway",
+        "iso": "NO",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3221,
+          60.3913
+        ]
+      },
+      "properties": {
+        "name": "Bergen",
+        "country": "Norway",
+        "iso": "NO",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3535,
+          63.0172
+        ]
+      },
+      "properties": {
+        "name": "Atlantic Road",
+        "country": "Norway",
+        "iso": "NO",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.5615,
+          68.2092
+        ]
+      },
+      "properties": {
+        "name": "Lofoten",
+        "country": "Norway",
+        "iso": "NO",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0686,
+          59.3293
+        ]
+      },
+      "properties": {
+        "name": "Stockholm",
+        "country": "Sweden",
+        "iso": "SE",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.9384,
+          60.1699
+        ]
+      },
+      "properties": {
+        "name": "Helsinki",
+        "country": "Finland",
+        "iso": "FI",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7536,
+          59.437
+        ]
+      },
+      "properties": {
+        "name": "Tallinn",
+        "country": "Estonia",
+        "iso": "EE",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.1052,
+          56.9496
+        ]
+      },
+      "properties": {
+        "name": "Riga",
+        "country": "Latvia",
+        "iso": "LV",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.2797,
+          54.6872
+        ]
+      },
+      "properties": {
+        "name": "Vilnius",
+        "country": "Lithuania",
+        "iso": "LT",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5683,
+          55.6761
+        ]
+      },
+      "properties": {
+        "name": "Copenhagen",
+        "country": "Denmark",
+        "iso": "DK",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            10.7522,
+            59.9139
+          ],
+          [
+            5.3221,
+            60.3913
+          ],
+          [
+            7.3535,
+            63.0172
+          ],
+          [
+            14.5615,
+            68.2092
+          ],
+          [
+            18.0686,
+            59.3293
+          ],
+          [
+            24.9384,
+            60.1699
+          ],
+          [
+            24.7536,
+            59.437
+          ],
+          [
+            24.1052,
+            56.9496
+          ],
+          [
+            25.2797,
+            54.6872
+          ],
+          [
+            12.5683,
+            55.6761
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 4115,
+        "stopCount": 10
+      }
+    }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "trip": 1,
+    "totalKm": 8859,
+    "stopCount": 22,
+    "sightCount": 18,
+    "estimatedDrivingDays": 30,
+    "countries": [
+      "AE",
+      "QA",
+      "BH",
+      "OM",
+      "IR",
+      "PK",
+      "IN"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.2708,
+          25.2048
+        ]
+      },
+      "properties": {
+        "name": "Dubai",
+        "country": "UAE",
+        "iso": "AE",
+        "category": "Stop",
+        "order": 1,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.3666,
+          24.4539
+        ]
+      },
+      "properties": {
+        "name": "Abu Dhabi",
+        "country": "UAE",
+        "iso": "AE",
+        "category": "Stop",
+        "order": 2,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.4033,
+          25.3463
+        ]
+      },
+      "properties": {
+        "name": "Sharjah",
+        "country": "UAE",
+        "iso": "AE",
+        "category": "Stop",
+        "order": 3,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.531,
+          25.2854
+        ]
+      },
+      "properties": {
+        "name": "Doha",
+        "country": "Qatar",
+        "iso": "QA",
+        "category": "Stop",
+        "order": 4,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          50.5832,
+          26.2285
+        ]
+      },
+      "properties": {
+        "name": "Manama",
+        "country": "Bahrain",
+        "iso": "BH",
+        "category": "Stop",
+        "order": 5,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          57.5311,
+          22.9333
+        ]
+      },
+      "properties": {
+        "name": "Nizwa",
+        "country": "Oman",
+        "iso": "OM",
+        "category": "Stop",
+        "order": 6,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          58.4059,
+          23.588
+        ]
+      },
+      "properties": {
+        "name": "Muscat",
+        "country": "Oman",
+        "iso": "OM",
+        "category": "Stop",
+        "order": 7,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          56.2808,
+          27.1865
+        ]
+      },
+      "properties": {
+        "name": "Bandar Abbas",
+        "country": "Iran",
+        "iso": "IR",
+        "category": "Stop",
+        "order": 8,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          52.5311,
+          29.5918
+        ]
+      },
+      "properties": {
+        "name": "Shiraz",
+        "country": "Iran",
+        "iso": "IR",
+        "category": "Stop",
+        "order": 9,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.3675,
+          31.8974
+        ]
+      },
+      "properties": {
+        "name": "Yazd",
+        "country": "Iran",
+        "iso": "IR",
+        "category": "Stop",
+        "order": 10,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.668,
+          32.6546
+        ]
+      },
+      "properties": {
+        "name": "Isfahan",
+        "country": "Iran",
+        "iso": "IR",
+        "category": "Stop",
+        "order": 11,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          51.389,
+          35.6892
+        ]
+      },
+      "properties": {
+        "name": "Tehran",
+        "country": "Iran",
+        "iso": "IR",
+        "category": "Stop",
+        "order": 12,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.2919,
+          38.08
+        ]
+      },
+      "properties": {
+        "name": "Tabriz",
+        "country": "Iran",
+        "iso": "IR",
+        "category": "Stop",
+        "order": 13,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          67.0011,
+          30.1798
+        ]
+      },
+      "properties": {
+        "name": "Quetta",
+        "country": "Pakistan",
+        "iso": "PK",
+        "category": "Stop",
+        "order": 14,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0479,
+          33.6844
+        ]
+      },
+      "properties": {
+        "name": "Islamabad",
+        "country": "Pakistan",
+        "iso": "PK",
+        "category": "Stop",
+        "order": 15,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.6597,
+          36.3167
+        ]
+      },
+      "properties": {
+        "name": "Hunza",
+        "country": "Pakistan",
+        "iso": "PK",
+        "category": "Stop",
+        "order": 16,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.3587,
+          31.5204
+        ]
+      },
+      "properties": {
+        "name": "Lahore",
+        "country": "Pakistan",
+        "iso": "PK",
+        "category": "Stop",
+        "order": 17,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.8723,
+          31.634
+        ]
+      },
+      "properties": {
+        "name": "Amritsar",
+        "country": "India",
+        "iso": "IN",
+        "category": "Stop",
+        "order": 18,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.1025,
+          28.7041
+        ]
+      },
+      "properties": {
+        "name": "Delhi",
+        "country": "India",
+        "iso": "IN",
+        "category": "Stop",
+        "order": 19,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.7873,
+          26.9124
+        ]
+      },
+      "properties": {
+        "name": "Jaipur",
+        "country": "India",
+        "iso": "IN",
+        "category": "Stop",
+        "order": 20,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.0243,
+          26.2389
+        ]
+      },
+      "properties": {
+        "name": "Jodhpur",
+        "country": "India",
+        "iso": "IN",
+        "category": "Stop",
+        "order": 21,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7125,
+          24.5854
+        ]
+      },
+      "properties": {
+        "name": "Udaipur",
+        "country": "India",
+        "iso": "IN",
+        "category": "Stop",
+        "order": 22,
+        "type": "route-stop"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            55.2708,
+            25.2048
+          ],
+          [
+            54.3666,
+            24.4539
+          ],
+          [
+            55.4033,
+            25.3463
+          ],
+          [
+            51.531,
+            25.2854
+          ],
+          [
+            50.5832,
+            26.2285
+          ],
+          [
+            57.5311,
+            22.9333
+          ],
+          [
+            58.4059,
+            23.588
+          ],
+          [
+            56.2808,
+            27.1865
+          ],
+          [
+            52.5311,
+            29.5918
+          ],
+          [
+            54.3675,
+            31.8974
+          ],
+          [
+            51.668,
+            32.6546
+          ],
+          [
+            51.389,
+            35.6892
+          ],
+          [
+            46.2919,
+            38.08
+          ],
+          [
+            67.0011,
+            30.1798
+          ],
+          [
+            73.0479,
+            33.6844
+          ],
+          [
+            74.6597,
+            36.3167
+          ],
+          [
+            74.3587,
+            31.5204
+          ],
+          [
+            74.8723,
+            31.634
+          ],
+          [
+            77.1025,
+            28.7041
+          ],
+          [
+            75.7873,
+            26.9124
+          ],
+          [
+            73.0243,
+            26.2389
+          ],
+          [
+            73.7125,
+            24.5854
+          ]
+        ]
+      },
+      "properties": {
+        "type": "route",
+        "totalKm": 8859,
+        "stopCount": 22
+      }
+    }
+  ]
+}
