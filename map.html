@@ -25,16 +25,16 @@
         #info p { margin: 5px 0; color: #666; }
         #route-info {
             position: absolute;
-            bottom: 20px;
-            left: 10px;
             background: #fff;
             border-radius: 12px;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             font-size: 14px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.25);
             display: none;
-            width: 340px;
+            width: 320px;
             overflow: hidden;
+            z-index: 10;
+            pointer-events: auto;
         }
         #route-photo-container {
             position: relative;
@@ -107,14 +107,15 @@
         #route-close:hover { background: rgba(0,0,0,0.7); }
         .legend {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            bottom: 30px;
+            left: 10px;
             background: rgba(255,255,255,0.95);
             padding: 12px 16px;
             border-radius: 8px;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             font-size: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1;
         }
         .legend h4 { margin: 0 0 8px 0; font-size: 13px; }
         .legend-item { display: flex; align-items: center; margin: 4px 0; }
@@ -125,8 +126,11 @@
 <div id="map"></div>
 <div id="info">
     <h2>A Grand Tour</h2>
-    <p>119 scenic routes + 446 POIs</p>
-    <p>Click for details</p>
+    <p style="margin-bottom: 10px; color: #333; font-style: italic;">One Family. One Land Cruiser. 100 Countries.</p>
+    <p><strong>2027–2044</strong> · 17 years</p>
+    <p><strong>210,000 km</strong> · 6 continents</p>
+    <p><strong>21 trips</strong> · Dubai → East → Americas → West → Dubai</p>
+    <p style="margin-top: 10px; font-size: 11px; color: #888;">Click routes, POIs, ferries, or shipping for details</p>
 </div>
 <div id="route-info">
     <button id="route-close">×</button>
@@ -437,6 +441,30 @@ map.on('load', async () => {
     const routeRating = document.getElementById('route-rating');
     const routePhoto = document.getElementById('route-photo');
     const routeDescription = document.getElementById('route-description');
+
+    // Position popup near click point
+    function positionPopup(e) {
+        const mapContainer = document.getElementById('map');
+        const rect = mapContainer.getBoundingClientRect();
+        const popupWidth = 320;
+        const popupHeight = routeInfo.offsetHeight || 300;
+
+        let left = e.point.x + 15;
+        let top = e.point.y - 15;
+
+        // Keep popup within viewport
+        if (left + popupWidth > rect.width - 10) {
+            left = e.point.x - popupWidth - 15;
+        }
+        if (top + popupHeight > rect.height - 10) {
+            top = rect.height - popupHeight - 10;
+        }
+        if (top < 10) top = 10;
+        if (left < 10) left = 10;
+
+        routeInfo.style.left = left + 'px';
+        routeInfo.style.top = top + 'px';
+    }
     const routeClose = document.getElementById('route-close');
     const carouselPrev = document.getElementById('carousel-prev');
     const carouselNext = document.getElementById('carousel-next');
@@ -533,6 +561,7 @@ map.on('load', async () => {
         document.getElementById('route-photo-container').style.display = 'block';
 
         routeInfo.style.display = 'block';
+        positionPopup(e);
     });
 
     // POI click handler
@@ -556,6 +585,7 @@ map.on('load', async () => {
         document.getElementById('route-photo-container').style.display = 'block';
 
         routeInfo.style.display = 'block';
+        positionPopup(e);
     });
 
     // POI hover cursor
@@ -588,6 +618,7 @@ map.on('load', async () => {
         document.getElementById('route-photo-container').style.display = 'none';
 
         routeInfo.style.display = 'block';
+        positionPopup(e);
     });
 
     map.on('mouseenter', 'ferries-line', () => {
@@ -618,6 +649,7 @@ map.on('load', async () => {
         document.getElementById('route-photo-container').style.display = 'none';
 
         routeInfo.style.display = 'block';
+        positionPopup(e);
     });
 
     map.on('mouseenter', 'shipping-line', () => {
