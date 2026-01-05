@@ -88,7 +88,10 @@ const waypointsPart2 = [
   { name: "Alleppey (Kerala Backwaters)", coords: [76.3388, 9.4981] },
   // Back up east coast
   { name: "Madurai (Meenakshi Temple)", coords: [78.1198, 9.9252] },
+  { name: "Pondicherry", coords: [79.8083, 11.9416] },
   { name: "Chennai", coords: [80.2707, 13.0827] },
+  { name: "Nellore", coords: [79.9865, 14.4426] },
+  { name: "Vijayawada", coords: [80.6480, 16.5062] },
   { name: "Visakhapatnam", coords: [83.2185, 17.6868] },
   { name: "Kolkata", coords: [88.3639, 22.5726] },
   { name: "Varanasi", coords: [82.9913, 25.3176] },
