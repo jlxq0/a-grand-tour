@@ -455,6 +455,19 @@ map.on('load', async () => {
                 }
             }, 'scenic-routes-highlight');
 
+            // Segment highlight layer (shown on hover)
+            map.addLayer({
+                id: 'planned-route-segment-highlight',
+                type: 'line',
+                source: 'planned-route',
+                filter: ['==', ['get', 'segmentIndex'], -1], // Initially hidden
+                paint: {
+                    'line-color': '#1a5276',
+                    'line-width': 7,
+                    'line-opacity': 1
+                }
+            }, 'scenic-routes-highlight');
+
             // Invisible wider line for segment hover detection
             map.addLayer({
                 id: 'planned-route-segments-hover',
@@ -463,7 +476,7 @@ map.on('load', async () => {
                 filter: ['!=', ['get', 'type'], 'summary'],
                 paint: {
                     'line-color': 'transparent',
-                    'line-width': 15
+                    'line-width': 20
                 }
             }, 'planned-route-line');
 
@@ -476,8 +489,16 @@ map.on('load', async () => {
             map.on('mousemove', 'planned-route-segments-hover', (e) => {
                 if (e.features.length > 0) {
                     const props = e.features[0].properties;
-                    if (props.distanceKm) {
+                    if (props.distanceKm !== undefined) {
                         map.getCanvas().style.cursor = 'pointer';
+
+                        // Highlight this segment
+                        map.setFilter('planned-route-segment-highlight', [
+                            'all',
+                            ['==', ['get', 'part'], props.part],
+                            ['==', ['get', 'segmentIndex'], props.segmentIndex]
+                        ]);
+
                         segmentTooltip.innerHTML = `<strong>${props.label || props.from + ' → ' + props.to}</strong><br>${props.distanceKm} km · ${props.durationHrs} hrs`;
                         segmentTooltip.style.display = 'block';
                         segmentTooltip.style.left = (e.point.x + 15) + 'px';
@@ -489,6 +510,8 @@ map.on('load', async () => {
             map.on('mouseleave', 'planned-route-segments-hover', () => {
                 map.getCanvas().style.cursor = '';
                 segmentTooltip.style.display = 'none';
+                // Hide highlight
+                map.setFilter('planned-route-segment-highlight', ['==', ['get', 'segmentIndex'], -1]);
             });
         });
 
