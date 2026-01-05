@@ -92,8 +92,8 @@ Khunjerab Pass → [return] → India via Wagah → Amritsar → Manali-Leh → 
 2. Ahvaz → Kermanshah → Tehran (Golestan Palace)
 3. Isfahan (Naqsh-e Jahan Square) → Yazd Old Town
 4. Shiraz (Nasir al-Mulk Mosque) → Persepolis
-5. Bandar Abbas (ship car)
-6. Optional: Ferry to Hormuz Island (Rainbow Valley) - day trip
+5. Bandar Abbas → deliver car to port for shipping
+6. Hormuz Island day trip (Rainbow Valley) while car loads onto ship
 
 ---
 
@@ -174,11 +174,12 @@ The world's highest paved international road. Out-and-back trip from Islamabad (
 
 ## Ferries
 
-### Hormuz Island (Optional Day Trip)
+### Hormuz Island (Day Trip While Car Ships)
 - **From:** Bandar Abbas
 - **Duration:** 20 minutes each way
-- **Highlight:** Rainbow Valley (colorful geological formations)
-- **Note:** Leave car in Bandar Abbas, take ferry as foot passengers
+- **Highlight:** Rainbow Valley (70+ mineral colors), Red Beach, Salt Goddess Cave
+- **Timing:** Visit while car is being loaded onto ship to Karachi (1-2 days)
+- **Note:** Leave car at port, take passenger ferry, explore by tuk-tuk
 
 ---
 
