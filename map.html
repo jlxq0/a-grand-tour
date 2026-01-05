@@ -470,6 +470,7 @@ map.on('load', async () => {
     // Carousel state
     let currentRouteId = null;
     let currentPoiId = null; // {countryCode, safeName}
+    let currentCustomImage = null; // for ferries/shipping
     let currentImageIndex = 0;
     let totalImages = 5;
 
@@ -482,9 +483,11 @@ map.on('load', async () => {
 
     function updateCarousel() {
         let imagePath;
-        if (currentPoiId) {
+        if (currentCustomImage) {
+            imagePath = currentCustomImage;
+        } else if (currentPoiId) {
             imagePath = `data/pois/images/${currentPoiId.countryCode}/${currentPoiId.safeName}-${currentImageIndex + 1}.webp`;
-        } else {
+        } else if (currentRouteId) {
             imagePath = `data/scenic-routes/images/${currentRouteId}/${currentImageIndex + 1}.webp`;
         }
         routePhoto.src = imagePath;
@@ -493,6 +496,12 @@ map.on('load', async () => {
         dots.forEach((dot, i) => {
             dot.classList.toggle('active', i === currentImageIndex);
         });
+    }
+
+    function showCarouselControls(show) {
+        carouselPrev.style.display = show ? 'flex' : 'none';
+        carouselNext.style.display = show ? 'flex' : 'none';
+        carouselDots.style.display = show ? 'flex' : 'none';
     }
 
     function createDots(count) {
@@ -548,12 +557,14 @@ map.on('load', async () => {
         routeRating.textContent = '★'.repeat(props.rating);
         routeDescription.textContent = props.description || '';
 
-        // Setup carousel for routes (with images)
+        // Setup carousel for routes (with images and pagination)
         currentPoiId = null;
+        currentCustomImage = null;
         currentRouteId = props.routeId;
         currentImageIndex = 0;
         totalImages = 5;
         createDots(totalImages);
+        showCarouselControls(true);
         updateCarousel();
         document.getElementById('route-photo-container').style.display = 'block';
 
@@ -569,15 +580,16 @@ map.on('load', async () => {
         routeRating.textContent = '★'.repeat(props.rating);
         routeDescription.textContent = props.description || '';
 
-        // Setup carousel for POI images
+        // Single image for POIs (no pagination)
         currentRouteId = null;
+        currentCustomImage = null;
         currentPoiId = {
             countryCode: props.countryCode.toLowerCase(),
             safeName: sanitizeFilename(props.name)
         };
         currentImageIndex = 0;
-        totalImages = 2; // POIs have 2 images each
-        createDots(totalImages);
+        totalImages = 1;
+        showCarouselControls(false);
         updateCarousel();
         document.getElementById('route-photo-container').style.display = 'block';
 
@@ -609,10 +621,16 @@ map.on('load', async () => {
         if (props.notes) desc.push(props.notes);
         routeDescription.textContent = desc.join(' • ') || '';
 
-        // No images for ferries
+        // Show ferry image (single, no pagination)
         currentRouteId = null;
         currentPoiId = null;
-        document.getElementById('route-photo-container').style.display = 'none';
+        const ferryId = sanitizeFilename(props.name);
+        currentCustomImage = `data/ferries/images/${ferryId}.webp`;
+        currentImageIndex = 0;
+        totalImages = 1;
+        showCarouselControls(false);
+        updateCarousel();
+        document.getElementById('route-photo-container').style.display = 'block';
 
         routeInfo.style.display = 'block';
         positionPopup(e);
@@ -640,10 +658,16 @@ map.on('load', async () => {
         if (props.notes) desc.push(props.notes);
         routeDescription.textContent = desc.join(' • ') || '';
 
-        // No images for shipping
+        // Show shipping image (single, no pagination)
         currentRouteId = null;
         currentPoiId = null;
-        document.getElementById('route-photo-container').style.display = 'none';
+        const shippingId = sanitizeFilename(props.name || 'cargo-ship');
+        currentCustomImage = `data/shipping/images/${shippingId}.webp`;
+        currentImageIndex = 0;
+        totalImages = 1;
+        showCarouselControls(false);
+        updateCarousel();
+        document.getElementById('route-photo-container').style.display = 'block';
 
         routeInfo.style.display = 'block';
         positionPopup(e);
