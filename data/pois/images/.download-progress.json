@@ -545,11 +545,32 @@
     "vn:Ha Long Bay": 2,
     "vn:Phong Nha Caves": 2,
     "vn:Ninh Binh (Tam Coc)": 2,
-    "vn:Mekong Delta": 2
+    "vn:Mekong Delta": 2,
+    "vn:Hoi An Ancient Town": 2,
+    "vn:Imperial City of Hue": 2,
+    "vn:Sapa Rice Terraces": 2,
+    "vn:Golden Bridge (Da Nang)": 2,
+    "vn:Cu Chi Tunnels": 2,
+    "xk:Prizren Old Town": 2,
+    "xk:Rugova Canyon": 2,
+    "za:Table Mountain": 2,
+    "za:Cape of Good Hope": 2,
+    "za:Kruger National Park": 2,
+    "za:Blyde River Canyon": 2,
+    "za:Drakensberg Mountains": 2,
+    "za:Chapman's Peak Drive": 2,
+    "zm:Victoria Falls (Zambia side)": 2,
+    "zm:Lower Zambezi National Park": 2,
+    "zm:South Luangwa": 2,
+    "zm:Kafue National Park": 2,
+    "zw:Victoria Falls": 2,
+    "zw:Great Zimbabwe Ruins": 2,
+    "zw:Hwange National Park": 2,
+    "zw:Mana Pools": 2
   },
   "failed": {
     "ao:Tundavala Fissure": "no images",
     "lv:Riga Art Nouveau District": "no images"
   },
-  "lastCountry": "uy"
+  "lastCountry": "zm"
 }

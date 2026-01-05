@@ -247,12 +247,9 @@ map.on('load', async () => {
         source: 'countries',
         'source-layer': 'country_boundaries',
         filter: [
-            'all',
-            ['==', ['get', 'disputed'], 'false'],
-            ['any',
-                ['==', 'all', ['get', 'worldview']],
-                ['in', 'US', ['get', 'worldview']]
-            ]
+            'any',
+            ['==', 'all', ['get', 'worldview']],
+            ['in', 'US', ['get', 'worldview']]
         ],
         paint: {
             'fill-color': [
