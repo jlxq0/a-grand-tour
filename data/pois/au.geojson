@@ -1,0 +1,389 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Great Barrier Reef",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's largest coral reef system stretching 2,300km with 1,500 fish species (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [147.7000, -18.2861] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uluru (Ayers Rock)",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "Sacred 348m sandstone monolith with spectacular color changes at sunrise and sunset (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [131.0369, -25.3444] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kata Tjuta (The Olgas)",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "32 ochre-colored domes in the red desert with deep spiritual significance to the Anangu people"
+      },
+      "geometry": { "type": "Point", "coordinates": [130.7389, -25.3056] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "K'gari (Fraser Island)",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's largest sand island with perched freshwater lakes and rainforest growing on sand (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [153.0833, -25.2333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kakadu National Park",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "Australia's largest national park with waterfalls, billabongs, and 20,000-year-old Aboriginal rock art"
+      },
+      "geometry": { "type": "Point", "coordinates": [132.9167, -13.0000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Daintree Rainforest",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's oldest tropical rainforest at 135 million years, home to crocodiles and cassowaries"
+      },
+      "geometry": { "type": "Point", "coordinates": [145.4000, -16.3000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ningaloo Reef",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's largest fringing reef accessible from shore, famous for whale shark encounters (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [113.8167, -22.6333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bungle Bungle Range (Purnululu)",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "Spectacular beehive-shaped orange and black striped karst sandstone formations (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [128.4000, -17.5333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tasmanian Wilderness",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "Ancient temperate rainforests covering 20% of Tasmania with unique wildlife (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [145.8333, -42.5833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sydney Opera House",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Iconic 20th-century architectural masterpiece with distinctive sail-shaped roof (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [151.2153, -33.8568] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blue Mountains - Three Sisters",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Iconic rock formation rising 920m above Jamison Valley with eucalyptus blue haze"
+      },
+      "geometry": { "type": "Point", "coordinates": [150.3121, -33.7317] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Twelve Apostles",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Collection of limestone stacks rising 50m from the Southern Ocean along the Great Ocean Road"
+      },
+      "geometry": { "type": "Point", "coordinates": [143.1050, -38.6656] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Hillier",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Stunning bubblegum-pink lake on Middle Island framed by green forest and blue ocean"
+      },
+      "geometry": { "type": "Point", "coordinates": [123.2033, -34.0944] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karijini National Park",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Ancient red gorges with turquoise swimming holes and waterfalls in Western Australia's outback"
+      },
+      "geometry": { "type": "Point", "coordinates": [118.5000, -22.6667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Freycinet National Park (Wineglass Bay)",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Pink granite peaks and pristine white-sand Wineglass Bay, one of Australia's best beaches"
+      },
+      "geometry": { "type": "Point", "coordinates": [148.2500, -42.1667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pinnacles Desert",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Thousands of limestone pillars up to 3.5m tall rising from yellow sand in Nambung National Park"
+      },
+      "geometry": { "type": "Point", "coordinates": [115.1667, -30.6000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jim Jim Falls",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "200m waterfall plunging into a pool surrounded by 150m cliffs in Kakadu (seasonal)"
+      },
+      "geometry": { "type": "Point", "coordinates": [132.8292, -13.3089] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wallaman Falls",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Australia's tallest single-drop waterfall at 268m in the Wet Tropics World Heritage Area"
+      },
+      "geometry": { "type": "Point", "coordinates": [145.7833, -18.5833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Whitsunday Islands",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "74 subtropical islands scattered in the Great Barrier Reef with pristine beaches"
+      },
+      "geometry": { "type": "Point", "coordinates": [148.9333, -20.1667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sydney Harbour Bridge",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Iconic steel arch bridge offering 360-degree views from the 134m-high BridgeClimb"
+      },
+      "geometry": { "type": "Point", "coordinates": [151.2108, -33.8523] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wave Rock",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 3,
+        "description": "100m long, 15m high undulating granite formation shaped like a breaking wave"
+      },
+      "geometry": { "type": "Point", "coordinates": [118.8972, -32.4417] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Remarkable Rocks",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 3,
+        "description": "Giant granite boulders carved by wind into sculptural forms on Kangaroo Island"
+      },
+      "geometry": { "type": "Point", "coordinates": [136.7500, -36.0500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grampians (Gariwerd)",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 3,
+        "description": "Sandstone peaks with wildflowers and largest collection of Indigenous rock art in SE Australia"
+      },
+      "geometry": { "type": "Point", "coordinates": [142.4667, -37.2500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bondi Icebergs Pool",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "landmark",
+        "rating": 3,
+        "description": "Famous ocean pool from 1929 set against crashing waves and expansive ocean backdrop"
+      },
+      "geometry": { "type": "Point", "coordinates": [151.2739, -33.8939] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape Byron",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "extreme",
+        "rating": 3,
+        "description": "Easternmost point of mainland Australia at 153°38'E with lighthouse and whale watching"
+      },
+      "geometry": { "type": "Point", "coordinates": [153.6389, -28.6381] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steep Point",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "extreme",
+        "rating": 3,
+        "description": "Westernmost point of mainland Australia in Shark Bay World Heritage Area"
+      },
+      "geometry": { "type": "Point", "coordinates": [113.1583, -26.1500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape York",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "extreme",
+        "rating": 3,
+        "description": "Northernmost tip of mainland Australia, remote wilderness accessible by 4WD"
+      },
+      "geometry": { "type": "Point", "coordinates": [142.5319, -10.6917] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South East Cape (Tasmania)",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "extreme",
+        "rating": 2,
+        "description": "Southernmost point of Australia with rugged wilderness coastline"
+      },
+      "geometry": { "type": "Point", "coordinates": [146.8206, -43.6381] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lord Howe Island",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 5,
+        "description": "UNESCO volcanic island with world's southernmost coral reef"
+      },
+      "geometry": { "type": "Point", "coordinates": [159.083, -31.550] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cradle Mountain",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Iconic 1,545m peak in Tasmania's wilderness with glacial lakes"
+      },
+      "geometry": { "type": "Point", "coordinates": [145.951, -41.684] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horizontal Falls",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Spectacular tidal phenomenon with \"horizontal waterfalls\""
+      },
+      "geometry": { "type": "Point", "coordinates": [123.955, -16.377] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kangaroo Island",
+        "country": "Australia",
+        "countryCode": "AU",
+        "category": "natural",
+        "rating": 4,
+        "description": "Australia's third-largest island with diverse wildlife"
+      },
+      "geometry": { "type": "Point", "coordinates": [137.200, -35.800] }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guiana Space Centre (Kourou)",
+        "country": "French Guiana",
+        "countryCode": "GF",
+        "category": "landmark",
+        "rating": 3,
+        "description": "European spaceport in tropical jungle setting with rocket launch viewing"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.7683, 5.2322] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iles du Salut (Devil's Island)",
+        "country": "French Guiana",
+        "countryCode": "GF",
+        "category": "landmark",
+        "rating": 3,
+        "description": "Former French penal colony turned historical site with prison ruins and wildlife"
+      },
+      "geometry": { "type": "Point", "coordinates": [-52.5833, 5.2833] }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chemin de la Corniche",
+        "country": "Luxembourg",
+        "countryCode": "LU",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Most beautiful balcony of Europe - scenic promenade along 17th-century ramparts"
+      },
+      "geometry": { "type": "Point", "coordinates": [6.1347, 49.6102] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vianden Castle",
+        "country": "Luxembourg",
+        "countryCode": "LU",
+        "category": "landmark",
+        "rating": 3,
+        "description": "One of Europe's most important Romanesque castles dating to 11th-14th century"
+      },
+      "geometry": { "type": "Point", "coordinates": [6.2028, 49.9350] }
+    }
+  ]
+}

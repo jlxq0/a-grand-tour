@@ -1,0 +1,137 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Isle of Skye - Quiraing",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "natural",
+        "rating": 5,
+        "description": "Dramatic otherworldly landscape of rolling green valleys, pinnacles, and sheer cliff drop-offs in Scotland"
+      },
+      "geometry": { "type": "Point", "coordinates": [-6.2614, 57.6439] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glencoe",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "natural",
+        "rating": 5,
+        "description": "Scotland's most famous glen with dramatic mountain scenery and atmospheric beauty"
+      },
+      "geometry": { "type": "Point", "coordinates": [-4.9833, 56.6833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Isle of Skye - Neist Point",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Scotland's westernmost point on Skye with iconic lighthouse and spectacular ocean vistas"
+      },
+      "geometry": { "type": "Point", "coordinates": [-6.7882, 57.4232] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eilean Donan Castle",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Probably Scotland's most photographed castle, dramatically sited where three lochs meet"
+      },
+      "geometry": { "type": "Point", "coordinates": [-5.5160, 57.2740] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Loch Ness & Urquhart Castle",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "natural",
+        "rating": 4,
+        "description": "Iconic Scottish loch with atmospheric castle ruins overlooking the water"
+      },
+      "geometry": { "type": "Point", "coordinates": [-4.4420, 57.3240] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Edinburgh Castle",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Iconic fortress dominating Edinburgh's skyline from its volcanic rock perch"
+      },
+      "geometry": { "type": "Point", "coordinates": [-3.2000, 55.9486] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stonehenge",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Prehistoric 5,000-year-old stone circle, one of world's most famous landmarks (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [-1.8262, 51.1789] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giant's Causeway",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "natural",
+        "rating": 5,
+        "description": "40,000 interlocking hexagonal basalt columns on Northern Ireland's coast (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [-6.5117, 55.2408] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "White Cliffs of Dover",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "natural",
+        "rating": 4,
+        "description": "Iconic 107m chalk cliffs visible from France, symbol of Britain"
+      },
+      "geometry": { "type": "Point", "coordinates": [1.3575, 51.1310] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tower Bridge",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "landmark",
+        "rating": 4,
+        "description": "London's iconic Victorian bascule bridge with glass walkway views"
+      },
+      "geometry": { "type": "Point", "coordinates": [-0.0754, 51.5055] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Big Ben & Houses of Parliament",
+        "country": "United Kingdom",
+        "countryCode": "GB",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Gothic Revival masterpiece with world's most famous clock tower (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [-0.1246, 51.5007] }
+    }
+  ]
+}

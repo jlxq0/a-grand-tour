@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Goree Island",
+        "country": "Senegal",
+        "countryCode": "SN",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO site and former slave trading post off the coast of Dakar"
+      },
+      "geometry": { "type": "Point", "coordinates": [-17.3978, 14.6669] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pink Lake (Lac Rose)",
+        "country": "Senegal",
+        "countryCode": "SN",
+        "category": "natural",
+        "rating": 3,
+        "description": "Bubblegum-pink salt lake caused by algae, former Dakar Rally finish line"
+      },
+      "geometry": { "type": "Point", "coordinates": [-17.2333, 14.8333] }
+    }
+  ]
+}

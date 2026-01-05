@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tikal",
+        "country": "Guatemala",
+        "countryCode": "GT",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Mayan 'New York' with towering pyramids rising above jungle canopy, UNESCO World Heritage"
+      },
+      "geometry": { "type": "Point", "coordinates": [-89.6234, 17.2220] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Atitlan",
+        "country": "Guatemala",
+        "countryCode": "GT",
+        "category": "natural",
+        "rating": 5,
+        "description": "Volcanic lake surrounded by three volcanoes and traditional Mayan villages"
+      },
+      "geometry": { "type": "Point", "coordinates": [-91.2000, 14.7000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Antigua",
+        "country": "Guatemala",
+        "countryCode": "GT",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO colonial city with cobblestone streets, pastel buildings, and volcanic backdrop"
+      },
+      "geometry": { "type": "Point", "coordinates": [-90.7291, 14.5586] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Semuc Champey",
+        "country": "Guatemala",
+        "countryCode": "GT",
+        "category": "natural",
+        "rating": 4,
+        "description": "Hidden turquoise limestone pools deep in the jungle with waterfalls and caves"
+      },
+      "geometry": { "type": "Point", "coordinates": [-89.9500, 15.5333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Acatenango Volcano",
+        "country": "Guatemala",
+        "countryCode": "GT",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Third-highest volcano in Central America with views of erupting Fuego volcano"
+      },
+      "geometry": { "type": "Point", "coordinates": [-90.8758, 14.5006] }
+    }
+  ]
+}

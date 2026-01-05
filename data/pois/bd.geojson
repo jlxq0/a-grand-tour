@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sundarbans",
+        "country": "Bangladesh",
+        "countryCode": "BD",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's largest mangrove forest and UNESCO site, home to the Royal Bengal Tiger"
+      },
+      "geometry": { "type": "Point", "coordinates": [89.1833, 21.9500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cox's Bazar Beach",
+        "country": "Bangladesh",
+        "countryCode": "BD",
+        "category": "natural",
+        "rating": 4,
+        "description": "World's longest unbroken beach stretching 120km along the coast"
+      },
+      "geometry": { "type": "Point", "coordinates": [91.9833, 21.4333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Paharpur Buddhist Vihara",
+        "country": "Bangladesh",
+        "countryCode": "BD",
+        "category": "landmark",
+        "rating": 3,
+        "description": "Largest Buddhist monastery south of the Himalayas, dating to 8th century"
+      },
+      "geometry": { "type": "Point", "coordinates": [88.9761, 25.0308] }
+    }
+  ]
+}

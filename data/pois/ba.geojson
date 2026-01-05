@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stari Most",
+        "country": "Bosnia & Herzegovina",
+        "countryCode": "BA",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Iconic 16th-century Ottoman bridge rebuilt after 1993 destruction"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.8150, 43.3372] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kravice Waterfalls",
+        "country": "Bosnia & Herzegovina",
+        "countryCode": "BA",
+        "category": "natural",
+        "rating": 3,
+        "description": "Beautiful 25m high waterfall with swimming in summer"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.6064, 43.1556] }
+    }
+  ]
+}

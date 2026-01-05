@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Ramelau",
+        "country": "Timor-Leste",
+        "countryCode": "TL",
+        "category": "extreme",
+        "rating": 4,
+        "description": "Country's highest peak at 2,963m with sunrise pilgrimage to Virgin Mary statue"
+      },
+      "geometry": { "type": "Point", "coordinates": [125.5167, -8.8667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jaco Island",
+        "country": "Timor-Leste",
+        "countryCode": "TL",
+        "category": "natural",
+        "rating": 4,
+        "description": "Uninhabited sacred island with pristine white sand and untouched reefs"
+      },
+      "geometry": { "type": "Point", "coordinates": [127.3167, -8.4167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atauro Island",
+        "country": "Timor-Leste",
+        "countryCode": "TL",
+        "category": "natural",
+        "rating": 3,
+        "description": "World's highest reef fish diversity with exceptional diving and snorkeling"
+      },
+      "geometry": { "type": "Point", "coordinates": [125.6000, -8.2500] }
+    }
+  ]
+}

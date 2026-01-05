@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sossusvlei Dunes",
+        "country": "Namibia",
+        "countryCode": "NA",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's tallest red sand dunes rising 300m, with ghostly Deadvlei clay pan"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.2858, -24.7333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fish River Canyon",
+        "country": "Namibia",
+        "countryCode": "NA",
+        "category": "natural",
+        "rating": 5,
+        "description": "Africa's largest and world's second-largest canyon at 160km long"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.5500, -27.5833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skeleton Coast",
+        "country": "Namibia",
+        "countryCode": "NA",
+        "category": "natural",
+        "rating": 4,
+        "description": "Haunting shipwreck-strewn coastline where desert meets the Atlantic"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.0000, -20.0000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Etosha National Park",
+        "country": "Namibia",
+        "countryCode": "NA",
+        "category": "natural",
+        "rating": 4,
+        "description": "Salt pan savannah with prolific wildlife at waterholes"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.0000, -18.8000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Twyfelfontein",
+        "country": "Namibia",
+        "countryCode": "NA",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO site with largest concentration of rock engravings in Africa"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.3728, -20.5925] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spitzkoppe",
+        "country": "Namibia",
+        "countryCode": "NA",
+        "category": "natural",
+        "rating": 4,
+        "description": "\"Matterhorn of Namibia\""
+      },
+      "geometry": { "type": "Point", "coordinates": [15.1833, -21.8333] }
+    }
+  ]
+}

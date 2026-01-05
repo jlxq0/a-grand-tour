@@ -1,0 +1,137 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Torres del Paine",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "natural",
+        "rating": 5,
+        "description": "Patagonia's crown jewel with granite towers, glaciers, and turquoise lakes"
+      },
+      "geometry": { "type": "Point", "coordinates": [-72.9667, -50.9833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atacama Desert",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "natural",
+        "rating": 5,
+        "description": "Driest desert on Earth with moon valleys, geysers, and world's clearest night skies"
+      },
+      "geometry": { "type": "Point", "coordinates": [-69.0833, -23.8667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Easter Island (Rapa Nui)",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Remote Pacific island with mysterious Moai stone statues, UNESCO World Heritage"
+      },
+      "geometry": { "type": "Point", "coordinates": [-109.3497, -27.1127] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Carretera Austral",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "1,200km scenic route through pristine Patagonian wilderness"
+      },
+      "geometry": { "type": "Point", "coordinates": [-72.4167, -43.8667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grey Glacier",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "natural",
+        "rating": 4,
+        "description": "Massive glacier in Torres del Paine with boat access to iceberg-filled lake"
+      },
+      "geometry": { "type": "Point", "coordinates": [-73.2000, -51.0333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marble Caves (Catedral de Marmol)",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "natural",
+        "rating": 4,
+        "description": "Swirling blue marble formations on General Carrera Lake"
+      },
+      "geometry": { "type": "Point", "coordinates": [-72.6167, -46.6500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Pedro de Atacama",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Gateway to Atacama with Valle de la Luna offering Mars-like sunset views"
+      },
+      "geometry": { "type": "Point", "coordinates": [-68.2000, -22.9083] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape Horn",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "extreme",
+        "rating": 3,
+        "description": "Southernmost headland of South America's Tierra del Fuego archipelago"
+      },
+      "geometry": { "type": "Point", "coordinates": [-67.2753, -55.9789] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valparaiso",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO port city with colorful hillside neighborhoods and historic funiculars"
+      },
+      "geometry": { "type": "Point", "coordinates": [-71.6273, -33.0472] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Tatio Geysers",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "natural",
+        "rating": 4,
+        "description": "One of world's largest geyser fields at 4,320m elevation"
+      },
+      "geometry": { "type": "Point", "coordinates": [-68.0128, -22.3353] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chiloe Island",
+        "country": "Chile",
+        "countryCode": "CL",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Magical island with UNESCO wooden churches and palafito stilt houses"
+      },
+      "geometry": { "type": "Point", "coordinates": [-73.9667, -42.6167] }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wieliczka Salt Mine",
+        "country": "Poland",
+        "countryCode": "PL",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Underground cathedral and sculptures carved from salt, UNESCO site"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.0533, 49.9833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krakow Old Town",
+        "country": "Poland",
+        "countryCode": "PL",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Magnificent medieval market square with Wawel Castle"
+      },
+      "geometry": { "type": "Point", "coordinates": [19.9372, 50.0617] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Morskie Oko Lake",
+        "country": "Poland",
+        "countryCode": "PL",
+        "category": "natural",
+        "rating": 4,
+        "description": "Beautiful glacial lake in the Tatra Mountains"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.0711, 49.2014] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Auschwitz-Birkenau Memorial",
+        "country": "Poland",
+        "countryCode": "PL",
+        "category": "landmark",
+        "rating": 5,
+        "description": "World's most significant Holocaust memorial"
+      },
+      "geometry": { "type": "Point", "coordinates": [19.2033, 50.0269] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malbork Castle",
+        "country": "Poland",
+        "countryCode": "PL",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Europe's largest castle, UNESCO Teutonic fortress"
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0283, 54.0397] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Warsaw Old Town",
+        "country": "Poland",
+        "countryCode": "PL",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Remarkably rebuilt UNESCO after WWII"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.0122, 52.2497] }
+    }
+  ]
+}

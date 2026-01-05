@@ -1,0 +1,137 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trolltunga",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "viewpoint",
+        "rating": 5,
+        "description": "Norway's most spectacular viewpoint - rock tongue jutting 700m above fjord"
+      },
+      "geometry": { "type": "Point", "coordinates": [6.7400, 60.1242] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Preikestolen (Pulpit Rock)",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "viewpoint",
+        "rating": 5,
+        "description": "Flat-topped cliff 604m above Lysefjord, Norway's most iconic landmark"
+      },
+      "geometry": { "type": "Point", "coordinates": [6.1869, 58.9864] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Geirangerfjord",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "natural",
+        "rating": 5,
+        "description": "UNESCO fjord with vertical mountainsides and famous waterfalls"
+      },
+      "geometry": { "type": "Point", "coordinates": [7.2058, 62.1008] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nordkapp (North Cape)",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "extreme",
+        "rating": 5,
+        "description": "Europe's northernmost accessible point (71°N) with midnight sun views"
+      },
+      "geometry": { "type": "Point", "coordinates": [25.7833, 71.1725] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lofoten Islands",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "natural",
+        "rating": 5,
+        "description": "Dramatic Arctic archipelago with fishing villages and midnight sun"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.0000, 68.2000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atlantic Road",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Norway's construction of the century - bridges leaping between islands"
+      },
+      "geometry": { "type": "Point", "coordinates": [7.3508, 63.0167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seven Sisters Waterfall",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "natural",
+        "rating": 4,
+        "description": "Seven streams cascading down Geirangerfjord cliffs"
+      },
+      "geometry": { "type": "Point", "coordinates": [7.0833, 62.1167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stegastein Viewpoint",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Modern platform cantilevered 30m over Aurlandsfjord"
+      },
+      "geometry": { "type": "Point", "coordinates": [7.2386, 60.9036] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergen Bryggen",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "landmark",
+        "rating": 5,
+        "description": "UNESCO colorful wooden wharf"
+      },
+      "geometry": { "type": "Point", "coordinates": [5.3231, 60.3972] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flam Railway",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "landmark",
+        "rating": 5,
+        "description": "One of world's most scenic train journeys"
+      },
+      "geometry": { "type": "Point", "coordinates": [7.1133, 60.8628] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trollstigen",
+        "country": "Norway",
+        "countryCode": "NO",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Dramatic mountain road with 11 hairpin bends"
+      },
+      "geometry": { "type": "Point", "coordinates": [7.6700, 62.4567] }
+    }
+  ]
+}

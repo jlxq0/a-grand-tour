@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Persepolis",
+        "country": "Iran",
+        "countryCode": "IR",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Ceremonial capital of the Achaemenid Empire with 2,500-year-old palaces and carvings"
+      },
+      "geometry": { "type": "Point", "coordinates": [52.8892, 29.9347] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Naqsh-e Jahan Square (Isfahan)",
+        "country": "Iran",
+        "countryCode": "IR",
+        "category": "landmark",
+        "rating": 5,
+        "description": "One of the world's largest squares surrounded by Safavid-era masterpieces"
+      },
+      "geometry": { "type": "Point", "coordinates": [51.6778, 32.6569] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nasir al-Mulk Mosque (Shiraz)",
+        "country": "Iran",
+        "countryCode": "IR",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Pink Mosque famous for kaleidoscopic stained glass light displays at sunrise"
+      },
+      "geometry": { "type": "Point", "coordinates": [52.5483, 29.6081] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Golestan Palace",
+        "country": "Iran",
+        "countryCode": "IR",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Tehran's magnificent Qajar-era royal complex UNESCO"
+      },
+      "geometry": { "type": "Point", "coordinates": [51.4214, 35.6836] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yazd Old Town",
+        "country": "Iran",
+        "countryCode": "IR",
+        "category": "landmark",
+        "rating": 5,
+        "description": "UNESCO oldest continuously inhabited cities"
+      },
+      "geometry": { "type": "Point", "coordinates": [54.3544, 31.8974] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hormuz Island Rainbow Valley",
+        "country": "Iran",
+        "countryCode": "IR",
+        "category": "natural",
+        "rating": 4,
+        "description": "Surreal colored mountains"
+      },
+      "geometry": { "type": "Point", "coordinates": [56.4611, 27.0619] }
+    }
+  ]
+}

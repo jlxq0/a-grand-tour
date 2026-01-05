@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Masai Mara",
+        "country": "Kenya",
+        "countryCode": "KE",
+        "category": "natural",
+        "rating": 5,
+        "description": "Endless savannah hosting the Great Migration and Big Five wildlife"
+      },
+      "geometry": { "type": "Point", "coordinates": [35.1167, -1.4000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Kenya",
+        "country": "Kenya",
+        "countryCode": "KE",
+        "category": "extreme",
+        "rating": 4,
+        "description": "Africa's second-highest peak with glaciers straddling the equator"
+      },
+      "geometry": { "type": "Point", "coordinates": [37.3083, -0.1522] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Nakuru",
+        "country": "Kenya",
+        "countryCode": "KE",
+        "category": "natural",
+        "rating": 4,
+        "description": "Pink-rimmed alkaline lake famous for flamingo flocks and rhino sanctuary"
+      },
+      "geometry": { "type": "Point", "coordinates": [36.0833, -0.3500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amboseli National Park",
+        "country": "Kenya",
+        "countryCode": "KE",
+        "category": "natural",
+        "rating": 5,
+        "description": "Premier elephant photography with Kilimanjaro backdrop"
+      },
+      "geometry": { "type": "Point", "coordinates": [37.2606, -2.6527] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Diani Beach",
+        "country": "Kenya",
+        "countryCode": "KE",
+        "category": "natural",
+        "rating": 4,
+        "description": "Award-winning white sand beach"
+      },
+      "geometry": { "type": "Point", "coordinates": [39.5833, -4.3167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samburu National Reserve",
+        "country": "Kenya",
+        "countryCode": "KE",
+        "category": "natural",
+        "rating": 4,
+        "description": "Arid reserve with unique \"Samburu Five\" species"
+      },
+      "geometry": { "type": "Point", "coordinates": [37.5333, 0.6167] }
+    }
+  ]
+}

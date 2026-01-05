@@ -1,0 +1,101 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Petronas Twin Towers",
+        "country": "Malaysia",
+        "countryCode": "MY",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Iconic 452m twin skyscrapers connected by the world's highest two-story bridge"
+      },
+      "geometry": { "type": "Point", "coordinates": [101.7118, 3.1579] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Langkawi Sky Bridge",
+        "country": "Malaysia",
+        "countryCode": "MY",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Curved pedestrian bridge offering panoramic views of the Andaman Sea"
+      },
+      "geometry": { "type": "Point", "coordinates": [99.6633, 6.3725] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "George Town (Penang)",
+        "country": "Malaysia",
+        "countryCode": "MY",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO heritage city famous for street art, temples, and Southeast Asia's best street food"
+      },
+      "geometry": { "type": "Point", "coordinates": [100.3333, 5.4167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cameron Highlands",
+        "country": "Malaysia",
+        "countryCode": "MY",
+        "category": "natural",
+        "rating": 3,
+        "description": "Cool hill station with rolling tea plantations and mossy forests"
+      },
+      "geometry": { "type": "Point", "coordinates": [101.3833, 4.4667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Batu Caves",
+        "country": "Malaysia",
+        "countryCode": "MY",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Limestone cave temples with 42.7m Lord Murugan statue and 272 colorful steps"
+      },
+      "geometry": { "type": "Point", "coordinates": [101.6836, 3.2378] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Kinabalu",
+        "country": "Malaysia",
+        "countryCode": "MY",
+        "category": "natural",
+        "rating": 5,
+        "description": "Southeast Asia's highest peak in Sabah, Borneo with diverse ecosystems"
+      },
+      "geometry": { "type": "Point", "coordinates": [116.5583, 6.0753] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sipadan Island",
+        "country": "Malaysia",
+        "countryCode": "MY",
+        "category": "natural",
+        "rating": 5,
+        "description": "World-renowned diving destination off Sabah with exceptional marine biodiversity"
+      },
+      "geometry": { "type": "Point", "coordinates": [118.6292, 4.1144] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malacca Historic City",
+        "country": "Malaysia",
+        "countryCode": "MY",
+        "category": "landmark",
+        "rating": 5,
+        "description": "UNESCO heritage port city with Portuguese, Dutch, and British colonial influences"
+      },
+      "geometry": { "type": "Point", "coordinates": [102.2511, 2.1896] }
+    }
+  ]
+}

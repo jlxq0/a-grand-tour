@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karakoram Highway",
+        "country": "Pakistan",
+        "countryCode": "PK",
+        "category": "viewpoint",
+        "rating": 5,
+        "description": "Eighth Wonder of the World road crossing the Khunjerab Pass at 4,693m"
+      },
+      "geometry": { "type": "Point", "coordinates": [75.4167, 36.8500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hunza Valley",
+        "country": "Pakistan",
+        "countryCode": "PK",
+        "category": "natural",
+        "rating": 5,
+        "description": "Legendary Shangri-La with snow-capped peaks and the world's highest international border"
+      },
+      "geometry": { "type": "Point", "coordinates": [74.6500, 36.3167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "K2 Base Camp",
+        "country": "Pakistan",
+        "countryCode": "PK",
+        "category": "extreme",
+        "rating": 5,
+        "description": "Trek to the base of the world's second-highest and most dangerous peak"
+      },
+      "geometry": { "type": "Point", "coordinates": [76.5139, 35.8819] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baltit Fort",
+        "country": "Pakistan",
+        "countryCode": "PK",
+        "category": "landmark",
+        "rating": 4,
+        "description": "1000-year-old fortress overlooking Hunza Valley, restored by the Aga Khan Foundation"
+      },
+      "geometry": { "type": "Point", "coordinates": [74.6597, 36.3186] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Attabad Lake",
+        "country": "Pakistan",
+        "countryCode": "PK",
+        "category": "natural",
+        "rating": 4,
+        "description": "Turquoise lake formed by 2010 landslide, now a stunning boat journey destination"
+      },
+      "geometry": { "type": "Point", "coordinates": [74.8500, 36.3333] }
+    }
+  ]
+}

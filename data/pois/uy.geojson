@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colonia del Sacramento",
+        "country": "Uruguay",
+        "countryCode": "UY",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO colonial town with Portuguese-Spanish architecture, ferry from Buenos Aires"
+      },
+      "geometry": { "type": "Point", "coordinates": [-57.8422, -34.4711] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Punta del Este",
+        "country": "Uruguay",
+        "countryCode": "UY",
+        "category": "viewpoint",
+        "rating": 3,
+        "description": "Famous beach resort with Casapueblo sculptural building and sunset ceremony"
+      },
+      "geometry": { "type": "Point", "coordinates": [-54.9500, -34.9667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cabo Polonio",
+        "country": "Uruguay",
+        "countryCode": "UY",
+        "category": "natural",
+        "rating": 3,
+        "description": "Remote coastal village accessible only by 4x4, with sea lion colonies"
+      },
+      "geometry": { "type": "Point", "coordinates": [-53.7917, -34.4167] }
+    }
+  ]
+}

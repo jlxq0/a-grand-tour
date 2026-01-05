@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Copan Ruins",
+        "country": "Honduras",
+        "countryCode": "HN",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO Mayan archaeological site with intricate sculptures and hieroglyphics"
+      },
+      "geometry": { "type": "Point", "coordinates": [-89.1411, 14.8400] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roatan Island",
+        "country": "Honduras",
+        "countryCode": "HN",
+        "category": "natural",
+        "rating": 3,
+        "description": "Bay Island surrounded by world's second-largest barrier reef for diving and snorkeling"
+      },
+      "geometry": { "type": "Point", "coordinates": [-86.4500, 16.3333] }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kaieteur Falls",
+        "country": "Guyana",
+        "countryCode": "GY",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's largest single-drop waterfall (226m), five times higher than Niagara"
+      },
+      "geometry": { "type": "Point", "coordinates": [-59.4814, 5.1756] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iwokrama Rainforest",
+        "country": "Guyana",
+        "countryCode": "GY",
+        "category": "natural",
+        "rating": 3,
+        "description": "Pristine rainforest reserve with canopy walkway and jaguar sightings"
+      },
+      "geometry": { "type": "Point", "coordinates": [-58.6833, 4.6667] }
+    }
+  ]
+}

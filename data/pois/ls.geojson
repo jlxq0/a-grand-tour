@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sani Pass",
+        "country": "Lesotho",
+        "countryCode": "LS",
+        "category": "extreme",
+        "rating": 4,
+        "description": "Hair-raising 4x4 mountain pass to Africa's highest pub at 2,874m"
+      },
+      "geometry": { "type": "Point", "coordinates": [29.2833, -29.5833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tsehlanyane National Park",
+        "country": "Lesotho",
+        "countryCode": "LS",
+        "category": "natural",
+        "rating": 3,
+        "description": "Pristine mountain wilderness with Lesotho's last indigenous forests"
+      },
+      "geometry": { "type": "Point", "coordinates": [28.6167, -29.0833] }
+    }
+  ]
+}

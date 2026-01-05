@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Inland Sea (Khor Al Adaid)",
+        "country": "Qatar",
+        "countryCode": "QA",
+        "category": "natural",
+        "rating": 3,
+        "description": "UNESCO-recognized tidal inlet surrounded by towering sand dunes"
+      },
+      "geometry": { "type": "Point", "coordinates": [51.3333, 24.6500] }
+    }
+  ]
+}

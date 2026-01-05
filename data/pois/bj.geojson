@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Royal Palaces of Abomey",
+        "country": "Benin",
+        "countryCode": "BJ",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO site of 12 palaces from the powerful Dahomey kingdom"
+      },
+      "geometry": { "type": "Point", "coordinates": [1.9833, 7.1833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganvie",
+        "country": "Benin",
+        "countryCode": "BJ",
+        "category": "landmark",
+        "rating": 3,
+        "description": "Venice of Africa - 300-year-old stilt village on Lake Nokoue"
+      },
+      "geometry": { "type": "Point", "coordinates": [2.4167, 6.4667] }
+    }
+  ]
+}

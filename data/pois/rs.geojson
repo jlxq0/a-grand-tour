@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Djerdap Gorge (Iron Gates)",
+        "country": "Serbia",
+        "countryCode": "RS",
+        "category": "natural",
+        "rating": 4,
+        "description": "Danube's dramatic passage through Carpathian Mountains"
+      },
+      "geometry": { "type": "Point", "coordinates": [22.0333, 44.5500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uvac Canyon",
+        "country": "Serbia",
+        "countryCode": "RS",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Spectacular meandering canyon with viewpoint over serpentine river"
+      },
+      "geometry": { "type": "Point", "coordinates": [19.9667, 43.3833] }
+    }
+  ]
+}

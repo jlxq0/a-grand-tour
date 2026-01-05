@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Fuji",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "natural",
+        "rating": 5,
+        "description": "Japan's sacred 3,776m volcanic cone, iconic symbol visible from Tokyo on clear days (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [138.7274, 35.3606] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fushimi Inari Shrine",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "landmark",
+        "rating": 5,
+        "description": "10,000+ vermillion torii gates winding up a mountain in Kyoto's most iconic shrine"
+      },
+      "geometry": { "type": "Point", "coordinates": [135.7727, 34.9671] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kinkaku-ji (Golden Pavilion)",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Stunning gold-leaf covered Zen temple reflected in its mirror pond (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [135.7292, 35.0394] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arashiyama Bamboo Grove",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "natural",
+        "rating": 5,
+        "description": "Towering bamboo forest creating an ethereal green corridor in western Kyoto"
+      },
+      "geometry": { "type": "Point", "coordinates": [135.6722, 35.0170] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chureito Pagoda",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "viewpoint",
+        "rating": 5,
+        "description": "Five-story pagoda with postcard-perfect Mount Fuji views, stunning during cherry blossom season"
+      },
+      "geometry": { "type": "Point", "coordinates": [138.7989, 35.5000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Senso-ji Temple",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Tokyo's oldest temple with iconic Thunder Gate (Kaminarimon) and Nakamise shopping street"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7966, 35.7148] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shibuya Crossing",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "landmark",
+        "rating": 4,
+        "description": "World's busiest pedestrian crossing, icon of Tokyo's electric energy"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7006, 35.6595] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miyajima (Itsukushima Shrine)",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Floating vermillion torii gate in the sea, one of Japan's most sacred sites (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [132.3189, 34.2961] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nara Deer Park",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "natural",
+        "rating": 4,
+        "description": "1,000+ sacred deer roaming freely among ancient temples and shrines"
+      },
+      "geometry": { "type": "Point", "coordinates": [135.8430, 34.6851] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tokyo Skytree",
+        "country": "Japan",
+        "countryCode": "JP",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "World's tallest tower at 634m with panoramic views including Mount Fuji"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.8107, 35.7101] }
+    }
+  ]
+}

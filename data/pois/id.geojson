@@ -1,0 +1,137 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Borobudur Temple",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "landmark",
+        "rating": 5,
+        "description": "World's largest Buddhist temple, 9th-century step pyramid with 504 Buddha statues"
+      },
+      "geometry": { "type": "Point", "coordinates": [110.2036, -7.6079] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Komodo National Park",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "natural",
+        "rating": 5,
+        "description": "UNESCO site with prehistoric Komodo dragons and world-class diving"
+      },
+      "geometry": { "type": "Point", "coordinates": [119.5167, -8.5500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Bromo",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "viewpoint",
+        "rating": 5,
+        "description": "Active volcano crater in a sea of volcanic sand, spectacular at sunrise"
+      },
+      "geometry": { "type": "Point", "coordinates": [112.9500, -7.9425] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Raja Ampat Islands",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "natural",
+        "rating": 5,
+        "description": "Most biodiverse marine ecosystem on Earth with pristine coral reefs"
+      },
+      "geometry": { "type": "Point", "coordinates": [130.5167, -0.5333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prambanan Temple",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "landmark",
+        "rating": 4,
+        "description": "9th-century Hindu temple complex with towering spires near Yogyakarta"
+      },
+      "geometry": { "type": "Point", "coordinates": [110.4914, -7.7520] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tegallalang Rice Terraces",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Iconic Balinese stepped rice paddies using traditional subak irrigation"
+      },
+      "geometry": { "type": "Point", "coordinates": [115.2792, -8.4317] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tanah Lot Temple",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Sea temple perched on offshore rock formation, famous for sunset views"
+      },
+      "geometry": { "type": "Point", "coordinates": [115.0867, -8.6211] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kelimutu Crater Lakes",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "natural",
+        "rating": 5,
+        "description": "Three volcanic crater lakes displaying different colors on the same peak in Flores"
+      },
+      "geometry": { "type": "Point", "coordinates": [121.8167, -8.7667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Toba",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's largest volcanic lake in Sumatra with Samosir Island and Batak culture"
+      },
+      "geometry": { "type": "Point", "coordinates": [98.8500, 2.6167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uluwatu Temple",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Dramatic clifftop Hindu temple in Bali with ocean views and Kecak fire dance"
+      },
+      "geometry": { "type": "Point", "coordinates": [115.0847, -8.8292] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nusa Penida (Kelingking Beach)",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "natural",
+        "rating": 4,
+        "description": "Dramatic island near Bali with T-Rex cliff formation and pristine diving"
+      },
+      "geometry": { "type": "Point", "coordinates": [115.5500, -8.7333] }
+    }
+  ]
+}

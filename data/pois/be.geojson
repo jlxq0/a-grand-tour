@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grand-Place",
+        "country": "Belgium",
+        "countryCode": "BE",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Ornate Gothic and Baroque square, one of Europe's most beautiful"
+      },
+      "geometry": { "type": "Point", "coordinates": [4.3525, 50.8467] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bruges Historic Center",
+        "country": "Belgium",
+        "countryCode": "BE",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Medieval fairytale town with canals, bridges, and cobblestone streets"
+      },
+      "geometry": { "type": "Point", "coordinates": [3.2247, 51.2093] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Atomium",
+        "country": "Belgium",
+        "countryCode": "BE",
+        "category": "landmark",
+        "rating": 3,
+        "description": "Iconic modernist structure representing an iron crystal magnified 165 billion times"
+      },
+      "geometry": { "type": "Point", "coordinates": [4.3419, 50.8947] }
+    }
+  ]
+}

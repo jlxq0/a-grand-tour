@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stockholm Old Town (Gamla Stan)",
+        "country": "Sweden",
+        "countryCode": "SE",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Medieval island heart of Stockholm with cobbled streets"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.0711, 59.3253] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abisko National Park",
+        "country": "Sweden",
+        "countryCode": "SE",
+        "category": "natural",
+        "rating": 4,
+        "description": "Best place in Sweden to see Northern Lights with Blue Hole phenomenon"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.8333, 68.3500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gothenburg Archipelago",
+        "country": "Sweden",
+        "countryCode": "SE",
+        "category": "natural",
+        "rating": 3,
+        "description": "Chain of car-free islands perfect for hiking and kayaking"
+      },
+      "geometry": { "type": "Point", "coordinates": [11.5833, 57.6667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vasa Museum",
+        "country": "Sweden",
+        "countryCode": "SE",
+        "category": "landmark",
+        "rating": 5,
+        "description": "World's best-preserved 17th-century warship"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.0914, 59.3280] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ice Hotel Jukkasjarvi",
+        "country": "Sweden",
+        "countryCode": "SE",
+        "category": "landmark",
+        "rating": 4,
+        "description": "World-famous hotel rebuilt annually from ice"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.5953, 67.8558] }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Angkor Wat",
+        "country": "Cambodia",
+        "countryCode": "KH",
+        "category": "landmark",
+        "rating": 5,
+        "description": "World's largest religious monument, 12th-century Khmer temple complex spanning 400 sq km"
+      },
+      "geometry": { "type": "Point", "coordinates": [103.8670, 13.4125] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayon Temple",
+        "country": "Cambodia",
+        "countryCode": "KH",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Enigmatic temple with 200+ giant stone faces of the Bodhisattva"
+      },
+      "geometry": { "type": "Point", "coordinates": [103.8589, 13.4411] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ta Prohm",
+        "country": "Cambodia",
+        "countryCode": "KH",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Atmospheric temple engulfed by giant strangler fig tree roots, Tomb Raider filming location"
+      },
+      "geometry": { "type": "Point", "coordinates": [103.8889, 13.4350] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tonle Sap Lake",
+        "country": "Cambodia",
+        "countryCode": "KH",
+        "category": "natural",
+        "rating": 3,
+        "description": "Southeast Asia's largest freshwater lake with floating villages"
+      },
+      "geometry": { "type": "Point", "coordinates": [104.0000, 12.9000] }
+    }
+  ]
+}

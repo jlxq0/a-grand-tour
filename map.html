@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>A Grand Tour - Scenic Routes</title>
+    <title>A Grand Tour - Scenic Routes & Points of Interest</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
@@ -125,8 +125,8 @@
 <div id="map"></div>
 <div id="info">
     <h2>A Grand Tour</h2>
-    <p>119 scenic routes worldwide</p>
-    <p>Click a route for details</p>
+    <p>119 scenic routes + 446 POIs</p>
+    <p>Click for details</p>
 </div>
 <div id="route-info">
     <button id="route-close">×</button>
@@ -144,10 +144,14 @@
     </div>
 </div>
 <div class="legend">
-    <h4>Route Rating</h4>
+    <h4>Rating</h4>
     <div class="legend-item"><div class="legend-line" style="background: #e74c3c;"></div> 5 stars</div>
     <div class="legend-item"><div class="legend-line" style="background: #e67e22;"></div> 4 stars</div>
     <div class="legend-item"><div class="legend-line" style="background: #f1c40f;"></div> 3 stars</div>
+    <div class="legend-item"><div class="legend-line" style="background: #3498db;"></div> 1-2 stars</div>
+    <h4 style="margin-top: 10px;">Type</h4>
+    <div class="legend-item"><div class="legend-line" style="background: #888; height: 3px;"></div> Route</div>
+    <div class="legend-item"><div style="width: 10px; height: 10px; border-radius: 50%; background: #888; margin-right: 8px;"></div> POI</div>
 </div>
 
 <script>
@@ -187,6 +191,36 @@ const routeFiles = [
     'us-natchez-trace.geojson','us-overseas-highway.geojson','us-pacific-coast-highway.geojson',
     'us-route-66.geojson','vn-ha-giang-loop.geojson','vn-hai-van-pass.geojson','za-chapmans-peak.geojson',
     'za-garden-route.geojson','za-panorama-route.geojson','za-sani-pass.geojson','za-swartberg-pass.geojson'
+];
+
+const poiFiles = [
+    'ae.geojson','al.geojson','ao.geojson','ar.geojson','at.geojson','au.geojson',
+    'ba.geojson','bd.geojson','be.geojson','bg.geojson','bh.geojson','bi.geojson',
+    'bj.geojson','bo.geojson','br.geojson','bw.geojson','bz.geojson',
+    'ca.geojson','cd.geojson','cg.geojson','ch.geojson','ci.geojson','cl.geojson',
+    'cm.geojson','cn.geojson','co.geojson','cr.geojson','cz.geojson',
+    'de.geojson','dk.geojson',
+    'ec.geojson','ee.geojson','eg.geojson','er.geojson','es.geojson','et.geojson',
+    'fi.geojson','fr.geojson',
+    'ga.geojson','gb.geojson','gf.geojson','gh.geojson','gr.geojson','gt.geojson','gy.geojson',
+    'hn.geojson','hr.geojson','hu.geojson',
+    'id.geojson','ie.geojson','in.geojson','ir.geojson','is.geojson','it.geojson',
+    'jo.geojson','jp.geojson',
+    'ke.geojson','kh.geojson','kw.geojson',
+    'la.geojson','ls.geojson','lt.geojson','lu.geojson','lv.geojson',
+    'ma.geojson','me.geojson','mk.geojson','mw.geojson','mx.geojson','my.geojson','mz.geojson',
+    'na.geojson','ng.geojson','ni.geojson','nl.geojson','no.geojson','np.geojson','nz.geojson',
+    'om.geojson',
+    'pa.geojson','pe.geojson','pk.geojson','pl.geojson','pt.geojson','py.geojson',
+    'qa.geojson',
+    'ro.geojson','rs.geojson','rw.geojson',
+    'sa.geojson','sd.geojson','se.geojson','sg.geojson','si.geojson','sk.geojson','sn.geojson',
+    'sr.geojson','sv.geojson','sz.geojson',
+    'th.geojson','tl.geojson','tr.geojson','tz.geojson',
+    'ug.geojson','us.geojson','uy.geojson',
+    'vn.geojson',
+    'xk.geojson',
+    'za.geojson','zm.geojson','zw.geojson'
 ];
 
 const map = new mapboxgl.Map({
@@ -291,6 +325,59 @@ map.on('load', async () => {
         }
     }, 'scenic-routes-line');
 
+    // Load all POIs
+    const poiCollections = await Promise.all(
+        poiFiles.map(async f => {
+            try {
+                return await fetch(`data/pois/${f}`).then(r => r.json());
+            } catch (e) {
+                return { type: 'FeatureCollection', features: [] };
+            }
+        })
+    );
+
+    // Combine all POI features
+    const allPois = {
+        type: 'FeatureCollection',
+        features: poiCollections.flatMap(c => c.features || [])
+    };
+
+    map.addSource('pois', {
+        type: 'geojson',
+        data: allPois
+    });
+
+    // POI circles - colored by rating
+    map.addLayer({
+        id: 'pois-circle',
+        type: 'circle',
+        source: 'pois',
+        paint: {
+            'circle-color': [
+                'match', ['get', 'rating'],
+                5, '#e74c3c',
+                4, '#e67e22',
+                3, '#f1c40f',
+                2, '#3498db',
+                '#3498db'
+            ],
+            'circle-radius': [
+                'interpolate', ['linear'], ['zoom'],
+                1, 3,
+                5, 5,
+                10, 8
+            ],
+            'circle-stroke-color': '#fff',
+            'circle-stroke-width': [
+                'interpolate', ['linear'], ['zoom'],
+                1, 0.5,
+                5, 1,
+                10, 2
+            ],
+            'circle-opacity': 0.9
+        }
+    });
+
     // Interactivity
     let hoveredId = null;
     const routeInfo = document.getElementById('route-info');
@@ -371,19 +458,45 @@ map.on('load', async () => {
         routeRating.textContent = '★'.repeat(props.rating);
         routeDescription.textContent = props.description || '';
 
-        // Setup carousel
+        // Setup carousel for routes (with images)
         currentRouteId = props.routeId;
         currentImageIndex = 0;
-        totalImages = 5; // Most routes have 5 images
+        totalImages = 5;
         createDots(totalImages);
         updateCarousel();
+        document.getElementById('route-photo-container').style.display = 'block';
 
         routeInfo.style.display = 'block';
     });
 
+    // POI click handler
+    map.on('click', 'pois-circle', (e) => {
+        const props = e.features[0].properties;
+        routeName.textContent = props.name;
+        routeCountry.textContent = props.country;
+        routeRating.textContent = '★'.repeat(props.rating);
+        routeDescription.textContent = props.description || '';
+
+        // Hide photo carousel for POIs (no images yet)
+        document.getElementById('route-photo-container').style.display = 'none';
+        currentRouteId = null;
+
+        routeInfo.style.display = 'block';
+    });
+
+    // POI hover cursor
+    map.on('mouseenter', 'pois-circle', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'pois-circle', () => {
+        map.getCanvas().style.cursor = '';
+    });
+
     map.on('click', (e) => {
-        const features = map.queryRenderedFeatures(e.point, { layers: ['scenic-routes-line'] });
-        if (features.length === 0) {
+        const routeFeatures = map.queryRenderedFeatures(e.point, { layers: ['scenic-routes-line'] });
+        const poiFeatures = map.queryRenderedFeatures(e.point, { layers: ['pois-circle'] });
+        if (routeFeatures.length === 0 && poiFeatures.length === 0) {
             routeInfo.style.display = 'none';
         }
     });
