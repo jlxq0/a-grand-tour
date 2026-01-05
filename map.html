@@ -23,33 +23,6 @@
         }
         #info h2 { margin: 0 0 5px 0; font-size: 16px; }
         #info p { margin: 5px 0; color: #666; }
-        #controls {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(255,255,255,0.95);
-            padding: 12px 15px;
-            border-radius: 8px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            font-size: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        #controls h4 { margin: 0 0 10px 0; font-size: 12px; border-bottom: 1px solid #ddd; padding-bottom: 8px; }
-        .control-item { display: flex; align-items: center; margin: 6px 0; cursor: pointer; }
-        .control-item input { margin-right: 8px; }
-        .legend-dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
-        .legend-line { width: 20px; height: 0; border-top: 2px dashed; margin-right: 8px; }
-        .mapboxgl-popup-content {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            padding: 10px 15px;
-            max-width: 280px;
-        }
-        .popup-title { font-weight: 600; font-size: 14px; }
-        .popup-subtitle { color: #666; font-size: 12px; margin-top: 2px; }
-        .popup-info { color: #888; font-size: 11px; margin-top: 4px; }
-        .popup-notable { font-style: italic; color: #555; font-size: 11px; margin-top: 4px; }
-        .marker { cursor: pointer; transition: transform 0.1s; }
-        .marker:hover { transform: scale(1.3); z-index: 1000; }
     </style>
 </head>
 <body>
@@ -58,49 +31,6 @@
     <h2>A Grand Tour</h2>
     <p>15 years | 200,000 km | 100+ countries</p>
     <p>Feb 2027 – Aug 2042</p>
-    <p id="stats" style="font-size: 11px; color: #999;"></p>
-</div>
-<div id="controls">
-    <h4>Layers</h4>
-    <label class="control-item">
-        <input type="checkbox" id="toggle-sights" checked>
-        <div class="legend-dot" style="background: #27ae60;"></div>
-        Sights
-    </label>
-    <label class="control-item">
-        <input type="checkbox" id="toggle-hotels" checked>
-        <div class="legend-dot" style="background: #f1c40f;"></div>
-        Hotels
-    </label>
-    <label class="control-item">
-        <input type="checkbox" id="toggle-food" checked>
-        <div class="legend-dot" style="background: #e74c3c;"></div>
-        Food
-    </label>
-    <label class="control-item">
-        <input type="checkbox" id="toggle-ferry" checked>
-        <div class="legend-line" style="border-color: #3498db;"></div>
-        Ferries
-    </label>
-    <label class="control-item">
-        <input type="checkbox" id="toggle-shipping" checked>
-        <div class="legend-line" style="border-color: #9b59b6;"></div>
-        Shipping
-    </label>
-    <label class="control-item">
-        <input type="checkbox" id="toggle-routes" checked>
-        <div class="legend-line" style="border-color: #e67e22; border-style: solid;"></div>
-        Driving Routes
-    </label>
-    <label class="control-item">
-        <input type="checkbox" id="toggle-scenic" checked>
-        <div class="legend-line" style="border-color: #e91e63; border-style: solid; border-width: 3px;"></div>
-        Scenic Routes
-    </label>
-    <label class="control-item" style="margin-top: 10px; padding-top: 8px; border-top: 1px solid #eee;">
-        <input type="checkbox" id="toggle-countries" checked>
-        Country Fill
-    </label>
 </div>
 
 <script>
@@ -113,18 +43,7 @@ const map = new mapboxgl.Map({
     zoom: 1.5
 });
 
-// Generate unique colors for each country (hue-distributed for maximum contrast)
-function generateCountryColors(codes) {
-    const colors = {};
-    const n = codes.length;
-    codes.forEach((code, i) => {
-        const hue = (i * 360 / n) % 360;
-        colors[code] = `hsl(${hue}, 65%, 50%)`;
-    });
-    return colors;
-}
-
-// Country codes on route
+// Countries on route
 const visitedCountryCodes = [
     'AE', 'AL', 'AM', 'AO', 'AR', 'AT', 'AU', 'AZ', 'BA', 'BD', 'BE', 'BG', 'BH', 'BI', 'BJ', 'BO', 'BR', 'BW', 'BZ',
     'CA', 'CD', 'CG', 'CH', 'CI', 'CL', 'CM', 'CO', 'CR', 'CZ', 'DE', 'DK', 'EC', 'EE', 'EG', 'EH', 'ER', 'ES', 'ET',
@@ -135,179 +54,14 @@ const visitedCountryCodes = [
     'TG', 'TH', 'TL', 'TR', 'TZ', 'UG', 'US', 'UY', 'VN', 'XK', 'ZA', 'ZM', 'ZW'
 ];
 
-const countryColors = generateCountryColors(visitedCountryCodes);
-
-// Country files
-const countryFiles = [
-    'ae-uae','al-albania','am-armenia','ao-angola','ar-argentina','at-austria','au-australia','az-azerbaijan',
-    'ba-bosnia','bd-bangladesh','be-belgium','bg-bulgaria','bh-bahrain','bi-burundi','bj-benin','bo-bolivia',
-    'br-brazil','bw-botswana','bz-belize','ca-canada','cd-drc','cg-congo','ch-switzerland','ci-ivory-coast',
-    'cl-chile','cm-cameroon','co-colombia','cr-costa-rica','cz-czechia','de-germany','dk-denmark','ec-ecuador',
-    'ee-estonia','eg-egypt','eh-western-sahara','er-eritrea','es-spain','et-ethiopia','fi-finland','fr-france',
-    'ga-gabon','gb-uk','ge-georgia','gf-french-guiana','gh-ghana','gi-gibraltar','gm-gambia','gn-guinea',
-    'gq-equatorial-guinea','gr-greece','gt-guatemala','gw-guinea-bissau','gy-guyana','hn-honduras','hr-croatia',
-    'hu-hungary','id-indonesia','ie-ireland','in-india','ir-iran','it-italy','jo-jordan','ke-kenya','kh-cambodia',
-    'kw-kuwait','la-laos','lr-liberia','ls-lesotho','lt-lithuania','lu-luxembourg','lv-latvia','ma-morocco',
-    'md-moldova','me-montenegro','mk-north-macedonia','mr-mauritania','mw-malawi','mx-mexico','my-malaysia',
-    'mz-mozambique','na-namibia','ng-nigeria','ni-nicaragua','nl-netherlands','no-norway','np-nepal','nz-new-zealand',
-    'om-oman','pa-panama','pe-peru','pk-pakistan','pl-poland','py-paraguay','qa-qatar','ro-romania','rs-serbia',
-    'rw-rwanda','sa-saudi-arabia','sd-sudan','se-sweden','si-slovenia','sk-slovakia','sl-sierra-leone','sn-senegal',
-    'sr-suriname','sv-el-salvador','sz-eswatini','tg-togo','th-thailand','tl-timor-leste','tr-turkey','tz-tanzania',
-    'ug-uganda','us-usa','uy-uruguay','vn-vietnam','xk-kosovo','za-south-africa','zm-zambia','zw-zimbabwe'
-];
-
-// Shipping files
-const shippingFiles = [
-    'jb-jakarta', 'darien-gap', 'chittagong-laem-chabang',
-    'brisbane-auckland', 'auckland-valparaiso', 'seattle-southampton'
-];
-
-// Trip route files
-const tripFiles = [
-    'trip-01', 'trip-02', 'trip-03', 'trip-04', 'trip-05', 'trip-06', 'trip-07',
-    'trip-08', 'trip-09', 'trip-10', 'trip-11', 'trip-12', 'trip-13', 'trip-14',
-    'trip-15', 'trip-16', 'trip-17', 'trip-18', 'trip-19', 'trip-20', 'trip-21'
-];
-
-// Store markers by category for toggling
-const markers = {
-    sights: [],
-    hotels: [],
-    food: []
-};
-
-// Determine category from source
-function getCategory(source) {
-    if (source === 'Hotel') return 'hotels';
-    if (source === 'LocalEatery' || source === 'Michelin') return 'food';
-    return 'sights'; // Route, UNESCO, LP500, 1000Places, Suggestion
-}
-
-// Load all data
-async function loadData() {
-    const [ferries, scenicRoutes, ...rest] = await Promise.all([
-        fetch('data/ferries.geojson').then(r => r.json()),
-        fetch('data/scenic-routes.geojson').then(r => r.json()).catch(() => ({ features: [] })),
-        ...countryFiles.map(f => fetch(`data/countries/${f}.geojson`).then(r => r.json()).catch(() => ({ features: [] }))),
-        ...shippingFiles.map(f => fetch(`data/shipping/${f}.geojson`).then(r => r.json()).catch(() => ({ features: [] }))),
-        ...tripFiles.map(f => fetch(`data/trips/${f}.geojson`).then(r => r.json()).catch(() => ({ features: [] })))
-    ]);
-
-    const countries = rest.slice(0, countryFiles.length);
-    const shipping = rest.slice(countryFiles.length, countryFiles.length + shippingFiles.length);
-    const trips = rest.slice(countryFiles.length + shippingFiles.length);
-
-    // Merge all country features with their ISO code
-    const allFeatures = [];
-    countryFiles.forEach((file, i) => {
-        const iso = file.split('-')[0].toUpperCase();
-        (countries[i].features || []).forEach(f => {
-            f.properties.iso = f.properties.iso || iso;
-            allFeatures.push(f);
-        });
-    });
-
-    // Extract route LineStrings from trip files
-    const tripRoutes = [];
-    trips.forEach((trip, i) => {
-        const tripNum = i + 1;
-        (trip.features || []).forEach(f => {
-            if (f.geometry && f.geometry.type === 'LineString') {
-                f.properties.trip = tripNum;
-                tripRoutes.push(f);
-            }
-        });
-    });
-
-    return { ferries, scenicRoutes, allFeatures, shipping, tripRoutes };
-}
-
-function createMarker(feature) {
-    const props = feature.properties;
-    const source = props.source || 'Suggestion';
-    const category = getCategory(source);
-    const iso = (props.iso || '').toUpperCase();
-
-    // Skip features without geometry
-    if (!feature.geometry || !feature.geometry.coordinates) return null;
-    const coords = feature.geometry.coordinates;
-    if (!coords[0] || !coords[1]) return null;
-
-    // Get country color for sights, fixed colors for hotels/food
-    let color;
-    if (category === 'hotels') {
-        color = '#f1c40f';
-    } else if (category === 'food') {
-        color = '#e74c3c';
-    } else {
-        color = countryColors[iso] || '#27ae60';
-    }
-
-    const size = source === 'Route' ? 10 : 7;
-    const borderWidth = source === 'Route' ? 2 : 1;
-
-    const el = document.createElement('div');
-    el.className = 'marker';
-    el.style.width = size + 'px';
-    el.style.height = size + 'px';
-    el.style.backgroundColor = color;
-    el.style.borderRadius = '50%';
-    el.style.border = `${borderWidth}px solid white`;
-    el.style.boxShadow = '0 1px 3px rgba(0,0,0,0.3)';
-
-    // Build popup content
-    let html = `<div class="popup-title">${props.name}</div>`;
-
-    if (props.country) {
-        html += `<div class="popup-subtitle">${props.country}`;
-        if (props.city) html += ` · ${props.city}`;
-        html += `</div>`;
-    }
-
-    let infoLine = [];
-    if (source === 'Route' && props.trip) {
-        const phase = props.trip <= 13 ? 'A' : 'B';
-        infoLine.push(`Trip ${props.trip} (Phase ${phase})`);
-    }
-    if (source === 'UNESCO') infoLine.push('UNESCO');
-    if (source === 'LP500') infoLine.push('Lonely Planet 500');
-    if (source === '1000Places') infoLine.push('1000 Places');
-    if (source === 'Michelin') infoLine.push('Michelin');
-    if (props.stars) infoLine.push(`${props.stars}★`);
-    if (props.year_inscribed) infoLine.push(`Since ${props.year_inscribed}`);
-
-    if (infoLine.length) {
-        html += `<div class="popup-info">${infoLine.join(' · ')}</div>`;
-    }
-
-    if (props.why_notable) {
-        html += `<div class="popup-notable">${props.why_notable}</div>`;
-    }
-
-    const popup = new mapboxgl.Popup({ offset: 10, maxWidth: '280px' }).setHTML(html);
-
-    const marker = new mapboxgl.Marker(el)
-        .setLngLat(coords)
-        .setPopup(popup);
-
-    return { marker, category, element: el };
-}
-
-map.on('load', async () => {
-    const data = await loadData();
-
-    // Stats
-    const sightsCount = data.allFeatures.filter(f => getCategory(f.properties.source) === 'sights' && f.geometry).length;
-    const hotelsCount = data.allFeatures.filter(f => getCategory(f.properties.source) === 'hotels' && f.geometry).length;
-    const foodCount = data.allFeatures.filter(f => getCategory(f.properties.source) === 'food' && f.geometry).length;
-    document.getElementById('stats').textContent = `${sightsCount} sights · ${hotelsCount} hotels · ${foodCount} restaurants`;
-
-    // Add country fill layer - green for visited, gray for not
+map.on('load', () => {
+    // Add country boundaries source
     map.addSource('countries', {
         type: 'vector',
         url: 'mapbox://mapbox.country-boundaries-v1'
     });
 
+    // Add country fill layer - green for visited, gray for not
     map.addLayer({
         id: 'country-fills',
         type: 'fill',
@@ -331,125 +85,6 @@ map.on('load', async () => {
             'fill-opacity': 1
         }
     }, 'admin-1-boundary-bg');
-
-    // Add ferry routes
-    map.addSource('ferries', { type: 'geojson', data: data.ferries });
-    map.addLayer({
-        id: 'ferries',
-        type: 'line',
-        source: 'ferries',
-        paint: {
-            'line-color': '#3498db',
-            'line-width': 2,
-            'line-dasharray': [4, 3],
-            'line-opacity': 0.8
-        }
-    });
-
-    // Add shipping routes
-    const shippingGeoJSON = {
-        type: 'FeatureCollection',
-        features: data.shipping.flatMap(s => s.features || [])
-    };
-    map.addSource('shipping', { type: 'geojson', data: shippingGeoJSON });
-    map.addLayer({
-        id: 'shipping',
-        type: 'line',
-        source: 'shipping',
-        paint: {
-            'line-color': '#9b59b6',
-            'line-width': 2,
-            'line-dasharray': [6, 4],
-            'line-opacity': 0.8
-        }
-    });
-
-    // Add trip driving routes
-    const tripRoutesGeoJSON = {
-        type: 'FeatureCollection',
-        features: data.tripRoutes
-    };
-    map.addSource('trip-routes', { type: 'geojson', data: tripRoutesGeoJSON });
-    map.addLayer({
-        id: 'trip-routes',
-        type: 'line',
-        source: 'trip-routes',
-        paint: {
-            'line-color': '#e67e22',
-            'line-width': 2,
-            'line-opacity': 0.7
-        }
-    });
-
-    // Add scenic routes
-    map.addSource('scenic-routes', { type: 'geojson', data: data.scenicRoutes });
-    map.addLayer({
-        id: 'scenic-routes',
-        type: 'line',
-        source: 'scenic-routes',
-        paint: {
-            'line-color': '#e91e63',
-            'line-width': 3,
-            'line-opacity': 0.85
-        }
-    });
-
-    // Add scenic route popups
-    map.on('click', 'scenic-routes', (e) => {
-        const props = e.features[0].properties;
-        const html = `
-            <div class="popup-title">${props.name}</div>
-            <div class="popup-subtitle">${props.country}</div>
-            <div class="popup-info">${props.length_km} km · Rating: ${props.rating}/10</div>
-            <div class="popup-notable">${props.notes}</div>
-        `;
-        new mapboxgl.Popup({ offset: 10, maxWidth: '280px' })
-            .setLngLat(e.lngLat)
-            .setHTML(html)
-            .addTo(map);
-    });
-    map.on('mouseenter', 'scenic-routes', () => { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', 'scenic-routes', () => { map.getCanvas().style.cursor = ''; });
-
-    // Add all markers
-    data.allFeatures.forEach(feature => {
-        const result = createMarker(feature);
-        if (result) {
-            result.marker.addTo(map);
-            markers[result.category].push(result);
-        }
-    });
-
-    // Toggle controls
-    function toggleMarkers(category, visible) {
-        markers[category].forEach(m => {
-            m.element.style.display = visible ? 'block' : 'none';
-        });
-    }
-
-    document.getElementById('toggle-sights').addEventListener('change', e => toggleMarkers('sights', e.target.checked));
-    document.getElementById('toggle-hotels').addEventListener('change', e => toggleMarkers('hotels', e.target.checked));
-    document.getElementById('toggle-food').addEventListener('change', e => toggleMarkers('food', e.target.checked));
-
-    document.getElementById('toggle-ferry').addEventListener('change', e => {
-        map.setLayoutProperty('ferries', 'visibility', e.target.checked ? 'visible' : 'none');
-    });
-
-    document.getElementById('toggle-shipping').addEventListener('change', e => {
-        map.setLayoutProperty('shipping', 'visibility', e.target.checked ? 'visible' : 'none');
-    });
-
-    document.getElementById('toggle-routes').addEventListener('change', e => {
-        map.setLayoutProperty('trip-routes', 'visibility', e.target.checked ? 'visible' : 'none');
-    });
-
-    document.getElementById('toggle-scenic').addEventListener('change', e => {
-        map.setLayoutProperty('scenic-routes', 'visibility', e.target.checked ? 'visible' : 'none');
-    });
-
-    document.getElementById('toggle-countries').addEventListener('change', e => {
-        map.setLayoutProperty('country-fills', 'visibility', e.target.checked ? 'visible' : 'none');
-    });
 });
 
 map.addControl(new mapboxgl.NavigationControl());
