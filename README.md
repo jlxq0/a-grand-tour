@@ -366,6 +366,8 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 **Store:** Delhi
 **Fly home:** Delhi (SIA direct)
 
+[📍 Detailed Day-by-Day Itinerary →](TRIP01.md)
+
 ---
 
 ## 🏠 HOME: Jun–Aug 2027 (3 months)
@@ -392,6 +394,8 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 **Store:** Chittagong — _Ship to Laem Chabang_
 **Fly home:** Dhaka (via Bangkok or KL)
+
+[📍 Detailed Day-by-Day Itinerary →](TRIP02.md)
 
 ---
 
