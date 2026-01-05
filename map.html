@@ -147,8 +147,8 @@
     <h4>Rating</h4>
     <div class="legend-item"><div class="legend-line" style="background: #e74c3c;"></div> 5 stars</div>
     <div class="legend-item"><div class="legend-line" style="background: #e67e22;"></div> 4 stars</div>
-    <div class="legend-item"><div class="legend-line" style="background: #f1c40f;"></div> 3 stars</div>
-    <div class="legend-item"><div class="legend-line" style="background: #3498db;"></div> 1-2 stars</div>
+    <div class="legend-item"><div class="legend-line" style="background: #f39c12;"></div> 3 stars</div>
+    <div class="legend-item"><div class="legend-line" style="background: #f1c40f;"></div> 1-2 stars</div>
     <h4 style="margin-top: 10px;">Type</h4>
     <div class="legend-item"><div class="legend-line" style="background: #888; height: 3px;"></div> Route</div>
     <div class="legend-item"><div style="width: 10px; height: 10px; border-radius: 50%; background: #888; margin-right: 8px;"></div> POI</div>
@@ -300,8 +300,9 @@ map.on('load', async () => {
                 'match', ['get', 'rating'],
                 5, '#e74c3c',
                 4, '#e67e22',
-                3, '#f1c40f',
-                '#3498db'
+                3, '#f39c12',
+                2, '#f1c40f',
+                '#f1c40f'
             ],
             'line-width': [
                 'interpolate', ['linear'], ['zoom'],
@@ -362,9 +363,9 @@ map.on('load', async () => {
                 'match', ['get', 'rating'],
                 5, '#e74c3c',
                 4, '#e67e22',
-                3, '#f1c40f',
-                2, '#3498db',
-                '#3498db'
+                3, '#f39c12',
+                2, '#f1c40f',
+                '#f1c40f'
             ],
             'circle-radius': [
                 'interpolate', ['linear'], ['zoom'],
@@ -393,7 +394,7 @@ map.on('load', async () => {
                 type: 'line',
                 source: 'ferries',
                 paint: {
-                    'line-color': '#3498db',
+                    'line-color': '#1a5276',
                     'line-width': 2,
                     'line-dasharray': [2, 2]
                 }
@@ -421,7 +422,7 @@ map.on('load', async () => {
                 type: 'line',
                 source: 'shipping',
                 paint: {
-                    'line-color': '#1abc9c',
+                    'line-color': '#aed6f1',
                     'line-width': 2,
                     'line-dasharray': [4, 3]
                 }
