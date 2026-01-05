@@ -567,10 +567,71 @@ map.on('load', async () => {
         map.getCanvas().style.cursor = '';
     });
 
+    // Ferry click handler
+    map.on('click', 'ferries-line', (e) => {
+        const props = e.features[0].properties;
+        routeName.textContent = props.name;
+        routeCountry.textContent = props.operator || 'Ferry';
+        routeRating.textContent = '⛴️';
+
+        let desc = [];
+        if (props.duration) desc.push(`Duration: ${props.duration}`);
+        if (props.frequency) desc.push(`Frequency: ${props.frequency}`);
+        if (props.legs) desc.push(`Legs: ${props.legs}`);
+        if (props.cost) desc.push(`Cost: ${props.cost}`);
+        if (props.notes) desc.push(props.notes);
+        routeDescription.textContent = desc.join(' • ') || '';
+
+        // No images for ferries
+        currentRouteId = null;
+        currentPoiId = null;
+        document.getElementById('route-photo-container').style.display = 'none';
+
+        routeInfo.style.display = 'block';
+    });
+
+    map.on('mouseenter', 'ferries-line', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'ferries-line', () => {
+        map.getCanvas().style.cursor = '';
+    });
+
+    // Shipping click handler
+    map.on('click', 'shipping-line', (e) => {
+        const props = e.features[0].properties;
+        routeName.textContent = props.name || 'Shipping Route';
+        routeCountry.textContent = props.operator || 'Cargo Ship';
+        routeRating.textContent = '🚢';
+
+        let desc = [];
+        if (props.duration) desc.push(`Duration: ${props.duration}`);
+        if (props.frequency) desc.push(`Frequency: ${props.frequency}`);
+        if (props.cost) desc.push(`Cost: ${props.cost}`);
+        if (props.notes) desc.push(props.notes);
+        routeDescription.textContent = desc.join(' • ') || '';
+
+        // No images for shipping
+        currentRouteId = null;
+        currentPoiId = null;
+        document.getElementById('route-photo-container').style.display = 'none';
+
+        routeInfo.style.display = 'block';
+    });
+
+    map.on('mouseenter', 'shipping-line', () => {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    map.on('mouseleave', 'shipping-line', () => {
+        map.getCanvas().style.cursor = '';
+    });
+
     map.on('click', (e) => {
-        const routeFeatures = map.queryRenderedFeatures(e.point, { layers: ['scenic-routes-line'] });
-        const poiFeatures = map.queryRenderedFeatures(e.point, { layers: ['pois-circle'] });
-        if (routeFeatures.length === 0 && poiFeatures.length === 0) {
+        const layers = ['scenic-routes-line', 'pois-circle', 'ferries-line', 'shipping-line'];
+        const features = map.queryRenderedFeatures(e.point, { layers: layers.filter(l => map.getLayer(l)) });
+        if (features.length === 0) {
             routeInfo.style.display = 'none';
         }
     });
