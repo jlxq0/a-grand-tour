@@ -24,8 +24,10 @@ const waypoints = [
   { name: "Edge of the World", coords: [46.6750, 24.8256] },
   { name: "Diriyah At-Turaif", coords: [46.5744, 24.7344] },
   { name: "Kuwait City", coords: [47.9783, 29.3797] },
+  // Iraq - 520km loop to visit Ziggurat of Ur (4000-year-old Sumerian temple, UNESCO site)
   { name: "Basra", coords: [47.7833, 30.5000] },
   { name: "Ziggurat of Ur", coords: [46.1053, 30.9628] },
+  // Back east to Iran border
   { name: "Khorramshahr (Iran)", coords: [48.1667, 30.4333] },
   { name: "Ahvaz", coords: [48.6842, 31.3183] },
   // Iran - logical geographic order
