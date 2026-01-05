@@ -132,86 +132,159 @@ async function fetchRoute(coords) {
   });
 }
 
-async function buildRouteForWaypoints(waypoints, name) {
-  const segments = [];
-  const segmentSize = 6;
+// Build route with segment-by-segment stats
+async function buildRouteWithSegments(waypoints, partName, partNumber) {
+  const segmentFeatures = [];
+  let totalDistance = 0;
+  let totalDuration = 0;
+  let allCoords = [];
 
-  for (let i = 0; i < waypoints.length - 1; i += segmentSize - 1) {
-    const segment = waypoints.slice(i, Math.min(i + segmentSize, waypoints.length));
-    const coords = segment.map(w => w.coords);
+  // Process waypoint pairs
+  for (let i = 0; i < waypoints.length - 1; i++) {
+    const from = waypoints[i];
+    const to = waypoints[i + 1];
 
-    console.error(`Fetching ${name} segment ${i} to ${i + segment.length - 1}: ${segment.map(s => s.name).join(' -> ')}`);
+    console.error(`Fetching ${partName} segment ${i + 1}/${waypoints.length - 1}: ${from.name} → ${to.name}`);
 
     try {
-      const result = await fetchRoute(coords);
+      const result = await fetchRoute([from.coords, to.coords]);
       if (result.routes && result.routes[0]) {
-        segments.push(result.routes[0].geometry.coordinates);
-        console.error(`  Got ${result.routes[0].geometry.coordinates.length} points`);
+        const route = result.routes[0];
+        const distanceKm = Math.round(route.distance / 1000);
+        const durationHrs = (route.duration / 3600).toFixed(1);
+
+        totalDistance += route.distance;
+        totalDuration += route.duration;
+
+        // Add segment feature
+        segmentFeatures.push({
+          type: "Feature",
+          properties: {
+            part: partNumber,
+            segmentIndex: i,
+            from: from.name,
+            to: to.name,
+            distanceKm: distanceKm,
+            durationHrs: parseFloat(durationHrs),
+            label: `${from.name.split('(')[0].trim()} → ${to.name.split('(')[0].trim()}`
+          },
+          geometry: route.geometry
+        });
+
+        // Accumulate coordinates
+        if (allCoords.length === 0) {
+          allCoords = route.geometry.coordinates;
+        } else {
+          allCoords = allCoords.concat(route.geometry.coordinates.slice(1));
+        }
+
+        console.error(`  ${distanceKm} km, ${durationHrs} hrs (${route.geometry.coordinates.length} points)`);
       } else {
         console.error(`  No route found, using straight line`);
-        segments.push(coords);
+        // Fallback to straight line
+        segmentFeatures.push({
+          type: "Feature",
+          properties: {
+            part: partNumber,
+            segmentIndex: i,
+            from: from.name,
+            to: to.name,
+            distanceKm: 0,
+            durationHrs: 0,
+            label: `${from.name.split('(')[0].trim()} → ${to.name.split('(')[0].trim()}`,
+            noRoute: true
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: [from.coords, to.coords]
+          }
+        });
+        if (allCoords.length === 0) {
+          allCoords = [from.coords, to.coords];
+        } else {
+          allCoords.push(to.coords);
+        }
       }
     } catch(e) {
       console.error('  Error:', e.message);
-      segments.push(coords);
+      // Fallback
+      if (allCoords.length === 0) {
+        allCoords = [from.coords, to.coords];
+      } else {
+        allCoords.push(to.coords);
+      }
     }
 
-    await new Promise(r => setTimeout(r, 1500));
+    // Rate limit
+    await new Promise(r => setTimeout(r, 500));
   }
 
-  let allCoords = [];
-  segments.forEach((seg, idx) => {
-    if (idx === 0) {
-      allCoords = seg;
-    } else {
-      allCoords = allCoords.concat(seg.slice(1));
-    }
-  });
-
-  return allCoords;
+  return {
+    segments: segmentFeatures,
+    totalCoords: allCoords,
+    totalDistanceKm: Math.round(totalDistance / 1000),
+    totalDurationHrs: (totalDuration / 3600).toFixed(1)
+  };
 }
 
 async function buildRoute() {
   console.error('=== Building Part 1: Dubai to Bandar Abbas ===\n');
-  const coords1 = await buildRouteForWaypoints(waypointsPart1, 'Part1');
+  const part1 = await buildRouteWithSegments(waypointsPart1, 'Part1', 1);
 
   console.error('\n=== Building Part 2: Karachi to Chittagong ===\n');
-  const coords2 = await buildRouteForWaypoints(waypointsPart2, 'Part2');
+  const part2 = await buildRouteWithSegments(waypointsPart2, 'Part2', 2);
 
+  // Create GeoJSON with both summary lines and individual segments
   const geojson = {
     type: "FeatureCollection",
     features: [
+      // Summary line for Part 1
       {
         type: "Feature",
         properties: {
           name: "Trip 1a: Dubai to Bandar Abbas",
-          segment: 1,
-          description: "Dubai → Oman → Saudi → Qatar → Bahrain → Kuwait → Iraq → Iran (ship car to Karachi)"
+          part: 1,
+          type: "summary",
+          description: "Dubai → Oman → Saudi → Qatar → Bahrain → Kuwait → Iraq → Iran (ship car to Karachi)",
+          totalDistanceKm: part1.totalDistanceKm,
+          totalDurationHrs: parseFloat(part1.totalDurationHrs),
+          segmentCount: part1.segments.length
         },
         geometry: {
           type: "LineString",
-          coordinates: coords1
+          coordinates: part1.totalCoords
         }
       },
+      // Summary line for Part 2
       {
         type: "Feature",
         properties: {
           name: "Trip 1b: Karachi to Chittagong",
-          segment: 2,
-          description: "Pakistan → India → Nepal → Bangladesh (ship car from Chittagong)"
+          part: 2,
+          type: "summary",
+          description: "Pakistan → India → Nepal → Bangladesh (ship car from Chittagong)",
+          totalDistanceKm: part2.totalDistanceKm,
+          totalDurationHrs: parseFloat(part2.totalDurationHrs),
+          segmentCount: part2.segments.length
         },
         geometry: {
           type: "LineString",
-          coordinates: coords2
+          coordinates: part2.totalCoords
         }
-      }
+      },
+      // Individual segments
+      ...part1.segments,
+      ...part2.segments
     ]
   };
 
   fs.writeFileSync('data/planned-route.geojson', JSON.stringify(geojson, null, 2));
-  console.error(`\nWrote ${coords1.length + coords2.length} total coordinates to data/planned-route.geojson`);
-  console.error(`  Part 1: ${coords1.length} points`);
-  console.error(`  Part 2: ${coords2.length} points`);
+
+  console.error(`\n=== TOTALS ===`);
+  console.error(`Part 1: ${part1.totalDistanceKm} km, ${part1.totalDurationHrs} hrs driving (${part1.segments.length} segments)`);
+  console.error(`Part 2: ${part2.totalDistanceKm} km, ${part2.totalDurationHrs} hrs driving (${part2.segments.length} segments)`);
+  console.error(`TOTAL: ${part1.totalDistanceKm + part2.totalDistanceKm} km, ${(parseFloat(part1.totalDurationHrs) + parseFloat(part2.totalDurationHrs)).toFixed(1)} hrs driving`);
+  console.error(`\nWrote ${part1.totalCoords.length + part2.totalCoords.length} coordinates to data/planned-route.geojson`);
 }
 
 buildRoute();

@@ -357,7 +357,7 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |🇵🇰 Pakistan|28|Karachi, Multan, Lahore, Islamabad, Karakoram Highway, Hunza, Khunjerab Pass|
 |🇮🇳 India|34|Amritsar, Chandigarh, Manali-Leh route, Shimla, Delhi|
 
-**114 days / 10 countries / ~15,000 km**
+**114 days / 10 countries / 10,780 km + ship**
 
 **Weather:** Feb–May perfect. Gulf winter, Iran spring, Pakistan before summer heat.
 
@@ -384,7 +384,7 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |🇳🇵 Nepal|21|Kathmandu, Bhaktapur, Pokhara, Chitwan, Lumbini|
 |🇧🇩 Bangladesh|8|Dhaka, Chittagong, Cox's Bazar|
 
-**111 days / 3 countries / ~7,000 km**
+**111 days / 3 countries / 17,460 km**
 
 **Note:** Sri Lanka skipped due to complex vehicle shipping requirements (no ferry, expensive round-trip container).
 

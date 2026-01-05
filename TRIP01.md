@@ -41,7 +41,7 @@ Khunjerab Pass → [return] → India via Wagah → Amritsar → Manali-Leh → 
 | 🇵🇰 Pakistan | 28 | Karachi, Multan, Lahore, Islamabad, Abbottabad, Karakoram Highway (Besham, Chilas, Gilgit), Hunza Valley (Karimabad), Attabad Lake, Khunjerab Pass |
 | 🇮🇳 India | 34 | Amritsar (Golden Temple), Chandigarh, Manali, Leh, Spiti Valley, Shimla, Delhi |
 
-**Total: ~114 days / 10 countries / ~15,000 km**
+**Total: ~114 days / 10 countries / 10,780 km driving + ship**
 
 ---
 

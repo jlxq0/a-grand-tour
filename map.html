@@ -441,16 +441,55 @@ map.on('load', async () => {
         .then(r => r.json())
         .then(data => {
             map.addSource('planned-route', { type: 'geojson', data });
+
+            // Main route line (summary only)
             map.addLayer({
                 id: 'planned-route-line',
                 type: 'line',
                 source: 'planned-route',
+                filter: ['==', ['get', 'type'], 'summary'],
                 paint: {
                     'line-color': '#3498db',
                     'line-width': 4,
                     'line-opacity': 0.8
                 }
-            }, 'scenic-routes-highlight'); // Insert below scenic routes
+            }, 'scenic-routes-highlight');
+
+            // Invisible wider line for segment hover detection
+            map.addLayer({
+                id: 'planned-route-segments-hover',
+                type: 'line',
+                source: 'planned-route',
+                filter: ['!=', ['get', 'type'], 'summary'],
+                paint: {
+                    'line-color': 'transparent',
+                    'line-width': 15
+                }
+            }, 'planned-route-line');
+
+            // Segment info tooltip
+            const segmentTooltip = document.createElement('div');
+            segmentTooltip.id = 'segment-tooltip';
+            segmentTooltip.style.cssText = 'position:absolute;background:#1a1a2e;color:#fff;padding:8px 12px;border-radius:6px;font-size:12px;pointer-events:none;display:none;z-index:100;max-width:280px;box-shadow:0 2px 8px rgba(0,0,0,0.3);';
+            document.getElementById('map').appendChild(segmentTooltip);
+
+            map.on('mousemove', 'planned-route-segments-hover', (e) => {
+                if (e.features.length > 0) {
+                    const props = e.features[0].properties;
+                    if (props.distanceKm) {
+                        map.getCanvas().style.cursor = 'pointer';
+                        segmentTooltip.innerHTML = `<strong>${props.label || props.from + ' → ' + props.to}</strong><br>${props.distanceKm} km · ${props.durationHrs} hrs`;
+                        segmentTooltip.style.display = 'block';
+                        segmentTooltip.style.left = (e.point.x + 15) + 'px';
+                        segmentTooltip.style.top = (e.point.y - 30) + 'px';
+                    }
+                }
+            });
+
+            map.on('mouseleave', 'planned-route-segments-hover', () => {
+                map.getCanvas().style.cursor = '';
+                segmentTooltip.style.display = 'none';
+            });
         });
 
     // Interactivity

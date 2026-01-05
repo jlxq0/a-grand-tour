@@ -38,7 +38,7 @@ Paharpur → Dhaka → Sundarbans → Cox's Bazar → Chittagong
 | 🇧🇩 Bangladesh | 15 | Paharpur, Dhaka, Sundarbans, Cox's Bazar |
 | 🚢 Ship | 10 | Chittagong → Laem Chabang |
 
-**Total: ~111 days / 3 countries / ~12,000 km**
+**Total: ~111 days / 3 countries / 17,460 km driving**
 
 ---
 
