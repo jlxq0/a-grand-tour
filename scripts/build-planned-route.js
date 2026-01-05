@@ -1,8 +1,8 @@
 const https = require('https');
 const fs = require('fs');
 
-// Waypoints for Trip 1: Gulf & Iran
-const waypoints = [
+// Trip 1 Part 1: Dubai to Iran (ends at Bandar Abbas - ship car to Karachi)
+const waypointsPart1 = [
   { name: "Dubai (Burj Khalifa)", coords: [55.2744, 25.1972] },
   { name: "Khor Fakkan (scenic route start)", coords: [56.3481, 25.3411] },
   { name: "Musandam Fjords", coords: [56.2667, 26.2000] },
@@ -37,9 +37,13 @@ const waypoints = [
   { name: "Yazd Old Town", coords: [54.3544, 31.8974] },
   { name: "Shiraz (Nasir al-Mulk Mosque)", coords: [52.5483, 29.6081] },
   { name: "Persepolis", coords: [52.8892, 29.9347] },
-  { name: "Bandar Abbas", coords: [56.2833, 27.1833] },
-  // Hormuz Island (Rainbow Valley) - via ferry from Bandar Abbas, see ferries.geojson
-  // SHIP CAR: Bandar Abbas → Karachi (skip Balochistan - safety, see shipping/bandar-abbas-karachi.geojson)
+  { name: "Bandar Abbas", coords: [56.2833, 27.1833] }
+  // END - Ship car to Karachi, fly family (skip Balochistan)
+  // Hormuz Island (Rainbow Valley) - via ferry from Bandar Abbas
+];
+
+// Trip 1 Part 2: Pakistan onwards (after shipping from Bandar Abbas)
+const waypointsPart2 = [
   { name: "Karachi", coords: [67.0011, 24.8607] },
   { name: "Multan", coords: [71.5249, 30.1575] },
   { name: "Lahore", coords: [74.3587, 31.5204] },
@@ -124,8 +128,7 @@ async function fetchRoute(coords) {
   });
 }
 
-async function buildRoute() {
-  // Build route in segments (OSRM has limits)
+async function buildRouteForWaypoints(waypoints, name) {
   const segments = [];
   const segmentSize = 6;
 
@@ -133,7 +136,7 @@ async function buildRoute() {
     const segment = waypoints.slice(i, Math.min(i + segmentSize, waypoints.length));
     const coords = segment.map(w => w.coords);
 
-    console.error(`Fetching segment ${i} to ${i + segment.length - 1}: ${segment.map(s => s.name).join(' -> ')}`);
+    console.error(`Fetching ${name} segment ${i} to ${i + segment.length - 1}: ${segment.map(s => s.name).join(' -> ')}`);
 
     try {
       const result = await fetchRoute(coords);
@@ -149,11 +152,9 @@ async function buildRoute() {
       segments.push(coords);
     }
 
-    // Rate limit
     await new Promise(r => setTimeout(r, 1500));
   }
 
-  // Combine all segments
   let allCoords = [];
   segments.forEach((seg, idx) => {
     if (idx === 0) {
@@ -163,24 +164,50 @@ async function buildRoute() {
     }
   });
 
+  return allCoords;
+}
+
+async function buildRoute() {
+  console.error('=== Building Part 1: Dubai to Bandar Abbas ===\n');
+  const coords1 = await buildRouteForWaypoints(waypointsPart1, 'Part1');
+
+  console.error('\n=== Building Part 2: Karachi to Chittagong ===\n');
+  const coords2 = await buildRouteForWaypoints(waypointsPart2, 'Part2');
+
   const geojson = {
     type: "FeatureCollection",
-    features: [{
-      type: "Feature",
-      properties: {
-        name: "Trip 1: Gulf to Bangladesh",
-        segment: 1,
-        description: "Dubai → Oman → Saudi → Qatar → Bahrain → Kuwait → Iraq → Iran → Pakistan → India → Nepal → Bangladesh (ship from Chittagong)"
+    features: [
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 1a: Dubai to Bandar Abbas",
+          segment: 1,
+          description: "Dubai → Oman → Saudi → Qatar → Bahrain → Kuwait → Iraq → Iran (ship car to Karachi)"
+        },
+        geometry: {
+          type: "LineString",
+          coordinates: coords1
+        }
       },
-      geometry: {
-        type: "LineString",
-        coordinates: allCoords
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 1b: Karachi to Chittagong",
+          segment: 2,
+          description: "Pakistan → India → Nepal → Bangladesh (ship car from Chittagong)"
+        },
+        geometry: {
+          type: "LineString",
+          coordinates: coords2
+        }
       }
-    }]
+    ]
   };
 
   fs.writeFileSync('data/planned-route.geojson', JSON.stringify(geojson, null, 2));
-  console.error(`\nWrote ${allCoords.length} total coordinates to data/planned-route.geojson`);
+  console.error(`\nWrote ${coords1.length + coords2.length} total coordinates to data/planned-route.geojson`);
+  console.error(`  Part 1: ${coords1.length} points`);
+  console.error(`  Part 2: ${coords2.length} points`);
 }
 
 buildRoute();
