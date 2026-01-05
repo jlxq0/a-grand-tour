@@ -28,13 +28,15 @@ const waypoints = [
   { name: "Ziggurat of Ur", coords: [46.1053, 30.9628] },
   { name: "Khorramshahr (Iran)", coords: [48.1667, 30.4333] },
   { name: "Ahvaz", coords: [48.6842, 31.3183] },
-  { name: "Isfahan (Naqsh-e Jahan Square)", coords: [51.6778, 32.6569] },
+  // Iran - logical geographic order
   { name: "Tehran (Golestan Palace)", coords: [51.4214, 35.6836] },
-  // Extended: Iran POIs, Pakistan, India, Nepal
+  { name: "Isfahan (Naqsh-e Jahan Square)", coords: [51.6778, 32.6569] },
   { name: "Yazd Old Town", coords: [54.3544, 31.8974] },
   { name: "Shiraz (Nasir al-Mulk Mosque)", coords: [52.5483, 29.6081] },
   { name: "Persepolis", coords: [52.8892, 29.9347] },
-  { name: "Hormuz Island", coords: [56.4611, 27.0619] },
+  { name: "Bandar Abbas", coords: [56.2833, 27.1833] },
+  { name: "Hormuz Island (Rainbow Valley)", coords: [56.4611, 27.0619] },
+  { name: "Bandar Abbas (return)", coords: [56.2833, 27.1833] },
   { name: "Chabahar", coords: [60.6432, 25.2919] },
   // Pakistan
   { name: "Gwadar", coords: [62.3254, 25.1264] },
@@ -51,7 +53,7 @@ const waypoints = [
   { name: "Gilgit (return)", coords: [74.3145, 35.9208] },
   { name: "Islamabad (return)", coords: [73.0551, 33.7295] },
   { name: "Lahore (return)", coords: [74.3587, 31.5204] },
-  // India
+  // India - Himalayan section
   { name: "Amritsar (Golden Temple)", coords: [74.8765, 31.6200] },
   { name: "Srinagar", coords: [74.7973, 34.0837] },
   { name: "Kargil", coords: [76.1349, 34.5539] },
@@ -60,8 +62,41 @@ const waypoints = [
   { name: "Spiti Valley (Kaza)", coords: [78.0722, 32.2278] },
   { name: "Shimla", coords: [77.1734, 31.1048] },
   { name: "Delhi", coords: [77.2090, 28.6139] },
+  // India - Grand Loop (clockwise from Delhi)
+  { name: "Agra (Taj Mahal)", coords: [78.0421, 27.1751] },
+  { name: "Jaipur (Hawa Mahal)", coords: [75.7873, 26.9239] },
+  { name: "Jodhpur (Mehrangarh Fort)", coords: [73.0243, 26.2968] },
+  { name: "Udaipur (City Palace)", coords: [73.6833, 24.5854] },
+  { name: "Rann of Kutch", coords: [69.8597, 23.7337] },
+  { name: "Ahmedabad", coords: [72.5714, 23.0225] },
+  { name: "Mumbai", coords: [72.8777, 19.0760] },
+  { name: "Goa (Baga Beach)", coords: [73.7515, 15.5553] },
+  { name: "Hampi Ruins", coords: [76.4600, 15.3350] },
+  { name: "Bangalore", coords: [77.5946, 12.9716] },
+  { name: "Kochi", coords: [76.2673, 9.9312] },
+  { name: "Munnar", coords: [77.0595, 10.0889] },
+  { name: "Alleppey (Kerala Backwaters)", coords: [76.3388, 9.4981] },
+  // Back up east coast
+  { name: "Madurai (Meenakshi Temple)", coords: [78.1198, 9.9252] },
+  { name: "Chennai", coords: [80.2707, 13.0827] },
+  { name: "Visakhapatnam", coords: [83.2185, 17.6868] },
+  { name: "Kolkata", coords: [88.3639, 22.5726] },
+  { name: "Varanasi", coords: [82.9913, 25.3176] },
   // Nepal
-  { name: "Kathmandu", coords: [85.3240, 27.7172] }
+  { name: "Kathmandu (Durbar Square)", coords: [85.3240, 27.7172] },
+  { name: "Bhaktapur", coords: [85.4280, 27.6710] },
+  { name: "Nagarkot (Himalayan viewpoint)", coords: [85.5200, 27.7172] },
+  { name: "Pokhara (Phewa Lake)", coords: [83.9856, 28.2096] },
+  { name: "Lumbini (Buddha birthplace)", coords: [83.2763, 27.4833] },
+  { name: "Chitwan National Park", coords: [84.3542, 27.5291] },
+  // Bangladesh
+  { name: "Paharpur Buddhist Vihara", coords: [88.9764, 25.0303] },
+  { name: "Dhaka", coords: [90.4125, 23.8103] },
+  { name: "Sundarbans", coords: [89.1833, 21.9497] },
+  { name: "Khulna", coords: [89.5403, 22.8456] },
+  { name: "Dhaka (return)", coords: [90.4125, 23.8103] },
+  { name: "Cox's Bazar Beach", coords: [91.9847, 21.4272] },
+  { name: "Chittagong (ship car)", coords: [91.8123, 22.3569] }
 ];
 
 async function fetchRoute(coords) {
@@ -128,9 +163,9 @@ async function buildRoute() {
     features: [{
       type: "Feature",
       properties: {
-        name: "Trip 1: Gulf to Nepal",
+        name: "Trip 1: Gulf to Bangladesh",
         segment: 1,
-        description: "Dubai → Oman → Saudi → Qatar → Bahrain → Kuwait → Iraq → Iran → Pakistan → India → Nepal"
+        description: "Dubai → Oman → Saudi → Qatar → Bahrain → Kuwait → Iraq → Iran → Pakistan → India → Nepal → Bangladesh (ship from Chittagong)"
       },
       geometry: {
         type: "LineString",
