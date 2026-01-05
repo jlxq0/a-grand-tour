@@ -1,0 +1,24 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Todra Gorge",
+    "countryCode": "MA",
+    "country": "Morocco",
+    "rating": 3,
+    "description": "300m canyon walls, dramatic narrow passage.",
+    "photo": "https://source.unsplash.com/800x400/?Todra+Gorge+Morocco"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -5.580307,
+        31.565614
+      ],
+      [
+        -5.576629,
+        31.578037
+      ]
+    ]
+  }
+}

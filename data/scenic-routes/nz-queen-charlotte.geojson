@@ -1,0 +1,48 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Queen Charlotte Drive",
+    "countryCode": "NZ",
+    "country": "New Zealand",
+    "rating": 3,
+    "description": "Coastal road, stunning ocean views.",
+    "photo": "https://source.unsplash.com/800x400/?Queen+Charlotte+Drive+New+Zealand"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        173.887019,
+        -41.288609
+      ],
+      [
+        173.915672,
+        -41.281736
+      ],
+      [
+        173.941745,
+        -41.270478
+      ],
+      [
+        173.971733,
+        -41.269059
+      ],
+      [
+        173.994515,
+        -41.283661
+      ],
+      [
+        174.024344,
+        -41.279973
+      ],
+      [
+        174.048894,
+        -41.266673
+      ],
+      [
+        174.049607,
+        -41.266373
+      ]
+    ]
+  }
+}

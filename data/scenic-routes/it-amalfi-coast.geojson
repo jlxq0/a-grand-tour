@@ -1,0 +1,56 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Amalfi Coast (SS163)",
+    "countryCode": "IT",
+    "country": "Italy",
+    "rating": 5,
+    "description": "Dramatic cliffside road, UNESCO World Heritage.",
+    "photo": "https://source.unsplash.com/800x400/?Amalfi+Coast+road+Italy"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.486934,
+        40.631439
+      ],
+      [
+        14.512624,
+        40.620157
+      ],
+      [
+        14.541139,
+        40.613845
+      ],
+      [
+        14.570627,
+        40.615957
+      ],
+      [
+        14.594017,
+        40.630042
+      ],
+      [
+        14.617853,
+        40.643644
+      ],
+      [
+        14.647618,
+        40.644613
+      ],
+      [
+        14.675693,
+        40.637308
+      ],
+      [
+        14.702222,
+        40.647322
+      ],
+      [
+        14.706873,
+        40.65312
+      ]
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Grimsel Pass",
+    "countryCode": "CH",
+    "country": "Switzerland",
+    "rating": 4,
+    "description": "38 km high alpine pass, one of Europe's highest.",
+    "photo": "https://source.unsplash.com/800x400/?Grimsel+Pass+Switzerland"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        8.233261,
+        46.706488
+      ],
+      [
+        8.243167,
+        46.684985
+      ],
+      [
+        8.267783,
+        46.669842
+      ],
+      [
+        8.291045,
+        46.653857
+      ],
+      [
+        8.304534,
+        46.632716
+      ],
+      [
+        8.308147,
+        46.610339
+      ],
+      [
+        8.32612,
+        46.591522
+      ],
+      [
+        8.339748,
+        46.571074
+      ],
+      [
+        8.359561,
+        46.56163
+      ]
+    ]
+  }
+}

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>A Grand Tour - Route Map</title>
+    <title>A Grand Tour - Scenic Routes</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
@@ -23,18 +23,171 @@
         }
         #info h2 { margin: 0 0 5px 0; font-size: 16px; }
         #info p { margin: 5px 0; color: #666; }
+        #route-info {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            background: #fff;
+            border-radius: 12px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 14px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            display: none;
+            width: 340px;
+            overflow: hidden;
+        }
+        #route-photo-container {
+            position: relative;
+            width: 100%;
+            height: 180px;
+            background: #222;
+        }
+        #route-photo {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .carousel-btn:hover { background: rgba(0,0,0,0.7); }
+        #carousel-prev { left: 8px; }
+        #carousel-next { right: 8px; }
+        #carousel-dots {
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+        }
+        .carousel-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+        }
+        .carousel-dot.active { background: white; }
+        #route-content {
+            padding: 14px 16px;
+        }
+        #route-info h3 { margin: 0 0 4px 0; font-size: 17px; font-weight: 600; }
+        #route-info .country { color: #666; margin: 0 0 8px 0; font-size: 13px; }
+        #route-info .rating { color: #f39c12; margin: 0 0 10px 0; font-size: 15px; letter-spacing: 1px; }
+        #route-info .description { color: #333; margin: 0; line-height: 1.5; font-size: 13px; }
+        #route-close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+        }
+        #route-close:hover { background: rgba(0,0,0,0.7); }
+        .legend {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255,255,255,0.95);
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        .legend h4 { margin: 0 0 8px 0; font-size: 13px; }
+        .legend-item { display: flex; align-items: center; margin: 4px 0; }
+        .legend-line { width: 24px; height: 3px; margin-right: 8px; border-radius: 2px; }
     </style>
 </head>
 <body>
 <div id="map"></div>
 <div id="info">
     <h2>A Grand Tour</h2>
-    <p>15 years | 200,000 km | 100+ countries</p>
-    <p>Feb 2027 – Aug 2042</p>
+    <p>119 scenic routes worldwide</p>
+    <p>Click a route for details</p>
+</div>
+<div id="route-info">
+    <button id="route-close">×</button>
+    <div id="route-photo-container">
+        <img id="route-photo" src="" alt="Route photo">
+        <button class="carousel-btn" id="carousel-prev">‹</button>
+        <button class="carousel-btn" id="carousel-next">›</button>
+        <div id="carousel-dots"></div>
+    </div>
+    <div id="route-content">
+        <h3 id="route-name"></h3>
+        <p class="country" id="route-country"></p>
+        <p class="rating" id="route-rating"></p>
+        <p class="description" id="route-description"></p>
+    </div>
+</div>
+<div class="legend">
+    <h4>Route Rating</h4>
+    <div class="legend-item"><div class="legend-line" style="background: #e74c3c;"></div> 5 stars</div>
+    <div class="legend-item"><div class="legend-line" style="background: #e67e22;"></div> 4 stars</div>
+    <div class="legend-item"><div class="legend-line" style="background: #f1c40f;"></div> 3 stars</div>
 </div>
 
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoiamx4cTAiLCJhIjoiY21qd2QwOGRpNXVuNzNnb2txNmdkemd2ZyJ9.JpfheNv0aknnk-pbhNOGQg';
+
+const routeFiles = [
+    'ae-jebel-hafeet.geojson','ae-khor-fakkan.geojson','al-llogara-pass.geojson','ar-calchaqui.geojson',
+    'ar-el-chalten.geojson','ar-paso-caracoles.geojson','ar-ruta-40.geojson','ar-seven-lakes.geojson',
+    'at-grossglockner.geojson','au-gibb-river-road.geojson','au-great-alpine-road.geojson',
+    'au-great-ocean-road.geojson','au-nullarbor.geojson','au-outback-way.geojson','bo-death-road.geojson',
+    'bo-salar-uyuni.geojson','br-serra-rio-rastro.geojson','bz-hummingbird-highway.geojson',
+    'ca-cabot-trail.geojson','ca-icefields-parkway.geojson','ca-sea-to-sky.geojson','ch-furka-pass.geojson',
+    'ch-grimsel-pass.geojson','ch-susten-pass.geojson','cl-carretera-austral.geojson',
+    'cl-general-carrera.geojson','cn-tianmen-mountain.geojson','cr-braulio-carrillo.geojson',
+    'cr-cerro-muerte.geojson','de-alpine-road.geojson','de-black-forest.geojson','de-romantic-road.geojson',
+    'de-wine-route.geojson','ec-avenue-volcanoes.geojson','es-sa-calobra.geojson','et-simien-mountains.geojson',
+    'fi-archipelago-trail.geojson','fr-col-de-turini.geojson','fr-combe-laval.geojson','fr-grandes-alpes.geojson',
+    'fr-lacets-montvernier.geojson','fr-route-napoleon.geojson','fr-verdon-gorge.geojson',
+    'gb-bealach-na-ba.geojson','gb-causeway-coastal.geojson','gb-nc500.geojson','gr-vikos-gorge.geojson',
+    'gt-lake-atitlan.geojson','hr-adriatic-highway.geojson','hr-gorski-kotar.geojson','id-mount-bromo.geojson',
+    'in-kochi-munnar.geojson','in-manali-leh.geojson','in-spiti-valley.geojson','in-srinagar-leh.geojson',
+    'is-ring-road.geojson','it-amalfi-coast.geojson','it-dolomites.geojson','it-stelvio-pass.geojson',
+    'it-strada-della-forra.geojson','jo-kings-highway.geojson','jo-wadi-rum.geojson','ma-dades-gorge.geojson',
+    'ma-tizi-ntichka.geojson','ma-todra-gorge.geojson','mx-baja-highway-1.geojson','mx-chiapas.geojson',
+    'mx-copper-canyon.geojson','mx-devils-backbone.geojson','mx-oaxaca-coast.geojson',
+    'mx-pacific-coast-200.geojson','mx-valle-guadalupe.geojson','my-cameron-highlands.geojson',
+    'na-fish-river-canyon.geojson','na-sossusvlei-skeleton.geojson','no-atlantic-road.geojson',
+    'no-geirangerfjord.geojson','no-lofoten.geojson','no-trollstigen.geojson','np-kathmandu-pokhara.geojson',
+    'nz-arthurs-pass.geojson','nz-crown-range.geojson','nz-forgotten-world.geojson','nz-milford-road.geojson',
+    'nz-queen-charlotte.geojson','nz-queenstown-glenorchy.geojson','om-jebel-akhdar.geojson',
+    'om-jebel-shams.geojson','om-muscat-salalah.geojson','om-wadi-bani-awf.geojson','pa-darien.geojson',
+    'pe-sacred-valley.geojson','pk-fairy-meadows.geojson','pk-karakoram-highway.geojson',
+    'pt-er101-madeira.geojson','ro-transfagarasan.geojson','sa-asir.geojson','sa-edge-of-world.geojson',
+    'se-high-coast.geojson','si-vrsic-pass.geojson','sv-ruta-flores.geojson','th-mae-hong-son.geojson',
+    'tr-lycian-coast.geojson','tz-ngorongoro-serengeti.geojson','us-beartooth-highway.geojson',
+    'us-blue-ridge-parkway.geojson','us-going-to-the-sun.geojson','us-million-dollar-highway.geojson',
+    'us-natchez-trace.geojson','us-overseas-highway.geojson','us-pacific-coast-highway.geojson',
+    'us-route-66.geojson','vn-ha-giang-loop.geojson','vn-hai-van-pass.geojson','za-chapmans-peak.geojson',
+    'za-garden-route.geojson','za-panorama-route.geojson','za-sani-pass.geojson','za-swartberg-pass.geojson'
+];
 
 const map = new mapboxgl.Map({
     container: 'map',
@@ -44,15 +197,15 @@ const map = new mapboxgl.Map({
 });
 
 map.on('load', async () => {
-    // Load visited countries from data file
+    // Load visited countries
     const visitedCountryCodes = await fetch('data/visited-countries.json').then(r => r.json());
-    // Add country boundaries source
+
+    // Add country boundaries
     map.addSource('countries', {
         type: 'vector',
         url: 'mapbox://mapbox.country-boundaries-v1'
     });
 
-    // Add country fill layer - green for visited, gray for not
     map.addLayer({
         id: 'country-fills',
         type: 'fill',
@@ -70,12 +223,170 @@ map.on('load', async () => {
             'fill-color': [
                 'case',
                 ['in', ['get', 'iso_3166_1'], ['literal', visitedCountryCodes]],
-                'rgba(39, 174, 96, 0.15)',
+                'rgba(39, 174, 96, 0.12)',
                 'rgba(200, 200, 200, 0.05)'
             ],
             'fill-opacity': 1
         }
     }, 'admin-1-boundary-bg');
+
+    // Load all scenic routes
+    const routes = await Promise.all(
+        routeFiles.map(async f => {
+            const route = await fetch(`data/scenic-routes/${f}`).then(r => r.json());
+            // Add routeId for local image lookup
+            route.properties.routeId = f.replace('.geojson', '');
+            return route;
+        })
+    );
+
+    // Combine into FeatureCollection
+    const routesCollection = {
+        type: 'FeatureCollection',
+        features: routes
+    };
+
+    map.addSource('scenic-routes', {
+        type: 'geojson',
+        data: routesCollection
+    });
+
+    // Route lines - colored by rating
+    map.addLayer({
+        id: 'scenic-routes-line',
+        type: 'line',
+        source: 'scenic-routes',
+        paint: {
+            'line-color': [
+                'match', ['get', 'rating'],
+                5, '#e74c3c',
+                4, '#e67e22',
+                3, '#f1c40f',
+                '#3498db'
+            ],
+            'line-width': [
+                'interpolate', ['linear'], ['zoom'],
+                1, 1.5,
+                5, 3,
+                10, 5
+            ],
+            'line-opacity': 0.85
+        }
+    });
+
+    // Hover highlight layer
+    map.addLayer({
+        id: 'scenic-routes-highlight',
+        type: 'line',
+        source: 'scenic-routes',
+        paint: {
+            'line-color': '#ffffff',
+            'line-width': [
+                'interpolate', ['linear'], ['zoom'],
+                1, 4,
+                5, 7,
+                10, 10
+            ],
+            'line-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.8, 0]
+        }
+    }, 'scenic-routes-line');
+
+    // Interactivity
+    let hoveredId = null;
+    const routeInfo = document.getElementById('route-info');
+    const routeName = document.getElementById('route-name');
+    const routeCountry = document.getElementById('route-country');
+    const routeRating = document.getElementById('route-rating');
+    const routePhoto = document.getElementById('route-photo');
+    const routeDescription = document.getElementById('route-description');
+    const routeClose = document.getElementById('route-close');
+    const carouselPrev = document.getElementById('carousel-prev');
+    const carouselNext = document.getElementById('carousel-next');
+    const carouselDots = document.getElementById('carousel-dots');
+
+    // Carousel state
+    let currentRouteId = null;
+    let currentImageIndex = 0;
+    let totalImages = 5;
+
+    function updateCarousel() {
+        routePhoto.src = `data/scenic-routes/images/${currentRouteId}/${currentImageIndex + 1}.webp`;
+        // Update dots
+        const dots = carouselDots.querySelectorAll('.carousel-dot');
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentImageIndex);
+        });
+    }
+
+    function createDots(count) {
+        carouselDots.innerHTML = '';
+        for (let i = 0; i < count; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', () => {
+                currentImageIndex = i;
+                updateCarousel();
+            });
+            carouselDots.appendChild(dot);
+        }
+    }
+
+    carouselPrev.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+        updateCarousel();
+    });
+
+    carouselNext.addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % totalImages;
+        updateCarousel();
+    });
+
+    routeClose.addEventListener('click', () => {
+        routeInfo.style.display = 'none';
+    });
+
+    map.on('mousemove', 'scenic-routes-line', (e) => {
+        map.getCanvas().style.cursor = 'pointer';
+        if (e.features.length > 0) {
+            if (hoveredId !== null) {
+                map.setFeatureState({ source: 'scenic-routes', id: hoveredId }, { hover: false });
+            }
+            hoveredId = e.features[0].id;
+            map.setFeatureState({ source: 'scenic-routes', id: hoveredId }, { hover: true });
+        }
+    });
+
+    map.on('mouseleave', 'scenic-routes-line', () => {
+        map.getCanvas().style.cursor = '';
+        if (hoveredId !== null) {
+            map.setFeatureState({ source: 'scenic-routes', id: hoveredId }, { hover: false });
+        }
+        hoveredId = null;
+    });
+
+    map.on('click', 'scenic-routes-line', (e) => {
+        const props = e.features[0].properties;
+        routeName.textContent = props.name;
+        routeCountry.textContent = props.country;
+        routeRating.textContent = '★'.repeat(props.rating);
+        routeDescription.textContent = props.description || '';
+
+        // Setup carousel
+        currentRouteId = props.routeId;
+        currentImageIndex = 0;
+        totalImages = 5; // Most routes have 5 images
+        createDots(totalImages);
+        updateCarousel();
+
+        routeInfo.style.display = 'block';
+    });
+
+    map.on('click', (e) => {
+        const features = map.queryRenderedFeatures(e.point, { layers: ['scenic-routes-line'] });
+        if (features.length === 0) {
+            routeInfo.style.display = 'none';
+        }
+    });
 });
 
 map.addControl(new mapboxgl.NavigationControl());

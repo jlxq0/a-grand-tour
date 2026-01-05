@@ -1,0 +1,64 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Stelvio Pass",
+    "countryCode": "IT",
+    "country": "Italy",
+    "rating": 5,
+    "description": "60 hairpin turns, 2,757m. Voted best driving road in the world (Top Gear 2008).",
+    "photo": "https://source.unsplash.com/800x400/?Stelvio+Pass+Italy+hairpins"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        10.587643,
+        46.618687
+      ],
+      [
+        10.561342,
+        46.604826
+      ],
+      [
+        10.546907,
+        46.58454
+      ],
+      [
+        10.523674,
+        46.568521
+      ],
+      [
+        10.506399,
+        46.549363
+      ],
+      [
+        10.483862,
+        46.533061
+      ],
+      [
+        10.452097,
+        46.5276
+      ],
+      [
+        10.421401,
+        46.54065
+      ],
+      [
+        10.408643,
+        46.519923
+      ],
+      [
+        10.379518,
+        46.509627
+      ],
+      [
+        10.364413,
+        46.489649
+      ],
+      [
+        10.370293,
+        46.468299
+      ]
+    ]
+  }
+}

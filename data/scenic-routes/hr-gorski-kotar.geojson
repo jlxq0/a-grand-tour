@@ -1,0 +1,68 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Gorski Kotar (D32)",
+    "countryCode": "HR",
+    "country": "Croatia",
+    "rating": 3,
+    "description": "50 km \"Croatian Switzerland\" - lakes, forests, wildlife.",
+    "photo": "https://source.unsplash.com/800x400/?Gorski+Kotar+Croatia"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        14.804931,
+        45.483203
+      ],
+      [
+        14.814373,
+        45.461645
+      ],
+      [
+        14.846463,
+        45.462347
+      ],
+      [
+        14.850208,
+        45.439769
+      ],
+      [
+        14.827818,
+        45.423081
+      ],
+      [
+        14.812158,
+        45.403427
+      ],
+      [
+        14.789129,
+        45.387222
+      ],
+      [
+        14.764876,
+        45.403819
+      ],
+      [
+        14.784053,
+        45.385709
+      ],
+      [
+        14.769626,
+        45.365575
+      ],
+      [
+        14.745901,
+        45.350173
+      ],
+      [
+        14.714077,
+        45.353079
+      ],
+      [
+        14.69925,
+        45.34932
+      ]
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Sa Calobra Road",
+    "countryCode": "ES",
+    "country": "Spain (Mallorca)",
+    "rating": 4,
+    "description": "\"Snake Road\" with 270-degree curve passing under itself.",
+    "photo": "https://source.unsplash.com/800x400/?Sa+Calobra+Road+Mallorca"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        2.858913,
+        39.824774
+      ],
+      [
+        2.829652,
+        39.826084
+      ],
+      [
+        2.802565,
+        39.835034
+      ],
+      [
+        2.799906,
+        39.850146
+      ]
+    ]
+  }
+}
