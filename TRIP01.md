@@ -81,7 +81,8 @@ Khunjerab Pass → [return] → India via Wagah → Amritsar → Manali-Leh → 
 ### Driving in Iran
 - **Carnet de Passage** required
 - Foreign vehicles permitted up to 3 months
-- **⚠️ Vehicles over 2500cc:** May be limited to 5 days - verify with tour agency (LC300 is 3.3L)
+- **Engine size:** The 2500cc restriction was lifted in 2019 for tourists - Land Cruiser 300 (3.3L) is allowed
+- **Banned:** US-made vehicles, luxury brands (Porsche, Maserati, Lamborghini) - Toyota is fine
 - Fuel extremely cheap (~$0.08/liter)
 - Speed limits: 50 km/h city, 70-120 km/h highways
 - Aggressive driving culture
