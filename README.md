@@ -63,7 +63,8 @@ Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. T
 
 ```
 PHASE A: Trips 1-13 (2027-2032)
-Dubai → Iran → Pakistan → India → Nepal → Bangladesh →
+Dubai → Oman → Qatar → Bahrain → Saudi → Kuwait → Iraq → Iran →
+[ship Bandar Abbas→Karachi] → Pakistan (KKH) → India → Nepal → Bangladesh →
 [ship] → Thailand → Laos → Cambodia → Vietnam → Malaysia →
 [ship] → Indonesia (Java + Sumatra) → Timor → Australia → New Zealand →
 Chile → Argentina → Brazil → Paraguay → Bolivia → Peru → Ecuador →
@@ -81,7 +82,7 @@ Jordan → Saudi Arabia → Dubai
 
 |Route|Why|Cost|
 |---|---|---|
-|Sharjah → Bandar Abbas|No UAE-Iran land border|$800|
+|Bandar Abbas → Karachi|Skip Balochistan (safety)|$2,000|
 |Chittagong → Laem Chabang|Myanmar closed|$2,500|
 |Johor Bahru → Jakarta|No Malaysia-Indonesia car ferry|$1,000|
 |Brisbane → Auckland|Pacific|$2,500|
@@ -117,7 +118,7 @@ After Trip 3, Starlink covers everything.
 
 |#|Dates|Region|Days|Countries|
 |---|---|---|---|---|
-|1|Feb–May 2027|Dubai → Qatar → Bahrain → Oman → Iran → Pakistan → North India|114|🇦🇪🇶🇦🇧🇭🇴🇲🇮🇷🇵🇰🇮🇳|
+|1|Feb–May 2027|Dubai → Oman → Qatar → Bahrain → Saudi → Kuwait → Iraq → Iran → Pakistan → India (Delhi)|114|🇦🇪🇴🇲🇶🇦🇧🇭🇸🇦🇰🇼🇮🇶🇮🇷🇵🇰🇮🇳|
 |2|Sep–Dec 2027|South India → Nepal → Bangladesh|111|🇮🇳🇳🇵🇧🇩|
 |3|Apr–Jul 2028|Thailand → SE Asia → Malaysia (JB)|104|🇹🇭🇱🇦🇻🇳🇰🇭🇲🇾|
 |4|Nov 2028–Feb 2029|Indonesia (Java + Sumatra) → Timor → Australia|115|🇮🇩🇹🇱🇦🇺|
@@ -338,27 +339,31 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 # Trip Details
 
-## Trip 1: Dubai → Qatar → Bahrain → Oman → Iran → Pakistan → India
+## Trip 1: Dubai → Gulf States → Iraq → Iran → Pakistan → India
 
 **Feb–May 2027 (4 months)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇦🇪 UAE|7|Dubai — pick up car, shake down, Abu Dhabi|
-|🇶🇦 Qatar|3|Doha, desert, The Pearl|
-|🇧🇭 Bahrain|2|Manama, Bahrain Fort|
-|🇦🇪 UAE|3|Return via Abu Dhabi to Sharjah|
-|🇴🇲 Oman|10|Muscat, Nizwa, Wahiba Sands, Sur|
-|⛴️ Ferry|1|Sharjah → Bandar Abbas|
-|🇮🇷 Iran|28|Bandar Abbas, Shiraz, Persepolis, Isfahan, Yazd, Tehran, Tabriz|
-|🇵🇰 Pakistan|28|Quetta, Lahore, Islamabad, Peshawar, Karakoram Highway, Hunza|
-|🇮🇳 India|32|Amritsar, Delhi, Rajasthan (Jaipur, Jodhpur, Jaisalmer, Udaipur)|
+|🇦🇪 UAE|5|Dubai — pick up car, Burj Khalifa, Abu Dhabi, Jebel Hafeet|
+|🇴🇲 Oman|12|Khor Fakkan, Musandam Fjords, Wadi Shab, Muscat, Nizwa, Jebel Akhdar, Jebel Shams, Salalah|
+|🇶🇦 Qatar|3|Inland Sea, Doha|
+|🇧🇭 Bahrain|2|Qal'at al-Bahrain|
+|🇸🇦 Saudi Arabia|7|Dammam, Riyadh, Edge of the World, Diriyah|
+|🇰🇼 Kuwait|2|Kuwait City|
+|🇮🇶 Iraq|3|Basra, Ziggurat of Ur (4000-year-old Sumerian temple)|
+|🇮🇷 Iran|14|Ahvaz, Kermanshah, Tehran, Isfahan, Yazd, Shiraz, Persepolis, Bandar Abbas|
+|🚢 Ship|4|Bandar Abbas → Karachi (skip Balochistan)|
+|🇵🇰 Pakistan|28|Karachi, Multan, Lahore, Islamabad, Karakoram Highway, Hunza, Khunjerab Pass|
+|🇮🇳 India|34|Amritsar, Chandigarh, Manali-Leh route, Shimla, Delhi|
 
-**114 days / 7 countries / ~10,000 km**
+**114 days / 10 countries / ~15,000 km**
 
-**Weather:** Feb–May perfect. Iran spring, Pakistan before summer heat, Rajasthan dry season.
+**Weather:** Feb–May perfect. Gulf winter, Iran spring, Pakistan before summer heat.
 
-**Store:** Delhi  
+**Safety:** Ship car around Balochistan (insurgency). Use Manali-Leh route (avoids Kashmir conflict zone).
+
+**Store:** Delhi
 **Fly home:** Delhi (SIA direct)
 
 ---
@@ -990,7 +995,7 @@ All water crossings for A Grand Tour, in chronological order. Costs are estimate
 
 | # | Route | Type | Trip | Est. Cost | Duration |
 |---|-------|------|------|-----------|----------|
-| 1 | Sharjah → Bandar Abbas | Ferry | 1 | $600 | 11 hrs |
+| 1 | Bandar Abbas → Karachi | Ship | 1 | $2,000 | 3-5 days |
 | 2 | Chittagong → Laem Chabang | Ship | 2→3 | $2,500 | 14 days |
 | 3 | Johor Bahru → Jakarta | Ship | 3→4 | $1,000 | 3 days |
 | 4 | Merak → Bakauheni (×2) | Ferry | 4 | $50 | 2 hrs |
@@ -1013,7 +1018,7 @@ All water crossings for A Grand Tour, in chronological order. Costs are estimate
 
 | Service | Contact |
 |---------|---------|
-| UAE-Iran (Al Hili Marine) | +971 6 528 8575 |
+| Iran-Pakistan (RoRo carriers) | Various - book via local agent |
 | Darién Gap (IVSSUK) | +44 203 787 4201 |
 | Darién Gap (Wild Card Sailing) | wildcardsailing.com |
 | Indonesia Ferry (ASDP) | indonesiaferry.co.id |
