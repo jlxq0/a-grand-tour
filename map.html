@@ -476,6 +476,8 @@ map.on('load', async () => {
 
     function sanitizeFilename(name) {
         return name.toLowerCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '') // remove accents
+            .replace(/ð/g, 'd').replace(/þ/g, 'th') // Icelandic chars
             .replace(/[^a-z0-9]+/g, '-')
             .replace(/^-|-$/g, '')
             .substring(0, 50);
