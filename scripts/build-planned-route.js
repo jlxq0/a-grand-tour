@@ -39,9 +39,7 @@ const waypoints = [
   { name: "Persepolis", coords: [52.8892, 29.9347] },
   { name: "Bandar Abbas", coords: [56.2833, 27.1833] },
   // Hormuz Island (Rainbow Valley) - via ferry from Bandar Abbas, see ferries.geojson
-  { name: "Chabahar", coords: [60.6432, 25.2919] },
-  // Pakistan
-  { name: "Gwadar", coords: [62.3254, 25.1264] },
+  // SHIP CAR: Bandar Abbas → Karachi (skip Balochistan - safety, see shipping/bandar-abbas-karachi.geojson)
   { name: "Karachi", coords: [67.0011, 24.8607] },
   { name: "Multan", coords: [71.5249, 30.1575] },
   { name: "Lahore", coords: [74.3587, 31.5204] },
@@ -60,12 +58,12 @@ const waypoints = [
   { name: "Besham (return)", coords: [72.8756, 34.9267] },
   { name: "Islamabad (return)", coords: [73.0551, 33.7295] },
   { name: "Lahore (return)", coords: [74.3587, 31.5204] },
-  // India - Himalayan section
+  // India - Himalayan section (via Manali-Leh, avoids Kashmir conflict zone)
   { name: "Amritsar (Golden Temple)", coords: [74.8765, 31.6200] },
-  { name: "Srinagar", coords: [74.7973, 34.0837] },
-  { name: "Kargil", coords: [76.1349, 34.5539] },
-  { name: "Leh", coords: [77.5771, 34.1526] },
+  { name: "Chandigarh", coords: [76.7794, 30.7333] },
   { name: "Manali", coords: [77.1887, 32.2396] },
+  { name: "Leh", coords: [77.5771, 34.1526] },
+  { name: "Manali (return)", coords: [77.1887, 32.2396] },
   { name: "Spiti Valley (Kaza)", coords: [78.0722, 32.2278] },
   { name: "Shimla", coords: [77.1734, 31.1048] },
   { name: "Delhi", coords: [77.2090, 28.6139] },
