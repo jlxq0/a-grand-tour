@@ -29,14 +29,14 @@ const waypoints = [
   { name: "Khorramshahr (Iran)", coords: [48.1667, 30.4333] },
   { name: "Ahvaz", coords: [48.6842, 31.3183] },
   // Iran - logical geographic order
+  { name: "Kermanshah", coords: [47.0650, 34.3142] },
   { name: "Tehran (Golestan Palace)", coords: [51.4214, 35.6836] },
   { name: "Isfahan (Naqsh-e Jahan Square)", coords: [51.6778, 32.6569] },
   { name: "Yazd Old Town", coords: [54.3544, 31.8974] },
   { name: "Shiraz (Nasir al-Mulk Mosque)", coords: [52.5483, 29.6081] },
   { name: "Persepolis", coords: [52.8892, 29.9347] },
   { name: "Bandar Abbas", coords: [56.2833, 27.1833] },
-  { name: "Hormuz Island (Rainbow Valley)", coords: [56.4611, 27.0619] },
-  { name: "Bandar Abbas (return)", coords: [56.2833, 27.1833] },
+  // Hormuz Island (Rainbow Valley) - via ferry from Bandar Abbas, see ferries.geojson
   { name: "Chabahar", coords: [60.6432, 25.2919] },
   // Pakistan
   { name: "Gwadar", coords: [62.3254, 25.1264] },
