@@ -45,12 +45,17 @@ const waypoints = [
   { name: "Lahore", coords: [74.3587, 31.5204] },
   { name: "Islamabad", coords: [73.0551, 33.7295] },
   // Karakoram Highway (out and back - can't cross to China)
+  { name: "Abbottabad", coords: [73.2215, 34.1688] },
+  { name: "Besham", coords: [72.8756, 34.9267] },
+  { name: "Chilas", coords: [74.1000, 35.4167] },
   { name: "Gilgit", coords: [74.3145, 35.9208] },
   { name: "Hunza Valley (Karimabad)", coords: [74.6597, 36.3186] },
   { name: "Attabad Lake", coords: [74.8500, 36.3333] },
   { name: "Khunjerab Pass", coords: [75.4167, 36.8500] },
-  // Return from KKH
+  // Return from KKH (same route back)
   { name: "Gilgit (return)", coords: [74.3145, 35.9208] },
+  { name: "Chilas (return)", coords: [74.1000, 35.4167] },
+  { name: "Besham (return)", coords: [72.8756, 34.9267] },
   { name: "Islamabad (return)", coords: [73.0551, 33.7295] },
   { name: "Lahore (return)", coords: [74.3587, 31.5204] },
   // India - Himalayan section
