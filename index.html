@@ -19,9 +19,35 @@
             overflow: hidden;
         }
 
+        .alpha-banner {
+            background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .alpha-banner span {
+            opacity: 0.9;
+        }
+
+        .alpha-banner strong {
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 8px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         .container {
             display: flex;
-            height: 100vh;
+            height: calc(100vh - 42px);
         }
 
         /* Map Panel - Left Side */
@@ -416,6 +442,10 @@
     </style>
 </head>
 <body>
+    <div class="alpha-banner">
+        <strong>Alpha</strong>
+        <span>Early planning stage for a dream trip — may never actually happen!</span>
+    </div>
     <div class="container">
         <!-- Map Panel -->
         <div class="map-panel">
