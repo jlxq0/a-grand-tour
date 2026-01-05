@@ -14,8 +14,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Structure
 
 21 trips split across two phases:
-- **Phase A (2027-2034):** 13 four-month trips with 3-month breaks (pre-school)
-- **Phase B (2035-2042):** 8 seven-week summer trips (school years)
+- **Phase A (2027-2034):** Three-month trips with 3-month breaks (pre-school)
+- **Phase B (2035-2042):** Seven-week summer trips (school years)
 
 Route: Dubai → East → Americas → West → Dubai (full circumnavigation)
 
