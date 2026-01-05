@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Neuschwanstein Castle",
+        "country": "Germany",
+        "countryCode": "DE",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Fairytale castle that inspired Disney, Bavaria's most famous sight"
+      },
+      "geometry": { "type": "Point", "coordinates": [10.7498, 47.5576] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saxon Switzerland National Park",
+        "country": "Germany",
+        "countryCode": "DE",
+        "category": "natural",
+        "rating": 5,
+        "description": "Dramatic sandstone pillars and deep ravines near Dresden"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.0833, 50.9167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zugspitze",
+        "country": "Germany",
+        "countryCode": "DE",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Germany's highest peak (2,962m) with views of 400+ Alpine peaks"
+      },
+      "geometry": { "type": "Point", "coordinates": [10.9863, 47.4211] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cologne Cathedral",
+        "country": "Germany",
+        "countryCode": "DE",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Gothic masterpiece and UNESCO World Heritage Site"
+      },
+      "geometry": { "type": "Point", "coordinates": [6.9578, 50.9413] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brandenburg Gate",
+        "country": "Germany",
+        "countryCode": "DE",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Iconic neoclassical monument and symbol of German reunification"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.3777, 52.5163] }
+    }
+  ]
+}

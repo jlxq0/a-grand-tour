@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Victoria Falls (Zambia side)",
+        "country": "Zambia",
+        "countryCode": "ZM",
+        "category": "natural",
+        "rating": 5,
+        "description": "Mosi-oa-Tunya view with Devil's Pool swim on the edge during dry season"
+      },
+      "geometry": { "type": "Point", "coordinates": [25.8644, -17.9167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lower Zambezi National Park",
+        "country": "Zambia",
+        "countryCode": "ZM",
+        "category": "natural",
+        "rating": 4,
+        "description": "Premier canoe safari destination with elephants swimming across the river"
+      },
+      "geometry": { "type": "Point", "coordinates": [29.0000, -15.7500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Luangwa",
+        "country": "Zambia",
+        "countryCode": "ZM",
+        "category": "natural",
+        "rating": 5,
+        "description": "Premier walking safari destination"
+      },
+      "geometry": { "type": "Point", "coordinates": [31.8333, -13.0833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kafue National Park",
+        "country": "Zambia",
+        "countryCode": "ZM",
+        "category": "natural",
+        "rating": 4,
+        "description": "One of Africa's largest with Busanga Plains"
+      },
+      "geometry": { "type": "Point", "coordinates": [25.5000, -15.0000] }
+    }
+  ]
+}

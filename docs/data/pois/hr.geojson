@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Plitvice Lakes",
+        "country": "Croatia",
+        "countryCode": "HR",
+        "category": "natural",
+        "rating": 5,
+        "description": "UNESCO site with 16 terraced turquoise lakes and cascading waterfalls"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.6216, 44.8654] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dubrovnik Old Town",
+        "country": "Croatia",
+        "countryCode": "HR",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Medieval walled city with stunning Adriatic views, Pearl of the Adriatic"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.1096, 42.6507] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krka National Park",
+        "country": "Croatia",
+        "countryCode": "HR",
+        "category": "natural",
+        "rating": 4,
+        "description": "Beautiful waterfalls where you can swim in crystal-clear pools"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.9608, 43.8008] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Diocletian's Palace Split",
+        "country": "Croatia",
+        "countryCode": "HR",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Roman emperor's palace from 305 CE UNESCO"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.4402, 43.5081] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zadar Sea Organ",
+        "country": "Croatia",
+        "countryCode": "HR",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Architectural sound installation from sea waves"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.2256, 44.1156] }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gardens by the Bay",
+        "country": "Singapore",
+        "countryCode": "SG",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Futuristic Supertree Grove with 50m vertical gardens and world's largest greenhouse"
+      },
+      "geometry": { "type": "Point", "coordinates": [103.8636, 1.2816] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marina Bay Sands",
+        "country": "Singapore",
+        "countryCode": "SG",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Iconic three-tower hotel with rooftop infinity pool and skypark"
+      },
+      "geometry": { "type": "Point", "coordinates": [103.8613, 1.2834] }
+    }
+  ]
+}

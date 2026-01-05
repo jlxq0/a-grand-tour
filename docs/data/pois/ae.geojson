@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Burj Khalifa",
+        "country": "United Arab Emirates",
+        "countryCode": "AE",
+        "category": "landmark",
+        "rating": 5,
+        "description": "World's tallest building at 828m with observation decks offering panoramic views of Dubai"
+      },
+      "geometry": { "type": "Point", "coordinates": [55.2744, 25.1972] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sheikh Zayed Grand Mosque",
+        "country": "United Arab Emirates",
+        "countryCode": "AE",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Abu Dhabi's stunning white marble mosque blending Moorish, Ottoman and Islamic architecture"
+      },
+      "geometry": { "type": "Point", "coordinates": [54.4711, 24.4128] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Empty Quarter (Rub Al Khali)",
+        "country": "United Arab Emirates",
+        "countryCode": "AE",
+        "category": "natural",
+        "rating": 4,
+        "description": "World's largest uninterrupted sand desert with towering dunes at Liwa Oasis"
+      },
+      "geometry": { "type": "Point", "coordinates": [54.0000, 22.5000] }
+    }
+  ]
+}

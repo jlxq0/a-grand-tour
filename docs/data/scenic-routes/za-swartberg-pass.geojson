@@ -1,0 +1,40 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Swartberg Pass",
+    "countryCode": "ZA",
+    "country": "South Africa",
+    "rating": 4,
+    "description": "Steep gravel, hairpin bends, 19th century engineering.",
+    "photo": "https://source.unsplash.com/800x400/?Swartberg+Pass+South+Africa"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        22.048343,
+        -33.349529
+      ],
+      [
+        22.074221,
+        -33.343005
+      ],
+      [
+        22.100946,
+        -33.339411
+      ],
+      [
+        22.127404,
+        -33.33436
+      ],
+      [
+        22.15407,
+        -33.329354
+      ],
+      [
+        22.162406,
+        -33.326198
+      ]
+    ]
+  }
+}

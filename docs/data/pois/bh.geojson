@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Qal'at al-Bahrain",
+        "country": "Bahrain",
+        "countryCode": "BH",
+        "category": "landmark",
+        "rating": 3,
+        "description": "Ancient harbor and capital with 4,000 years of human occupation layers"
+      },
+      "geometry": { "type": "Point", "coordinates": [50.5203, 26.2333] }
+    }
+  ]
+}

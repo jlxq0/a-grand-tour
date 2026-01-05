@@ -1,0 +1,137 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iguazu Falls (Brazil side)",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "natural",
+        "rating": 5,
+        "description": "Panoramic views of the entire 275-waterfall system from Brazilian walkways"
+      },
+      "geometry": { "type": "Point", "coordinates": [-54.4403, -25.6953] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Christ the Redeemer",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Iconic Art Deco statue atop Corcovado Mountain overlooking Rio de Janeiro"
+      },
+      "geometry": { "type": "Point", "coordinates": [-43.2105, -22.9519] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lencois Maranhenses",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "natural",
+        "rating": 5,
+        "description": "Pristine white sand dunes with seasonal turquoise lagoons in northeastern Brazil"
+      },
+      "geometry": { "type": "Point", "coordinates": [-43.1167, -2.5000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chapada Diamantina",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "natural",
+        "rating": 4,
+        "description": "Massive national park with waterfalls, caves, and tabletop mountains"
+      },
+      "geometry": { "type": "Point", "coordinates": [-41.3333, -12.5833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amazon Rainforest (Manaus)",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "natural",
+        "rating": 4,
+        "description": "Gateway to Earth's most biodiverse ecosystem and Meeting of the Waters"
+      },
+      "geometry": { "type": "Point", "coordinates": [-60.0217, -3.1019] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sugarloaf Mountain",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Iconic Rio landmark with cable car offering 360-degree views"
+      },
+      "geometry": { "type": "Point", "coordinates": [-43.1572, -22.9492] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tijuca Forest",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "natural",
+        "rating": 3,
+        "description": "World's largest urban forest surrounding Christ the Redeemer"
+      },
+      "geometry": { "type": "Point", "coordinates": [-43.2833, -22.9500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pantanal Wetlands",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "natural",
+        "rating": 5,
+        "description": "World's largest tropical wetland, premier jaguar and wildlife viewing destination"
+      },
+      "geometry": { "type": "Point", "coordinates": [-57.6540, -17.7400] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salvador Historic Center (Pelourinho)",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO colonial district with Afro-Brazilian culture and colorful architecture"
+      },
+      "geometry": { "type": "Point", "coordinates": [-38.5108, -12.9714] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ouro Preto",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO colonial town in Minas Gerais with baroque churches and gold rush history"
+      },
+      "geometry": { "type": "Point", "coordinates": [-43.5035, -20.3856] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Copacabana Beach",
+        "country": "Brazil",
+        "countryCode": "BR",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Iconic crescent-shaped beach in Rio with vibrant atmosphere and mosaic promenade"
+      },
+      "geometry": { "type": "Point", "coordinates": [-43.1822, -22.9711] }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cliffs of Moher",
+        "country": "Ireland",
+        "countryCode": "IE",
+        "category": "natural",
+        "rating": 5,
+        "description": "Dramatic 214m sea cliffs on Ireland's Wild Atlantic Way, absolutely iconic"
+      },
+      "geometry": { "type": "Point", "coordinates": [-9.4267, 52.9715] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Giant's Causeway",
+        "country": "Ireland",
+        "countryCode": "IE",
+        "category": "natural",
+        "rating": 5,
+        "description": "UNESCO site with 40,000 hexagonal basalt columns, Northern Ireland's most famous natural wonder"
+      },
+      "geometry": { "type": "Point", "coordinates": [-6.5117, 55.2408] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ring of Kerry",
+        "country": "Ireland",
+        "countryCode": "IE",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Ireland's most scenic 160km coastal drive with rugged mountains and sandy beaches"
+      },
+      "geometry": { "type": "Point", "coordinates": [-9.9000, 51.9500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skellig Michael",
+        "country": "Ireland",
+        "countryCode": "IE",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Dramatic rocky island with ancient monastery, Star Wars filming location"
+      },
+      "geometry": { "type": "Point", "coordinates": [-10.5397, 51.7710] }
+    }
+  ]
+}

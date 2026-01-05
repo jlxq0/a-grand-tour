@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Virunga National Park",
+        "country": "Democratic Republic of Congo",
+        "countryCode": "CD",
+        "category": "natural",
+        "rating": 5,
+        "description": "Africa's oldest park with mountain gorillas and active Nyiragongo lava lake"
+      },
+      "geometry": { "type": "Point", "coordinates": [29.2167, -1.3000] }
+    }
+  ]
+}

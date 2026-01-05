@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ha Long Bay",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "natural",
+        "rating": 5,
+        "description": "Emerald waters dotted with 2,000 limestone karsts, UNESCO World Heritage Site"
+      },
+      "geometry": { "type": "Point", "coordinates": [107.0833, 20.9000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Phong Nha Caves",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "natural",
+        "rating": 5,
+        "description": "400+ caves including Son Doong, the world's largest cave with 40m stalagmites"
+      },
+      "geometry": { "type": "Point", "coordinates": [106.2833, 17.5833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ninh Binh (Tam Coc)",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "natural",
+        "rating": 4,
+        "description": "Ha Long Bay on Land with limestone karsts rising from rice paddies"
+      },
+      "geometry": { "type": "Point", "coordinates": [105.9353, 20.2153] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mekong Delta",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "natural",
+        "rating": 4,
+        "description": "Rice Bowl of Vietnam with floating markets and maze of waterways"
+      },
+      "geometry": { "type": "Point", "coordinates": [105.9833, 10.0500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hoi An Ancient Town",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Atmospheric UNESCO port town with Japanese bridge and lantern-lit streets"
+      },
+      "geometry": { "type": "Point", "coordinates": [108.3380, 15.8801] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Imperial City of Hue",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "landmark",
+        "rating": 5,
+        "description": "UNESCO-listed former imperial capital with royal tombs, citadel, and Perfume River"
+      },
+      "geometry": { "type": "Point", "coordinates": [107.5900, 16.4637] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sapa Rice Terraces",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "natural",
+        "rating": 5,
+        "description": "Stunning terraced rice fields in northwestern Vietnam with hill tribe villages"
+      },
+      "geometry": { "type": "Point", "coordinates": [103.8439, 22.3364] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Golden Bridge (Da Nang)",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Iconic pedestrian bridge held by giant stone hands with panoramic mountain views"
+      },
+      "geometry": { "type": "Point", "coordinates": [107.9981, 15.9942] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cu Chi Tunnels",
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Extensive underground tunnel network used during Vietnam War near Ho Chi Minh City"
+      },
+      "geometry": { "type": "Point", "coordinates": [106.4628, 11.1422] }
+    }
+  ]
+}

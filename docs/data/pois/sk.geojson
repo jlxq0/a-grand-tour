@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "High Tatras",
+        "country": "Slovakia",
+        "countryCode": "SK",
+        "category": "natural",
+        "rating": 4,
+        "description": "Dramatic Alpine peaks forming border with Poland"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.1333, 49.1667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spis Castle",
+        "country": "Slovakia",
+        "countryCode": "SK",
+        "category": "landmark",
+        "rating": 3,
+        "description": "One of Europe's largest castle complexes, UNESCO World Heritage Site"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.7681, 48.9986] }
+    }
+  ]
+}

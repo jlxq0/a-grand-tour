@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mlilwane Wildlife Sanctuary",
+        "country": "Eswatini",
+        "countryCode": "SZ",
+        "category": "natural",
+        "rating": 3,
+        "description": "Eswatini's oldest reserve with walking and mountain biking safaris"
+      },
+      "geometry": { "type": "Point", "coordinates": [31.0833, -26.4500] }
+    }
+  ]
+}

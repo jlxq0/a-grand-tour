@@ -1,0 +1,101 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cotopaxi",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "category": "natural",
+        "rating": 4,
+        "description": "One of world's highest active volcanoes with near-perfect cone shape"
+      },
+      "geometry": { "type": "Point", "coordinates": [-78.4367, -0.6842] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quilotoa Crater Lake",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "category": "natural",
+        "rating": 4,
+        "description": "Emerald-green volcanic crater lake at 3,900 meters elevation"
+      },
+      "geometry": { "type": "Point", "coordinates": [-78.9042, -0.8583] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yasuni National Park",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "category": "natural",
+        "rating": 4,
+        "description": "UNESCO Biosphere with highest biodiversity per hectare on Earth"
+      },
+      "geometry": { "type": "Point", "coordinates": [-76.0000, -0.8333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cajas National Park",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "category": "natural",
+        "rating": 3,
+        "description": "Continental divide landscape with over 700 lakes in Andean paramo"
+      },
+      "geometry": { "type": "Point", "coordinates": [-79.2333, -2.7833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Middle of the World Monument",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "category": "extreme",
+        "rating": 2,
+        "description": "Equatorial line marker (though GPS shows the actual equator is nearby)"
+      },
+      "geometry": { "type": "Point", "coordinates": [-78.4558, -0.0022] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quito Historic Center",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "category": "landmark",
+        "rating": 5,
+        "description": "First UNESCO World Heritage city with best-preserved colonial architecture"
+      },
+      "geometry": { "type": "Point", "coordinates": [-78.5167, -0.2200] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cuenca",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO colonial city with four rivers and Panama hat craftsmanship"
+      },
+      "geometry": { "type": "Point", "coordinates": [-79.0045, -2.9001] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Banos de Agua Santa",
+        "country": "Ecuador",
+        "countryCode": "EC",
+        "category": "natural",
+        "rating": 4,
+        "description": "Adventure capital with hot springs, waterfalls, and volcano views"
+      },
+      "geometry": { "type": "Point", "coordinates": [-78.4228, -1.3928] }
+    }
+  ]
+}

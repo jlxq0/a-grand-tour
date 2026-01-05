@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Petra",
+        "country": "Jordan",
+        "countryCode": "JO",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Rose-red city half-carved into rock, one of the New Seven Wonders of the World"
+      },
+      "geometry": { "type": "Point", "coordinates": [35.4444, 30.3285] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadi Rum",
+        "country": "Jordan",
+        "countryCode": "JO",
+        "category": "natural",
+        "rating": 5,
+        "description": "Mars-like red desert with sandstone mountains, film location for Star Wars and The Martian"
+      },
+      "geometry": { "type": "Point", "coordinates": [35.4250, 29.5833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dead Sea",
+        "country": "Jordan",
+        "countryCode": "JO",
+        "category": "extreme",
+        "rating": 5,
+        "description": "Lowest point on Earth at -430m, with hypersaline waters for effortless floating"
+      },
+      "geometry": { "type": "Point", "coordinates": [35.5000, 31.5000] }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lope National Park",
+        "country": "Gabon",
+        "countryCode": "GA",
+        "category": "natural",
+        "rating": 4,
+        "description": "UNESCO site blending rainforest and savannah with gorillas and elephants"
+      },
+      "geometry": { "type": "Point", "coordinates": [11.5833, -0.5000] }
+    }
+  ]
+}

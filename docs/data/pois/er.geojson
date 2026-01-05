@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Asmara Art Deco",
+        "country": "Eritrea",
+        "countryCode": "ER",
+        "category": "landmark",
+        "rating": 3,
+        "description": "UNESCO city with remarkable collection of Modernist architecture from Italian era"
+      },
+      "geometry": { "type": "Point", "coordinates": [38.9333, 15.3333] }
+    }
+  ]
+}

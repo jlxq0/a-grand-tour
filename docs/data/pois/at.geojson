@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hallstatt",
+        "country": "Austria",
+        "countryCode": "AT",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Picture-perfect lakeside village with UNESCO-listed salt mines"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.6493, 47.5622] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grossglockner High Alpine Road",
+        "country": "Austria",
+        "countryCode": "AT",
+        "category": "viewpoint",
+        "rating": 5,
+        "description": "One of world's most scenic mountain roads with 36 hairpin turns to 2,571m"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.8266, 47.0833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krimml Waterfalls",
+        "country": "Austria",
+        "countryCode": "AT",
+        "category": "natural",
+        "rating": 4,
+        "description": "Europe's highest waterfall with 380m total drop across three cascades"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.1702, 47.2086] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schonbrunn Palace",
+        "country": "Austria",
+        "countryCode": "AT",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Imperial Habsburg palace with 1,441 rooms and beautiful gardens"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.3119, 48.1845] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wachau Valley",
+        "country": "Austria",
+        "countryCode": "AT",
+        "category": "natural",
+        "rating": 4,
+        "description": "UNESCO-listed 30km Danube stretch with terraced vineyards and medieval towns"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.4167, 48.3833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hohensalzburg Fortress",
+        "country": "Austria",
+        "countryCode": "AT",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Europe's best-preserved medieval castle"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.0475, 47.7950] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hofburg Palace Vienna",
+        "country": "Austria",
+        "countryCode": "AT",
+        "category": "landmark",
+        "rating": 5,
+        "description": "59-acre imperial palace complex"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.3656, 48.2069] }
+    }
+  ]
+}

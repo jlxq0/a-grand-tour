@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baku Old City (Icherisheher)",
+        "country": "Azerbaijan",
+        "countryCode": "AZ",
+        "category": "landmark",
+        "rating": 5,
+        "description": "UNESCO walled medieval city with Maiden Tower and Palace of the Shirvanshahs"
+      },
+      "geometry": { "type": "Point", "coordinates": [49.8353, 40.3661] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flame Towers",
+        "country": "Azerbaijan",
+        "countryCode": "AZ",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Iconic trio of skyscrapers with LED screens displaying flames, defining Baku's skyline"
+      },
+      "geometry": { "type": "Point", "coordinates": [49.8500, 40.3594] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gobustan",
+        "country": "Azerbaijan",
+        "countryCode": "AZ",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO rock art site with 6,000 petroglyphs and nearby bubbling mud volcanoes"
+      },
+      "geometry": { "type": "Point", "coordinates": [49.3803, 40.1006] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yanar Dag",
+        "country": "Azerbaijan",
+        "countryCode": "AZ",
+        "category": "natural",
+        "rating": 3,
+        "description": "Natural gas fire burning continuously on hillside, symbol of Land of Fire"
+      },
+      "geometry": { "type": "Point", "coordinates": [49.8917, 40.5017] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sheki Khan's Palace",
+        "country": "Azerbaijan",
+        "countryCode": "AZ",
+        "category": "landmark",
+        "rating": 4,
+        "description": "18th-century summer residence with stunning stained glass and intricate frescoes"
+      },
+      "geometry": { "type": "Point", "coordinates": [47.1708, 41.2042] }
+    }
+  ]
+}

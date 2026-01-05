@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hegra (Madain Salih)",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Nabataean tombs carved into sandstone, sister site to Petra with 110+ tombs"
+      },
+      "geometry": { "type": "Point", "coordinates": [37.9500, 26.7833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elephant Rock (AlUla)",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "natural",
+        "rating": 4,
+        "description": "52-meter natural rock formation resembling an elephant in golden desert sands"
+      },
+      "geometry": { "type": "Point", "coordinates": [37.9167, 26.8167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Red Sea Coral Reefs",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "natural",
+        "rating": 4,
+        "description": "World's fourth-largest coral reef system with pristine diving and whale sharks"
+      },
+      "geometry": { "type": "Point", "coordinates": [38.5000, 22.0000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Edge of the World",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "natural",
+        "rating": 5,
+        "description": "Dramatic escarpment cliffs with stunning desert panoramas"
+      },
+      "geometry": { "type": "Point", "coordinates": [46.6750, 24.8256] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Diriyah At-Turaif",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "landmark",
+        "rating": 5,
+        "description": "UNESCO birthplace of first Saudi State"
+      },
+      "geometry": { "type": "Point", "coordinates": [46.5744, 24.7344] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Al-Balad Historic District",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "landmark",
+        "rating": 4,
+        "description": "UNESCO traditional Ottoman architecture"
+      },
+      "geometry": { "type": "Point", "coordinates": [39.1867, 21.4869] }
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Milford Sound",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 5,
+        "description": "New Zealand's most famous fiord carved by glaciers with steep cliffs, waterfalls, and marine life"
+      },
+      "geometry": { "type": "Point", "coordinates": [167.9256, -44.6341] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aoraki/Mount Cook",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 5,
+        "description": "New Zealand's tallest mountain at 3,724m with glaciers and alpine scenery"
+      },
+      "geometry": { "type": "Point", "coordinates": [170.1410, -43.5950] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tongariro Alpine Crossing",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 5,
+        "description": "19.4km volcanic traverse past emerald lakes, old lava flows, and volcanic peaks (UNESCO)"
+      },
+      "geometry": { "type": "Point", "coordinates": [175.6461, -39.1333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Franz Josef Glacier",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 5,
+        "description": "Spectacular 12km glacier descending from the Southern Alps nearly to sea level"
+      },
+      "geometry": { "type": "Point", "coordinates": [170.1833, -43.4833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox Glacier",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 5,
+        "description": "Fed by four alpine glaciers, longer and faster-moving than Franz Josef with stunning walks"
+      },
+      "geometry": { "type": "Point", "coordinates": [170.0250, -43.5667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Tekapo",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 4,
+        "description": "Surreal turquoise lake with International Dark Sky Reserve status and mountain views"
+      },
+      "geometry": { "type": "Point", "coordinates": [170.4833, -44.0000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Wanaka",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 4,
+        "description": "Stunning lake surrounded by snow-capped mountains, gateway to Mount Aspiring"
+      },
+      "geometry": { "type": "Point", "coordinates": [169.1500, -44.6833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abel Tasman National Park",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 4,
+        "description": "Golden beaches, clear waters, and one of New Zealand's best coastal walks"
+      },
+      "geometry": { "type": "Point", "coordinates": [173.0000, -40.8500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cathedral Cove",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 4,
+        "description": "Natural rock archway framing a pristine beach on the Coromandel Peninsula"
+      },
+      "geometry": { "type": "Point", "coordinates": [175.7892, -36.7289] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rotorua Geothermal Area",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 4,
+        "description": "Volcanic plateau of hot springs, mud pools, geysers, and crater lakes"
+      },
+      "geometry": { "type": "Point", "coordinates": [176.2500, -38.1378] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roy's Peak",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "viewpoint",
+        "rating": 4,
+        "description": "Most photographed viewpoint in NZ, 1578m above Lake Wanaka with Southern Alps panorama"
+      },
+      "geometry": { "type": "Point", "coordinates": [169.0167, -44.6994] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cape Reinga",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "extreme",
+        "rating": 4,
+        "description": "Sacred northernmost tip where Tasman Sea and Pacific Ocean collide with iconic lighthouse"
+      },
+      "geometry": { "type": "Point", "coordinates": [172.6803, -34.4289] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bob's Peak (Queenstown)",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "viewpoint",
+        "rating": 3,
+        "description": "Gondola access to jaw-dropping views over Queenstown, Lake Wakatipu, and the Remarkables"
+      },
+      "geometry": { "type": "Point", "coordinates": [168.6578, -45.0167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nugget Point",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "viewpoint",
+        "rating": 3,
+        "description": "Lighthouse lookout with bird's-eye views of rocky islets with seals and sea lions in The Catlins"
+      },
+      "geometry": { "type": "Point", "coordinates": [169.8083, -46.4500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Slope Point",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "extreme",
+        "rating": 2,
+        "description": "True southernmost point of the South Island mainland with wind-sculpted trees"
+      },
+      "geometry": { "type": "Point", "coordinates": [169.0028, -46.6769] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waitomo Caves",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 5,
+        "description": "Famous glowworm caves with bioluminescent larvae like stars"
+      },
+      "geometry": { "type": "Point", "coordinates": [175.102, -38.256] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Doubtful Sound",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 5,
+        "description": "Larger and more remote than Milford Sound, UNESCO fiord"
+      },
+      "geometry": { "type": "Point", "coordinates": [167.000, -45.320] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hobbiton Movie Set",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Preserved Lord of the Rings film location with 44 Hobbit holes"
+      },
+      "geometry": { "type": "Point", "coordinates": [175.681, -37.858] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wai-O-Tapu Thermal Wonderland",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 4,
+        "description": "Most colorful geothermal area with Champagne Pool"
+      },
+      "geometry": { "type": "Point", "coordinates": [176.367, -38.356] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Punakaiki Pancake Rocks",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 4,
+        "description": "Layered limestone formations with dramatic blowholes"
+      },
+      "geometry": { "type": "Point", "coordinates": [171.336, -42.108] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Taranaki",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "category": "natural",
+        "rating": 4,
+        "description": "Symmetrical 2,518m volcanic cone, sacred to Maori"
+      },
+      "geometry": { "type": "Point", "coordinates": [174.064, -39.296] }
+    }
+  ]
+}

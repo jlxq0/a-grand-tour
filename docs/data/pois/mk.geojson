@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lake Ohrid",
+        "country": "North Macedonia",
+        "countryCode": "MK",
+        "category": "natural",
+        "rating": 4,
+        "description": "One of Europe's oldest and deepest lakes, UNESCO World Heritage Site"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.8000, 41.0333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matka Canyon",
+        "country": "North Macedonia",
+        "countryCode": "MK",
+        "category": "natural",
+        "rating": 3,
+        "description": "Scenic gorge near Skopje with cave system and turquoise water"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.3000, 41.9500] }
+    }
+  ]
+}

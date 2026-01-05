@@ -1,0 +1,64 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Paso de los Caracoles",
+    "countryCode": "AR",
+    "country": "Argentina",
+    "rating": 4,
+    "description": "Endless switchbacks crossing the Andes.",
+    "photo": "https://source.unsplash.com/800x400/?Paso+de+los+Caracoles+Argentina"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -69.866785,
+        -32.833547
+      ],
+      [
+        -69.893409,
+        -32.825058
+      ],
+      [
+        -69.919995,
+        -32.822316
+      ],
+      [
+        -69.949417,
+        -32.820925
+      ],
+      [
+        -69.986147,
+        -32.819772
+      ],
+      [
+        -70.013111,
+        -32.81707
+      ],
+      [
+        -70.039875,
+        -32.814196
+      ],
+      [
+        -70.065397,
+        -32.807193
+      ],
+      [
+        -70.09154,
+        -32.826141
+      ],
+      [
+        -70.105844,
+        -32.845164
+      ],
+      [
+        -70.13261,
+        -32.845067
+      ],
+      [
+        -70.133403,
+        -32.849969
+      ]
+    ]
+  }
+}

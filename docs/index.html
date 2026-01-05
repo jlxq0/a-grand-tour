@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>A Grand Tour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="One Family. One Land Cruiser. 100 Countries. A 17-year around-the-world overland expedition.">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #1a1a2e;
+            color: #333;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Map Panel - Left Side */
+        .map-panel {
+            width: 50%;
+            height: 100vh;
+            position: relative;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .map-overlay {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(26, 26, 46, 0.95);
+            color: #fff;
+            padding: 15px 20px;
+            border-radius: 10px;
+            z-index: 10;
+            max-width: 260px;
+        }
+
+        .map-overlay h1 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .map-overlay p {
+            font-size: 12px;
+            color: #aaa;
+            font-style: italic;
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 30px;
+            left: 15px;
+            background: rgba(26, 26, 46, 0.95);
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 11px;
+            z-index: 10;
+        }
+
+        .legend h4 {
+            margin: 0 0 8px 0;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 4px 0;
+        }
+
+        .legend-line {
+            width: 20px;
+            height: 3px;
+            margin-right: 8px;
+            border-radius: 2px;
+        }
+
+        /* Content Panel - Right Side */
+        .content-panel {
+            width: 50%;
+            height: 100vh;
+            background: #fff;
+            overflow-y: auto;
+            border-left: 1px solid #e0e0e0;
+        }
+
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 50px 80px;
+        }
+
+        /* Navigation */
+        .nav {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 12px 50px;
+            margin: 0 -50px 30px;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-separator {
+            color: #ccc;
+            margin: 0 10px;
+        }
+
+        /* Markdown Styles */
+        .markdown-content h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .markdown-content h2 {
+            font-size: 1.6em;
+            font-weight: 600;
+            margin: 40px 0 20px;
+            color: #1a1a2e;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .markdown-content h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 30px 0 15px;
+            color: #333;
+        }
+
+        .markdown-content h4 {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin: 25px 0 10px;
+            color: #444;
+        }
+
+        .markdown-content p {
+            line-height: 1.7;
+            margin: 15px 0;
+            color: #444;
+        }
+
+        .markdown-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-content ul, .markdown-content ol {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .markdown-content li {
+            line-height: 1.7;
+            margin: 8px 0;
+        }
+
+        .markdown-content code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .markdown-content pre {
+            background: #1a1a2e;
+            color: #e0e0e0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        .markdown-content pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        .markdown-content blockquote {
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f8f9fa;
+            color: #555;
+        }
+
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+
+        .markdown-content th, .markdown-content td {
+            border: 1px solid #e0e0e0;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .markdown-content th {
+            background: #f5f5f5;
+            font-weight: 600;
+        }
+
+        .markdown-content tr:nth-child(even) {
+            background: #fafafa;
+        }
+
+        .markdown-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .markdown-content hr {
+            border: none;
+            border-top: 2px solid #eee;
+            margin: 40px 0;
+        }
+
+        /* Route info popup */
+        #route-info {
+            position: absolute;
+            background: #fff;
+            border-radius: 12px;
+            font-size: 14px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            display: none;
+            width: 300px;
+            overflow: hidden;
+            z-index: 100;
+        }
+
+        #route-photo-container {
+            position: relative;
+            width: 100%;
+            height: 160px;
+            background: #222;
+        }
+
+        #route-photo {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #carousel-prev { left: 8px; }
+        #carousel-next { right: 8px; }
+
+        #carousel-dots {
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+        }
+
+        .carousel-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+        }
+
+        .carousel-dot.active { background: white; }
+
+        #route-content {
+            padding: 12px 15px;
+        }
+
+        #route-info h3 {
+            margin: 0 0 4px 0;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        #route-info .country {
+            color: #666;
+            margin: 0 0 6px 0;
+            font-size: 12px;
+        }
+
+        #route-info .rating {
+            color: #f39c12;
+            margin: 0 0 8px 0;
+            font-size: 14px;
+        }
+
+        #route-info .description {
+            color: #333;
+            margin: 0;
+            line-height: 1.5;
+            font-size: 12px;
+        }
+
+        #route-close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        /* Segment tooltip */
+        #segment-tooltip {
+            position: absolute;
+            background: #1a1a2e;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            pointer-events: none;
+            display: none;
+            z-index: 100;
+            max-width: 260px;
+        }
+
+        /* Loading state */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            color: #888;
+        }
+
+        /* Footer nav */
+        .footer-nav {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .footer-nav a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .map-panel { width: 45%; }
+            .content-panel { width: 55%; }
+        }
+
+        @media (max-width: 900px) {
+            .container { flex-direction: column; }
+            .map-panel { width: 100%; height: 40vh; }
+            .content-panel { width: 100%; height: 60vh; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Map Panel -->
+        <div class="map-panel">
+            <div id="map"></div>
+            <div class="map-overlay">
+                <h1>A Grand Tour</h1>
+                <p>One Family. One Land Cruiser. 100 Countries.</p>
+            </div>
+            <div class="legend">
+                <h4>Routes</h4>
+                <div class="legend-item"><div class="legend-line" style="background: #3498db;"></div> Planned</div>
+                <div class="legend-item"><div class="legend-line" style="background: #e74c3c;"></div> 5-star scenic</div>
+                <div class="legend-item"><div class="legend-line" style="background: #e67e22;"></div> 4-star</div>
+                <div class="legend-item"><div class="legend-line" style="background: #f39c12;"></div> 3-star</div>
+            </div>
+
+            <!-- Route Info Popup -->
+            <div id="route-info">
+                <button id="route-close">&times;</button>
+                <div id="route-photo-container">
+                    <img id="route-photo" src="" alt="">
+                    <button class="carousel-btn" id="carousel-prev">&lsaquo;</button>
+                    <button class="carousel-btn" id="carousel-next">&rsaquo;</button>
+                    <div id="carousel-dots"></div>
+                </div>
+                <div id="route-content">
+                    <h3 id="route-name"></h3>
+                    <p class="country" id="route-country"></p>
+                    <p class="rating" id="route-rating"></p>
+                    <p class="description" id="route-description"></p>
+                </div>
+            </div>
+            <div id="segment-tooltip"></div>
+        </div>
+
+        <!-- Content Panel -->
+        <div class="content-panel">
+            <div class="content-wrapper">
+                <nav class="nav" id="nav"></nav>
+                <div class="markdown-content" id="content">
+                    <div class="loading">Loading...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+// Page configuration
+const pages = {
+    '': { file: 'README.md', title: 'A Grand Tour' },
+    'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi' },
+    'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong' }
+};
+
+// Get current page from hash
+function getCurrentPage() {
+    const hash = window.location.hash.slice(1);
+    return pages[hash] ? hash : '';
+}
+
+// Update navigation
+function updateNav(currentPage) {
+    const nav = document.getElementById('nav');
+    if (currentPage === '') {
+        nav.innerHTML = '<span style="color: #666;">Overview</span>';
+    } else {
+        nav.innerHTML = `<a href="#">&larr; Overview</a><span class="nav-separator">|</span><span style="color: #666;">${pages[currentPage].title}</span>`;
+    }
+}
+
+// Load and render markdown
+async function loadContent(page) {
+    const contentEl = document.getElementById('content');
+    const config = pages[page];
+
+    contentEl.innerHTML = '<div class="loading">Loading...</div>';
+    updateNav(page);
+    document.title = config.title + ' | A Grand Tour';
+
+    try {
+        const response = await fetch(config.file);
+        if (!response.ok) throw new Error('Failed to load');
+
+        let markdown = await response.text();
+
+        // Fix image paths for trip files (data/pois/images/... -> data/pois/images/...)
+        // Images are already relative, should work
+
+        // Add footer navigation for trip pages
+        let footerNav = '';
+        if (page !== '') {
+            footerNav = '<div class="footer-nav"><a href="#">&larr; Back to Overview</a></div>';
+        }
+
+        // Convert internal links (TRIP01.md -> #trip01)
+        markdown = markdown.replace(/\[([^\]]+)\]\(TRIP0?(\d+)\.md\)/g, '[$1](#trip0$2)');
+
+        const html = marked.parse(markdown);
+        contentEl.innerHTML = html + footerNav;
+
+        // Scroll to top
+        document.querySelector('.content-panel').scrollTop = 0;
+    } catch (e) {
+        contentEl.innerHTML = `<p style="color: #e74c3c;">Error loading content: ${e.message}</p>`;
+    }
+}
+
+// Handle navigation
+window.addEventListener('hashchange', () => {
+    loadContent(getCurrentPage());
+});
+
+// Initial load
+loadContent(getCurrentPage());
+
+// ============ MAP CODE ============
+mapboxgl.accessToken = 'pk.eyJ1Ijoiamx4cTAiLCJhIjoiY21qd2QwOGRpNXVuNzNnb2txNmdkemd2ZyJ9.JpfheNv0aknnk-pbhNOGQg';
+
+const routeFiles = [
+    'ae-jebel-hafeet.geojson','ae-khor-fakkan.geojson','al-llogara-pass.geojson','ar-calchaqui.geojson',
+    'ar-el-chalten.geojson','ar-paso-caracoles.geojson','ar-ruta-40.geojson','ar-seven-lakes.geojson',
+    'at-grossglockner.geojson','au-gibb-river-road.geojson','au-great-alpine-road.geojson',
+    'au-great-ocean-road.geojson','au-nullarbor.geojson','au-outback-way.geojson','bo-death-road.geojson',
+    'bo-salar-uyuni.geojson','br-serra-rio-rastro.geojson','bz-hummingbird-highway.geojson',
+    'ca-cabot-trail.geojson','ca-icefields-parkway.geojson','ca-sea-to-sky.geojson','ch-furka-pass.geojson',
+    'ch-grimsel-pass.geojson','ch-susten-pass.geojson','cl-carretera-austral.geojson',
+    'cl-general-carrera.geojson','cn-tianmen-mountain.geojson','cr-braulio-carrillo.geojson',
+    'cr-cerro-muerte.geojson','de-alpine-road.geojson','de-black-forest.geojson','de-romantic-road.geojson',
+    'de-wine-route.geojson','ec-avenue-volcanoes.geojson','es-sa-calobra.geojson','et-simien-mountains.geojson',
+    'fi-archipelago-trail.geojson','fr-col-de-turini.geojson','fr-combe-laval.geojson','fr-grandes-alpes.geojson',
+    'fr-lacets-montvernier.geojson','fr-route-napoleon.geojson','fr-verdon-gorge.geojson',
+    'gb-bealach-na-ba.geojson','gb-causeway-coastal.geojson','gb-nc500.geojson','gr-vikos-gorge.geojson',
+    'gt-lake-atitlan.geojson','hr-adriatic-highway.geojson','hr-gorski-kotar.geojson','id-mount-bromo.geojson',
+    'in-kochi-munnar.geojson','in-manali-leh.geojson','in-spiti-valley.geojson','in-srinagar-leh.geojson',
+    'is-ring-road.geojson','it-amalfi-coast.geojson','it-dolomites.geojson','it-stelvio-pass.geojson',
+    'it-strada-della-forra.geojson','jo-kings-highway.geojson','jo-wadi-rum.geojson','ma-dades-gorge.geojson',
+    'ma-tizi-ntichka.geojson','ma-todra-gorge.geojson','mx-baja-highway-1.geojson','mx-chiapas.geojson',
+    'mx-copper-canyon.geojson','mx-devils-backbone.geojson','mx-oaxaca-coast.geojson',
+    'mx-pacific-coast-200.geojson','mx-valle-guadalupe.geojson','my-cameron-highlands.geojson',
+    'na-fish-river-canyon.geojson','na-sossusvlei-skeleton.geojson','no-atlantic-road.geojson',
+    'no-geirangerfjord.geojson','no-lofoten.geojson','no-trollstigen.geojson','np-kathmandu-pokhara.geojson',
+    'nz-arthurs-pass.geojson','nz-crown-range.geojson','nz-forgotten-world.geojson','nz-milford-road.geojson',
+    'nz-queen-charlotte.geojson','nz-queenstown-glenorchy.geojson','om-jebel-akhdar.geojson',
+    'om-jebel-shams.geojson','om-muscat-salalah.geojson','om-wadi-bani-awf.geojson','pa-darien.geojson',
+    'pe-sacred-valley.geojson','pk-fairy-meadows.geojson','pk-karakoram-highway.geojson',
+    'ro-transfagarasan.geojson','sa-asir.geojson','sa-edge-of-world.geojson',
+    'se-high-coast.geojson','si-vrsic-pass.geojson','sv-ruta-flores.geojson','th-mae-hong-son.geojson',
+    'tr-lycian-coast.geojson','tz-ngorongoro-serengeti.geojson','us-beartooth-highway.geojson',
+    'us-blue-ridge-parkway.geojson','us-going-to-the-sun.geojson','us-million-dollar-highway.geojson',
+    'us-natchez-trace.geojson','us-overseas-highway.geojson','us-pacific-coast-highway.geojson',
+    'us-route-66.geojson','vn-ha-giang-loop.geojson','vn-hai-van-pass.geojson','za-chapmans-peak.geojson',
+    'za-garden-route.geojson','za-panorama-route.geojson','za-sani-pass.geojson','za-swartberg-pass.geojson'
+];
+
+const poiFiles = [
+    'ae.geojson','al.geojson','am.geojson','ao.geojson','ar.geojson','at.geojson','au.geojson','az.geojson',
+    'ba.geojson','bd.geojson','be.geojson','bg.geojson','bh.geojson','bi.geojson','bj.geojson','bo.geojson',
+    'br.geojson','bw.geojson','bz.geojson','ca.geojson','cd.geojson','cg.geojson','ch.geojson','ci.geojson',
+    'cl.geojson','cm.geojson','co.geojson','cr.geojson','cz.geojson','de.geojson','dk.geojson','ec.geojson',
+    'ee.geojson','eg.geojson','er.geojson','es.geojson','et.geojson','fi.geojson','fr.geojson','ga.geojson',
+    'gb.geojson','ge.geojson','gf.geojson','gh.geojson','gr.geojson','gt.geojson','gy.geojson','hn.geojson',
+    'hr.geojson','hu.geojson','id.geojson','ie.geojson','in.geojson','ir.geojson','is.geojson','it.geojson',
+    'jo.geojson','ke.geojson','kh.geojson','kw.geojson','la.geojson','ls.geojson','lt.geojson','lu.geojson',
+    'lv.geojson','ma.geojson','md.geojson','me.geojson','mk.geojson','mw.geojson','mx.geojson','my.geojson',
+    'mz.geojson','na.geojson','ng.geojson','ni.geojson','nl.geojson','no.geojson','np.geojson','nz.geojson',
+    'om.geojson','pa.geojson','pe.geojson','pk.geojson','pl.geojson','pt.geojson','py.geojson','qa.geojson',
+    'ro.geojson','rs.geojson','rw.geojson','sa.geojson','sd.geojson','se.geojson','sg.geojson','si.geojson',
+    'sk.geojson','sn.geojson','sr.geojson','sv.geojson','sz.geojson','th.geojson','tl.geojson','tr.geojson',
+    'tz.geojson','ug.geojson','us.geojson','uy.geojson','vn.geojson','xk.geojson','za.geojson','zm.geojson',
+    'zw.geojson'
+];
+
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v11',
+    center: [40, 20],
+    zoom: 1.5
+});
+
+map.on('load', async () => {
+    // Load visited countries
+    const visitedCountryCodes = await fetch('data/visited-countries.json').then(r => r.json());
+    const problemCountries = ['NG', 'CM', 'CD'];
+
+    map.addSource('countries', {
+        type: 'vector',
+        url: 'mapbox://mapbox.country-boundaries-v1'
+    });
+
+    map.addLayer({
+        id: 'country-fills',
+        type: 'fill',
+        source: 'countries',
+        'source-layer': 'country_boundaries',
+        filter: ['any', ['==', 'all', ['get', 'worldview']], ['in', 'US', ['get', 'worldview']]],
+        paint: {
+            'fill-color': [
+                'case',
+                ['in', ['get', 'iso_3166_1'], ['literal', problemCountries]], 'rgba(231, 76, 60, 0.25)',
+                ['in', ['get', 'iso_3166_1'], ['literal', visitedCountryCodes]], 'rgba(39, 174, 96, 0.12)',
+                'rgba(200, 200, 200, 0.05)'
+            ],
+            'fill-opacity': 1
+        }
+    }, 'admin-1-boundary-bg');
+
+    // Load scenic routes
+    const routes = await Promise.all(
+        routeFiles.map(async f => {
+            try {
+                const route = await fetch(`data/scenic-routes/${f}`).then(r => r.json());
+                route.properties.routeId = f.replace('.geojson', '');
+                return route;
+            } catch (e) { return null; }
+        })
+    ).then(r => r.filter(Boolean));
+
+    const routesCollection = { type: 'FeatureCollection', features: routes };
+    map.addSource('scenic-routes', { type: 'geojson', data: routesCollection });
+
+    map.addLayer({
+        id: 'scenic-routes-line',
+        type: 'line',
+        source: 'scenic-routes',
+        paint: {
+            'line-color': ['match', ['get', 'rating'], 5, '#e74c3c', 4, '#e67e22', 3, '#f39c12', '#f1c40f'],
+            'line-width': ['interpolate', ['linear'], ['zoom'], 1, 1.5, 5, 3, 10, 5],
+            'line-opacity': 0.85
+        }
+    });
+
+    map.addLayer({
+        id: 'scenic-routes-highlight',
+        type: 'line',
+        source: 'scenic-routes',
+        paint: {
+            'line-color': '#ffffff',
+            'line-width': ['interpolate', ['linear'], ['zoom'], 1, 4, 5, 7, 10, 10],
+            'line-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.8, 0]
+        }
+    }, 'scenic-routes-line');
+
+    // Load POIs
+    const poiCollections = await Promise.all(
+        poiFiles.map(async f => {
+            try { return await fetch(`data/pois/${f}`).then(r => r.json()); }
+            catch (e) { return { type: 'FeatureCollection', features: [] }; }
+        })
+    );
+
+    const allPois = { type: 'FeatureCollection', features: poiCollections.flatMap(c => c.features || []) };
+    map.addSource('pois', { type: 'geojson', data: allPois });
+
+    map.addLayer({
+        id: 'pois-circle',
+        type: 'circle',
+        source: 'pois',
+        paint: {
+            'circle-color': ['match', ['get', 'rating'], 5, '#e74c3c', 4, '#e67e22', 3, '#f39c12', '#f1c40f'],
+            'circle-radius': ['interpolate', ['linear'], ['zoom'], 1, 3, 5, 5, 10, 8],
+            'circle-stroke-color': '#fff',
+            'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 1, 0.5, 5, 1, 10, 2],
+            'circle-opacity': 0.9
+        }
+    });
+
+    // Load ferries
+    fetch('data/ferries.geojson').then(r => r.json()).then(data => {
+        map.addSource('ferries', { type: 'geojson', data });
+        map.addLayer({
+            id: 'ferries-line',
+            type: 'line',
+            source: 'ferries',
+            paint: { 'line-color': '#1a5276', 'line-width': 2, 'line-dasharray': [2, 2] }
+        });
+    });
+
+    // Load shipping
+    const shippingFiles = ['auckland-valparaiso.geojson', 'bandar-abbas-karachi.geojson', 'brisbane-auckland.geojson',
+        'chittagong-laem-chabang.geojson', 'darien-gap.geojson', 'jb-jakarta.geojson', 'seattle-southampton.geojson'];
+    Promise.all(shippingFiles.map(f => fetch(`data/shipping/${f}`).then(r => r.json()))).then(results => {
+        const allShipping = { type: 'FeatureCollection', features: results.flatMap(r => r.features || [r]) };
+        map.addSource('shipping', { type: 'geojson', data: allShipping });
+        map.addLayer({
+            id: 'shipping-line',
+            type: 'line',
+            source: 'shipping',
+            paint: { 'line-color': '#85c1e9', 'line-width': 2, 'line-dasharray': [4, 3] }
+        });
+    });
+
+    // Load planned route
+    fetch('data/planned-route.geojson').then(r => r.json()).then(data => {
+        map.addSource('planned-route', { type: 'geojson', data });
+
+        map.addLayer({
+            id: 'planned-route-line',
+            type: 'line',
+            source: 'planned-route',
+            filter: ['==', ['get', 'type'], 'summary'],
+            paint: { 'line-color': '#3498db', 'line-width': 4, 'line-opacity': 0.8 }
+        }, 'scenic-routes-highlight');
+
+        map.addLayer({
+            id: 'planned-route-segment-highlight',
+            type: 'line',
+            source: 'planned-route',
+            filter: ['==', ['get', 'segmentIndex'], -1],
+            paint: { 'line-color': '#1a5276', 'line-width': 7, 'line-opacity': 1 }
+        }, 'scenic-routes-highlight');
+
+        map.addLayer({
+            id: 'planned-route-segments-hover',
+            type: 'line',
+            source: 'planned-route',
+            filter: ['!=', ['get', 'type'], 'summary'],
+            paint: { 'line-color': 'transparent', 'line-width': 20 }
+        }, 'planned-route-line');
+
+        const segmentTooltip = document.getElementById('segment-tooltip');
+
+        map.on('mousemove', 'planned-route-segments-hover', (e) => {
+            if (e.features.length > 0) {
+                const props = e.features[0].properties;
+                if (props.distanceKm !== undefined) {
+                    map.getCanvas().style.cursor = 'pointer';
+                    map.setFilter('planned-route-segment-highlight', [
+                        'all', ['==', ['get', 'part'], props.part], ['==', ['get', 'segmentIndex'], props.segmentIndex]
+                    ]);
+                    segmentTooltip.innerHTML = `<strong>${props.label || props.from + ' → ' + props.to}</strong><br>${props.distanceKm} km · ${props.durationHrs} hrs`;
+                    segmentTooltip.style.display = 'block';
+                    segmentTooltip.style.left = (e.point.x + 15) + 'px';
+                    segmentTooltip.style.top = (e.point.y - 30) + 'px';
+                }
+            }
+        });
+
+        map.on('mouseleave', 'planned-route-segments-hover', () => {
+            map.getCanvas().style.cursor = '';
+            segmentTooltip.style.display = 'none';
+            map.setFilter('planned-route-segment-highlight', ['==', ['get', 'segmentIndex'], -1]);
+        });
+    });
+
+    // Interactivity
+    let hoveredId = null;
+    const routeInfo = document.getElementById('route-info');
+    const routeName = document.getElementById('route-name');
+    const routeCountry = document.getElementById('route-country');
+    const routeRating = document.getElementById('route-rating');
+    const routePhoto = document.getElementById('route-photo');
+    const routeDescription = document.getElementById('route-description');
+    const routeClose = document.getElementById('route-close');
+    const carouselPrev = document.getElementById('carousel-prev');
+    const carouselNext = document.getElementById('carousel-next');
+    const carouselDots = document.getElementById('carousel-dots');
+
+    let currentRouteId = null, currentPoiId = null, currentCustomImage = null;
+    let currentImageIndex = 0, totalImages = 5;
+
+    function sanitizeFilename(name) {
+        return name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+            .replace(/ð/g, 'd').replace(/þ/g, 'th').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').substring(0, 50);
+    }
+
+    function updateCarousel() {
+        let imagePath;
+        if (currentCustomImage) imagePath = currentCustomImage;
+        else if (currentPoiId) imagePath = `data/pois/images/${currentPoiId.countryCode}/${currentPoiId.safeName}-1.webp`;
+        else if (currentRouteId) imagePath = `data/scenic-routes/images/${currentRouteId}/${currentImageIndex + 1}.webp`;
+        routePhoto.src = imagePath;
+        carouselDots.querySelectorAll('.carousel-dot').forEach((dot, i) => dot.classList.toggle('active', i === currentImageIndex));
+    }
+
+    function showCarouselControls(show) {
+        carouselPrev.style.display = show ? 'flex' : 'none';
+        carouselNext.style.display = show ? 'flex' : 'none';
+        carouselDots.style.display = show ? 'flex' : 'none';
+    }
+
+    function createDots(count) {
+        carouselDots.innerHTML = '';
+        for (let i = 0; i < count; i++) {
+            const dot = document.createElement('div');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dot.addEventListener('click', () => { currentImageIndex = i; updateCarousel(); });
+            carouselDots.appendChild(dot);
+        }
+    }
+
+    function positionPopup(e) {
+        const rect = document.getElementById('map').getBoundingClientRect();
+        let left = e.point.x + 15, top = e.point.y - 15;
+        if (left + 300 > rect.width - 10) left = e.point.x - 315;
+        if (top + 300 > rect.height - 10) top = rect.height - 310;
+        if (top < 10) top = 10;
+        if (left < 10) left = 10;
+        routeInfo.style.left = left + 'px';
+        routeInfo.style.top = top + 'px';
+    }
+
+    carouselPrev.addEventListener('click', () => { currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages; updateCarousel(); });
+    carouselNext.addEventListener('click', () => { currentImageIndex = (currentImageIndex + 1) % totalImages; updateCarousel(); });
+    routeClose.addEventListener('click', () => { routeInfo.style.display = 'none'; });
+
+    map.on('mousemove', 'scenic-routes-line', (e) => {
+        map.getCanvas().style.cursor = 'pointer';
+        if (e.features.length > 0) {
+            if (hoveredId !== null) map.setFeatureState({ source: 'scenic-routes', id: hoveredId }, { hover: false });
+            hoveredId = e.features[0].id;
+            map.setFeatureState({ source: 'scenic-routes', id: hoveredId }, { hover: true });
+        }
+    });
+
+    map.on('mouseleave', 'scenic-routes-line', () => {
+        map.getCanvas().style.cursor = '';
+        if (hoveredId !== null) map.setFeatureState({ source: 'scenic-routes', id: hoveredId }, { hover: false });
+        hoveredId = null;
+    });
+
+    map.on('click', 'scenic-routes-line', (e) => {
+        const props = e.features[0].properties;
+        routeName.textContent = props.name;
+        routeCountry.textContent = props.country;
+        routeRating.textContent = '★'.repeat(props.rating);
+        routeDescription.textContent = props.description || '';
+        currentPoiId = null; currentCustomImage = null; currentRouteId = props.routeId;
+        currentImageIndex = 0; totalImages = 5;
+        createDots(totalImages); showCarouselControls(true); updateCarousel();
+        document.getElementById('route-photo-container').style.display = 'block';
+        routeInfo.style.display = 'block'; positionPopup(e);
+    });
+
+    map.on('click', 'pois-circle', (e) => {
+        const props = e.features[0].properties;
+        routeName.textContent = props.name;
+        routeCountry.textContent = props.country;
+        routeRating.textContent = '★'.repeat(props.rating);
+        routeDescription.textContent = props.description || '';
+        currentRouteId = null; currentCustomImage = null;
+        currentPoiId = { countryCode: props.countryCode.toLowerCase(), safeName: sanitizeFilename(props.name) };
+        currentImageIndex = 0; totalImages = 1;
+        showCarouselControls(false); updateCarousel();
+        document.getElementById('route-photo-container').style.display = 'block';
+        routeInfo.style.display = 'block'; positionPopup(e);
+    });
+
+    map.on('mouseenter', 'pois-circle', () => { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', 'pois-circle', () => { map.getCanvas().style.cursor = ''; });
+
+    map.on('click', 'ferries-line', (e) => {
+        const props = e.features[0].properties;
+        routeName.textContent = props.name;
+        routeCountry.textContent = props.operator || 'Ferry';
+        routeRating.textContent = '⛴️';
+        let desc = [];
+        if (props.duration) desc.push(`Duration: ${props.duration}`);
+        if (props.cost) desc.push(`Cost: ${props.cost}`);
+        routeDescription.textContent = desc.join(' • ');
+        currentRouteId = null; currentPoiId = null;
+        currentCustomImage = `data/ferries/images/${sanitizeFilename(props.name)}.webp`;
+        showCarouselControls(false); updateCarousel();
+        document.getElementById('route-photo-container').style.display = 'block';
+        routeInfo.style.display = 'block'; positionPopup(e);
+    });
+
+    map.on('mouseenter', 'ferries-line', () => { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', 'ferries-line', () => { map.getCanvas().style.cursor = ''; });
+
+    map.on('click', 'shipping-line', (e) => {
+        const props = e.features[0].properties;
+        routeName.textContent = props.name || 'Shipping Route';
+        routeCountry.textContent = props.operator || 'Cargo Ship';
+        routeRating.textContent = '🚢';
+        let desc = [];
+        if (props.duration) desc.push(`Duration: ${props.duration}`);
+        if (props.cost) desc.push(`Cost: ${props.cost}`);
+        routeDescription.textContent = desc.join(' • ');
+        currentRouteId = null; currentPoiId = null;
+        currentCustomImage = `data/shipping/images/${sanitizeFilename(props.name || 'cargo-ship')}.webp`;
+        showCarouselControls(false); updateCarousel();
+        document.getElementById('route-photo-container').style.display = 'block';
+        routeInfo.style.display = 'block'; positionPopup(e);
+    });
+
+    map.on('mouseenter', 'shipping-line', () => { map.getCanvas().style.cursor = 'pointer'; });
+    map.on('mouseleave', 'shipping-line', () => { map.getCanvas().style.cursor = ''; });
+
+    map.on('click', (e) => {
+        const layers = ['scenic-routes-line', 'pois-circle', 'ferries-line', 'shipping-line'];
+        const features = map.queryRenderedFeatures(e.point, { layers: layers.filter(l => map.getLayer(l)) });
+        if (features.length === 0) routeInfo.style.display = 'none';
+    });
+});
+
+map.addControl(new mapboxgl.NavigationControl());
+</script>
+</body>
+</html>

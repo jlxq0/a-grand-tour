@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gergeti Trinity Church",
+        "country": "Georgia",
+        "countryCode": "GE",
+        "category": "landmark",
+        "rating": 5,
+        "description": "14th-century church at 2,170m with dramatic Mount Kazbek backdrop"
+      },
+      "geometry": { "type": "Point", "coordinates": [44.6199, 42.6628] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vardzia",
+        "country": "Georgia",
+        "countryCode": "GE",
+        "category": "landmark",
+        "rating": 5,
+        "description": "12th-century cave monastery complex with 6,000 chambers carved into cliffside"
+      },
+      "geometry": { "type": "Point", "coordinates": [43.2847, 41.3811] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ushguli",
+        "country": "Georgia",
+        "countryCode": "GE",
+        "category": "landmark",
+        "rating": 5,
+        "description": "UNESCO highest continuously inhabited village in Europe with medieval Svan towers"
+      },
+      "geometry": { "type": "Point", "coordinates": [43.0167, 42.9167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Old Town Tbilisi",
+        "country": "Georgia",
+        "countryCode": "GE",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Historic district with sulfur baths, colorful balconies, and Narikala Fortress"
+      },
+      "geometry": { "type": "Point", "coordinates": [44.8015, 41.6902] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prometheus Cave",
+        "country": "Georgia",
+        "countryCode": "GE",
+        "category": "natural",
+        "rating": 4,
+        "description": "Spectacular limestone cave with underground river and colorful illumination"
+      },
+      "geometry": { "type": "Point", "coordinates": [42.6008, 42.3764] }
+    }
+  ]
+}
