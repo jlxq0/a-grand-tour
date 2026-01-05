@@ -184,7 +184,7 @@ const routeFiles = [
     'nz-queen-charlotte.geojson','nz-queenstown-glenorchy.geojson','om-jebel-akhdar.geojson',
     'om-jebel-shams.geojson','om-muscat-salalah.geojson','om-wadi-bani-awf.geojson','pa-darien.geojson',
     'pe-sacred-valley.geojson','pk-fairy-meadows.geojson','pk-karakoram-highway.geojson',
-    'pt-er101-madeira.geojson','ro-transfagarasan.geojson','sa-asir.geojson','sa-edge-of-world.geojson',
+    'ro-transfagarasan.geojson','sa-asir.geojson','sa-edge-of-world.geojson',
     'se-high-coast.geojson','si-vrsic-pass.geojson','sv-ruta-flores.geojson','th-mae-hong-son.geojson',
     'tr-lycian-coast.geojson','tz-ngorongoro-serengeti.geojson','us-beartooth-highway.geojson',
     'us-blue-ridge-parkway.geojson','us-going-to-the-sun.geojson','us-million-dollar-highway.geojson',
@@ -267,12 +267,17 @@ map.on('load', async () => {
     // Load all scenic routes
     const routes = await Promise.all(
         routeFiles.map(async f => {
-            const route = await fetch(`data/scenic-routes/${f}`).then(r => r.json());
-            // Add routeId for local image lookup
-            route.properties.routeId = f.replace('.geojson', '');
-            return route;
+            try {
+                const route = await fetch(`data/scenic-routes/${f}`).then(r => r.json());
+                // Add routeId for local image lookup
+                route.properties.routeId = f.replace('.geojson', '');
+                return route;
+            } catch (e) {
+                console.warn(`Failed to load route: ${f}`, e);
+                return null;
+            }
         })
-    );
+    ).then(r => r.filter(Boolean));
 
     // Combine into FeatureCollection
     const routesCollection = {
