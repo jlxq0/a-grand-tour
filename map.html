@@ -151,7 +151,8 @@
     <div class="legend-item"><div class="legend-line" style="background: #f39c12;"></div> 3 stars</div>
     <div class="legend-item"><div class="legend-line" style="background: #f1c40f;"></div> 1-2 stars</div>
     <h4 style="margin-top: 10px;">Type</h4>
-    <div class="legend-item"><div class="legend-line" style="background: #888; height: 3px;"></div> Route</div>
+    <div class="legend-item"><div class="legend-line" style="background: #3498db;"></div> Planned route</div>
+    <div class="legend-item"><div class="legend-line" style="background: #888; height: 3px;"></div> Scenic route</div>
     <div class="legend-item"><div style="width: 10px; height: 10px; border-radius: 50%; background: #888; margin-right: 8px;"></div> POI</div>
 </div>
 
@@ -430,6 +431,23 @@ map.on('load', async () => {
                     'line-color': '#85c1e9',
                     'line-width': 2,
                     'line-dasharray': [4, 3]
+                }
+            });
+        });
+
+    // Load planned route (blue layer)
+    fetch('data/planned-route.geojson')
+        .then(r => r.json())
+        .then(data => {
+            map.addSource('planned-route', { type: 'geojson', data });
+            map.addLayer({
+                id: 'planned-route-line',
+                type: 'line',
+                source: 'planned-route',
+                paint: {
+                    'line-color': '#3498db',
+                    'line-width': 4,
+                    'line-opacity': 0.8
                 }
             });
         });
