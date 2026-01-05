@@ -75,6 +75,7 @@ const waypointsPart2 = [
   { name: "Agra (Taj Mahal)", coords: [78.0421, 27.1751] },
   { name: "Jaipur (Hawa Mahal)", coords: [75.7873, 26.9239] },
   { name: "Jodhpur (Mehrangarh Fort)", coords: [73.0243, 26.2968] },
+  { name: "Jaisalmer Fort", coords: [70.9083, 26.9157] },
   { name: "Udaipur (City Palace)", coords: [73.6833, 24.5854] },
   { name: "Rann of Kutch", coords: [69.8597, 23.7337] },
   { name: "Ahmedabad", coords: [72.5714, 23.0225] },
