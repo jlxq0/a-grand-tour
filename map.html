@@ -235,6 +235,14 @@ map.on('load', async () => {
     // Load visited countries
     const visitedCountryCodes = await fetch('data/visited-countries.json').then(r => r.json());
 
+    // Problematic countries to review (shown in red)
+    const problemCountries = [
+        'SD', 'ER', 'EH',  // Remove: civil war, impossible, disputed
+        'CD', 'NG', 'CM', 'BI',  // Very dangerous
+        'LR', 'SL', 'GW', 'GN', 'MR',  // Challenging
+        'SG', 'GI'         // No cars / impractical
+    ];
+
     // Add country boundaries
     map.addSource('countries', {
         type: 'vector',
@@ -254,6 +262,8 @@ map.on('load', async () => {
         paint: {
             'fill-color': [
                 'case',
+                ['in', ['get', 'iso_3166_1'], ['literal', problemCountries]],
+                'rgba(231, 76, 60, 0.25)',
                 ['in', ['get', 'iso_3166_1'], ['literal', visitedCountryCodes]],
                 'rgba(39, 174, 96, 0.12)',
                 'rgba(200, 200, 200, 0.05)'

@@ -566,11 +566,12 @@
     "zw:Victoria Falls": 2,
     "zw:Great Zimbabwe Ruins": 2,
     "zw:Hwange National Park": 2,
-    "zw:Mana Pools": 2
+    "zw:Mana Pools": 2,
+    "zw:Matobo": 2
   },
   "failed": {
     "ao:Tundavala Fissure": "no images",
     "lv:Riga Art Nouveau District": "no images"
   },
-  "lastCountry": "zm"
+  "lastCountry": "zw"
 }
