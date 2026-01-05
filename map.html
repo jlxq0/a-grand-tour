@@ -435,7 +435,7 @@ map.on('load', async () => {
             });
         });
 
-    // Load planned route (blue layer)
+    // Load planned route (blue layer - added BEFORE scenic routes so they appear on top)
     fetch('data/planned-route.geojson')
         .then(r => r.json())
         .then(data => {
@@ -449,7 +449,7 @@ map.on('load', async () => {
                     'line-width': 4,
                     'line-opacity': 0.8
                 }
-            });
+            }, 'scenic-routes-highlight'); // Insert below scenic routes
         });
 
     // Interactivity
