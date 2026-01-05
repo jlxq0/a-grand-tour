@@ -340,18 +340,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Lord Howe Island",
-        "country": "Australia",
-        "countryCode": "AU",
-        "category": "natural",
-        "rating": 5,
-        "description": "UNESCO volcanic island with world's southernmost coral reef"
-      },
-      "geometry": { "type": "Point", "coordinates": [159.083, -31.550] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Cradle Mountain",
         "country": "Australia",
         "countryCode": "AU",

@@ -728,14 +728,15 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 
 ---
 
-## Trip 14: Nordics + Baltics
+## Trip 14: Nordics + Baltics + Iceland
 
-**Jun–Aug 2035 (7 weeks)**
+**Jun–Aug 2035 (8 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
 |🇩🇪 Germany|2|Pick up Munich, drive north|
 |🇩🇰 Denmark|5|Copenhagen, Odense|
+|🇮🇸 Iceland|10|Ring Road, Golden Circle, Jökulsárlón, waterfalls (ferry Hirtshals→Seyðisfjörður)|
 |🇳🇴 Norway|16|Oslo, Bergen, fjords, Atlantic Road, Lofoten|
 |🇸🇪 Sweden|10|Stockholm, Gothenburg|
 |🇫🇮 Finland|7|Helsinki, Turku|
@@ -743,9 +744,9 @@ _Settle in Singapore. Child starts GESS Grade 1, August 2034._
 |🇱🇻 Latvia|3|Riga|
 |🇱🇹 Lithuania|3|Vilnius|
 
-**50 days / 8 countries / ~7,000 km**
+**60 days / 9 countries / ~9,500 km**
 
-**Store:** Vilnius  
+**Store:** Vilnius
 **Fly home:** Helsinki or Stockholm (SIA via various)
 
 ---

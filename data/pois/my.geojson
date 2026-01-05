@@ -64,30 +64,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Mount Kinabalu",
-        "country": "Malaysia",
-        "countryCode": "MY",
-        "category": "natural",
-        "rating": 5,
-        "description": "Southeast Asia's highest peak in Sabah, Borneo with diverse ecosystems"
-      },
-      "geometry": { "type": "Point", "coordinates": [116.5583, 6.0753] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Sipadan Island",
-        "country": "Malaysia",
-        "countryCode": "MY",
-        "category": "natural",
-        "rating": 5,
-        "description": "World-renowned diving destination off Sabah with exceptional marine biodiversity"
-      },
-      "geometry": { "type": "Point", "coordinates": [118.6292, 4.1144] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Malacca Historic City",
         "country": "Malaysia",
         "countryCode": "MY",

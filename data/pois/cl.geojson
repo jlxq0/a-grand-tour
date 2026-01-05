@@ -28,18 +28,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Easter Island (Rapa Nui)",
-        "country": "Chile",
-        "countryCode": "CL",
-        "category": "landmark",
-        "rating": 5,
-        "description": "Remote Pacific island with mysterious Moai stone statues, UNESCO World Heritage"
-      },
-      "geometry": { "type": "Point", "coordinates": [-109.3497, -27.1127] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Carretera Austral",
         "country": "Chile",
         "countryCode": "CL",

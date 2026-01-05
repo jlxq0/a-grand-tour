@@ -4,18 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Galapagos Islands",
-        "country": "Ecuador",
-        "countryCode": "EC",
-        "category": "natural",
-        "rating": 5,
-        "description": "UNESCO volcanic archipelago with unique wildlife that inspired Darwin's evolution theory"
-      },
-      "geometry": { "type": "Point", "coordinates": [-90.3695, -0.9538] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Cotopaxi",
         "country": "Ecuador",
         "countryCode": "EC",

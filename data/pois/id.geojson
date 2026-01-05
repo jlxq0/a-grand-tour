@@ -40,18 +40,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Raja Ampat Islands",
-        "country": "Indonesia",
-        "countryCode": "ID",
-        "category": "natural",
-        "rating": 5,
-        "description": "Most biodiverse marine ecosystem on Earth with pristine coral reefs"
-      },
-      "geometry": { "type": "Point", "coordinates": [130.5167, -0.5333] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Prambanan Temple",
         "country": "Indonesia",
         "countryCode": "ID",

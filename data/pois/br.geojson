@@ -64,18 +64,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Fernando de Noronha",
-        "country": "Brazil",
-        "countryCode": "BR",
-        "category": "natural",
-        "rating": 4,
-        "description": "Volcanic archipelago with Brazil's best beaches and diving"
-      },
-      "geometry": { "type": "Point", "coordinates": [-32.4231, -3.8544] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Sugarloaf Mountain",
         "country": "Brazil",
         "countryCode": "BR",

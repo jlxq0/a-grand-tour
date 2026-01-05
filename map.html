@@ -194,21 +194,21 @@ const routeFiles = [
 ];
 
 const poiFiles = [
-    'ae.geojson','al.geojson','ao.geojson','ar.geojson','at.geojson','au.geojson',
+    'ae.geojson','al.geojson','am.geojson','ao.geojson','ar.geojson','at.geojson','au.geojson','az.geojson',
     'ba.geojson','bd.geojson','be.geojson','bg.geojson','bh.geojson','bi.geojson',
     'bj.geojson','bo.geojson','br.geojson','bw.geojson','bz.geojson',
     'ca.geojson','cd.geojson','cg.geojson','ch.geojson','ci.geojson','cl.geojson',
-    'cm.geojson','cn.geojson','co.geojson','cr.geojson','cz.geojson',
+    'cm.geojson','co.geojson','cr.geojson','cz.geojson',
     'de.geojson','dk.geojson',
     'ec.geojson','ee.geojson','eg.geojson','er.geojson','es.geojson','et.geojson',
     'fi.geojson','fr.geojson',
-    'ga.geojson','gb.geojson','gf.geojson','gh.geojson','gr.geojson','gt.geojson','gy.geojson',
+    'ga.geojson','gb.geojson','ge.geojson','gf.geojson','gh.geojson','gr.geojson','gt.geojson','gy.geojson',
     'hn.geojson','hr.geojson','hu.geojson',
     'id.geojson','ie.geojson','in.geojson','ir.geojson','is.geojson','it.geojson',
-    'jo.geojson','jp.geojson',
+    'jo.geojson',
     'ke.geojson','kh.geojson','kw.geojson',
     'la.geojson','ls.geojson','lt.geojson','lu.geojson','lv.geojson',
-    'ma.geojson','me.geojson','mk.geojson','mw.geojson','mx.geojson','my.geojson','mz.geojson',
+    'ma.geojson','md.geojson','me.geojson','mk.geojson','mw.geojson','mx.geojson','my.geojson','mz.geojson',
     'na.geojson','ng.geojson','ni.geojson','nl.geojson','no.geojson','np.geojson','nz.geojson',
     'om.geojson',
     'pa.geojson','pe.geojson','pk.geojson','pl.geojson','pt.geojson','py.geojson',
@@ -378,6 +378,51 @@ map.on('load', async () => {
         }
     });
 
+    // Load ferries
+    fetch('data/ferries.geojson')
+        .then(r => r.json())
+        .then(data => {
+            map.addSource('ferries', { type: 'geojson', data });
+            map.addLayer({
+                id: 'ferries-line',
+                type: 'line',
+                source: 'ferries',
+                paint: {
+                    'line-color': '#3498db',
+                    'line-width': 2,
+                    'line-dasharray': [2, 2]
+                }
+            });
+        });
+
+    // Load shipping routes
+    const shippingFiles = [
+        'auckland-valparaiso.geojson',
+        'brisbane-auckland.geojson',
+        'chittagong-laem-chabang.geojson',
+        'darien-gap.geojson',
+        'jb-jakarta.geojson',
+        'seattle-southampton.geojson'
+    ];
+    Promise.all(shippingFiles.map(f => fetch(`data/shipping/${f}`).then(r => r.json())))
+        .then(results => {
+            const allShipping = {
+                type: 'FeatureCollection',
+                features: results.flatMap(r => r.features || [r])
+            };
+            map.addSource('shipping', { type: 'geojson', data: allShipping });
+            map.addLayer({
+                id: 'shipping-line',
+                type: 'line',
+                source: 'shipping',
+                paint: {
+                    'line-color': '#1abc9c',
+                    'line-width': 2,
+                    'line-dasharray': [4, 3]
+                }
+            });
+        });
+
     // Interactivity
     let hoveredId = null;
     const routeInfo = document.getElementById('route-info');
@@ -393,11 +438,25 @@ map.on('load', async () => {
 
     // Carousel state
     let currentRouteId = null;
+    let currentPoiId = null; // {countryCode, safeName}
     let currentImageIndex = 0;
     let totalImages = 5;
 
+    function sanitizeFilename(name) {
+        return name.toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '')
+            .substring(0, 50);
+    }
+
     function updateCarousel() {
-        routePhoto.src = `data/scenic-routes/images/${currentRouteId}/${currentImageIndex + 1}.webp`;
+        let imagePath;
+        if (currentPoiId) {
+            imagePath = `data/pois/images/${currentPoiId.countryCode}/${currentPoiId.safeName}-${currentImageIndex + 1}.webp`;
+        } else {
+            imagePath = `data/scenic-routes/images/${currentRouteId}/${currentImageIndex + 1}.webp`;
+        }
+        routePhoto.src = imagePath;
         // Update dots
         const dots = carouselDots.querySelectorAll('.carousel-dot');
         dots.forEach((dot, i) => {
@@ -459,6 +518,7 @@ map.on('load', async () => {
         routeDescription.textContent = props.description || '';
 
         // Setup carousel for routes (with images)
+        currentPoiId = null;
         currentRouteId = props.routeId;
         currentImageIndex = 0;
         totalImages = 5;
@@ -477,9 +537,17 @@ map.on('load', async () => {
         routeRating.textContent = '★'.repeat(props.rating);
         routeDescription.textContent = props.description || '';
 
-        // Hide photo carousel for POIs (no images yet)
-        document.getElementById('route-photo-container').style.display = 'none';
+        // Setup carousel for POI images
         currentRouteId = null;
+        currentPoiId = {
+            countryCode: props.countryCode.toLowerCase(),
+            safeName: sanitizeFilename(props.name)
+        };
+        currentImageIndex = 0;
+        totalImages = 2; // POIs have 2 images each
+        createDots(totalImages);
+        updateCarousel();
+        document.getElementById('route-photo-container').style.display = 'block';
 
         routeInfo.style.display = 'block';
     });

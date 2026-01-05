@@ -4,62 +4,62 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "Blue Lagoon",
+        "country": "Iceland",
+        "countryCode": "IS",
+        "category": "natural",
+        "rating": 5,
+        "description": "Iconic geothermal spa with milky-blue mineral-rich waters surrounded by black lava fields"
+      },
+      "geometry": { "type": "Point", "coordinates": [-22.4492, 63.8804] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Gullfoss",
         "country": "Iceland",
         "countryCode": "IS",
         "category": "natural",
         "rating": 5,
-        "description": "Golden Falls - Iceland's most famous waterfall plunging 32m in two tiers into a canyon"
+        "description": "Majestic two-tiered waterfall plunging 32m into a dramatic canyon on the Golden Circle"
       },
-      "geometry": { "type": "Point", "coordinates": [-20.1217, 64.3271] }
+      "geometry": { "type": "Point", "coordinates": [-20.1199, 64.3271] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Geysir Geothermal Area",
+        "name": "Geysir",
         "country": "Iceland",
         "countryCode": "IS",
         "category": "natural",
-        "rating": 5,
-        "description": "Original geyser that gave all others their name; Strokkur erupts every 5-10 minutes"
+        "rating": 4,
+        "description": "Geothermal area with Strokkur geyser erupting every 5-10 minutes up to 30m high"
       },
-      "geometry": { "type": "Point", "coordinates": [-20.3025, 64.3104] }
+      "geometry": { "type": "Point", "coordinates": [-20.3024, 64.3104] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Jokulsarlon Glacier Lagoon",
+        "name": "Jökulsárlón Glacier Lagoon",
         "country": "Iceland",
         "countryCode": "IS",
         "category": "natural",
         "rating": 5,
-        "description": "Ethereal lagoon filled with floating icebergs calved from Vatnajokull glacier"
+        "description": "Stunning glacial lake filled with floating icebergs calved from Vatnajökull glacier"
       },
-      "geometry": { "type": "Point", "coordinates": [-16.1797, 64.0784] }
+      "geometry": { "type": "Point", "coordinates": [-16.1790, 64.0784] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Diamond Beach",
+        "name": "Skógafoss",
         "country": "Iceland",
         "countryCode": "IS",
         "category": "natural",
         "rating": 5,
-        "description": "Black sand beach scattered with crystal-clear ice chunks like diamonds"
+        "description": "Powerful 60m waterfall with frequent rainbows and stairs to panoramic viewpoint"
       },
-      "geometry": { "type": "Point", "coordinates": [-16.1756, 64.0444] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Skogafoss",
-        "country": "Iceland",
-        "countryCode": "IS",
-        "category": "natural",
-        "rating": 5,
-        "description": "Perfectly rectangular 60m waterfall, one of Iceland's largest and most photogenic"
-      },
-      "geometry": { "type": "Point", "coordinates": [-19.5111, 63.5320] }
+      "geometry": { "type": "Point", "coordinates": [-19.5114, 63.5321] }
     },
     {
       "type": "Feature",
@@ -69,21 +69,21 @@
         "countryCode": "IS",
         "category": "natural",
         "rating": 4,
-        "description": "65m waterfall famous for the path behind the curtain of water"
+        "description": "Unique 65m waterfall where you can walk behind the curtain of water"
       },
       "geometry": { "type": "Point", "coordinates": [-19.9886, 63.6156] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Thingvellir National Park",
+        "name": "Þingvellir National Park",
         "country": "Iceland",
         "countryCode": "IS",
         "category": "natural",
-        "rating": 4,
-        "description": "UNESCO site where North American and Eurasian tectonic plates visibly drift apart"
+        "rating": 5,
+        "description": "UNESCO site where tectonic plates meet, site of world's oldest parliament"
       },
-      "geometry": { "type": "Point", "coordinates": [-21.1167, 64.2558] }
+      "geometry": { "type": "Point", "coordinates": [-21.1306, 64.2559] }
     },
     {
       "type": "Feature",
@@ -93,45 +93,9 @@
         "countryCode": "IS",
         "category": "natural",
         "rating": 4,
-        "description": "Dramatic black volcanic beach with basalt columns and towering sea stacks"
+        "description": "Dramatic black volcanic beach with towering basalt columns and powerful waves"
       },
-      "geometry": { "type": "Point", "coordinates": [-19.0444, 63.4047] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Svartifoss",
-        "country": "Iceland",
-        "countryCode": "IS",
-        "category": "natural",
-        "rating": 4,
-        "description": "Black Falls surrounded by dramatic hexagonal basalt columns in Skaftafell"
-      },
-      "geometry": { "type": "Point", "coordinates": [-16.9753, 64.0275] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Landmannalaugar",
-        "country": "Iceland",
-        "countryCode": "IS",
-        "category": "natural",
-        "rating": 4,
-        "description": "Otherworldly rhyolite mountains in rainbow colors with natural hot springs"
-      },
-      "geometry": { "type": "Point", "coordinates": [-19.0617, 63.9925] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Blue Lagoon",
-        "country": "Iceland",
-        "countryCode": "IS",
-        "category": "natural",
-        "rating": 4,
-        "description": "Iconic milky-blue geothermal spa in a lava field near Reykjavik"
-      },
-      "geometry": { "type": "Point", "coordinates": [-22.4494, 63.8804] }
+      "geometry": { "type": "Point", "coordinates": [-19.0448, 63.4054] }
     }
   ]
 }
