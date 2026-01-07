@@ -188,6 +188,14 @@
             box-shadow: 0 0 2px rgba(0,0,0,0.3);
         }
 
+        .legend-fill {
+            width: 16px;
+            height: 10px;
+            margin-right: 6px;
+            border-radius: 2px;
+            border: 1px solid rgba(231, 76, 60, 0.4);
+        }
+
         /* Map Controls - Match Mapbox UI style */
         .map-controls {
             position: absolute;
@@ -240,6 +248,37 @@
 
         .map-control-btn span {
             display: none;
+        }
+
+        /* Dark mode for Mapbox built-in controls */
+        [data-theme="dark"] .mapboxgl-ctrl-group {
+            background: #1a1a2e;
+            box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+        }
+
+        [data-theme="dark"] .mapboxgl-ctrl-group button {
+            background-color: #1a1a2e;
+        }
+
+        [data-theme="dark"] .mapboxgl-ctrl-group button + button {
+            border-top-color: rgba(255,255,255,0.1);
+        }
+
+        [data-theme="dark"] .mapboxgl-ctrl-group button:hover {
+            background-color: #252542;
+        }
+
+        [data-theme="dark"] .mapboxgl-ctrl button .mapboxgl-ctrl-icon {
+            filter: invert(1);
+        }
+
+        [data-theme="dark"] .mapboxgl-ctrl-attrib {
+            background-color: rgba(26, 26, 46, 0.8);
+            color: #aaa;
+        }
+
+        [data-theme="dark"] .mapboxgl-ctrl-attrib a {
+            color: #5dade2;
         }
 
         /* Content Panel - Right Side */
@@ -307,6 +346,96 @@
         .nav-menu a.active {
             background: #3498db;
             color: white;
+        }
+
+        /* Trips dropdown */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .nav-dropdown-toggle {
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--link-color);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-dropdown-toggle:hover {
+            background: var(--bg-secondary);
+        }
+
+        .nav-dropdown-toggle.active {
+            background: #3498db;
+            color: white;
+        }
+
+        .nav-dropdown-toggle svg {
+            width: 12px;
+            height: 12px;
+            transition: transform 0.2s;
+        }
+
+        .nav-dropdown.open .nav-dropdown-toggle svg {
+            transform: rotate(180deg);
+        }
+
+        .nav-dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px var(--shadow-color);
+            min-width: 280px;
+            max-height: 400px;
+            overflow-y: auto;
+            z-index: 200;
+            display: none;
+            margin-top: 4px;
+        }
+
+        .nav-dropdown.open .nav-dropdown-menu {
+            display: block;
+        }
+
+        .nav-dropdown-menu a {
+            display: block;
+            padding: 10px 14px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .nav-dropdown-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .nav-dropdown-menu a:hover {
+            background: var(--bg-secondary);
+            text-decoration: none;
+        }
+
+        .nav-dropdown-menu a.active {
+            background: rgba(52, 152, 219, 0.1);
+            color: #3498db;
+        }
+
+        .nav-dropdown-menu .trip-name {
+            font-weight: 500;
+        }
+
+        .nav-dropdown-menu .trip-route {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 2px;
         }
 
         .nav-separator {
@@ -399,18 +528,28 @@
         }
 
         .markdown-content pre {
-            background: #1a1a2e;
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 100%);
             color: #e0e0e0;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 20px 24px;
+            border-radius: 12px;
             overflow-x: auto;
             margin: 20px 0;
+            border-left: 4px solid #3498db;
+            font-size: 13px;
+            line-height: 1.8;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        [data-theme="dark"] .markdown-content pre {
+            background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 100%);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .markdown-content pre code {
             background: none;
             padding: 0;
             color: inherit;
+            font-size: inherit;
         }
 
         .markdown-content blockquote {
@@ -630,10 +769,11 @@
                 <p>One Family. One Land Cruiser. 100 Countries.</p>
             </div>
             <div class="legend">
-                <h4>Routes</h4>
-                <div class="legend-item"><div class="legend-line" style="background: #3498db;"></div> Planned</div>
-                <div class="legend-item"><div class="legend-line" style="background: #e74c3c;"></div> Scenic</div>
-                <div class="legend-item"><div class="legend-dot" style="background: #f39c12;"></div> POI</div>
+                <h4>Legend</h4>
+                <div class="legend-item"><div class="legend-line" style="background: #3498db;"></div> Planned route</div>
+                <div class="legend-item"><div class="legend-line" style="background: #e74c3c;"></div> Scenic route</div>
+                <div class="legend-item"><div class="legend-dot" style="background: #f39c12;"></div> Point of interest</div>
+                <div class="legend-item"><div class="legend-fill" style="background: rgba(231, 76, 60, 0.25);"></div> Problematic</div>
             </div>
 
             <!-- Map Controls -->
@@ -685,9 +825,9 @@
 <script>
 // Page configuration
 const pages = {
-    '': { file: 'README.md', title: 'Overview', short: 'Overview' },
-    'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi', short: 'Trip 1' },
-    'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong', short: 'Trip 2' }
+    '': { file: 'README.md', title: 'Overview', short: 'Overview', isTrip: false },
+    'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi', short: 'Trip 1', route: 'Dubai → Delhi', isTrip: true },
+    'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong', short: 'Trip 2', route: 'Delhi → Chittagong', isTrip: true }
 };
 
 let currentPage = null;
@@ -713,13 +853,57 @@ function parseHash() {
 // Update navigation menu
 function updateNav(activePage) {
     const nav = document.getElementById('nav');
-    const menuItems = Object.entries(pages).map(([key, config]) => {
-        const href = key === '' ? '#' : `#${key}`;
+    const trips = Object.entries(pages).filter(([k, v]) => v.isTrip);
+    const isOnTrip = pages[activePage]?.isTrip;
+    const activeTrip = isOnTrip ? pages[activePage] : null;
+
+    // Build trips dropdown items
+    const tripItems = trips.map(([key, config]) => {
         const activeClass = key === activePage ? 'active' : '';
-        return `<a href="${href}" class="${activeClass}">${config.short}</a>`;
+        return `<a href="#${key}" class="${activeClass}">
+            <div class="trip-name">${config.short}: ${config.route}</div>
+        </a>`;
     }).join('');
 
-    nav.innerHTML = `<div class="nav-menu">${menuItems}</div>`;
+    const dropdownLabel = activeTrip ? activeTrip.short : 'Trips';
+    const dropdownActive = isOnTrip ? 'active' : '';
+
+    nav.innerHTML = `
+        <div class="nav-menu">
+            <a href="#" class="${activePage === '' ? 'active' : ''}">Overview</a>
+            <div class="nav-dropdown" id="trips-dropdown">
+                <button class="nav-dropdown-toggle ${dropdownActive}">
+                    ${dropdownLabel}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 9l6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="nav-dropdown-menu">
+                    ${tripItems}
+                </div>
+            </div>
+        </div>
+    `;
+
+    // Dropdown toggle
+    const dropdown = document.getElementById('trips-dropdown');
+    const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+    toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+    });
+
+    // Close on click outside
+    document.addEventListener('click', () => {
+        dropdown.classList.remove('open');
+    });
+
+    // Close on item click
+    dropdown.querySelectorAll('.nav-dropdown-menu a').forEach(a => {
+        a.addEventListener('click', () => {
+            dropdown.classList.remove('open');
+        });
+    });
 }
 
 // Scroll to anchor
