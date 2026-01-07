@@ -710,6 +710,50 @@
             color: var(--text-primary);
         }
 
+        /* Clickable place links in text */
+        .place-link {
+            color: var(--link-color);
+            cursor: pointer;
+            border-bottom: 1px dotted var(--link-color);
+            transition: all 0.2s ease;
+        }
+
+        .place-link:hover {
+            background: rgba(52, 152, 219, 0.15);
+            border-bottom-style: solid;
+        }
+
+        .place-link.highlighted {
+            background: rgba(52, 152, 219, 0.3);
+            animation: pulse-highlight 1s ease-out;
+        }
+
+        @keyframes pulse-highlight {
+            0% { background: rgba(52, 152, 219, 0.5); }
+            100% { background: rgba(52, 152, 219, 0.3); }
+        }
+
+        @keyframes map-pulse {
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        /* Map highlight pulse for POIs */
+        .mapboxgl-popup-tip,
+        .mapboxgl-popup-content {
+            animation: none;
+        }
+
         /* Route info popup */
         #route-info {
             position: absolute;
@@ -944,6 +988,11 @@
     </div>
 
 <script>
+// Global index of places for text linking (populated after map data loads)
+let placeIndex = {};
+let allPoisData = null;
+let allRoutesData = null;
+
 // Page configuration
 const pages = {
     '': { file: 'README.md', title: 'Overview', short: 'Overview', isTrip: false },
@@ -1094,6 +1143,11 @@ async function loadContent(page, anchor = null) {
                     history.pushState(null, '', `#${currentPage}${currentPage ? ':' : ''}${href}`);
                 });
             });
+
+            // Link place names to map (if place index is built)
+            if (Object.keys(placeIndex).length > 0) {
+                linkPlacesToMap(contentEl);
+            }
 
             // Scroll to top if no anchor
             if (!anchor) {
@@ -1348,6 +1402,7 @@ async function addDataLayers() {
     ).then(r => r.filter(Boolean));
 
     const routesCollection = { type: 'FeatureCollection', features: routes };
+    allRoutesData = routesCollection;  // Store globally for place index
     map.addSource('scenic-routes', { type: 'geojson', data: routesCollection });
 
     map.addLayer({
@@ -1381,6 +1436,7 @@ async function addDataLayers() {
     );
 
     const allPois = { type: 'FeatureCollection', features: poiCollections.flatMap(c => c.features || []) };
+    allPoisData = allPois;  // Store globally for place index
     map.addSource('pois', { type: 'geojson', data: allPois });
 
     map.addLayer({
@@ -1561,6 +1617,7 @@ async function addDataLayers() {
         createDots(totalImages); showCarouselControls(true); updateCarousel();
         document.getElementById('route-photo-container').style.display = 'block';
         routeInfo.style.display = 'block'; positionPopup(e);
+        scrollToPlaceInContent(props.name);
     });
 
     map.on('click', 'pois-circle', (e) => {
@@ -1575,6 +1632,7 @@ async function addDataLayers() {
         showCarouselControls(false); updateCarousel();
         document.getElementById('route-photo-container').style.display = 'block';
         routeInfo.style.display = 'block'; positionPopup(e);
+        scrollToPlaceInContent(props.name);
     });
 
     map.on('mouseenter', 'pois-circle', () => { map.getCanvas().style.cursor = 'pointer'; });
@@ -1594,6 +1652,7 @@ async function addDataLayers() {
         showCarouselControls(false); updateCarousel();
         document.getElementById('route-photo-container').style.display = 'block';
         routeInfo.style.display = 'block'; positionPopup(e);
+        scrollToPlaceInContent(props.name);
     });
 
     map.on('mouseenter', 'ferries-line', () => { map.getCanvas().style.cursor = 'pointer'; });
@@ -1613,6 +1672,7 @@ async function addDataLayers() {
         showCarouselControls(false); updateCarousel();
         document.getElementById('route-photo-container').style.display = 'block';
         routeInfo.style.display = 'block'; positionPopup(e);
+        scrollToPlaceInContent(props.name);
     });
 
     map.on('mouseenter', 'shipping-line', () => { map.getCanvas().style.cursor = 'pointer'; });
@@ -1623,6 +1683,249 @@ async function addDataLayers() {
         const features = map.queryRenderedFeatures(e.point, { layers: layers.filter(l => map.getLayer(l)) });
         if (features.length === 0) routeInfo.style.display = 'none';
     });
+
+    // Build place index after all data is loaded
+    buildPlaceIndex();
+    // Re-link places if content is already loaded
+    const contentEl = document.getElementById('content');
+    if (contentEl && !contentEl.querySelector('.loading')) {
+        linkPlacesToMap(contentEl);
+    }
+}
+
+// ============ PLACE INDEX & CLICK-TO-HIGHLIGHT ============
+
+// Scroll to a place mention in the content panel (called when clicking map features)
+function scrollToPlaceInContent(placeName) {
+    if (!placeName) return false;
+
+    // Find all place-link elements that match this name
+    const placeLinks = document.querySelectorAll('.place-link');
+    let targetLink = null;
+
+    for (const link of placeLinks) {
+        if (link.dataset.place === placeName.toLowerCase() ||
+            link.textContent.toLowerCase() === placeName.toLowerCase()) {
+            targetLink = link;
+            break;
+        }
+    }
+
+    if (!targetLink) {
+        console.log('Place not found in content:', placeName);
+        return false;
+    }
+
+    // Remove previous highlights
+    document.querySelectorAll('.place-link.highlighted').forEach(el => {
+        el.classList.remove('highlighted');
+    });
+
+    // Highlight this link
+    targetLink.classList.add('highlighted');
+
+    // Scroll to the element in the content panel
+    const contentPanel = document.querySelector('.content-panel');
+    const navHeight = document.querySelector('.nav').offsetHeight;
+    const targetTop = targetLink.offsetTop - navHeight - 100;
+
+    contentPanel.scrollTo({
+        top: Math.max(0, targetTop),
+        behavior: 'smooth'
+    });
+
+    return true;
+}
+
+function buildPlaceIndex() {
+    placeIndex = {};
+
+    // Add POIs to index
+    if (allPoisData && allPoisData.features) {
+        allPoisData.features.forEach(feature => {
+            const name = feature.properties.name;
+            const coords = feature.geometry.coordinates;
+            if (name && coords) {
+                const placeData = {
+                    type: 'poi',
+                    name: name,
+                    coords: coords,
+                    properties: feature.properties
+                };
+                // Store with full name
+                placeIndex[name.toLowerCase()] = placeData;
+
+                // Also store with short name (without parenthetical like "Amber Fort (Jaipur)" -> "Amber Fort")
+                const shortName = name.replace(/\s*\([^)]+\)\s*$/, '').trim();
+                if (shortName !== name && shortName.length > 0) {
+                    placeIndex[shortName.toLowerCase()] = placeData;
+                }
+            }
+        });
+    }
+
+    // Add scenic routes to index
+    if (allRoutesData && allRoutesData.features) {
+        allRoutesData.features.forEach(feature => {
+            const name = feature.properties.name;
+            const coords = feature.geometry.coordinates;
+            if (name && coords && coords.length > 0) {
+                // Get center point of route
+                const midIndex = Math.floor(coords.length / 2);
+                const centerCoord = coords[midIndex];
+                placeIndex[name.toLowerCase()] = {
+                    type: 'route',
+                    name: name,
+                    coords: centerCoord,
+                    allCoords: coords,
+                    properties: feature.properties
+                };
+            }
+        });
+    }
+
+    console.log(`Place index built with ${Object.keys(placeIndex).length} places`);
+}
+
+// Highlight a place on the map
+function highlightPlace(placeName) {
+    const place = placeIndex[placeName.toLowerCase()];
+    if (!place) {
+        console.log('Place not found:', placeName);
+        return false;
+    }
+
+    // Fly to the location
+    map.flyTo({
+        center: place.coords,
+        zoom: place.type === 'poi' ? 10 : 8,
+        duration: 1500
+    });
+
+    // Create a temporary highlight marker
+    const highlightEl = document.createElement('div');
+    highlightEl.className = 'map-highlight-pulse';
+    highlightEl.style.cssText = `
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(52, 152, 219, 0.4);
+        border: 3px solid #3498db;
+        animation: map-pulse 2s ease-out;
+        pointer-events: none;
+    `;
+
+    const marker = new mapboxgl.Marker({ element: highlightEl })
+        .setLngLat(place.coords)
+        .addTo(map);
+
+    // Remove marker after animation
+    setTimeout(() => marker.remove(), 2500);
+
+    return true;
+}
+
+// Post-process rendered markdown to add clickable place links
+function linkPlacesToMap(contentEl) {
+    if (Object.keys(placeIndex).length === 0) return;
+
+    // Build a list of place names sorted by length (longer first to avoid partial matches)
+    // Use the INDEX KEYS (which include short names like "Amber Fort") not just the full .name property
+    const placeNames = Object.keys(placeIndex)
+        .sort((a, b) => b.length - a.length);
+
+    // Process text nodes in the content
+    const walker = document.createTreeWalker(
+        contentEl,
+        NodeFilter.SHOW_TEXT,
+        {
+            acceptNode: function(node) {
+                // Skip if parent is already a link, code, or place-link
+                const parent = node.parentElement;
+                if (parent.tagName === 'A' || parent.tagName === 'CODE' ||
+                    parent.tagName === 'PRE' || parent.classList.contains('place-link')) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        }
+    );
+
+    const textNodes = [];
+    while (walker.nextNode()) {
+        textNodes.push(walker.currentNode);
+    }
+
+    // Process each text node
+    textNodes.forEach(textNode => {
+        const text = textNode.textContent;
+
+        // Find all matches with their positions
+        const matches = [];
+        for (const placeName of placeNames) {
+            const regex = new RegExp(`\\b${escapeRegex(placeName)}\\b`, 'gi');
+            let match;
+            while ((match = regex.exec(text)) !== null) {
+                // Check if this position overlaps with an existing match
+                const overlaps = matches.some(m =>
+                    (match.index >= m.start && match.index < m.end) ||
+                    (match.index + match[0].length > m.start && match.index + match[0].length <= m.end)
+                );
+                if (!overlaps) {
+                    matches.push({
+                        start: match.index,
+                        end: match.index + match[0].length,
+                        text: match[0],
+                        placeName: placeName
+                    });
+                }
+            }
+        }
+
+        if (matches.length === 0) return;
+
+        // Sort matches by position
+        matches.sort((a, b) => a.start - b.start);
+
+        // Create a document fragment with the new content
+        const fragment = document.createDocumentFragment();
+        let lastEnd = 0;
+
+        matches.forEach(({ start, end, text: matchText, placeName }) => {
+            // Add text before this match
+            if (start > lastEnd) {
+                fragment.appendChild(document.createTextNode(text.slice(lastEnd, start)));
+            }
+
+            // Add the clickable span
+            const span = document.createElement('span');
+            span.className = 'place-link';
+            span.textContent = matchText;
+            span.dataset.place = placeName.toLowerCase();
+            span.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelectorAll('.place-link.highlighted').forEach(el => {
+                    el.classList.remove('highlighted');
+                });
+                span.classList.add('highlighted');
+                highlightPlace(placeName);
+            });
+            fragment.appendChild(span);
+
+            lastEnd = end;
+        });
+
+        // Add remaining text after the last match
+        if (lastEnd < text.length) {
+            fragment.appendChild(document.createTextNode(text.slice(lastEnd)));
+        }
+
+        textNode.parentNode.replaceChild(fragment, textNode);
+    });
+}
+
+function escapeRegex(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 // Initial load
