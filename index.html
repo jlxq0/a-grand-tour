@@ -216,6 +216,13 @@
             border-radius: 1px;
         }
 
+        .legend-line-dashed {
+            width: 16px;
+            height: 0;
+            margin-right: 6px;
+            border-top: 3px dashed #2471a3;
+        }
+
         .legend-dot {
             width: 8px;
             height: 8px;
@@ -741,6 +748,11 @@
             border-radius: 50%;
             cursor: pointer;
             font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            padding: 0;
         }
 
         #carousel-prev { left: 8px; }
@@ -875,15 +887,16 @@
             </div>
             <div class="legend">
                 <h4>Legend</h4>
-                <div class="legend-item"><div class="legend-line" style="background: #3498db;"></div> Planned route</div>
-                <div class="legend-item"><div class="legend-line" style="background: #e74c3c;"></div> Scenic route</div>
-                <div class="legend-item"><div class="legend-dot" style="background: #f39c12;"></div> Point of interest</div>
+                <div class="legend-item"><div class="legend-line" style="background: #2471a3;"></div> Planned route</div>
+                <div class="legend-item"><div class="legend-line-dashed"></div> Ferry / Ship</div>
+                <div class="legend-item"><div class="legend-line" style="background: #f1c40f;"></div> Scenic route</div>
+                <div class="legend-item"><div class="legend-dot" style="background: #e74c3c;"></div> Point of interest</div>
                 <div class="legend-item"><div class="legend-fill" style="background: rgba(231, 76, 60, 0.25);"></div> Problematic</div>
             </div>
 
             <!-- Map Controls -->
             <div class="map-controls">
-                <button class="map-control-btn" id="terrain-toggle" title="Toggle 3D Terrain">
+                <button class="map-control-btn" id="style-toggle" title="Style: Terrain (click to change)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M2 20l7-7 4 4 9-11"/>
                         <path d="M2 20h20"/>
@@ -1119,7 +1132,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoiamx4cTAiLCJhIjoiY21qd2QwOGRpNXVuNzNnb2txNmdke
 // Theme and settings management
 let isDarkMode = localStorage.getItem('theme') === 'dark' ||
     (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
-let isTerrainEnabled = localStorage.getItem('terrain') === 'true';
+// Map style modes: terrain (default), map, satellite
+const mapStyleModes = ['terrain', 'map', 'satellite'];
+let currentStyleMode = localStorage.getItem('mapStyleMode') || 'terrain';
 
 // Apply initial theme
 if (isDarkMode) {
@@ -1128,9 +1143,23 @@ if (isDarkMode) {
 }
 
 const mapStyles = {
-    light: 'mapbox://styles/mapbox/outdoors-v12',
-    dark: 'mapbox://styles/mapbox/dark-v11'
+    terrain: {
+        light: 'mapbox://styles/mapbox/outdoors-v12',
+        dark: 'mapbox://styles/mapbox/outdoors-v12'  // Use outdoors for terrain in both modes
+    },
+    map: {
+        light: 'mapbox://styles/mapbox/light-v11',
+        dark: 'mapbox://styles/mapbox/dark-v11'
+    },
+    satellite: {
+        light: 'mapbox://styles/mapbox/satellite-streets-v12',
+        dark: 'mapbox://styles/mapbox/satellite-streets-v12'
+    }
 };
+
+function getMapStyle() {
+    return mapStyles[currentStyleMode][isDarkMode ? 'dark' : 'light'];
+}
 
 const routeFiles = [
     'ae-jebel-hafeet.geojson','ae-khor-fakkan.geojson','al-llogara-pass.geojson','ar-calchaqui.geojson',
@@ -1188,7 +1217,7 @@ const poiFiles = [
 
 const map = new mapboxgl.Map({
     container: 'map',
-    style: isDarkMode ? mapStyles.dark : mapStyles.light,
+    style: getMapStyle(),
     center: [40, 20],
     zoom: 1.5,
     projection: 'globe'
@@ -1205,8 +1234,9 @@ map.on('style.load', () => {
     });
 });
 
-// Terrain toggle functionality
+// Map style toggle functionality
 function setupTerrain() {
+    // Always add DEM source
     if (!map.getSource('mapbox-dem')) {
         map.addSource('mapbox-dem', {
             type: 'raster-dem',
@@ -1215,35 +1245,34 @@ function setupTerrain() {
             maxzoom: 14
         });
     }
-
-    if (isTerrainEnabled) {
+    // Enable 3D terrain for terrain and satellite modes
+    if (currentStyleMode === 'terrain' || currentStyleMode === 'satellite') {
         map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 });
-        document.getElementById('terrain-toggle').classList.add('active');
-    }
-}
-
-document.getElementById('terrain-toggle').addEventListener('click', () => {
-    isTerrainEnabled = !isTerrainEnabled;
-    localStorage.setItem('terrain', isTerrainEnabled);
-
-    // Ensure DEM source exists
-    if (!map.getSource('mapbox-dem')) {
-        map.addSource('mapbox-dem', {
-            type: 'raster-dem',
-            url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
-            tileSize: 512,
-            maxzoom: 14
-        });
-    }
-
-    if (isTerrainEnabled) {
-        map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 });
-        document.getElementById('terrain-toggle').classList.add('active');
     } else {
         map.setTerrain(null);
-        document.getElementById('terrain-toggle').classList.remove('active');
     }
-});
+    updateStyleButton();
+}
+
+function updateStyleButton() {
+    const btn = document.getElementById('style-toggle');
+    const icons = {
+        terrain: '<path d="M2 20l7-7 4 4 9-11"/><path d="M2 20h20"/>',
+        map: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/>',
+        satellite: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>'
+    };
+    btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${icons[currentStyleMode]}</svg>`;
+    btn.title = `Style: ${currentStyleMode.charAt(0).toUpperCase() + currentStyleMode.slice(1)} (click to change)`;
+}
+
+function cycleMapStyle() {
+    const currentIndex = mapStyleModes.indexOf(currentStyleMode);
+    currentStyleMode = mapStyleModes[(currentIndex + 1) % mapStyleModes.length];
+    localStorage.setItem('mapStyleMode', currentStyleMode);
+    map.setStyle(getMapStyle());
+}
+
+document.getElementById('style-toggle').addEventListener('click', cycleMapStyle);
 
 // Dark mode toggle functionality
 function toggleTheme() {
@@ -1254,7 +1283,7 @@ function toggleTheme() {
     document.getElementById('theme-toggle-map').classList.toggle('active', isDarkMode);
 
     // Change map style
-    map.setStyle(isDarkMode ? mapStyles.dark : mapStyles.light);
+    map.setStyle(getMapStyle());
 }
 
 document.getElementById('theme-toggle-map').addEventListener('click', toggleTheme);
@@ -1326,7 +1355,7 @@ async function addDataLayers() {
         type: 'line',
         source: 'scenic-routes',
         paint: {
-            'line-color': '#e74c3c',
+            'line-color': '#f1c40f',  // Bright yellow for scenic routes
             'line-width': ['interpolate', ['linear'], ['zoom'], 1, 1.5, 5, 3, 10, 5],
             'line-opacity': 0.85
         }
@@ -1359,7 +1388,7 @@ async function addDataLayers() {
         type: 'circle',
         source: 'pois',
         paint: {
-            'circle-color': '#f39c12',
+            'circle-color': '#e74c3c',  // Bright red for POIs
             'circle-radius': ['interpolate', ['linear'], ['zoom'], 1, 3, 5, 5, 10, 8],
             'circle-stroke-color': '#fff',
             'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 1, 0.5, 5, 1, 10, 2],
@@ -1401,7 +1430,7 @@ async function addDataLayers() {
             type: 'line',
             source: 'planned-route',
             filter: ['==', ['get', 'type'], 'summary'],
-            paint: { 'line-color': '#3498db', 'line-width': 4, 'line-opacity': 0.8 }
+            paint: { 'line-color': '#2471a3', 'line-width': 4, 'line-opacity': 0.9 }  // Darker blue, more prominent
         }, 'scenic-routes-highlight');
 
         map.addLayer({
@@ -1556,7 +1585,7 @@ async function addDataLayers() {
         routeName.textContent = props.name;
         routeCountry.textContent = props.operator || 'Ferry';
         routeRating.textContent = '⛴️';
-        let desc = [];
+        let desc = ['We travel on board with the vehicle'];
         if (props.duration) desc.push(`Duration: ${props.duration}`);
         if (props.cost) desc.push(`Cost: ${props.cost}`);
         routeDescription.textContent = desc.join(' • ');
@@ -1575,7 +1604,7 @@ async function addDataLayers() {
         routeName.textContent = props.name || 'Shipping Route';
         routeCountry.textContent = props.operator || 'Cargo Ship';
         routeRating.textContent = '🚢';
-        let desc = [];
+        let desc = ['Vehicle shipped separately - we fly'];
         if (props.duration) desc.push(`Duration: ${props.duration}`);
         if (props.cost) desc.push(`Cost: ${props.cost}`);
         routeDescription.textContent = desc.join(' • ');

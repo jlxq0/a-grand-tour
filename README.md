@@ -14,6 +14,18 @@ Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. T
 
 ---
 
+## Route Overview
+
+> **Phase A: Around the World (2027-2034)**
+
+🇦🇪 UAE → 🇴🇲 Oman → 🇶🇦 Qatar → 🇧🇭 Bahrain → 🇸🇦 Saudi Arabia → 🇰🇼 Kuwait → 🇮🇶 Iraq → 🇮🇷 Iran → 🚢 → 🇵🇰 Pakistan → 🇮🇳 India → 🇳🇵 Nepal → 🇧🇩 Bangladesh → 🚢 → 🇹🇭 Thailand → 🇱🇦 Laos → 🇻🇳 Vietnam → 🇰🇭 Cambodia → 🇲🇾 Malaysia → 🚢 → 🇮🇩 Indonesia → 🇹🇱 Timor-Leste → 🇦🇺 Australia → 🚢 → 🇳🇿 New Zealand → 🚢 → 🇨🇱 Chile → 🇦🇷 Argentina → 🇺🇾 Uruguay → 🇵🇾 Paraguay → 🇧🇷 Brazil → 🇬🇫 French Guiana → 🇸🇷 Suriname → 🇬🇾 Guyana → 🇧🇴 Bolivia → 🇵🇪 Peru → 🇪🇨 Ecuador → 🇨🇴 Colombia → 🚢 → 🇵🇦 Panama → 🇨🇷 Costa Rica → 🇳🇮 Nicaragua → 🇭🇳 Honduras → 🇸🇻 El Salvador → 🇬🇹 Guatemala → 🇧🇿 Belize → 🇲🇽 Mexico → 🇺🇸 USA → 🇨🇦 Canada → 🚢 → 🇬🇧 UK → 🇮🇪 Ireland → 🇫🇷 France → 🇧🇪 Belgium → 🇳🇱 Netherlands → 🇱🇺 Luxembourg → 🇩🇪 Germany → 🇨🇭 Switzerland
+
+> **Phase B: Europe & Africa (2035-2044)**
+
+🇩🇰 Denmark → 🇮🇸 Iceland → 🇳🇴 Norway → 🇸🇪 Sweden → 🇫🇮 Finland → 🇪🇪 Estonia → 🇱🇻 Latvia → 🇱🇹 Lithuania → 🇵🇱 Poland → 🇨🇿 Czechia → 🇸🇰 Slovakia → 🇦🇹 Austria → 🇭🇺 Hungary → 🇸🇮 Slovenia → 🇭🇷 Croatia → 🇧🇦 Bosnia → 🇲🇪 Montenegro → 🇦🇱 Albania → 🇽🇰 Kosovo → 🇲🇰 North Macedonia → 🇷🇸 Serbia → 🇷🇴 Romania → 🇲🇩 Moldova → 🇧🇬 Bulgaria → 🇹🇷 Turkey → 🇬🇪 Georgia → 🇦🇲 Armenia → 🇦🇿 Azerbaijan → 🇬🇷 Greece → 🇮🇹 Italy → 🇪🇸 Spain → 🇵🇹 Portugal → 🇲🇦 Morocco → 🇪🇭 Western Sahara → 🇲🇷 Mauritania → 🇸🇳 Senegal → 🇬🇲 Gambia → 🇬🇼 Guinea-Bissau → 🇬🇳 Guinea → 🇸🇱 Sierra Leone → 🇱🇷 Liberia → 🇨🇮 Ivory Coast → 🇬🇭 Ghana → 🇹🇬 Togo → 🇧🇯 Benin → 🇳🇬 Nigeria → 🇨🇲 Cameroon → 🇬🇦 Gabon → 🇨🇬 Congo → 🇨🇩 DRC → 🇦🇴 Angola → 🇳🇦 Namibia → 🇧🇼 Botswana → 🇿🇲 Zambia → 🇿🇼 Zimbabwe → 🇿🇦 South Africa → 🇱🇸 Lesotho → 🇸🇿 Eswatini → 🇲🇿 Mozambique → 🇲🇼 Malawi → 🇹🇿 Tanzania → 🇰🇪 Kenya → 🇺🇬 Uganda → 🇷🇼 Rwanda → 🇧🇮 Burundi → 🇪🇹 Ethiopia → 🇪🇷 Eritrea → 🇸🇩 Sudan → 🇪🇬 Egypt → 🇯🇴 Jordan → 🇸🇦 Saudi Arabia → 🇰🇼 Kuwait → 🇦🇪 UAE
+
+---
+
 ## Contents
 
 1. [Planning Constraints](#planning-constraints)

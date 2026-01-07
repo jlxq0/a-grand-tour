@@ -7,6 +7,8 @@
 - **🚗 Distance:** 10,780 km driving
 - **🌍 Countries:** 10 (UAE, Oman, Qatar, Bahrain, Saudi Arabia, Kuwait, Iraq, Iran, Pakistan, India)
 - **⏰ Driving:** 141 hours total
+- **🛣️ Driving days:** 40 days (>1hr drive)
+- **🏖️ Chilling days:** 74 days
 - **🚢 Shipping:** Bandar Abbas → Karachi (3-5 days)
 
 </div>

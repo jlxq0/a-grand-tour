@@ -7,6 +7,8 @@
 - **🚗 Distance:** 17,460 km driving
 - **🌍 Countries:** 3 (India, Nepal, Bangladesh)
 - **⏰ Driving:** 240 hours total
+- **🛣️ Driving days:** 60 days (>1hr drive)
+- **🏖️ Chilling days:** 51 days
 - **🚢 Shipping:** Chittagong → Laem Chabang (14 days)
 
 </div>
