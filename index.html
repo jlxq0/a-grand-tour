@@ -9,14 +9,53 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
+        /* ============ CSS Variables for Theming ============ */
+        :root {
+            /* Light mode (default) */
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-tertiary: #f5f5f5;
+            --text-primary: #1a1a2e;
+            --text-secondary: #333;
+            --text-tertiary: #444;
+            --text-muted: #666;
+            --border-color: #e0e0e0;
+            --border-light: #eee;
+            --link-color: #3498db;
+            --code-bg: #f5f5f5;
+            --blockquote-bg: #f8f9fa;
+            --table-stripe: #fafafa;
+            --shadow-color: rgba(0,0,0,0.1);
+            --overlay-bg: rgba(26, 26, 46, 0.95);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #252542;
+            --bg-tertiary: #2d2d4a;
+            --text-primary: #f0f0f0;
+            --text-secondary: #d0d0d0;
+            --text-tertiary: #b0b0b0;
+            --text-muted: #888;
+            --border-color: #3d3d5c;
+            --border-light: #333355;
+            --link-color: #5dade2;
+            --code-bg: #2d2d4a;
+            --blockquote-bg: #252542;
+            --table-stripe: #252542;
+            --shadow-color: rgba(0,0,0,0.3);
+            --overlay-bg: rgba(37, 37, 66, 0.95);
+        }
+
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: #1a1a2e;
-            color: #333;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
             height: 100vh;
             overflow: hidden;
+            transition: background 0.3s, color 0.3s;
         }
 
         .alpha-banner {
@@ -66,12 +105,13 @@
             position: absolute;
             top: 15px;
             left: 15px;
-            background: rgba(26, 26, 46, 0.95);
+            background: var(--overlay-bg);
             color: #fff;
             padding: 15px 20px;
             border-radius: 10px;
             z-index: 10;
             max-width: 260px;
+            backdrop-filter: blur(10px);
         }
 
         .map-overlay h1 {
@@ -90,12 +130,13 @@
             position: absolute;
             bottom: 30px;
             left: 15px;
-            background: rgba(26, 26, 46, 0.95);
+            background: var(--overlay-bg);
             color: #fff;
             padding: 12px 16px;
             border-radius: 8px;
             font-size: 11px;
             z-index: 10;
+            backdrop-filter: blur(10px);
         }
 
         .legend h4 {
@@ -117,13 +158,54 @@
             border-radius: 2px;
         }
 
+        /* Map Controls */
+        .map-controls {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .map-control-btn {
+            background: var(--overlay-bg);
+            color: #fff;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+            backdrop-filter: blur(10px);
+        }
+
+        .map-control-btn:hover {
+            background: rgba(52, 152, 219, 0.9);
+        }
+
+        .map-control-btn.active {
+            background: rgba(52, 152, 219, 0.9);
+        }
+
+        .map-control-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
         /* Content Panel - Right Side */
         .content-panel {
             width: 50%;
             height: 100vh;
-            background: #fff;
+            background: var(--bg-primary);
             overflow-y: auto;
-            border-left: 1px solid #e0e0e0;
+            border-left: 1px solid var(--border-color);
+            transition: background 0.3s, border-color 0.3s;
         }
 
         .content-wrapper {
@@ -136,18 +218,20 @@
         .nav {
             position: sticky;
             top: 0;
-            background: #fff;
-            border-bottom: 1px solid #eee;
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border-light);
             padding: 12px 50px;
             margin: 0 -50px 30px;
             z-index: 100;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 8px;
+            transition: background 0.3s, border-color 0.3s;
         }
 
         .nav a {
-            color: #3498db;
+            color: var(--link-color);
             text-decoration: none;
             font-size: 14px;
             font-weight: 500;
@@ -168,10 +252,11 @@
             border-radius: 6px;
             font-size: 13px;
             transition: background 0.2s;
+            color: var(--link-color);
         }
 
         .nav-menu a:hover {
-            background: #f0f7ff;
+            background: var(--bg-secondary);
             text-decoration: none;
         }
 
@@ -181,8 +266,24 @@
         }
 
         .nav-separator {
-            color: #ddd;
+            color: var(--border-color);
             margin: 0 4px;
+        }
+
+        /* Theme toggle in nav */
+        .theme-toggle {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 6px 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            background: var(--bg-tertiary);
         }
 
         /* Markdown Styles */
@@ -190,7 +291,7 @@
             font-size: 2.2em;
             font-weight: 700;
             margin-bottom: 10px;
-            color: #1a1a2e;
+            color: var(--text-primary);
             border-bottom: 3px solid #3498db;
             padding-bottom: 15px;
         }
@@ -199,8 +300,8 @@
             font-size: 1.6em;
             font-weight: 600;
             margin: 40px 0 20px;
-            color: #1a1a2e;
-            border-bottom: 1px solid #eee;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border-light);
             padding-bottom: 10px;
         }
 
@@ -208,24 +309,24 @@
             font-size: 1.3em;
             font-weight: 600;
             margin: 30px 0 15px;
-            color: #333;
+            color: var(--text-secondary);
         }
 
         .markdown-content h4 {
             font-size: 1.1em;
             font-weight: 600;
             margin: 25px 0 10px;
-            color: #444;
+            color: var(--text-tertiary);
         }
 
         .markdown-content p {
             line-height: 1.7;
             margin: 15px 0;
-            color: #444;
+            color: var(--text-tertiary);
         }
 
         .markdown-content a {
-            color: #3498db;
+            color: var(--link-color);
             text-decoration: none;
         }
 
@@ -236,6 +337,7 @@
         .markdown-content ul, .markdown-content ol {
             margin: 15px 0;
             padding-left: 25px;
+            color: var(--text-tertiary);
         }
 
         .markdown-content li {
@@ -244,11 +346,12 @@
         }
 
         .markdown-content code {
-            background: #f5f5f5;
+            background: var(--code-bg);
             padding: 2px 6px;
             border-radius: 4px;
             font-family: 'SF Mono', Monaco, 'Courier New', monospace;
             font-size: 0.9em;
+            color: var(--text-secondary);
         }
 
         .markdown-content pre {
@@ -270,8 +373,8 @@
             border-left: 4px solid #3498db;
             margin: 20px 0;
             padding: 10px 20px;
-            background: #f8f9fa;
-            color: #555;
+            background: var(--blockquote-bg);
+            color: var(--text-muted);
         }
 
         .markdown-content table {
@@ -282,18 +385,20 @@
         }
 
         .markdown-content th, .markdown-content td {
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--border-color);
             padding: 12px 15px;
             text-align: left;
+            color: var(--text-tertiary);
         }
 
         .markdown-content th {
-            background: #f5f5f5;
+            background: var(--bg-tertiary);
             font-weight: 600;
+            color: var(--text-secondary);
         }
 
         .markdown-content tr:nth-child(even) {
-            background: #fafafa;
+            background: var(--table-stripe);
         }
 
         .markdown-content img {
@@ -301,12 +406,12 @@
             height: auto;
             border-radius: 8px;
             margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px var(--shadow-color);
         }
 
         .markdown-content hr {
             border: none;
-            border-top: 2px solid #eee;
+            border-top: 2px solid var(--border-light);
             margin: 40px 0;
         }
 
@@ -488,6 +593,24 @@
                 <div class="legend-item"><div class="legend-line" style="background: #f39c12;"></div> 3-star</div>
             </div>
 
+            <!-- Map Controls -->
+            <div class="map-controls">
+                <button class="map-control-btn" id="terrain-toggle" title="Toggle 3D Terrain">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 21l4-10 4 10M12 11V3M4 21h16"/>
+                        <path d="M2 16l5-5 4 4 6-6 5 5"/>
+                    </svg>
+                    Terrain
+                </button>
+                <button class="map-control-btn" id="theme-toggle-map" title="Toggle Dark Mode">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <span id="theme-label">Dark</span>
+                </button>
+            </div>
+
             <!-- Route Info Popup -->
             <div id="route-info">
                 <button id="route-close">&times;</button>
@@ -660,6 +783,22 @@ loadContent(initialPage, initialAnchor);
 // ============ MAP CODE ============
 mapboxgl.accessToken = 'pk.eyJ1Ijoiamx4cTAiLCJhIjoiY21qd2QwOGRpNXVuNzNnb2txNmdkemd2ZyJ9.JpfheNv0aknnk-pbhNOGQg';
 
+// Theme and settings management
+let isDarkMode = localStorage.getItem('theme') === 'dark' ||
+    (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+let isTerrainEnabled = localStorage.getItem('terrain') === 'true';
+
+// Apply initial theme
+if (isDarkMode) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById('theme-label').textContent = 'Light';
+}
+
+const mapStyles = {
+    light: 'mapbox://styles/mapbox/outdoors-v12',
+    dark: 'mapbox://styles/mapbox/dark-v11'
+};
+
 const routeFiles = [
     'ae-jebel-hafeet.geojson','ae-khor-fakkan.geojson','al-llogara-pass.geojson','ar-calchaqui.geojson',
     'ar-el-chalten.geojson','ar-paso-caracoles.geojson','ar-ruta-40.geojson','ar-seven-lakes.geojson',
@@ -716,12 +855,90 @@ const poiFiles = [
 
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v11',
+    style: isDarkMode ? mapStyles.dark : mapStyles.light,
     center: [40, 20],
-    zoom: 1.5
+    zoom: 1.5,
+    projection: 'globe'
 });
 
-map.on('load', async () => {
+// Globe atmosphere effect
+map.on('style.load', () => {
+    map.setFog({
+        color: isDarkMode ? 'rgb(20, 20, 40)' : 'rgb(220, 230, 240)',
+        'high-color': isDarkMode ? 'rgb(30, 30, 60)' : 'rgb(180, 200, 230)',
+        'horizon-blend': 0.02,
+        'space-color': isDarkMode ? 'rgb(10, 10, 20)' : 'rgb(200, 210, 230)',
+        'star-intensity': isDarkMode ? 0.6 : 0.1
+    });
+});
+
+// Terrain toggle functionality
+function setupTerrain() {
+    if (!map.getSource('mapbox-dem')) {
+        map.addSource('mapbox-dem', {
+            type: 'raster-dem',
+            url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+            tileSize: 512,
+            maxzoom: 14
+        });
+    }
+
+    if (isTerrainEnabled) {
+        map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 });
+        document.getElementById('terrain-toggle').classList.add('active');
+    }
+}
+
+document.getElementById('terrain-toggle').addEventListener('click', () => {
+    isTerrainEnabled = !isTerrainEnabled;
+    localStorage.setItem('terrain', isTerrainEnabled);
+
+    if (isTerrainEnabled) {
+        map.setTerrain({ source: 'mapbox-dem', exaggeration: 1.5 });
+        document.getElementById('terrain-toggle').classList.add('active');
+    } else {
+        map.setTerrain(null);
+        document.getElementById('terrain-toggle').classList.remove('active');
+    }
+});
+
+// Dark mode toggle functionality
+function toggleTheme() {
+    isDarkMode = !isDarkMode;
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+    document.getElementById('theme-label').textContent = isDarkMode ? 'Light' : 'Dark';
+    document.getElementById('theme-toggle-map').classList.toggle('active', isDarkMode);
+
+    // Change map style
+    map.setStyle(isDarkMode ? mapStyles.dark : mapStyles.light);
+}
+
+document.getElementById('theme-toggle-map').addEventListener('click', toggleTheme);
+
+// Re-add layers after style change
+map.on('style.load', async () => {
+    // Re-apply fog
+    map.setFog({
+        color: isDarkMode ? 'rgb(20, 20, 40)' : 'rgb(220, 230, 240)',
+        'high-color': isDarkMode ? 'rgb(30, 30, 60)' : 'rgb(180, 200, 230)',
+        'horizon-blend': 0.02,
+        'space-color': isDarkMode ? 'rgb(10, 10, 20)' : 'rgb(200, 210, 230)',
+        'star-intensity': isDarkMode ? 0.6 : 0.1
+    });
+
+    // Re-setup terrain
+    setupTerrain();
+
+    // Re-add all data layers
+    await addDataLayers();
+});
+
+async function addDataLayers() {
+    // Skip if layers already exist
+    if (map.getSource('countries')) return;
+
     // Load visited countries
     const visitedCountryCodes = await fetch('data/visited-countries.json').then(r => r.json());
     const problemCountries = ['NG', 'CM', 'CD'];
@@ -1035,6 +1252,12 @@ map.on('load', async () => {
         const features = map.queryRenderedFeatures(e.point, { layers: layers.filter(l => map.getLayer(l)) });
         if (features.length === 0) routeInfo.style.display = 'none';
     });
+}
+
+// Initial load
+map.on('load', () => {
+    setupTerrain();
+    addDataLayers();
 });
 
 map.addControl(new mapboxgl.NavigationControl());
