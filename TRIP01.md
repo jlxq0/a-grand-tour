@@ -10,16 +10,16 @@
 
 **UAE → Oman → Qatar → Bahrain → Saudi Arabia → Kuwait → Iraq → Iran → [Ship] → Pakistan → India**
 
-```
-Dubai → Oman Coast → Empty Quarter → Abu Dhabi → Qatar → Bahrain →
-Saudi Arabia (Riyadh) → Kuwait → Iraq (Ziggurat of Ur) → Iran (Tehran, Isfahan,
-Yazd, Shiraz, Persepolis) → Bandar Abbas
+> **Gulf States & Iraq**
+> Dubai → Oman Coast → Empty Quarter → Abu Dhabi → Qatar → Bahrain → Saudi Arabia (Riyadh) → Kuwait → Iraq (Ziggurat of Ur)
 
-[SHIP: Bandar Abbas → Karachi - 3-5 days]
+> **Iran**
+> Tehran → Isfahan → Yazd → Shiraz → Persepolis → Bandar Abbas
 
-Karachi → Lahore → Islamabad → Karakoram Highway → Hunza Valley →
-Khunjerab Pass → [return] → India via Wagah → Amritsar → Manali-Leh → Delhi
-```
+> **🚢 Ship:** Bandar Abbas → Karachi (3-5 days)
+
+> **Pakistan & India**
+> Karachi → Lahore → Islamabad → Karakoram Highway → Hunza Valley → Khunjerab Pass → [return] → India via Wagah → Amritsar → Manali-Leh → Delhi
 
 ---
 

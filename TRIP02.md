@@ -10,20 +10,22 @@
 
 **India (Grand Loop) → Nepal → Bangladesh → Chittagong**
 
-```
-Delhi → Agra → Jaipur → Jodhpur → Jaisalmer → Udaipur →
-Rann of Kutch → Ahmedabad → Mumbai → Goa → Hampi → Bangalore →
-Kochi → Munnar → Kerala Backwaters → Madurai → Chennai →
-Visakhapatnam → Kolkata → Varanasi
+> **India: North & West**
+> Delhi → Agra → Jaipur → Jodhpur → Jaisalmer → Udaipur → Rann of Kutch → Ahmedabad → Mumbai
 
-[NEPAL]
-Kathmandu → Bhaktapur → Nagarkot → Pokhara → Lumbini → Chitwan
+> **India: South**
+> Goa → Hampi → Bangalore → Kochi → Munnar → Kerala Backwaters → Madurai → Chennai
 
-[BANGLADESH]
-Paharpur → Dhaka → Sundarbans → Cox's Bazar → Chittagong
+> **India: East**
+> Visakhapatnam → Kolkata → Varanasi
 
-[SHIP: Chittagong → Laem Chabang - 14 days]
-```
+> **Nepal**
+> Kathmandu → Bhaktapur → Nagarkot → Pokhara → Lumbini → Chitwan
+
+> **Bangladesh**
+> Paharpur → Dhaka → Sundarbans → Cox's Bazar → Chittagong
+
+> **🚢 Ship:** Chittagong → Laem Chabang (14 days)
 
 ---
 
