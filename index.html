@@ -614,6 +614,38 @@
             margin: 40px 0;
         }
 
+        /* Trip Stats Card */
+        .markdown-content .trip-stats {
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            border: 1px solid var(--border-light);
+        }
+
+        .markdown-content .trip-stats ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .markdown-content .trip-stats li {
+            margin: 0;
+            padding: 8px 12px;
+            background: var(--bg-primary);
+            border-radius: 8px;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .markdown-content .trip-stats li strong {
+            color: var(--text-primary);
+        }
+
         /* Route info popup */
         #route-info {
             position: absolute;

@@ -1,8 +1,15 @@
 # Trip 02: Delhi to Chittagong
 
-**September – December 2027 (111 days)**
+<div class="trip-stats">
 
-**17,460 km driving | 3 countries | 240 hours driving time**
+- **📅 Dates:** September – December 2027
+- **⏱️ Duration:** 111 days (60 driving days)
+- **🚗 Distance:** 17,460 km driving
+- **🌍 Countries:** 3 (India, Nepal, Bangladesh)
+- **⏰ Driving:** 240 hours total
+- **🚢 Shipping:** Chittagong → Laem Chabang (14 days)
+
+</div>
 
 ---
 

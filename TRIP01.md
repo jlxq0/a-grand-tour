@@ -1,8 +1,15 @@
 # Trip 01: Dubai to Delhi
 
-**February – May 2027 (114 days)**
+<div class="trip-stats">
 
-**10,780 km driving + ship | 10 countries | 141 hours driving time**
+- **📅 Dates:** February – May 2027
+- **⏱️ Duration:** 114 days (40 driving days)
+- **🚗 Distance:** 10,780 km driving
+- **🌍 Countries:** 10 (UAE, Oman, Qatar, Bahrain, Saudi Arabia, Kuwait, Iraq, Iran, Pakistan, India)
+- **⏰ Driving:** 141 hours total
+- **🚢 Shipping:** Bandar Abbas → Karachi (3-5 days)
+
+</div>
 
 ---
 
