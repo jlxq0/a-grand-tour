@@ -1507,6 +1507,12 @@ async function addDataLayers() {
 
         const segmentTooltip = document.getElementById('segment-tooltip');
 
+        // Map part numbers to trip info
+        const tripInfo = {
+            1: { name: 'Trip 1', page: 'trip01', subtitle: 'Dubai → Delhi' },
+            2: { name: 'Trip 2', page: 'trip02', subtitle: 'Delhi → Chittagong' }
+        };
+
         map.on('mousemove', 'planned-route-segments-hover', (e) => {
             if (e.features.length > 0) {
                 const props = e.features[0].properties;
@@ -1515,7 +1521,12 @@ async function addDataLayers() {
                     map.setFilter('planned-route-segment-highlight', [
                         'all', ['==', ['get', 'part'], props.part], ['==', ['get', 'segmentIndex'], props.segmentIndex]
                     ]);
-                    segmentTooltip.innerHTML = `<strong>${props.label || props.from + ' → ' + props.to}</strong><br>${props.distanceKm} km · ${props.durationHrs} hrs`;
+                    const trip = tripInfo[props.part] || { name: `Part ${props.part}`, subtitle: '' };
+                    segmentTooltip.innerHTML = `
+                        <strong>${props.label || props.from + ' → ' + props.to}</strong><br>
+                        ${props.distanceKm} km · ${props.durationHrs} hrs<br>
+                        <span style="color: #3498db; font-size: 11px;">${trip.name}: ${trip.subtitle}</span>
+                    `;
                     segmentTooltip.style.display = 'block';
                     segmentTooltip.style.left = (e.point.x + 15) + 'px';
                     segmentTooltip.style.top = (e.point.y - 30) + 'px';
@@ -1527,6 +1538,17 @@ async function addDataLayers() {
             map.getCanvas().style.cursor = '';
             segmentTooltip.style.display = 'none';
             map.setFilter('planned-route-segment-highlight', ['==', ['get', 'segmentIndex'], -1]);
+        });
+
+        // Click on route segment to navigate to trip
+        map.on('click', 'planned-route-segments-hover', (e) => {
+            if (e.features.length > 0) {
+                const props = e.features[0].properties;
+                const trip = tripInfo[props.part];
+                if (trip && trip.page) {
+                    window.location.hash = trip.page;
+                }
+            }
         });
     });
 
