@@ -92,8 +92,45 @@
         /* Map Panel - Left Side */
         .map-panel {
             width: 50%;
-            height: 100vh;
+            min-width: 300px;
+            max-width: calc(100% - 300px);
+            height: 100%;
             position: relative;
+            flex-shrink: 0;
+        }
+
+        /* Resizable Divider */
+        .resize-handle {
+            width: 6px;
+            background: var(--border-color);
+            cursor: col-resize;
+            position: relative;
+            flex-shrink: 0;
+            transition: background 0.2s;
+        }
+
+        .resize-handle:hover,
+        .resize-handle.dragging {
+            background: #3498db;
+        }
+
+        .resize-handle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 2px;
+            height: 30px;
+            background: var(--text-muted);
+            border-radius: 1px;
+            opacity: 0.5;
+        }
+
+        .resize-handle:hover::after,
+        .resize-handle.dragging::after {
+            background: #fff;
+            opacity: 1;
         }
 
         #map {
@@ -138,11 +175,11 @@
 
         .legend {
             position: absolute;
-            bottom: 30px;
+            bottom: 40px;
             left: 15px;
             background: #fff;
             color: #333;
-            padding: 8px 10px;
+            padding: 10px 12px;
             border-radius: 4px;
             font-size: 11px;
             z-index: 10;
@@ -250,6 +287,26 @@
             display: none;
         }
 
+        /* Dark mode for custom map controls */
+        [data-theme="dark"] .map-control-btn {
+            background: #1a1a2e;
+            color: #fff;
+            box-shadow: 0 0 0 2px rgba(255,255,255,0.1);
+        }
+
+        [data-theme="dark"] .map-control-btn:last-child {
+            border-top-color: rgba(255,255,255,0.1);
+        }
+
+        [data-theme="dark"] .map-control-btn:hover {
+            background: #252542;
+        }
+
+        [data-theme="dark"] .map-control-btn.active {
+            background: #3498db;
+            color: #fff;
+        }
+
         /* Dark mode for Mapbox built-in controls */
         [data-theme="dark"] .mapboxgl-ctrl-group {
             background: #1a1a2e;
@@ -283,12 +340,12 @@
 
         /* Content Panel - Right Side */
         .content-panel {
-            width: 50%;
-            height: 100vh;
+            flex: 1;
+            min-width: 300px;
+            height: 100%;
             background: var(--bg-primary);
             overflow-y: auto;
-            border-left: 1px solid var(--border-color);
-            transition: background 0.3s, border-color 0.3s;
+            transition: background 0.3s;
         }
 
         .content-wrapper {
@@ -858,6 +915,9 @@
             </div>
             <div id="segment-tooltip"></div>
         </div>
+
+        <!-- Resize Handle -->
+        <div class="resize-handle" id="resize-handle"></div>
 
         <!-- Content Panel -->
         <div class="content-panel">
@@ -1543,6 +1603,43 @@ map.on('load', () => {
 });
 
 map.addControl(new mapboxgl.NavigationControl());
+
+// ============ RESIZE HANDLE ============
+const resizeHandle = document.getElementById('resize-handle');
+const mapPanel = document.querySelector('.map-panel');
+const container = document.querySelector('.container');
+
+let isResizing = false;
+
+resizeHandle.addEventListener('mousedown', (e) => {
+    isResizing = true;
+    resizeHandle.classList.add('dragging');
+    document.body.style.cursor = 'col-resize';
+    document.body.style.userSelect = 'none';
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (!isResizing) return;
+
+    const containerRect = container.getBoundingClientRect();
+    const newWidth = e.clientX - containerRect.left;
+    const minWidth = 300;
+    const maxWidth = containerRect.width - 300;
+
+    if (newWidth >= minWidth && newWidth <= maxWidth) {
+        mapPanel.style.width = newWidth + 'px';
+        map.resize();
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    if (isResizing) {
+        isResizing = false;
+        resizeHandle.classList.remove('dragging');
+        document.body.style.cursor = '';
+        document.body.style.userSelect = '';
+    }
+});
 </script>
 </body>
 </html>
