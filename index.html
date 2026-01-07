@@ -141,6 +141,9 @@
             padding: 12px 50px;
             margin: 0 -50px 30px;
             z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .nav a {
@@ -154,9 +157,32 @@
             text-decoration: underline;
         }
 
+        .nav-menu {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu a {
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            transition: background 0.2s;
+        }
+
+        .nav-menu a:hover {
+            background: #f0f7ff;
+            text-decoration: none;
+        }
+
+        .nav-menu a.active {
+            background: #3498db;
+            color: white;
+        }
+
         .nav-separator {
-            color: #ccc;
-            margin: 0 10px;
+            color: #ddd;
+            margin: 0 4px;
         }
 
         /* Markdown Styles */
@@ -495,71 +521,141 @@
 <script>
 // Page configuration
 const pages = {
-    '': { file: 'README.md', title: 'A Grand Tour' },
-    'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi' },
-    'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong' }
+    '': { file: 'README.md', title: 'Overview', short: 'Overview' },
+    'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi', short: 'Trip 1' },
+    'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong', short: 'Trip 2' }
 };
 
-// Get current page from hash
-function getCurrentPage() {
+let currentPage = null;
+
+// Parse hash - returns { page, anchor }
+function parseHash() {
     const hash = window.location.hash.slice(1);
-    return pages[hash] ? hash : '';
+    if (!hash) return { page: '', anchor: null };
+
+    // Check if it's a page hash
+    if (pages[hash]) return { page: hash, anchor: null };
+
+    // Check if it's page:anchor format (e.g., trip01:day-5)
+    if (hash.includes(':')) {
+        const [page, anchor] = hash.split(':');
+        if (pages[page]) return { page, anchor };
+    }
+
+    // Otherwise it's an anchor on the current page
+    return { page: currentPage, anchor: hash };
 }
 
-// Update navigation
-function updateNav(currentPage) {
+// Update navigation menu
+function updateNav(activePage) {
     const nav = document.getElementById('nav');
-    if (currentPage === '') {
-        nav.innerHTML = '<span style="color: #666;">Overview</span>';
-    } else {
-        nav.innerHTML = `<a href="#">&larr; Overview</a><span class="nav-separator">|</span><span style="color: #666;">${pages[currentPage].title}</span>`;
-    }
+    const menuItems = Object.entries(pages).map(([key, config]) => {
+        const href = key === '' ? '#' : `#${key}`;
+        const activeClass = key === activePage ? 'active' : '';
+        return `<a href="${href}" class="${activeClass}">${config.short}</a>`;
+    }).join('');
+
+    nav.innerHTML = `<div class="nav-menu">${menuItems}</div>`;
+}
+
+// Scroll to anchor
+function scrollToAnchor(anchor) {
+    if (!anchor) return;
+
+    // Wait a tick for DOM to update
+    setTimeout(() => {
+        const element = document.getElementById(anchor);
+        if (element) {
+            const contentPanel = document.querySelector('.content-panel');
+            const navHeight = document.querySelector('.nav').offsetHeight;
+            const elementTop = element.offsetTop - navHeight - 20;
+            contentPanel.scrollTo({ top: elementTop, behavior: 'smooth' });
+        }
+    }, 100);
 }
 
 // Load and render markdown
-async function loadContent(page) {
+async function loadContent(page, anchor = null) {
     const contentEl = document.getElementById('content');
     const config = pages[page];
 
-    contentEl.innerHTML = '<div class="loading">Loading...</div>';
-    updateNav(page);
-    document.title = config.title + ' | A Grand Tour';
+    // Only reload if page changed
+    if (page !== currentPage) {
+        currentPage = page;
+        contentEl.innerHTML = '<div class="loading">Loading...</div>';
+        updateNav(page);
+        document.title = config.title + ' | A Grand Tour';
 
-    try {
-        const response = await fetch(config.file);
-        if (!response.ok) throw new Error('Failed to load');
+        try {
+            const response = await fetch(config.file);
+            if (!response.ok) throw new Error('Failed to load');
 
-        let markdown = await response.text();
+            let markdown = await response.text();
 
-        // Fix image paths for trip files (data/pois/images/... -> data/pois/images/...)
-        // Images are already relative, should work
+            // Convert internal links (TRIP01.md -> #trip01)
+            markdown = markdown.replace(/\[([^\]]+)\]\(TRIP0?(\d+)\.md\)/g, '[$1](#trip0$2)');
 
-        // Add footer navigation for trip pages
-        let footerNav = '';
-        if (page !== '') {
-            footerNav = '<div class="footer-nav"><a href="#">&larr; Back to Overview</a></div>';
+            const html = marked.parse(markdown);
+            contentEl.innerHTML = html;
+
+            // Add IDs to headings for anchor links
+            contentEl.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(heading => {
+                if (!heading.id) {
+                    heading.id = heading.textContent
+                        .toLowerCase()
+                        .replace(/[^\w\s-]/g, '')
+                        .replace(/\s+/g, '-')
+                        .replace(/^-+|-+$/g, '');
+                }
+            });
+
+            // Handle clicks on internal anchor links
+            contentEl.querySelectorAll('a[href^="#"]').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href').slice(1);
+
+                    // If it's a page link, let normal navigation handle it
+                    if (pages[href]) return;
+
+                    // Otherwise it's an anchor link - scroll to it
+                    e.preventDefault();
+                    scrollToAnchor(href);
+
+                    // Update URL without triggering hashchange
+                    history.pushState(null, '', `#${currentPage}${currentPage ? ':' : ''}${href}`);
+                });
+            });
+
+            // Scroll to top if no anchor
+            if (!anchor) {
+                document.querySelector('.content-panel').scrollTop = 0;
+            }
+        } catch (e) {
+            contentEl.innerHTML = `<p style="color: #e74c3c;">Error loading content: ${e.message}</p>`;
         }
+    }
 
-        // Convert internal links (TRIP01.md -> #trip01)
-        markdown = markdown.replace(/\[([^\]]+)\]\(TRIP0?(\d+)\.md\)/g, '[$1](#trip0$2)');
-
-        const html = marked.parse(markdown);
-        contentEl.innerHTML = html + footerNav;
-
-        // Scroll to top
-        document.querySelector('.content-panel').scrollTop = 0;
-    } catch (e) {
-        contentEl.innerHTML = `<p style="color: #e74c3c;">Error loading content: ${e.message}</p>`;
+    // Scroll to anchor if specified
+    if (anchor) {
+        scrollToAnchor(anchor);
     }
 }
 
 // Handle navigation
 window.addEventListener('hashchange', () => {
-    loadContent(getCurrentPage());
+    const { page, anchor } = parseHash();
+    loadContent(page, anchor);
+});
+
+// Handle popstate for back/forward
+window.addEventListener('popstate', () => {
+    const { page, anchor } = parseHash();
+    loadContent(page, anchor);
 });
 
 // Initial load
-loadContent(getCurrentPage());
+const { page: initialPage, anchor: initialAnchor } = parseHash();
+loadContent(initialPage, initialAnchor);
 
 // ============ MAP CODE ============
 mapboxgl.accessToken = 'pk.eyJ1Ijoiamx4cTAiLCJhIjoiY21qd2QwOGRpNXVuNzNnb2txNmdkemd2ZyJ9.JpfheNv0aknnk-pbhNOGQg';
