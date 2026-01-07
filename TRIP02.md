@@ -8,8 +8,6 @@
 
 ## Route Overview
 
-**India (Grand Loop) → Nepal → Bangladesh → Chittagong**
-
 > **India: North & West**
 > Delhi → Agra → Jaipur → Jodhpur → Jaisalmer → Udaipur → Rann of Kutch → Ahmedabad → Mumbai
 

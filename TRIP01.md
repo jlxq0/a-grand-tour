@@ -8,8 +8,6 @@
 
 ## Route Overview
 
-**UAE → Oman → Qatar → Bahrain → Saudi Arabia → Kuwait → Iraq → Iran → [Ship] → Pakistan → India**
-
 > **Gulf States & Iraq**
 > Dubai → Oman Coast → Empty Quarter → Abu Dhabi → Qatar → Bahrain → Saudi Arabia (Riyadh) → Kuwait → Iraq (Ziggurat of Ur)
 
