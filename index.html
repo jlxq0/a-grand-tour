@@ -549,6 +549,21 @@
             color: var(--text-secondary);
         }
 
+        .markdown-content h3.day-heading-link {
+            cursor: pointer;
+            color: var(--link-color);
+            transition: color 0.2s ease;
+        }
+
+        .markdown-content h3.day-heading-link:hover {
+            color: #1a5276;
+            text-decoration: underline;
+        }
+
+        [data-theme="dark"] .markdown-content h3.day-heading-link:hover {
+            color: #85c1e9;
+        }
+
         .markdown-content h4 {
             font-size: 1.1em;
             font-weight: 600;
@@ -990,6 +1005,7 @@
 <script>
 // Global index of places for text linking (populated after map data loads)
 let placeIndex = {};
+let routeData = null; // Store route data globally for segment lookup
 let allPoisData = null;
 let allRoutesData = null;
 
@@ -1086,7 +1102,7 @@ function scrollToAnchor(anchor) {
         if (element) {
             const contentPanel = document.querySelector('.content-panel');
             const navHeight = document.querySelector('.nav').offsetHeight;
-            const elementTop = element.offsetTop - navHeight - 20;
+            const elementTop = element.offsetTop - navHeight - 40;
             contentPanel.scrollTo({ top: elementTop, behavior: 'smooth' });
         }
     }, 100);
@@ -1147,6 +1163,11 @@ async function loadContent(page, anchor = null) {
             // Link place names to map (if place index is built)
             if (Object.keys(placeIndex).length > 0) {
                 linkPlacesToMap(contentEl);
+            }
+
+            // Link day headings to route highlights (for trip pages)
+            if (config.isTrip) {
+                linkDaysToRoute(contentEl, page);
             }
 
             // Scroll to top if no anchor
@@ -1479,6 +1500,7 @@ async function addDataLayers() {
 
     // Load planned route
     fetch('data/planned-route.geojson').then(r => r.json()).then(data => {
+        routeData = data; // Store globally for segment lookup
         map.addSource('planned-route', { type: 'geojson', data });
 
         map.addLayer({
@@ -1513,6 +1535,113 @@ async function addDataLayers() {
             2: { name: 'Trip 2', page: 'trip02', subtitle: 'Delhi → Chittagong' }
         };
 
+        // Map Trip 1 segment indices to day numbers
+        const trip1DayMapping = {
+            0: { day: 2, anchor: 'day-2-dubai-khor-fakkan' },
+            1: { day: 3, anchor: 'day-3-khor-fakkan-musandam-fjords' },
+            2: { day: 4, anchor: 'day-4-musandam-sohar' },
+            3: { day: 7, anchor: 'day-7-muscat-wadi-shab' },
+            4: { day: 8, anchor: 'day-8-wadi-shab-nizwa' },
+            5: { day: 9, anchor: 'day-9-nizwa-jebel-akhdar' },
+            6: { day: 10, anchor: 'day-10-jebel-akhdar-jebel-shams' },
+            7: { day: 10, anchor: 'day-10-jebel-akhdar-jebel-shams' },
+            8: { day: 12, anchor: 'day-12-13-jebel-shams-salalah' },
+            9: { day: 15, anchor: 'day-15-16-salalah-empty-quarter' },
+            10: { day: 17, anchor: 'day-17-empty-quarter-liwa' },
+            11: { day: 18, anchor: 'day-18-liwa-abu-dhabi' },
+            12: { day: 19, anchor: 'day-19-abu-dhabi-inland-sea-qatar' },
+            13: { day: 20, anchor: 'day-20-inland-sea-doha' },
+            14: { day: 22, anchor: 'day-22-doha-bahrain' },
+            15: { day: 23, anchor: 'day-23-bahrain-dammam' },
+            16: { day: 24, anchor: 'day-24-25-dammam-riyadh' },
+            17: { day: 24, anchor: 'day-24-25-dammam-riyadh' },
+            18: { day: 24, anchor: 'day-24-25-dammam-riyadh' },
+            19: { day: 26, anchor: 'day-26-riyadh-kuwait-city' },
+            20: { day: 28, anchor: 'day-28-kuwait-basra' },
+            21: { day: 29, anchor: 'day-29-basra-ziggurat-of-ur' },
+            22: { day: 30, anchor: 'day-30-basra-ahvaz-iran' },
+            23: { day: 30, anchor: 'day-30-basra-ahvaz-iran' },
+            24: { day: 31, anchor: 'day-31-ahvaz-kermanshah' },
+            25: { day: 32, anchor: 'day-32-kermanshah-tehran' },
+            26: { day: 34, anchor: 'day-34-tehran-isfahan' },
+            27: { day: 37, anchor: 'day-37-isfahan-yazd' },
+            28: { day: 39, anchor: 'day-39-yazd-shiraz' },
+            29: { day: 40, anchor: 'day-40-shiraz-persepolis' },
+            30: { day: 41, anchor: 'day-41-shiraz-bandar-abbas' },
+            31: { day: 48, anchor: 'day-48-49-karachi-multan' },
+            32: { day: 50, anchor: 'day-50-multan-lahore' },
+            33: { day: 52, anchor: 'day-52-lahore-islamabad' },
+            34: { day: 54, anchor: 'day-54-islamabad-abbottabad-besham' },
+            35: { day: 54, anchor: 'day-54-islamabad-abbottabad-besham' },
+            36: { day: 55, anchor: 'day-55-besham-chilas' },
+            37: { day: 56, anchor: 'day-56-chilas-gilgit' },
+            38: { day: 58, anchor: 'day-58-gilgit-karimabad-hunza' },
+            39: { day: 61, anchor: 'day-61-karimabad-khunjerab-pass' },
+            40: { day: 61, anchor: 'day-61-karimabad-khunjerab-pass' },
+            41: { day: 62, anchor: 'day-62-66-return-kkh' },
+            42: { day: 63, anchor: 'day-62-66-return-kkh' },
+            43: { day: 64, anchor: 'day-62-66-return-kkh' },
+            44: { day: 65, anchor: 'day-62-66-return-kkh' },
+            45: { day: 66, anchor: 'day-62-66-return-kkh' },
+            46: { day: 67, anchor: 'day-67-lahore-amritsar' },
+            47: { day: 69, anchor: 'day-69-amritsar-chandigarh' },
+            48: { day: 70, anchor: 'day-70-71-chandigarh-manali' },
+            49: { day: 72, anchor: 'day-72-73-manali-leh' },
+            50: { day: 76, anchor: 'day-76-77-leh-manali-return' },
+            51: { day: 78, anchor: 'day-78-manali-kaza-spiti' },
+            52: { day: 79, anchor: 'day-79-kaza-shimla' },
+            53: { day: 81, anchor: 'day-81-shimla-delhi' }
+        };
+
+        // Map Trip 2 segment indices to day numbers (segments now start from 0)
+        const trip2DayMapping = {
+            0: { day: 2, anchor: 'day-2-delhi-agra-september-2-2027' },
+            1: { day: 4, anchor: 'day-4-agra-jaipur-september-4-2027' },
+            2: { day: 6, anchor: 'day-6-jaipur-jodhpur-september-6-2027' },
+            3: { day: 8, anchor: 'day-8-jodhpur-jaisalmer' },
+            4: { day: 10, anchor: 'day-10-jaisalmer-udaipur' },
+            5: { day: 12, anchor: 'day-12-udaipur-rann-of-kutch' },
+            6: { day: 14, anchor: 'day-14-rann-of-kutch-ahmedabad' },
+            7: { day: 15, anchor: 'day-15-ahmedabad-mumbai' },
+            8: { day: 17, anchor: 'day-17-mumbai-goa' },
+            9: { day: 20, anchor: 'day-20-goa-hampi' },
+            10: { day: 22, anchor: 'day-22-hampi-bangalore' },
+            11: { day: 23, anchor: 'day-23-bangalore-kochi' },
+            12: { day: 25, anchor: 'day-25-kochi-munnar' },
+            13: { day: 27, anchor: 'day-27-munnar-alleppey' },
+            14: { day: 28, anchor: 'day-28-alleppey-madurai' },
+            15: { day: 30, anchor: 'day-30-madurai-pondicherry' },
+            16: { day: 31, anchor: 'day-31-pondicherry-chennai' },
+            17: { day: 32, anchor: 'day-32-chennai-visakhapatnam' },
+            18: { day: 32, anchor: 'day-32-chennai-visakhapatnam' },
+            19: { day: 33, anchor: 'day-33-continue-visakhapatnam' },
+            20: { day: 34, anchor: 'day-34-visakhapatnam-kolkata' },
+            21: { day: 37, anchor: 'day-37-kolkata-varanasi' },
+            22: { day: 40, anchor: 'day-40-varanasi-kathmandu' },
+            23: { day: 42, anchor: 'day-42-kathmandu-bhaktapur' },
+            24: { day: 43, anchor: 'day-43-bhaktapur-nagarkot' },
+            25: { day: 44, anchor: 'day-44-nagarkot-pokhara' },
+            26: { day: 47, anchor: 'day-47-pokhara-lumbini' },
+            27: { day: 48, anchor: 'day-48-49-lumbini-chitwan' },
+            28: { day: 50, anchor: 'day-50-chitwan-paharpur' },
+            29: { day: 52, anchor: 'day-52-paharpur-dhaka' },
+            30: { day: 54, anchor: 'day-54-55-dhaka-sundarbans' },
+            31: { day: 56, anchor: 'day-56-sundarbans-khulna' },
+            32: { day: 57, anchor: 'day-57-khulna-dhaka' },
+            33: { day: 58, anchor: 'day-58-dhaka-coxs-bazar' },
+            34: { day: 60, anchor: 'day-60-coxs-bazar-chittagong' }
+        };
+
+        function getDayInfo(part, segmentIndex) {
+            if (part === 1 && trip1DayMapping[segmentIndex]) {
+                return trip1DayMapping[segmentIndex];
+            }
+            if (part === 2 && trip2DayMapping[segmentIndex]) {
+                return trip2DayMapping[segmentIndex];
+            }
+            return null;
+        }
+
         map.on('mousemove', 'planned-route-segments-hover', (e) => {
             if (e.features.length > 0) {
                 const props = e.features[0].properties;
@@ -1521,11 +1650,13 @@ async function addDataLayers() {
                     map.setFilter('planned-route-segment-highlight', [
                         'all', ['==', ['get', 'part'], props.part], ['==', ['get', 'segmentIndex'], props.segmentIndex]
                     ]);
-                    const trip = tripInfo[props.part] || { name: `Part ${props.part}`, subtitle: '' };
+                    const trip = tripInfo[props.part] || { name: `Part ${props.part}` };
+                    const dayInfo = getDayInfo(props.part, props.segmentIndex);
+                    const tripDayText = dayInfo ? `${trip.name}: Day ${dayInfo.day}` : trip.name;
                     segmentTooltip.innerHTML = `
                         <strong>${props.label || props.from + ' → ' + props.to}</strong><br>
                         ${props.distanceKm} km · ${props.durationHrs} hrs<br>
-                        <span style="color: #3498db; font-size: 11px;">${trip.name}: ${trip.subtitle}</span>
+                        <span style="color: #3498db; font-size: 11px;">${tripDayText}</span>
                     `;
                     segmentTooltip.style.display = 'block';
                     segmentTooltip.style.left = (e.point.x + 15) + 'px';
@@ -1540,13 +1671,21 @@ async function addDataLayers() {
             map.setFilter('planned-route-segment-highlight', ['==', ['get', 'segmentIndex'], -1]);
         });
 
-        // Click on route segment to navigate to trip
+        // Click on route segment to navigate to trip and day
         map.on('click', 'planned-route-segments-hover', (e) => {
             if (e.features.length > 0) {
                 const props = e.features[0].properties;
                 const trip = tripInfo[props.part];
+                const dayInfo = getDayInfo(props.part, props.segmentIndex);
                 if (trip && trip.page) {
+                    // Navigate to trip page, then scroll to day anchor
                     window.location.hash = trip.page;
+                    if (dayInfo) {
+                        // Wait for content to load, then scroll to anchor with proper offset
+                        setTimeout(() => {
+                            scrollToAnchor(dayInfo.anchor);
+                        }, 300);
+                    }
                 }
             }
         });
@@ -1612,6 +1751,11 @@ async function addDataLayers() {
     carouselPrev.addEventListener('click', () => { currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages; updateCarousel(); });
     carouselNext.addEventListener('click', () => { currentImageIndex = (currentImageIndex + 1) % totalImages; updateCarousel(); });
     routeClose.addEventListener('click', () => { routeInfo.style.display = 'none'; });
+
+    // Close info panel when map moves (drag, zoom, fly)
+    map.on('movestart', () => {
+        routeInfo.style.display = 'none';
+    });
 
     map.on('mousemove', 'scenic-routes-line', (e) => {
         map.getCanvas().style.cursor = 'pointer';
@@ -1948,6 +2092,195 @@ function linkPlacesToMap(contentEl) {
 
 function escapeRegex(string) {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Reverse mapping from day numbers to segment indices
+const dayToSegmentMapping = {
+    'trip01': {
+        // Pakistan & India (segments 31-53)
+        48: { part: 1, segmentIndex: 31 },  // Karachi → Multan
+        50: { part: 1, segmentIndex: 32 },  // Multan → Lahore
+        52: { part: 1, segmentIndex: 33 },  // Lahore → Islamabad
+        54: { part: 1, segmentIndex: 34 },  // Islamabad → Abbottabad
+        55: { part: 1, segmentIndex: 36 },  // Besham → Chilas
+        56: { part: 1, segmentIndex: 37 },  // Chilas → Gilgit
+        58: { part: 1, segmentIndex: 38 },  // Gilgit → Hunza Valley
+        61: { part: 1, segmentIndex: 40 },  // Attabad Lake → Khunjerab Pass
+        62: { part: 1, segmentIndex: 41 },  // Khunjerab Pass → Gilgit (return)
+        63: { part: 1, segmentIndex: 42 },  // Gilgit → Chilas (return)
+        64: { part: 1, segmentIndex: 43 },  // Chilas → Besham (return)
+        65: { part: 1, segmentIndex: 44 },  // Besham → Islamabad (return)
+        66: { part: 1, segmentIndex: 45 },  // Islamabad → Lahore (return)
+        67: { part: 1, segmentIndex: 46 },  // Lahore → Amritsar
+        69: { part: 1, segmentIndex: 47 },  // Amritsar → Chandigarh
+        70: { part: 1, segmentIndex: 48 },  // Chandigarh → Manali
+        72: { part: 1, segmentIndex: 49 },  // Manali → Leh
+        76: { part: 1, segmentIndex: 50 },  // Leh → Manali (return)
+        78: { part: 1, segmentIndex: 51 },  // Manali → Spiti Valley
+        79: { part: 1, segmentIndex: 52 },  // Spiti Valley → Shimla
+        81: { part: 1, segmentIndex: 53 }   // Shimla → Delhi
+    },
+    'trip02': {
+        // Trip 2 segments (now indices 0-34)
+        2: { part: 2, segmentIndex: 0 },   // Delhi → Agra
+        4: { part: 2, segmentIndex: 1 },   // Agra → Jaipur
+        6: { part: 2, segmentIndex: 2 },   // Jaipur → Jodhpur
+        8: { part: 2, segmentIndex: 3 },   // Jodhpur → Jaisalmer
+        10: { part: 2, segmentIndex: 4 },  // Jaisalmer → Udaipur
+        12: { part: 2, segmentIndex: 5 },  // Udaipur → Rann of Kutch
+        14: { part: 2, segmentIndex: 6 },  // Rann of Kutch → Ahmedabad
+        15: { part: 2, segmentIndex: 7 },  // Ahmedabad → Mumbai
+        17: { part: 2, segmentIndex: 8 },  // Mumbai → Goa
+        20: { part: 2, segmentIndex: 9 },  // Goa → Hampi
+        22: { part: 2, segmentIndex: 10 }, // Hampi → Bangalore
+        23: { part: 2, segmentIndex: 11 }, // Bangalore → Kochi
+        25: { part: 2, segmentIndex: 12 }, // Kochi → Munnar
+        27: { part: 2, segmentIndex: 13 }, // Munnar → Alleppey
+        28: { part: 2, segmentIndex: 14 }, // Alleppey → Madurai
+        30: { part: 2, segmentIndex: 15 }, // Madurai → Pondicherry
+        31: { part: 2, segmentIndex: 16 }, // Pondicherry → Chennai
+        32: { part: 2, segmentIndex: 17 }, // Chennai → Nellore
+        33: { part: 2, segmentIndex: 19 }, // Continue → Visakhapatnam
+        34: { part: 2, segmentIndex: 20 }, // Visakhapatnam → Kolkata
+        37: { part: 2, segmentIndex: 21 }, // Kolkata → Varanasi
+        40: { part: 2, segmentIndex: 22 }, // Varanasi → Kathmandu
+        42: { part: 2, segmentIndex: 23 }, // Kathmandu → Bhaktapur
+        43: { part: 2, segmentIndex: 24 }, // Bhaktapur → Nagarkot
+        44: { part: 2, segmentIndex: 25 }, // Nagarkot → Pokhara
+        47: { part: 2, segmentIndex: 26 }, // Pokhara → Lumbini
+        48: { part: 2, segmentIndex: 27 }, // Lumbini → Chitwan
+        50: { part: 2, segmentIndex: 28 }, // Chitwan → Paharpur
+        52: { part: 2, segmentIndex: 29 }, // Paharpur → Dhaka
+        54: { part: 2, segmentIndex: 30 }, // Dhaka → Sundarbans
+        56: { part: 2, segmentIndex: 31 }, // Sundarbans → Khulna
+        57: { part: 2, segmentIndex: 32 }, // Khulna → Dhaka
+        58: { part: 2, segmentIndex: 33 }, // Dhaka → Cox's Bazar
+        60: { part: 2, segmentIndex: 34 }  // Cox's Bazar → Chittagong
+    }
+};
+
+// Add click handlers to day headings to highlight route or fly to location
+function linkDaysToRoute(contentEl, page) {
+    const tripMapping = dayToSegmentMapping[page];
+
+    // Find all h3 headings that match "Day X:" pattern
+    contentEl.querySelectorAll('h3').forEach(heading => {
+        const text = heading.textContent;
+        const dayMatch = text.match(/^Day\s+(\d+)/i);
+        if (!dayMatch) return;
+
+        const dayNum = parseInt(dayMatch[1], 10);
+        const segment = tripMapping ? tripMapping[dayNum] : null;
+
+        // Extract location from heading (e.g., "Day 3: Agra" → "Agra")
+        // Handle formats like "Day 3: Agra" or "Day 4: Agra → Jaipur"
+        const locationMatch = text.match(/^Day\s+\d+[^:]*:\s*([^→—]+)/i);
+        const locationName = locationMatch ? locationMatch[1].trim() : null;
+
+        // Style the heading as a clickable link
+        heading.classList.add('day-heading-link');
+
+        heading.addEventListener('click', (e) => {
+            // Don't interfere with link clicks inside the heading
+            if (e.target.tagName === 'A') return;
+
+            if (segment) {
+                // Driving day - highlight the route segment
+                highlightRouteSegment(segment.part, segment.segmentIndex);
+            } else if (locationName) {
+                // Rest day - fly to the location
+                flyToLocation(locationName);
+            }
+        });
+    });
+}
+
+// Fly to a location by name using placeIndex
+function flyToLocation(locationName) {
+    const key = locationName.toLowerCase().trim();
+    let place = placeIndex[key];
+
+    // If direct lookup fails, try several fallback strategies:
+    if (!place) {
+        // 1. Search for POIs containing this city name in parentheses
+        // e.g., "Jaipur" matches "Amber Fort (Jaipur)" or "Hawa Mahal (Jaipur)"
+        const parenPattern = new RegExp(`\\(${escapeRegex(key)}\\)`, 'i');
+        for (const [name, data] of Object.entries(placeIndex)) {
+            if (parenPattern.test(name)) {
+                place = data;
+                break;
+            }
+        }
+    }
+
+    if (!place) {
+        // 2. Search for POIs that start with or contain the city name
+        // e.g., "Varanasi" matches "Varanasi Ghats"
+        for (const [name, data] of Object.entries(placeIndex)) {
+            if (name.startsWith(key) || name.includes(key + ' ')) {
+                place = data;
+                break;
+            }
+        }
+    }
+
+    if (place && place.coords) {
+        map.flyTo({
+            center: place.coords,
+            zoom: 10,
+            duration: 1000
+        });
+
+        // Briefly highlight the place if it exists on the map
+        if (place.name) {
+            highlightPlace(place.name);
+        }
+    } else {
+        console.log('Location not found:', locationName);
+    }
+}
+
+// Highlight a specific route segment on the map
+function highlightRouteSegment(part, segmentIndex) {
+    if (!map.getSource('planned-route') || !routeData) return;
+
+    // Set the highlight filter
+    map.setFilter('planned-route-segment-highlight', [
+        'all',
+        ['==', ['get', 'part'], part],
+        ['==', ['get', 'segmentIndex'], segmentIndex]
+    ]);
+
+    // Find the segment's bounding box to fly to it
+    const features = routeData.features || [];
+    const segment = features.find(f =>
+        f.properties.part === part &&
+        f.properties.segmentIndex === segmentIndex &&
+        f.geometry.type === 'LineString'
+    );
+
+    if (segment && segment.geometry.coordinates.length > 0) {
+        const coords = segment.geometry.coordinates;
+        // Calculate bounding box
+        let minLng = Infinity, maxLng = -Infinity;
+        let minLat = Infinity, maxLat = -Infinity;
+        coords.forEach(([lng, lat]) => {
+            minLng = Math.min(minLng, lng);
+            maxLng = Math.max(maxLng, lng);
+            minLat = Math.min(minLat, lat);
+            maxLat = Math.max(maxLat, lat);
+        });
+
+        map.fitBounds([[minLng, minLat], [maxLng, maxLat]], {
+            padding: 80,
+            duration: 1000
+        });
+    }
+
+    // Clear highlight after 5 seconds
+    setTimeout(() => {
+        map.setFilter('planned-route-segment-highlight', ['==', ['get', 'segmentIndex'], -1]);
+    }, 5000);
 }
 
 // Initial load
