@@ -137,9 +137,9 @@ After Trip 3, Starlink covers everything.
 |5|Nov 2028–Jan 2029|Australia|57|🇦🇺|
 |6|Feb–Apr 2029|New Zealand|70|🇳🇿|
 |7|Feb–Jun 2030|Chile → Argentina → Brazil → Bolivia → Peru → Colombia|110|🇨🇱🇦🇷🇺🇾🇧🇷🇧🇴🇵🇪🇪🇨🇨🇴|
-|8|Oct 2030–Jan 2031|Panama → Central America → Guatemala|77|🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹|
-|9|Oct 2031–Jan 2032|Central America → Mexico|114|🇬🇹🇧🇿🇲🇽|
-|10|May–Aug 2032|Mexico → USA Southwest|117|🇲🇽🇺🇸|
+|8|Jul–Oct 2030|Panama → Central America → Mexico|105|🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹🇧🇿🇲🇽|
+|9|Feb–May 2031|Mexico (Oaxaca → Copper Canyon)|100|🇲🇽|
+|10|Sep–Dec 2031|Mexico → USA Southwest|100|🇲🇽🇺🇸|
 |11|Dec 2032–Mar 2033|USA Midwest + East + Canada|115|🇺🇸🇨🇦|
 |12|Jul–Oct 2033|Canada → Alaska|117|🇨🇦🇺🇸|
 |13|Feb–May 2034|UK → Ireland → Western Europe → Switzerland|108|🇬🇧🇮🇪🇫🇷🇧🇪🇳🇱🇱🇺🇨🇭🇩🇪|
@@ -314,9 +314,9 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |5|Brisbane|🟢 SIA direct|8h|
 |6|Auckland|🟢 SIA direct|10h 30m|
 |7|Cartagena|🟡 Star Alliance via MIA|United to Miami (3h), SIA home (20h). ~25h|
-|8|Guatemala City|🟡 Star Alliance via IAH/SFO|United to Houston (4h), United to SFO (4h), SIA home (16h). ~26h|
-|9|Mexico City|🟡 Star Alliance via NRT|ANA to Tokyo (14h), SIA home (7h). ~23h|
-|10|Denver|🟡 Star Alliance via SFO|United to San Francisco (2h), SIA home (16h). ~20h|
+|8|Oaxaca|🟡 Star Alliance via MEX|Oaxaca → Mexico City (1h), SIA home via LAX (18h). ~21h|
+|9|Los Mochis|🟡 Star Alliance via MEX|Los Mochis → Mexico City (2h), SIA home via NRT (18h). ~22h|
+|10|Los Angeles|🟢 SIA direct|SQ via Tokyo (15h)|
 |11|Minneapolis|🟡 Star Alliance via SFO|United to San Francisco (4h), SIA home (16h). ~22h|
 |12|Seattle|🟢 SIA direct|16h (SQ28)|
 |13|Munich|🟢 SIA direct|12h|
@@ -544,89 +544,87 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 ---
 
-## 🏠 HOME: Jul–Sep 2030 (3 months)
+## 🏠 HOME: Jun 2030 (1 month)
 
 ---
 
-## Trip 8: Panama → Central America → Guatemala
+## Trip 8: Panama → Central America → Mexico
 
-**Oct 2030–Jan 2031 (14 weeks)**
+**Jul–Oct 2030 (15 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇵🇦 Panama|12|Pick up Panama City (shipped from Cartagena), Canal, Bocas del Toro|
-|🇨🇷 Costa Rica|18|Arenal, Monteverde, Manuel Antonio, Osa Peninsula|
-|🇳🇮 Nicaragua|12|Granada, Ometepe, León|
-|🇭🇳 Honduras|10|Copán ruins, Roatán|
-|🇸🇻 El Salvador|7|San Salvador, Ruta de las Flores|
-|🇬🇹 Guatemala|18|Antigua, Lake Atitlán, Tikal, Semuc Champey|
+|🇵🇦 Panama|10|Pick up Panama City (shipped from Cartagena), Canal, Bocas del Toro|
+|🇨🇷 Costa Rica|16|Caribbean coast, Arenal, Monteverde, Manuel Antonio, Osa|
+|🇳🇮 Nicaragua|12|Granada, Ometepe, León, volcano boarding|
+|🇭🇳 Honduras|10|Copán Maya ruins, Roatán diving|
+|🇸🇻 El Salvador|7|Ruta de las Flores, El Tunco|
+|🇬🇹 Guatemala|18|Antigua, Lake Atitlán, Semuc Champey, Tikal|
+|🇧🇿 Belize|10|ATM Cave, Caye Caulker, Placencia|
+|🇲🇽 Mexico|22|Bacalar, Tulum, Chichén Itzá, Mérida, Palenque, San Cristóbal, Oaxaca|
 
-**77 days / 6 countries / ~4,000 km**
+**105 days / 8 countries / ~6,400 km**
 
-**Weather:** Oct–Jan = dry season Central America.
+**Weather:** Jul–Oct = mostly dry, some late-season rain on Caribbean coasts.
 
-**Store:** Guatemala City
-**Fly home:** Guatemala City (United via Houston)
+**Store:** Oaxaca
+**Fly home:** Oaxaca → Mexico City (SIA via Tokyo or LAX)
+
+[📍 Detailed Itinerary →](TRIP08.md)
 
 ---
 
-## 🏠 HOME: Jul–Sep 2031 (3 months)
+## 🏠 HOME: Nov 2030–Jan 2031 (3 months)
 
 ---
 
-## Trip 9: Central America → Mexico
+## Trip 9: Mexico (Oaxaca to Copper Canyon)
 
-**Oct 2031–Jan 2032 (4 months)**
+**Feb–May 2031 (14 weeks)**
 
-|Country|Days|Highlights|
+|Region|Days|Highlights|
 |---|---|---|
-|🇬🇹 Guatemala|3|Pick up Guatemala City|
-|🇧🇿 Belize|10|Caye Caulker, San Ignacio, ruins|
-|🇲🇽 Mexico|21|Yucatán (Tulum, Chichén Itzá, Mérida, Campeche)|
-|🇲🇽 Mexico|14|Chiapas (Palenque, San Cristóbal)|
-|🇲🇽 Mexico|14|Oaxaca|
-|🇲🇽 Mexico|14|Mexico City, Teotihuacán|
-|🇲🇽 Mexico|14|Central Mexico (Guanajuato, San Miguel, Guadalajara)|
-|🇲🇽 Mexico|14|Pacific coast (Puerto Vallarta, Sayulita)|
-|🇲🇽 Mexico|10|Copper Canyon|
+|🇲🇽 Oaxaca|7|Pick up Oaxaca, Monte Albán, mezcal, Hierve el Agua|
+|🇲🇽 Mexico City|10|CDMX, Teotihuacán, Xochimilco, museums|
+|🇲🇽 Central|14|Puebla, Guanajuato, San Miguel de Allende, Querétaro|
+|🇲🇽 West|14|Guadalajara, Tequila, Puerto Vallarta, Sayulita|
+|🇲🇽 Baja Sur|21|Ferry to La Paz, Cabo, Loreto, whale watching|
+|🇲🇽 Baja Norte|14|Guerrero Negro, San Ignacio, Valle de Guadalupe, Ensenada|
+|🇲🇽 Northwest|20|Copper Canyon (Barrancas del Cobre), Creel, El Fuerte|
 
-**114 days / 2 countries / ~7,000 km**
+**100 days / 1 country / ~7,500 km**
 
-**Weather:** Oct–Jan = dry season Mexico.
+**Weather:** Feb–May = dry season, perfect for Baja and northwest.
 
-**Store:** Mexico City  
-**Fly home:** Mexico City (ANA via Tokyo)
+**Store:** Los Mochis (near Copper Canyon)
+**Fly home:** Los Mochis → Mexico City (ANA via Tokyo)
 
 ---
 
-## 🏠 HOME: Feb–Apr 2032 (3 months)
+## 🏠 HOME: Jun–Aug 2031 (3 months)
 
 ---
 
-## Trip 10: Mexico → USA Southwest
+## Trip 10: Northern Mexico → USA Southwest
 
-**May–Aug 2032 (4 months)**
+**Sep–Dec 2031 (14 weeks)**
 
-|Country|Days|Highlights|
+|Region|Days|Highlights|
 |---|---|---|
-|🇲🇽 Mexico|7|Pick up Mexico City, drive northwest|
-|🇲🇽 Mexico|21|Baja California (La Paz, Cabo, Loreto, Ensenada)|
-|🇺🇸 USA|7|Cross at Tijuana, San Diego|
-|🇺🇸 USA|10|Los Angeles, Joshua Tree|
-|🇺🇸 USA|7|Las Vegas, Death Valley|
-|🇺🇸 USA|10|Grand Canyon, Monument Valley|
-|🇺🇸 USA|14|Utah (Zion, Bryce, Capitol Reef, Arches, Canyonlands)|
-|🇺🇸 USA|7|Mesa Verde, Four Corners|
-|🇺🇸 USA|10|Colorado (Rocky Mountain NP, Denver)|
-|🇺🇸 USA|14|New Mexico (Santa Fe, White Sands, Carlsbad)|
-|🇺🇸 USA|10|Texas (Big Bend, Marfa, Austin)|
+|🇲🇽 Northwest|7|Pick up Los Mochis, Mazatlán, drive to border|
+|🇺🇸 Arizona|14|Tucson, Saguaro NP, Phoenix, Sedona, Grand Canyon|
+|🇺🇸 Utah|21|Zion, Bryce, Capitol Reef, Grand Staircase, Arches, Canyonlands, Moab|
+|🇺🇸 Colorado|14|Mesa Verde, Durango, Telluride, Rocky Mountain NP, Denver|
+|🇺🇸 New Mexico|14|Santa Fe, Taos, White Sands, Carlsbad Caverns|
+|🇺🇸 Texas|14|Big Bend, Marfa, Austin, San Antonio|
+|🇺🇸 Nevada/California|16|Las Vegas, Death Valley, Joshua Tree, Los Angeles, San Diego|
 
-**117 days / 2 countries / ~12,000 km**
+**100 days / 2 countries / ~10,000 km**
 
-**Weather:** May–Aug hot in desert but manageable. Higher elevations (Utah, Colorado) perfect.
+**Weather:** Sep–Dec = perfect for Southwest. Shoulder season crowds.
 
-**Store:** Denver  
-**Fly home:** Denver (United via SFO)
+**Store:** Los Angeles or San Diego
+**Fly home:** Los Angeles (SIA direct via Tokyo)
 
 ---
 

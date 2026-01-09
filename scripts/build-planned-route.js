@@ -467,6 +467,66 @@ const waypointsPart6 = [
   { name: "Christchurch (end)", coords: [172.6362, -43.5321] }
 ];
 
+// Trip 8: Panama to Oaxaca (Central America & Southern Mexico, 105 days)
+const waypointsPart8 = [
+  // Panama
+  { name: "Panama City", coords: [-79.5197, 8.9824] },
+  { name: "Miraflores Locks", coords: [-79.5467, 9.0153] },
+  { name: "Boquete", coords: [-82.4408, 8.7792] },
+  { name: "Bocas del Toro (Almirante)", coords: [-82.3500, 9.3000] },
+  // Costa Rica - Caribbean
+  { name: "Puerto Viejo", coords: [-82.7536, 9.6565] },
+  { name: "Cahuita", coords: [-82.8381, 9.7378] },
+  // Costa Rica - Central
+  { name: "La Fortuna (Arenal)", coords: [-84.6428, 10.4678] },
+  { name: "Monteverde", coords: [-84.8252, 10.3102] },
+  // Costa Rica - Pacific
+  { name: "Manuel Antonio", coords: [-84.1561, 9.3925] },
+  { name: "Puerto Jiménez (Osa)", coords: [-83.2994, 8.5261] },
+  // Nicaragua
+  { name: "Granada", coords: [-85.9560, 11.9292] },
+  { name: "San Jorge (Ometepe ferry)", coords: [-85.8033, 11.4536] },
+  { name: "Granada (return)", coords: [-85.9560, 11.9292] },
+  { name: "Masaya Volcano", coords: [-86.1613, 11.9842] },
+  { name: "León", coords: [-86.8780, 12.4379] },
+  // Honduras
+  { name: "Copán Ruinas", coords: [-89.1417, 14.8500] },
+  { name: "Lake Yojoa", coords: [-87.9833, 14.8500] },
+  { name: "La Ceiba", coords: [-86.7919, 15.7631] },
+  // El Salvador
+  { name: "Santa Ana", coords: [-89.5597, 13.9928] },
+  { name: "Ruta de las Flores (Juayúa)", coords: [-89.7444, 13.8419] },
+  { name: "El Tunco", coords: [-89.3833, 13.4933] },
+  // Guatemala
+  { name: "Antigua", coords: [-90.7292, 14.5586] },
+  { name: "Lake Atitlán (Panajachel)", coords: [-91.1597, 14.7411] },
+  { name: "Chichicastenango", coords: [-91.1117, 14.9433] },
+  { name: "Semuc Champey (Lanquín)", coords: [-89.9667, 15.5333] },
+  { name: "Flores (Tikal)", coords: [-89.8833, 16.9300] },
+  { name: "Tikal", coords: [-89.6256, 17.2220] },
+  { name: "Flores (return)", coords: [-89.8833, 16.9300] },
+  // Belize
+  { name: "San Ignacio", coords: [-89.0694, 17.1589] },
+  { name: "Belize City", coords: [-88.1975, 17.5046] },
+  { name: "Placencia", coords: [-88.3667, 16.5167] },
+  { name: "Belize City (return)", coords: [-88.1975, 17.5046] },
+  // Mexico - Yucatán
+  { name: "Chetumal", coords: [-88.2961, 18.5001] },
+  { name: "Bacalar", coords: [-88.3942, 18.6756] },
+  { name: "Tulum", coords: [-87.4650, 20.2114] },
+  { name: "Valladolid", coords: [-88.2022, 20.6897] },
+  { name: "Chichén Itzá", coords: [-88.5686, 20.6843] },
+  { name: "Mérida", coords: [-89.5926, 20.9674] },
+  { name: "Celestún", coords: [-90.4033, 20.8600] },
+  { name: "Mérida (return)", coords: [-89.5926, 20.9674] },
+  { name: "Campeche", coords: [-90.5349, 19.8301] },
+  // Mexico - Chiapas
+  { name: "Palenque", coords: [-91.9822, 17.4838] },
+  { name: "San Cristóbal de las Casas", coords: [-92.6376, 16.7370] },
+  // Mexico - Oaxaca
+  { name: "Oaxaca City", coords: [-96.7266, 17.0732] }
+];
+
 async function fetchRoute(coords) {
   const coordString = coords.map(c => c.join(',')).join(';');
   const url = `https://router.project-osrm.org/route/v1/driving/${coordString}?overview=full&geometries=geojson`;
@@ -604,6 +664,9 @@ async function buildRoute() {
   console.error('\n=== Building Part 7: Santiago to Cartagena (South America) ===\n');
   const part7 = await buildRouteWithSegments(waypointsPart7, 'Part7', 7);
 
+  console.error('\n=== Building Part 8: Panama to Oaxaca (Central America & Mexico) ===\n');
+  const part8 = await buildRouteWithSegments(waypointsPart8, 'Part8', 8);
+
   // Create GeoJSON with both summary lines and individual segments
   const geojson = {
     type: "FeatureCollection",
@@ -714,10 +777,10 @@ async function buildRoute() {
       {
         type: "Feature",
         properties: {
-          name: "Trip 7: Santiago to Cartagena",
+          name: "Trip 7: Valparaíso to Cartagena",
           part: 7,
           type: "summary",
-          description: "South America (Chile → Argentina → Uruguay → Brazil → Bolivia → Peru → Ecuador → Guianas → Colombia)",
+          description: "South America (Chile → Argentina → Uruguay → Brazil → Bolivia → Peru → Ecuador → Colombia)",
           totalDistanceKm: part7.totalDistanceKm,
           totalDurationHrs: parseFloat(part7.totalDurationHrs),
           segmentCount: part7.segments.length
@@ -727,6 +790,23 @@ async function buildRoute() {
           coordinates: part7.totalCoords
         }
       },
+      // Summary line for Part 8
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 8: Panama to Oaxaca",
+          part: 8,
+          type: "summary",
+          description: "Central America & Mexico (Panama → Costa Rica → Nicaragua → Honduras → El Salvador → Guatemala → Belize → Mexico)",
+          totalDistanceKm: part8.totalDistanceKm,
+          totalDurationHrs: parseFloat(part8.totalDurationHrs),
+          segmentCount: part8.segments.length
+        },
+        geometry: {
+          type: "LineString",
+          coordinates: part8.totalCoords
+        }
+      },
       // Individual segments
       ...part1.segments,
       ...part2.segments,
@@ -734,7 +814,8 @@ async function buildRoute() {
       ...part4.segments,
       ...part5.segments,
       ...part6.segments,
-      ...part7.segments
+      ...part7.segments,
+      ...part8.segments
     ]
   };
 
@@ -748,10 +829,11 @@ async function buildRoute() {
   console.error(`Part 5: ${part5.totalDistanceKm} km, ${part5.totalDurationHrs} hrs driving (${part5.segments.length} segments)`);
   console.error(`Part 6: ${part6.totalDistanceKm} km, ${part6.totalDurationHrs} hrs driving (${part6.segments.length} segments)`);
   console.error(`Part 7: ${part7.totalDistanceKm} km, ${part7.totalDurationHrs} hrs driving (${part7.segments.length} segments)`);
-  const totalKm = part1.totalDistanceKm + part2.totalDistanceKm + part3.totalDistanceKm + part4.totalDistanceKm + part5.totalDistanceKm + part6.totalDistanceKm + part7.totalDistanceKm;
-  const totalHrs = parseFloat(part1.totalDurationHrs) + parseFloat(part2.totalDurationHrs) + parseFloat(part3.totalDurationHrs) + parseFloat(part4.totalDurationHrs) + parseFloat(part5.totalDurationHrs) + parseFloat(part6.totalDurationHrs) + parseFloat(part7.totalDurationHrs);
+  console.error(`Part 8: ${part8.totalDistanceKm} km, ${part8.totalDurationHrs} hrs driving (${part8.segments.length} segments)`);
+  const totalKm = part1.totalDistanceKm + part2.totalDistanceKm + part3.totalDistanceKm + part4.totalDistanceKm + part5.totalDistanceKm + part6.totalDistanceKm + part7.totalDistanceKm + part8.totalDistanceKm;
+  const totalHrs = parseFloat(part1.totalDurationHrs) + parseFloat(part2.totalDurationHrs) + parseFloat(part3.totalDurationHrs) + parseFloat(part4.totalDurationHrs) + parseFloat(part5.totalDurationHrs) + parseFloat(part6.totalDurationHrs) + parseFloat(part7.totalDurationHrs) + parseFloat(part8.totalDurationHrs);
   console.error(`TOTAL: ${totalKm} km, ${totalHrs.toFixed(1)} hrs driving`);
-  console.error(`\nWrote ${part1.totalCoords.length + part2.totalCoords.length + part3.totalCoords.length + part4.totalCoords.length + part5.totalCoords.length + part6.totalCoords.length + part7.totalCoords.length} coordinates to data/planned-route.geojson`);
+  console.error(`\nWrote ${part1.totalCoords.length + part2.totalCoords.length + part3.totalCoords.length + part4.totalCoords.length + part5.totalCoords.length + part6.totalCoords.length + part7.totalCoords.length + part8.totalCoords.length} coordinates to data/planned-route.geojson`);
 }
 
 buildRoute();
