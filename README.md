@@ -18,7 +18,7 @@ Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. T
 
 > **Phase A: Around the World (2027-2034)**
 
-🇦🇪 UAE → 🇴🇲 Oman → 🇶🇦 Qatar → 🇧🇭 Bahrain → 🇸🇦 Saudi Arabia → 🇰🇼 Kuwait → 🇮🇶 Iraq → 🇮🇷 Iran → 🚢 → 🇵🇰 Pakistan → 🇮🇳 India → 🇳🇵 Nepal → 🇧🇩 Bangladesh → 🚢 → 🇹🇭 Thailand → 🇱🇦 Laos → 🇻🇳 Vietnam → 🇰🇭 Cambodia → 🇲🇾 Malaysia → 🚢 → 🇮🇩 Indonesia → 🇹🇱 Timor-Leste → 🇦🇺 Australia → 🚢 → 🇳🇿 New Zealand → 🚢 → 🇨🇱 Chile → 🇦🇷 Argentina → 🇺🇾 Uruguay → 🇵🇾 Paraguay → 🇧🇷 Brazil → 🇬🇫 French Guiana → 🇸🇷 Suriname → 🇬🇾 Guyana → 🇧🇴 Bolivia → 🇵🇪 Peru → 🇪🇨 Ecuador → 🇨🇴 Colombia → 🚢 → 🇵🇦 Panama → 🇨🇷 Costa Rica → 🇳🇮 Nicaragua → 🇭🇳 Honduras → 🇸🇻 El Salvador → 🇬🇹 Guatemala → 🇧🇿 Belize → 🇲🇽 Mexico → 🇺🇸 USA → 🇨🇦 Canada → 🚢 → 🇬🇧 UK → 🇮🇪 Ireland → 🇫🇷 France → 🇧🇪 Belgium → 🇳🇱 Netherlands → 🇱🇺 Luxembourg → 🇩🇪 Germany → 🇨🇭 Switzerland
+🇦🇪 UAE → 🇴🇲 Oman → 🇶🇦 Qatar → 🇧🇭 Bahrain → 🇸🇦 Saudi Arabia → 🇰🇼 Kuwait → 🇮🇶 Iraq → 🇮🇷 Iran → 🚢 → 🇵🇰 Pakistan → 🇮🇳 India → 🇳🇵 Nepal → 🇧🇩 Bangladesh → 🚢 → 🇹🇭 Thailand → 🇱🇦 Laos → 🇻🇳 Vietnam → 🇰🇭 Cambodia → 🇲🇾 Malaysia → 🇸🇬 Singapore → 🚢 → 🇮🇩 Indonesia → 🇹🇱 Timor-Leste → 🚢 → 🇦🇺 Australia → 🚢 → 🇳🇿 New Zealand → 🚢 → 🇨🇱 Chile → 🇦🇷 Argentina → 🇺🇾 Uruguay → 🇧🇷 Brazil → 🇧🇴 Bolivia → 🇵🇪 Peru → 🇪🇨 Ecuador → 🇨🇴 Colombia → 🚢 → 🇵🇦 Panama → 🇨🇷 Costa Rica → 🇳🇮 Nicaragua → 🇭🇳 Honduras → 🇸🇻 El Salvador → 🇬🇹 Guatemala → 🇧🇿 Belize → 🇲🇽 Mexico → 🇺🇸 USA → 🇨🇦 Canada → 🚢 → 🇬🇧 UK → 🇮🇪 Ireland → 🇫🇷 France → 🇧🇪 Belgium → 🇳🇱 Netherlands → 🇱🇺 Luxembourg → 🇩🇪 Germany → 🇨🇭 Switzerland
 
 > **Phase B: Europe & Africa (2035-2044)**
 
@@ -74,14 +74,14 @@ Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. T
 **Dubai → East → Americas → West → Dubai**
 
 ```
-PHASE A: Trips 1-13 (2027-2032)
+PHASE A: Trips 1-13 (2027-2034)
 Dubai → Oman → Qatar → Bahrain → Saudi → Kuwait → Iraq → Iran →
 [ship Bandar Abbas→Karachi] → Pakistan (KKH) → India → Nepal → Bangladesh →
-[ship] → Thailand → Laos → Cambodia → Vietnam → Malaysia →
-[ship] → Indonesia (Java + Sumatra) → Timor → Australia → New Zealand →
-Chile → Argentina → Brazil → Paraguay → Bolivia → Peru → Ecuador →
+[ship] → Thailand → Laos → Cambodia → Vietnam → Malaysia → Singapore →
+[ship] → Indonesia → Timor-Leste → [ship] → Australia → [ship] → New Zealand →
+[ship] → Chile → Argentina → Uruguay → Brazil → Bolivia → Peru → Ecuador →
 Colombia → [ship Darién] → Central America → Mexico → USA → Canada → Alaska →
-UK → Ireland → Western Europe
+[ship] → UK → Ireland → Western Europe
 
 PHASE B: Trips 14-23 (2035-2044)
 Nordics → Baltics → Central Europe → Balkans → Turkey → Caucasus →
@@ -130,14 +130,14 @@ After Trip 3, Starlink covers everything.
 
 |#|Dates|Region|Days|Countries|
 |---|---|---|---|---|
-|1|Feb–May 2027|Dubai → Oman → Qatar → Bahrain → Saudi → Kuwait → Iraq → Iran → Pakistan → India (Delhi)|114|🇦🇪🇴🇲🇶🇦🇧🇭🇸🇦🇰🇼🇮🇶🇮🇷🇵🇰🇮🇳|
-|2|Sep–Dec 2027|South India → Nepal → Bangladesh|111|🇮🇳🇳🇵🇧🇩|
-|3|Apr–Jul 2028|Thailand → SE Asia → Malaysia (JB)|104|🇹🇭🇱🇦🇻🇳🇰🇭🇲🇾|
-|4|Nov 2028–Feb 2029|Indonesia (Java + Sumatra) → Timor → Australia|115|🇮🇩🇹🇱🇦🇺|
-|5|Jun–Aug 2029|New Zealand|91|🇳🇿|
-|6|Jan–Apr 2030|Chile → Patagonia → Argentina → Uruguay|119|🇨🇱🇦🇷🇺🇾|
-|7|Aug–Nov 2030|Argentina → Brazil → Guianas → Bolivia → Peru|108|🇦🇷🇧🇷🇬🇫🇸🇷🇬🇾🇵🇾🇧🇴🇵🇪|
-|8|Mar–Jun 2031|Peru → Ecuador → Colombia → Central America|116|🇵🇪🇪🇨🇨🇴🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹|
+|1|Feb–May 2027|Dubai → Gulf → Iran → Pakistan → India|114|🇦🇪🇴🇲🇶🇦🇧🇭🇸🇦🇰🇼🇮🇶🇮🇷🇵🇰🇮🇳|
+|2|Sep–Dec 2027|India → Nepal → Bangladesh|111|🇮🇳🇳🇵🇧🇩|
+|3|Feb–Apr 2028|Thailand → Indochina → Malaysia|70|🇹🇭🇱🇦🇻🇳🇰🇭🇲🇾|
+|4|Aug–Oct 2028|Singapore → Indonesia → Timor-Leste|53|🇸🇬🇮🇩🇹🇱|
+|5|Nov 2028–Jan 2029|Australia|57|🇦🇺|
+|6|Feb–Apr 2029|New Zealand|70|🇳🇿|
+|7|Feb–Jun 2030|Chile → Argentina → Brazil → Bolivia → Peru → Colombia|110|🇨🇱🇦🇷🇺🇾🇧🇷🇧🇴🇵🇪🇪🇨🇨🇴|
+|8|Oct 2030–Jan 2031|Panama → Central America → Guatemala|77|🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹|
 |9|Oct 2031–Jan 2032|Central America → Mexico|114|🇬🇹🇧🇿🇲🇽|
 |10|May–Aug 2032|Mexico → USA Southwest|117|🇲🇽🇺🇸|
 |11|Dec 2032–Mar 2033|USA Midwest + East + Canada|115|🇺🇸🇨🇦|
@@ -310,10 +310,10 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |1|Delhi|🟢 SIA direct|5h 30m|
 |2|Dhaka|🟡 SIA via BKK/KUL|No direct, 1 stop|
 |3|Singapore|✅ Home|—|
-|4|Brisbane|🟢 SIA direct|8h|
-|5|Auckland|🟢 SIA direct|10h 30m|
-|6|Buenos Aires|🟡 Star Alliance via FRA|Lufthansa to Frankfurt (13h), SIA home (12h). ~27h|
-|7|Lima|🟡 Star Alliance via LAX|United to Los Angeles (13h), SIA home (18h). ~33h|
+|4|Dili|🟡 Via Bali or Darwin|Connect through DPS or DRW to SIN|
+|5|Brisbane|🟢 SIA direct|8h|
+|6|Auckland|🟢 SIA direct|10h 30m|
+|7|Cartagena|🟡 Star Alliance via MIA|United to Miami (3h), SIA home (20h). ~25h|
 |8|Guatemala City|🟡 Star Alliance via IAH/SFO|United to Houston (4h), United to SFO (4h), SIA home (16h). ~26h|
 |9|Mexico City|🟡 Star Alliance via NRT|ANA to Tokyo (14h), SIA home (7h). ~23h|
 |10|Denver|🟡 Star Alliance via SFO|United to San Francisco (2h), SIA home (16h). ~20h|
@@ -415,168 +415,157 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 ---
 
-## Trip 3: Thailand → SE Asia → Malaysia
+## Trip 3: Thailand → Indochina → Malaysia
 
-**Apr–Jul 2028 (4 months)**
+**Feb–Apr 2028 (10 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇹🇭 Thailand|3|Pick up Laem Chabang|
-|🇱🇦 Laos|12|Vientiane, Vang Vieng, Luang Prabang|
-|🇻🇳 Vietnam|26|Hanoi, Ha Long Bay, Hue, Hoi An, Ho Chi Minh, Sapa|
+|🇹🇭 Thailand|14|Pick up Laem Chabang, Bangkok, Chiang Mai, north|
+|🇱🇦 Laos|10|Vientiane, Vang Vieng, Luang Prabang|
+|🇻🇳 Vietnam|18|Hanoi, Ha Long Bay, Hue, Hoi An, Ho Chi Minh|
 |🇰🇭 Cambodia|10|Phnom Penh, Siem Reap (Angkor Wat)|
-|🇹🇭 Thailand|25|Bangkok, Chiang Mai, Phuket, Phi Phi, Phang Nga|
-|🇲🇾 Malaysia|28|Penang, Cameron Highlands, KL, Melaka, Johor Bahru|
+|🇲🇾 Malaysia|18|Penang, Cameron Highlands, KL, Melaka, Singapore border|
 
-**104 days / 5 countries / ~7,500 km**
+**70 days / 5 countries / 9,200 km**
 
-**Weather:** Apr–Jul = dry season SE Asia.
-
-**Store:** Johor Bahru — _Ship car to Jakarta, fly to Singapore for home visit_
+**Store:** Johor Bahru — _Ship car to Jakarta_
 **Fly home:** Singapore (walk across causeway!)
 
----
-
-## 🏠 HOME: Aug–Oct 2028 (3 months)
+[📍 Detailed Itinerary →](TRIP03.md)
 
 ---
 
-## Trip 4: Indonesia (Java + Sumatra) → Timor → Australia
+## 🏠 HOME: May–Jul 2028 (3 months)
 
-**Nov 2028–Feb 2029 (4 months)**
+---
+
+## Trip 4: Singapore → Indonesia → Timor-Leste
+
+**Aug–Oct 2028 (8 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇮🇩 Jakarta|2|Pick up car from port, explore|
-|🇮🇩 Sumatra|25|Merak ferry → Bakauheni, Lampung, Palembang, Jambi, Padang, Bukittinggi, Lake Toba, Medan, return south|
-|🇮🇩 Java|18|Bandung, Yogyakarta, Borobudur, Bromo|
-|🇮🇩 East Indonesia|10|Bali, Flores, Komodo|
+|🇸🇬 Singapore|2|Pick up car from JB, cross to Batam|
+|🇮🇩 Indonesia|43|Java (Jakarta, Bandung, Yogyakarta, Borobudur, Bromo), Bali, Flores, Komodo|
 |🇹🇱 Timor-Leste|8|Dili, Maubisse, Atauro|
-|⛴️ Ship|2|Dili → Darwin|
-|🇦🇺 Australia|50|Darwin, Kakadu, Kununurra, Gibb River Road, Broome, Karijini, Ningaloo, Perth, Nullarbor, Adelaide, Great Ocean Road, Melbourne, Sydney, Brisbane|
 
-**115 days / 3 countries / ~15,000 km**
+**53 days / 3 countries / 6,500 km**
 
-**Note:** Car shipped JB → Jakarta. Use Merak-Bakauheni ferry ($22, frequent) to access Sumatra — only way to get car there!
+**Note:** Car shipped JB → Jakarta via Batam.
 
-**Weather:** Nov–Feb = dry season Indonesia, Australian summer.
+**Store:** Dili — _Ship to Darwin_
+**Fly home:** Dili (via Bali or Darwin)
+
+[📍 Detailed Itinerary →](TRIP04.md)
+
+---
+
+## 🏠 HOME: Oct 2028 (1 month)
+
+---
+
+## Trip 5: Australia
+
+**Nov 2028–Jan 2029 (8 weeks)**
+
+|Region|Days|Highlights|
+|---|---|---|
+|🇦🇺 Top End|14|Darwin, Kakadu, Katherine, Kununurra|
+|🇦🇺 Kimberley|10|Gibb River Road, Broome|
+|🇦🇺 West Coast|12|Karijini, Ningaloo, Perth|
+|🇦🇺 Nullarbor|7|Great Australian Bight crossing|
+|🇦🇺 South & East|14|Adelaide, Great Ocean Road, Melbourne, Sydney, Brisbane|
+
+**57 days / 1 country / 15,500 km**
+
+**Weather:** Nov–Jan = Australian summer, dry season Top End.
 
 **Store:** Brisbane — _Ship to Auckland_
 **Fly home:** Brisbane (SIA direct)
 
----
-
-## 🏠 HOME: Mar–May 2029 (3 months)
+[📍 Detailed Itinerary →](TRIP05.md)
 
 ---
 
-## Trip 5: New Zealand
+## 🏠 HOME: Feb–Jul 2029 (5 months)
 
-**Jun–Aug 2029 (3 months)**
+---
+
+## Trip 6: New Zealand
+
+**Aug–Oct 2029 (10 weeks)**
 
 |Region|Days|Highlights|
 |---|---|---|
-|🇳🇿 North Island|30|Auckland, Coromandel, Rotorua, Taupo, Napier, Wellington|
+|🇳🇿 North Island|25|Auckland, Coromandel, Rotorua, Taupo, Napier, Wellington|
 |⛴️ Ferry|1|Wellington → Picton|
-|🇳🇿 South Island|50|Marlborough, Kaikōura, Christchurch, Mt Cook, Queenstown, Milford Sound, Wanaka, glaciers, Abel Tasman|
-|🇳🇿 North Island|10|Return to Auckland|
+|🇳🇿 South Island|35|Marlborough, Kaikōura, Christchurch, Mt Cook, Queenstown, Milford Sound, Wanaka|
+|🇳🇿 North Island|9|Return to Auckland|
 
-**91 days / ~6,000 km**
+**70 days / 1 country / 6,500 km**
 
-**Weather:** Jun–Aug = NZ winter. South Island cold/snowy but stunning. Shoulder season = fewer tourists.
+**Weather:** Aug–Oct = NZ late winter/spring. Fewer tourists, stunning scenery.
 
-**Store:** Auckland — _Ship to Chile_  
+**Store:** Auckland — _Ship to Valparaíso_
 **Fly home:** Auckland (SIA direct)
 
----
-
-## 🏠 HOME: Sep–Dec 2029 (4 months)
+[📍 Detailed Itinerary →](TRIP06.md)
 
 ---
 
-## Trip 6: Chile → Patagonia → Argentina → Uruguay
+## 🏠 HOME: Nov 2029–Jan 2030 (3 months)
 
-**Jan–Apr 2030 (4 months)**
+---
+
+## Trip 7: Valparaíso → Cartagena (South America Epic)
+
+**Feb–Jun 2030 (16 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇨🇱 Chile|14|Pick up Valparaíso, Santiago, wine country|
-|🇨🇱 Chile|21|Lake District (Pucón, Puerto Varas), Chiloé|
-|🇨🇱 Chile|21|Carretera Austral|
-|🇨🇱 Chile|14|Torres del Paine, Puerto Natales|
-|🇦🇷 Argentina|21|El Calafate, Perito Moreno, El Chaltén, Ruta 40|
-|🇦🇷 Argentina|7|Ushuaia (end of the world)|
-|🇦🇷 Argentina|12|Up Atlantic coast, Puerto Madryn (penguins)|
-|🇦🇷 Argentina|4|Buenos Aires|
-|🇺🇾 Uruguay|5|Montevideo, Colonia del Sacramento, return to Buenos Aires|
+|🇨🇱 Chile|30|Valparaíso (ferry arrival), Santiago, Paso de los Caracoles, Chiloé, Carretera Austral|
+|🇦🇷 Argentina|35|Mendoza, Ruta 40 south, Seven Lakes, Bariloche, Patagonia, Ushuaia, Atlantic coast|
+|🇺🇾 Uruguay|4|Colonia, Montevideo|
+|🇧🇷 Brazil|10|Iguazu Falls, São Paulo, Rio de Janeiro|
+|🇧🇴 Bolivia|12|Scenic Uyuni route (Laguna Verde, Colorada), Salar de Uyuni, Sucre, La Paz|
+|🇵🇪 Peru|12|Lake Titicaca, Cusco, Machu Picchu, Lima|
+|🇪🇨 Ecuador|5|Quito, Otavalo|
+|🇨🇴 Colombia|12|Bogotá, Coffee Region, Medellín, Cartagena|
 
-**119 days / 3 countries / ~8,500 km**
+**110 days / 8 countries / ~25,000 km**
 
-**Weather:** Jan–Apr = Patagonia summer/autumn. Best weather window.
+**Weather:** Feb–May = Patagonia late summer, Andes dry season.
 
-**Store:** Buenos Aires  
-**Fly home:** Buenos Aires (Emirates or Qatar via Middle East)
+**Store:** Cartagena — _Ship to Panama_
+**Fly home:** Cartagena (via Miami or Bogotá)
 
----
-
-## 🏠 HOME: May–Jul 2030 (3 months)
+[📍 Detailed Itinerary →](TRIP07.md)
 
 ---
 
-## Trip 7: Argentina → Brazil → Guianas → Bolivia → Peru
+## 🏠 HOME: Jul–Sep 2030 (3 months)
 
-**Aug–Nov 2030 (4 months)**
+---
+
+## Trip 8: Panama → Central America → Guatemala
+
+**Oct 2030–Jan 2031 (14 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
-|🇦🇷 Argentina|5|Pick up Buenos Aires, drive north|
-|🇦🇷🇧🇷|5|Iguazu Falls (both sides)|
-|🇵🇾 Paraguay|4|Asunción|
-|🇧🇷 Brazil|10|Brasília, north to Belém|
-|🇬🇫 French Guiana|2|Cayenne|
-|🇸🇷 Suriname|2|Paramaribo|
-|🇬🇾 Guyana|4|Georgetown, Kaieteur Falls|
-|🇧🇷 Brazil|10|Boa Vista, Manaus, south to Bolivia|
-|🇧🇴 Bolivia|18|Santa Cruz, Sucre, Potosí, Uyuni, La Paz|
-|🇵🇪 Peru|12|Lake Titicaca, Puno, Arequipa, Colca Canyon|
-|🇵🇪 Peru|18|Cusco, Sacred Valley, Machu Picchu|
-|🇵🇪 Peru|8|Lima, Nazca Lines, Huacachina|
+|🇵🇦 Panama|12|Pick up Panama City (shipped from Cartagena), Canal, Bocas del Toro|
+|🇨🇷 Costa Rica|18|Arenal, Monteverde, Manuel Antonio, Osa Peninsula|
+|🇳🇮 Nicaragua|12|Granada, Ometepe, León|
+|🇭🇳 Honduras|10|Copán ruins, Roatán|
+|🇸🇻 El Salvador|7|San Salvador, Ruta de las Flores|
+|🇬🇹 Guatemala|18|Antigua, Lake Atitlán, Tikal, Semuc Champey|
 
-**108 days / 8 countries / ~12,000 km**
+**77 days / 6 countries / ~4,000 km**
 
-**Weather:** Aug–Nov = dry season Andes, good for Bolivia & Peru.
+**Weather:** Oct–Jan = dry season Central America.
 
-**Store:** Lima  
-**Fly home:** Lima (LATAM via Santiago or LAX)
-
----
-
-## 🏠 HOME: Dec 2030–Feb 2031 (3 months)
-
----
-
-## Trip 8: Peru → Ecuador → Colombia → Central America
-
-**Mar–Jun 2031 (4 months)**
-
-|Country|Days|Highlights|
-|---|---|---|
-|🇵🇪 Peru|7|Pick up Lima, drive north|
-|🇪🇨 Ecuador|18|Guayaquil, Cuenca, Baños, Quito, Otavalo|
-|🇨🇴 Colombia|28|Bogotá, Villa de Leyva, Coffee Region, Medellín, Cartagena|
-|⛴️ Ship|3|Cartagena → Panama City (Darién Gap)|
-|🇵🇦 Panama|10|Panama City, Canal, Bocas del Toro|
-|🇨🇷 Costa Rica|14|Arenal, Monteverde, Manuel Antonio|
-|🇳🇮 Nicaragua|10|Granada, Ometepe, León|
-|🇭🇳 Honduras|7|Copán ruins|
-|🇸🇻 El Salvador|5|San Salvador, Ruta de las Flores|
-|🇬🇹 Guatemala|14|Antigua, Lake Atitlán, Tikal|
-
-**116 days / 9 countries / ~7,000 km**
-
-**Weather:** Mar–Jun = dry season Central America (mostly).
-
-**Store:** Guatemala City  
+**Store:** Guatemala City
 **Fly home:** Guatemala City (United via Houston)
 
 ---
@@ -996,7 +985,7 @@ Sell LC300 in Dubai. Full circle complete.
 
 ---
 
-🇦🇪 → 🇶🇦 → 🇧🇭 → 🇴🇲 → 🇮🇷 → 🇵🇰 → 🇮🇳 → 🇳🇵 → 🇧🇩 → 🇹🇭 → 🇱🇦 → 🇻🇳 → 🇰🇭 → 🇲🇾 → 🇸🇬 → 🇮🇩 → 🇹🇱 → 🇦🇺 → 🇳🇿 → 🇨🇱 → 🇦🇷 → 🇺🇾 → 🇵🇾 → 🇧🇷 → 🇬🇫 → 🇸🇷 → 🇬🇾 → 🇧🇴 → 🇵🇪 → 🇪🇨 → 🇨🇴 → 🇵🇦 → 🇨🇷 → 🇳🇮 → 🇭🇳 → 🇸🇻 → 🇬🇹 → 🇧🇿 → 🇲🇽 → 🇺🇸 → 🇨🇦 → 🇬🇧 → 🇮🇪 → 🇫🇷 → 🇧🇪 → 🇳🇱 → 🇱🇺 → 🇨🇭 → 🇩🇪 → 🇩🇰 → 🇳🇴 → 🇸🇪 → 🇫🇮 → 🇪🇪 → 🇱🇻 → 🇱🇹 → 🇵🇱 → 🇨🇿 → 🇸🇰 → 🇦🇹 → 🇭🇺 → 🇸🇮 → 🇭🇷 → 🇧🇦 → 🇲🇪 → 🇦🇱 → 🇽🇰 → 🇲🇰 → 🇷🇸 → 🇷🇴 → 🇲🇩 → 🇧🇬 → 🇹🇷 → 🇬🇪 → 🇦🇲 → 🇦🇿 → 🇬🇷 → 🇮🇹 → 🇪🇸 → 🇵🇹 → 🇲🇦 → 🇪🇭 → 🇲🇷 → 🇸🇳 → 🇬🇲 → 🇬🇼 → 🇬🇳 → 🇸🇱 → 🇱🇷 → 🇨🇮 → 🇬🇭 → 🇹🇬 → 🇧🇯 → 🇳🇬 → 🇨🇲 → 🇬🇦 → 🇨🇬 → 🇨🇩 → 🇦🇴 → 🇳🇦 → 🇧🇼 → 🇿🇲 → 🇿🇼 → 🇿🇦 → 🇱🇸 → 🇸🇿 → 🇲🇿 → 🇲🇼 → 🇹🇿 → 🇰🇪 → 🇺🇬 → 🇷🇼 → 🇧🇮 → 🇪🇹 → 🇪🇷 → 🇸🇩 → 🇪🇬 → 🇯🇴 → 🇸🇦 → 🇰🇼 → 🇦🇪
+🇦🇪 → 🇴🇲 → 🇶🇦 → 🇧🇭 → 🇸🇦 → 🇰🇼 → 🇮🇶 → 🇮🇷 → 🇵🇰 → 🇮🇳 → 🇳🇵 → 🇧🇩 → 🇹🇭 → 🇱🇦 → 🇻🇳 → 🇰🇭 → 🇲🇾 → 🇸🇬 → 🇮🇩 → 🇹🇱 → 🇦🇺 → 🇳🇿 → 🇨🇱 → 🇦🇷 → 🇺🇾 → 🇧🇷 → 🇧🇴 → 🇵🇪 → 🇪🇨 → 🇨🇴 → 🇵🇦 → 🇨🇷 → 🇳🇮 → 🇭🇳 → 🇸🇻 → 🇬🇹 → 🇧🇿 → 🇲🇽 → 🇺🇸 → 🇨🇦 → 🇬🇧 → 🇮🇪 → 🇫🇷 → 🇧🇪 → 🇳🇱 → 🇱🇺 → 🇨🇭 → 🇩🇪 → 🇩🇰 → 🇮🇸 → 🇳🇴 → 🇸🇪 → 🇫🇮 → 🇪🇪 → 🇱🇻 → 🇱🇹 → 🇵🇱 → 🇨🇿 → 🇸🇰 → 🇦🇹 → 🇭🇺 → 🇸🇮 → 🇭🇷 → 🇧🇦 → 🇲🇪 → 🇦🇱 → 🇽🇰 → 🇲🇰 → 🇷🇸 → 🇷🇴 → 🇲🇩 → 🇧🇬 → 🇹🇷 → 🇬🇪 → 🇦🇲 → 🇦🇿 → 🇬🇷 → 🇮🇹 → 🇪🇸 → 🇵🇹 → 🇲🇦 → 🇪🇭 → 🇲🇷 → 🇸🇳 → 🇬🇲 → 🇬🇼 → 🇬🇳 → 🇸🇱 → 🇱🇷 → 🇨🇮 → 🇬🇭 → 🇹🇬 → 🇧🇯 → 🇳🇬 → 🇨🇲 → 🇬🇦 → 🇨🇬 → 🇨🇩 → 🇦🇴 → 🇳🇦 → 🇧🇼 → 🇿🇲 → 🇿🇼 → 🇿🇦 → 🇱🇸 → 🇸🇿 → 🇲🇿 → 🇲🇼 → 🇹🇿 → 🇰🇪 → 🇺🇬 → 🇷🇼 → 🇧🇮 → 🇪🇹 → 🇪🇷 → 🇸🇩 → 🇪🇬 → 🇯🇴 → 🇸🇦 → 🇰🇼 → 🇦🇪
 
 _Julian, Nathalie & Family_  
 _December 2025_
