@@ -523,8 +523,68 @@ const waypointsPart8 = [
   // Mexico - Chiapas
   { name: "Palenque", coords: [-91.9822, 17.4838] },
   { name: "San Cristóbal de las Casas", coords: [-92.6376, 16.7370] },
-  // Mexico - Oaxaca
+  // Mexico - Oaxaca (scenic coastal route via Highway 175)
+  { name: "Santo Domingo Tehuantepec", coords: [-95.2392, 16.3239] },
+  { name: "Huatulco (Barra de Copalita)", coords: [-96.1344, 15.7833] },
+  { name: "Pochutla", coords: [-96.4667, 15.7500] },
+  { name: "Santa Catarina Juquila", coords: [-97.2917, 16.2372] },
+  { name: "Pochutla (return)", coords: [-96.4667, 15.7500] },
+  { name: "Miahuatlán (Highway 175)", coords: [-96.5931, 16.3278] },
   { name: "Oaxaca City", coords: [-96.7266, 17.0732] }
+];
+
+// Trip 9: Oaxaca to Los Angeles (Mexico Pacific Coast, Copper Canyon, Baja, ~63 days)
+const waypointsPart9 = [
+  // Central Mexico
+  { name: "Oaxaca City (departure)", coords: [-96.7266, 17.0732] },
+  { name: "Tehuacán", coords: [-97.3928, 18.4617] },
+  { name: "Puebla", coords: [-98.2063, 19.0414] },
+  { name: "Cholula", coords: [-98.3033, 19.0633] },
+  { name: "Mexico City", coords: [-99.1332, 19.4326] },
+  { name: "Teotihuacan", coords: [-98.8433, 19.6925] },
+  { name: "Mexico City (return)", coords: [-99.1332, 19.4326] },
+  // Pacific Coast - Highway 200
+  { name: "Acapulco", coords: [-99.8901, 16.8531] },
+  { name: "Zihuatanejo", coords: [-101.5514, 17.6425] },
+  { name: "Lázaro Cárdenas", coords: [-102.2003, 17.9578] },
+  { name: "Manzanillo", coords: [-104.3386, 19.0522] },
+  { name: "Barra de Navidad", coords: [-104.6833, 19.2000] },
+  { name: "Puerto Vallarta", coords: [-105.2253, 20.6534] },
+  { name: "Sayulita", coords: [-105.4369, 20.8694] },
+  { name: "Puerto Vallarta (return)", coords: [-105.2253, 20.6534] },
+  { name: "Mazatlán", coords: [-106.4111, 23.2494] },
+  // Devil's Backbone & Copper Canyon
+  { name: "Devil's Backbone (Espinazo)", coords: [-105.8667, 23.7667] },
+  { name: "Durango", coords: [-104.6572, 24.0277] },
+  { name: "Creel", coords: [-107.6350, 27.7506] },
+  { name: "Divisadero", coords: [-107.7667, 27.5167] },
+  { name: "Urique", coords: [-107.9167, 27.2167] },
+  { name: "Divisadero (return)", coords: [-107.7667, 27.5167] },
+  { name: "El Fuerte", coords: [-108.6200, 26.4217] },
+  { name: "Los Mochis", coords: [-108.9939, 25.7903] },
+  { name: "Topolobampo (ferry)", coords: [-109.0500, 25.6000] },
+  // Baja California
+  { name: "La Paz", coords: [-110.3128, 24.1426] },
+  { name: "Balandra Beach", coords: [-110.3167, 24.3167] },
+  { name: "La Paz (return)", coords: [-110.3128, 24.1426] },
+  { name: "Loreto", coords: [-111.3433, 26.0128] },
+  { name: "San Javier", coords: [-111.5167, 25.8667] },
+  { name: "Loreto (return)", coords: [-111.3433, 26.0128] },
+  { name: "Mulegé", coords: [-111.9833, 26.8833] },
+  { name: "Santa Rosalía", coords: [-112.2667, 27.3333] },
+  { name: "San Ignacio", coords: [-112.8972, 27.2881] },
+  { name: "Guerrero Negro", coords: [-114.0614, 27.9681] },
+  { name: "Catavina", coords: [-114.7167, 29.7333] },
+  { name: "San Quintín", coords: [-115.9333, 30.4833] },
+  { name: "Ensenada", coords: [-116.5964, 31.8667] },
+  { name: "Valle de Guadalupe", coords: [-116.5500, 32.0500] },
+  { name: "Ensenada (return)", coords: [-116.5964, 31.8667] },
+  { name: "Tijuana", coords: [-117.0382, 32.5149] },
+  // California
+  { name: "San Diego", coords: [-117.1611, 32.7157] },
+  { name: "La Jolla", coords: [-117.2712, 32.8328] },
+  { name: "San Diego (return)", coords: [-117.1611, 32.7157] },
+  { name: "Los Angeles", coords: [-118.2437, 34.0522] }
 ];
 
 async function fetchRoute(coords) {
@@ -667,6 +727,9 @@ async function buildRoute() {
   console.error('\n=== Building Part 8: Panama to Oaxaca (Central America & Mexico) ===\n');
   const part8 = await buildRouteWithSegments(waypointsPart8, 'Part8', 8);
 
+  console.error('\n=== Building Part 9: Oaxaca to Los Angeles (Pacific Coast, Copper Canyon, Baja) ===\n');
+  const part9 = await buildRouteWithSegments(waypointsPart9, 'Part9', 9);
+
   // Create GeoJSON with both summary lines and individual segments
   const geojson = {
     type: "FeatureCollection",
@@ -807,6 +870,23 @@ async function buildRoute() {
           coordinates: part8.totalCoords
         }
       },
+      // Summary line for Part 9
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 9: Oaxaca to Los Angeles",
+          part: 9,
+          type: "summary",
+          description: "Mexico Pacific Coast, Copper Canyon & Baja California to California",
+          totalDistanceKm: part9.totalDistanceKm,
+          totalDurationHrs: parseFloat(part9.totalDurationHrs),
+          segmentCount: part9.segments.length
+        },
+        geometry: {
+          type: "LineString",
+          coordinates: part9.totalCoords
+        }
+      },
       // Individual segments
       ...part1.segments,
       ...part2.segments,
@@ -815,11 +895,34 @@ async function buildRoute() {
       ...part5.segments,
       ...part6.segments,
       ...part7.segments,
-      ...part8.segments
+      ...part8.segments,
+      ...part9.segments
     ]
   };
 
-  fs.writeFileSync('data/planned-route.geojson', JSON.stringify(geojson, null, 2));
+  // Reduce coordinate precision to shrink file size (4 decimals = ~11m accuracy)
+  function roundCoords(coords, precision = 4) {
+    return [
+      Math.round(coords[0] * Math.pow(10, precision)) / Math.pow(10, precision),
+      Math.round(coords[1] * Math.pow(10, precision)) / Math.pow(10, precision)
+    ];
+  }
+
+  function reduceGeojsonPrecision(geojson) {
+    return {
+      ...geojson,
+      features: geojson.features.map(feature => ({
+        ...feature,
+        geometry: {
+          ...feature.geometry,
+          coordinates: feature.geometry.coordinates.map(coord => roundCoords(coord))
+        }
+      }))
+    };
+  }
+
+  const reducedGeojson = reduceGeojsonPrecision(geojson);
+  fs.writeFileSync('data/planned-route.geojson', JSON.stringify(reducedGeojson, null, 2));
 
   console.error(`\n=== TOTALS ===`);
   console.error(`Part 1: ${part1.totalDistanceKm} km, ${part1.totalDurationHrs} hrs driving (${part1.segments.length} segments)`);
@@ -830,10 +933,11 @@ async function buildRoute() {
   console.error(`Part 6: ${part6.totalDistanceKm} km, ${part6.totalDurationHrs} hrs driving (${part6.segments.length} segments)`);
   console.error(`Part 7: ${part7.totalDistanceKm} km, ${part7.totalDurationHrs} hrs driving (${part7.segments.length} segments)`);
   console.error(`Part 8: ${part8.totalDistanceKm} km, ${part8.totalDurationHrs} hrs driving (${part8.segments.length} segments)`);
-  const totalKm = part1.totalDistanceKm + part2.totalDistanceKm + part3.totalDistanceKm + part4.totalDistanceKm + part5.totalDistanceKm + part6.totalDistanceKm + part7.totalDistanceKm + part8.totalDistanceKm;
-  const totalHrs = parseFloat(part1.totalDurationHrs) + parseFloat(part2.totalDurationHrs) + parseFloat(part3.totalDurationHrs) + parseFloat(part4.totalDurationHrs) + parseFloat(part5.totalDurationHrs) + parseFloat(part6.totalDurationHrs) + parseFloat(part7.totalDurationHrs) + parseFloat(part8.totalDurationHrs);
+  console.error(`Part 9: ${part9.totalDistanceKm} km, ${part9.totalDurationHrs} hrs driving (${part9.segments.length} segments)`);
+  const totalKm = part1.totalDistanceKm + part2.totalDistanceKm + part3.totalDistanceKm + part4.totalDistanceKm + part5.totalDistanceKm + part6.totalDistanceKm + part7.totalDistanceKm + part8.totalDistanceKm + part9.totalDistanceKm;
+  const totalHrs = parseFloat(part1.totalDurationHrs) + parseFloat(part2.totalDurationHrs) + parseFloat(part3.totalDurationHrs) + parseFloat(part4.totalDurationHrs) + parseFloat(part5.totalDurationHrs) + parseFloat(part6.totalDurationHrs) + parseFloat(part7.totalDurationHrs) + parseFloat(part8.totalDurationHrs) + parseFloat(part9.totalDurationHrs);
   console.error(`TOTAL: ${totalKm} km, ${totalHrs.toFixed(1)} hrs driving`);
-  console.error(`\nWrote ${part1.totalCoords.length + part2.totalCoords.length + part3.totalCoords.length + part4.totalCoords.length + part5.totalCoords.length + part6.totalCoords.length + part7.totalCoords.length + part8.totalCoords.length} coordinates to data/planned-route.geojson`);
+  console.error(`\nWrote ${part1.totalCoords.length + part2.totalCoords.length + part3.totalCoords.length + part4.totalCoords.length + part5.totalCoords.length + part6.totalCoords.length + part7.totalCoords.length + part8.totalCoords.length + part9.totalCoords.length} coordinates to data/planned-route.geojson`);
 }
 
 buildRoute();

@@ -6,10 +6,10 @@
 
 |   |   |
 |---|---|
-| **Duration** | 105 days (52 driving days) |
-| **Distance** | ~8,500 km driving |
+| **Duration** | 113 days (56 driving days) |
+| **Distance** | ~9,000 km driving |
 | **Countries** | 8 (Panama, Costa Rica, Nicaragua, Honduras, El Salvador, Guatemala, Belize, Mexico) |
-| **Route** | Panama City → Oaxaca |
+| **Route** | Panama City → Oaxaca (via Oaxaca Coast & Highway 175) |
 
 ---
 
@@ -37,7 +37,7 @@
 > San Ignacio → Caye Caulker → Placencia
 
 > **Mexico (Yucatán & South)**
-> Bacalar → Tulum → Chichén Itzá → Mérida → Campeche → Palenque → San Cristóbal → Oaxaca
+> Bacalar → Tulum → Chichén Itzá → Mérida → Campeche → Palenque → San Cristóbal → Tehuantepec → Huatulco Coast → Juquila → Highway 175 → Oaxaca
 
 ---
 
@@ -349,7 +349,7 @@ Pick up car, drive south to Placencia Peninsula. Beaches, Cockscomb Basin jaguar
 
 ---
 
-## Part 8: Mexico — Yucatán & South (22 days)
+## Part 8: Mexico — Yucatán & South (30 days)
 
 ### Day 84: Cross to Mexico
 Drive from Placencia through Belize, cross at Chetumal.
@@ -421,14 +421,49 @@ Highland colonial town. Indigenous villages, markets, mountain scenery.
 | **Distance** | 220 km |
 | **Highlights** | San Cristóbal, Chamula village, highland cool weather |
 
-### Days 103-105: Oaxaca
-Final drive to Oaxaca. Arrive, explore — Monte Albán, mezcal, markets.
+### Day 103: Santo Domingo Tehuantepec
+Drive across the Isthmus of Tehuantepec to the coast.
+
+| | |
+|---|---|
+| **Sleep** | Santo Domingo Tehuantepec |
+| **Distance** | 280 km |
+| **Highlights** | Zapotec culture, historic isthmus crossing |
+
+### Days 104-105: Huatulco Coast (Barra de Copalita)
+Pacific coast beaches. Barra de Copalita, Bahías de Huatulco National Park.
+
+| | |
+|---|---|
+| **Sleep** | Huatulco |
+| **Distance** | 150 km |
+| **Highlights** | Nine bays, snorkeling, waterfalls, Pacific beaches |
+
+### Days 106-107: Santa Catarina Juquila
+Mountain detour to famous pilgrimage site. Virgin of Juquila shrine in the Sierra Sur.
+
+| | |
+|---|---|
+| **Sleep** | Juquila |
+| **Distance** | 120 km (mountain roads) |
+| **Highlights** | Pilgrimage town, Sierra Sur mountains, cloud forest |
+
+### Days 108-110: Highway 175 to Oaxaca
+Scenic mountain highway through the Sierra Sur. Stop in Miahuatlán, arrive Oaxaca.
 
 | | |
 |---|---|
 | **Sleep** | Oaxaca City |
-| **Distance** | 450 km |
-| **Highlights** | Oaxaca centro, Monte Albán (UNESCO), mezcal distilleries |
+| **Distance** | 230 km |
+| **Highlights** | Highway 175 (one of Mexico's most scenic drives), mezcal country |
+
+### Days 111-113: Oaxaca
+Explore Oaxaca — Monte Albán, mezcal, markets, gastronomy.
+
+| | |
+|---|---|
+| **Sleep** | Oaxaca City |
+| **Highlights** | Oaxaca centro, Monte Albán (UNESCO), mezcal distilleries, markets |
 
 ---
 
@@ -443,8 +478,8 @@ Final drive to Oaxaca. Arrive, explore — Monte Albán, mezcal, markets.
 | El Salvador | 7 | 620 km | Ruta de las Flores, El Tunco |
 | Guatemala | 18 | 715 km | Antigua, Lake Atitlán, Tikal, Semuc Champey |
 | Belize | 10 | 320 km | ATM Cave, Caye Caulker, Placencia |
-| Mexico | 22 | 1,750 km | Bacalar, Tulum, Chichén Itzá, Palenque, Oaxaca |
-| **Total** | **105** | **~6,375 km** | |
+| Mexico | 30 | 2,500 km | Yucatán, Palenque, Oaxaca Coast, Highway 175 |
+| **Total** | **113** | **~7,125 km** | |
 
 ---
 

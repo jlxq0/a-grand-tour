@@ -137,9 +137,9 @@ After Trip 3, Starlink covers everything.
 |5|Nov 2028–Jan 2029|Australia|57|🇦🇺|
 |6|Feb–Apr 2029|New Zealand|70|🇳🇿|
 |7|Feb–Jun 2030|Chile → Argentina → Brazil → Bolivia → Peru → Colombia|110|🇨🇱🇦🇷🇺🇾🇧🇷🇧🇴🇵🇪🇪🇨🇨🇴|
-|8|Jul–Oct 2030|Panama → Central America → Mexico|105|🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹🇧🇿🇲🇽|
-|9|Feb–May 2031|Mexico (Oaxaca → Copper Canyon)|100|🇲🇽|
-|10|Sep–Dec 2031|Mexico → USA Southwest|100|🇲🇽🇺🇸|
+|8|Jul–Nov 2030|Panama → Central America → Mexico (Oaxaca)|113|🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹🇧🇿🇲🇽|
+|9|Feb–Apr 2031|Mexico Pacific Coast → Copper Canyon → Baja → LA|63|🇲🇽🇺🇸|
+|10|Sep–Dec 2031|USA Southwest (LA → Texas → San Diego)|100|🇺🇸|
 |11|Dec 2032–Mar 2033|USA Midwest + East + Canada|115|🇺🇸🇨🇦|
 |12|Jul–Oct 2033|Canada → Alaska|117|🇨🇦🇺🇸|
 |13|Feb–May 2034|UK → Ireland → Western Europe → Switzerland|108|🇬🇧🇮🇪🇫🇷🇧🇪🇳🇱🇱🇺🇨🇭🇩🇪|
@@ -315,7 +315,7 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |6|Auckland|🟢 SIA direct|10h 30m|
 |7|Cartagena|🟡 Star Alliance via MIA|United to Miami (3h), SIA home (20h). ~25h|
 |8|Oaxaca|🟡 Star Alliance via MEX|Oaxaca → Mexico City (1h), SIA home via LAX (18h). ~21h|
-|9|Los Mochis|🟡 Star Alliance via MEX|Los Mochis → Mexico City (2h), SIA home via NRT (18h). ~22h|
+|9|Los Angeles|🟢 SIA direct|LAX → SIN (17h direct)|
 |10|Los Angeles|🟢 SIA direct|SQ via Tokyo (15h)|
 |11|Minneapolis|🟡 Star Alliance via SFO|United to San Francisco (4h), SIA home (16h). ~22h|
 |12|Seattle|🟢 SIA direct|16h (SQ28)|
@@ -548,9 +548,9 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 ---
 
-## Trip 8: Panama → Central America → Mexico
+## Trip 8: Panama → Central America → Mexico (Oaxaca)
 
-**Jul–Oct 2030 (15 weeks)**
+**Jul–Nov 2030 (16 weeks)**
 
 |Country|Days|Highlights|
 |---|---|---|
@@ -561,11 +561,11 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |🇸🇻 El Salvador|7|Ruta de las Flores, El Tunco|
 |🇬🇹 Guatemala|18|Antigua, Lake Atitlán, Semuc Champey, Tikal|
 |🇧🇿 Belize|10|ATM Cave, Caye Caulker, Placencia|
-|🇲🇽 Mexico|22|Bacalar, Tulum, Chichén Itzá, Mérida, Palenque, San Cristóbal, Oaxaca|
+|🇲🇽 Mexico|30|Yucatán, Palenque, San Cristóbal, Oaxaca Coast (Huatulco, Juquila), Highway 175 to Oaxaca|
 
-**105 days / 8 countries / ~6,400 km**
+**113 days / 8 countries / ~7,100 km**
 
-**Weather:** Jul–Oct = mostly dry, some late-season rain on Caribbean coasts.
+**Weather:** Jul–Nov = dry season start, some late-season rain on Caribbean coasts.
 
 **Store:** Oaxaca
 **Fly home:** Oaxaca → Mexico City (SIA via Tokyo or LAX)
@@ -578,53 +578,53 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 ---
 
-## Trip 9: Mexico (Oaxaca to Copper Canyon)
+## Trip 9: Oaxaca → Pacific Coast → Copper Canyon → Baja → Los Angeles
 
-**Feb–May 2031 (14 weeks)**
+**Feb–Apr 2031 (9 weeks)**
 
 |Region|Days|Highlights|
 |---|---|---|
-|🇲🇽 Oaxaca|7|Pick up Oaxaca, Monte Albán, mezcal, Hierve el Agua|
-|🇲🇽 Mexico City|10|CDMX, Teotihuacán, Xochimilco, museums|
-|🇲🇽 Central|14|Puebla, Guanajuato, San Miguel de Allende, Querétaro|
-|🇲🇽 West|14|Guadalajara, Tequila, Puerto Vallarta, Sayulita|
-|🇲🇽 Baja Sur|21|Ferry to La Paz, Cabo, Loreto, whale watching|
-|🇲🇽 Baja Norte|14|Guerrero Negro, San Ignacio, Valle de Guadalupe, Ensenada|
-|🇲🇽 Northwest|20|Copper Canyon (Barrancas del Cobre), Creel, El Fuerte|
+|🇲🇽 Central Mexico|10|Oaxaca → Puebla → Mexico City → Teotihuacan|
+|🇲🇽 Pacific Coast|18|Highway 200: Acapulco → Zihuatanejo → Manzanillo → Puerto Vallarta → Mazatlán|
+|🇲🇽 Copper Canyon|14|Devil's Backbone, Durango, Barrancas del Cobre, Creel, Divisadero|
+|🇲🇽 Baja California|16|Ferry Topolobampo → La Paz, Loreto, San Ignacio, Ensenada, Tijuana|
+|🇺🇸 California|6|San Diego, Los Angeles|
 
-**100 days / 1 country / ~7,500 km**
+**63 days / 2 countries / ~5,000 km + ferry**
 
-**Weather:** Feb–May = dry season, perfect for Baja and northwest.
+**Weather:** Feb–Apr = dry season, perfect for Pacific coast and Baja.
 
-**Store:** Los Mochis (near Copper Canyon)
-**Fly home:** Los Mochis → Mexico City (ANA via Tokyo)
+**Store:** Los Angeles
+**Fly home:** LAX → Singapore (SIA direct, 17h)
 
----
-
-## 🏠 HOME: Jun–Aug 2031 (3 months)
+[📍 Detailed Itinerary →](TRIP09.md)
 
 ---
 
-## Trip 10: Northern Mexico → USA Southwest
+## 🏠 HOME: May–Aug 2031 (4 months)
+
+---
+
+## Trip 10: USA Southwest
 
 **Sep–Dec 2031 (14 weeks)**
 
 |Region|Days|Highlights|
 |---|---|---|
-|🇲🇽 Northwest|7|Pick up Los Mochis, Mazatlán, drive to border|
+|🇺🇸 California|3|Pick up Los Angeles|
 |🇺🇸 Arizona|14|Tucson, Saguaro NP, Phoenix, Sedona, Grand Canyon|
 |🇺🇸 Utah|21|Zion, Bryce, Capitol Reef, Grand Staircase, Arches, Canyonlands, Moab|
 |🇺🇸 Colorado|14|Mesa Verde, Durango, Telluride, Rocky Mountain NP, Denver|
 |🇺🇸 New Mexico|14|Santa Fe, Taos, White Sands, Carlsbad Caverns|
-|🇺🇸 Texas|14|Big Bend, Marfa, Austin, San Antonio|
-|🇺🇸 Nevada/California|16|Las Vegas, Death Valley, Joshua Tree, Los Angeles, San Diego|
+|🇺🇸 Texas|20|Big Bend, Marfa, Austin, San Antonio, Houston|
+|🇺🇸 Nevada/California|14|Las Vegas, Death Valley, Joshua Tree, San Diego|
 
-**100 days / 2 countries / ~10,000 km**
+**100 days / 1 country / ~9,000 km**
 
 **Weather:** Sep–Dec = perfect for Southwest. Shoulder season crowds.
 
-**Store:** Los Angeles or San Diego
-**Fly home:** Los Angeles (SIA direct via Tokyo)
+**Store:** San Diego
+**Fly home:** Los Angeles or San Diego (SIA direct via Tokyo)
 
 ---
 
