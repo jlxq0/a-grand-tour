@@ -1132,8 +1132,78 @@ async function buildRoute() {
     };
   }
 
-  const reducedGeojson = reduceGeojsonPrecision(geojson);
-  fs.writeFileSync('data/planned-route.geojson', JSON.stringify(reducedGeojson, null, 2));
+  // Write individual trip files
+  const tripParts = [
+    { part: part1, num: 1, name: "Trip 1a: Dubai to Bandar Abbas", desc: "Dubai → Oman → Saudi → Qatar → Bahrain → Kuwait → Iraq → Iran" },
+    { part: part2, num: 2, name: "Trip 1b: Karachi to Chittagong", desc: "Pakistan → India → Nepal → Bangladesh" },
+    { part: part3, num: 3, name: "Trip 3: Bangkok to Johor Bahru", desc: "Thailand → Laos → Vietnam → Cambodia → Malaysia" },
+    { part: part4, num: 4, name: "Trip 4: JB to Dili", desc: "Indonesia → Timor-Leste" },
+    { part: part5, num: 5, name: "Trip 5: Darwin to Townsville", desc: "Australia" },
+    { part: part6, num: 6, name: "Trip 6: Auckland to Christchurch", desc: "New Zealand" },
+    { part: part7, num: 7, name: "Trip 7: Valparaíso to Cartagena", desc: "South America" },
+    { part: part8, num: 8, name: "Trip 8: Panama to Oaxaca", desc: "Central America & Mexico" },
+    { part: part9, num: 9, name: "Trip 9: Oaxaca to Los Angeles", desc: "Mexico Pacific Coast & Baja" },
+    { part: part10, num: 10, name: "Trip 10: Los Angeles to Houston", desc: "California, Southwest, Texas" },
+    { part: part11, num: 11, name: "Trip 11: Houston to Toronto", desc: "Rockies, Alaska, Trans-Canada" },
+    { part: part12, num: 12, name: "Trip 12: Toronto to Jacksonville", desc: "Atlantic Canada, East Coast, Florida" }
+  ];
+
+  // Create routes directory if it doesn't exist
+  if (!fs.existsSync('data/routes')) {
+    fs.mkdirSync('data/routes', { recursive: true });
+  }
+
+  for (const trip of tripParts) {
+    const tripGeojson = {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: {
+            name: trip.name,
+            part: trip.num,
+            type: "summary",
+            description: trip.desc,
+            totalDistanceKm: trip.part.totalDistanceKm,
+            totalDurationHrs: parseFloat(trip.part.totalDurationHrs),
+            segmentCount: trip.part.segments.length
+          },
+          geometry: {
+            type: "LineString",
+            coordinates: trip.part.totalCoords
+          }
+        },
+        ...trip.part.segments
+      ]
+    };
+    const reduced = reduceGeojsonPrecision(tripGeojson);
+    const filename = `data/routes/trip-${String(trip.num).padStart(2, '0')}.geojson`;
+    fs.writeFileSync(filename, JSON.stringify(reduced, null, 2));
+    console.error(`Wrote ${filename} (${trip.part.totalCoords.length} coords)`);
+  }
+
+  // Also write combined file for backwards compatibility (but smaller - summary only)
+  const summaryGeojson = {
+    type: "FeatureCollection",
+    features: tripParts.map(trip => ({
+      type: "Feature",
+      properties: {
+        name: trip.name,
+        part: trip.num,
+        type: "summary",
+        description: trip.desc,
+        totalDistanceKm: trip.part.totalDistanceKm,
+        totalDurationHrs: parseFloat(trip.part.totalDurationHrs)
+      },
+      geometry: {
+        type: "LineString",
+        coordinates: trip.part.totalCoords
+      }
+    }))
+  };
+  const reducedSummary = reduceGeojsonPrecision(summaryGeojson);
+  fs.writeFileSync('data/planned-route.geojson', JSON.stringify(reducedSummary, null, 2));
+  console.error(`Wrote data/planned-route.geojson (summary only)`);
 
   console.error(`\n=== TOTALS ===`);
   console.error(`Part 1: ${part1.totalDistanceKm} km, ${part1.totalDurationHrs} hrs driving (${part1.segments.length} segments)`);

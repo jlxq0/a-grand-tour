@@ -1508,8 +1508,14 @@ async function addDataLayers() {
         });
     });
 
-    // Load planned route
-    fetch('data/planned-route.geojson').then(r => r.json()).then(data => {
+    // Load planned route (individual trip files)
+    const tripFiles = Array.from({length: 12}, (_, i) => `data/routes/trip-${String(i + 1).padStart(2, '0')}.geojson`);
+    Promise.all(tripFiles.map(f => fetch(f).then(r => r.json()))).then(trips => {
+        // Combine all trip features into one collection
+        const data = {
+            type: 'FeatureCollection',
+            features: trips.flatMap(t => t.features)
+        };
         routeData = data; // Store globally for segment lookup
         map.addSource('planned-route', { type: 'geojson', data });
 
@@ -1546,7 +1552,13 @@ async function addDataLayers() {
             3: { name: 'Trip 3', page: 'trip03', subtitle: 'Bangkok → Singapore' },
             4: { name: 'Trip 4', page: 'trip04', subtitle: 'Singapore → Dili' },
             5: { name: 'Trip 5', page: 'trip05', subtitle: 'Darwin → Townsville' },
-            6: { name: 'Trip 6', page: 'trip06', subtitle: 'Auckland → Christchurch' }
+            6: { name: 'Trip 6', page: 'trip06', subtitle: 'Auckland → Christchurch' },
+            7: { name: 'Trip 7', page: 'trip07', subtitle: 'Valparaíso → Cartagena' },
+            8: { name: 'Trip 8', page: 'trip08', subtitle: 'Panama → Oaxaca' },
+            9: { name: 'Trip 9', page: 'trip09', subtitle: 'Oaxaca → Los Angeles' },
+            10: { name: 'Trip 10', page: 'trip10', subtitle: 'Los Angeles → Houston' },
+            11: { name: 'Trip 11', page: 'trip11', subtitle: 'Houston → Toronto' },
+            12: { name: 'Trip 12', page: 'trip12', subtitle: 'Toronto → Jacksonville' }
         };
 
         // Map Trip 1 segment indices to day numbers
