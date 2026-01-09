@@ -1013,7 +1013,12 @@ let allRoutesData = null;
 const pages = {
     '': { file: 'README.md', title: 'Overview', short: 'Overview', isTrip: false },
     'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi', short: 'Trip 1', route: 'Dubai → Delhi', isTrip: true },
-    'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong', short: 'Trip 2', route: 'Delhi → Chittagong', isTrip: true }
+    'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong', short: 'Trip 2', route: 'Delhi → Chittagong', isTrip: true },
+    'trip03': { file: 'TRIP03.md', title: 'Trip 3: Bangkok to Singapore', short: 'Trip 3', route: 'Bangkok → Singapore', isTrip: true },
+    'trip04': { file: 'TRIP04.md', title: 'Trip 4: Singapore to Dili', short: 'Trip 4', route: 'Singapore → Dili', isTrip: true },
+    'trip05': { file: 'TRIP05.md', title: 'Trip 5: Darwin to Townsville', short: 'Trip 5', route: 'Darwin → Townsville', isTrip: true },
+    'trip06': { file: 'TRIP06.md', title: 'Trip 6: Auckland to Christchurch', short: 'Trip 6', route: 'Auckland → Christchurch', isTrip: true },
+    'trip07': { file: 'TRIP07.md', title: 'Trip 7: Valparaíso to Cartagena', short: 'Trip 7', route: 'Valparaíso → Cartagena', isTrip: true }
 };
 
 let currentPage = null;
@@ -1532,7 +1537,11 @@ async function addDataLayers() {
         // Map part numbers to trip info
         const tripInfo = {
             1: { name: 'Trip 1', page: 'trip01', subtitle: 'Dubai → Delhi' },
-            2: { name: 'Trip 2', page: 'trip02', subtitle: 'Delhi → Chittagong' }
+            2: { name: 'Trip 2', page: 'trip02', subtitle: 'Delhi → Chittagong' },
+            3: { name: 'Trip 3', page: 'trip03', subtitle: 'Bangkok → Singapore' },
+            4: { name: 'Trip 4', page: 'trip04', subtitle: 'Singapore → Dili' },
+            5: { name: 'Trip 5', page: 'trip05', subtitle: 'Darwin → Townsville' },
+            6: { name: 'Trip 6', page: 'trip06', subtitle: 'Auckland → Christchurch' }
         };
 
         // Map Trip 1 segment indices to day numbers

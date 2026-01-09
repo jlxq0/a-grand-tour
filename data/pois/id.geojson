@@ -120,6 +120,19 @@
         "description": "Dramatic island near Bali with T-Rex cliff formation and pristine diving"
       },
       "geometry": { "type": "Point", "coordinates": [115.5500, -8.7333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MM Villa",
+        "country": "Indonesia",
+        "countryCode": "ID",
+        "category": "accommodation",
+        "rating": 5,
+        "description": "The most beautiful home with the most beautiful people in Canggu, near the best padel clubs",
+        "website": "https://maps.app.goo.gl/9oFoEmm8dPaHi98W9"
+      },
+      "geometry": { "type": "Point", "coordinates": [115.1480737, -8.6263497] }
     }
   ]
 }

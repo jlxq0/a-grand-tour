@@ -1,4 +1,4 @@
-# Trip 02: Delhi to Chittagong
+# Trip 2: Delhi to Chittagong
 
 <div class="trip-stats">
 

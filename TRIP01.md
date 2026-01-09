@@ -1,4 +1,4 @@
-# Trip 01: Dubai to Delhi
+# Trip 1: Dubai to Delhi
 
 <div class="trip-stats">
 
