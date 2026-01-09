@@ -1020,7 +1020,10 @@ const pages = {
     'trip06': { file: 'TRIP06.md', title: 'Trip 6: Auckland to Christchurch', short: 'Trip 6', route: 'Auckland → Christchurch', isTrip: true },
     'trip07': { file: 'TRIP07.md', title: 'Trip 7: Valparaíso to Cartagena', short: 'Trip 7', route: 'Valparaíso → Cartagena', isTrip: true },
     'trip08': { file: 'TRIP08.md', title: 'Trip 8: Panama to Oaxaca', short: 'Trip 8', route: 'Panama → Oaxaca', isTrip: true },
-    'trip09': { file: 'TRIP09.md', title: 'Trip 9: Oaxaca to Los Angeles', short: 'Trip 9', route: 'Oaxaca → Los Angeles', isTrip: true }
+    'trip09': { file: 'TRIP09.md', title: 'Trip 9: Oaxaca to Los Angeles', short: 'Trip 9', route: 'Oaxaca → Los Angeles', isTrip: true },
+    'trip10': { file: 'TRIP10.md', title: 'Trip 10: Los Angeles to Houston', short: 'Trip 10', route: 'Los Angeles → Houston', isTrip: true },
+    'trip11': { file: 'TRIP11.md', title: 'Trip 11: Houston to Toronto', short: 'Trip 11', route: 'Houston → Toronto', isTrip: true },
+    'trip12': { file: 'TRIP12.md', title: 'Trip 12: Toronto to Jacksonville', short: 'Trip 12', route: 'Toronto → Jacksonville', isTrip: true }
 };
 
 let currentPage = null;
@@ -1493,7 +1496,7 @@ async function addDataLayers() {
 
     // Load shipping
     const shippingFiles = ['auckland-valparaiso.geojson', 'bandar-abbas-karachi.geojson', 'brisbane-auckland.geojson',
-        'chittagong-laem-chabang.geojson', 'darien-gap.geojson', 'jb-jakarta.geojson', 'seattle-southampton.geojson'];
+        'chittagong-laem-chabang.geojson', 'darien-gap.geojson', 'jb-jakarta.geojson', 'jacksonville-southampton.geojson'];
     Promise.all(shippingFiles.map(f => fetch(`data/shipping/${f}`).then(r => r.json()))).then(results => {
         const allShipping = { type: 'FeatureCollection', features: results.flatMap(r => r.features || [r]) };
         map.addSource('shipping', { type: 'geojson', data: allShipping });

@@ -587,6 +587,154 @@ const waypointsPart9 = [
   { name: "Los Angeles", coords: [-118.2437, 34.0522] }
 ];
 
+// Trip 10: Los Angeles to Houston (California, Southwest, Texas, ~100 days)
+const waypointsPart10 = [
+  // California
+  { name: "Los Angeles", coords: [-118.2437, 34.0522] },
+  { name: "Joshua Tree", coords: [-116.3131, 33.8734] },
+  { name: "Death Valley (Furnace Creek)", coords: [-116.8745, 36.4580] },
+  { name: "Sequoia (General Sherman)", coords: [-118.5551, 36.5819] },
+  { name: "Yosemite Valley", coords: [-119.5383, 37.7456] },
+  { name: "San Francisco", coords: [-122.4194, 37.7749] },
+  { name: "Big Sur (Bixby Bridge)", coords: [-121.9017, 36.3714] },
+  { name: "Santa Barbara", coords: [-119.6982, 34.4208] },
+  { name: "Los Angeles (return)", coords: [-118.2437, 34.0522] },
+  // Route 66 through California & Arizona
+  { name: "Barstow", coords: [-117.0228, 34.8958] },
+  { name: "Kingman", coords: [-114.0530, 35.1894] },
+  { name: "Seligman", coords: [-112.8767, 35.3250] },
+  { name: "Flagstaff", coords: [-111.6513, 35.1983] },
+  // Grand Canyon & Utah Parks
+  { name: "Grand Canyon (South Rim)", coords: [-112.1401, 36.0544] },
+  { name: "Page (Horseshoe Bend)", coords: [-111.5085, 36.8753] },
+  { name: "Monument Valley", coords: [-110.0985, 36.9980] },
+  { name: "Moab (Arches)", coords: [-109.5498, 38.5733] },
+  { name: "Capitol Reef", coords: [-111.1617, 38.2972] },
+  { name: "Bryce Canyon", coords: [-112.1871, 37.5930] },
+  { name: "Zion (Springdale)", coords: [-112.9988, 37.1889] },
+  // Colorado & New Mexico
+  { name: "Mesa Verde", coords: [-108.4618, 37.1838] },
+  { name: "Silverton", coords: [-107.6642, 37.8117] },
+  { name: "Million Dollar Highway (Ouray)", coords: [-107.6714, 38.0228] },
+  { name: "Telluride", coords: [-107.8123, 37.9375] },
+  { name: "Durango", coords: [-107.8801, 37.2753] },
+  { name: "Santa Fe", coords: [-105.9378, 35.6870] },
+  { name: "Albuquerque", coords: [-106.6504, 35.0844] },
+  { name: "White Sands", coords: [-106.1712, 32.7872] },
+  { name: "Carlsbad Caverns", coords: [-104.5567, 32.1479] },
+  // Texas
+  { name: "Big Bend (Terlingua)", coords: [-103.6168, 29.3197] },
+  { name: "Marfa", coords: [-104.0214, 30.3087] },
+  { name: "Guadalupe Mountains", coords: [-104.8606, 31.8912] },
+  { name: "Austin", coords: [-97.7431, 30.2672] },
+  { name: "San Antonio", coords: [-98.4936, 29.4241] },
+  { name: "Fredericksburg", coords: [-98.8720, 30.2752] },
+  { name: "Houston", coords: [-95.3698, 29.7604] }
+];
+
+// Trip 11: Houston to Toronto (Great Plains, Rockies, Pacific Northwest, Alaska, Trans-Canada, ~115 days)
+const waypointsPart11 = [
+  // Great Plains & Rockies
+  { name: "Houston (departure)", coords: [-95.3698, 29.7604] },
+  { name: "Amarillo (Cadillac Ranch)", coords: [-101.8313, 35.2220] },
+  { name: "Oklahoma City", coords: [-97.5164, 35.4676] },
+  { name: "Kansas City", coords: [-94.5786, 39.0997] },
+  { name: "Rapid City", coords: [-103.2310, 44.0805] },
+  { name: "Badlands NP", coords: [-102.3397, 43.8554] },
+  { name: "Mount Rushmore", coords: [-103.4591, 43.8791] },
+  { name: "Devils Tower", coords: [-104.7145, 44.5902] },
+  { name: "Yellowstone (Old Faithful)", coords: [-110.8281, 44.4605] },
+  { name: "Grand Teton (Jackson)", coords: [-110.7624, 43.4799] },
+  { name: "Beartooth Highway", coords: [-109.4378, 45.0156] },
+  { name: "Glacier NP (Logan Pass)", coords: [-113.7870, 48.6967] },
+  // Pacific Northwest
+  { name: "Seattle", coords: [-122.3321, 47.6062] },
+  { name: "Olympic NP (Hoh)", coords: [-123.9346, 47.8607] },
+  { name: "Vancouver", coords: [-123.1207, 49.2827] },
+  { name: "Whistler", coords: [-122.9574, 50.1163] },
+  // Canadian Rockies
+  { name: "Calgary", coords: [-114.0719, 51.0447] },
+  { name: "Banff", coords: [-115.5708, 51.1784] },
+  { name: "Lake Louise", coords: [-116.2156, 51.4254] },
+  { name: "Yoho NP (Field)", coords: [-116.4875, 51.3980] },
+  { name: "Icefields Parkway", coords: [-117.2269, 52.2191] },
+  { name: "Jasper", coords: [-118.0814, 52.8737] },
+  // Alaska Highway
+  { name: "Prince George", coords: [-122.7497, 53.9171] },
+  { name: "Dawson Creek (Mile Zero)", coords: [-120.2377, 55.7596] },
+  { name: "Watson Lake", coords: [-128.7097, 60.0631] },
+  { name: "Whitehorse", coords: [-135.0568, 60.7212] },
+  { name: "Dawson City", coords: [-139.4320, 64.0601] },
+  // Alaska
+  { name: "Tok", coords: [-142.9856, 63.3367] },
+  { name: "Fairbanks", coords: [-147.7164, 64.8378] },
+  { name: "Denali NP", coords: [-150.5039, 63.1148] },
+  { name: "Anchorage", coords: [-149.9003, 61.2181] },
+  { name: "Seward (Kenai Fjords)", coords: [-149.4421, 60.1042] },
+  // Return via Trans-Canada
+  { name: "Tok (return)", coords: [-142.9856, 63.3367] },
+  { name: "Whitehorse (return)", coords: [-135.0568, 60.7212] },
+  { name: "Dawson Creek (return)", coords: [-120.2377, 55.7596] },
+  { name: "Edmonton", coords: [-113.4938, 53.5461] },
+  { name: "Saskatoon", coords: [-106.6700, 52.1332] },
+  { name: "Winnipeg", coords: [-97.1384, 49.8951] },
+  { name: "Thunder Bay", coords: [-89.2477, 48.3809] },
+  { name: "Sault Ste. Marie", coords: [-84.3358, 46.5219] },
+  { name: "Sudbury", coords: [-81.0112, 46.4917] },
+  { name: "Muskoka", coords: [-79.3878, 45.0032] },
+  { name: "Toronto", coords: [-79.3832, 43.6532] }
+];
+
+// Trip 12: Toronto to Jacksonville (Atlantic Canada, US East Coast, Florida, ~117 days)
+const waypointsPart12 = [
+  // Eastern Canada
+  { name: "Toronto (departure)", coords: [-79.3832, 43.6532] },
+  { name: "Montreal", coords: [-73.5673, 45.5017] },
+  { name: "Quebec City", coords: [-71.2080, 46.8139] },
+  { name: "Percé (Gaspé)", coords: [-64.2165, 48.5234] },
+  { name: "Moncton (Fundy)", coords: [-64.7782, 46.0878] },
+  { name: "Charlottetown (PEI)", coords: [-63.1311, 46.2382] },
+  { name: "Halifax", coords: [-63.5752, 44.6488] },
+  { name: "Cape Breton (Cabot Trail)", coords: [-60.7500, 46.8167] },
+  // Newfoundland
+  { name: "Port aux Basques (ferry)", coords: [-59.1361, 47.5719] },
+  { name: "Gros Morne NP", coords: [-57.8097, 49.5980] },
+  { name: "St. John's", coords: [-52.7126, 47.5615] },
+  // US Northeast
+  { name: "Bar Harbor (Acadia)", coords: [-68.2039, 44.3876] },
+  { name: "Portland (Maine)", coords: [-70.2553, 43.6591] },
+  { name: "Boston", coords: [-71.0589, 42.3601] },
+  { name: "Cape Cod (Provincetown)", coords: [-70.1787, 42.0629] },
+  { name: "New York City", coords: [-74.0060, 40.7128] },
+  { name: "Philadelphia", coords: [-75.1652, 39.9526] },
+  { name: "Washington DC", coords: [-77.0369, 38.9072] },
+  { name: "Shenandoah NP", coords: [-78.4679, 38.4755] },
+  // Blue Ridge & Appalachians
+  { name: "Blue Ridge Parkway (Roanoke)", coords: [-79.9414, 37.2710] },
+  { name: "Asheville", coords: [-82.5515, 35.5951] },
+  { name: "Great Smoky Mountains", coords: [-83.5070, 35.6532] },
+  { name: "Nashville", coords: [-86.7816, 36.1627] },
+  // Natchez Trace
+  { name: "Tupelo", coords: [-88.7034, 34.2576] },
+  { name: "Natchez", coords: [-91.4032, 31.5604] },
+  { name: "New Orleans", coords: [-90.0715, 29.9511] },
+  // Gulf Coast & Florida
+  { name: "Mobile", coords: [-88.0399, 30.6954] },
+  { name: "Pensacola", coords: [-87.2169, 30.4213] },
+  { name: "Tallahassee", coords: [-84.2807, 30.4383] },
+  { name: "Gainesville", coords: [-82.3248, 29.6516] },
+  { name: "Orlando", coords: [-81.3792, 28.5383] },
+  { name: "Tampa", coords: [-82.4572, 27.9506] },
+  { name: "Fort Myers", coords: [-81.8723, 26.6406] },
+  { name: "Everglades", coords: [-80.9330, 25.2866] },
+  { name: "Miami", coords: [-80.1918, 25.7617] },
+  { name: "Key West", coords: [-81.7826, 24.5551] },
+  { name: "Miami (return)", coords: [-80.1918, 25.7617] },
+  { name: "Fort Lauderdale", coords: [-80.1373, 26.1224] },
+  { name: "St. Augustine", coords: [-81.3124, 29.9012] },
+  { name: "Jacksonville", coords: [-81.6557, 30.3322] }
+];
+
 async function fetchRoute(coords) {
   const coordString = coords.map(c => c.join(',')).join(';');
   const url = `https://router.project-osrm.org/route/v1/driving/${coordString}?overview=full&geometries=geojson`;
@@ -729,6 +877,15 @@ async function buildRoute() {
 
   console.error('\n=== Building Part 9: Oaxaca to Los Angeles (Pacific Coast, Copper Canyon, Baja) ===\n');
   const part9 = await buildRouteWithSegments(waypointsPart9, 'Part9', 9);
+
+  console.error('\n=== Building Part 10: Los Angeles to Houston (California, Southwest, Texas) ===\n');
+  const part10 = await buildRouteWithSegments(waypointsPart10, 'Part10', 10);
+
+  console.error('\n=== Building Part 11: Houston to Toronto (Rockies, Alaska, Trans-Canada) ===\n');
+  const part11 = await buildRouteWithSegments(waypointsPart11, 'Part11', 11);
+
+  console.error('\n=== Building Part 12: Toronto to Jacksonville (Atlantic Canada, East Coast, Florida) ===\n');
+  const part12 = await buildRouteWithSegments(waypointsPart12, 'Part12', 12);
 
   // Create GeoJSON with both summary lines and individual segments
   const geojson = {
@@ -887,6 +1044,57 @@ async function buildRoute() {
           coordinates: part9.totalCoords
         }
       },
+      // Summary line for Part 10
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 10: Los Angeles to Houston",
+          part: 10,
+          type: "summary",
+          description: "California Coast, Route 66, American Southwest (Utah's Mighty 5), Texas",
+          totalDistanceKm: part10.totalDistanceKm,
+          totalDurationHrs: parseFloat(part10.totalDurationHrs),
+          segmentCount: part10.segments.length
+        },
+        geometry: {
+          type: "LineString",
+          coordinates: part10.totalCoords
+        }
+      },
+      // Summary line for Part 11
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 11: Houston to Toronto",
+          part: 11,
+          type: "summary",
+          description: "Great Plains, Rocky Mountains, Pacific Northwest, Alaska Highway, Trans-Canada",
+          totalDistanceKm: part11.totalDistanceKm,
+          totalDurationHrs: parseFloat(part11.totalDurationHrs),
+          segmentCount: part11.segments.length
+        },
+        geometry: {
+          type: "LineString",
+          coordinates: part11.totalCoords
+        }
+      },
+      // Summary line for Part 12
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 12: Toronto to Jacksonville",
+          part: 12,
+          type: "summary",
+          description: "Eastern Canada, Newfoundland, US East Coast, Blue Ridge Parkway, Florida Keys",
+          totalDistanceKm: part12.totalDistanceKm,
+          totalDurationHrs: parseFloat(part12.totalDurationHrs),
+          segmentCount: part12.segments.length
+        },
+        geometry: {
+          type: "LineString",
+          coordinates: part12.totalCoords
+        }
+      },
       // Individual segments
       ...part1.segments,
       ...part2.segments,
@@ -896,7 +1104,10 @@ async function buildRoute() {
       ...part6.segments,
       ...part7.segments,
       ...part8.segments,
-      ...part9.segments
+      ...part9.segments,
+      ...part10.segments,
+      ...part11.segments,
+      ...part12.segments
     ]
   };
 
@@ -934,10 +1145,13 @@ async function buildRoute() {
   console.error(`Part 7: ${part7.totalDistanceKm} km, ${part7.totalDurationHrs} hrs driving (${part7.segments.length} segments)`);
   console.error(`Part 8: ${part8.totalDistanceKm} km, ${part8.totalDurationHrs} hrs driving (${part8.segments.length} segments)`);
   console.error(`Part 9: ${part9.totalDistanceKm} km, ${part9.totalDurationHrs} hrs driving (${part9.segments.length} segments)`);
-  const totalKm = part1.totalDistanceKm + part2.totalDistanceKm + part3.totalDistanceKm + part4.totalDistanceKm + part5.totalDistanceKm + part6.totalDistanceKm + part7.totalDistanceKm + part8.totalDistanceKm + part9.totalDistanceKm;
-  const totalHrs = parseFloat(part1.totalDurationHrs) + parseFloat(part2.totalDurationHrs) + parseFloat(part3.totalDurationHrs) + parseFloat(part4.totalDurationHrs) + parseFloat(part5.totalDurationHrs) + parseFloat(part6.totalDurationHrs) + parseFloat(part7.totalDurationHrs) + parseFloat(part8.totalDurationHrs) + parseFloat(part9.totalDurationHrs);
+  console.error(`Part 10: ${part10.totalDistanceKm} km, ${part10.totalDurationHrs} hrs driving (${part10.segments.length} segments)`);
+  console.error(`Part 11: ${part11.totalDistanceKm} km, ${part11.totalDurationHrs} hrs driving (${part11.segments.length} segments)`);
+  console.error(`Part 12: ${part12.totalDistanceKm} km, ${part12.totalDurationHrs} hrs driving (${part12.segments.length} segments)`);
+  const totalKm = part1.totalDistanceKm + part2.totalDistanceKm + part3.totalDistanceKm + part4.totalDistanceKm + part5.totalDistanceKm + part6.totalDistanceKm + part7.totalDistanceKm + part8.totalDistanceKm + part9.totalDistanceKm + part10.totalDistanceKm + part11.totalDistanceKm + part12.totalDistanceKm;
+  const totalHrs = parseFloat(part1.totalDurationHrs) + parseFloat(part2.totalDurationHrs) + parseFloat(part3.totalDurationHrs) + parseFloat(part4.totalDurationHrs) + parseFloat(part5.totalDurationHrs) + parseFloat(part6.totalDurationHrs) + parseFloat(part7.totalDurationHrs) + parseFloat(part8.totalDurationHrs) + parseFloat(part9.totalDurationHrs) + parseFloat(part10.totalDurationHrs) + parseFloat(part11.totalDurationHrs) + parseFloat(part12.totalDurationHrs);
   console.error(`TOTAL: ${totalKm} km, ${totalHrs.toFixed(1)} hrs driving`);
-  console.error(`\nWrote ${part1.totalCoords.length + part2.totalCoords.length + part3.totalCoords.length + part4.totalCoords.length + part5.totalCoords.length + part6.totalCoords.length + part7.totalCoords.length + part8.totalCoords.length + part9.totalCoords.length} coordinates to data/planned-route.geojson`);
+  console.error(`\nWrote ${part1.totalCoords.length + part2.totalCoords.length + part3.totalCoords.length + part4.totalCoords.length + part5.totalCoords.length + part6.totalCoords.length + part7.totalCoords.length + part8.totalCoords.length + part9.totalCoords.length + part10.totalCoords.length + part11.totalCoords.length + part12.totalCoords.length} coordinates to data/planned-route.geojson`);
 }
 
 buildRoute();

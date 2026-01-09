@@ -100,7 +100,7 @@ Jordan → Saudi Arabia → Dubai
 |Brisbane → Auckland|Pacific|$2,500|
 |Auckland → Valparaíso|Pacific|$5,000|
 |Cartagena → Panama|Darién Gap|$1,500|
-|Seattle → Southampton|Atlantic|$4,500|
+|Jacksonville → Southampton|Atlantic|$4,500|
 |Brazzaville → Kinshasa|Congo River crossing|$50|
 |**Total**||**$17,850**|
 
@@ -139,9 +139,9 @@ After Trip 3, Starlink covers everything.
 |7|Feb–Jun 2030|Chile → Argentina → Brazil → Bolivia → Peru → Colombia|110|🇨🇱🇦🇷🇺🇾🇧🇷🇧🇴🇵🇪🇪🇨🇨🇴|
 |8|Jul–Nov 2030|Panama → Central America → Mexico (Oaxaca)|113|🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹🇧🇿🇲🇽|
 |9|Feb–Apr 2031|Mexico Pacific Coast → Copper Canyon → Baja → LA|63|🇲🇽🇺🇸|
-|10|Sep–Dec 2031|USA Southwest (LA → Texas → San Diego)|100|🇺🇸|
-|11|Dec 2032–Mar 2033|USA Midwest + East + Canada|115|🇺🇸🇨🇦|
-|12|Jul–Oct 2033|Canada → Alaska|117|🇨🇦🇺🇸|
+|10|Sep–Dec 2031|California → Southwest → Texas (Houston)|100|🇺🇸|
+|11|Feb–Jun 2032|Houston → Rockies → Seattle → Vancouver → Alaska → Toronto|115|🇺🇸🇨🇦|
+|12|Jul–Nov 2032|Toronto → Atlantic Canada → US East Coast → Florida → Jacksonville|117|🇨🇦🇺🇸|
 |13|Feb–May 2034|UK → Ireland → Western Europe → Switzerland|108|🇬🇧🇮🇪🇫🇷🇧🇪🇳🇱🇱🇺🇨🇭🇩🇪|
 
 ## Phase B: School Summers — 10 trips, 22 months on the road (Jun–Aug 2035–2044)
@@ -316,9 +316,9 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 |7|Cartagena|🟡 Star Alliance via MIA|United to Miami (3h), SIA home (20h). ~25h|
 |8|Oaxaca|🟡 Star Alliance via MEX|Oaxaca → Mexico City (1h), SIA home via LAX (18h). ~21h|
 |9|Los Angeles|🟢 SIA direct|LAX → SIN (17h direct)|
-|10|Los Angeles|🟢 SIA direct|SQ via Tokyo (15h)|
-|11|Minneapolis|🟡 Star Alliance via SFO|United to San Francisco (4h), SIA home (16h). ~22h|
-|12|Seattle|🟢 SIA direct|16h (SQ28)|
+|10|Houston|🟡 Star Alliance via LAX|United to LAX (3.5h), SIA home (17h). ~22h|
+|11|Toronto|🟡 Star Alliance via NYC|United to Newark (1.5h), SIA home (19h). ~22h|
+|12|Jacksonville|🟡 Star Alliance via ATL|Delta to Atlanta (1h), connect to SIA hub. ~24h|
 |13|Munich|🟢 SIA direct|12h|
 |14|Vilnius|🟡 Star Alliance via FRA|Lufthansa to Frankfurt (2h), SIA home (12h). ~16h|
 |15|Podgorica|🟡 Star Alliance via VIE/FRA|Austrian to Vienna or Lufthansa to Frankfurt, SIA home. ~18h|
@@ -605,94 +605,93 @@ Yellow fever required for Africa/South America (9+ months). Hep A/B, typhoid, ra
 
 ---
 
-## Trip 10: USA Southwest
+## Trip 10: California → Southwest → Texas
 
 **Sep–Dec 2031 (14 weeks)**
 
 |Region|Days|Highlights|
 |---|---|---|
-|🇺🇸 California|3|Pick up Los Angeles|
-|🇺🇸 Arizona|14|Tucson, Saguaro NP, Phoenix, Sedona, Grand Canyon|
-|🇺🇸 Utah|21|Zion, Bryce, Capitol Reef, Grand Staircase, Arches, Canyonlands, Moab|
-|🇺🇸 Colorado|14|Mesa Verde, Durango, Telluride, Rocky Mountain NP, Denver|
-|🇺🇸 New Mexico|14|Santa Fe, Taos, White Sands, Carlsbad Caverns|
-|🇺🇸 Texas|20|Big Bend, Marfa, Austin, San Antonio, Houston|
-|🇺🇸 Nevada/California|14|Las Vegas, Death Valley, Joshua Tree, San Diego|
+|🇺🇸 California|25|LA, Joshua Tree, Death Valley, Sequoia, Yosemite, San Francisco, Big Sur, PCH|
+|🇺🇸 Route 66|5|LA to Flagstaff via historic Route 66|
+|🇺🇸 Arizona|10|Grand Canyon, Antelope Canyon, Horseshoe Bend, Monument Valley|
+|🇺🇸 Utah|15|Arches, Canyonlands, Capitol Reef, Bryce Canyon, Zion|
+|🇺🇸 Colorado|12|Mesa Verde, Million Dollar Highway, Durango, Telluride|
+|🇺🇸 New Mexico|10|Santa Fe, Albuquerque, White Sands, Carlsbad Caverns|
+|🇺🇸 Texas|23|Big Bend, Marfa, Austin, San Antonio, Houston|
 
-**100 days / 1 country / ~9,000 km**
+**100 days / 1 country / ~12,000 km**
 
-**Weather:** Sep–Dec = perfect for Southwest. Shoulder season crowds.
+**Weather:** Sep–Dec = perfect for Southwest. California pleasant year-round.
 
-**Store:** San Diego
-**Fly home:** Los Angeles or San Diego (SIA direct via Tokyo)
+**Store:** Houston
+**Fly home:** Houston (via LAX or direct connections)
 
----
-
-## 🏠 HOME: Sep–Nov 2032 (3 months)
+[📍 Detailed Itinerary →](TRIP10.md)
 
 ---
 
-## Trip 11: USA Midwest + East + Canada
+## 🏠 HOME: Jan 2032 (1 month)
 
-**Dec 2032–Mar 2033 (4 months)**
+---
 
-|Country|Days|Highlights|
+## Trip 11: Houston → Rockies → Pacific Northwest → Alaska → Toronto
+
+**Feb–Jun 2032 (16 weeks)**
+
+|Region|Days|Highlights|
 |---|---|---|
-|🇺🇸 USA|10|Pick up Denver, Kansas City, St Louis|
-|🇺🇸 USA|10|Chicago, Detroit|
-|🇺🇸 USA|7|Niagara Falls|
-|🇨🇦 Canada|10|Toronto, Ottawa|
-|🇨🇦 Canada|10|Montreal, Quebec City|
-|🇺🇸 USA|7|Vermont, New Hampshire, Maine|
-|🇺🇸 USA|10|Boston, Cape Cod|
-|🇺🇸 USA|10|New York City|
-|🇺🇸 USA|7|Philadelphia, Washington DC|
-|🇺🇸 USA|10|Virginia, Blue Ridge Parkway|
-|🇺🇸 USA|10|Nashville, Memphis|
-|🇺🇸 USA|14|New Orleans, Gulf Coast, Miami, Florida Keys|
+|🇺🇸 Great Plains|15|Houston, Route 66, Oklahoma City, Kansas City, Badlands, Mt Rushmore|
+|🇺🇸 Rockies|15|Yellowstone, Grand Teton, Beartooth Highway, Glacier NP|
+|🇺🇸 Pacific Northwest|12|Seattle, Olympic NP|
+|🇨🇦 BC|10|Vancouver, Sea to Sky Highway, Whistler|
+|🇨🇦 Canadian Rockies|14|Calgary, Banff, Lake Louise, Icefields Parkway, Jasper|
+|🇨🇦🇺🇸 Alaska Highway|15|Dawson Creek, Whitehorse, Dawson City|
+|🇺🇸 Alaska|20|Fairbanks, Denali, Anchorage, Kenai Peninsula|
+|🇨🇦 Trans-Canada|14|Edmonton, Prairies, Lake Superior, Ontario|
 
-**115 days / 2 countries / ~12,000 km**
+**115 days / 2 countries / ~18,000 km**
 
-**Weather:** Dec–Mar = winter in north (cold!), mild in south. Chase warmth southward.
+**Weather:** Feb–Jun = late winter to summer. Alaska best Jul–Sep.
 
-**Store:** Minneapolis  
-**Fly home:** Minneapolis (via Chicago or NYC)
+**Store:** Toronto
+**Fly home:** Toronto (Star Alliance via NYC)
+
+[📍 Detailed Itinerary →](TRIP11.md)
 
 ---
 
-## 🏠 HOME: Apr–Jun 2033 (3 months)
+## 🏠 HOME: Jul 2032 (1 month)
 
 ---
 
-## Trip 12: Northern USA → Canada → Alaska
+## Trip 12: Toronto → Atlantic Canada → US East Coast → Florida
 
-**Jul–Oct 2033 (4 months)**
+**Aug–Nov 2032 (16 weeks)**
 
-|Country|Days|Highlights|
+|Region|Days|Highlights|
 |---|---|---|
-|🇺🇸 USA|7|Pick up Minneapolis, Badlands, Mt Rushmore|
-|🇺🇸 USA|10|Yellowstone, Grand Teton|
-|🇺🇸 USA|7|Glacier NP (Montana)|
-|🇨🇦 Canada|10|Calgary, Banff, Lake Louise|
-|🇨🇦 Canada|10|Jasper, Icefields Parkway|
-|🇨🇦 Canada|7|Vancouver, Whistler|
-|🇨🇦 Canada|7|Vancouver Island (Victoria, Tofino)|
-|🇨🇦 Canada|14|Alaska Highway (Dawson Creek → Whitehorse)|
-|🇨🇦 Canada|7|Dawson City, Top of the World Highway|
-|🇺🇸 USA|21|Alaska (Fairbanks, Denali, Anchorage, Kenai)|
-|🇺🇸 USA|7|Dalton Highway (towards Prudhoe Bay)|
-|🇨🇦🇺🇸|10|Drive back south to Seattle|
+|🇨🇦 Ontario/Quebec|12|Toronto (family), Montreal (family), Quebec City|
+|🇨🇦 Atlantic Canada|18|Gaspé, Maritimes, PEI, Nova Scotia, Cape Breton (Cabot Trail)|
+|🇨🇦 Newfoundland|8|Gros Morne NP, St. John's|
+|🇺🇸 New England|15|Acadia NP, Maine coast, Boston, Cape Cod|
+|🇺🇸 Mid-Atlantic|12|NYC, Philadelphia, Washington DC|
+|🇺🇸 Appalachians|22|Blue Ridge Parkway, Great Smoky Mountains, Nashville, Natchez Trace|
+|🇺🇸 Gulf & Florida|30|New Orleans, Gulf Coast, Miami, Key West (Overseas Highway), Jacksonville|
 
-**117 days / 2 countries / ~15,000 km**
+**117 days / 2 countries / ~13,000 km**
 
-**Weather:** Jul–Oct = Alaska summer into fall. Perfect window.
+**Weather:** Aug–Nov = fall foliage in Northeast, pleasant in Florida.
 
-**Store:** Seattle — _Ship to UK_  
-**Fly home:** Seattle (SIA direct or via Tokyo)
+**Ship from:** Jacksonville — _Ship to Southampton_
+**Fly home:** Jacksonville (via Atlanta or NYC)
+
+[📍 Detailed Itinerary →](TRIP12.md)
 
 ---
 
-## 🏠 HOME: Nov 2033–Jan 2034 (3 months)
+## 🏠 HOME: Dec 2032–Jan 2034 (13 months)
+
+_Long break — kids growing, preparing for school start in 2034._
 
 ---
 
@@ -1007,7 +1006,7 @@ All water crossings for A Grand Tour, in chronological order. Costs are estimate
 | 7 | Wellington → Picton | Ferry | 5 | $300 | 3.5 hrs |
 | 8 | Auckland → Valparaíso | Ship | 5→6 | $5,000 | 21 days |
 | 9 | Cartagena → Panama City | Ship+Sail | 8 | $3,300 | 3 weeks |
-| 10 | Seattle → Southampton | Ship | 12→13 | $4,500 | 21 days |
+| 10 | Jacksonville → Southampton | Ship | 12→13 | $4,500 | 14 days |
 | 11 | Cairnryan → Belfast | Ferry | 13 | $400 | 2h 15m |
 | 12 | Rosslare → Cherbourg | Ferry | 13 | $700 | 18 hrs |
 | 13 | Patras → Bari | Ferry | 17 | $400 | 17 hrs |

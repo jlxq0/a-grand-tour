@@ -120,6 +120,18 @@
         "description": "Famous Cabot Trail scenic drive through boreal forest and dramatic coastline"
       },
       "geometry": { "type": "Point", "coordinates": [-60.8333, 46.7333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nat's Mom's House",
+        "country": "Canada",
+        "countryCode": "CA",
+        "category": "family",
+        "rating": 5,
+        "description": "Family home in Toronto near High Park - Morningside Avenue 90A"
+      },
+      "geometry": { "type": "Point", "coordinates": [-79.4567, 43.6500] }
     }
   ]
 }

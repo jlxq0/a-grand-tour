@@ -29,3 +29,6 @@ node_modules/
 shipping_lanes.geojson
 route-screenshots/
 node_modules/
+
+# Generated route file (too large for GitHub, regenerate locally)
+data/planned-route.geojson
