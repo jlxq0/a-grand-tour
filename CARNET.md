@@ -8,14 +8,14 @@ A Carnet de Passage en Douane (CPD) is a customs document that lets you temporar
 
 | | |
 |---|---|
-| **Carnet needed for** | Iran, Iraq, Kuwait, Qatar, India, Pakistan, Nepal, Bangladesh, Indonesia |
+| **Carnet needed for** | Iran, Iraq, Kuwait, Qatar, India, Pakistan, Nepal, Bangladesh, Indonesia, Australia |
 | **Duration** | 22 months (Feb 2027 - Nov 2028) |
-| **Admin costs** | ~SGD 7,000 - 8,000 (excluding vehicle & security) |
-| **Security cost** | ~SGD 18,000 - 21,000 (see options below) |
+| **Admin costs** | ~SGD 13,000 over 22 months |
+| **Security cost** | ~SGD 18,000 (bank guarantee) or ~SGD 21,000 (insurance) |
 | **Trips to UAE** | 1 trip (about 1 week) |
 | **Where** | Ajman Free Zone + ATCUAE Dubai |
 
-After Trip 4, close the carnet. Trip 5 (New Zealand) uses a refundable cash deposit. Trips 6-25 need no carnet.
+After Trip 4 (Australia), close the carnet. Trip 5 (New Zealand) uses a refundable SGD 16,000 cash deposit. Trips 6-25 need no carnet.
 
 ---
 
@@ -138,8 +138,42 @@ Assuming your investments normally return **7% per year**:
 |------|-----------|-------|
 | 1 | Iran, Iraq, Kuwait, Qatar, Pakistan, India | Feb - May 2027 |
 | 2 | India, Nepal, Bangladesh | Aug - Nov 2027 |
-| 3 | *(None)* | Jan - Apr 2028 |
-| 4 | Indonesia | Aug - Nov 2028 |
+| 3 | *(None — SE Asia doesn't require)* | Jan - Apr 2028 |
+| 4 | Indonesia, Australia | Aug - Nov 2028 |
+
+---
+
+## How Long Should the Carnet Be?
+
+Standard carnet is 12 months, renewable once = **24 months maximum**.
+
+| Option | Carnet covers | Cash deposits needed | Feasible? |
+|--------|---------------|---------------------|-----------|
+| **A** | Trips 1-4 up to Timor-Leste (20 months) | Australia + NZ | ✓ |
+| **B** | Trips 1-4 including Australia (22 months) | NZ only | ✓ |
+| **C** | Trips 1-5 including NZ (26 months) | None | ✗ Exceeds 24-month limit |
+
+### Cost Comparison (Bank Guarantee Option)
+
+Assuming SGD 280k bank guarantee at 3.5%, your investments return 7%:
+
+| | Option A (20 mo) | Option B (22 mo) |
+|---|---|---|
+| Bank guarantee period | 20 months | 22 months |
+| Bank guarantee cost | SGD 16,300 | SGD 18,000 |
+| Australia deposit (SGD 44k × 2 mo) | SGD 500 | — |
+| NZ deposit (SGD 16k × 2.5 mo) | SGD 230 | SGD 230 |
+| **Total security cost** | **SGD 17,000** | **SGD 18,200** |
+| Extra paperwork | Australia + NZ deposits | NZ deposit only |
+
+**Australia cash deposit:** ~SGD 44,000 refundable (5% duty + 10% GST + 33% LCT)
+**NZ cash deposit:** ~SGD 16,000 refundable
+
+### Verdict
+
+**Option B wins.** Keeping carnet through Australia saves only ~SGD 1,200 vs Option A, but avoids the hassle of a SGD 44,000 Australia deposit with LCT paperwork.
+
+New Zealand cash deposit is unavoidable — carnet can't extend to 26 months.
 
 ---
 
