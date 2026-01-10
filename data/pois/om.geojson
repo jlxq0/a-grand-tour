@@ -72,6 +72,42 @@
         "description": "Grand Canyon of Oman with 1,000m gorge"
       },
       "geometry": { "type": "Point", "coordinates": [57.2667, 23.2333] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salalah",
+        "country": "Oman",
+        "countryCode": "OM",
+        "category": "landmark",
+        "rating": 4,
+        "description": "Gateway to Dhofar region. Monsoon-fed greenery, frankincense trees, and RoRo port for vehicle shipping from East Africa."
+      },
+      "geometry": { "type": "Point", "coordinates": [54.0924, 17.0151] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadi Darbat",
+        "country": "Oman",
+        "countryCode": "OM",
+        "category": "natural",
+        "rating": 4,
+        "description": "Stunning seasonal waterfall and lake in Dhofar. Green during khareef (monsoon) July-September."
+      },
+      "geometry": { "type": "Point", "coordinates": [54.4500, 17.1167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Land of Frankincense",
+        "country": "Oman",
+        "countryCode": "OM",
+        "category": "landmark",
+        "rating": 5,
+        "description": "UNESCO World Heritage sites including Wadi Dawkah frankincense groves and ancient port of Al-Baleed."
+      },
+      "geometry": { "type": "Point", "coordinates": [54.0167, 17.0333] }
     }
   ]
 }

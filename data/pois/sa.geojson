@@ -4,38 +4,50 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Hegra (Madain Salih)",
+        "name": "Hegra (Mada'in Salih)",
         "country": "Saudi Arabia",
         "countryCode": "SA",
         "category": "landmark",
         "rating": 5,
-        "description": "Nabataean tombs carved into sandstone, sister site to Petra with 110+ tombs"
+        "description": "Saudi Arabia's first UNESCO site. 110+ Nabataean tombs carved into sandstone - the largest preserved site south of Petra. World's Leading Cultural Tourism Project 2025."
       },
       "geometry": { "type": "Point", "coordinates": [37.9500, 26.7833] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Elephant Rock (AlUla)",
+        "name": "AlUla Old Town",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Ancient oasis town with 900+ mudbrick houses, labyrinthine alleys, and the Maraya mirrored concert hall. Gateway to Hegra."
+      },
+      "geometry": { "type": "Point", "coordinates": [37.9167, 26.6167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elephant Rock",
         "country": "Saudi Arabia",
         "countryCode": "SA",
         "category": "natural",
         "rating": 4,
-        "description": "52-meter natural rock formation resembling an elephant in golden desert sands"
+        "description": "Iconic 52-meter natural sandstone formation resembling an elephant. Best at sunset with café and stargazing."
       },
       "geometry": { "type": "Point", "coordinates": [37.9167, 26.8167] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Red Sea Coral Reefs",
+        "name": "Wadi Al Disah",
         "country": "Saudi Arabia",
         "countryCode": "SA",
         "category": "natural",
-        "rating": 4,
-        "description": "World's fourth-largest coral reef system with pristine diving and whale sharks"
+        "rating": 5,
+        "description": "Stunning sandstone canyon in Tabuk region. Towering red cliffs, palm-filled valley, natural springs. Called 'Valley of the Palms'."
       },
-      "geometry": { "type": "Point", "coordinates": [38.5000, 22.0000] }
+      "geometry": { "type": "Point", "coordinates": [36.4833, 27.5500] }
     },
     {
       "type": "Feature",
@@ -45,7 +57,7 @@
         "countryCode": "SA",
         "category": "natural",
         "rating": 5,
-        "description": "Dramatic escarpment cliffs with stunning desert panoramas"
+        "description": "Dramatic 300m escarpment cliffs overlooking endless desert. Popular sunset hike 90km from Riyadh. Part of ancient Tethys seabed."
       },
       "geometry": { "type": "Point", "coordinates": [46.6750, 24.8256] }
     },
@@ -57,21 +69,45 @@
         "countryCode": "SA",
         "category": "landmark",
         "rating": 5,
-        "description": "UNESCO birthplace of first Saudi State"
+        "description": "UNESCO World Heritage birthplace of Saudi Arabia. Mudbrick palaces in traditional Najdi architecture. Free entry, easy day trip from Riyadh."
       },
       "geometry": { "type": "Point", "coordinates": [46.5744, 24.7344] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Al-Balad Historic District",
+        "name": "Jeddah Al-Balad",
         "country": "Saudi Arabia",
         "countryCode": "SA",
         "category": "landmark",
         "rating": 4,
-        "description": "UNESCO traditional Ottoman architecture"
+        "description": "UNESCO historic district with traditional Hijazi coral-stone tower houses, wooden mashrabiya windows, and ancient souks."
       },
       "geometry": { "type": "Point", "coordinates": [39.1867, 21.4869] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Al Ahsa Oasis",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "natural",
+        "rating": 4,
+        "description": "UNESCO World Heritage - largest oasis in the world. 30,000 acres of date palms, ancient irrigation, and cave formations."
+      },
+      "geometry": { "type": "Point", "coordinates": [49.5833, 25.3833] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rijal Almaa",
+        "country": "Saudi Arabia",
+        "countryCode": "SA",
+        "category": "landmark",
+        "rating": 4,
+        "description": "900-year-old stone village in Asir mountains. Colorful painted tower houses clinging to cliffs, 50km from Abha."
+      },
+      "geometry": { "type": "Point", "coordinates": [42.2833, 17.9000] }
     }
   ]
 }

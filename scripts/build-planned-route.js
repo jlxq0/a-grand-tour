@@ -306,95 +306,144 @@ const waypointsPart5 = [
 ];
 
 // Trip 7: South America Epic (Valparaíso to Cartagena, 100 days)
+// Updated with detailed routing waypoints
 const waypointsPart7 = [
-  // Part 1: Valparaíso to Mendoza via Paso de los Caracoles
-  { name: "Valparaíso", coords: [-71.6273, -33.0472] },
-  { name: "Santiago", coords: [-70.6483, -33.4489] },
-  { name: "Paso de los Caracoles", coords: [-70.0667, -32.8333] },
-  { name: "Mendoza", coords: [-68.8272, -32.8908] },
-  // Ruta 40 South
-  { name: "San Rafael", coords: [-68.3354, -34.6176] },
-  { name: "Malargüe", coords: [-69.5833, -35.4667] },
-  { name: "Bardas Blancas", coords: [-69.8000, -35.8667] },
-  { name: "Chos Malal", coords: [-70.2667, -37.3833] },
-  { name: "Zapala", coords: [-70.0667, -38.9000] },
-  { name: "Junín de los Andes", coords: [-71.0667, -39.9500] },
-  // Seven Lakes Route
-  { name: "San Martín de los Andes", coords: [-71.3519, -40.1575] },
-  { name: "Bariloche", coords: [-71.3082, -41.1335] },
-  // Cross to Chile - Chiloé & Carretera Austral
-  { name: "Osorno", coords: [-73.1500, -40.5667] },
-  { name: "Puerto Montt", coords: [-72.9369, -41.4693] },
-  { name: "Castro (Chiloé)", coords: [-73.7667, -42.4667] },
-  { name: "Puerto Montt (return)", coords: [-72.9369, -41.4693] },
+  // Chile - Valparaíso to Mendoza via Los Caracoles
+  { name: "Valparaíso", coords: [-71.62733, -33.04734] },
+  { name: "Santiago", coords: [-70.64339, -33.44027] },
+  { name: "Los Libertadores (Chile border)", coords: [-70.11281, -32.84487] },
+  { name: "Paso Los Caracoles", coords: [-70.02528, -32.82122] },
+  { name: "Argentina border", coords: [-69.82683, -32.84504] },
+  { name: "Mendoza", coords: [-68.84586, -32.89107] },
+  // Ruta 40 South - detailed waypoints
+  { name: "San Rafael area", coords: [-68.94751, -34.61284] },
+  { name: "Malargüe", coords: [-69.58333, -35.46667] },
+  { name: "Bardas Blancas", coords: [-69.80000, -35.86670] },
+  { name: "Ruta 40 junction", coords: [-67.62297, -35.37076] },
+  { name: "Ruta 40 south", coords: [-67.23273, -35.87772] },
+  { name: "Ruta 40 Neuquén", coords: [-67.48046, -36.91577] },
+  { name: "Chos Malal area", coords: [-67.74350, -37.56847] },
+  { name: "Zapala approach", coords: [-67.95398, -38.16346] },
+  { name: "Zapala", coords: [-68.12543, -38.61933] },
+  { name: "Junín de los Andes approach", coords: [-68.68169, -39.14457] },
+  { name: "Junín de los Andes", coords: [-70.37568, -40.18450] },
+  // Seven Lakes Route & Lake District
+  { name: "San Martín de los Andes", coords: [-71.35338, -40.16123] },
+  { name: "Seven Lakes north", coords: [-71.36696, -40.20718] },
+  { name: "Seven Lakes central", coords: [-71.43250, -40.35713] },
+  { name: "Villa La Angostura", coords: [-71.62522, -40.48323] },
+  // Cross to Chile via Osorno
+  { name: "Paso Samoré approach", coords: [-71.07853, -40.90468] },
+  { name: "Osorno area", coords: [-72.14053, -40.67028] },
+  { name: "Puerto Montt approach", coords: [-72.75494, -40.90789] },
+  { name: "Puerto Montt", coords: [-73.06740, -41.21592] },
+  // Chiloé detour
+  { name: "Chiloé (Castro)", coords: [-73.93806, -42.61923] },
   // Carretera Austral
-  { name: "Hornopirén", coords: [-72.4333, -41.9500] },
-  { name: "Chaitén", coords: [-72.7167, -42.9167] },
-  { name: "La Junta", coords: [-72.4000, -43.9167] },
-  { name: "Coyhaique", coords: [-72.0667, -45.5667] },
-  { name: "Cochrane", coords: [-72.5667, -47.2500] },
-  { name: "Villa O'Higgins", coords: [-72.5667, -48.4667] },
-  // Cross to Argentina - Southern Patagonia
-  { name: "El Chaltén", coords: [-72.8861, -49.3311] },
-  { name: "El Calafate", coords: [-72.2761, -50.3378] },
-  { name: "Ushuaia", coords: [-68.3029, -54.8019] },
-  { name: "El Calafate (return)", coords: [-72.2761, -50.3378] },
-  // Ruta 40 North to Atlantic
-  { name: "Perito Moreno (town)", coords: [-70.9333, -46.5167] },
-  { name: "Puerto Madryn", coords: [-65.0364, -42.7683] },
-  // Atlantic Coast
-  { name: "Buenos Aires", coords: [-58.3816, -34.6037] },
-  // Uruguay
-  { name: "Colonia del Sacramento", coords: [-57.8400, -34.4626] },
-  { name: "Montevideo", coords: [-56.1645, -34.9011] },
-  { name: "Punta del Este", coords: [-54.9333, -34.9667] },
-  // Brazil
-  { name: "Porto Alegre", coords: [-51.2177, -30.0346] },
-  { name: "Florianópolis", coords: [-48.5477, -27.5969] },
-  { name: "Rio de Janeiro", coords: [-43.1729, -22.9068] },
-  { name: "Ouro Preto", coords: [-43.5046, -20.3855] },
-  { name: "Foz do Iguaçu", coords: [-54.5854, -25.5163] },
-  // Northwest Argentina with Calchaquí Valleys
-  { name: "Salta", coords: [-65.4117, -24.7821] },
-  { name: "Cachi", coords: [-66.1667, -25.1167] },
-  { name: "Molinos", coords: [-66.3000, -25.4500] },
-  { name: "Cafayate", coords: [-65.9764, -26.0728] },
-  { name: "Salta (return)", coords: [-65.4117, -24.7821] },
+  { name: "Chaitén", coords: [-72.45654, -43.06706] },
+  { name: "La Junta", coords: [-72.42468, -43.69237] },
+  { name: "Coyhaique approach", coords: [-72.45912, -43.92758] },
+  { name: "Coyhaique", coords: [-72.10508, -45.71057] },
+  { name: "Cerro Castillo", coords: [-72.12743, -45.52383] },
+  { name: "Puerto Río Tranquilo", coords: [-72.29701, -45.25777] },
+  { name: "Cochrane approach", coords: [-72.69140, -46.64082] },
+  { name: "Cochrane", coords: [-72.75926, -46.74274] },
+  { name: "Tortel area", coords: [-72.80453, -47.04198] },
+  { name: "Villa O'Higgins approach", coords: [-71.93665, -47.15413] },
+  { name: "Villa O'Higgins", coords: [-71.08107, -47.38602] },
+  // Southern Patagonia - El Chaltén & El Calafate
+  { name: "Lago del Desierto crossing", coords: [-71.16079, -48.24761] },
+  { name: "El Chaltén approach", coords: [-71.55019, -49.61829] },
+  { name: "El Chaltén", coords: [-72.47908, -49.54497] },
+  { name: "El Calafate approach", coords: [-72.09306, -49.60861] },
+  { name: "El Calafate", coords: [-72.26523, -50.33025] },
+  // Ushuaia and Tierra del Fuego
+  { name: "Río Gallegos approach", coords: [-73.02992, -50.46933] },
+  { name: "Ushuaia", coords: [-67.18117, -56.09472] },
+  // Return via Ruta 3 Atlantic coast
+  { name: "Río Grande", coords: [-69.14886, -50.85313] },
+  { name: "Río Gallegos", coords: [-68.72668, -50.20823] },
+  { name: "Puerto San Julián", coords: [-67.76039, -49.54155] },
+  { name: "Puerto Deseado area", coords: [-67.21159, -48.75587] },
+  { name: "Comodoro Rivadavia", coords: [-66.36575, -48.31060] },
+  { name: "Rada Tilly", coords: [-66.36815, -47.10341] },
+  { name: "Sarmiento", coords: [-67.35250, -46.59486] },
+  { name: "Perito Moreno", coords: [-67.58893, -45.93044] },
+  { name: "Puerto Madryn", coords: [-63.94076, -42.51694] },
+  { name: "Bahía Blanca approach", coords: [-62.37825, -40.00638] },
+  { name: "Mar del Plata area", coords: [-59.07825, -38.42185] },
+  { name: "La Plata approach", coords: [-56.85076, -36.63560] },
+  // Buenos Aires & Uruguay
+  { name: "Buenos Aires", coords: [-58.33408, -34.49745] },
+  { name: "Colonia del Sacramento", coords: [-57.82040, -34.48629] },
+  { name: "Punta del Este", coords: [-54.96597, -34.96319] },
+  { name: "Chuy border", coords: [-53.80138, -34.34199] },
+  // Brazil Atlantic coast
+  { name: "Porto Alegre", coords: [-51.00530, -31.30229] },
+  { name: "Rio de Janeiro", coords: [-43.15210, -22.96193] },
+  { name: "Ouro Preto", coords: [-43.40583, -20.27121] },
+  { name: "Belo Horizonte area", coords: [-43.94182, -19.90388] },
+  // Iguazu Falls
+  { name: "Foz do Iguaçu", coords: [-54.58099, -25.41165] },
+  { name: "Iguazu Falls", coords: [-54.59872, -25.53069] },
+  { name: "Puerto Iguazú", coords: [-54.44400, -25.69095] },
+  // Paraguay detour
+  { name: "Encarnación", coords: [-55.72407, -27.13175] },
+  { name: "Asunción", coords: [-57.62928, -25.27271] },
+  // Northwest Argentina
+  { name: "Salta", coords: [-65.35471, -23.19411] },
   // Chile - Atacama
-  { name: "San Pedro de Atacama", coords: [-68.1997, -22.9087] },
-  // Bolivia - Scenic High Plateau Route
-  { name: "Laguna Verde", coords: [-67.8167, -22.7833] },
-  { name: "Laguna Colorada", coords: [-67.7833, -22.2000] },
-  { name: "Sol de Mañana Geysers", coords: [-67.7500, -22.4333] },
-  { name: "Uyuni", coords: [-66.8250, -20.4600] },
-  { name: "Sucre", coords: [-65.2550, -19.0196] },
-  { name: "La Paz", coords: [-68.1193, -16.4897] },
-  { name: "Copacabana (Lake Titicaca)", coords: [-69.0864, -16.1661] },
+  { name: "San Pedro de Atacama", coords: [-69.09722, -23.88096] },
+  { name: "Atacama Salt Flat", coords: [-68.16186, -22.85185] },
+  // Bolivia
+  { name: "Laguna Verde", coords: [-67.79235, -22.37112] },
+  { name: "Laguna Blanca", coords: [-68.00938, -22.27573] },
+  { name: "Laguna Colorada", coords: [-67.58780, -21.88035] },
+  { name: "Sol de Mañana", coords: [-67.54415, -21.54211] },
+  { name: "Uyuni approach", coords: [-67.58089, -21.12435] },
+  { name: "Salar de Uyuni", coords: [-67.74808, -20.60247] },
+  { name: "Uyuni town", coords: [-66.97123, -20.25369] },
+  { name: "Potosí", coords: [-66.60214, -20.28612] },
+  { name: "Sucre", coords: [-66.16960, -19.92269] },
+  { name: "Cochabamba approach", coords: [-65.24802, -19.58239] },
+  { name: "Oruro", coords: [-65.62458, -18.79838] },
+  { name: "La Paz approach", coords: [-66.32482, -18.56645] },
+  { name: "La Paz", coords: [-68.07174, -16.32079] },
+  { name: "El Alto", coords: [-67.86472, -16.29605] },
+  { name: "Copacabana approach", coords: [-68.10865, -16.50727] },
+  { name: "Tiquina crossing", coords: [-68.67195, -16.54374] },
+  { name: "Copacabana", coords: [-69.06016, -16.09170] },
   // Peru
-  { name: "Puno", coords: [-70.0219, -15.8402] },
-  { name: "Cusco", coords: [-71.9675, -13.5319] },
-  { name: "Ollantaytambo", coords: [-72.2631, -13.2575] },
-  { name: "Cusco (return)", coords: [-71.9675, -13.5319] },
-  { name: "Nazca", coords: [-75.0000, -14.8333] },
-  { name: "Huacachina", coords: [-75.7639, -14.0875] },
-  { name: "Lima", coords: [-77.0428, -12.0464] },
-  { name: "Huaraz", coords: [-77.5278, -9.5300] },
+  { name: "Puno", coords: [-71.83838, -15.49983] },
+  { name: "Cusco", coords: [-71.33006, -13.69142] },
+  { name: "Ollantaytambo", coords: [-71.54219, -11.66998] },
+  { name: "Sacred Valley", coords: [-72.04529, -13.04054] },
+  { name: "Machu Picchu area", coords: [-72.55671, -12.93554] },
+  { name: "Nazca", coords: [-75.00456, -14.67750] },
+  { name: "Huacachina", coords: [-75.75230, -14.11729] },
+  { name: "Lima", coords: [-77.48974, -8.80621] },
   // Ecuador
-  { name: "Cuenca", coords: [-79.0053, -2.9001] },
-  { name: "Quito", coords: [-78.4678, -0.1807] },
-  { name: "Baños", coords: [-78.4247, -1.3928] },
-  { name: "Coca (Yasuní)", coords: [-76.9833, -0.4667] },
-  { name: "Quito (return)", coords: [-78.4678, -0.1807] },
-  // Colombia via Ipiales border
-  { name: "Ipiales (border)", coords: [-77.6419, 0.8281] },
-  { name: "Popayán", coords: [-76.6064, 2.4419] },
-  { name: "Bogotá", coords: [-74.0721, 4.7110] },
-  { name: "Tatacoa Desert", coords: [-75.1667, 3.2333] },
-  { name: "Salento", coords: [-75.5667, 4.6333] },
-  { name: "Medellín", coords: [-75.5636, 6.2518] },
-  { name: "Guatapé", coords: [-75.1564, 6.2325] },
-  { name: "Santa Marta", coords: [-74.1990, 11.2408] },
-  { name: "Cartagena", coords: [-75.5144, 10.3910] }
+  { name: "Cuenca", coords: [-78.97729, -2.92519] },
+  { name: "Ingapirca", coords: [-79.29404, -2.72815] },
+  { name: "Riobamba", coords: [-78.43189, -1.38054] },
+  { name: "Baños", coords: [-78.58876, -1.23671] },
+  { name: "Ambato", coords: [-78.59265, -1.11152] },
+  { name: "Latacunga", coords: [-78.61095, -0.99287] },
+  { name: "Cotopaxi", coords: [-78.90363, -0.85903] },
+  { name: "Machachi", coords: [-78.63408, -0.86786] },
+  { name: "Quito south", coords: [-78.61571, -0.79359] },
+  { name: "Quito", coords: [-78.50860, -0.30380] },
+  { name: "Mitad del Mundo", coords: [-78.45472, 0.00482] },
+  // Colombia
+  { name: "Mocoa", coords: [-75.18185, 3.22282] },
+  { name: "Bogotá", coords: [-74.00593, 5.05604] },
+  { name: "Armenia", coords: [-75.45630, 4.64042] },
+  { name: "Medellín", coords: [-75.54487, 6.28076] },
+  { name: "Guatapé", coords: [-75.15818, 6.23113] },
+  { name: "Bucaramanga approach", coords: [-73.57632, 6.16673] },
+  { name: "Santa Marta approach", coords: [-73.73714, 10.86314] },
+  { name: "Santa Marta", coords: [-73.93432, 11.06185] },
+  { name: "Cartagena", coords: [-75.56431, 10.40970] }
 ];
 
 // Trip 6: New Zealand (Townsville ship to Auckland, 10-week round trip)
@@ -633,98 +682,97 @@ const waypointsPart10 = [
   { name: "Seattle (end)", coords: [-122.3321, 47.6062] }
 ];
 
-// Trip 11: Seattle to Texas (Rockies, Southwest, winter/spring drive south, ~115 days)
+// Trip 11: Dublin to Helsinki (Feb-May 2032, ~106 days) - Western & Northern Europe
 const waypointsPart11 = [
-  // From Seattle head east
-  { name: "Seattle (departure)", coords: [-122.3321, 47.6062] },
-  { name: "Spokane", coords: [-117.4260, 47.6588] },
-  { name: "Glacier NP (Logan Pass)", coords: [-113.7870, 48.6967] },
-  { name: "Beartooth Highway", coords: [-109.4378, 45.0156] },
-  { name: "Yellowstone (Old Faithful)", coords: [-110.8281, 44.4605] },
-  { name: "Grand Teton (Jackson)", coords: [-110.7624, 43.4799] },
-  // Utah Parks
-  { name: "Salt Lake City", coords: [-111.8910, 40.7608] },
-  { name: "Moab (Arches)", coords: [-109.5498, 38.5733] },
-  { name: "Capitol Reef", coords: [-111.1617, 38.2972] },
-  { name: "Bryce Canyon", coords: [-112.1871, 37.5930] },
-  { name: "Zion (Springdale)", coords: [-112.9988, 37.1889] },
-  { name: "Page (Horseshoe Bend)", coords: [-111.5085, 36.8753] },
-  { name: "Monument Valley", coords: [-110.0985, 36.9980] },
-  { name: "Grand Canyon (South Rim)", coords: [-112.1401, 36.0544] },
-  // Arizona & New Mexico
-  { name: "Flagstaff", coords: [-111.6513, 35.1983] },
-  { name: "Sedona", coords: [-111.7610, 34.8697] },
-  { name: "Phoenix", coords: [-112.0740, 33.4484] },
-  { name: "Saguaro NP", coords: [-110.5885, 32.2967] },
-  { name: "White Sands", coords: [-106.1712, 32.7872] },
-  { name: "Carlsbad Caverns", coords: [-104.5567, 32.1479] },
-  // Colorado
-  { name: "Mesa Verde", coords: [-108.4618, 37.1838] },
-  { name: "Silverton", coords: [-107.6642, 37.8117] },
-  { name: "Million Dollar Highway (Ouray)", coords: [-107.6714, 38.0228] },
-  { name: "Telluride", coords: [-107.8123, 37.9375] },
-  { name: "Durango", coords: [-107.8801, 37.2753] },
-  { name: "Santa Fe", coords: [-105.9378, 35.6870] },
-  { name: "Albuquerque", coords: [-106.6504, 35.0844] },
-  // Texas
-  { name: "Big Bend (Terlingua)", coords: [-103.6168, 29.3197] },
-  { name: "Marfa", coords: [-104.0214, 30.3087] },
-  { name: "Guadalupe Mountains", coords: [-104.8606, 31.8912] },
-  { name: "Austin", coords: [-97.7431, 30.2672] },
-  { name: "San Antonio", coords: [-98.4936, 29.4241] },
-  { name: "Houston", coords: [-95.3698, 29.7604] }
+  // Ireland
+  { name: "Dublin (arrival)", coords: [-6.2603, 53.3498] },
+  { name: "Galway", coords: [-9.0568, 53.2707] },
+  { name: "Cliffs of Moher", coords: [-9.4265, 52.9715] },
+  { name: "Ring of Kerry (Killarney)", coords: [-9.5044, 52.0599] },
+  { name: "Cork", coords: [-8.4863, 51.8985] },
+  // UK
+  { name: "Rosslare (ferry)", coords: [-6.3389, 52.2570] },
+  { name: "Fishguard (Wales)", coords: [-4.9789, 51.9942] },
+  { name: "Snowdonia", coords: [-4.0765, 53.0685] },
+  { name: "Lake District", coords: [-3.0886, 54.4609] },
+  { name: "Edinburgh", coords: [-3.1883, 55.9533] },
+  { name: "Scottish Highlands (Inverness)", coords: [-4.2246, 57.4778] },
+  { name: "Isle of Skye", coords: [-6.2154, 57.2736] },
+  // Back through England
+  { name: "Glasgow", coords: [-4.2518, 55.8642] },
+  { name: "York", coords: [-1.0815, 53.9591] },
+  { name: "Peak District", coords: [-1.8023, 53.3428] },
+  { name: "Cotswolds", coords: [-1.7826, 51.9276] },
+  { name: "London", coords: [-0.1278, 51.5074] },
+  // Cross to France
+  { name: "Dover (ferry)", coords: [1.3134, 51.1279] },
+  { name: "Calais", coords: [1.8586, 50.9513] },
+  // Belgium & Netherlands
+  { name: "Bruges", coords: [3.2247, 51.2093] },
+  { name: "Brussels", coords: [4.3517, 50.8503] },
+  { name: "Amsterdam", coords: [4.9041, 52.3676] },
+  // Germany
+  { name: "Hamburg", coords: [9.9937, 53.5511] },
+  { name: "Berlin", coords: [13.4050, 52.5200] },
+  // Denmark
+  { name: "Copenhagen", coords: [12.5683, 55.6761] },
+  // Sweden
+  { name: "Malmö (bridge)", coords: [13.0007, 55.6050] },
+  { name: "Gothenburg", coords: [11.9746, 57.7089] },
+  { name: "Stockholm", coords: [18.0686, 59.3293] },
+  // Norway (loop)
+  { name: "Oslo", coords: [10.7522, 59.9139] },
+  { name: "Bergen", coords: [5.3221, 60.3913] },
+  { name: "Geirangerfjord", coords: [7.2058, 62.1008] },
+  { name: "Trollstigen", coords: [7.6704, 62.4575] },
+  { name: "Trondheim", coords: [10.3951, 63.4305] },
+  // Back through Sweden to Finland
+  { name: "Östersund (Sweden)", coords: [14.6357, 63.1792] },
+  { name: "Stockholm (return)", coords: [18.0686, 59.3293] },
+  { name: "Turku (ferry)", coords: [22.2687, 60.4518] },
+  { name: "Helsinki", coords: [24.9384, 60.1699] }
 ];
 
-// Trip 12: Texas to Toronto to Jacksonville (Great Plains, Trans-Canada, Atlantic Canada, East Coast, ~118 days)
+// Trip 12: Helsinki to Vienna (Jun-Aug 2032, ~90 days) - Central & Eastern Europe
 const waypointsPart12 = [
-  // From Houston north through Great Plains
-  { name: "Houston (departure)", coords: [-95.3698, 29.7604] },
-  { name: "Dallas", coords: [-96.7970, 32.7767] },
-  { name: "Amarillo (Cadillac Ranch)", coords: [-101.8313, 35.2220] },
-  { name: "Oklahoma City", coords: [-97.5164, 35.4676] },
-  { name: "Kansas City", coords: [-94.5786, 39.0997] },
-  { name: "Omaha", coords: [-95.9345, 41.2565] },
-  { name: "Sioux Falls", coords: [-96.7311, 43.5446] },
-  { name: "Badlands NP", coords: [-102.3397, 43.8554] },
-  { name: "Mount Rushmore", coords: [-103.4591, 43.8791] },
-  { name: "Devils Tower", coords: [-104.7145, 44.5902] },
-  // North to Canada
-  { name: "Bismarck", coords: [-100.7837, 46.8083] },
-  { name: "Winnipeg", coords: [-97.1384, 49.8951] },
-  { name: "Thunder Bay", coords: [-89.2477, 48.3809] },
-  { name: "Sault Ste. Marie", coords: [-84.3358, 46.5219] },
-  { name: "Sudbury", coords: [-81.0112, 46.4917] },
-  { name: "Muskoka", coords: [-79.3878, 45.0032] },
-  { name: "Toronto", coords: [-79.3832, 43.6532] },
-  // Eastern Canada
-  { name: "Montreal", coords: [-73.5673, 45.5017] },
-  { name: "Quebec City", coords: [-71.2080, 46.8139] },
-  { name: "Percé (Gaspé)", coords: [-64.2165, 48.5234] },
-  { name: "Moncton (Fundy)", coords: [-64.7782, 46.0878] },
-  { name: "Charlottetown (PEI)", coords: [-63.1311, 46.2382] },
-  { name: "Halifax", coords: [-63.5752, 44.6488] },
-  { name: "Cape Breton (Cabot Trail)", coords: [-60.7500, 46.8167] },
-  // Newfoundland
-  { name: "Port aux Basques (ferry)", coords: [-59.1361, 47.5719] },
-  { name: "Gros Morne NP", coords: [-57.8097, 49.5980] },
-  { name: "St. John's", coords: [-52.7126, 47.5615] },
-  // Return and US Northeast
-  { name: "Port aux Basques (return ferry)", coords: [-59.1361, 47.5719] },
-  { name: "Bar Harbor (Acadia)", coords: [-68.2039, 44.3876] },
-  { name: "Portland (Maine)", coords: [-70.2553, 43.6591] },
-  { name: "Boston", coords: [-71.0589, 42.3601] },
-  { name: "Cape Cod (Provincetown)", coords: [-70.1787, 42.0629] },
-  { name: "New York City", coords: [-74.0060, 40.7128] },
-  { name: "Philadelphia", coords: [-75.1652, 39.9526] },
-  { name: "Washington DC", coords: [-77.0369, 38.9072] },
-  { name: "Shenandoah NP", coords: [-78.4679, 38.4755] },
-  // Blue Ridge & South
-  { name: "Blue Ridge Parkway (Roanoke)", coords: [-79.9414, 37.2710] },
-  { name: "Asheville", coords: [-82.5515, 35.5951] },
-  { name: "Great Smoky Mountains", coords: [-83.5070, 35.6532] },
-  { name: "Savannah", coords: [-81.0998, 32.0809] },
-  { name: "St. Augustine", coords: [-81.3124, 29.9012] },
-  { name: "Jacksonville", coords: [-81.6557, 30.3322] }
+  // Finland (continue from Helsinki)
+  { name: "Helsinki (departure)", coords: [24.9384, 60.1699] },
+  { name: "Tampere", coords: [23.7610, 61.4978] },
+  { name: "Savonlinna", coords: [28.8828, 61.8692] },
+  // Baltics
+  { name: "Tallinn (ferry)", coords: [24.7536, 59.4370] },
+  { name: "Tartu", coords: [26.7290, 58.3780] },
+  { name: "Riga", coords: [24.1052, 56.9496] },
+  { name: "Vilnius", coords: [25.2797, 54.6872] },
+  { name: "Kaunas", coords: [23.9036, 54.8985] },
+  // Poland
+  { name: "Warsaw", coords: [21.0122, 52.2297] },
+  { name: "Krakow", coords: [19.9450, 50.0647] },
+  { name: "Wroclaw", coords: [17.0385, 51.1079] },
+  // Germany (East)
+  { name: "Dresden", coords: [13.7373, 51.0504] },
+  { name: "Prague", coords: [14.4378, 50.0755] },
+  { name: "Munich", coords: [11.5820, 48.1351] },
+  // Austria & Alps
+  { name: "Salzburg", coords: [13.0550, 47.8095] },
+  { name: "Hallstatt", coords: [13.6493, 47.5622] },
+  { name: "Innsbruck", coords: [11.3928, 47.2692] },
+  // Switzerland
+  { name: "Zurich", coords: [8.5417, 47.3769] },
+  { name: "Lucerne", coords: [8.3093, 47.0502] },
+  { name: "Interlaken", coords: [7.8632, 46.6863] },
+  { name: "Zermatt (train from Täsch)", coords: [7.7486, 46.0207] },
+  { name: "Geneva", coords: [6.1432, 46.2044] },
+  // France
+  { name: "Lyon", coords: [4.8357, 45.7640] },
+  { name: "Annecy", coords: [6.1296, 45.8992] },
+  { name: "Chamonix", coords: [6.8694, 45.9237] },
+  // Back through Switzerland to Vienna
+  { name: "Bern", coords: [7.4474, 46.9480] },
+  { name: "Liechtenstein (Vaduz)", coords: [9.5209, 47.1410] },
+  // Austria
+  { name: "Innsbruck (return)", coords: [11.3928, 47.2692] },
+  { name: "Vienna", coords: [16.3738, 48.2082] }
 ];
 
 // Trip 13: Vienna to Athens (Feb-May 2033, ~90 days)
@@ -804,15 +852,19 @@ const waypointsPart17 = [
 ];
 
 // Trip 18: Accra to Libreville (Christmas 2035-36, ~3 weeks) - Gulf of Guinea
+// SKIPS Equatorial Guinea - goes via Yaoundé and northern Gabon border
+// Calabar → Douala: 4hr transit through Anglophone Cameroon (consider military escort)
 const waypointsPart18 = [
   { name: "Accra (departure)", coords: [-0.1870, 5.6037] },
   { name: "Lomé (Togo)", coords: [1.2227, 6.1375] },
   { name: "Cotonou (Benin)", coords: [2.3912, 6.3703] },
   { name: "Lagos", coords: [3.3792, 6.5244] },
   { name: "Calabar", coords: [8.3417, 4.9517] },
+  // Anglophone zone transit: Calabar → Ekok → Mamfe → Kumba → Douala (~4hrs danger zone)
   { name: "Douala", coords: [9.7043, 4.0511] },
-  { name: "Kribi", coords: [9.9137, 2.9373] },
-  { name: "Bata (Eq. Guinea)", coords: [9.7659, 1.8628] },
+  { name: "Yaoundé", coords: [11.5167, 3.8667] },
+  { name: "Ebolowa", coords: [11.1500, 2.9000] },
+  { name: "Bitam (Gabon)", coords: [11.4833, 2.0833] },
   { name: "Libreville", coords: [9.4536, 0.4162] }
 ];
 
@@ -1053,10 +1105,10 @@ async function buildRoute() {
   console.error('\n=== Building Part 10: Los Angeles to Houston (California, Southwest, Texas) ===\n');
   const part10 = await buildRouteWithSegments(waypointsPart10, 'Part10', 10);
 
-  console.error('\n=== Building Part 11: Houston to Toronto (Rockies, Alaska, Trans-Canada) ===\n');
+  console.error('\n=== Building Part 11: Dublin to Helsinki (Western & Northern Europe) ===\n');
   const part11 = await buildRouteWithSegments(waypointsPart11, 'Part11', 11);
 
-  console.error('\n=== Building Part 12: Toronto to Jacksonville (Atlantic Canada, East Coast, Florida) ===\n');
+  console.error('\n=== Building Part 12: Helsinki to Vienna (Central & Eastern Europe) ===\n');
   const part12 = await buildRouteWithSegments(waypointsPart12, 'Part12', 12);
 
   console.error('\n=== Building Part 13: Vienna to Athens (Balkans) ===\n');
@@ -1276,10 +1328,10 @@ async function buildRoute() {
       {
         type: "Feature",
         properties: {
-          name: "Trip 11: Seattle to Texas",
+          name: "Trip 11: Dublin to Helsinki",
           part: 11,
           type: "summary",
-          description: "Rocky Mountains, Utah Parks, American Southwest, Texas (winter/spring)",
+          description: "Ireland, UK, France, Belgium, Netherlands, Germany, Scandinavia, Finland (Feb-May 2032)",
           totalDistanceKm: part11.totalDistanceKm,
           totalDurationHrs: parseFloat(part11.totalDurationHrs),
           segmentCount: part11.segments.length
@@ -1293,10 +1345,10 @@ async function buildRoute() {
       {
         type: "Feature",
         properties: {
-          name: "Trip 12: Texas to Toronto to Jacksonville",
+          name: "Trip 12: Helsinki to Vienna",
           part: 12,
           type: "summary",
-          description: "Eastern Canada, Newfoundland, US East Coast, Blue Ridge Parkway, Florida Keys",
+          description: "Finland, Baltics, Poland, Germany, Czechia, Switzerland, France, Austria (Jun-Aug 2032)",
           totalDistanceKm: part12.totalDistanceKm,
           totalDurationHrs: parseFloat(part12.totalDurationHrs),
           segmentCount: part12.segments.length
@@ -1550,8 +1602,8 @@ async function buildRoute() {
     { part: part8, num: 8, name: "Trip 8: Panama to Oaxaca", desc: "Central America & Mexico" },
     { part: part9, num: 9, name: "Trip 9: Oaxaca to Los Angeles", desc: "Mexico Pacific Coast & Baja" },
     { part: part10, num: 10, name: "Trip 10: LA to Alaska to Seattle", desc: "Pacific Coast, Alaska (fall)" },
-    { part: part11, num: 11, name: "Trip 11: Seattle to Texas", desc: "Rockies, Southwest, Texas" },
-    { part: part12, num: 12, name: "Trip 12: Texas to Toronto to Jacksonville", desc: "Great Plains, Atlantic Canada, East Coast" },
+    { part: part11, num: 11, name: "Trip 11: Dublin to Helsinki", desc: "Western & Northern Europe (Feb-May 2032)" },
+    { part: part12, num: 12, name: "Trip 12: Helsinki to Vienna", desc: "Central & Eastern Europe (Jun-Aug 2032)" },
     { part: part13, num: 13, name: "Trip 13: Vienna to Athens", desc: "Balkans (Feb-May 2033)" },
     { part: part14, num: 14, name: "Trip 14: Athens to Milan", desc: "Mediterranean spring (Easter 2034)" },
     { part: part15, num: 15, name: "Trip 15: Milan to Marrakech", desc: "Riviera, Spain, Morocco (Summer 2034)" },

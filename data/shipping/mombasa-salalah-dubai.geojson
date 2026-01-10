@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mombasa - Salalah (RoRo Shipping)",
+        "type": "shipping",
+        "description": "RoRo vehicle shipping bypassing Horn of Africa. Companies: Seabridge, RORO Express. ~5-10 days to Salalah."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [39.6682, -4.0435],
+          [40.50, -3.00],
+          [42.50, 0.50],
+          [45.00, 4.00],
+          [48.00, 8.00],
+          [51.00, 12.00],
+          [53.50, 15.50],
+          [54.09, 17.02]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mombasa Port",
+        "type": "port",
+        "description": "Kilindini Harbour - main RoRo terminal"
+      },
+      "geometry": { "type": "Point", "coordinates": [39.6682, -4.0435] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salalah Port",
+        "type": "port",
+        "description": "End of shipping - drive overland through Oman → UAE → Dubai"
+      },
+      "geometry": { "type": "Point", "coordinates": [54.09, 17.02] }
+    }
+  ]
+}

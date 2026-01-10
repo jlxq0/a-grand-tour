@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ziggurat of Ur",
+        "country": "Iraq",
+        "countryCode": "IQ",
+        "category": "landmark",
+        "rating": 5,
+        "description": "4,000-year-old Sumerian step pyramid, one of the best-preserved ziggurats. Birthplace of Abraham according to tradition."
+      },
+      "geometry": { "type": "Point", "coordinates": [46.1031, 30.9627] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uruk",
+        "country": "Iraq",
+        "countryCode": "IQ",
+        "category": "landmark",
+        "rating": 5,
+        "description": "Possibly the world's first city (4500 BCE), birthplace of writing. Home of legendary King Gilgamesh."
+      },
+      "geometry": { "type": "Point", "coordinates": [45.6369, 31.3225] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eridu",
+        "country": "Iraq",
+        "countryCode": "IQ",
+        "category": "landmark",
+        "rating": 4,
+        "description": "The oldest city in southern Mesopotamia according to Sumerian King List. Only 2% excavated."
+      },
+      "geometry": { "type": "Point", "coordinates": [45.9953, 30.8158] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mesopotamian Marshes",
+        "country": "Iraq",
+        "countryCode": "IQ",
+        "category": "natural",
+        "rating": 5,
+        "description": "UNESCO World Heritage wetlands. Boat tours through reed beds, traditional Marsh Arab mudhif guest houses, water buffalo herds."
+      },
+      "geometry": { "type": "Point", "coordinates": [47.0333, 31.0500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Basra Old Town",
+        "country": "Iraq",
+        "countryCode": "IQ",
+        "category": "landmark",
+        "rating": 3,
+        "description": "Historic port city on the Shatt al-Arab waterway. Ottoman-era architecture, traditional souks, Sinbad's legendary home port."
+      },
+      "geometry": { "type": "Point", "coordinates": [47.7833, 30.5000] }
+    }
+  ]
+}
