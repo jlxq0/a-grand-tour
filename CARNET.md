@@ -1,194 +1,182 @@
 # Carnet de Passage
 
-A Carnet de Passage en Douane (CPD) is an international customs document that allows temporary import of a vehicle into foreign countries without paying import duties or taxes. It acts as a passport for your vehicle, guaranteeing that customs duties will be paid if the vehicle is not re-exported.
+A Carnet de Passage en Douane (CPD) is a customs document that lets you temporarily import a vehicle without paying duties. Required for **Trips 1-4 only** (Feb 2027 - Nov 2028).
 
-## Do We Need One?
+---
 
-**Yes, but only for the first ~22 months of the expedition (Trips 1-4).**
+## Summary
 
-Based on the [Timeline](#timeline):
+| | |
+|---|---|
+| **Carnet needed for** | Iran, Iraq, Kuwait, Qatar, India, Pakistan, Nepal, Bangladesh, Indonesia |
+| **Duration** | 22 months (Feb 2027 - Nov 2028) |
+| **Admin costs** | ~SGD 7,000 - 8,000 (excluding vehicle & security) |
+| **Security cost** | ~SGD 18,000 - 21,000 (see options below) |
+| **Trips to UAE** | 1 trip (about 1 week) |
+| **Where** | Ajman Free Zone + ATCUAE Dubai |
 
-| Trip | Dates | Route | Carnet Required? |
-|------|-------|-------|------------------|
-| 1 | Feb 1 – May 26, 2027 | Dubai → Gulf → Iran → Pakistan → India | **Yes** - Required for Iran, Iraq, Kuwait, Qatar, India, Pakistan |
-| 2 | Aug 1 – Nov 20, 2027 | India → Nepal → Bangladesh | **Yes** - Required for India, Nepal, Bangladesh |
-| 3 | Jan 15 – Apr 19, 2028 | Thailand → Laos → Vietnam → Cambodia → Malaysia | **No** - Not required for land crossings |
-| 4 | Aug 1 – Nov 24, 2028 | Singapore → Indonesia → Timor-Leste → Australia | **Yes** - Required for Indonesia. Australia included at end of trip. |
-| 5 | Feb 1 – Apr 11, 2029 | New Zealand | **No** - Cash deposit alternative |
-| 6+ | Aug 2029 onwards | Chile → All Americas → Europe → Africa → Dubai | **No** - Not required anywhere |
+After Trip 4, close the carnet. Trip 5 (New Zealand) uses a refundable cash deposit. Trips 6-25 need no carnet.
 
-## Strategy
+---
 
-### Phase 1: Carnet (Feb 2027 - Nov 2028)
+## The Process
 
-Obtain a ~22-month carnet from ATCUAE covering Trips 1-4:
+One trip to UAE, about 1 week. Everything except Step 1 requires physical presence.
 
-**Countries requiring carnet on our route:**
-- Iran, Iraq, Kuwait, Qatar (required)
-- India, Pakistan (required - Category 1, 200% deposit)
-- Nepal, Bangladesh (required)
-- Indonesia (required)
+| Step | Action | Cost (SGD) | Time |
+|------|--------|------------|------|
+| **1** | Apply online to Ajman Free Zone for company + 2 visas | — | Before trip |
+| **2** | Fly to UAE | — | — |
+| **3** | Complete biometrics, receive Emirates ID | — | 1-2 days |
+| **4** | Eye test + driving license conversion (both of you) | 420 | Same day |
+| **5** | Purchase Land Cruiser 300 | — | 1-2 days |
+| **6** | Vehicle inspection + registration (RTA) | 1,050 | Same day |
+| **7** | Vehicle insurance | 700 | Same day |
+| **8** | Visit ATCUAE, submit documents, arrange bank guarantee | 250 - 500 | 1-2 days |
+| **9** | Receive carnet booklet | — | 3-5 days |
+| **10** | Fly home, return Jan 2027 to start expedition | — | — |
 
-**Australia** is included at the end of Trip 4 (arrives Brisbane via shipping from Timor-Leste). The carnet covers Australia, but a cash deposit alternative exists if preferred.
+---
 
-**Cost:** Bank guarantee annual premium of 2-5% of vehicle value (~$2,800-7,000/year for a $70k vehicle)
+## Total Costs
 
-**Timeline:**
-- Trip 4 ends: Nov 24, 2028 (in Australia)
-- Ship Brisbane → Auckland: Nov 25 – Dec 1, 2028
-- Close carnet and recover bank guarantee: Dec 2028
+| Item | One-time (SGD) | Annual (SGD) |
+|------|----------------|--------------|
+| Ajman Free Zone license | 1,925 | 2,100 |
+| Investor visa (you) | 1,260 | — |
+| Dependent visa (partner) | 1,400 | — |
+| Driving license conversion (×2) | 420 | — |
+| Vehicle registration | 1,050 | — |
+| Vehicle insurance | 700 | 700 |
+| Carnet processing fee | 350 | — |
+| **Admin Total** | **~7,100** | **~2,800** |
 
-### Phase 2: Cash Deposit for New Zealand (Feb-Apr 2029)
+*Security costs (bank guarantee or insurance) are separate — see comparison below.*
 
-Trip 5 is New Zealand only. Use temporary import with cash deposit instead of carnet:
+### 22-Month Grand Total
 
-- Apply to NZ Customs for Temporary Import Entry
-- Cash deposit = import duties + GST
-- Estimated: ~$10,000-15,000 USD
-- Refunded when vehicle exported (shipping to Chile: Apr 12 – May 17, 2029)
-- Requirements: Non-resident, vehicle stays registered in UAE, max 12 months
+| | Bank Guarantee | Insurance Indemnity |
+|---|---|---|
+| Admin setup | 7,100 | 7,100 |
+| Admin ongoing (2 yrs) | 5,900 | 5,900 |
+| Security cost | 18,400 | 21,000 |
+| Capital required | SGD 280,000 | None |
+| **Total cost** | **~SGD 31,400** | **~SGD 34,000** |
 
-### Phase 3: The Americas & Beyond (Aug 2029+)
+*Bank guarantee is cheaper but requires SGD 280k in a UAE bank for 22 months.*
 
-**No carnet required anywhere in the Americas, Europe, or Africa.**
+---
 
-- Trip 6 (Aug 2029): Chile → Colombia
-- Trip 7+ (2030 onwards): Central America, North America, Europe, Africa
+## Security Options: Which Is Cheapest?
 
-Each country uses its own temporary import permit system (TIP), typically issued at the border with no deposit required.
+The carnet requires security of **200% of vehicle value** for the India/Pakistan route.
 
-## Obtaining the Carnet
+**Your vehicle:** ~SGD 140,000 (modifications/equipment typically don't count — just base vehicle)
+**Required security:** SGD 280,000
 
-### Issuing Authority
+### The Three Options
 
-ATCUAE (Automobile and Touring Club of UAE)
-- Location: ATCUAE Building, Al Wuheida Street, Al Mamzar, Dubai
-- Website: [atcuae.ae](https://atcuae.ae/cpd-carnet-de-passage/)
+| Option | Capital locked? | Out-of-pocket cost | Refundable? |
+|--------|-----------------|-------------------|-------------|
+| **Cash deposit** | SGD 280,000 with ATCUAE | None | Yes |
+| **Bank guarantee** | SGD 280,000 in UAE bank | ~SGD 500 fee | Yes |
+| **Insurance indemnity** | None | ~SGD 21,000 premium | No |
 
-### Requirements
+### 22-Month Cost Analysis
 
-1. Valid UAE residence visa
-2. UAE-registered vehicle
-3. Valid UAE driving license
-4. Passport copy
-5. Vehicle registration copy
-6. Bank guarantee or cash deposit
+Assuming your investments normally return **7% per year**:
 
-### Bank Guarantee vs Cash Deposit
+| Option | What happens to your SGD 280k | Earnings | Fees/Premium | Net cost |
+|--------|------------------------------|----------|--------------|----------|
+| **Cash deposit** | Sits with ATCUAE, earns nothing | SGD 0 | SGD 0 | **SGD 35,900** (opportunity cost) |
+| **Bank guarantee** | Sits in UAE bank at ~3.5% | SGD 18,000 | SGD 500 | **SGD 18,400** (opportunity cost) |
+| **Insurance indemnity** | Stays in your investments at 7% | SGD 35,900 | SGD 21,000 | **SGD 21,000** (premium paid) |
 
-| Option | Upfront Cost | Tied-up Capital | Annual Cost |
-|--------|--------------|-----------------|-------------|
-| Cash deposit | $140,000 (200% of $70k vehicle) | Yes | None |
-| Bank guarantee | ~$2,000-5,000 | No | 2-5% premium ($2,800-7,000) |
+### The Verdict
 
-**Recommendation:** Bank guarantee is more capital-efficient.
+| If your investments return... | Best option | Why |
+|------------------------------|-------------|-----|
+| < 4% | Bank guarantee | UAE bank pays similar, no premium lost |
+| 4% - 7.5% | Bank guarantee | Difference doesn't cover premium |
+| > 7.5% | Insurance indemnity | Investment gains exceed premium cost |
 
-### Adding Additional Drivers
+**For most people earning 5-7% on investments:** Bank guarantee wins by ~SGD 3,000.
 
-An additional driver can be listed on the carnet, but they must also have a valid UAE residence visa. This means both expedition members need UAE residency.
+**If you don't have SGD 280,000 to lock up:** Insurance indemnity is your only option — pay SGD 21,000 and keep your capital free.
 
-## Country-by-Country Details
+### Important Notes
 
-### Countries Requiring Carnet
+- UAE fixed deposits currently pay ~3-4% (Emirates NBD, HSBC, RAKBANK)
+- Insurance indemnity premium varies by provider (5-10% of security value, using 7.5% here)
+- If customs make a claim, you're liable regardless of which option you chose
 
-| Country | Requirement | Notes |
-|---------|-------------|-------|
-| Iran | Required | US-issued carnets not accepted |
-| Iraq | Required | Recent reports suggest may not be enforced |
-| Kuwait | Required | |
-| Qatar | Required | |
-| India | Required | Category 1 (200% deposit) |
-| Pakistan | Can use | Category 1 (200% deposit) |
-| Nepal | Required | |
-| Bangladesh | Required | Traveler reports positive as of 2023 |
-| Indonesia | Required | |
-| Singapore | Required | Brief transit only |
+---
 
-### Countries with Alternatives
+## Timeline
 
-| Country | Carnet | Alternative |
-|---------|--------|-------------|
-| Australia | Recommended | Cash/bank security deposit |
-| New Zealand | Optional | Temporary Import Entry with cash deposit |
-| Malaysia | Only for shipping | Land borders don't require |
+| When | What |
+|------|------|
+| **Mid-2026** | Apply online to Ajman Free Zone |
+| **Late 2026** | One trip to UAE (~1 week): biometrics, licenses, buy car, register, get carnet |
+| **Feb 1, 2027** | Depart Dubai — Trip 1 begins |
+| **Nov 2028** | Return carnet after Trip 4 |
+| **Dec 2028** | Bank guarantee cancelled, funds released |
 
-### Countries Not Requiring Carnet
+---
 
-| Region | Countries |
-|--------|-----------|
-| Middle East | UAE, Oman, Saudi Arabia (recent reports suggest not enforced), Bahrain |
-| Southeast Asia | Thailand, Laos, Vietnam, Cambodia |
-| Americas | All countries - Chile, Argentina, Brazil, Peru, Ecuador, Colombia, Panama, Costa Rica, Nicaragua, Honduras, El Salvador, Guatemala, Belize, Mexico, USA, Canada |
+## Why This Works
 
-## Timeline & Costs Summary
+**The 6-month problem:** Normal UAE visas cancel if you're outside UAE for 180+ days. But **freezone investor visas are exempt** — your visa stays valid regardless of absence.
 
-### Carnet Timeline
+**Why Ajman:** Cheapest freezone (SGD 1,925 vs SGD 3,800+ for Dubai freezones). Same visa benefits.
 
-| Period | Activity |
-|--------|----------|
-| Feb 2027 | Carnet issued, depart Dubai |
-| Feb 2027 – Nov 2028 | Carnet in use (Trips 1-4) |
-| Nov 2028 | Close carnet after Trip 4 (Australia) |
-| Dec 2028 | Bank guarantee released |
+---
 
-### Setup Costs (One-time)
+## Countries Requiring Carnet
 
-| Item | Cost (USD) |
-|------|------------|
-| Carnet processing fee | $500-1,400 |
-| Bank guarantee setup | $2,000-5,000 |
-| **Total** | **~$2,500-6,400** |
+| Trip | Countries | Dates |
+|------|-----------|-------|
+| 1 | Iran, Iraq, Kuwait, Qatar, Pakistan, India | Feb - May 2027 |
+| 2 | India, Nepal, Bangladesh | Aug - Nov 2027 |
+| 3 | *(None)* | Jan - Apr 2028 |
+| 4 | Indonesia | Aug - Nov 2028 |
 
-### Ongoing Costs
+---
 
-| Item | Duration | Annual Cost |
-|------|----------|-------------|
-| Bank guarantee premium | ~22 months (Feb 2027 - Nov 2028) | $2,800-7,000 |
-| **Total** | | **~$5,000-12,000** |
+## After the Carnet (2029+)
 
-### Cash Deposit for New Zealand (Feb-Apr 2029)
+| Trip | Location | What to do |
+|------|----------|------------|
+| **5** | New Zealand | Refundable cash deposit (~SGD 16,000) with NZ Customs |
+| **6-25** | Americas, Europe, Africa | No carnet — free Temporary Import Permits at each border |
 
-| Item | Amount | Notes |
-|------|--------|-------|
-| NZ Customs deposit | ~$10,000-15,000 | Import duties + GST equivalent |
-| Refund | Full amount | When vehicle ships to Chile (May 2029) |
+---
 
-## Important Considerations
+## At the Border
 
-### Carnet Validity
+1. Present carnet to customs
+2. They stamp and keep the entry voucher
+3. You keep the counterfoil as proof
+4. At exit, they stamp the exit voucher
+5. **Critical:** Ensure all stamps are complete — missing stamps trigger deposit claims
 
-- Typically issued for 12 months
-- Can be renewed once for an additional year
-- Must be returned to issuing organization when expired or no longer needed
-- Deposit/guarantee released upon return
+---
 
-### Border Procedures
+## Contacts
 
-1. Present carnet at entry
-2. Customs stamps the entry voucher (volet d'entrée)
-3. Keep counterfoil as proof of entry
-4. At exit, customs stamps the exit voucher (volet de sortie)
-5. Ensure all stamps are complete to avoid deposit claims
+| | |
+|---|---|
+| **ATCUAE** | [atcuae.ae/cpd-carnet-de-passage](https://atcuae.ae/cpd-carnet-de-passage/) — Al Mamzar, Dubai |
+| **Ajman Free Zone** | [afz.gov.ae](https://www.afz.gov.ae/) — Online setup |
+| **RTA Dubai** | [rta.ae](https://www.rta.ae/) — Vehicle registration |
 
-### What Happens If You Don't Re-Export?
-
-If the vehicle is not exported before the carnet expires:
-- The issuing organization pays customs duties to that country
-- They claim the deposit/guarantee from you
-- Can result in losing 200% of vehicle value
-
-### Loss or Damage
-
-If carnet is lost:
-- Immediately notify ATCUAE
-- Report to local police
-- Upon return to UAE, get vehicle inspected by transport authority
-- Obtain Certificate of Location before deposit can be released
+---
 
 ## Resources
 
 - [ATCUAE - Carnet de Passage](https://atcuae.ae/cpd-carnet-de-passage/)
-- [Overlanding Association - Carnet by Country](https://overlandingassociation.org/carnet-de-passage/)
-- [Horizons Unlimited - CDP Country List](https://www.horizonsunlimited.com/get-ready/paperwork/carnet-de-passages-en-douanes-list-of-countries)
-- [NZ Transport Agency - Temporary Import](https://nzta.govt.nz/vehicles/importing-a-vehicle/exceptions/importing-a-vehicle-temporarily/)
-- [Australia Border Force - CPD Carnets](https://www.abf.gov.au/importing-exporting-and-manufacturing/temporary-imports/carnets/cpd-carnets)
+- [Ajman Free Zone](https://www.afz.gov.ae/)
+- [UAE Driving License - 52 Countries](https://albacars.ae/article/uae-driving-licence-exchange-2025-full-list-of-52-countries-no-test-required)
+- [UAE Residence Visa Rules](https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/)
+- [RTA Vehicle Registration](https://www.rta.ae/wps/portal/rta/ae/home/rta-services/service-details?serviceId=582)
+- [Overlanding Association - Carnet Guide](https://overlandingassociation.org/carnet-de-passage/)
