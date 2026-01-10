@@ -1,15 +1,14 @@
-# Trip 8: Panama to Oaxaca
+# Trip 8: LA to Seattle via Alaska
 
-**Central America & Southern Mexico**
+<div class="trip-stats">
 
----
+- **📅 Dates:** September 1 – December 9, 2030
+- **⏱️ Duration:** 100 days (50 driving days)
+- **🚗 Distance:** 15,000 km driving
+- **🌍 Countries:** 2 (USA, Canada)
+- **🛣️ Route:** Los Angeles → Alaska → Seattle
 
-|   |   |
-|---|---|
-| **Duration** | 113 days (56 driving days) |
-| **Distance** | ~9,000 km driving |
-| **Countries** | 8 (Panama, Costa Rica, Nicaragua, Honduras, El Salvador, Guatemala, Belize, Mexico) |
-| **Route** | Panama City → Oaxaca (via Oaxaca Coast & Highway 175) |
+</div>
 
 ---
 

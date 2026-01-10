@@ -6,11 +6,11 @@
 
 ## Summary
 
-In February 2027, we pick up a fully-built Toyota Land Cruiser 300 in Dubai and head east. Over the next 17 years, we'll circumnavigate the globe by road — through the mountains of Pakistan, the temples of Southeast Asia, the outback of Australia, the length of the Americas from Patagonia to Alaska, across Europe, and down through Africa — ending back in Dubai in August 2044, where we sell the car and close the circle.
+In February 2027, we pick up a fully-built Toyota Land Cruiser 300 in Dubai and head east. Over the next 13 years, we'll circumnavigate the globe by road — through the mountains of Pakistan, the temples of Southeast Asia, the outback of Australia, the length of the Americas from Patagonia to Alaska, across Europe, and down through Africa — ending back in Dubai in August 2039, where we sell the car and close the circle.
 
-The trip is split into two phases. Phase A (2027–2034) covers the big continuous journey while our kids are pre-school age: thirteen trips of about four months each, with three months home in Singapore between each one. Phase B (2035–2044) shifts to summer holidays once school starts: ten seven-week trips through Europe and Africa.
+The trip is split into two phases. Phase A (2027–2033) covers the big continuous journey while our kids are pre-school age: thirteen trips of about 3-4 months each, with 3 months home in Singapore between each one. Phase B (2034–2039) shifts to school holidays once school starts in August 2033: twelve shorter trips during Easter (~2.5 weeks), Summer (~7 weeks), and Christmas (~3 weeks) breaks through Europe and Africa.
 
-Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. Total cost: SGD 810,000 over 17 years, including the vehicle. By the end, the kids will be teenagers who've seen more of the world than most people see in a lifetime.
+Total time on the road: ~50 months. Total distance: roughly 200,000 kilometers. Total cost: SGD 810,000 over 13 years, including the vehicle. By the end, the kids will be 12/13 years old, having seen more of the world than most people see in a lifetime.
 
 ---
 
@@ -44,11 +44,11 @@ Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. T
 ## Planning Constraints
 
 1. **Start date** — Departure February 2027
-2. **Phase A end** — Back home by Aug 2034 (first kid starts GESS Grade 1 at age 6)
-3. **Phase B end** — More or less open; when oldest kid is between 15-18 or so
+2. **Phase A end** — Back home by Aug 2033 (first kid starts GESS Grade 1 at age 6)
+3. **Phase B end** — August 2039 (oldest kid is 12/13)
 4. **Home/travel balance** — Roughly 50/50 over the full duration, may vary year to year up to 20% in either direction
 5. **Phase A duration** — Each trip and each home stretch roughly 10-20 weeks; occasionally 1-2 weeks outside range if it meaningfully improves the route
-6. **Phase B duration** — 7(ish) weeks during school breaks
+6. **Phase B duration** — School holidays: Summer (~7 weeks), Christmas (~3 weeks), Easter (~2.5 weeks)
 7. **Country count** — Maximize countries visited
 8. **Daily driving** — Usually max ~300km/day with rest days; up to ~800km highway drives possible (not desired) max twice per trip if it significantly benefits the route
 9. **Stay duration** — One night for boring stops, two or three nights for random cities/places, up to 10 nights for amazing places
@@ -61,9 +61,9 @@ Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. T
 |||
 |---|---|
 |**Vehicle**|Toyota Land Cruiser 300 GR Sport Diesel|
-|**Duration**|2027–2044 (17 years)|
-|**Travel time**|70 months|
-|**Distance**|~210,000 km|
+|**Duration**|2027–2039 (13 years)|
+|**Travel time**|~50 months|
+|**Distance**|~200,000 km|
 |**Cost**|SGD 810,000|
 |**Crew**|Julian, Nathalie + kids|
 
@@ -74,20 +74,19 @@ Total time on the road: 70 months. Total distance: roughly 200,000 kilometers. T
 **Dubai → East → Americas → West → Dubai**
 
 ```
-PHASE A: Trips 1-13 (2027-2034)
+PHASE A: Trips 1-13 (2027-2033)
 Dubai → Oman → Qatar → Bahrain → Saudi → Kuwait → Iraq → Iran →
 [ship Bandar Abbas→Karachi] → Pakistan (KKH) → India → Nepal → Bangladesh →
 [ship] → Thailand → Laos → Cambodia → Vietnam → Malaysia → Singapore →
 [ship] → Indonesia → Timor-Leste → [ship] → Australia → [ship] → New Zealand →
 [ship] → Chile → Argentina → Uruguay → Brazil → Bolivia → Peru → Ecuador →
 Colombia → [ship Darién] → Central America → Mexico → USA → Canada → Alaska →
-[ship] → UK → Ireland → Western Europe
+[ship] → UK → Ireland → Western Europe → Scandinavia → Central Europe
 
-PHASE B: Trips 14-23 (2035-2044)
-Nordics → Baltics → Central Europe → Balkans → Turkey → Caucasus →
-Greece → Italy → Spain → Portugal → Morocco → West Africa →
-Central Africa → Southern Africa → East Africa → Sudan → Egypt →
-Jordan → Saudi Arabia → Dubai
+PHASE B: Trips 14-25 (2034-2039, school holidays)
+Greece → Italy → Spain → Portugal → Morocco →
+West Africa → Central Africa → Southern Africa → East Africa →
+[ship] → Dubai
 ```
 
 **Ships (7):**
@@ -126,38 +125,42 @@ After Trip 3, Starlink covers everything.
 
 # Schedule
 
-## Phase A: Pre-School — 13 trips, 48 months on the road (Feb 2027 – Jul 2034)
+## Phase A: Pre-School — 13 trips (Feb 2027 – May 2033)
 
-|#|Dates|Region|Days|Countries|
+|#|Dates|Route|km|
+|---|---|---|---|
+|1|Feb 1 – May 26, 2027|Dubai → Gulf → Iran → Pakistan → India|10,780|
+|2|Aug 1 – Nov 20, 2027|India → Nepal → Bangladesh|17,460|
+|3|Jan 15 – Apr 19, 2028|Thailand → Laos → Vietnam → Cambodia → Malaysia|9,200|
+|4|Aug 1 – Nov 24, 2028|Singapore → Indonesia → Timor-Leste → Australia|22,000|
+|5|Feb 1 – Apr 11, 2029|New Zealand|6,500|
+|6|Aug 1 – Nov 20, 2029|Chile → Argentina → Brazil → Bolivia → Peru → Colombia|25,000|
+|7|Feb 1 – May 20, 2030|Panama → Central America → Mexico → LA|14,500|
+|8|Sep 1 – Dec 9, 2030|LA → Alaska → Seattle|15,000|
+|9|Feb 1 – May 26, 2031|Seattle → Texas|15,000|
+|10|Aug 1 – Nov 26, 2031|Texas → Toronto → Jacksonville|13,000|
+|11|Feb 1 – May 16, 2032|Dublin → Helsinki|7,000|
+|12|Aug 1 – Oct 31, 2032|Helsinki → Vienna|6,000|
+|13|Feb 1 – May 1, 2033|Vienna → Athens|5,500|
+
+**School starts August 2033.**
+
+## Phase B: School Holidays — 12 trips (2034–2039)
+
+|#|Dates|Break|Route|km|
 |---|---|---|---|---|
-|1|Feb–May 2027|Dubai → Gulf → Iran → Pakistan → India|114|🇦🇪🇴🇲🇶🇦🇧🇭🇸🇦🇰🇼🇮🇶🇮🇷🇵🇰🇮🇳|
-|2|Sep–Dec 2027|India → Nepal → Bangladesh|111|🇮🇳🇳🇵🇧🇩|
-|3|Feb–Apr 2028|Thailand → Indochina → Malaysia|70|🇹🇭🇱🇦🇻🇳🇰🇭🇲🇾|
-|4|Aug–Oct 2028|Singapore → Indonesia → Timor-Leste|53|🇸🇬🇮🇩🇹🇱|
-|5|Nov 2028–Jan 2029|Australia|57|🇦🇺|
-|6|Feb–Apr 2029|New Zealand|70|🇳🇿|
-|7|Feb–Jun 2030|Chile → Argentina → Brazil → Bolivia → Peru → Colombia|110|🇨🇱🇦🇷🇺🇾🇧🇷🇧🇴🇵🇪🇪🇨🇨🇴|
-|8|Jul–Nov 2030|Panama → Central America → Mexico (Oaxaca)|113|🇵🇦🇨🇷🇳🇮🇭🇳🇸🇻🇬🇹🇧🇿🇲🇽|
-|9|Feb–Apr 2031|Mexico Pacific Coast → Copper Canyon → Baja → LA|63|🇲🇽🇺🇸|
-|10|Sep–Dec 2031|California → Southwest → Texas (Houston)|100|🇺🇸|
-|11|Feb–Jun 2032|Houston → Rockies → Seattle → Vancouver → Alaska → Toronto|115|🇺🇸🇨🇦|
-|12|Jul–Nov 2032|Toronto → Atlantic Canada → US East Coast → Florida → Jacksonville|117|🇨🇦🇺🇸|
-|13|Feb–May 2034|UK → Ireland → Western Europe → Switzerland|108|🇬🇧🇮🇪🇫🇷🇧🇪🇳🇱🇱🇺🇨🇭🇩🇪|
-
-## Phase B: School Summers — 10 trips, 22 months on the road (Jun–Aug 2035–2044)
-
-|Summer|Region|Countries|
-|---|---|---|
-|2035|Nordics + Baltics|🇩🇰🇳🇴🇸🇪🇫🇮🇪🇪🇱🇻🇱🇹|
-|2036|Poland → Western Balkans|🇵🇱🇨🇿🇸🇰🇦🇹🇭🇺🇸🇮🇭🇷🇧🇦🇲🇪|
-|2037|Eastern Balkans → Turkey → Caucasus|🇦🇱🇽🇰🇲🇰🇷🇸🇷🇴🇲🇩🇧🇬🇹🇷🇬🇪|
-|2038|Caucasus → Greece|🇦🇲🇦🇿🇬🇷|
-|2039|Italy|🇮🇹|
-|2040|Spain + Portugal → Morocco|🇪🇸🇵🇹🇲🇦|
-|2041|West Africa (coastal)|🇲🇦🇪🇭🇲🇷🇸🇳🇬🇲🇬🇼🇬🇳🇸🇱🇱🇷🇨🇮🇬🇭|
-|2042|Central → Southern Africa|🇹🇬🇧🇯🇳🇬🇨🇲🇬🇶🇬🇦🇨🇬🇨🇩🇦🇴🇳🇦🇧🇼🇿🇲🇿🇼🇿🇦|
-|2043|East Africa|🇿🇦🇱🇸🇸🇿🇲🇿🇲🇼🇹🇿🇰🇪🇺🇬🇷🇼🇧🇮🇪🇹|
-|2044|Egypt → Middle East → Dubai (END)|🇪🇷🇸🇩🇪🇬🇯🇴🇸🇦🇰🇼🇦🇪|
+|14|Mar 26 – Apr 12, 2034|Easter|Athens → Milan|2,500|
+|15|Jun 26 – Aug 16, 2034|Summer|Milan → Marrakech|3,500|
+|16|Dec 19, 2034 – Jan 10, 2035|Christmas|Marrakech → Dakar (Sahara in winter)|3,500|
+|17|Jun 26 – Aug 16, 2035|Summer|Dakar → Accra|2,500|
+|18|Dec 19, 2035 – Jan 10, 2036|Christmas|Accra → Libreville|2,500|
+|19|Jun 26 – Aug 16, 2036|Summer|Libreville → Windhoek|4,000|
+|20|Dec 19, 2036 – Jan 10, 2037|Christmas|Windhoek → Cape Town|2,000|
+|21|Mar 26 – Apr 12, 2037|Easter|Cape Town → Durban|2,000|
+|22|Jun 26 – Aug 16, 2038|Summer|Durban → Dar es Salaam|4,500|
+|23|Dec 19, 2038 – Jan 10, 2039|Christmas|Dar es Salaam → Nairobi|1,500|
+|24|Mar 26 – Apr 12, 2039|Easter|Nairobi → Djibouti|2,500|
+|25|Jun 26 – Aug 10, 2039|Summer|Djibouti → Dubai (ship car home)|1,000|
 
 ---
 

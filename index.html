@@ -1203,6 +1203,229 @@
             font-weight: 500;
         }
 
+        /* Risk page styles */
+        .score-legend {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 40px;
+        }
+
+        .score-legend h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .score-scale {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .score-bar {
+            flex: 1;
+            min-width: 200px;
+            height: 30px;
+            background: linear-gradient(to right,
+                #8B0000 0%,
+                #DC143C 20%,
+                #FF6B35 40%,
+                #FFA500 60%,
+                #90EE90 80%,
+                #228B22 100%);
+            border-radius: 15px;
+        }
+
+        .score-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        .risk-context {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .risk-context h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #3498db;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-light);
+        }
+
+        .section-header h2 {
+            font-size: 1.5rem;
+        }
+
+        .section-badge {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .badge-impossible {
+            background: rgba(180, 30, 30, 0.85);
+        }
+
+        .badge-problematic {
+            background: rgba(255, 190, 50, 0.9);
+            color: #333;
+        }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .country-card {
+            background: white;
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: box-shadow 0.2s;
+        }
+
+        .country-card:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .country-card.impossible {
+            border-left: 5px solid rgba(180, 30, 30, 0.85);
+        }
+
+        .country-card.problematic {
+            border-left: 5px solid rgba(255, 190, 50, 0.9);
+        }
+
+        .country-header {
+            padding: 15px;
+            background: var(--bg-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .country-name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .country-name h3 {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .country-flag {
+            font-size: 1.6rem;
+        }
+
+        .safety-score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .score-value {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .score-value.danger { color: #8B0000; }
+        .score-value.high-risk { color: #DC143C; }
+        .score-value.risky { color: #FF6B35; }
+        .score-value.caution { color: #FFA500; }
+        .score-value.moderate { color: #90EE90; }
+        .score-value.safe { color: #228B22; }
+
+        .score-label {
+            font-size: 10px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        .country-body {
+            padding: 15px;
+        }
+
+        .country-status {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .status-impossible {
+            background: rgba(180, 30, 30, 0.15);
+            color: #8B0000;
+        }
+
+        .status-problematic {
+            background: rgba(255, 190, 50, 0.3);
+            color: #996600;
+        }
+
+        .country-description {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        .risk-factors {
+            list-style: none;
+            padding: 0;
+        }
+
+        .risk-factors li {
+            padding: 6px 0;
+            border-bottom: 1px solid var(--border-light);
+            font-size: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .risk-factors li:last-child {
+            border-bottom: none;
+        }
+
+        .risk-icon {
+            flex-shrink: 0;
+        }
+
+        .regional-note {
+            margin-top: 12px;
+            padding: 10px;
+            background: rgba(52, 152, 219, 0.1);
+            border-radius: 8px;
+            font-size: 12px;
+        }
+
+        .regional-note strong {
+            color: #2980b9;
+        }
+
         /* Responsive */
         @media (max-width: 1200px) {
             .map-panel { width: 45%; }
@@ -1234,9 +1457,11 @@
                 <div class="legend-item toggleable" data-layers="planned-route-line,planned-route-segment-highlight,planned-route-segments-hover"><div class="legend-line" style="background: #2471a3;"></div> Planned route</div>
                 <div class="legend-item toggleable" data-layers="ferries-line,shipping-line"><div class="legend-line-dashed"></div> Ferry / Ship</div>
                 <div class="legend-item toggleable" data-layers="scenic-routes-line,scenic-routes-highlight"><div class="legend-line" style="background: #f1c40f;"></div> Scenic route</div>
+                <div class="legend-item toggleable" data-layers="safe-corridor-line,safe-corridor-points"><div class="legend-line" style="background: #27ae60;"></div> Safe corridor</div>
                 <div class="legend-item toggleable" data-layers="pois-circle,pois-labels"><div class="legend-dot" style="background: #e74c3c;"></div> Point of interest</div>
-                <div class="legend-item"><div class="legend-fill" style="background: rgba(255, 190, 50, 0.40);"></div> Problematic</div>
-                <div class="legend-item"><div class="legend-fill" style="background: rgba(180, 30, 30, 0.35);"></div> Impossible</div>
+                <div class="legend-item toggleable" data-layers="problematic-countries"><div class="legend-fill" style="background: rgba(255, 190, 50, 0.40);"></div> Problematic</div>
+                <div class="legend-item toggleable" data-layers="impossible-countries"><div class="legend-fill" style="background: rgba(180, 30, 30, 0.35);"></div> Impossible</div>
+                <div class="legend-item toggleable hidden" data-layers="risk-regions-red,risk-regions-orange"><div class="legend-fill" style="background: linear-gradient(135deg, rgba(180, 30, 30, 0.6) 50%, rgba(255, 180, 50, 0.6) 50%);"></div> Regional detail</div>
             </div>
 
             <!-- Map Controls -->
@@ -1324,18 +1549,20 @@ let allRoutesData = null;
 const pages = {
     '': { file: 'README.md', title: 'Overview', short: 'Overview', isTrip: false },
     'timeline': { title: 'Timeline', short: 'Timeline', isTrip: false, isTimeline: true },
-    'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi', short: 'Trip 1', route: 'Dubai → Delhi', isTrip: true },
-    'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong', short: 'Trip 2', route: 'Delhi → Chittagong', isTrip: true },
-    'trip03': { file: 'TRIP03.md', title: 'Trip 3: Bangkok to Singapore', short: 'Trip 3', route: 'Bangkok → Singapore', isTrip: true },
-    'trip04': { file: 'TRIP04.md', title: 'Trip 4: Singapore to Dili', short: 'Trip 4', route: 'Singapore → Dili', isTrip: true },
-    'trip05': { file: 'TRIP05.md', title: 'Trip 5: Darwin to Townsville', short: 'Trip 5', route: 'Darwin → Townsville', isTrip: true },
-    'trip06': { file: 'TRIP06.md', title: 'Trip 6: Auckland to Christchurch', short: 'Trip 6', route: 'Auckland → Christchurch', isTrip: true },
-    'trip07': { file: 'TRIP07.md', title: 'Trip 7: Valparaíso to Cartagena', short: 'Trip 7', route: 'Valparaíso → Cartagena', isTrip: true },
-    'trip08': { file: 'TRIP08.md', title: 'Trip 8: Panama to Oaxaca', short: 'Trip 8', route: 'Panama → Oaxaca', isTrip: true },
-    'trip09': { file: 'TRIP09.md', title: 'Trip 9: Oaxaca to Los Angeles', short: 'Trip 9', route: 'Oaxaca → Los Angeles', isTrip: true },
-    'trip10': { file: 'TRIP10.md', title: 'Trip 10: Los Angeles to Houston', short: 'Trip 10', route: 'Los Angeles → Houston', isTrip: true },
-    'trip11': { file: 'TRIP11.md', title: 'Trip 11: Houston to Toronto', short: 'Trip 11', route: 'Houston → Toronto', isTrip: true },
-    'trip12': { file: 'TRIP12.md', title: 'Trip 12: Toronto to Jacksonville', short: 'Trip 12', route: 'Toronto → Jacksonville', isTrip: true }
+    'risks': { title: 'Country Risks', short: 'Risks', isTrip: false, isRisks: true },
+    'carnet': { file: 'CARNET.md', title: 'Carnet de Passage', short: 'Carnet', isTrip: false },
+    'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi', short: 'Trip 1', route: 'Dubai → India', isTrip: true },
+    'trip02': { file: 'TRIP02.md', title: 'Trip 2: India to Bangladesh', short: 'Trip 2', route: 'India → Bangladesh', isTrip: true },
+    'trip03': { file: 'TRIP03.md', title: 'Trip 3: Thailand to Malaysia', short: 'Trip 3', route: 'Thailand → Malaysia', isTrip: true },
+    'trip04': { file: 'TRIP04.md', title: 'Trip 4: Singapore to Australia', short: 'Trip 4', route: 'Singapore → Australia', isTrip: true },
+    'trip05': { file: 'TRIP05.md', title: 'Trip 5: New Zealand', short: 'Trip 5', route: 'New Zealand', isTrip: true },
+    'trip06': { file: 'TRIP06.md', title: 'Trip 6: Chile to Colombia', short: 'Trip 6', route: 'Chile → Colombia', isTrip: true },
+    'trip07': { file: 'TRIP07.md', title: 'Trip 7: Panama to Los Angeles', short: 'Trip 7', route: 'Panama → LA', isTrip: true },
+    'trip08': { file: 'TRIP08.md', title: 'Trip 8: LA to Seattle', short: 'Trip 8', route: 'LA → Alaska → Seattle', isTrip: true },
+    'trip09': { file: 'TRIP09.md', title: 'Trip 9: Seattle to Texas', short: 'Trip 9', route: 'Seattle → Texas', isTrip: true },
+    'trip10': { file: 'TRIP10.md', title: 'Trip 10: Texas to Jacksonville', short: 'Trip 10', route: 'Texas → Jacksonville', isTrip: true },
+    'trip11': { file: 'TRIP11.md', title: 'Trip 11: Dublin to Helsinki', short: 'Trip 11', route: 'Dublin → Helsinki', isTrip: true },
+    'trip12': { file: 'TRIP12.md', title: 'Trip 12: Helsinki to Vienna', short: 'Trip 12', route: 'Helsinki → Vienna', isTrip: true }
 };
 
 let currentPage = null;
@@ -1391,6 +1618,8 @@ function updateNav(activePage) {
                     ${tripItems}
                 </div>
             </div>
+            <a href="#risks" class="${activePage === 'risks' ? 'active' : ''}">Risks</a>
+            <a href="#carnet" class="${activePage === 'carnet' ? 'active' : ''}">Carnet</a>
         </div>
     `;
 
@@ -1678,6 +1907,212 @@ function renderTimeline(contentEl) {
     });
 }
 
+// Render risks page
+function renderRisks(contentEl) {
+    // Country data: [flag, name, score, scoreClass, status, statusClass, description, riskFactors, regionalNote?]
+    const impossibleCountries = [
+        ['🇸🇾', 'Syria', 5, 'danger', 'Active War Zone', 'status-impossible', 'Civil war since 2011. Multiple armed factions control different regions.',
+            ['💣 Active military conflict', '🎯 Airstrikes ongoing', '⛓️ Kidnapping of foreigners', '🚫 No tourism infrastructure']],
+        ['🇾🇪', 'Yemen', 5, 'danger', 'Active War Zone', 'status-impossible', 'Civil war since 2014. Humanitarian catastrophe with famine.',
+            ['💣 Active civil war', '🚀 Regular missile strikes', '🏥 Collapsed healthcare', '🚫 Borders closed']],
+        ['🇺🇦', 'Ukraine', 10, 'danger', 'Active War Zone', 'status-impossible', 'Full-scale Russian invasion since Feb 2022. Major conventional warfare.',
+            ['💣 Active front lines', '🚀 Nationwide missile attacks', '💥 Landmine contamination', '🛂 Martial law']],
+        ['🇸🇩', 'Sudan', 8, 'danger', 'Active Civil War', 'status-impossible', 'Civil war since April 2023 between SAF and RSF. Khartoum devastated.',
+            ['⚔️ Heavy fighting', '🏚️ Infrastructure destroyed', '🏥 Healthcare collapsed', '🚫 Routes closed']],
+        ['🇸🇸', 'South Sudan', 10, 'danger', 'Extreme Violence', 'status-impossible', 'Ethnic violence, famine, lawlessness outside Juba.',
+            ['⚔️ Ethnic violence', '🔫 Armed groups control territory', '🛣️ Roads impassable', '⛓️ Aid workers kidnapped']],
+        ['🇱🇾', 'Libya', 10, 'danger', 'Failed State', 'status-impossible', 'Divided between rival governments since 2011. Militia clashes.',
+            ['⚔️ Two rival governments', '⛓️ Kidnapping risk', '🏜️ Trafficker-controlled south', '🚫 No tourist visas']],
+        ['🇸🇴', 'Somalia', 5, 'danger', 'Failed State', 'status-impossible', 'No effective government since 1991. Al-Shabaab controls large areas.',
+            ['💣 Terrorist attacks', '⛓️ Kidnapping industry', '🏴‍☠️ Piracy', '🚫 No tourism possible']],
+        ['🇦🇫', 'Afghanistan', 8, 'danger', 'Taliban Control', 'status-impossible', 'Taliban rule since 2021. ISIS-K attacks. Severe restrictions.',
+            ['💣 ISIS-K attacks', '🚺 Movement restrictions', '⛓️ Kidnapping history', '🛂 Difficult visas']],
+        ['🇨🇫', 'CAR', 12, 'danger', 'Armed Groups', 'status-impossible', 'Armed groups control 80% of territory. UN peacekeepers.',
+            ['⚔️ Armed group control', '🛣️ Roads ambushed', '⛓️ Aid worker kidnappings', '🚫 Cannot transit']],
+        ['🇭🇹', 'Haiti', 10, 'danger', 'Gang Control', 'status-impossible', 'Gangs control 80% of Port-au-Prince. Complete lawlessness.',
+            ['🔫 Gang warfare', '⛓️ Mass kidnappings', '🏛️ No functioning government', '🚫 No overland access']],
+        ['🇻🇪', 'Venezuela', 18, 'high-risk', 'Economic Collapse', 'status-impossible', 'Economic collapse, crime epidemic, political instability.',
+            ['🔫 Highest murder rate', '💰 Extortion at checkpoints', '⛽ Fuel shortages', '🛂 Hostile to Westerners'],
+            'Some overlanders transit the southern route (Santa Elena) with armed escort, but extremely high risk.'],
+        ['🇮🇶', 'Iraq', 20, 'high-risk', 'Security Risk', 'status-impossible', 'Improved but still dangerous. ISIS remnants, militia activity.',
+            ['💣 Terrorist attacks', '⚔️ Militia activity', '🛂 Complex permits', '🚫 Kurdistan only feasible'],
+            'Kurdistan region (north) is relatively safe but vehicle import extremely difficult.'],
+        ['🇷🇺', 'Russia', 25, 'high-risk', 'Sanctions/Visa', 'status-impossible', 'Cannot obtain visa due to sanctions. War in Ukraine ongoing.',
+            ['🛂 Visa denial for Westerners', '💳 No payment systems work', '⛓️ Wrongful detention risk', '🚫 Border closed'],
+            'Even if you could enter, risk of arbitrary detention for foreign nationals.'],
+        ['🇧🇾', 'Belarus', 25, 'high-risk', 'Authoritarian', 'status-impossible', 'Lukashenko regime hostile to West. Detention risks.',
+            ['🛂 Visa issues', '⛓️ Arbitrary detention', '👁️ Heavy surveillance', '🚫 Transit not viable'],
+            'Previously a transit route to Russia, now effectively closed to Western overlanders.'],
+        ['🇪🇷', 'Eritrea', 22, 'high-risk', 'Closed State', 'status-impossible', 'One of world\'s most closed countries. No independent travel.',
+            ['🛂 Tourist visas extremely rare', '👁️ Total surveillance', '🚫 No independent movement', '📵 No communications'],
+            'Called "North Korea of Africa". Even journalists cannot enter.'],
+        ['🇰🇵', 'North Korea', 55, 'caution', 'Guided Tours Only', 'status-impossible', 'Completely controlled. Must use state tour. No private vehicles.',
+            ['🚗 No private vehicles allowed', '👁️ 24/7 minders', '🛂 Guided tour only', '📵 No internet'],
+            'Ironically "safer" than war zones if you follow rules, but impossible with a vehicle.'],
+        ['🇨🇳', 'China', 45, 'caution', 'Vehicle Ban', 'status-impossible', 'Foreign vehicles banned since 2016. No self-drive tourism.',
+            ['🚗 Foreign vehicles prohibited', '🛂 No driving permits issued', '👁️ Surveillance state', '🚫 Must use local driver'],
+            'Beautiful country, but you cannot enter with your own vehicle. Full stop.'],
+        ['🇹🇲', 'Turkmenistan', 15, 'high-risk', 'Transit Only', 'status-impossible', 'Only transit visas issued (5 days). No free travel.',
+            ['🛂 5-day transit visa only', '🛣️ Fixed route only', '👁️ Police checkpoints', '💰 Expensive fuel/hotels'],
+            'Transit possible on Silk Road route but no deviation allowed. Doable if you follow rules exactly.'],
+        ['🇲🇲', 'Myanmar', 15, 'high-risk', 'Military Coup', 'status-impossible', 'Military coup 2021. Civil war expanding. Tourist visas suspended.',
+            ['⚔️ Civil war spreading', '🛂 Visas suspended', '💣 Fighting near borders', '🚫 Overland closed'],
+            'Was opening up before 2021. Now completely closed to overlanders.'],
+    ];
+
+    const problematicCountries = [
+        ['🇲🇱', 'Mali', 15, 'high-risk', 'Insurgency', 'status-problematic', 'Jihadist insurgency in north/center. French forces withdrew.',
+            ['💣 Terrorist attacks', '⛓️ Kidnapping risk', '⚔️ Military operations', '🛣️ North impassable'],
+            'Southern transit (Bamako corridor) sometimes used by convoys. Extreme caution required.'],
+        ['🇧🇫', 'Burkina Faso', 15, 'high-risk', 'Collapsed Security', 'status-problematic', 'Security collapsed. Jihadists control large areas.',
+            ['💣 Frequent attacks', '🔫 Military coups', '🛣️ Roads ambushed', '⛓️ Kidnapping'],
+            'Once a common transit, now extremely dangerous. Some overlanders use armed convoy on main highway.'],
+        ['🇳🇪', 'Niger', 15, 'high-risk', 'Military Coup', 'status-problematic', 'Military coup 2023. Border tensions. Jihadist activity.',
+            ['🔫 Military government', '💣 Terror attacks', '🛣️ Desert routes risky', '🛂 Visa complexity'],
+            'Trans-Sahara route through Niger largely abandoned by overlanders.'],
+        ['🇹🇩', 'Chad', 20, 'high-risk', 'Unstable', 'status-problematic', 'Military government. Ethnic tensions. Boko Haram in southwest.',
+            ['⚔️ Rebel activity', '💣 Boko Haram', '🛣️ Poor infrastructure', '🛂 Expensive visa'],
+            'N\'Djamena relatively stable. Can be transited with careful planning.'],
+        ['🇳🇬', 'Nigeria', 25, 'risky', 'Regional Risks', 'status-problematic', 'Africa\'s largest economy but serious security issues.',
+            ['🔫 Banditry in northwest', '💣 Boko Haram in northeast', '⛓️ Kidnapping epidemic', '🛣️ Road checkpoints'],
+            'Lagos-Abuja-Cameroon corridor used by overlanders. Avoid north. Travel in daylight only.'],
+        ['🇨🇲', 'Cameroon', 30, 'risky', 'Conflict Zones', 'status-problematic', 'English-speaking regions in civil conflict. Boko Haram in north.',
+            ['⚔️ Anglophone crisis', '💣 Boko Haram', '🛣️ Checkpoints', '🚗 Carjacking risk'],
+            'Eastern transit route (Yaoundé-Gabon) used by overlanders. Avoid west and far north.'],
+        ['🇨🇩', 'DR Congo', 35, 'risky', 'Eastern Conflict', 'status-problematic', 'Vast country. Eastern regions in perpetual conflict.',
+            ['⚔️ War in east', '🔫 Armed groups', '🛣️ Roads terrible', '💰 Expensive permits'],
+            'Western route (Brazzaville ferry, Kinshasa-Matadi) used. East (Goma/Bukavu) absolutely not.'],
+        ['🇪🇹', 'Ethiopia', 25, 'risky', 'Ethnic Conflict', 'status-problematic', 'Tigray war "ended" but ethnic violence spreading.',
+            ['⚔️ Ethnic conflicts', '🛣️ Road ambushes', '🛂 Permit restrictions', '📵 Internet blackouts'],
+            'Addis-Moyale route still used. Avoid Tigray, Amhara, Oromia conflict zones.'],
+        ['🇲🇿', 'Mozambique', 35, 'risky', 'Northern Insurgency', 'status-problematic', 'ISIS-linked insurgency in Cabo Delgado. Rest relatively stable.',
+            ['💣 Northern insurgency', '🔫 Banditry on roads', '🛣️ Poor infrastructure', '🚗 Carjacking'],
+            'Southern route (South Africa-Mozambique-Malawi) commonly used. Avoid Cabo Delgado.'],
+        ['🇵🇰', 'Pakistan', 20, 'high-risk', 'Terrorism Risk', 'status-problematic', 'Terrorism and sectarian violence. Balochistan especially dangerous.',
+            ['💣 Terrorist attacks', '⚔️ Baloch insurgency', '🛂 Restricted areas', '👁️ Surveillance'],
+            'KKH (Karakoram Highway) used by overlanders. Armed escort required in Balochistan.'],
+        ['🇮🇷', 'Iran', 55, 'caution', 'Geopolitical Risk', 'status-problematic', 'Surprisingly safe for tourists. Main risk is geopolitical escalation.',
+            ['🛂 US citizens banned', '💳 No credit cards', '🌐 Sanctions complications', '👗 Dress code enforcement'],
+            'Many overlanders transit Iran successfully. Warm hospitality. Just follow local customs.'],
+        ['🇱🇧', 'Lebanon', 45, 'caution', 'Hezbollah Conflict', 'status-problematic', 'Economic collapse. Israel-Hezbollah conflict escalating.',
+            ['💣 Border conflict', '💰 Economic crisis', '⛽ Fuel shortages', '🏛️ Political paralysis'],
+            'Was a common stop. Now risky due to escalating conflict. Monitor situation carefully.'],
+        ['🇮🇱', 'Israel', 50, 'caution', 'Active Conflict', 'status-problematic', 'Gaza war ongoing. West Bank tensions. Border risk.',
+            ['💣 Rocket attacks possible', '⚔️ Gaza conflict', '🛂 Entry scrutiny', '🚗 West Bank checkpoints'],
+            'Can be visited but monitor security situation. Avoid Gaza border areas.'],
+        ['🇵🇸', 'Palestine', 35, 'risky', 'Occupation Zone', 'status-problematic', 'West Bank under occupation. Gaza in active war zone.',
+            ['⚔️ Gaza war', '🛂 Checkpoint delays', '🔫 Settler violence', '💣 Periodic flare-ups'],
+            'West Bank accessible but complex. Gaza completely off-limits.'],
+        ['🇪🇬', 'Egypt', 50, 'caution', 'Sinai Terrorism', 'status-problematic', 'Sinai Peninsula has active insurgency. Rest relatively stable.',
+            ['💣 Sinai insurgency', '🛂 Police state', '👁️ Heavy surveillance', '🚗 Convoy requirements'],
+            'Nile Valley route safe. Sinai crossings require convoy. Western desert needs permits.'],
+        ['🇩🇿', 'Algeria', 40, 'caution', 'Southern Risk', 'status-problematic', 'Southern Sahara has jihadist presence. North relatively stable.',
+            ['💣 Southern terrorism', '🛂 Complex permits', '🛣️ Desert risks', '👁️ Security escorts'],
+            'Coastal route okay. Sahara crossing requires armed escort and permits.'],
+        ['🇬🇳', 'Guinea', 40, 'caution', 'Political Instability', 'status-problematic', 'Military coup 2021. Transition ongoing. Ebola outbreaks.',
+            ['🔫 Military government', '🏥 Ebola risk', '🛣️ Poor roads', '💰 Corruption'],
+            'Can be transited with care. Main route to Guinea-Bissau.'],
+        ['🇬🇼', 'Guinea-Bissau', 45, 'caution', 'Drug Trafficking', 'status-problematic', 'Narco-state. Drug cartels influential. Coups frequent.',
+            ['🔫 Military instability', '💊 Narco-state', '🛣️ Terrible roads', '💰 Corruption'],
+            'Quick transit possible. Don\'t linger. Stay on main roads.'],
+        ['🇧🇯', 'Benin', 50, 'caution', 'Northern Risk', 'status-problematic', 'Northern border region sees jihadist incursions from Sahel.',
+            ['💣 Northern terrorism', '🛣️ Park closures', '🚗 Carjacking risk', '🛂 Checkpoints'],
+            'Southern transit (Lagos-Cotonou-Lomé) commonly used. Avoid Pendjari National Park.'],
+        ['🇹🇬', 'Togo', 50, 'caution', 'Northern Risk', 'status-problematic', 'Similar to Benin. Northern area sees Sahel spillover.',
+            ['💣 Northern attacks', '🔫 Armed robbery', '🛣️ Poor roads north', '💰 Checkpoints'],
+            'Coastal route safe and commonly used. Quick transit.'],
+    ];
+
+    const createCountryCard = (country, type) => {
+        const [flag, name, score, scoreClass, status, statusClass, desc, risks, note] = country;
+        return `
+            <div class="country-card ${type}">
+                <div class="country-header">
+                    <div class="country-name">
+                        <span class="country-flag">${flag}</span>
+                        <h3>${name}</h3>
+                    </div>
+                    <div class="safety-score">
+                        <span class="score-value ${scoreClass}">${score}%</span>
+                        <span class="score-label">Safety</span>
+                    </div>
+                </div>
+                <div class="country-body">
+                    <span class="country-status ${statusClass}">${status}</span>
+                    <p class="country-description">${desc}</p>
+                    <ul class="risk-factors">
+                        ${risks.map(r => `<li><span class="risk-icon">${r.slice(0,2)}</span>${r.slice(2)}</li>`).join('')}
+                    </ul>
+                    ${note ? `<div class="regional-note"><strong>Route note:</strong> ${note}</div>` : ''}
+                </div>
+            </div>
+        `;
+    };
+
+    contentEl.innerHTML = `
+        <h1>Country Risk Assessment</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 30px;">Safety analysis for overlanding through difficult regions (as of January 2026). <strong>Hover over regions on the map</strong> to see sub-national risk zones.</p>
+
+        <div class="score-legend">
+            <h2>How to Read This Page</h2>
+
+            <div class="risk-context" style="margin-bottom: 20px;">
+                <h3>Category vs Safety Score</h3>
+                <p>Countries are classified by two independent factors:</p>
+                <ul style="margin-top: 10px; margin-left: 20px; color: var(--text-secondary);">
+                    <li><strong style="color: #c0392b;">No-Go (Red)</strong> = <em>Cannot enter</em> — visa denial, closed borders, active war, or vehicle import banned.</li>
+                    <li><strong style="color: #e67e22;">High Risk (Orange)</strong> = <em>Can enter, but dangerous</em> — possible with extreme caution or avoiding regions.</li>
+                </ul>
+                <p style="margin-top: 10px;">The map shows sub-national detail: Iraqi Kurdistan (orange) within Iraq (red), Northern Nigeria (red) within Nigeria (orange). Areas not marked are assumed passable.</p>
+            </div>
+
+            <h3>Safety Score Scale</h3>
+            <p>0-100% based on risk factors for overland travelers.</p>
+
+            <div class="score-scale">
+                <span>0%</span>
+                <div class="score-bar"></div>
+                <span>100%</span>
+            </div>
+            <div class="score-labels" style="max-width: 300px; margin: 0 30px;">
+                <span>Danger</span>
+                <span>Risky</span>
+                <span>Caution</span>
+                <span>Safe</span>
+            </div>
+
+            <div class="risk-context">
+                <h3>Our Risk Tolerance</h3>
+                <p><strong>Turkmenistan</strong> and <strong>North Korea</strong> are manageable with guided tours. But we avoid:</p>
+                <ul style="margin-top: 8px; margin-left: 20px; color: var(--text-secondary); font-size: 13px;">
+                    <li>Active war zones or civil conflicts</li>
+                    <li>Areas with tourist kidnappings for ransom</li>
+                    <li>Regions controlled by armed groups or gangs</li>
+                    <li>Countries with wrongful detention risks</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-header">
+            <h2>No-Go Countries</h2>
+            <span class="section-badge badge-impossible">Cannot Enter with Vehicle</span>
+        </div>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">Impossible to enter with a private vehicle, active wars, or unacceptable risks.</p>
+        <div class="country-grid">
+            ${impossibleCountries.map(c => createCountryCard(c, 'impossible')).join('')}
+        </div>
+
+        <div class="section-header">
+            <h2>High Risk Countries</h2>
+            <span class="section-badge badge-problematic">Possible with Extreme Caution</span>
+        </div>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">Can be entered, but require careful planning, avoiding certain regions, or armed escorts.</p>
+        <div class="country-grid">
+            ${problematicCountries.map(c => createCountryCard(c, 'problematic')).join('')}
+        </div>
+    `;
+}
+
 // Load and render markdown
 async function loadContent(page, anchor = null) {
     const contentEl = document.getElementById('content');
@@ -1693,6 +2128,13 @@ async function loadContent(page, anchor = null) {
         // Handle timeline page specially
         if (config.isTimeline) {
             renderTimeline(contentEl);
+            document.querySelector('.content-panel').scrollTop = 0;
+            return;
+        }
+
+        // Handle risks page specially
+        if (config.isRisks) {
+            renderRisks(contentEl);
             document.querySelector('.content-panel').scrollTop = 0;
             return;
         }
@@ -1856,7 +2298,7 @@ const poiFiles = [
     'cl.geojson','cm.geojson','co.geojson','cr.geojson','cz.geojson','de.geojson','dk.geojson','ec.geojson',
     'ee.geojson','eg.geojson','er.geojson','es.geojson','et.geojson','fi.geojson','fr.geojson','ga.geojson',
     'gb.geojson','ge.geojson','gf.geojson','gh.geojson','gr.geojson','gt.geojson','gy.geojson','hn.geojson',
-    'hr.geojson','hu.geojson','id.geojson','ie.geojson','in.geojson','ir.geojson','is.geojson','it.geojson',
+    'hr.geojson','hu.geojson','id.geojson','ie.geojson','in.geojson','iq.geojson','ir.geojson','is.geojson','it.geojson',
     'jo.geojson','ke.geojson','kh.geojson','kw.geojson','la.geojson','ls.geojson','lt.geojson','lu.geojson',
     'lv.geojson','ma.geojson','md.geojson','me.geojson','mk.geojson','mw.geojson','mx.geojson','my.geojson',
     'mz.geojson','na.geojson','ng.geojson','ni.geojson','nl.geojson','no.geojson','np.geojson','nz.geojson',
@@ -1984,32 +2426,40 @@ async function addDataLayers() {
         'UA',  // Ukraine - active war zone
         'HT',  // Haiti - failed state, gang control
         'VE',  // Venezuela - extreme risk, wrongful detention
-        'IQ',  // Iraq - terrorism, kidnapping, Level 4 advisory
+        'IQ',  // Iraq - terrorism, kidnapping (Kurdistan is exception)
         'CF'   // Central African Republic - armed groups control large areas
     ];
 
     // PROBLEMATIC (Orange): Accessible but requires extreme caution, local support, or certain regions only
     const problematicCountries = [
         'CD',  // DR Congo - can transit Kinshasa-Matadi with local support
-        'NG',  // Nigeria - multiple security challenges, some regions accessible
-        'CM',  // Cameroon - anglophone crisis in northwest/southwest
-        'PK',  // Pakistan - Balochistan off-limits, but KKH/north possible with caution
+        'NG',  // Nigeria - Lagos-Cameroon corridor usable, north dangerous
+        'CM',  // Cameroon - central corridor usable, west/north dangerous
+        'PK',  // Pakistan - KKH possible, Balochistan/KP off-limits
         'IR',  // Iran - risk of detention but overlanders do transit
-        'ML',  // Mali - JNIM blockades, active conflict, very dangerous
-        'BF',  // Burkina Faso - jihadist insurgency, Level 4
-        'NE',  // Niger - post-coup instability, traditional Sahara crossing
-        'TD',  // Chad - Lake Chad Basin violence, some transit possible
-        'ET',  // Ethiopia - regional conflicts in Tigray/Amhara/Oromia
-        'LB',  // Lebanon - ongoing tensions, economic crisis
-        'MZ',  // Mozambique - northern Cabo Delgado insurgency
-        'GN',  // Guinea - military junta since 2021, political instability
-        'GW',  // Guinea-Bissau - coup in late 2025
-        'BJ',  // Benin - terrorism spillover from Sahel
-        'TG',  // Togo - terrorism spillover from Sahel
-        'DZ',  // Algeria - Sahara desert travel restricted, border areas dangerous
-        'EG',  // Egypt - Sinai and western border areas problematic
-        'PS',  // Palestine - conflict zone, Gaza inaccessible
-        'IL'   // Israel - ongoing regional tensions, some border areas restricted
+        'ML',  // Mali - JNIM blockades, active conflict
+        'BF',  // Burkina Faso - jihadist insurgency
+        'NE',  // Niger - post-coup instability
+        'TD',  // Chad - Lake Chad Basin violence
+        'ET',  // Ethiopia - Tigray/Amhara conflicts, Addis corridor usable
+        'LB',  // Lebanon - south dangerous, rest passable
+        'MZ',  // Mozambique - Cabo Delgado insurgency, south okay
+        'GN',  // Guinea - military junta
+        'GW',  // Guinea-Bissau - political instability
+        'BJ',  // Benin - north has Sahel spillover
+        'TG',  // Togo - north has Sahel spillover
+        'DZ',  // Algeria - Sahara restricted, coast okay
+        'EG',  // Egypt - Sinai insurgency, Nile Valley fine
+        'PS',  // Palestine - Gaza war zone, West Bank accessible
+        'IL',  // Israel - regional tensions
+        'BI',  // Burundi - western provinces dangerous, DRC spillover
+        'UG',  // Uganda - Karamoja & DRC border dangerous
+        'MR',  // Mauritania - eastern Mali border dangerous
+        'CO',  // Colombia - multiple conflict zones, Darien impassable
+        'HN',  // Honduras - Gracias a Dios dangerous
+        'SN',  // Senegal - Casamance landmines and rebels
+        'IN',  // India - Kashmir & Manipur conflict zones
+        'MX'   // Mexico - cartel violence in multiple states
     ];
 
     map.addSource('countries', {
@@ -2017,23 +2467,96 @@ async function addDataLayers() {
         url: 'mapbox://mapbox.country-boundaries-v1'
     });
 
+    // Visited countries layer (green)
     map.addLayer({
-        id: 'country-fills',
+        id: 'visited-countries',
         type: 'fill',
         source: 'countries',
         'source-layer': 'country_boundaries',
-        filter: ['any', ['==', 'all', ['get', 'worldview']], ['in', 'US', ['get', 'worldview']]],
-        paint: {
-            'fill-color': [
-                'case',
-                ['in', ['get', 'iso_3166_1'], ['literal', impossibleCountries]], 'rgba(180, 30, 30, 0.35)',      // Dark red
-                ['in', ['get', 'iso_3166_1'], ['literal', problematicCountries]], 'rgba(255, 190, 50, 0.40)',    // Yellow-amber
-                ['in', ['get', 'iso_3166_1'], ['literal', visitedCountryCodes]], 'rgba(39, 174, 96, 0.12)',
-                'rgba(200, 200, 200, 0.05)'
-            ],
-            'fill-opacity': 1
-        }
+        filter: ['all',
+            ['any', ['==', 'all', ['get', 'worldview']], ['in', 'US', ['get', 'worldview']]],
+            ['in', ['get', 'iso_3166_1'], ['literal', visitedCountryCodes]]
+        ],
+        paint: { 'fill-color': 'rgba(39, 174, 96, 0.12)', 'fill-opacity': 1 }
     }, 'admin-1-boundary-bg');
+
+    // Problematic countries layer (orange)
+    map.addLayer({
+        id: 'problematic-countries',
+        type: 'fill',
+        source: 'countries',
+        'source-layer': 'country_boundaries',
+        filter: ['all',
+            ['any', ['==', 'all', ['get', 'worldview']], ['in', 'US', ['get', 'worldview']]],
+            ['in', ['get', 'iso_3166_1'], ['literal', problematicCountries]]
+        ],
+        paint: { 'fill-color': 'rgba(255, 190, 50, 0.40)', 'fill-opacity': 1 }
+    }, 'admin-1-boundary-bg');
+
+    // Impossible countries layer (red)
+    map.addLayer({
+        id: 'impossible-countries',
+        type: 'fill',
+        source: 'countries',
+        'source-layer': 'country_boundaries',
+        filter: ['all',
+            ['any', ['==', 'all', ['get', 'worldview']], ['in', 'US', ['get', 'worldview']]],
+            ['in', ['get', 'iso_3166_1'], ['literal', impossibleCountries]]
+        ],
+        paint: { 'fill-color': 'rgba(180, 30, 30, 0.35)', 'fill-opacity': 1 }
+    }, 'admin-1-boundary-bg');
+
+    // Load regional risk zones for sub-national detail
+    try {
+        const riskRegions = await fetch('data/risk-regions.geojson').then(r => r.json());
+        map.addSource('risk-regions', { type: 'geojson', data: riskRegions });
+
+        // Red zones (danger areas within countries) - hidden by default
+        map.addLayer({
+            id: 'risk-regions-red',
+            type: 'fill',
+            source: 'risk-regions',
+            filter: ['==', ['get', 'risk'], 'red'],
+            layout: { 'visibility': 'none' },
+            paint: {
+                'fill-color': 'rgba(139, 0, 0, 0.6)',
+                'fill-outline-color': 'rgba(100, 0, 0, 1)'
+            }
+        });
+
+        // Orange zones (safer areas within red countries) - hidden by default
+        map.addLayer({
+            id: 'risk-regions-orange',
+            type: 'fill',
+            source: 'risk-regions',
+            filter: ['==', ['get', 'risk'], 'orange'],
+            layout: { 'visibility': 'none' },
+            paint: {
+                'fill-color': 'rgba(255, 180, 50, 0.6)',
+                'fill-outline-color': 'rgba(200, 120, 0, 1)'
+            }
+        });
+
+        // Add hover popup for risk regions
+        const riskPopup = new mapboxgl.Popup({ closeButton: false, closeOnClick: false, maxWidth: '300px' });
+
+        ['risk-regions-red', 'risk-regions-orange'].forEach(layerId => {
+            map.on('mouseenter', layerId, (e) => {
+                map.getCanvas().style.cursor = 'pointer';
+                const props = e.features[0].properties;
+                const riskColor = props.risk === 'red' ? '#c0392b' : props.risk === 'orange' ? '#e67e22' : '#27ae60';
+                riskPopup.setLngLat(e.lngLat)
+                    .setHTML(`<strong style="color: ${riskColor}">${props.name}</strong><br><span style="color: #666; font-size: 12px;">${props.note}</span>`)
+                    .addTo(map);
+            });
+            map.on('mouseleave', layerId, () => {
+                map.getCanvas().style.cursor = '';
+                riskPopup.remove();
+            });
+        });
+    } catch (e) {
+        console.log('Risk regions not loaded:', e);
+    }
 
     // Load scenic routes
     const routes = await Promise.all(
@@ -2110,7 +2633,8 @@ async function addDataLayers() {
 
     // Load shipping
     const shippingFiles = ['auckland-valparaiso.geojson', 'bandar-abbas-karachi.geojson', 'brisbane-auckland.geojson',
-        'chittagong-laem-chabang.geojson', 'darien-gap.geojson', 'jb-jakarta.geojson', 'jacksonville-southampton.geojson'];
+        'chittagong-laem-chabang.geojson', 'darien-gap.geojson', 'jb-jakarta.geojson', 'jacksonville-southampton.geojson',
+        'mombasa-salalah-dubai.geojson'];
     Promise.all(shippingFiles.map(f => fetch(`data/shipping/${f}`).then(r => r.json()))).then(results => {
         const allShipping = { type: 'FeatureCollection', features: results.flatMap(r => r.features || [r]) };
         map.addSource('shipping', { type: 'geojson', data: allShipping });
@@ -2122,8 +2646,82 @@ async function addDataLayers() {
         });
     });
 
+    // Load safe corridors (green routes through dangerous areas)
+    // Note: Layers added at the end to ensure they're on top of planned routes for click detection
+    fetch('data/safe-corridors/cameroon.geojson').then(r => r.json()).then(data => {
+        map.addSource('safe-corridors', { type: 'geojson', data });
+        map.addLayer({
+            id: 'safe-corridor-line',
+            type: 'line',
+            source: 'safe-corridors',
+            filter: ['==', ['geometry-type'], 'LineString'],
+            paint: { 'line-color': '#27ae60', 'line-width': 6, 'line-opacity': 0.9 }
+        });
+        // Register click handlers after layers are created
+        map.on('click', 'safe-corridor-line', (e) => {
+            console.log('Safe corridor line clicked!', e.features[0].properties);
+            const props = e.features[0].properties;
+            routeName.textContent = props.name || 'Safe Corridor';
+            routeCountry.textContent = `${props.totalDistanceKm} km • ${props.totalDurationHrs} hrs`;
+            routeRating.textContent = '🛡️';
+            const desc = props.description || '';
+            routeDescription.innerHTML = desc
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/## (.*?)$/gm, '<br><strong style="color:#27ae60">$1</strong>')
+                .replace(/• /g, '<br>• ')
+                .replace(/\n\n/g, '<br><br>')
+                .replace(/\n/g, '<br>');
+            currentRouteId = null; currentPoiId = null; currentCustomImage = null;
+            showCarouselControls(false);
+            document.getElementById('route-photo-container').style.display = 'none';
+            routeInfo.style.display = 'block'; positionPopup(e);
+        });
+        map.on('mouseenter', 'safe-corridor-line', () => { map.getCanvas().style.cursor = 'pointer'; });
+        map.addLayer({
+            id: 'safe-corridor-points',
+            type: 'circle',
+            source: 'safe-corridors',
+            filter: ['==', ['geometry-type'], 'Point'],
+            paint: {
+                'circle-radius': 9,
+                'circle-color': ['coalesce', ['get', 'color'], '#27ae60'],
+                'circle-stroke-width': 2,
+                'circle-stroke-color': '#fff'
+            }
+        });
+        // Register waypoint click handler
+        map.on('click', 'safe-corridor-points', (e) => {
+            console.log('Safe corridor waypoint clicked!', e.features[0].properties);
+            const props = e.features[0].properties;
+            routeName.textContent = props.name;
+            const safetyIcon = props.safe === 'transit' ? '⚠️ DANGER' :
+                              props.safe === 'caution' ? '⚡ Caution' : '✓ Safe';
+            routeCountry.textContent = safetyIcon;
+            routeRating.textContent = props.safe === 'transit' ? '🚫' :
+                                     props.safe === 'caution' ? '⚡' : '✓';
+            routeDescription.textContent = props.description || '';
+            currentRouteId = null; currentPoiId = null; currentCustomImage = null;
+            showCarouselControls(false);
+            document.getElementById('route-photo-container').style.display = 'none';
+            routeInfo.style.display = 'block'; positionPopup(e);
+        });
+        map.on('mouseenter', 'safe-corridor-points', () => { map.getCanvas().style.cursor = 'pointer'; });
+        map.on('mouseleave', 'safe-corridor-points', () => { map.getCanvas().style.cursor = ''; });
+        map.on('mouseleave', 'safe-corridor-line', () => { map.getCanvas().style.cursor = ''; });
+
+        // Move safe corridor layers to top after a delay to ensure they're above planned routes
+        setTimeout(() => {
+            if (map.getLayer('safe-corridor-line')) map.moveLayer('safe-corridor-line');
+            if (map.getLayer('safe-corridor-points')) map.moveLayer('safe-corridor-points');
+            console.log('Safe corridor layers moved to top');
+        }, 2000);
+
+        console.log('Safe corridors loaded with', data.features.length, 'features');
+    });
+
     // Load planned route (individual trip files)
-    const tripFiles = Array.from({length: 25}, (_, i) => `data/routes/trip-${String(i + 1).padStart(2, '0')}.geojson`);
+    // Skip trips 24-25 (dangerous Horn of Africa overland - replaced with Mombasa-Dubai shipping)
+    const tripFiles = Array.from({length: 23}, (_, i) => `data/routes/trip-${String(i + 1).padStart(2, '0')}.geojson`);
     Promise.all(tripFiles.map(f => fetch(f).then(r => r.json()))).then(trips => {
         // Combine all trip features into one collection
         const data = {
@@ -2161,19 +2759,19 @@ async function addDataLayers() {
 
         // Map part numbers to trip info
         const tripInfo = {
-            1: { name: 'Trip 1', page: 'trip01', subtitle: 'Dubai → Delhi' },
-            2: { name: 'Trip 2', page: 'trip02', subtitle: 'Delhi → Chittagong' },
-            3: { name: 'Trip 3', page: 'trip03', subtitle: 'Bangkok → Singapore' },
-            4: { name: 'Trip 4', page: 'trip04', subtitle: 'Singapore → Dili' },
-            5: { name: 'Trip 5', page: 'trip05', subtitle: 'Darwin → Townsville' },
-            6: { name: 'Trip 6', page: 'trip06', subtitle: 'Auckland → Christchurch' },
-            7: { name: 'Trip 7', page: 'trip07', subtitle: 'Valparaíso → Cartagena' },
-            8: { name: 'Trip 8', page: 'trip08', subtitle: 'Panama → Oaxaca' },
-            9: { name: 'Trip 9', page: 'trip09', subtitle: 'Oaxaca → Los Angeles' },
-            10: { name: 'Trip 10', page: 'trip10', subtitle: 'Los Angeles → Houston' },
-            11: { name: 'Trip 11', page: 'trip11', subtitle: 'Houston → Toronto' },
-            12: { name: 'Trip 12', page: 'trip12', subtitle: 'Toronto → Jacksonville' },
-            13: { name: 'Europe', page: 'europe', subtitle: 'Dublin → Tangier (Trips 13-21)' }
+            1: { name: 'Trip 1', page: 'trip01', subtitle: 'Dubai → India' },
+            2: { name: 'Trip 2', page: 'trip02', subtitle: 'India → Bangladesh' },
+            3: { name: 'Trip 3', page: 'trip03', subtitle: 'Thailand → Malaysia' },
+            4: { name: 'Trip 4', page: 'trip04', subtitle: 'Singapore → Australia' },
+            5: { name: 'Trip 5', page: 'trip05', subtitle: 'New Zealand' },
+            6: { name: 'Trip 6', page: 'trip06', subtitle: 'Chile → Colombia' },
+            7: { name: 'Trip 7', page: 'trip07', subtitle: 'Panama → LA' },
+            8: { name: 'Trip 8', page: 'trip08', subtitle: 'LA → Alaska → Seattle' },
+            9: { name: 'Trip 9', page: 'trip09', subtitle: 'Seattle → Texas' },
+            10: { name: 'Trip 10', page: 'trip10', subtitle: 'Texas → Jacksonville' },
+            11: { name: 'Trip 11', page: 'trip11', subtitle: 'Dublin → Helsinki' },
+            12: { name: 'Trip 12', page: 'trip12', subtitle: 'Helsinki → Vienna' },
+            13: { name: 'Trip 13', page: 'trip13', subtitle: 'Vienna → Athens' }
         };
 
         // Map Trip 1 segment indices to day numbers
@@ -2486,7 +3084,7 @@ async function addDataLayers() {
     map.on('mouseleave', 'shipping-line', () => { map.getCanvas().style.cursor = ''; });
 
     map.on('click', (e) => {
-        const layers = ['scenic-routes-line', 'pois-circle', 'ferries-line', 'shipping-line'];
+        const layers = ['scenic-routes-line', 'pois-circle', 'ferries-line', 'shipping-line', 'safe-corridor-line', 'safe-corridor-points'];
         const features = map.queryRenderedFeatures(e.point, { layers: layers.filter(l => map.getLayer(l)) });
         if (features.length === 0) routeInfo.style.display = 'none';
     });

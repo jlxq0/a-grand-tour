@@ -2,8 +2,8 @@
 
 <div class="trip-stats">
 
-- **📅 Dates:** February – May 2027
-- **⏱️ Duration:** 114 days (40 driving days)
+- **📅 Dates:** February 1 – May 26, 2027
+- **⏱️ Duration:** 115 days (40 driving days)
 - **🚗 Distance:** 10,780 km driving
 - **🌍 Countries:** 10 (UAE, Oman, Qatar, Bahrain, Saudi Arabia, Kuwait, Iraq, Iran, Pakistan, India)
 - **⏰ Driving:** 141 hours total

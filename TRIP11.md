@@ -1,15 +1,14 @@
-# Trip 11: Houston to Toronto
+# Trip 11: Dublin to Helsinki
 
-**Great Plains, Rocky Mountains, Pacific Northwest, Alaska & Trans-Canada**
+<div class="trip-stats">
 
----
+- **📅 Dates:** February 1 – May 16, 2032
+- **⏱️ Duration:** 105 days (50 driving days)
+- **🚗 Distance:** 7,000 km driving
+- **🌍 Countries:** ~15 (Ireland, UK, France, Belgium, Netherlands, Germany, Denmark, Sweden, Norway, Finland, etc.)
+- **🛣️ Route:** Dublin → Western Europe → Scandinavia → Helsinki
 
-|   |   |
-|---|---|
-| **Duration** | 115 days (58 driving days) |
-| **Distance** | ~18,000 km driving |
-| **Countries** | 2 (USA, Canada) |
-| **Route** | Houston → Yellowstone → Seattle → Vancouver → Alaska → Toronto |
+</div>
 
 ---
 

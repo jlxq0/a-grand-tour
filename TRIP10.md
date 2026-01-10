@@ -1,15 +1,15 @@
-# Trip 10: Los Angeles to Houston
+# Trip 10: Texas to Jacksonville
 
-**California Coast, American Southwest & Texas**
+<div class="trip-stats">
 
----
+- **📅 Dates:** August 1 – November 26, 2031
+- **⏱️ Duration:** 118 days (55 driving days)
+- **🚗 Distance:** 13,000 km driving
+- **🌍 Countries:** 2 (USA, Canada)
+- **🛣️ Route:** Texas → Toronto → Jacksonville
+- **🚢 Shipping:** Jacksonville → Dublin at end
 
-|   |   |
-|---|---|
-| **Duration** | 100 days (50 driving days) |
-| **Distance** | ~12,000 km driving |
-| **Countries** | 1 (USA) |
-| **Route** | LA → California Coast → Southwest Parks → Texas → Houston |
+</div>
 
 ---
 

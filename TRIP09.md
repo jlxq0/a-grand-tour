@@ -1,15 +1,14 @@
-# Trip 9: Oaxaca to Los Angeles
+# Trip 9: Seattle to Texas
 
-**Mexico Pacific Coast, Copper Canyon & Baja California**
+<div class="trip-stats">
 
----
+- **📅 Dates:** February 1 – May 26, 2031
+- **⏱️ Duration:** 115 days (55 driving days)
+- **🚗 Distance:** 15,000 km driving
+- **🌍 Countries:** 1 (USA)
+- **🛣️ Route:** Seattle → Texas
 
-|   |   |
-|---|---|
-| **Duration** | 63 days (32 driving days) |
-| **Distance** | ~5,500 km driving + ferry |
-| **Countries** | 2 (Mexico, USA) |
-| **Route** | Oaxaca → Pacific Coast → Copper Canyon → Baja → LA |
+</div>
 
 ---
 

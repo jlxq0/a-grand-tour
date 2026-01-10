@@ -2,13 +2,13 @@
 
 <div class="trip-stats">
 
-- **📅 Dates:** February – April 2028
-- **⏱️ Duration:** 70 days (44 driving days)
+- **📅 Dates:** January 15 – April 19, 2028
+- **⏱️ Duration:** 95 days (44 driving days)
 - **🚗 Distance:** 9,200 km driving
 - **🌍 Countries:** 5 (Thailand, Laos, Vietnam, Cambodia, Malaysia + Singapore visit)
 - **⏰ Driving:** 126 hours total
 - **🛣️ Driving days:** 44 days (>1hr drive)
-- **🏖️ Chilling days:** 26 days
+- **🏖️ Chilling days:** 51 days
 - **🚢 Ferries:** Krabi → Langkawi, Langkawi → Penang
 
 </div>

@@ -2,8 +2,8 @@
 
 <div class="trip-stats">
 
-- **📅 Dates:** September – December 2027
-- **⏱️ Duration:** 111 days (60 driving days)
+- **📅 Dates:** August 1 – November 20, 2027
+- **⏱️ Duration:** 112 days (60 driving days)
 - **🚗 Distance:** 17,460 km driving
 - **🌍 Countries:** 3 (India, Nepal, Bangladesh)
 - **⏰ Driving:** 240 hours total

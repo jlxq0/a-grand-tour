@@ -1,11 +1,11 @@
-# Trip 7: Valparaíso to Cartagena
+# Trip 7: Panama to Los Angeles
 
 <div class="trip-stats">
 
-- **📅 Dates:** TBD (Phase B)
-- **⏱️ Duration:** 110 days (55 driving days)
-- **🚗 Distance:** ~25,000 km driving
-- **🌍 Countries:** 8 (Chile, Argentina, Uruguay, Brazil, Bolivia, Peru, Ecuador, Colombia)
+- **📅 Dates:** February 1 – May 20, 2030
+- **⏱️ Duration:** 109 days (55 driving days)
+- **🚗 Distance:** 14,500 km driving
+- **🌍 Countries:** 9 (Panama, Costa Rica, Nicaragua, Honduras, El Salvador, Guatemala, Belize, Mexico, USA)
 - **⏰ Driving:** 350 hours total
 - **🛣️ Driving days:** 55 days (>1hr drive)
 - **🏖️ Chilling days:** 55 days

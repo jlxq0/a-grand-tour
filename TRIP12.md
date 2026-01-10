@@ -1,15 +1,14 @@
-# Trip 12: Toronto to Jacksonville
+# Trip 12: Helsinki to Vienna
 
-**Eastern Canada, US East Coast, Blue Ridge & Florida Keys**
+<div class="trip-stats">
 
----
+- **📅 Dates:** August 1 – October 31, 2032
+- **⏱️ Duration:** 92 days (45 driving days)
+- **🚗 Distance:** 6,000 km driving
+- **🌍 Countries:** ~10 (Finland, Estonia, Latvia, Lithuania, Poland, Czech Republic, Slovakia, Austria, etc.)
+- **🛣️ Route:** Helsinki → Baltic States → Central Europe → Vienna
 
-|   |   |
-|---|---|
-| **Duration** | 117 days (55 driving days) |
-| **Distance** | ~13,000 km driving |
-| **Countries** | 2 (Canada, USA) |
-| **Route** | Toronto → Atlantic Canada → US East Coast → Florida → Jacksonville (Ship to UK) |
+</div>
 
 ---
 

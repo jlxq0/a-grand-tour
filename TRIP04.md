@@ -1,16 +1,16 @@
-# Trip 4: Singapore to Dili
+# Trip 4: Singapore to Australia
 
 <div class="trip-stats">
 
-- **📅 Dates:** August – September 2028
-- **⏱️ Duration:** 53 days (25 driving days)
-- **🚗 Distance:** 6,500 km driving
-- **🌍 Countries:** 3 (Singapore, Indonesia, Timor-Leste)
-- **⏰ Driving:** 100 hours total
-- **🛣️ Driving days:** 25 days (>1hr drive)
-- **🏖️ Chilling days:** 28 days
-- **🚢 Ferries:** 7 (JB-Batam, Batam-Jakarta, Merak-Bakauheni x2, Bali-Lombok, Lombok-Sumbawa, Sumbawa-Flores, Flores-Kupang)
-- **🚢 Shipping:** 1 (Dili-Darwin, during break)
+- **📅 Dates:** August 1 – November 24, 2028
+- **⏱️ Duration:** 116 days (55 driving days)
+- **🚗 Distance:** 22,000 km driving
+- **🌍 Countries:** 4 (Singapore, Indonesia, Timor-Leste, Australia)
+- **⏰ Driving:** 300 hours total
+- **🛣️ Driving days:** 55 days (>1hr drive)
+- **🏖️ Chilling days:** 61 days
+- **🚢 Ferries:** 11 (JB-Batam, Batam-Jakarta, Merak-Bakauheni x2, Bali-Lombok, Lombok-Sumbawa, Sumbawa-Flores, Flores-Kupang, Geelong-Devonport x2, K'gari barge x2)
+- **🚢 Shipping:** 2 (Dili→Darwin mid-trip, Brisbane→Auckland at end)
 
 </div>
 
