@@ -209,6 +209,93 @@
             margin: 3px 0;
         }
 
+        .legend-item.toggleable {
+            cursor: pointer;
+            padding: 2px 4px;
+            margin: 1px -4px;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+
+        .legend-item.toggleable:hover {
+            background: rgba(52, 152, 219, 0.1);
+        }
+
+        .legend-item.toggleable.hidden {
+            opacity: 0.4;
+            text-decoration: line-through;
+        }
+
+        /* Point item in route creator */
+        .point-item {
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            font-family: monospace;
+            cursor: pointer;
+            transition: background 0.1s;
+        }
+
+        .point-item:hover, .point-item.highlighted {
+            background: rgba(52, 152, 219, 0.15);
+        }
+
+        .point-item .num {
+            color: var(--text-muted);
+            min-width: 20px;
+        }
+
+        .point-item .coords {
+            flex: 1;
+        }
+
+        .point-item .delete-btn {
+            opacity: 0;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #e74c3c;
+            font-size: 14px;
+            padding: 0 4px;
+        }
+
+        .point-item:hover .delete-btn {
+            opacity: 1;
+        }
+
+        /* Creator marker */
+        .creator-marker {
+            width: 12px;
+            height: 12px;
+            background: #e74c3c;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        .creator-marker:hover, .creator-marker.highlighted {
+            transform: scale(1.4);
+            background: #3498db;
+        }
+
+        .creator-marker .marker-num {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            font-size: 10px;
+            padding: 1px 4px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
         .legend-line {
             width: 16px;
             height: 3px;
@@ -314,6 +401,206 @@
             color: #fff;
         }
 
+        /* Route Editor Styles */
+        .route-editor-panel {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            background: var(--bg-primary);
+            padding: 12px 15px;
+            border-radius: 4px;
+            z-index: 100;
+            box-shadow: 0 2px 10px var(--shadow-color);
+            display: none;
+            min-width: 280px;
+            max-height: calc(100vh - 120px);
+            overflow-y: auto;
+        }
+
+        .route-editor-panel.visible {
+            display: block;
+        }
+
+        .route-editor-panel h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .route-editor-panel .close-btn {
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            color: var(--text-muted);
+        }
+
+        .route-editor-panel .close-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .route-editor-actions {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .route-editor-actions button {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+
+        .route-editor-actions button:hover {
+            background: var(--bg-tertiary);
+        }
+
+        .route-editor-actions button.primary {
+            background: #27ae60;
+            color: white;
+            border-color: #27ae60;
+        }
+
+        .route-editor-actions button.primary:hover {
+            background: #219a52;
+        }
+
+        .route-editor-actions button.danger {
+            background: #e74c3c;
+            color: white;
+            border-color: #e74c3c;
+        }
+
+        .route-editor-actions button.danger:hover {
+            background: #c0392b;
+        }
+
+        .waypoint-list {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+
+        .waypoint-item {
+            padding: 8px 10px;
+            border-bottom: 1px solid var(--border-light);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.1s;
+        }
+
+        .waypoint-item:hover {
+            background: var(--bg-secondary);
+        }
+
+        .waypoint-item.selected {
+            background: rgba(52, 152, 219, 0.1);
+            border-left: 3px solid #3498db;
+        }
+
+        .waypoint-item .index {
+            color: var(--text-muted);
+            font-size: 10px;
+            min-width: 24px;
+        }
+
+        .waypoint-item .name {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .waypoint-item .actions {
+            display: flex;
+            gap: 4px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .waypoint-item:hover .actions {
+            opacity: 1;
+        }
+
+        .waypoint-item .actions button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 2px 4px;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .waypoint-item .actions button:hover {
+            color: var(--text-primary);
+        }
+
+        .editor-status {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 10px;
+            padding: 8px;
+            background: var(--bg-secondary);
+            border-radius: 4px;
+        }
+
+        .editor-status.modified {
+            background: rgba(241, 196, 15, 0.2);
+            color: #f39c12;
+        }
+
+        /* Draggable waypoint marker */
+        .waypoint-marker {
+            width: 16px;
+            height: 16px;
+            background: #3498db;
+            border: 2px solid white;
+            border-radius: 50%;
+            cursor: move;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            transition: transform 0.1s;
+        }
+
+        .waypoint-marker:hover {
+            transform: scale(1.2);
+        }
+
+        .waypoint-marker.dragging {
+            transform: scale(1.3);
+            background: #e74c3c;
+        }
+
+        .waypoint-marker.selected {
+            background: #e74c3c;
+            transform: scale(1.2);
+        }
+
+        /* POI snap indicator */
+        .snap-indicator {
+            position: absolute;
+            padding: 4px 8px;
+            background: rgba(39, 174, 96, 0.9);
+            color: white;
+            font-size: 11px;
+            border-radius: 4px;
+            pointer-events: none;
+            white-space: nowrap;
+            z-index: 1000;
+        }
+
         /* Dark mode for Mapbox built-in controls */
         [data-theme="dark"] .mapboxgl-ctrl-group {
             background: #1a1a2e;
@@ -356,8 +643,6 @@
         }
 
         .content-wrapper {
-            max-width: 800px;
-            margin: 0 auto;
             padding: 40px 50px 80px;
         }
 
@@ -945,12 +1230,12 @@
                 <p>One Family. One Land Cruiser. 100 Countries.</p>
             </div>
             <div class="legend">
-                <h4>Legend</h4>
-                <div class="legend-item"><div class="legend-line" style="background: #2471a3;"></div> Planned route</div>
-                <div class="legend-item"><div class="legend-line-dashed"></div> Ferry / Ship</div>
-                <div class="legend-item"><div class="legend-line" style="background: #f1c40f;"></div> Scenic route</div>
-                <div class="legend-item"><div class="legend-dot" style="background: #e74c3c;"></div> Point of interest</div>
-                <div class="legend-item"><div class="legend-fill" style="background: rgba(231, 76, 60, 0.25);"></div> Problematic</div>
+                <h4>Legend <span style="font-weight:normal;font-size:9px;color:var(--text-muted)">(click to toggle)</span></h4>
+                <div class="legend-item toggleable" data-layers="planned-route-line,planned-route-segment-highlight,planned-route-segments-hover"><div class="legend-line" style="background: #2471a3;"></div> Planned route</div>
+                <div class="legend-item toggleable" data-layers="ferries-line,shipping-line"><div class="legend-line-dashed"></div> Ferry / Ship</div>
+                <div class="legend-item toggleable" data-layers="scenic-routes-line,scenic-routes-highlight"><div class="legend-line" style="background: #f1c40f;"></div> Scenic route</div>
+                <div class="legend-item toggleable" data-layers="pois-circle,pois-labels"><div class="legend-dot" style="background: #e74c3c;"></div> Point of interest</div>
+                <div class="legend-item toggleable" data-layers="problematic-fill,problematic-outline"><div class="legend-fill" style="background: rgba(231, 76, 60, 0.25);"></div> Problematic</div>
             </div>
 
             <!-- Map Controls -->
@@ -967,6 +1252,31 @@
                         <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
                     </svg>
                 </button>
+                <button class="map-control-btn" id="route-creator-toggle" title="Create Route (click points on map)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Route Creator Panel -->
+            <div class="route-editor-panel" id="route-creator-panel">
+                <h3>
+                    <span>Create Route</span>
+                    <button class="close-btn" id="close-creator">&times;</button>
+                </h3>
+                <div class="route-editor-actions">
+                    <button id="undo-point-btn">Undo</button>
+                    <button id="clear-points-btn">Clear</button>
+                    <button id="copy-points-btn" class="primary">Copy</button>
+                </div>
+                <div class="waypoint-list" id="points-list">
+                    <div class="editor-status">Click on map to add points</div>
+                </div>
+                <div class="editor-status" id="creator-status">
+                    0 points · Click map to add
+                </div>
             </div>
 
             <!-- Route Info Popup -->
@@ -1012,6 +1322,7 @@ let allRoutesData = null;
 // Page configuration
 const pages = {
     '': { file: 'README.md', title: 'Overview', short: 'Overview', isTrip: false },
+    'timeline': { title: 'Timeline', short: 'Timeline', isTrip: false, isTimeline: true },
     'trip01': { file: 'TRIP01.md', title: 'Trip 1: Dubai to Delhi', short: 'Trip 1', route: 'Dubai → Delhi', isTrip: true },
     'trip02': { file: 'TRIP02.md', title: 'Trip 2: Delhi to Chittagong', short: 'Trip 2', route: 'Delhi → Chittagong', isTrip: true },
     'trip03': { file: 'TRIP03.md', title: 'Trip 3: Bangkok to Singapore', short: 'Trip 3', route: 'Bangkok → Singapore', isTrip: true },
@@ -1067,6 +1378,7 @@ function updateNav(activePage) {
     nav.innerHTML = `
         <div class="nav-menu">
             <a href="#" class="${activePage === '' ? 'active' : ''}">Overview</a>
+            <a href="#timeline" class="${activePage === 'timeline' ? 'active' : ''}">Timeline</a>
             <div class="nav-dropdown" id="trips-dropdown">
                 <button class="nav-dropdown-toggle ${dropdownActive}">
                     ${dropdownLabel}
@@ -1118,6 +1430,253 @@ function scrollToAnchor(anchor) {
     }, 100);
 }
 
+// Render timeline page
+function renderTimeline(contentEl) {
+    // Trip data with verified shipping times
+    const trips = [
+        [1, "2027-02-01", "2027-05-26", "Dubai → India", "10,780 km", ["2027-03-15", "2027-03-19", "Bandar Abbas → Karachi", 4]],
+        [2, "2027-08-01", "2027-11-20", "India → Bangladesh", "17,460 km", ["2027-11-21", "2027-12-06", "Chittagong → Laem Chabang", 15]],  // Moved 1 month earlier
+        [3, "2028-01-15", "2028-04-19", "Thailand → Malaysia", "9,200 km", null],  // Moved 1 month earlier for cooler weather
+        [4, "2028-08-01", "2028-11-24", "Singapore → Timor → Australia", "22,000 km", ["2028-11-25", "2028-12-01", "Brisbane → Auckland", 6]],
+        [5, "2029-02-01", "2029-04-11", "New Zealand", "6,500 km", ["2029-04-12", "2029-05-17", "Auckland → San Antonio", 35]],
+        [6, "2029-08-01", "2029-11-20", "Chile → Colombia", "25,000 km", ["2029-11-21", "2029-11-23", "Cartagena → Panama", 2]],
+        [7, "2030-02-01", "2030-05-20", "Panama → Mexico → LA", "14,500 km", null],  // Moved from Dec 2029 to Feb 2030 (proper break after SA)
+        [8, "2030-09-01", "2030-12-09", "LA → Alaska → Seattle", "15,000 km", null],  // Alaska in fall while roads open
+        [9, "2031-02-01", "2031-05-26", "Seattle → Texas", "15,000 km", null],  // Drive south/east in winter
+        [10, "2031-08-01", "2031-11-26", "Texas → Toronto → Jacksonville", "13,000 km", ["2031-11-27", "2031-12-14", "Jacksonville → Dublin", 17]],  // Fall foliage
+        [11, "2032-02-01", "2032-05-16", "Dublin → Helsinki", "7,000 km", null],
+        [12, "2032-08-01", "2032-10-31", "Helsinki → Vienna", "6,000 km", null],  // Combined old 12+13, moved to 2032
+        [13, "2033-02-01", "2033-05-01", "Vienna → Athens", "5,500 km", null],  // Combined old 14+15, moved to 2033
+        // School starts Aug 2033 - Phase B begins (school holiday trips: Summer ~7wk, Christmas ~3wk, Easter ~2.5wk)
+        // 2034: Easter + Summer
+        [14, "2034-03-26", "2034-04-12", "Athens → Milan", "2,500 km", null],  // Easter - Mediterranean spring
+        [15, "2034-06-26", "2034-08-16", "Milan → Marrakech", "3,500 km", null],  // Summer - coastal route
+        // 2035: Christmas (Sahara!) + Summer
+        [16, "2034-12-19", "2035-01-10", "Marrakech → Dakar", "3,500 km", null],  // Christmas - SAHARA IN WINTER (safe temps)
+        [17, "2035-06-26", "2035-08-16", "Dakar → Accra", "2,500 km", null],  // Summer - West Africa
+        // 2036: Christmas + Summer
+        [18, "2035-12-19", "2036-01-10", "Accra → Libreville", "2,500 km", null],  // Christmas - Central Africa
+        [19, "2036-06-26", "2036-08-16", "Libreville → Windhoek", "4,000 km", null],  // Summer - to Namibia (dry season)
+        // 2037: Christmas + Easter
+        [20, "2036-12-19", "2037-01-10", "Windhoek → Cape Town", "2,000 km", null],  // Christmas - Cape summer!
+        [21, "2037-03-26", "2037-04-12", "Cape Town → Durban", "2,000 km", null],  // Easter - Garden Route autumn
+        // 2038: Summer + Christmas
+        [22, "2038-06-26", "2038-08-16", "Durban → Dar es Salaam", "4,500 km", null],  // Summer - safari dry season
+        [23, "2038-12-19", "2039-01-10", "Dar es Salaam → Nairobi", "1,500 km", null],  // Christmas - East Africa
+        // 2039: Easter + Summer (final)
+        [24, "2039-03-26", "2039-04-12", "Nairobi → Djibouti", "2,500 km", null],  // Easter - Horn of Africa
+        [25, "2039-06-26", "2039-08-10", "Djibouti → Dubai", "1,000 km", ["2039-07-01", "2039-07-15", "Djibouti → Dubai", 14]],  // Summer - ship car home
+    ];
+    const schoolStart = "2033-08-07";
+    const startYear = 2027, endYear = 2040;
+    const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+    const parseDate = str => { const [y,m,d] = str.split('-').map(Number); return new Date(y, m-1, d); };
+    const formatDate = d => `${monthNames[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+    const dayOfYear = d => Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
+
+    // Build day status map
+    const dayStatus = {};
+    for (let y = startYear; y <= endYear; y++) {
+        const days = (y % 4 === 0 && (y % 100 !== 0 || y % 400 === 0)) ? 366 : 365;
+        for (let d = 1; d <= days; d++) dayStatus[`${y}-${d}`] = { status: 'home', info: 'Home in Singapore' };
+    }
+
+    trips.forEach(([num, startStr, endStr, name, dist, shipping]) => {
+        let cur = parseDate(startStr);
+        const end = parseDate(endStr);
+        const tripDays = Math.round((end - parseDate(startStr)) / 86400000) + 1;
+        const tripWeeks = (tripDays / 7).toFixed(1);
+        const startFmt = formatDate(parseDate(startStr));
+        const endFmt = formatDate(end);
+        while (cur <= end) {
+            dayStatus[`${cur.getFullYear()}-${dayOfYear(cur)}`] = { status: 'travel', info: `Trip ${num}: ${name}<br>${startFmt} – ${endFmt}<br>${tripWeeks} weeks`, trip: num };
+            cur.setDate(cur.getDate() + 1);
+        }
+        if (shipping) {
+            let sc = parseDate(shipping[0]);
+            const se = parseDate(shipping[1]);
+            while (sc <= se) {
+                const key = `${sc.getFullYear()}-${dayOfYear(sc)}`;
+                if (dayStatus[key].status !== 'travel') dayStatus[key] = { status: 'shipping', info: `Shipping: ${shipping[2]} (${shipping[3]} days)` };
+                sc.setDate(sc.getDate() + 1);
+            }
+        }
+    });
+
+    let preSchoolTravel = 0, preSchoolHome = 0, postSchoolTravel = 0, postSchoolHome = 0;
+    const schoolDate = parseDate(schoolStart);
+
+    for (const [key, d] of Object.entries(dayStatus)) {
+        const [year, day] = key.split('-').map(Number);
+        const keyDate = new Date(year, 0, day);
+        const isAway = d.status === 'travel' || d.status === 'shipping';
+
+        if (keyDate < schoolDate) {
+            if (isAway) preSchoolTravel++; else preSchoolHome++;
+        } else {
+            if (isAway) postSchoolTravel++; else postSchoolHome++;
+        }
+    }
+
+    const preSchoolTotal = preSchoolTravel + preSchoolHome;
+    const postSchoolTotal = postSchoolTravel + postSchoolHome;
+
+    // Count trips and calculate averages
+    const preSchoolTrips = trips.filter(t => parseDate(t[1]) < schoolDate).length;
+    const postSchoolTrips = trips.length - preSchoolTrips;
+    const avgTripPre = preSchoolTrips > 0 ? (preSchoolTravel / preSchoolTrips / 7).toFixed(1) : 0;
+    const avgHomePre = preSchoolTrips > 0 ? (preSchoolHome / preSchoolTrips / 7).toFixed(1) : 0;
+    const avgTripPost = postSchoolTrips > 0 ? (postSchoolTravel / postSchoolTrips / 7).toFixed(1) : 0;
+    const avgHomePost = postSchoolTrips > 0 ? (postSchoolHome / postSchoolTrips / 7).toFixed(1) : 0;
+
+    const fmt = n => n.toLocaleString();
+    const pct = (n, total) => Math.round(n / total * 100);
+
+    // Build HTML
+    contentEl.innerHTML = `
+        <style>
+            .tl-wrap { padding: 20px 0; }
+            .tl-title { text-align: center; margin-bottom: 5px; }
+            .tl-subtitle { text-align: center; color: var(--text-muted); margin-bottom: 25px; }
+            .tl-legend { display: flex; justify-content: center; gap: 25px; margin-bottom: 20px; flex-wrap: wrap; }
+            .tl-legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+            .tl-legend-box { width: 18px; height: 18px; border-radius: 3px; }
+            .tl-container { background: var(--bg-tertiary); border-radius: 8px; padding: 20px; }
+            .tl-grid { display: flex; flex-direction: column; }
+            .tl-months { display: flex; margin-left: 50px; margin-bottom: 5px; }
+            .tl-month { font-size: 10px; color: var(--text-muted); text-align: left; border-left: 1px solid var(--border-color); padding-left: 4px; }
+            .tl-month:first-child { border-left: none; padding-left: 0; }
+            .tl-row { display: flex; align-items: center; margin-bottom: 2px; }
+            .tl-year { width: 50px; font-weight: 600; font-size: 13px; color: var(--text-muted); flex-shrink: 0; }
+            .tl-days { display: flex; height: 20px; align-items: center; flex: 1; }
+            .tl-day { flex: 1; height: 16px; cursor: pointer; transition: height 0.1s; min-width: 0; }
+            .tl-day:hover { height: 22px; }
+            .tl-day.month-start { border-left: 1px solid var(--border-color); }
+            .tl-day.home { background: var(--bg-secondary); }
+            .tl-day.travel { background: #4CAF50; }
+            .tl-day.shipping { background: #FF9800; }
+            .tl-day.school { background: #e74c3c !important; width: 4px !important; height: 24px !important; }
+            .tl-stats { margin-top: 25px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 900px; margin-left: auto; margin-right: auto; }
+            .tl-stat { background: var(--bg-tertiary); padding: 15px; border-radius: 8px; text-align: center; }
+            .tl-stat-val { font-size: 26px; font-weight: 700; }
+            .tl-stat-val.travel { color: #4CAF50; }
+            .tl-stat-val.shipping { color: #FF9800; }
+            .tl-stat-val.home { color: var(--text-muted); }
+            .tl-stat-label { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+            .tl-table-wrap { margin-top: 30px; background: var(--bg-tertiary); border-radius: 8px; padding: 20px; }
+            .tl-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+            .tl-table th, .tl-table td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--border-color); }
+            .tl-table th { color: var(--text-muted); font-weight: 500; }
+            .tl-table tr:hover { background: var(--bg-secondary); }
+            .tl-ship { color: #FF9800; }
+            .tl-tooltip { position: fixed; background: var(--bg-tertiary); color: var(--text-primary); padding: 8px 12px; border-radius: 4px; font-size: 12px; pointer-events: none; z-index: 1000; display: none; box-shadow: 0 2px 8px var(--shadow-color); }
+            @media (max-width: 700px) { .tl-stats { grid-template-columns: repeat(3, 1fr); } }
+            @media (max-width: 500px) { .tl-stats { grid-template-columns: repeat(2, 1fr); } }
+        </style>
+        <div class="tl-wrap">
+            <h1 class="tl-title">Timeline</h1>
+            <p class="tl-subtitle">2027–2039 · 19 Trips · ~200,000 km · 100+ Countries</p>
+            <div class="tl-legend">
+                <div class="tl-legend-item"><div class="tl-legend-box" style="background:var(--bg-tertiary);border:1px solid var(--border-color)"></div><span>Home</span></div>
+                <div class="tl-legend-item"><div class="tl-legend-box" style="background:#4CAF50"></div><span>Traveling</span></div>
+                <div class="tl-legend-item"><div class="tl-legend-box" style="background:#FF9800"></div><span>Shipping</span></div>
+                <div class="tl-legend-item"><div class="tl-legend-box" style="background:#e74c3c"></div><span>School Starts</span></div>
+            </div>
+            <div class="tl-container">
+                <div class="tl-grid" id="tlGrid"></div>
+            </div>
+            <div class="tl-stats">
+                <div class="tl-stat"><div class="tl-stat-val travel">${fmt(preSchoolTravel)}</div><div class="tl-stat-label">Days Away Pre-School (${pct(preSchoolTravel, preSchoolTotal)}%)</div></div>
+                <div class="tl-stat"><div class="tl-stat-val home">${fmt(preSchoolHome)}</div><div class="tl-stat-label">Days Home Pre-School (${pct(preSchoolHome, preSchoolTotal)}%)</div></div>
+                <div class="tl-stat"><div class="tl-stat-val travel">${fmt(postSchoolTravel)}</div><div class="tl-stat-label">Days Away Post-School (${pct(postSchoolTravel, postSchoolTotal)}%)</div></div>
+                <div class="tl-stat"><div class="tl-stat-val home">${fmt(postSchoolHome)}</div><div class="tl-stat-label">Days Home Post-School (${pct(postSchoolHome, postSchoolTotal)}%)</div></div>
+            </div>
+            <div class="tl-stats" style="margin-top: 15px;">
+                <div class="tl-stat"><div class="tl-stat-val travel">${avgTripPre}w</div><div class="tl-stat-label">Avg Trip Pre-School</div></div>
+                <div class="tl-stat"><div class="tl-stat-val home">${avgHomePre}w</div><div class="tl-stat-label">Avg Home Pre-School</div></div>
+                <div class="tl-stat"><div class="tl-stat-val travel">${avgTripPost}w</div><div class="tl-stat-label">Avg Trip Post-School</div></div>
+                <div class="tl-stat"><div class="tl-stat-val home">${avgHomePost}w</div><div class="tl-stat-label">Avg Home Post-School</div></div>
+            </div>
+            <div class="tl-table-wrap">
+                <h3 style="margin-top:0;margin-bottom:15px">Trip Summary</h3>
+                <table class="tl-table">
+                    <thead><tr><th>#</th><th>Start</th><th>End</th><th>Days</th><th>Route</th><th>Distance</th><th>Shipping</th></tr></thead>
+                    <tbody id="tlTable"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tl-tooltip" id="tlTooltip"></div>
+    `;
+
+    // Render grid
+    const grid = contentEl.querySelector('#tlGrid');
+    const daysPerMonth = [31,28,31,30,31,30,31,31,30,31,30,31];
+
+    // Month headers
+    const monthRow = document.createElement('div');
+    monthRow.className = 'tl-months';
+    monthNames.forEach((m, i) => {
+        const el = document.createElement('div');
+        el.className = 'tl-month';
+        el.style.flex = daysPerMonth[i];
+        el.textContent = m;
+        monthRow.appendChild(el);
+    });
+    grid.appendChild(monthRow);
+
+    // Year rows
+    for (let year = startYear; year <= endYear; year++) {
+        const row = document.createElement('div');
+        row.className = 'tl-row';
+        row.innerHTML = `<div class="tl-year">${year}</div>`;
+        const days = document.createElement('div');
+        days.className = 'tl-days';
+        const isLeap = (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));
+        for (let d = 1; d <= (isLeap ? 366 : 365); d++) {
+            const day = document.createElement('div');
+            day.className = 'tl-day ' + dayStatus[`${year}-${d}`].status;
+            const actualDate = new Date(year, 0, d);
+            if (actualDate.getDate() === 1 && actualDate.getMonth() > 0) {
+                day.classList.add('month-start');
+            }
+            if (actualDate.getFullYear() === schoolDate.getFullYear() && actualDate.getMonth() === schoolDate.getMonth() && actualDate.getDate() === schoolDate.getDate()) {
+                day.classList.add('school');
+            }
+            day.dataset.info = dayStatus[`${year}-${d}`].info;
+            day.dataset.date = formatDate(actualDate);
+            days.appendChild(day);
+        }
+        row.appendChild(days);
+        grid.appendChild(row);
+    }
+
+    // Tooltip
+    const tooltip = contentEl.querySelector('#tlTooltip');
+    grid.addEventListener('mouseover', e => {
+        if (e.target.classList.contains('tl-day')) {
+            tooltip.innerHTML = `<strong>${e.target.dataset.date}</strong><br>${e.target.dataset.info}`;
+            tooltip.style.display = 'block';
+        }
+    });
+    grid.addEventListener('mousemove', e => {
+        tooltip.style.left = (e.clientX + 12) + 'px';
+        tooltip.style.top = (e.clientY + 12) + 'px';
+    });
+    grid.addEventListener('mouseout', e => {
+        if (e.target.classList.contains('tl-day')) tooltip.style.display = 'none';
+    });
+
+    // Trip table
+    const table = contentEl.querySelector('#tlTable');
+    trips.forEach(([num, startStr, endStr, name, dist, shipping]) => {
+        const start = parseDate(startStr), end = parseDate(endStr);
+        const days = Math.round((end - start) / 86400000) + 1;
+        const shipInfo = shipping ? `${shipping[2]} <span class="tl-ship">(${shipping[3]}d)</span>` : '–';
+        table.innerHTML += `<tr><td><strong>${num}</strong></td><td>${formatDate(start)}</td><td>${formatDate(end)}</td><td>${days}</td><td>${name}</td><td>${dist}</td><td>${shipInfo}</td></tr>`;
+    });
+}
+
 // Load and render markdown
 async function loadContent(page, anchor = null) {
     const contentEl = document.getElementById('content');
@@ -1129,6 +1688,13 @@ async function loadContent(page, anchor = null) {
         contentEl.innerHTML = '<div class="loading">Loading...</div>';
         updateNav(page);
         document.title = config.title + ' | A Grand Tour';
+
+        // Handle timeline page specially
+        if (config.isTimeline) {
+            renderTimeline(contentEl);
+            document.querySelector('.content-panel').scrollTop = 0;
+            return;
+        }
 
         try {
             const response = await fetch(config.file);
@@ -1509,7 +2075,7 @@ async function addDataLayers() {
     });
 
     // Load planned route (individual trip files)
-    const tripFiles = Array.from({length: 12}, (_, i) => `data/routes/trip-${String(i + 1).padStart(2, '0')}.geojson`);
+    const tripFiles = Array.from({length: 25}, (_, i) => `data/routes/trip-${String(i + 1).padStart(2, '0')}.geojson`);
     Promise.all(tripFiles.map(f => fetch(f).then(r => r.json()))).then(trips => {
         // Combine all trip features into one collection
         const data = {
@@ -1558,7 +2124,8 @@ async function addDataLayers() {
             9: { name: 'Trip 9', page: 'trip09', subtitle: 'Oaxaca → Los Angeles' },
             10: { name: 'Trip 10', page: 'trip10', subtitle: 'Los Angeles → Houston' },
             11: { name: 'Trip 11', page: 'trip11', subtitle: 'Houston → Toronto' },
-            12: { name: 'Trip 12', page: 'trip12', subtitle: 'Toronto → Jacksonville' }
+            12: { name: 'Trip 12', page: 'trip12', subtitle: 'Toronto → Jacksonville' },
+            13: { name: 'Europe', page: 'europe', subtitle: 'Dublin → Tangier (Trips 13-21)' }
         };
 
         // Map Trip 1 segment indices to day numbers
@@ -2352,6 +2919,225 @@ document.addEventListener('mouseup', () => {
         document.body.style.cursor = '';
         document.body.style.userSelect = '';
     }
+});
+
+// ============ LEGEND LAYER TOGGLES ============
+document.querySelectorAll('.legend-item.toggleable').forEach(item => {
+    item.addEventListener('click', () => {
+        const layers = item.dataset.layers.split(',');
+        const isHidden = item.classList.toggle('hidden');
+
+        layers.forEach(layerId => {
+            if (map.getLayer(layerId)) {
+                map.setLayoutProperty(layerId, 'visibility', isHidden ? 'none' : 'visible');
+            }
+        });
+    });
+});
+
+// ============ ROUTE CREATOR (Simple Click-to-Add) ============
+const RouteCreator = {
+    isActive: false,
+    points: [],      // Array of [lng, lat]
+    markers: [],     // Mapbox markers
+    highlightedIndex: null,
+
+    init() {
+        this.panel = document.getElementById('route-creator-panel');
+        this.toggleBtn = document.getElementById('route-creator-toggle');
+        this.closeBtn = document.getElementById('close-creator');
+        this.pointsList = document.getElementById('points-list');
+        this.statusEl = document.getElementById('creator-status');
+        this.undoBtn = document.getElementById('undo-point-btn');
+        this.clearBtn = document.getElementById('clear-points-btn');
+        this.copyBtn = document.getElementById('copy-points-btn');
+
+        this.toggleBtn.addEventListener('click', () => this.toggle());
+        this.closeBtn.addEventListener('click', () => this.close());
+        this.undoBtn.addEventListener('click', () => this.undo());
+        this.clearBtn.addEventListener('click', () => this.clear());
+        this.copyBtn.addEventListener('click', () => this.copy());
+
+        // Map click handler (bound to preserve 'this')
+        this.onMapClick = this.onMapClick.bind(this);
+    },
+
+    toggle() {
+        this.isActive ? this.close() : this.open();
+    },
+
+    open() {
+        this.isActive = true;
+        this.toggleBtn.classList.add('active');
+        this.panel.classList.add('visible');
+        map.getCanvas().style.cursor = 'crosshair';
+        map.on('click', this.onMapClick);
+        this.render();
+        this.updateStatus();
+    },
+
+    close() {
+        this.isActive = false;
+        this.toggleBtn.classList.remove('active');
+        this.panel.classList.remove('visible');
+        map.getCanvas().style.cursor = '';
+        map.off('click', this.onMapClick);
+        this.clearHighlight();
+    },
+
+    onMapClick(e) {
+        if (!this.isActive) return;
+
+        // Add point
+        const coords = [e.lngLat.lng, e.lngLat.lat];
+        this.points.push(coords);
+        this.addMarker(coords, this.points.length - 1);
+        this.render();
+        this.updateStatus();
+    },
+
+    addMarker(coords, index) {
+        const el = document.createElement('div');
+        el.className = 'creator-marker';
+        el.dataset.index = index;
+
+        const numLabel = document.createElement('div');
+        numLabel.className = 'marker-num';
+        numLabel.textContent = index + 1;
+        el.appendChild(numLabel);
+
+        const marker = new mapboxgl.Marker({ element: el })
+            .setLngLat(coords)
+            .addTo(map);
+
+        // Hover highlighting
+        el.addEventListener('mouseenter', () => this.highlight(index));
+        el.addEventListener('mouseleave', () => this.clearHighlight());
+
+        this.markers.push(marker);
+    },
+
+    removeMarker(index) {
+        if (this.markers[index]) {
+            this.markers[index].remove();
+        }
+    },
+
+    rebuildMarkers() {
+        // Remove all markers
+        this.markers.forEach(m => m.remove());
+        this.markers = [];
+
+        // Rebuild
+        this.points.forEach((coords, i) => {
+            this.addMarker(coords, i);
+        });
+    },
+
+    highlight(index) {
+        this.highlightedIndex = index;
+
+        // Highlight marker
+        this.markers.forEach((m, i) => {
+            m.getElement().classList.toggle('highlighted', i === index);
+        });
+
+        // Highlight list item
+        this.pointsList.querySelectorAll('.point-item').forEach((item, i) => {
+            item.classList.toggle('highlighted', i === index);
+        });
+    },
+
+    clearHighlight() {
+        this.highlightedIndex = null;
+        this.markers.forEach(m => m.getElement().classList.remove('highlighted'));
+        this.pointsList.querySelectorAll('.point-item').forEach(item => {
+            item.classList.remove('highlighted');
+        });
+    },
+
+    render() {
+        if (this.points.length === 0) {
+            this.pointsList.innerHTML = '<div class="editor-status">Click on map to add points</div>';
+            return;
+        }
+
+        this.pointsList.innerHTML = this.points.map((coords, i) => `
+            <div class="point-item" data-index="${i}">
+                <span class="num">${i + 1}</span>
+                <span class="coords">${coords[0].toFixed(5)}, ${coords[1].toFixed(5)}</span>
+                <button class="delete-btn" data-action="delete" title="Delete">×</button>
+            </div>
+        `).join('');
+
+        // Bind events
+        this.pointsList.querySelectorAll('.point-item').forEach(item => {
+            const index = parseInt(item.dataset.index);
+
+            item.addEventListener('mouseenter', () => this.highlight(index));
+            item.addEventListener('mouseleave', () => this.clearHighlight());
+
+            item.querySelector('.delete-btn').addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.deletePoint(index);
+            });
+        });
+    },
+
+    deletePoint(index) {
+        this.points.splice(index, 1);
+        this.rebuildMarkers();
+        this.render();
+        this.updateStatus();
+    },
+
+    undo() {
+        if (this.points.length === 0) return;
+        this.points.pop();
+        this.rebuildMarkers();
+        this.render();
+        this.updateStatus();
+    },
+
+    clear() {
+        if (this.points.length === 0) return;
+        if (!confirm('Clear all points?')) return;
+        this.points = [];
+        this.rebuildMarkers();
+        this.render();
+        this.updateStatus();
+    },
+
+    copy() {
+        if (this.points.length === 0) {
+            alert('No points to copy');
+            return;
+        }
+
+        // Format as simple coordinate list
+        const text = this.points.map(c => `[${c[0].toFixed(5)}, ${c[1].toFixed(5)}]`).join(',\n');
+
+        navigator.clipboard.writeText(text).then(() => {
+            this.updateStatus(`Copied ${this.points.length} points!`);
+            setTimeout(() => this.updateStatus(), 2000);
+        }).catch(() => {
+            // Fallback: show in prompt
+            prompt('Copy these coordinates:', text);
+        });
+    },
+
+    updateStatus(msg) {
+        if (msg) {
+            this.statusEl.textContent = msg;
+        } else {
+            this.statusEl.textContent = `${this.points.length} point${this.points.length !== 1 ? 's' : ''} · Click map to add`;
+        }
+    }
+};
+
+// Initialize route creator when map is ready
+map.on('load', () => {
+    RouteCreator.init();
 });
 </script>
 </body>

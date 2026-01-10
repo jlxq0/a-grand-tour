@@ -587,67 +587,19 @@ const waypointsPart9 = [
   { name: "Los Angeles", coords: [-118.2437, 34.0522] }
 ];
 
-// Trip 10: Los Angeles to Houston (California, Southwest, Texas, ~100 days)
+// Trip 10: Los Angeles to Seattle via Alaska (Pacific Coast, Alaska in fall, ~100 days)
 const waypointsPart10 = [
-  // California
+  // California Coast North
   { name: "Los Angeles", coords: [-118.2437, 34.0522] },
-  { name: "Joshua Tree", coords: [-116.3131, 33.8734] },
-  { name: "Death Valley (Furnace Creek)", coords: [-116.8745, 36.4580] },
-  { name: "Sequoia (General Sherman)", coords: [-118.5551, 36.5819] },
-  { name: "Yosemite Valley", coords: [-119.5383, 37.7456] },
-  { name: "San Francisco", coords: [-122.4194, 37.7749] },
-  { name: "Big Sur (Bixby Bridge)", coords: [-121.9017, 36.3714] },
   { name: "Santa Barbara", coords: [-119.6982, 34.4208] },
-  { name: "Los Angeles (return)", coords: [-118.2437, 34.0522] },
-  // Route 66 through California & Arizona
-  { name: "Barstow", coords: [-117.0228, 34.8958] },
-  { name: "Kingman", coords: [-114.0530, 35.1894] },
-  { name: "Seligman", coords: [-112.8767, 35.3250] },
-  { name: "Flagstaff", coords: [-111.6513, 35.1983] },
-  // Grand Canyon & Utah Parks
-  { name: "Grand Canyon (South Rim)", coords: [-112.1401, 36.0544] },
-  { name: "Page (Horseshoe Bend)", coords: [-111.5085, 36.8753] },
-  { name: "Monument Valley", coords: [-110.0985, 36.9980] },
-  { name: "Moab (Arches)", coords: [-109.5498, 38.5733] },
-  { name: "Capitol Reef", coords: [-111.1617, 38.2972] },
-  { name: "Bryce Canyon", coords: [-112.1871, 37.5930] },
-  { name: "Zion (Springdale)", coords: [-112.9988, 37.1889] },
-  // Colorado & New Mexico
-  { name: "Mesa Verde", coords: [-108.4618, 37.1838] },
-  { name: "Silverton", coords: [-107.6642, 37.8117] },
-  { name: "Million Dollar Highway (Ouray)", coords: [-107.6714, 38.0228] },
-  { name: "Telluride", coords: [-107.8123, 37.9375] },
-  { name: "Durango", coords: [-107.8801, 37.2753] },
-  { name: "Santa Fe", coords: [-105.9378, 35.6870] },
-  { name: "Albuquerque", coords: [-106.6504, 35.0844] },
-  { name: "White Sands", coords: [-106.1712, 32.7872] },
-  { name: "Carlsbad Caverns", coords: [-104.5567, 32.1479] },
-  // Texas
-  { name: "Big Bend (Terlingua)", coords: [-103.6168, 29.3197] },
-  { name: "Marfa", coords: [-104.0214, 30.3087] },
-  { name: "Guadalupe Mountains", coords: [-104.8606, 31.8912] },
-  { name: "Austin", coords: [-97.7431, 30.2672] },
-  { name: "San Antonio", coords: [-98.4936, 29.4241] },
-  { name: "Fredericksburg", coords: [-98.8720, 30.2752] },
-  { name: "Houston", coords: [-95.3698, 29.7604] }
-];
-
-// Trip 11: Houston to Toronto (Great Plains, Rockies, Pacific Northwest, Alaska, Trans-Canada, ~115 days)
-const waypointsPart11 = [
-  // Great Plains & Rockies
-  { name: "Houston (departure)", coords: [-95.3698, 29.7604] },
-  { name: "Amarillo (Cadillac Ranch)", coords: [-101.8313, 35.2220] },
-  { name: "Oklahoma City", coords: [-97.5164, 35.4676] },
-  { name: "Kansas City", coords: [-94.5786, 39.0997] },
-  { name: "Rapid City", coords: [-103.2310, 44.0805] },
-  { name: "Badlands NP", coords: [-102.3397, 43.8554] },
-  { name: "Mount Rushmore", coords: [-103.4591, 43.8791] },
-  { name: "Devils Tower", coords: [-104.7145, 44.5902] },
-  { name: "Yellowstone (Old Faithful)", coords: [-110.8281, 44.4605] },
-  { name: "Grand Teton (Jackson)", coords: [-110.7624, 43.4799] },
-  { name: "Beartooth Highway", coords: [-109.4378, 45.0156] },
-  { name: "Glacier NP (Logan Pass)", coords: [-113.7870, 48.6967] },
+  { name: "Big Sur (Bixby Bridge)", coords: [-121.9017, 36.3714] },
+  { name: "San Francisco", coords: [-122.4194, 37.7749] },
+  { name: "Point Reyes", coords: [-122.8782, 38.0682] },
+  { name: "Mendocino", coords: [-123.7990, 39.3077] },
+  { name: "Redwood NP", coords: [-124.0046, 41.2132] },
   // Pacific Northwest
+  { name: "Crater Lake", coords: [-122.1684, 42.9446] },
+  { name: "Portland", coords: [-122.6765, 45.5152] },
   { name: "Seattle", coords: [-122.3321, 47.6062] },
   { name: "Olympic NP (Hoh)", coords: [-123.9346, 47.8607] },
   { name: "Vancouver", coords: [-123.1207, 49.2827] },
@@ -659,7 +611,7 @@ const waypointsPart11 = [
   { name: "Yoho NP (Field)", coords: [-116.4875, 51.3980] },
   { name: "Icefields Parkway", coords: [-117.2269, 52.2191] },
   { name: "Jasper", coords: [-118.0814, 52.8737] },
-  // Alaska Highway
+  // Alaska Highway North
   { name: "Prince George", coords: [-122.7497, 53.9171] },
   { name: "Dawson Creek (Mile Zero)", coords: [-120.2377, 55.7596] },
   { name: "Watson Lake", coords: [-128.7097, 60.0631] },
@@ -671,24 +623,80 @@ const waypointsPart11 = [
   { name: "Denali NP", coords: [-150.5039, 63.1148] },
   { name: "Anchorage", coords: [-149.9003, 61.2181] },
   { name: "Seward (Kenai Fjords)", coords: [-149.4421, 60.1042] },
-  // Return via Trans-Canada
+  // Return via Alaska Highway to Seattle
+  { name: "Anchorage (return)", coords: [-149.9003, 61.2181] },
   { name: "Tok (return)", coords: [-142.9856, 63.3367] },
   { name: "Whitehorse (return)", coords: [-135.0568, 60.7212] },
   { name: "Dawson Creek (return)", coords: [-120.2377, 55.7596] },
-  { name: "Edmonton", coords: [-113.4938, 53.5461] },
-  { name: "Saskatoon", coords: [-106.6700, 52.1332] },
+  { name: "Prince George (return)", coords: [-122.7497, 53.9171] },
+  { name: "Vancouver (return)", coords: [-123.1207, 49.2827] },
+  { name: "Seattle (end)", coords: [-122.3321, 47.6062] }
+];
+
+// Trip 11: Seattle to Texas (Rockies, Southwest, winter/spring drive south, ~115 days)
+const waypointsPart11 = [
+  // From Seattle head east
+  { name: "Seattle (departure)", coords: [-122.3321, 47.6062] },
+  { name: "Spokane", coords: [-117.4260, 47.6588] },
+  { name: "Glacier NP (Logan Pass)", coords: [-113.7870, 48.6967] },
+  { name: "Beartooth Highway", coords: [-109.4378, 45.0156] },
+  { name: "Yellowstone (Old Faithful)", coords: [-110.8281, 44.4605] },
+  { name: "Grand Teton (Jackson)", coords: [-110.7624, 43.4799] },
+  // Utah Parks
+  { name: "Salt Lake City", coords: [-111.8910, 40.7608] },
+  { name: "Moab (Arches)", coords: [-109.5498, 38.5733] },
+  { name: "Capitol Reef", coords: [-111.1617, 38.2972] },
+  { name: "Bryce Canyon", coords: [-112.1871, 37.5930] },
+  { name: "Zion (Springdale)", coords: [-112.9988, 37.1889] },
+  { name: "Page (Horseshoe Bend)", coords: [-111.5085, 36.8753] },
+  { name: "Monument Valley", coords: [-110.0985, 36.9980] },
+  { name: "Grand Canyon (South Rim)", coords: [-112.1401, 36.0544] },
+  // Arizona & New Mexico
+  { name: "Flagstaff", coords: [-111.6513, 35.1983] },
+  { name: "Sedona", coords: [-111.7610, 34.8697] },
+  { name: "Phoenix", coords: [-112.0740, 33.4484] },
+  { name: "Saguaro NP", coords: [-110.5885, 32.2967] },
+  { name: "White Sands", coords: [-106.1712, 32.7872] },
+  { name: "Carlsbad Caverns", coords: [-104.5567, 32.1479] },
+  // Colorado
+  { name: "Mesa Verde", coords: [-108.4618, 37.1838] },
+  { name: "Silverton", coords: [-107.6642, 37.8117] },
+  { name: "Million Dollar Highway (Ouray)", coords: [-107.6714, 38.0228] },
+  { name: "Telluride", coords: [-107.8123, 37.9375] },
+  { name: "Durango", coords: [-107.8801, 37.2753] },
+  { name: "Santa Fe", coords: [-105.9378, 35.6870] },
+  { name: "Albuquerque", coords: [-106.6504, 35.0844] },
+  // Texas
+  { name: "Big Bend (Terlingua)", coords: [-103.6168, 29.3197] },
+  { name: "Marfa", coords: [-104.0214, 30.3087] },
+  { name: "Guadalupe Mountains", coords: [-104.8606, 31.8912] },
+  { name: "Austin", coords: [-97.7431, 30.2672] },
+  { name: "San Antonio", coords: [-98.4936, 29.4241] },
+  { name: "Houston", coords: [-95.3698, 29.7604] }
+];
+
+// Trip 12: Texas to Toronto to Jacksonville (Great Plains, Trans-Canada, Atlantic Canada, East Coast, ~118 days)
+const waypointsPart12 = [
+  // From Houston north through Great Plains
+  { name: "Houston (departure)", coords: [-95.3698, 29.7604] },
+  { name: "Dallas", coords: [-96.7970, 32.7767] },
+  { name: "Amarillo (Cadillac Ranch)", coords: [-101.8313, 35.2220] },
+  { name: "Oklahoma City", coords: [-97.5164, 35.4676] },
+  { name: "Kansas City", coords: [-94.5786, 39.0997] },
+  { name: "Omaha", coords: [-95.9345, 41.2565] },
+  { name: "Sioux Falls", coords: [-96.7311, 43.5446] },
+  { name: "Badlands NP", coords: [-102.3397, 43.8554] },
+  { name: "Mount Rushmore", coords: [-103.4591, 43.8791] },
+  { name: "Devils Tower", coords: [-104.7145, 44.5902] },
+  // North to Canada
+  { name: "Bismarck", coords: [-100.7837, 46.8083] },
   { name: "Winnipeg", coords: [-97.1384, 49.8951] },
   { name: "Thunder Bay", coords: [-89.2477, 48.3809] },
   { name: "Sault Ste. Marie", coords: [-84.3358, 46.5219] },
   { name: "Sudbury", coords: [-81.0112, 46.4917] },
   { name: "Muskoka", coords: [-79.3878, 45.0032] },
-  { name: "Toronto", coords: [-79.3832, 43.6532] }
-];
-
-// Trip 12: Toronto to Jacksonville (Atlantic Canada, US East Coast, Florida, ~117 days)
-const waypointsPart12 = [
+  { name: "Toronto", coords: [-79.3832, 43.6532] },
   // Eastern Canada
-  { name: "Toronto (departure)", coords: [-79.3832, 43.6532] },
   { name: "Montreal", coords: [-73.5673, 45.5017] },
   { name: "Quebec City", coords: [-71.2080, 46.8139] },
   { name: "Percé (Gaspé)", coords: [-64.2165, 48.5234] },
@@ -700,7 +708,8 @@ const waypointsPart12 = [
   { name: "Port aux Basques (ferry)", coords: [-59.1361, 47.5719] },
   { name: "Gros Morne NP", coords: [-57.8097, 49.5980] },
   { name: "St. John's", coords: [-52.7126, 47.5615] },
-  // US Northeast
+  // Return and US Northeast
+  { name: "Port aux Basques (return ferry)", coords: [-59.1361, 47.5719] },
   { name: "Bar Harbor (Acadia)", coords: [-68.2039, 44.3876] },
   { name: "Portland (Maine)", coords: [-70.2553, 43.6591] },
   { name: "Boston", coords: [-71.0589, 42.3601] },
@@ -709,30 +718,193 @@ const waypointsPart12 = [
   { name: "Philadelphia", coords: [-75.1652, 39.9526] },
   { name: "Washington DC", coords: [-77.0369, 38.9072] },
   { name: "Shenandoah NP", coords: [-78.4679, 38.4755] },
-  // Blue Ridge & Appalachians
+  // Blue Ridge & South
   { name: "Blue Ridge Parkway (Roanoke)", coords: [-79.9414, 37.2710] },
   { name: "Asheville", coords: [-82.5515, 35.5951] },
   { name: "Great Smoky Mountains", coords: [-83.5070, 35.6532] },
-  { name: "Nashville", coords: [-86.7816, 36.1627] },
-  // Natchez Trace
-  { name: "Tupelo", coords: [-88.7034, 34.2576] },
-  { name: "Natchez", coords: [-91.4032, 31.5604] },
-  { name: "New Orleans", coords: [-90.0715, 29.9511] },
-  // Gulf Coast & Florida
-  { name: "Mobile", coords: [-88.0399, 30.6954] },
-  { name: "Pensacola", coords: [-87.2169, 30.4213] },
-  { name: "Tallahassee", coords: [-84.2807, 30.4383] },
-  { name: "Gainesville", coords: [-82.3248, 29.6516] },
-  { name: "Orlando", coords: [-81.3792, 28.5383] },
-  { name: "Tampa", coords: [-82.4572, 27.9506] },
-  { name: "Fort Myers", coords: [-81.8723, 26.6406] },
-  { name: "Everglades", coords: [-80.9330, 25.2866] },
-  { name: "Miami", coords: [-80.1918, 25.7617] },
-  { name: "Key West", coords: [-81.7826, 24.5551] },
-  { name: "Miami (return)", coords: [-80.1918, 25.7617] },
-  { name: "Fort Lauderdale", coords: [-80.1373, 26.1224] },
+  { name: "Savannah", coords: [-81.0998, 32.0809] },
   { name: "St. Augustine", coords: [-81.3124, 29.9012] },
   { name: "Jacksonville", coords: [-81.6557, 30.3322] }
+];
+
+// Trip 13: Vienna to Athens (Feb-May 2033, ~90 days)
+const waypointsPart13 = [
+  { name: "Vienna (departure)", coords: [16.3738, 48.2082] },
+  { name: "Bratislava", coords: [17.1077, 48.1486] },
+  { name: "Budapest", coords: [19.0402, 47.4979] },
+  { name: "Belgrade", coords: [20.4489, 44.7866] },
+  { name: "Niš", coords: [21.8958, 43.3209] },
+  { name: "Sofia", coords: [23.3219, 42.6977] },
+  { name: "Plovdiv", coords: [24.7528, 42.1354] },
+  { name: "Thessaloniki", coords: [22.9444, 40.6401] },
+  { name: "Meteora", coords: [21.6309, 39.7217] },
+  { name: "Delphi", coords: [22.5011, 38.4824] },
+  { name: "Athens", coords: [23.7275, 37.9838] }
+];
+
+// Trip 14: Athens to Milan (Easter 2034, ~2.5 weeks) - Mediterranean spring
+const waypointsPart14 = [
+  { name: "Athens (departure)", coords: [23.7275, 37.9838] },
+  { name: "Patras (ferry)", coords: [21.7346, 38.2466] },
+  { name: "Bari (ferry arrival)", coords: [16.8719, 41.1171] },
+  { name: "Matera", coords: [16.6043, 40.6664] },
+  { name: "Amalfi Coast", coords: [14.6027, 40.6340] },
+  { name: "Pompeii", coords: [14.4849, 40.7462] },
+  { name: "Rome", coords: [12.4964, 41.9028] },
+  { name: "Florence", coords: [11.2558, 43.7696] },
+  { name: "Bologna", coords: [11.3426, 44.4949] },
+  { name: "Milan", coords: [9.1900, 45.4642] }
+];
+
+// Trip 15: Milan to Marrakech (Summer 2034, ~7 weeks) - coastal route via France & Spain
+const waypointsPart15 = [
+  { name: "Milan (departure)", coords: [9.1900, 45.4642] },
+  { name: "Genoa", coords: [8.9463, 44.4056] },
+  { name: "Monaco", coords: [7.4246, 43.7384] },
+  { name: "Nice", coords: [7.2620, 43.7102] },
+  { name: "Marseille", coords: [5.3698, 43.2965] },
+  { name: "Montpellier", coords: [3.8767, 43.6108] },
+  { name: "Barcelona", coords: [2.1734, 41.3851] },
+  { name: "Valencia", coords: [-0.3763, 39.4699] },
+  { name: "Granada (Alhambra)", coords: [-3.5986, 37.1773] },
+  { name: "Seville", coords: [-5.9845, 37.3891] },
+  { name: "Cadiz", coords: [-6.2926, 36.5271] },
+  { name: "Gibraltar", coords: [-5.3536, 36.1408] },
+  { name: "Tangier (ferry)", coords: [-5.8128, 35.7595] },
+  { name: "Chefchaouen", coords: [-5.2636, 35.1688] },
+  { name: "Fes", coords: [-5.0078, 34.0181] },
+  { name: "Marrakech", coords: [-7.9811, 31.6295] }
+];
+
+// Trip 16: Marrakech to Dakar (Christmas 2034-35, ~3 weeks) - SAHARA IN WINTER!
+const waypointsPart16 = [
+  { name: "Marrakech (departure)", coords: [-7.9811, 31.6295] },
+  { name: "Ouarzazate", coords: [-6.9063, 30.9335] },
+  { name: "Merzouga (Sahara dunes)", coords: [-4.0103, 31.0801] },
+  { name: "Laayoune", coords: [-13.2000, 27.1253] },
+  { name: "Dakhla", coords: [-15.9320, 23.6848] },
+  { name: "Nouadhibou", coords: [-17.0347, 20.9311] },
+  { name: "Nouakchott", coords: [-15.9785, 18.0735] },
+  { name: "Saint-Louis", coords: [-16.4897, 16.0179] },
+  { name: "Dakar", coords: [-17.4677, 14.7167] }
+];
+
+// Trip 17: Dakar to Accra (Summer 2035, ~7 weeks) - West Africa coastal route
+const waypointsPart17 = [
+  { name: "Dakar (departure)", coords: [-17.4677, 14.7167] },
+  { name: "Banjul (Gambia)", coords: [-16.5885, 13.4549] },
+  { name: "Ziguinchor", coords: [-16.2719, 12.5681] },
+  { name: "Bissau", coords: [-15.5977, 11.8636] },
+  { name: "Conakry", coords: [-13.6773, 9.6412] },
+  { name: "Freetown", coords: [-13.2317, 8.4657] },
+  { name: "Monrovia", coords: [-10.8047, 6.3156] },
+  { name: "Abidjan", coords: [-4.0083, 5.3600] },
+  { name: "Cape Coast (Ghana)", coords: [-1.2466, 5.1053] },
+  { name: "Accra", coords: [-0.1870, 5.6037] }
+];
+
+// Trip 18: Accra to Libreville (Christmas 2035-36, ~3 weeks) - Gulf of Guinea
+const waypointsPart18 = [
+  { name: "Accra (departure)", coords: [-0.1870, 5.6037] },
+  { name: "Lomé (Togo)", coords: [1.2227, 6.1375] },
+  { name: "Cotonou (Benin)", coords: [2.3912, 6.3703] },
+  { name: "Lagos", coords: [3.3792, 6.5244] },
+  { name: "Calabar", coords: [8.3417, 4.9517] },
+  { name: "Douala", coords: [9.7043, 4.0511] },
+  { name: "Kribi", coords: [9.9137, 2.9373] },
+  { name: "Bata (Eq. Guinea)", coords: [9.7659, 1.8628] },
+  { name: "Libreville", coords: [9.4536, 0.4162] }
+];
+
+// Trip 19: Libreville to Windhoek (Summer 2036, ~7 weeks) - Central/Southern Africa
+const waypointsPart19 = [
+  { name: "Libreville (departure)", coords: [9.4536, 0.4162] },
+  { name: "Franceville", coords: [13.5833, -1.6333] },
+  { name: "Brazzaville", coords: [15.2663, -4.2634] },
+  { name: "Kinshasa", coords: [15.2663, -4.4419] },
+  { name: "Luanda", coords: [13.2343, -8.8390] },
+  { name: "Benguela", coords: [13.4055, -12.5763] },
+  { name: "Lubango", coords: [13.4894, -14.9186] },
+  { name: "Ruacana Falls", coords: [14.2167, -17.4000] },
+  { name: "Etosha NP", coords: [16.0000, -18.8556] },
+  { name: "Windhoek", coords: [17.0658, -22.5609] }
+];
+
+// Trip 20: Windhoek to Cape Town (Christmas 2036-37, ~3 weeks) - Cape summer!
+const waypointsPart20 = [
+  { name: "Windhoek (departure)", coords: [17.0658, -22.5609] },
+  { name: "Sossusvlei", coords: [15.2928, -24.7275] },
+  { name: "Lüderitz", coords: [15.1591, -26.6481] },
+  { name: "Fish River Canyon", coords: [17.5833, -27.5833] },
+  { name: "Orange River", coords: [18.0000, -28.7500] },
+  { name: "Cederberg", coords: [19.0833, -32.5000] },
+  { name: "Cape Town", coords: [18.4241, -33.9249] }
+];
+
+// Trip 21: Cape Town to Durban (Easter 2037, ~2.5 weeks) - Garden Route autumn
+const waypointsPart21 = [
+  { name: "Cape Town (departure)", coords: [18.4241, -33.9249] },
+  { name: "Hermanus (whale watching)", coords: [19.2333, -34.4167] },
+  { name: "Mossel Bay", coords: [22.1333, -34.1833] },
+  { name: "Knysna", coords: [23.0486, -34.0363] },
+  { name: "Tsitsikamma NP", coords: [23.8833, -33.9667] },
+  { name: "Addo Elephant NP", coords: [26.1833, -33.4500] },
+  { name: "Port Elizabeth", coords: [25.6022, -33.9608] },
+  { name: "East London", coords: [27.9116, -33.0153] },
+  { name: "Coffee Bay (Wild Coast)", coords: [29.1500, -31.9833] },
+  { name: "Durban", coords: [31.0218, -29.8587] }
+];
+
+// Trip 22: Durban to Dar es Salaam (Summer 2038, ~7 weeks) - safari dry season
+const waypointsPart22 = [
+  { name: "Durban (departure)", coords: [31.0218, -29.8587] },
+  { name: "Hluhluwe-iMfolozi", coords: [32.0667, -28.0167] },
+  { name: "Eswatini (Swaziland)", coords: [31.4659, -26.5225] },
+  { name: "Kruger NP", coords: [31.4892, -24.0117] },
+  { name: "Johannesburg", coords: [28.0473, -26.2041] },
+  { name: "Pretoria", coords: [28.1881, -25.7461] },
+  { name: "Maun (Okavango)", coords: [23.4167, -19.9833] },
+  { name: "Victoria Falls", coords: [25.8572, -17.9243] },
+  { name: "Lusaka", coords: [28.2871, -15.3875] },
+  { name: "South Luangwa NP", coords: [31.7833, -13.0833] },
+  { name: "Lilongwe", coords: [33.7873, -13.9626] },
+  { name: "Lake Malawi", coords: [34.5000, -12.0000] },
+  { name: "Mbeya", coords: [33.4500, -8.9000] },
+  { name: "Iringa", coords: [35.7000, -7.7667] },
+  { name: "Dar es Salaam", coords: [39.2083, -6.7924] }
+];
+
+// Trip 23: Dar es Salaam to Nairobi (Christmas 2038-39, ~3 weeks) - East Africa
+const waypointsPart23 = [
+  { name: "Dar es Salaam (departure)", coords: [39.2083, -6.7924] },
+  { name: "Zanzibar", coords: [39.1989, -6.1659] },
+  { name: "Bagamoyo", coords: [38.9000, -6.4333] },
+  { name: "Arusha", coords: [36.6830, -3.3869] },
+  { name: "Ngorongoro Crater", coords: [35.5878, -3.1736] },
+  { name: "Serengeti NP", coords: [34.8333, -2.3333] },
+  { name: "Lake Victoria (Mwanza)", coords: [32.9000, -2.5167] },
+  { name: "Masai Mara", coords: [35.1429, -1.4069] },
+  { name: "Nairobi", coords: [36.8219, -1.2921] }
+];
+
+// Trip 24: Nairobi to Djibouti (Easter 2039, ~2.5 weeks) - Horn of Africa
+const waypointsPart24 = [
+  { name: "Nairobi (departure)", coords: [36.8219, -1.2921] },
+  { name: "Mount Kenya", coords: [37.3061, -0.1521] },
+  { name: "Samburu NP", coords: [37.5333, 0.6167] },
+  { name: "Lake Turkana", coords: [36.0833, 3.5833] },
+  { name: "Moyale (Ethiopia border)", coords: [39.0500, 3.5167] },
+  { name: "Addis Ababa", coords: [38.7578, 9.0320] },
+  { name: "Harar", coords: [42.1199, 9.3114] },
+  { name: "Dire Dawa", coords: [42.4500, 9.6000] },
+  { name: "Djibouti City", coords: [43.1456, 11.5721] }
+];
+
+// Trip 25: Djibouti to Dubai (Summer 2039) - ship car home
+const waypointsPart25 = [
+  { name: "Djibouti City", coords: [43.1456, 11.5721] },
+  // Car shipped from Djibouti to Dubai
+  { name: "Dubai (arrival)", coords: [55.2708, 25.2048] }
 ];
 
 async function fetchRoute(coords) {
@@ -886,6 +1058,45 @@ async function buildRoute() {
 
   console.error('\n=== Building Part 12: Toronto to Jacksonville (Atlantic Canada, East Coast, Florida) ===\n');
   const part12 = await buildRouteWithSegments(waypointsPart12, 'Part12', 12);
+
+  console.error('\n=== Building Part 13: Vienna to Athens (Balkans) ===\n');
+  const part13 = await buildRouteWithSegments(waypointsPart13, 'Part13', 13);
+
+  console.error('\n=== Building Part 14: Athens to Milan (Easter 2034) ===\n');
+  const part14 = await buildRouteWithSegments(waypointsPart14, 'Part14', 14);
+
+  console.error('\n=== Building Part 15: Milan to Marrakech (Summer 2034) ===\n');
+  const part15 = await buildRouteWithSegments(waypointsPart15, 'Part15', 15);
+
+  console.error('\n=== Building Part 16: Marrakech to Dakar (Christmas 2034-35, SAHARA) ===\n');
+  const part16 = await buildRouteWithSegments(waypointsPart16, 'Part16', 16);
+
+  console.error('\n=== Building Part 17: Dakar to Accra (Summer 2035) ===\n');
+  const part17 = await buildRouteWithSegments(waypointsPart17, 'Part17', 17);
+
+  console.error('\n=== Building Part 18: Accra to Libreville (Christmas 2035-36) ===\n');
+  const part18 = await buildRouteWithSegments(waypointsPart18, 'Part18', 18);
+
+  console.error('\n=== Building Part 19: Libreville to Windhoek (Summer 2036) ===\n');
+  const part19 = await buildRouteWithSegments(waypointsPart19, 'Part19', 19);
+
+  console.error('\n=== Building Part 20: Windhoek to Cape Town (Christmas 2036-37) ===\n');
+  const part20 = await buildRouteWithSegments(waypointsPart20, 'Part20', 20);
+
+  console.error('\n=== Building Part 21: Cape Town to Durban (Easter 2037) ===\n');
+  const part21 = await buildRouteWithSegments(waypointsPart21, 'Part21', 21);
+
+  console.error('\n=== Building Part 22: Durban to Dar es Salaam (Summer 2038) ===\n');
+  const part22 = await buildRouteWithSegments(waypointsPart22, 'Part22', 22);
+
+  console.error('\n=== Building Part 23: Dar es Salaam to Nairobi (Christmas 2038-39) ===\n');
+  const part23 = await buildRouteWithSegments(waypointsPart23, 'Part23', 23);
+
+  console.error('\n=== Building Part 24: Nairobi to Djibouti (Easter 2039) ===\n');
+  const part24 = await buildRouteWithSegments(waypointsPart24, 'Part24', 24);
+
+  console.error('\n=== Building Part 25: Djibouti to Dubai (Summer 2039, ship) ===\n');
+  const part25 = await buildRouteWithSegments(waypointsPart25, 'Part25', 25);
 
   // Create GeoJSON with both summary lines and individual segments
   const geojson = {
@@ -1048,10 +1259,10 @@ async function buildRoute() {
       {
         type: "Feature",
         properties: {
-          name: "Trip 10: Los Angeles to Houston",
+          name: "Trip 10: LA to Alaska to Seattle",
           part: 10,
           type: "summary",
-          description: "California Coast, Route 66, American Southwest (Utah's Mighty 5), Texas",
+          description: "Pacific Coast, Canadian Rockies, Alaska Highway, Alaska (fall)",
           totalDistanceKm: part10.totalDistanceKm,
           totalDurationHrs: parseFloat(part10.totalDurationHrs),
           segmentCount: part10.segments.length
@@ -1065,10 +1276,10 @@ async function buildRoute() {
       {
         type: "Feature",
         properties: {
-          name: "Trip 11: Houston to Toronto",
+          name: "Trip 11: Seattle to Texas",
           part: 11,
           type: "summary",
-          description: "Great Plains, Rocky Mountains, Pacific Northwest, Alaska Highway, Trans-Canada",
+          description: "Rocky Mountains, Utah Parks, American Southwest, Texas (winter/spring)",
           totalDistanceKm: part11.totalDistanceKm,
           totalDurationHrs: parseFloat(part11.totalDurationHrs),
           segmentCount: part11.segments.length
@@ -1082,7 +1293,7 @@ async function buildRoute() {
       {
         type: "Feature",
         properties: {
-          name: "Trip 12: Toronto to Jacksonville",
+          name: "Trip 12: Texas to Toronto to Jacksonville",
           part: 12,
           type: "summary",
           description: "Eastern Canada, Newfoundland, US East Coast, Blue Ridge Parkway, Florida Keys",
@@ -1094,6 +1305,188 @@ async function buildRoute() {
           type: "LineString",
           coordinates: part12.totalCoords
         }
+      },
+      // Summary line for Part 13
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 13: Vienna to Athens",
+          part: 13,
+          type: "summary",
+          description: "Balkans route (Feb-May 2033)",
+          totalDistanceKm: part13.totalDistanceKm,
+          totalDurationHrs: parseFloat(part13.totalDurationHrs),
+          segmentCount: part13.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part13.totalCoords }
+      },
+      // Summary line for Part 14
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 14: Athens to Milan",
+          part: 14,
+          type: "summary",
+          description: "Mediterranean spring (Easter 2034)",
+          totalDistanceKm: part14.totalDistanceKm,
+          totalDurationHrs: parseFloat(part14.totalDurationHrs),
+          segmentCount: part14.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part14.totalCoords }
+      },
+      // Summary line for Part 15
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 15: Milan to Marrakech",
+          part: 15,
+          type: "summary",
+          description: "Riviera, Spain, Morocco (Summer 2034)",
+          totalDistanceKm: part15.totalDistanceKm,
+          totalDurationHrs: parseFloat(part15.totalDurationHrs),
+          segmentCount: part15.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part15.totalCoords }
+      },
+      // Summary line for Part 16
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 16: Marrakech to Dakar",
+          part: 16,
+          type: "summary",
+          description: "SAHARA IN WINTER (Christmas 2034-35)",
+          totalDistanceKm: part16.totalDistanceKm,
+          totalDurationHrs: parseFloat(part16.totalDurationHrs),
+          segmentCount: part16.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part16.totalCoords }
+      },
+      // Summary line for Part 17
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 17: Dakar to Accra",
+          part: 17,
+          type: "summary",
+          description: "West Africa coastal (Summer 2035)",
+          totalDistanceKm: part17.totalDistanceKm,
+          totalDurationHrs: parseFloat(part17.totalDurationHrs),
+          segmentCount: part17.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part17.totalCoords }
+      },
+      // Summary line for Part 18
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 18: Accra to Libreville",
+          part: 18,
+          type: "summary",
+          description: "Gulf of Guinea (Christmas 2035-36)",
+          totalDistanceKm: part18.totalDistanceKm,
+          totalDurationHrs: parseFloat(part18.totalDurationHrs),
+          segmentCount: part18.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part18.totalCoords }
+      },
+      // Summary line for Part 19
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 19: Libreville to Windhoek",
+          part: 19,
+          type: "summary",
+          description: "Central/Southern Africa (Summer 2036)",
+          totalDistanceKm: part19.totalDistanceKm,
+          totalDurationHrs: parseFloat(part19.totalDurationHrs),
+          segmentCount: part19.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part19.totalCoords }
+      },
+      // Summary line for Part 20
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 20: Windhoek to Cape Town",
+          part: 20,
+          type: "summary",
+          description: "Namibia to Cape, Cape summer (Christmas 2036-37)",
+          totalDistanceKm: part20.totalDistanceKm,
+          totalDurationHrs: parseFloat(part20.totalDurationHrs),
+          segmentCount: part20.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part20.totalCoords }
+      },
+      // Summary line for Part 21
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 21: Cape Town to Durban",
+          part: 21,
+          type: "summary",
+          description: "Garden Route autumn (Easter 2037)",
+          totalDistanceKm: part21.totalDistanceKm,
+          totalDurationHrs: parseFloat(part21.totalDurationHrs),
+          segmentCount: part21.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part21.totalCoords }
+      },
+      // Summary line for Part 22
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 22: Durban to Dar es Salaam",
+          part: 22,
+          type: "summary",
+          description: "Safari dry season (Summer 2038)",
+          totalDistanceKm: part22.totalDistanceKm,
+          totalDurationHrs: parseFloat(part22.totalDurationHrs),
+          segmentCount: part22.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part22.totalCoords }
+      },
+      // Summary line for Part 23
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 23: Dar es Salaam to Nairobi",
+          part: 23,
+          type: "summary",
+          description: "East Africa (Christmas 2038-39)",
+          totalDistanceKm: part23.totalDistanceKm,
+          totalDurationHrs: parseFloat(part23.totalDurationHrs),
+          segmentCount: part23.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part23.totalCoords }
+      },
+      // Summary line for Part 24
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 24: Nairobi to Djibouti",
+          part: 24,
+          type: "summary",
+          description: "Horn of Africa (Easter 2039)",
+          totalDistanceKm: part24.totalDistanceKm,
+          totalDurationHrs: parseFloat(part24.totalDurationHrs),
+          segmentCount: part24.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part24.totalCoords }
+      },
+      // Summary line for Part 25
+      {
+        type: "Feature",
+        properties: {
+          name: "Trip 25: Djibouti to Dubai",
+          part: 25,
+          type: "summary",
+          description: "Ship car home (Summer 2039)",
+          totalDistanceKm: part25.totalDistanceKm,
+          totalDurationHrs: parseFloat(part25.totalDurationHrs),
+          segmentCount: part25.segments.length
+        },
+        geometry: { type: "LineString", coordinates: part25.totalCoords }
       },
       // Individual segments
       ...part1.segments,
@@ -1107,7 +1500,20 @@ async function buildRoute() {
       ...part9.segments,
       ...part10.segments,
       ...part11.segments,
-      ...part12.segments
+      ...part12.segments,
+      ...part13.segments,
+      ...part14.segments,
+      ...part15.segments,
+      ...part16.segments,
+      ...part17.segments,
+      ...part18.segments,
+      ...part19.segments,
+      ...part20.segments,
+      ...part21.segments,
+      ...part22.segments,
+      ...part23.segments,
+      ...part24.segments,
+      ...part25.segments
     ]
   };
 
@@ -1143,9 +1549,22 @@ async function buildRoute() {
     { part: part7, num: 7, name: "Trip 7: Valparaíso to Cartagena", desc: "South America" },
     { part: part8, num: 8, name: "Trip 8: Panama to Oaxaca", desc: "Central America & Mexico" },
     { part: part9, num: 9, name: "Trip 9: Oaxaca to Los Angeles", desc: "Mexico Pacific Coast & Baja" },
-    { part: part10, num: 10, name: "Trip 10: Los Angeles to Houston", desc: "California, Southwest, Texas" },
-    { part: part11, num: 11, name: "Trip 11: Houston to Toronto", desc: "Rockies, Alaska, Trans-Canada" },
-    { part: part12, num: 12, name: "Trip 12: Toronto to Jacksonville", desc: "Atlantic Canada, East Coast, Florida" }
+    { part: part10, num: 10, name: "Trip 10: LA to Alaska to Seattle", desc: "Pacific Coast, Alaska (fall)" },
+    { part: part11, num: 11, name: "Trip 11: Seattle to Texas", desc: "Rockies, Southwest, Texas" },
+    { part: part12, num: 12, name: "Trip 12: Texas to Toronto to Jacksonville", desc: "Great Plains, Atlantic Canada, East Coast" },
+    { part: part13, num: 13, name: "Trip 13: Vienna to Athens", desc: "Balkans (Feb-May 2033)" },
+    { part: part14, num: 14, name: "Trip 14: Athens to Milan", desc: "Mediterranean spring (Easter 2034)" },
+    { part: part15, num: 15, name: "Trip 15: Milan to Marrakech", desc: "Riviera, Spain, Morocco (Summer 2034)" },
+    { part: part16, num: 16, name: "Trip 16: Marrakech to Dakar", desc: "SAHARA IN WINTER (Christmas 2034-35)" },
+    { part: part17, num: 17, name: "Trip 17: Dakar to Accra", desc: "West Africa coastal (Summer 2035)" },
+    { part: part18, num: 18, name: "Trip 18: Accra to Libreville", desc: "Gulf of Guinea (Christmas 2035-36)" },
+    { part: part19, num: 19, name: "Trip 19: Libreville to Windhoek", desc: "Central/Southern Africa (Summer 2036)" },
+    { part: part20, num: 20, name: "Trip 20: Windhoek to Cape Town", desc: "Cape summer (Christmas 2036-37)" },
+    { part: part21, num: 21, name: "Trip 21: Cape Town to Durban", desc: "Garden Route (Easter 2037)" },
+    { part: part22, num: 22, name: "Trip 22: Durban to Dar es Salaam", desc: "Safari dry season (Summer 2038)" },
+    { part: part23, num: 23, name: "Trip 23: Dar es Salaam to Nairobi", desc: "East Africa (Christmas 2038-39)" },
+    { part: part24, num: 24, name: "Trip 24: Nairobi to Djibouti", desc: "Horn of Africa (Easter 2039)" },
+    { part: part25, num: 25, name: "Trip 25: Djibouti to Dubai", desc: "Ship car home (Summer 2039)" }
   ];
 
   // Create routes directory if it doesn't exist
@@ -1183,45 +1602,15 @@ async function buildRoute() {
   }
 
   // Also write combined file for backwards compatibility (but smaller - summary only)
-  const summaryGeojson = {
-    type: "FeatureCollection",
-    features: tripParts.map(trip => ({
-      type: "Feature",
-      properties: {
-        name: trip.name,
-        part: trip.num,
-        type: "summary",
-        description: trip.desc,
-        totalDistanceKm: trip.part.totalDistanceKm,
-        totalDurationHrs: parseFloat(trip.part.totalDurationHrs)
-      },
-      geometry: {
-        type: "LineString",
-        coordinates: trip.part.totalCoords
-      }
-    }))
-  };
-  const reducedSummary = reduceGeojsonPrecision(summaryGeojson);
-  fs.writeFileSync('data/planned-route.geojson', JSON.stringify(reducedSummary, null, 2));
-  console.error(`Wrote data/planned-route.geojson (summary only)`);
-
   console.error(`\n=== TOTALS ===`);
-  console.error(`Part 1: ${part1.totalDistanceKm} km, ${part1.totalDurationHrs} hrs driving (${part1.segments.length} segments)`);
-  console.error(`Part 2: ${part2.totalDistanceKm} km, ${part2.totalDurationHrs} hrs driving (${part2.segments.length} segments)`);
-  console.error(`Part 3: ${part3.totalDistanceKm} km, ${part3.totalDurationHrs} hrs driving (${part3.segments.length} segments)`);
-  console.error(`Part 4: ${part4.totalDistanceKm} km, ${part4.totalDurationHrs} hrs driving (${part4.segments.length} segments)`);
-  console.error(`Part 5: ${part5.totalDistanceKm} km, ${part5.totalDurationHrs} hrs driving (${part5.segments.length} segments)`);
-  console.error(`Part 6: ${part6.totalDistanceKm} km, ${part6.totalDurationHrs} hrs driving (${part6.segments.length} segments)`);
-  console.error(`Part 7: ${part7.totalDistanceKm} km, ${part7.totalDurationHrs} hrs driving (${part7.segments.length} segments)`);
-  console.error(`Part 8: ${part8.totalDistanceKm} km, ${part8.totalDurationHrs} hrs driving (${part8.segments.length} segments)`);
-  console.error(`Part 9: ${part9.totalDistanceKm} km, ${part9.totalDurationHrs} hrs driving (${part9.segments.length} segments)`);
-  console.error(`Part 10: ${part10.totalDistanceKm} km, ${part10.totalDurationHrs} hrs driving (${part10.segments.length} segments)`);
-  console.error(`Part 11: ${part11.totalDistanceKm} km, ${part11.totalDurationHrs} hrs driving (${part11.segments.length} segments)`);
-  console.error(`Part 12: ${part12.totalDistanceKm} km, ${part12.totalDurationHrs} hrs driving (${part12.segments.length} segments)`);
-  const totalKm = part1.totalDistanceKm + part2.totalDistanceKm + part3.totalDistanceKm + part4.totalDistanceKm + part5.totalDistanceKm + part6.totalDistanceKm + part7.totalDistanceKm + part8.totalDistanceKm + part9.totalDistanceKm + part10.totalDistanceKm + part11.totalDistanceKm + part12.totalDistanceKm;
-  const totalHrs = parseFloat(part1.totalDurationHrs) + parseFloat(part2.totalDurationHrs) + parseFloat(part3.totalDurationHrs) + parseFloat(part4.totalDurationHrs) + parseFloat(part5.totalDurationHrs) + parseFloat(part6.totalDurationHrs) + parseFloat(part7.totalDurationHrs) + parseFloat(part8.totalDurationHrs) + parseFloat(part9.totalDurationHrs) + parseFloat(part10.totalDurationHrs) + parseFloat(part11.totalDurationHrs) + parseFloat(part12.totalDurationHrs);
-  console.error(`TOTAL: ${totalKm} km, ${totalHrs.toFixed(1)} hrs driving`);
-  console.error(`\nWrote ${part1.totalCoords.length + part2.totalCoords.length + part3.totalCoords.length + part4.totalCoords.length + part5.totalCoords.length + part6.totalCoords.length + part7.totalCoords.length + part8.totalCoords.length + part9.totalCoords.length + part10.totalCoords.length + part11.totalCoords.length + part12.totalCoords.length} coordinates to data/planned-route.geojson`);
+  const allParts = [part1, part2, part3, part4, part5, part6, part7, part8, part9, part10, part11, part12, part13, part14, part15, part16, part17, part18, part19, part20, part21, part22, part23, part24, part25];
+  allParts.forEach((p, i) => {
+    console.error(`Part ${i+1}: ${p.totalDistanceKm} km, ${p.totalDurationHrs} hrs driving (${p.segments.length} segments)`);
+  });
+  const totalKm = allParts.reduce((sum, p) => sum + p.totalDistanceKm, 0);
+  const totalHrs = allParts.reduce((sum, p) => sum + parseFloat(p.totalDurationHrs), 0);
+  const totalCoords = allParts.reduce((sum, p) => sum + p.totalCoords.length, 0);
+  console.error(`TOTAL: ${totalKm} km, ${totalHrs.toFixed(1)} hrs driving, ${totalCoords} coordinates`);
 }
 
 buildRoute();
