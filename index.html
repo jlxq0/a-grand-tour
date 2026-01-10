@@ -1235,7 +1235,8 @@
                 <div class="legend-item toggleable" data-layers="ferries-line,shipping-line"><div class="legend-line-dashed"></div> Ferry / Ship</div>
                 <div class="legend-item toggleable" data-layers="scenic-routes-line,scenic-routes-highlight"><div class="legend-line" style="background: #f1c40f;"></div> Scenic route</div>
                 <div class="legend-item toggleable" data-layers="pois-circle,pois-labels"><div class="legend-dot" style="background: #e74c3c;"></div> Point of interest</div>
-                <div class="legend-item toggleable" data-layers="problematic-fill,problematic-outline"><div class="legend-fill" style="background: rgba(231, 76, 60, 0.25);"></div> Problematic</div>
+                <div class="legend-item"><div class="legend-fill" style="background: rgba(230, 126, 34, 0.30);"></div> Problematic</div>
+                <div class="legend-item"><div class="legend-fill" style="background: rgba(192, 57, 43, 0.35);"></div> Impossible</div>
             </div>
 
             <!-- Map Controls -->
@@ -1963,7 +1964,53 @@ async function addDataLayers() {
 
     // Load visited countries
     const visitedCountryCodes = await fetch('data/visited-countries.json').then(r => r.json());
-    const problemCountries = ['NG', 'CM', 'CD'];
+
+    // IMPOSSIBLE (Red): Cannot enter with a personal vehicle - war zones, vehicle bans, no independent travel
+    const impossibleCountries = [
+        'KP',  // North Korea - no foreign tourists with vehicles
+        'CN',  // China - requires mandatory guide, ~$10k permits, practically impossible
+        'TM',  // Turkmenistan - transit only, guide required, very restrictive
+        'MM',  // Myanmar/Burma - civil war, borders closed to vehicles
+        'SY',  // Syria - active war zone
+        'YE',  // Yemen - active war zone
+        'AF',  // Afghanistan - Taliban control, extreme danger
+        'SO',  // Somalia - failed state, no functioning government
+        'LY',  // Libya - civil war, armed militias
+        'SS',  // South Sudan - civil war, extreme violence
+        'SD',  // Sudan - active civil war (2023-ongoing)
+        'ER',  // Eritrea - no independent travel permitted
+        'RU',  // Russia - EU vehicles banned, ongoing war
+        'BY',  // Belarus - EU vehicles banned, aligned with Russia
+        'UA',  // Ukraine - active war zone
+        'HT',  // Haiti - failed state, gang control
+        'VE',  // Venezuela - extreme risk, wrongful detention
+        'IQ',  // Iraq - terrorism, kidnapping, Level 4 advisory
+        'CF'   // Central African Republic - armed groups control large areas
+    ];
+
+    // PROBLEMATIC (Orange): Accessible but requires extreme caution, local support, or certain regions only
+    const problematicCountries = [
+        'CD',  // DR Congo - can transit Kinshasa-Matadi with local support
+        'NG',  // Nigeria - multiple security challenges, some regions accessible
+        'CM',  // Cameroon - anglophone crisis in northwest/southwest
+        'PK',  // Pakistan - Balochistan off-limits, but KKH/north possible with caution
+        'IR',  // Iran - risk of detention but overlanders do transit
+        'ML',  // Mali - JNIM blockades, active conflict, very dangerous
+        'BF',  // Burkina Faso - jihadist insurgency, Level 4
+        'NE',  // Niger - post-coup instability, traditional Sahara crossing
+        'TD',  // Chad - Lake Chad Basin violence, some transit possible
+        'ET',  // Ethiopia - regional conflicts in Tigray/Amhara/Oromia
+        'LB',  // Lebanon - ongoing tensions, economic crisis
+        'MZ',  // Mozambique - northern Cabo Delgado insurgency
+        'GN',  // Guinea - military junta since 2021, political instability
+        'GW',  // Guinea-Bissau - coup in late 2025
+        'BJ',  // Benin - terrorism spillover from Sahel
+        'TG',  // Togo - terrorism spillover from Sahel
+        'DZ',  // Algeria - Sahara desert travel restricted, border areas dangerous
+        'EG',  // Egypt - Sinai and western border areas problematic
+        'PS',  // Palestine - conflict zone, Gaza inaccessible
+        'IL'   // Israel - ongoing regional tensions, some border areas restricted
+    ];
 
     map.addSource('countries', {
         type: 'vector',
@@ -1979,7 +2026,8 @@ async function addDataLayers() {
         paint: {
             'fill-color': [
                 'case',
-                ['in', ['get', 'iso_3166_1'], ['literal', problemCountries]], 'rgba(231, 76, 60, 0.25)',
+                ['in', ['get', 'iso_3166_1'], ['literal', impossibleCountries]], 'rgba(192, 57, 43, 0.35)',      // Dark red
+                ['in', ['get', 'iso_3166_1'], ['literal', problematicCountries]], 'rgba(230, 126, 34, 0.30)',    // Orange
                 ['in', ['get', 'iso_3166_1'], ['literal', visitedCountryCodes]], 'rgba(39, 174, 96, 0.12)',
                 'rgba(200, 200, 200, 0.05)'
             ],
