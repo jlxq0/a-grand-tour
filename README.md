@@ -20,9 +20,9 @@ Total time on the road: ~50 months. Total distance: roughly 200,000 kilometers. 
 
 🇦🇪 UAE → 🇴🇲 Oman → 🇶🇦 Qatar → 🇧🇭 Bahrain → 🇸🇦 Saudi Arabia → 🇰🇼 Kuwait → 🇮🇶 Iraq → 🇮🇷 Iran → 🚢 → 🇵🇰 Pakistan → 🇮🇳 India → 🇳🇵 Nepal → 🇧🇩 Bangladesh → 🚢 → 🇹🇭 Thailand → 🇱🇦 Laos → 🇻🇳 Vietnam → 🇰🇭 Cambodia → 🇲🇾 Malaysia → 🇸🇬 Singapore → 🚢 → 🇮🇩 Indonesia → 🇹🇱 Timor-Leste → 🚢 → 🇦🇺 Australia → 🚢 → 🇳🇿 New Zealand → 🚢 → 🇨🇱 Chile → 🇦🇷 Argentina → 🇺🇾 Uruguay → 🇧🇷 Brazil → 🇧🇴 Bolivia → 🇵🇪 Peru → 🇪🇨 Ecuador → 🇨🇴 Colombia → 🚢 → 🇵🇦 Panama → 🇨🇷 Costa Rica → 🇳🇮 Nicaragua → 🇭🇳 Honduras → 🇸🇻 El Salvador → 🇬🇹 Guatemala → 🇧🇿 Belize → 🇲🇽 Mexico → 🇺🇸 USA → 🇨🇦 Canada → 🚢 → 🇬🇧 UK → 🇮🇪 Ireland → 🇫🇷 France → 🇧🇪 Belgium → 🇳🇱 Netherlands → 🇱🇺 Luxembourg → 🇩🇪 Germany → 🇨🇭 Switzerland
 
-> **Phase B: Europe & Africa (2035-2044)**
+> **Phase B: Europe & Africa (2034-2039)**
 
-🇩🇰 Denmark → 🇮🇸 Iceland → 🇳🇴 Norway → 🇸🇪 Sweden → 🇫🇮 Finland → 🇪🇪 Estonia → 🇱🇻 Latvia → 🇱🇹 Lithuania → 🇵🇱 Poland → 🇨🇿 Czechia → 🇸🇰 Slovakia → 🇦🇹 Austria → 🇭🇺 Hungary → 🇸🇮 Slovenia → 🇭🇷 Croatia → 🇧🇦 Bosnia → 🇲🇪 Montenegro → 🇦🇱 Albania → 🇽🇰 Kosovo → 🇲🇰 North Macedonia → 🇷🇸 Serbia → 🇷🇴 Romania → 🇲🇩 Moldova → 🇧🇬 Bulgaria → 🇹🇷 Turkey → 🇬🇪 Georgia → 🇦🇲 Armenia → 🇦🇿 Azerbaijan → 🇬🇷 Greece → 🇮🇹 Italy → 🇪🇸 Spain → 🇵🇹 Portugal → 🇲🇦 Morocco → 🇪🇭 Western Sahara → 🇲🇷 Mauritania → 🇸🇳 Senegal → 🇬🇲 Gambia → 🇬🇼 Guinea-Bissau → 🇬🇳 Guinea → 🇸🇱 Sierra Leone → 🇱🇷 Liberia → 🇨🇮 Ivory Coast → 🇬🇭 Ghana → 🇹🇬 Togo → 🇧🇯 Benin → 🇳🇬 Nigeria → 🇨🇲 Cameroon → 🇬🇦 Gabon → 🇨🇬 Congo → 🇨🇩 DRC → 🇦🇴 Angola → 🇳🇦 Namibia → 🇧🇼 Botswana → 🇿🇲 Zambia → 🇿🇼 Zimbabwe → 🇿🇦 South Africa → 🇱🇸 Lesotho → 🇸🇿 Eswatini → 🇲🇿 Mozambique → 🇲🇼 Malawi → 🇹🇿 Tanzania → 🇰🇪 Kenya → 🇺🇬 Uganda → 🇷🇼 Rwanda → 🇧🇮 Burundi → 🇪🇹 Ethiopia → 🇪🇷 Eritrea → 🇸🇩 Sudan → 🇪🇬 Egypt → 🇯🇴 Jordan → 🇸🇦 Saudi Arabia → 🇰🇼 Kuwait → 🇦🇪 UAE
+🇩🇰 Denmark → 🇮🇸 Iceland → 🇳🇴 Norway → 🇸🇪 Sweden → 🇫🇮 Finland → 🇪🇪 Estonia → 🇱🇻 Latvia → 🇱🇹 Lithuania → 🇵🇱 Poland → 🇨🇿 Czechia → 🇸🇰 Slovakia → 🇦🇹 Austria → 🇭🇺 Hungary → 🇸🇮 Slovenia → 🇭🇷 Croatia → 🇧🇦 Bosnia → 🇲🇪 Montenegro → 🇦🇱 Albania → 🇽🇰 Kosovo → 🇲🇰 North Macedonia → 🇷🇸 Serbia → 🇷🇴 Romania → 🇲🇩 Moldova → 🇧🇬 Bulgaria → 🇹🇷 Turkey → 🇬🇪 Georgia → 🇦🇲 Armenia → 🇦🇿 Azerbaijan → 🇬🇷 Greece → 🇮🇹 Italy → 🇪🇸 Spain → 🇵🇹 Portugal → 🇲🇦 Morocco → 🇪🇭 Western Sahara → 🇲🇷 Mauritania → 🇸🇳 Senegal → 🇬🇲 Gambia → 🇬🇼 Guinea-Bissau → 🇬🇳 Guinea → 🇸🇱 Sierra Leone → 🇱🇷 Liberia → 🇨🇮 Ivory Coast → 🇬🇭 Ghana → 🇹🇬 Togo → 🇧🇯 Benin → 🇳🇬 Nigeria → 🇨🇲 Cameroon → 🇬🇦 Gabon → 🇨🇬 Congo → 🇨🇩 DRC → 🇦🇴 Angola → 🇳🇦 Namibia → 🇧🇼 Botswana → 🇿🇦 South Africa → 🇱🇸 Lesotho → 🇸🇿 Eswatini → 🇿🇼 Zimbabwe → 🇿🇲 Zambia → 🇲🇼 Malawi → 🇹🇿 Tanzania → 🇰🇪 Kenya → 🚢 → 🇴🇲 Oman → 🇸🇦 Saudi Arabia → 🇯🇴 Jordan → 🇸🇦 Saudi Arabia → 🇦🇪 UAE
 
 ---
 
@@ -85,11 +85,12 @@ Colombia → [ship Darién] → Central America → Mexico → USA → Canada �
 
 PHASE B: Trips 14-25 (2034-2039, school holidays)
 Greece → Italy → Spain → Portugal → Morocco →
-West Africa → Central Africa → Southern Africa → East Africa →
-[ship] → Dubai
+West Africa → Central Africa → Southern Africa →
+Zimbabwe → Zambia → Malawi → Tanzania → Kenya →
+[ship Mombasa→Salalah] → Oman → Saudi Arabia → Jordan → Dubai
 ```
 
-**Ships (7):**
+**Ships (8):**
 
 |Route|Why|Cost|
 |---|---|---|
@@ -101,13 +102,14 @@ West Africa → Central Africa → Southern Africa → East Africa →
 |Cartagena → Panama|Darién Gap|$1,500|
 |Jacksonville → Southampton|Atlantic|$4,500|
 |Brazzaville → Kinshasa|Congo River crossing|$50|
-|**Total**||**$17,850**|
+|Mombasa → Salalah|Skip Horn of Africa (safety)|$3,000|
+|**Total**||**$20,850**|
 
 ---
 
 # Connectivity
 
-**Starlink:** Don't bring on Trips 1-3 (Iran illegal, India banned, SE Asia not licensed). Pick up in Singapore for Trip 4 onwards. Be discrete in Sudan/Ethiopia.
+**Starlink:** Don't bring on Trips 1-3 (Iran illegal, India banned, SE Asia not licensed). Pick up in Singapore for Trip 4 onwards.
 
 ## Blackout Periods (no Teams calls possible)
 
@@ -157,10 +159,10 @@ After Trip 3, Starlink covers everything.
 |19|Jun 26 – Aug 16, 2036|Summer|Libreville → Windhoek|4,000|
 |20|Dec 19, 2036 – Jan 10, 2037|Christmas|Windhoek → Cape Town|2,000|
 |21|Mar 26 – Apr 12, 2037|Easter|Cape Town → Durban|2,000|
-|22|Jun 26 – Aug 16, 2038|Summer|Durban → Dar es Salaam|4,500|
-|23|Dec 19, 2038 – Jan 10, 2039|Christmas|Dar es Salaam → Nairobi|1,500|
-|24|Mar 26 – Apr 12, 2039|Easter|Nairobi → Djibouti|2,500|
-|25|Jun 26 – Aug 10, 2039|Summer|Djibouti → Dubai (ship car home)|1,000|
+|22|Jun 26 – Aug 16, 2038|Summer|Durban → Nairobi (via Zim, Zambia, Malawi)|4,500|
+|23|Dec 19, 2038 – Jan 10, 2039|Christmas|Nairobi → Mombasa, ship to Salalah|500|
+|24|Mar 26 – Apr 12, 2039|Easter|Salalah → Rijal Almaa → Jeddah → Al-Ula|2,500|
+|25|Jun 26 – Aug 10, 2039|Summer|Al-Ula → Jordan → Riyadh → Dubai|3,000|
 
 ---
 
