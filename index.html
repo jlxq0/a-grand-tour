@@ -1236,7 +1236,7 @@
                 <div class="legend-item toggleable" data-layers="scenic-routes-line,scenic-routes-highlight"><div class="legend-line" style="background: #f1c40f;"></div> Scenic route</div>
                 <div class="legend-item toggleable" data-layers="pois-circle,pois-labels"><div class="legend-dot" style="background: #e74c3c;"></div> Point of interest</div>
                 <div class="legend-item"><div class="legend-fill" style="background: rgba(255, 190, 50, 0.40);"></div> Problematic</div>
-                <div class="legend-item"><div class="legend-fill" style="background: rgba(180, 30, 30, 0.50);"></div> Impossible</div>
+                <div class="legend-item"><div class="legend-fill" style="background: rgba(180, 30, 30, 0.35);"></div> Impossible</div>
             </div>
 
             <!-- Map Controls -->
@@ -2026,7 +2026,7 @@ async function addDataLayers() {
         paint: {
             'fill-color': [
                 'case',
-                ['in', ['get', 'iso_3166_1'], ['literal', impossibleCountries]], 'rgba(180, 30, 30, 0.50)',      // Dark red
+                ['in', ['get', 'iso_3166_1'], ['literal', impossibleCountries]], 'rgba(180, 30, 30, 0.35)',      // Dark red
                 ['in', ['get', 'iso_3166_1'], ['literal', problematicCountries]], 'rgba(255, 190, 50, 0.40)',    // Yellow-amber
                 ['in', ['get', 'iso_3166_1'], ['literal', visitedCountryCodes]], 'rgba(39, 174, 96, 0.12)',
                 'rgba(200, 200, 200, 0.05)'
