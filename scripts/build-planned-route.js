@@ -907,55 +907,64 @@ const waypointsPart21 = [
   { name: "Durban", coords: [31.0218, -29.8587] }
 ];
 
-// Trip 22: Durban to Dar es Salaam (Summer 2038, ~7 weeks) - safari dry season
+// Trip 22: Durban to Nairobi (Summer 2038, ~7 weeks) - via Lesotho, Eswatini, Zimbabwe, Zambia, Malawi
 const waypointsPart22 = [
   { name: "Durban (departure)", coords: [31.0218, -29.8587] },
-  { name: "Hluhluwe-iMfolozi", coords: [32.0667, -28.0167] },
-  { name: "Eswatini (Swaziland)", coords: [31.4659, -26.5225] },
-  { name: "Kruger NP", coords: [31.4892, -24.0117] },
-  { name: "Johannesburg", coords: [28.0473, -26.2041] },
-  { name: "Pretoria", coords: [28.1881, -25.7461] },
-  { name: "Maun (Okavango)", coords: [23.4167, -19.9833] },
-  { name: "Victoria Falls", coords: [25.8572, -17.9243] },
-  { name: "Lusaka", coords: [28.2871, -15.3875] },
+  { name: "Sani Pass (Lesotho border)", coords: [29.2833, -29.5833] },
+  { name: "Maseru (Lesotho)", coords: [27.4833, -29.3167] },
+  { name: "Mbabane (Eswatini)", coords: [31.1333, -26.3167] },
+  { name: "Komatipoort (border)", coords: [31.9333, -25.4333] },
+  { name: "Harare (Zimbabwe)", coords: [31.0522, -17.8292] },
+  { name: "Kariba", coords: [28.8000, -16.5167] },
+  { name: "Lusaka (Zambia)", coords: [28.2871, -15.3875] },
   { name: "South Luangwa NP", coords: [31.7833, -13.0833] },
-  { name: "Lilongwe", coords: [33.7873, -13.9626] },
-  { name: "Lake Malawi", coords: [34.5000, -12.0000] },
-  { name: "Mbeya", coords: [33.4500, -8.9000] },
+  { name: "Lilongwe (Malawi)", coords: [33.7873, -13.9626] },
+  { name: "Lake Malawi (Nkhata Bay)", coords: [34.3000, -11.6000] },
+  { name: "Mbeya (Tanzania)", coords: [33.4500, -8.9000] },
   { name: "Iringa", coords: [35.7000, -7.7667] },
-  { name: "Dar es Salaam", coords: [39.2083, -6.7924] }
-];
-
-// Trip 23: Dar es Salaam to Nairobi (Christmas 2038-39, ~3 weeks) - East Africa
-const waypointsPart23 = [
-  { name: "Dar es Salaam (departure)", coords: [39.2083, -6.7924] },
-  { name: "Zanzibar", coords: [39.1989, -6.1659] },
-  { name: "Bagamoyo", coords: [38.9000, -6.4333] },
+  { name: "Dar es Salaam", coords: [39.2083, -6.7924] },
   { name: "Arusha", coords: [36.6830, -3.3869] },
   { name: "Ngorongoro Crater", coords: [35.5878, -3.1736] },
   { name: "Serengeti NP", coords: [34.8333, -2.3333] },
-  { name: "Lake Victoria (Mwanza)", coords: [32.9000, -2.5167] },
   { name: "Masai Mara", coords: [35.1429, -1.4069] },
   { name: "Nairobi", coords: [36.8219, -1.2921] }
 ];
 
-// Trip 24: Nairobi to Djibouti (Easter 2039, ~2.5 weeks) - Horn of Africa
-const waypointsPart24 = [
+// Trip 23: Nairobi to Mombasa (Christmas 2038-39, ~3 weeks) - ship to Salalah
+const waypointsPart23 = [
   { name: "Nairobi (departure)", coords: [36.8219, -1.2921] },
-  { name: "Mount Kenya", coords: [37.3061, -0.1521] },
-  { name: "Samburu NP", coords: [37.5333, 0.6167] },
-  { name: "Lake Turkana", coords: [36.0833, 3.5833] },
-  { name: "Moyale (Ethiopia border)", coords: [39.0500, 3.5167] },
-  { name: "Addis Ababa", coords: [38.7578, 9.0320] },
-  { name: "Harar", coords: [42.1199, 9.3114] },
-  { name: "Dire Dawa", coords: [42.4500, 9.6000] },
-  { name: "Djibouti City", coords: [43.1456, 11.5721] }
+  { name: "Tsavo East NP", coords: [38.8333, -2.9167] },
+  { name: "Mombasa", coords: [39.6682, -4.0435] }
+  // Ship car Mombasa → Salalah
 ];
 
-// Trip 25: Djibouti to Dubai (Summer 2039) - ship car home
+// Trip 24: Salalah to Al-Ula (Easter 2039, ~2.5 weeks) - Oman & Saudi Arabia
+const waypointsPart24 = [
+  { name: "Salalah (arrival from ship)", coords: [54.0924, 17.0151] },
+  { name: "Wadi Darbat", coords: [54.4500, 17.1000] },
+  { name: "Land of Frankincense", coords: [54.1000, 17.0500] },
+  { name: "Empty Quarter (Rub' al Khali)", coords: [52.5000, 19.5000] },
+  { name: "Najran (Saudi border)", coords: [44.1322, 17.4917] },
+  { name: "Rijal Almaa (Asir)", coords: [42.2833, 18.2167] },
+  { name: "Abha", coords: [42.5053, 18.2164] },
+  { name: "Jeddah (Al-Balad)", coords: [39.1728, 21.4858] },
+  { name: "Hegra (Mada'in Salih)", coords: [37.9500, 26.7833] },
+  { name: "Al-Ula Old Town", coords: [37.9167, 26.6167] },
+  { name: "Elephant Rock", coords: [37.8500, 26.7000] }
+];
+
+// Trip 25: Al-Ula to Dubai (Summer 2039) - via Jordan
 const waypointsPart25 = [
-  { name: "Djibouti City", coords: [43.1456, 11.5721] },
-  // Car shipped from Djibouti to Dubai
+  { name: "Al-Ula (departure)", coords: [37.9167, 26.6167] },
+  { name: "Wadi Al-Disah", coords: [36.4667, 27.5833] },
+  { name: "Tabuk", coords: [36.5662, 28.3838] },
+  { name: "Wadi Rum (Jordan)", coords: [35.4206, 29.5723] },
+  { name: "Petra", coords: [35.4444, 30.3285] },
+  { name: "King's Highway", coords: [35.7000, 31.0000] },
+  { name: "Dead Sea (Jordan side)", coords: [35.5500, 31.5000] },
+  { name: "Amman", coords: [35.9106, 31.9454] },
+  { name: "Riyadh (Saudi Arabia)", coords: [46.6753, 24.7136] },
+  { name: "Al-Ahsa Oasis", coords: [49.5833, 25.3833] },
   { name: "Dubai (arrival)", coords: [55.2708, 25.2048] }
 ];
 
