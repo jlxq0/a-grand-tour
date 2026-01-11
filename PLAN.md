@@ -25,10 +25,10 @@ Each phase consists of small iterations. Each iteration follows the development 
 - [x] Write PLAN.md
 
 ### 1.2 Add PostGIS Support
-- [ ] Add `geo_postgis` dependency
-- [ ] Configure Ecto for PostGIS types
-- [ ] Create migration to enable PostGIS extension
-- [ ] Write test for spatial queries
+- [x] Add `geo_postgis` dependency
+- [x] Configure Ecto for PostGIS types
+- [x] Create migration to enable PostGIS extension
+- [x] Write test for spatial queries
 
 ### 1.3 Basic Layout
 - [ ] Create app layout with split view (map | content)
@@ -247,6 +247,6 @@ Each phase consists of small iterations. Each iteration follows the development 
 
 ## Current Status
 
-**Phase 1.1 Complete** - Project created, basic setup done.
+**Phase 1.2 Complete** - PostGIS support added with geo_postgis.
 
-**Next:** Phase 1.2 - Add PostGIS support.
+**Next:** Phase 1.3 - Basic layout with split view.

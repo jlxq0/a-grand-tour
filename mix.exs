@@ -66,7 +66,8 @@ defmodule GrandTour.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.2.0"},
       {:bandit, "~> 1.5"},
-      {:tidewave, "~> 0.5", only: :dev}
+      {:tidewave, "~> 0.5", only: :dev},
+      {:geo_postgis, "~> 3.6"}
     ]
   end
 
