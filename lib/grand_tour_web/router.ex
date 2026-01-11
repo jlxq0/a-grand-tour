@@ -24,6 +24,10 @@ defmodule GrandTourWeb.Router do
     live "/tours/:id/edit", TourLive.Index, :edit
     live "/tours/:id", TourLive.Show, :show
     live "/tours/:id/show/edit", TourLive.Show, :edit
+
+    # Trip routes (nested under tour)
+    live "/tours/:id/trips/new", TourLive.Show, :new_trip
+    live "/tours/:id/trips/:trip_id/edit", TourLive.Show, :edit_trip
   end
 
   # Other scopes may use custom stacks.

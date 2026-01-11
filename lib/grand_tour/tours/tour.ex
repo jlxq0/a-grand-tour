@@ -2,6 +2,8 @@ defmodule GrandTour.Tours.Tour do
   use Ecto.Schema
   import Ecto.Changeset
 
+  alias GrandTour.Tours.Trip
+
   @primary_key {:id, :binary_id, autogenerate: true}
   @foreign_key_type :binary_id
 
@@ -9,6 +11,8 @@ defmodule GrandTour.Tours.Tour do
     field :name, :string
     field :subtitle, :string
     field :is_public, :boolean, default: false
+
+    has_many :trips, Trip
 
     timestamps(type: :utc_datetime)
   end

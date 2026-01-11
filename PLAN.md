@@ -52,20 +52,20 @@ Each phase consists of small iterations. Each iteration follows the development 
 ## Phase 2: Core Features
 
 ### 2.1 Tours Context
-- [ ] Create Tour schema (name, subtitle, is_public)
-- [ ] Create Tour context with CRUD operations
-- [ ] Tour list LiveView
-- [ ] Tour creation form
-- [ ] Tour detail/edit view
-- [ ] Tests for Tour context
+- [x] Create Tour schema (name, subtitle, is_public)
+- [x] Create Tour context with CRUD operations
+- [x] Tour list LiveView
+- [x] Tour creation form
+- [x] Tour detail/edit view
+- [x] Tests for Tour context
 
 ### 2.2 Trips Context
-- [ ] Create Trip schema (belongs_to Tour, position, dates)
-- [ ] Trip CRUD within a Tour
-- [ ] Trip reordering (drag-and-drop or up/down)
-- [ ] Trip list in sidebar
-- [ ] Trip detail view
-- [ ] Tests for Trip context
+- [x] Create Trip schema (belongs_to Tour, position, dates)
+- [x] Trip CRUD within a Tour
+- [x] Trip reordering (drag-and-drop or up/down)
+- [x] Trip list in sidebar
+- [x] Trip detail view
+- [x] Tests for Trip context
 
 ### 2.3 Routes - Basic
 - [ ] Create Route schema with segments (JSONB)
@@ -247,6 +247,6 @@ Each phase consists of small iterations. Each iteration follows the development 
 
 ## Current Status
 
-**Phase 1 Complete** - Foundation complete with PostGIS, layout, Mapbox globe, and bidirectional LiveView ↔ Map communication.
+**Phase 2.2 Complete** - Trips context with full CRUD, position reordering, and integration with Tours.
 
-**Next:** Phase 2.1 - Tours Context.
+**Next:** Phase 2.3 - Routes (Basic).
