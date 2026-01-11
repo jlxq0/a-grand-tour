@@ -242,7 +242,7 @@ defmodule GrandTourWeb.AppLive do
           <div class="tabs tabs-border flex-1">
             <%!-- Overview --%>
             <.link
-              navigate={~p"/#{@user.username}/#{@tour.slug}"}
+              patch={~p"/#{@user.username}/#{@tour.slug}"}
               class={nav_link_class(@live_action == :overview)}
             >
               Overview
@@ -264,7 +264,7 @@ defmodule GrandTourWeb.AppLive do
                 class="dropdown-content menu bg-base-200 rounded w-56 shadow-lg z-50 p-2"
               >
                 <li :for={trip <- @trips}>
-                  <.link navigate={~p"/#{@user.username}/#{@tour.slug}/trips/#{trip.slug}"}>
+                  <.link patch={~p"/#{@user.username}/#{@tour.slug}/trips/#{trip.slug}"}>
                     <span class="badge badge-ghost badge-sm">{trip.position}</span>
                     {trip.name}
                   </.link>
@@ -274,7 +274,7 @@ defmodule GrandTourWeb.AppLive do
                 </li>
                 <li>
                   <.link
-                    navigate={~p"/#{@user.username}/#{@tour.slug}/trips/new"}
+                    patch={~p"/#{@user.username}/#{@tour.slug}/trips/new"}
                     class="text-primary"
                   >
                     <.icon name="hero-plus" class="w-4 h-4" /> Add Trip
@@ -285,7 +285,7 @@ defmodule GrandTourWeb.AppLive do
 
             <%!-- Timeline --%>
             <.link
-              navigate={~p"/#{@user.username}/#{@tour.slug}/timeline"}
+              patch={~p"/#{@user.username}/#{@tour.slug}/timeline"}
               class={nav_link_class(@live_action == :timeline)}
             >
               Timeline
@@ -310,7 +310,7 @@ defmodule GrandTourWeb.AppLive do
                   <span>System</span>
                 </li>
                 <li :for={dataset <- Enum.filter(@datasets, & &1.is_system)}>
-                  <.link navigate={~p"/#{@user.username}/#{@tour.slug}/datasets/#{dataset.id}"}>
+                  <.link patch={~p"/#{@user.username}/#{@tour.slug}/datasets/#{dataset.id}"}>
                     <.icon name={geometry_icon(dataset.geometry_type)} class="w-4 h-4" />
                     {dataset.name}
                   </.link>
@@ -319,7 +319,7 @@ defmodule GrandTourWeb.AppLive do
                   <span>My Datasets</span>
                 </li>
                 <li :for={dataset <- Enum.reject(@datasets, & &1.is_system)}>
-                  <.link navigate={~p"/#{@user.username}/#{@tour.slug}/datasets/#{dataset.id}"}>
+                  <.link patch={~p"/#{@user.username}/#{@tour.slug}/datasets/#{dataset.id}"}>
                     <.icon name={geometry_icon(dataset.geometry_type)} class="w-4 h-4" />
                     {dataset.name}
                   </.link>
@@ -329,7 +329,7 @@ defmodule GrandTourWeb.AppLive do
 
             <%!-- Documents --%>
             <.link
-              navigate={~p"/#{@user.username}/#{@tour.slug}/documents"}
+              patch={~p"/#{@user.username}/#{@tour.slug}/documents"}
               class={nav_link_class(@live_action == :documents)}
             >
               Documents
@@ -487,7 +487,7 @@ defmodule GrandTourWeb.AppLive do
         <div class="group/title flex items-center gap-2">
           <h1 class="mb-2 text-3xl">{@tour.name}</h1>
           <.link
-            navigate={~p"/#{@user.username}/#{@tour.slug}/edit"}
+            patch={~p"/#{@user.username}/#{@tour.slug}/edit"}
             class="opacity-0 group-hover/title:opacity-100 transition-opacity mb-2"
             title="Edit tour"
           >
@@ -542,7 +542,7 @@ defmodule GrandTourWeb.AppLive do
         </div>
         <div :if={@trip && @trip.id} class="flex gap-2">
           <.link
-            navigate={~p"/#{@user.username}/#{@tour.slug}/trips/#{@trip.slug}/edit"}
+            patch={~p"/#{@user.username}/#{@tour.slug}/trips/#{@trip.slug}/edit"}
             class="btn btn-ghost btn-sm"
           >
             <.icon name="hero-pencil" class="w-4 h-4" /> Edit
@@ -749,13 +749,13 @@ defmodule GrandTourWeb.AppLive do
         # Navigate to first remaining trip
         if first_trip do
           {:noreply,
-           push_navigate(socket,
+           push_patch(socket,
              to:
                ~p"/#{socket.assigns.user.username}/#{socket.assigns.tour.slug}/trips/#{first_trip.slug}"
            )}
         else
           {:noreply,
-           push_navigate(socket,
+           push_patch(socket,
              to: ~p"/#{socket.assigns.user.username}/#{socket.assigns.tour.slug}"
            )}
         end
@@ -1036,7 +1036,7 @@ defmodule GrandTourWeb.AppLive do
      socket
      |> assign(:trips, trips)
      |> put_flash(:info, "Trip created successfully")
-     |> push_navigate(
+     |> push_patch(
        to: ~p"/#{socket.assigns.user.username}/#{socket.assigns.tour.slug}/trips/#{trip.slug}"
      )}
   end
@@ -1049,7 +1049,7 @@ defmodule GrandTourWeb.AppLive do
      socket
      |> assign(:trips, trips)
      |> put_flash(:info, "Trip updated successfully")
-     |> push_navigate(
+     |> push_patch(
        to: ~p"/#{socket.assigns.user.username}/#{socket.assigns.tour.slug}/trips/#{trip.slug}"
      )}
   end
@@ -1060,7 +1060,7 @@ defmodule GrandTourWeb.AppLive do
      socket
      |> assign(:tour, tour)
      |> put_flash(:info, "Tour updated successfully")
-     |> push_navigate(to: ~p"/#{socket.assigns.user.username}/#{tour.slug}")}
+     |> push_patch(to: ~p"/#{socket.assigns.user.username}/#{tour.slug}")}
   end
 
   def handle_info(:load_map_layers, socket) do
