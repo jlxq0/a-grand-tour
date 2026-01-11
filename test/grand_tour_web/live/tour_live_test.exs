@@ -99,27 +99,13 @@ defmodule GrandTourWeb.TourLiveTest do
       assert html =~ tour.subtitle
     end
 
-    test "updates tour within modal", %{conn: conn, tour: tour} do
+    test "edit link navigates to edit page", %{conn: conn, tour: tour} do
       {:ok, show_live, _html} = live(conn, ~p"/tours/#{tour}")
 
-      assert show_live |> element("a", "Edit") |> render_click() =~
-               "Edit Tour"
+      # Edit Tour link navigates to the Index page edit modal
+      show_live |> element("a", "Edit Tour") |> render_click()
 
-      assert_patch(show_live, ~p"/tours/#{tour}/show/edit")
-
-      assert show_live
-             |> form("#tour-form", tour: @invalid_attrs)
-             |> render_change() =~ "can&#39;t be blank"
-
-      assert show_live
-             |> form("#tour-form", tour: @update_attrs)
-             |> render_submit()
-
-      assert_patch(show_live, ~p"/tours/#{tour}")
-
-      html = render(show_live)
-      assert html =~ "Tour updated successfully"
-      assert html =~ "Updated Tour"
+      assert_redirect(show_live, ~p"/tours/#{tour}/edit")
     end
   end
 

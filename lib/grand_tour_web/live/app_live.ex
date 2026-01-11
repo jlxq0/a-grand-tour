@@ -1,15 +1,58 @@
 defmodule GrandTourWeb.AppLive do
   use GrandTourWeb, :live_view
 
+  alias GrandTour.Tours
+
   @impl true
   def mount(_params, _session, socket) do
     mapbox_token = Application.get_env(:grand_tour, :mapbox)[:access_token]
 
     {:ok,
      socket
-     |> assign(:page_title, "A Grand Tour")
-     |> assign(:active_tab, :overview)
-     |> assign(:mapbox_token, mapbox_token)}
+     |> assign(:mapbox_token, mapbox_token)
+     |> assign(:active_tab, :overview)}
+  end
+
+  @impl true
+  def handle_params(params, _url, socket) do
+    {:noreply, apply_action(socket, socket.assigns.live_action, params)}
+  end
+
+  defp apply_action(socket, :show, %{"id" => id}) do
+    scope = socket.assigns.current_scope
+    tour = Tours.get_tour!(scope, id)
+    trips = Tours.list_trips(tour)
+
+    socket
+    |> assign(:page_title, tour.name)
+    |> assign(:tour, tour)
+    |> assign(:trips, trips)
+    |> assign(:trip, nil)
+  end
+
+  defp apply_action(socket, :new_trip, %{"id" => id}) do
+    scope = socket.assigns.current_scope
+    tour = Tours.get_tour!(scope, id)
+    trips = Tours.list_trips(tour)
+
+    socket
+    |> assign(:page_title, "New Trip")
+    |> assign(:tour, tour)
+    |> assign(:trips, trips)
+    |> assign(:trip, %Tours.Trip{})
+  end
+
+  defp apply_action(socket, :edit_trip, %{"id" => id, "trip_id" => trip_id}) do
+    scope = socket.assigns.current_scope
+    tour = Tours.get_tour!(scope, id)
+    trips = Tours.list_trips(tour)
+    trip = Tours.get_trip!(trip_id)
+
+    socket
+    |> assign(:page_title, "Edit Trip")
+    |> assign(:tour, tour)
+    |> assign(:trips, trips)
+    |> assign(:trip, trip)
   end
 
   @impl true
@@ -19,6 +62,9 @@ defmodule GrandTourWeb.AppLive do
       <div id="app-container" class="flex flex-col h-[calc(100vh-4rem)]">
         <%!-- Navigation Tabs --%>
         <nav class="tabs tabs-border border-b border-base-300 px-4 flex-shrink-0">
+          <.link navigate={~p"/tours"} class="tab">
+            <.icon name="hero-arrow-left" class="w-4 h-4 mr-2" /> Tours
+          </.link>
           <button
             phx-click="switch_tab"
             phx-value-tab="overview"
@@ -28,17 +74,17 @@ defmodule GrandTourWeb.AppLive do
           </button>
           <button
             phx-click="switch_tab"
-            phx-value-tab="timeline"
-            class={["tab", @active_tab == :timeline && "tab-active"]}
-          >
-            <.icon name="hero-calendar" class="w-4 h-4 mr-2" /> Timeline
-          </button>
-          <button
-            phx-click="switch_tab"
             phx-value-tab="trips"
             class={["tab", @active_tab == :trips && "tab-active"]}
           >
             <.icon name="hero-map" class="w-4 h-4 mr-2" /> Trips
+          </button>
+          <button
+            phx-click="switch_tab"
+            phx-value-tab="timeline"
+            class={["tab", @active_tab == :timeline && "tab-active"]}
+          >
+            <.icon name="hero-calendar" class="w-4 h-4 mr-2" /> Timeline
           </button>
           <button
             phx-click="switch_tab"
@@ -82,52 +128,175 @@ defmodule GrandTourWeb.AppLive do
           <%!-- Content Panel (right on desktop, bottom on mobile) --%>
           <div id="content-panel" class="w-full lg:w-1/2 h-1/2 lg:h-full overflow-auto bg-base-100">
             <div class="p-6">
-              <.tab_content tab={@active_tab} />
+              <.tab_content
+                tab={@active_tab}
+                tour={@tour}
+                trips={@trips}
+                live_action={@live_action}
+                trip={@trip}
+              />
             </div>
           </div>
         </div>
       </div>
+
+      <.modal
+        :if={@live_action in [:new_trip, :edit_trip]}
+        id="trip-modal"
+        show
+        on_cancel={JS.patch(~p"/tours/#{@tour}")}
+      >
+        <.live_component
+          module={GrandTourWeb.TripLive.FormComponent}
+          id={@trip.id || :new}
+          title={@page_title}
+          action={@live_action}
+          trip={@trip}
+          tour={@tour}
+          patch={~p"/tours/#{@tour}"}
+        />
+      </.modal>
     </Layouts.app>
     """
   end
 
-  # Tab content component
+  # Tab content components
+  attr :tab, :atom, required: true
+  attr :tour, :map, required: true
+  attr :trips, :list, required: true
+  attr :live_action, :atom, required: true
+  attr :trip, :map
+
   defp tab_content(%{tab: :overview} = assigns) do
     ~H"""
     <div class="prose max-w-none">
-      <h1>A Grand Tour</h1>
-      <p class="lead text-lg text-base-content/70">
-        Your 13-year overland expedition around the world.
-      </p>
+      <div class="flex items-start justify-between">
+        <div>
+          <h1 class="mb-2">{@tour.name}</h1>
+          <p :if={@tour.subtitle} class="lead text-lg text-base-content/70 mt-0">
+            {@tour.subtitle}
+          </p>
+        </div>
+        <span class={[
+          "badge",
+          @tour.is_public && "badge-success",
+          !@tour.is_public && "badge-ghost"
+        ]}>
+          {if @tour.is_public, do: "Public", else: "Private"}
+        </span>
+      </div>
 
       <div class="stats stats-vertical lg:stats-horizontal shadow w-full mt-6">
         <div class="stat">
-          <div class="stat-title">Countries</div>
-          <div class="stat-value">100+</div>
-          <div class="stat-desc">Across 6 continents</div>
+          <div class="stat-title">Trips</div>
+          <div class="stat-value">{length(@trips)}</div>
+          <div class="stat-desc">Planned segments</div>
         </div>
         <div class="stat">
-          <div class="stat-title">Distance</div>
-          <div class="stat-value">200k</div>
-          <div class="stat-desc">Kilometers by road</div>
+          <div class="stat-title">Status</div>
+          <div class="stat-value text-lg">
+            {status_summary(@trips)}
+          </div>
+          <div class="stat-desc">Overall progress</div>
         </div>
         <div class="stat">
-          <div class="stat-title">Duration</div>
-          <div class="stat-value">13</div>
-          <div class="stat-desc">Years of adventure</div>
+          <div class="stat-title">Created</div>
+          <div class="stat-value text-lg">
+            {Calendar.strftime(@tour.inserted_at, "%b %Y")}
+          </div>
+          <div class="stat-desc">Last updated {Calendar.strftime(@tour.updated_at, "%b %d")}</div>
         </div>
       </div>
 
-      <h2 class="mt-8">Getting Started</h2>
-      <p>
-        This is your trip planning dashboard. Use the tabs above to navigate between different views:
-      </p>
-      <ul>
-        <li><strong>Overview</strong> - Summary and quick stats</li>
-        <li><strong>Timeline</strong> - Visual timeline of all trips</li>
-        <li><strong>Trips</strong> - Manage individual trips and routes</li>
-        <li><strong>Documents</strong> - Trip notes, guides, and references</li>
-      </ul>
+      <h2 class="mt-8">Quick Actions</h2>
+      <div class="flex gap-2 not-prose">
+        <.link patch={~p"/tours/#{@tour}/trips/new"} class="btn btn-primary btn-sm">
+          <.icon name="hero-plus" class="w-4 h-4" /> Add Trip
+        </.link>
+        <.link navigate={~p"/tours/#{@tour}/edit"} class="btn btn-ghost btn-sm">
+          <.icon name="hero-pencil" class="w-4 h-4" /> Edit Tour
+        </.link>
+      </div>
+    </div>
+    """
+  end
+
+  defp tab_content(%{tab: :trips} = assigns) do
+    ~H"""
+    <div>
+      <div class="flex items-center justify-between mb-4">
+        <h1 class="text-2xl font-bold">Trips</h1>
+        <.link patch={~p"/tours/#{@tour}/trips/new"} class="btn btn-primary btn-sm">
+          <.icon name="hero-plus" class="w-4 h-4" /> Add Trip
+        </.link>
+      </div>
+
+      <div :if={@trips == []} class="text-center py-12 text-base-content/60">
+        <.icon name="hero-map" class="w-12 h-12 mx-auto mb-4 opacity-50" />
+        <p>No trips yet. Add your first trip to get started.</p>
+      </div>
+
+      <div :if={@trips != []} class="space-y-3">
+        <div
+          :for={trip <- @trips}
+          id={"trip-#{trip.id}"}
+          class="card card-compact bg-base-200 hover:bg-base-300 transition-colors"
+        >
+          <div class="card-body flex-row items-center gap-4">
+            <div class="badge badge-lg badge-ghost font-mono">{trip.position}</div>
+            <div class="flex-1 min-w-0">
+              <h3 class="font-semibold truncate">{trip.name}</h3>
+              <p :if={trip.subtitle} class="text-sm text-base-content/60 truncate">
+                {trip.subtitle}
+              </p>
+              <div class="flex gap-2 mt-1">
+                <span class={["badge badge-sm", status_badge_class(trip.status)]}>
+                  {trip.status || "planning"}
+                </span>
+                <span :if={trip.start_date} class="text-xs text-base-content/50">
+                  {format_date_range(trip.start_date, trip.end_date)}
+                </span>
+              </div>
+            </div>
+            <div class="flex gap-1">
+              <button
+                :if={trip.position > 1}
+                phx-click="move_trip"
+                phx-value-id={trip.id}
+                phx-value-direction="up"
+                class="btn btn-ghost btn-xs btn-square"
+                title="Move up"
+              >
+                <.icon name="hero-chevron-up" class="w-4 h-4" />
+              </button>
+              <button
+                :if={trip.position < length(@trips)}
+                phx-click="move_trip"
+                phx-value-id={trip.id}
+                phx-value-direction="down"
+                class="btn btn-ghost btn-xs btn-square"
+                title="Move down"
+              >
+                <.icon name="hero-chevron-down" class="w-4 h-4" />
+              </button>
+              <.link
+                patch={~p"/tours/#{@tour}/trips/#{trip}/edit"}
+                class="btn btn-ghost btn-xs btn-square"
+              >
+                <.icon name="hero-pencil" class="w-4 h-4" />
+              </.link>
+              <button
+                phx-click="delete_trip"
+                phx-value-id={trip.id}
+                data-confirm="Delete this trip?"
+                class="btn btn-ghost btn-xs btn-square text-error"
+              >
+                <.icon name="hero-trash" class="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     """
   end
@@ -141,27 +310,8 @@ defmodule GrandTourWeb.AppLive do
       </p>
       <div class="alert alert-info mt-4">
         <.icon name="hero-information-circle" class="w-5 h-5" />
-        <span>Timeline view coming in Phase 4.4</span>
+        <span>Timeline view coming soon</span>
       </div>
-    </div>
-    """
-  end
-
-  defp tab_content(%{tab: :trips} = assigns) do
-    ~H"""
-    <div class="prose max-w-none">
-      <h1>Trips</h1>
-      <p class="text-base-content/70">
-        Manage your trips and routes here.
-      </p>
-      <div class="mt-4">
-        <.link navigate={~p"/tours"} class="btn btn-primary">
-          <.icon name="hero-map" class="w-5 h-5 mr-2" /> Go to Tours
-        </.link>
-      </div>
-      <p class="text-sm text-base-content/50 mt-4">
-        Trips are managed within each tour. Select a tour to add and organize trips.
-      </p>
     </div>
     """
   end
@@ -175,7 +325,7 @@ defmodule GrandTourWeb.AppLive do
       </p>
       <div class="alert alert-info mt-4">
         <.icon name="hero-information-circle" class="w-5 h-5" />
-        <span>Document management coming in Phase 3.3</span>
+        <span>Document management coming soon</span>
       </div>
     </div>
     """
@@ -190,21 +340,77 @@ defmodule GrandTourWeb.AppLive do
     """
   end
 
+  # Event handlers
   @impl true
   def handle_event("switch_tab", %{"tab" => tab}, socket) do
     {:noreply, assign(socket, :active_tab, String.to_existing_atom(tab))}
   end
 
   @impl true
+  def handle_event("move_trip", %{"id" => id, "direction" => direction}, socket) do
+    trip = Tours.get_trip!(id)
+
+    new_position =
+      case direction do
+        "up" -> trip.position - 1
+        "down" -> trip.position + 1
+      end
+
+    Tours.move_trip(trip, new_position)
+    trips = Tours.list_trips(socket.assigns.tour)
+    {:noreply, assign(socket, :trips, trips)}
+  end
+
+  @impl true
+  def handle_event("delete_trip", %{"id" => id}, socket) do
+    trip = Tours.get_trip!(id)
+    {:ok, _} = Tours.delete_trip(trip)
+    trips = Tours.list_trips(socket.assigns.tour)
+    {:noreply, assign(socket, :trips, trips)}
+  end
+
+  @impl true
   def handle_event("map_loaded", _params, socket) do
-    # Map is ready - could load initial data here
     {:noreply, socket}
   end
 
   @impl true
   def handle_event("map_clicked", %{"lng" => lng, "lat" => lat}, socket) do
-    # Handle map clicks - for now just log
     IO.inspect({lng, lat}, label: "Map clicked at")
     {:noreply, socket}
+  end
+
+  @impl true
+  def handle_info({GrandTourWeb.TripLive.FormComponent, {:saved, _trip}}, socket) do
+    trips = Tours.list_trips(socket.assigns.tour)
+    {:noreply, assign(socket, :trips, trips)}
+  end
+
+  # Helper functions
+  defp status_summary(trips) do
+    cond do
+      trips == [] -> "No trips"
+      Enum.all?(trips, &(&1.status == "completed")) -> "Completed"
+      Enum.any?(trips, &(&1.status == "active")) -> "In Progress"
+      true -> "Planning"
+    end
+  end
+
+  defp status_badge_class(status) do
+    case status do
+      "active" -> "badge-success"
+      "completed" -> "badge-info"
+      _ -> "badge-ghost"
+    end
+  end
+
+  defp format_date_range(start_date, nil), do: Calendar.strftime(start_date, "%b %d, %Y")
+
+  defp format_date_range(start_date, end_date) do
+    if start_date.year == end_date.year do
+      "#{Calendar.strftime(start_date, "%b %d")} - #{Calendar.strftime(end_date, "%b %d, %Y")}"
+    else
+      "#{Calendar.strftime(start_date, "%b %d, %Y")} - #{Calendar.strftime(end_date, "%b %d, %Y")}"
+    end
   end
 end
