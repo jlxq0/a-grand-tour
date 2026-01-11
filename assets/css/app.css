@@ -164,12 +164,20 @@
   text-decoration: line-through;
 }
 
+.map-legend .legend-icon {
+  width: 24px;
+  height: 12px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .map-legend .legend-line {
   width: 24px;
   height: 3px;
-  margin-right: 8px;
   border-radius: 2px;
-  flex-shrink: 0;
 }
 
 .map-legend .legend-line.legend-dashed {
@@ -187,50 +195,11 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  margin-right: 8px;
-  flex-shrink: 0;
   border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .map-legend .legend-box {
   width: 16px;
   height: 12px;
-  margin-right: 8px;
   border-radius: 2px;
-  flex-shrink: 0;
-}
-
-.map-legend .legend-rating {
-  margin-left: 4px;
-}
-
-.map-legend .legend-rating .legend-item {
-  margin: 2px 0;
-  font-size: 11px;
-}
-
-.map-legend .legend-rating .legend-dot {
-  width: 8px;
-  height: 8px;
-}
-
-.map-legend .legend-option {
-  font-size: 11px;
-  padding-left: 4px;
-  margin-bottom: 6px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 6px;
-}
-
-[data-theme="dark"] .map-legend .legend-option {
-  border-bottom-color: rgba(255, 255, 255, 0.1);
-}
-
-.map-legend .legend-option input[type="checkbox"] {
-  margin-right: 6px;
-  cursor: pointer;
-}
-
-.map-legend .legend-option label {
-  cursor: pointer;
 }

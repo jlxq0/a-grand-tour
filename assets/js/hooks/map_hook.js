@@ -313,35 +313,31 @@ export const MapHook = {
     legend.innerHTML = `
       <h4>Layers</h4>
       <div class="legend-item" data-layer="pois">
-        <div class="legend-dot" style="background: #e74c3c;"></div>
+        <div class="legend-icon"><div class="legend-dot" style="background: #e74c3c;"></div></div>
         <span>Points of Interest</span>
       </div>
-      <div class="legend-item legend-option">
-        <input type="checkbox" id="cluster-toggle" />
-        <label for="cluster-toggle">Cluster POIs</label>
-      </div>
       <div class="legend-item" data-layer="scenic-routes">
-        <div class="legend-line" style="background: #e67e22;"></div>
+        <div class="legend-icon"><div class="legend-line" style="background: #e67e22;"></div></div>
         <span>Scenic Routes</span>
       </div>
       <div class="legend-item" data-layer="ferries">
-        <div class="legend-line" style="background: #1a5276;"></div>
+        <div class="legend-icon"><div class="legend-line" style="background: #1a5276;"></div></div>
         <span>Ferries</span>
       </div>
       <div class="legend-item" data-layer="shipping">
-        <div class="legend-line" style="background: #85c1e9;"></div>
+        <div class="legend-icon"><div class="legend-line" style="background: #85c1e9;"></div></div>
         <span>Shipping</span>
       </div>
       <div class="legend-item" data-layer="safe-corridors">
-        <div class="legend-line legend-dashed" style="color: #27ae60;"></div>
+        <div class="legend-icon"><div class="legend-line legend-dashed" style="color: #27ae60;"></div></div>
         <span>Safe Corridors</span>
       </div>
       <div class="legend-item" data-layer="risk-regions">
-        <div class="legend-box" style="background: rgba(231, 76, 60, 0.35); border: 1px solid #c0392b;"></div>
+        <div class="legend-icon"><div class="legend-box" style="background: rgba(231, 76, 60, 0.35); border: 1px solid #c0392b;"></div></div>
         <span>Risk Regions</span>
       </div>
       <div class="legend-item" data-layer="route">
-        <div class="legend-line" style="background: #3498db;"></div>
+        <div class="legend-icon"><div class="legend-line" style="background: #3498db;"></div></div>
         <span>Planned Route</span>
       </div>
     `
@@ -362,14 +358,6 @@ export const MapHook = {
         }
       })
     })
-
-    // Add clustering toggle handler
-    const clusterToggle = legend.querySelector('#cluster-toggle')
-    if (clusterToggle) {
-      clusterToggle.addEventListener('change', (e) => {
-        this.toggleClustering(e.target.checked)
-      })
-    }
 
     // Add to map container
     this.el.appendChild(legend)
