@@ -58,7 +58,7 @@ defmodule GrandTourWeb.AppLive do
   @impl true
   def render(assigns) do
     ~H"""
-    <Layouts.app flash={@flash} tour_title={@tour.name}>
+    <Layouts.app flash={@flash} tour_title={@tour.name} tour_id={@tour.id}>
       <div id="app-container" class="flex flex-col h-[calc(100vh-4rem)]">
         <%!-- Navigation Tabs --%>
         <nav class="flex items-center border-b border-base-300 px-4 flex-shrink-0 h-12">

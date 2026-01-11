@@ -35,21 +35,27 @@ defmodule GrandTourWeb.Layouts do
     default: nil,
     doc: "optional tour title to display in header"
 
+  attr :tour_id, :string,
+    default: nil,
+    doc: "optional tour ID for linking to the tour"
+
   slot :inner_block, required: true
 
   def app(assigns) do
     ~H"""
     <div class="h-screen flex flex-col bg-base-100">
       <header class="navbar bg-base-100 border-b border-base-300 h-16 flex-shrink-0 px-4">
-        <div class="flex-1">
-          <a href="/" class="flex items-center gap-3">
+        <div class="flex-1 flex items-center gap-3">
+          <.link navigate={~p"/tours"} class="flex items-center gap-3 hover:opacity-80">
             <.icon name="hero-globe-americas" class="w-8 h-8 text-primary" />
             <span class="text-lg font-bold">A Grand Tour</span>
-            <%= if @tour_title do %>
-              <span class="text-base-content/40 font-normal">—</span>
-              <span class="text-lg font-normal truncate max-w-md">{@tour_title}</span>
-            <% end %>
-          </a>
+          </.link>
+          <%= if @tour_title && @tour_id do %>
+            <span class="text-base-content/40 font-normal">—</span>
+            <.link navigate={~p"/tours/#{@tour_id}"} class="text-lg font-normal truncate max-w-md hover:opacity-80">
+              {@tour_title}
+            </.link>
+          <% end %>
         </div>
         <div class="flex-none">
           <ul class="flex items-center gap-2">
