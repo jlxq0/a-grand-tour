@@ -179,10 +179,11 @@ Each phase consists of small iterations. Each iteration follows the development 
 - [ ] Import waypoints from GPX/KML
 
 ### 4.3 Image Management
-- [ ] R2 presigned URL generation
-- [ ] Direct upload from browser
-- [ ] Image display in POIs, scenic routes
-- [ ] Cloudflare Images integration (thumbnails)
+- [ ] R2 presigned URL generation (storage-agnostic, works with Backblaze B2 etc.)
+- [ ] Direct upload from browser to R2
+- [ ] Oban background job: fetch original, generate variants (thumbnail, medium, large)
+- [ ] Upload processed variants back to R2
+- [ ] Image display in POIs, scenic routes with responsive srcset
 
 ### 4.4 Timeline View
 - [ ] Auto-generated timeline from trips

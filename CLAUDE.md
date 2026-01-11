@@ -316,6 +316,25 @@ PORT=4000
 4. **Document-centric**: Everything renders as navigable documents
 5. **Background jobs**: Route generation, image processing via Oban
 6. **UUIDs everywhere**: Binary IDs for all entities
+7. **Storage-agnostic files**: S3-compatible API only (R2, Backblaze B2, MinIO, etc.)
+
+## Image Upload Flow
+
+We do NOT use Cloudflare Images or any vendor-specific image service. Instead:
+
+1. **Upload**: Browser uploads directly to R2 via presigned URL
+2. **Process**: Oban job fetches original, generates variants using `image` library:
+   - `thumb` (150x150, cropped square)
+   - `medium` (800px wide)
+   - `large` (1600px wide)
+   - `original` (preserved)
+3. **Store**: Processed variants uploaded back to R2
+4. **Serve**: URLs stored in DB, served directly from R2 (or via CDN)
+
+This approach:
+- Works with any S3-compatible storage (easy migration to Backblaze B2, etc.)
+- Keeps processing in our control
+- Allows custom variants per use case
 
 ## Seeding Reference Data
 
