@@ -57,13 +57,6 @@ defmodule GrandTourWeb.Layouts do
             </.link>
           <% end %>
         </div>
-        <div class="flex-none">
-          <ul class="flex items-center gap-2">
-            <li>
-              <.theme_toggle />
-            </li>
-          </ul>
-        </div>
       </header>
 
       <main class="flex-1 overflow-hidden">
