@@ -11,7 +11,8 @@ defmodule GrandTourWeb.TourLive.Show do
 
   @impl true
   def handle_params(%{"id" => id} = params, _url, socket) do
-    tour = Tours.get_tour!(id)
+    scope = socket.assigns.current_scope
+    tour = Tours.get_tour!(scope, id)
     trips = Tours.list_trips(tour)
 
     socket =
@@ -182,6 +183,7 @@ defmodule GrandTourWeb.TourLive.Show do
             title="Edit Tour"
             action={:edit}
             tour={@tour}
+            scope={@current_scope}
             patch={~p"/tours/#{@tour}"}
           />
         </.modal>

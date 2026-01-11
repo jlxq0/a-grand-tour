@@ -5,24 +5,25 @@ defmodule GrandTour.Tours do
 
   import Ecto.Query, warn: false
   alias GrandTour.Repo
+  alias GrandTour.Accounts.Scope
   alias GrandTour.Tours.Tour
   alias GrandTour.Tours.Trip
 
   @doc """
-  Returns the list of tours.
+  Returns the list of tours for the current user.
 
   ## Examples
 
-      iex> list_tours()
+      iex> list_tours(scope)
       [%Tour{}, ...]
 
   """
-  def list_tours do
-    Repo.all(from t in Tour, order_by: [desc: t.updated_at])
+  def list_tours(%Scope{user: user}) do
+    Repo.all(from t in Tour, where: t.user_id == ^user.id, order_by: [desc: t.updated_at])
   end
 
   @doc """
-  Returns the list of public tours.
+  Returns the list of public tours (for any user).
 
   ## Examples
 
@@ -35,49 +36,53 @@ defmodule GrandTour.Tours do
   end
 
   @doc """
-  Gets a single tour.
+  Gets a single tour for the current user.
 
-  Raises `Ecto.NoResultsError` if the Tour does not exist.
+  Raises `Ecto.NoResultsError` if the Tour does not exist or doesn't belong to the user.
 
   ## Examples
 
-      iex> get_tour!(123)
+      iex> get_tour!(scope, 123)
       %Tour{}
 
-      iex> get_tour!(456)
+      iex> get_tour!(scope, 456)
       ** (Ecto.NoResultsError)
 
   """
-  def get_tour!(id), do: Repo.get!(Tour, id)
+  def get_tour!(%Scope{user: user}, id) do
+    Repo.one!(from t in Tour, where: t.id == ^id and t.user_id == ^user.id)
+  end
 
   @doc """
-  Gets a single tour, returns nil if not found.
+  Gets a single tour for the current user, returns nil if not found.
 
   ## Examples
 
-      iex> get_tour(123)
+      iex> get_tour(scope, 123)
       %Tour{}
 
-      iex> get_tour(456)
+      iex> get_tour(scope, 456)
       nil
 
   """
-  def get_tour(id), do: Repo.get(Tour, id)
+  def get_tour(%Scope{user: user}, id) do
+    Repo.one(from t in Tour, where: t.id == ^id and t.user_id == ^user.id)
+  end
 
   @doc """
-  Creates a tour.
+  Creates a tour for the current user.
 
   ## Examples
 
-      iex> create_tour(%{field: value})
+      iex> create_tour(scope, %{field: value})
       {:ok, %Tour{}}
 
-      iex> create_tour(%{field: bad_value})
+      iex> create_tour(scope, %{field: bad_value})
       {:error, %Ecto.Changeset{}}
 
   """
-  def create_tour(attrs \\ %{}) do
-    %Tour{}
+  def create_tour(%Scope{user: user}, attrs \\ %{}) do
+    %Tour{user_id: user.id}
     |> Tour.changeset(attrs)
     |> Repo.insert()
   end

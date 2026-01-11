@@ -6,7 +6,8 @@ defmodule GrandTourWeb.TourLive.Index do
 
   @impl true
   def mount(_params, _session, socket) do
-    tours = Tours.list_tours()
+    scope = socket.assigns.current_scope
+    tours = Tours.list_tours(scope)
 
     {:ok,
      socket
@@ -21,9 +22,11 @@ defmodule GrandTourWeb.TourLive.Index do
   end
 
   defp apply_action(socket, :edit, %{"id" => id}) do
+    scope = socket.assigns.current_scope
+
     socket
     |> assign(:page_title, "Edit Tour")
-    |> assign(:tour, Tours.get_tour!(id))
+    |> assign(:tour, Tours.get_tour!(scope, id))
   end
 
   defp apply_action(socket, :new, _params) do
@@ -48,7 +51,8 @@ defmodule GrandTourWeb.TourLive.Index do
 
   @impl true
   def handle_event("delete", %{"id" => id}, socket) do
-    tour = Tours.get_tour!(id)
+    scope = socket.assigns.current_scope
+    tour = Tours.get_tour!(scope, id)
     {:ok, _} = Tours.delete_tour(tour)
 
     {:noreply, stream_delete(socket, :tours, tour)}
@@ -123,6 +127,7 @@ defmodule GrandTourWeb.TourLive.Index do
             title={@page_title}
             action={@live_action}
             tour={@tour}
+            scope={@current_scope}
             patch={~p"/tours"}
           />
         </.modal>

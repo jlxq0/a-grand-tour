@@ -7,6 +7,19 @@
 # General application configuration
 import Config
 
+config :grand_tour, :scopes,
+  user: [
+    default: true,
+    module: GrandTour.Accounts.Scope,
+    assign_key: :current_scope,
+    access_path: [:user, :id],
+    schema_key: :user_id,
+    schema_type: :binary_id,
+    schema_table: :users,
+    test_data_fixture: GrandTour.AccountsFixtures,
+    test_setup_helper: :register_and_log_in_user
+  ]
+
 config :grand_tour,
   ecto_repos: [GrandTour.Repo],
   generators: [timestamp_type: :utc_datetime, binary_id: true]

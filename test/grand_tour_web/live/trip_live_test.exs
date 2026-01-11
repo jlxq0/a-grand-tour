@@ -8,8 +8,8 @@ defmodule GrandTourWeb.TripLiveTest do
   @update_attrs %{name: "Updated Trip", subtitle: "Updated description", status: "active"}
   @invalid_attrs %{name: nil}
 
-  defp create_tour(_) do
-    {:ok, tour} = Tours.create_tour(%{name: "Test Tour", subtitle: "A test tour"})
+  defp create_tour(%{scope: scope}) do
+    {:ok, tour} = Tours.create_tour(scope, %{name: "Test Tour", subtitle: "A test tour"})
     %{tour: tour}
   end
 
@@ -19,7 +19,7 @@ defmodule GrandTourWeb.TripLiveTest do
   end
 
   describe "Trip management on Tour Show page without trips" do
-    setup [:create_tour]
+    setup [:register_and_log_in_user, :create_tour]
 
     test "shows empty state when no trips", %{conn: conn, tour: tour} do
       {:ok, _show_live, html} = live(conn, ~p"/tours/#{tour}")
@@ -52,7 +52,7 @@ defmodule GrandTourWeb.TripLiveTest do
   end
 
   describe "Trip management on Tour Show page with trips" do
-    setup [:create_tour, :create_trip]
+    setup [:register_and_log_in_user, :create_tour, :create_trip]
 
     test "displays trip in list", %{conn: conn, tour: tour, trip: trip} do
       {:ok, _show_live, html} = live(conn, ~p"/tours/#{tour}")
@@ -100,7 +100,7 @@ defmodule GrandTourWeb.TripLiveTest do
   end
 
   describe "Trip reordering" do
-    setup [:create_tour]
+    setup [:register_and_log_in_user, :create_tour]
 
     test "can move trip up", %{conn: conn, tour: tour} do
       {:ok, trip1} = Tours.create_trip(tour, %{name: "First Trip"})
@@ -148,7 +148,7 @@ defmodule GrandTourWeb.TripLiveTest do
   end
 
   describe "Trip with dates" do
-    setup [:create_tour]
+    setup [:register_and_log_in_user, :create_tour]
 
     test "can create trip with dates", %{conn: conn, tour: tour} do
       {:ok, show_live, _html} = live(conn, ~p"/tours/#{tour}")

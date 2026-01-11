@@ -6,7 +6,7 @@ Technical reference for Claude Code when working on the Grand Tour project.
 
 **A Grand Tour** is a multi-tenant trip planning SaaS application for planning long-term overland expeditions. Users can create tours spanning multiple trips, manage points of interest, plan routes, and create documentation.
 
-**Domain:** grandtour.com
+**Domain:** a-grand-tour.com
 **Stack:** Elixir/Phoenix 1.8, LiveView, PostgreSQL + PostGIS, Cloudflare R2
 
 ## Tech Stack
@@ -304,7 +304,7 @@ R2_SECRET_ACCESS_KEY=...
 R2_BUCKET_NAME=grand-tour-assets
 
 # Optional
-PHX_HOST=grandtour.com
+PHX_HOST=a-grand-tour.com
 PORT=4000
 ```
 

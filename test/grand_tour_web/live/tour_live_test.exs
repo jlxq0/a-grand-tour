@@ -8,12 +8,14 @@ defmodule GrandTourWeb.TourLiveTest do
   @update_attrs %{name: "Updated Tour", subtitle: "Updated description", is_public: true}
   @invalid_attrs %{name: nil}
 
-  defp create_tour(_) do
-    {:ok, tour} = Tours.create_tour(@create_attrs)
+  defp create_tour(%{scope: scope}) do
+    {:ok, tour} = Tours.create_tour(scope, @create_attrs)
     %{tour: tour}
   end
 
   describe "Index without tours" do
+    setup [:register_and_log_in_user]
+
     test "shows empty state when no tours", %{conn: conn} do
       {:ok, _index_live, html} = live(conn, ~p"/tours")
 
@@ -23,7 +25,7 @@ defmodule GrandTourWeb.TourLiveTest do
   end
 
   describe "Index with tours" do
-    setup [:create_tour]
+    setup [:register_and_log_in_user, :create_tour]
 
     test "lists all tours", %{conn: conn, tour: tour} do
       {:ok, _index_live, html} = live(conn, ~p"/tours")
@@ -88,7 +90,7 @@ defmodule GrandTourWeb.TourLiveTest do
   end
 
   describe "Show" do
-    setup [:create_tour]
+    setup [:register_and_log_in_user, :create_tour]
 
     test "displays tour", %{conn: conn, tour: tour} do
       {:ok, _show_live, html} = live(conn, ~p"/tours/#{tour}")
@@ -118,6 +120,13 @@ defmodule GrandTourWeb.TourLiveTest do
       html = render(show_live)
       assert html =~ "Tour updated successfully"
       assert html =~ "Updated Tour"
+    end
+  end
+
+  describe "Unauthenticated access" do
+    test "redirects to login when not logged in", %{conn: conn} do
+      {:error, {:redirect, %{to: path}}} = live(conn, ~p"/tours")
+      assert path =~ "/users/log-in"
     end
   end
 end

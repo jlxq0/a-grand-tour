@@ -74,7 +74,9 @@ defmodule GrandTourWeb.TourLive.FormComponent do
   end
 
   defp save_tour(socket, :new, tour_params) do
-    case Tours.create_tour(tour_params) do
+    scope = socket.assigns.scope
+
+    case Tours.create_tour(scope, tour_params) do
       {:ok, tour} ->
         notify_parent({:saved, tour})
 
