@@ -18,6 +18,12 @@ defmodule GrandTourWeb.Router do
     pipe_through :browser
 
     live "/", AppLive
+
+    live "/tours", TourLive.Index, :index
+    live "/tours/new", TourLive.Index, :new
+    live "/tours/:id/edit", TourLive.Index, :edit
+    live "/tours/:id", TourLive.Show, :show
+    live "/tours/:id/show/edit", TourLive.Show, :edit
   end
 
   # Other scopes may use custom stacks.
