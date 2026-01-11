@@ -5,7 +5,6 @@ defmodule GrandTourWeb.TourLiveTest do
   alias GrandTour.Tours
 
   @create_attrs %{name: "Test Tour", subtitle: "A test tour", is_public: false}
-  @update_attrs %{name: "Updated Tour", subtitle: "Updated description", is_public: true}
   @invalid_attrs %{name: nil}
 
   defp create_tour(%{scope: scope}) do
@@ -19,7 +18,7 @@ defmodule GrandTourWeb.TourLiveTest do
     test "shows empty state when no tours", %{conn: conn} do
       {:ok, _index_live, html} = live(conn, ~p"/tours")
 
-      assert html =~ "No tours yet"
+      assert html =~ "Start Your Journey"
       assert html =~ "Create Tour"
     end
   end
@@ -30,14 +29,14 @@ defmodule GrandTourWeb.TourLiveTest do
     test "lists all tours", %{conn: conn, tour: tour} do
       {:ok, _index_live, html} = live(conn, ~p"/tours")
 
-      assert html =~ "Tours"
+      assert html =~ "A Grand Tour"
       assert html =~ tour.name
     end
 
     test "saves new tour", %{conn: conn} do
       {:ok, index_live, _html} = live(conn, ~p"/tours")
 
-      assert index_live |> element("a", "New Tour") |> render_click() =~
+      assert index_live |> element("#new-tour-card") |> render_click() =~
                "New Tour"
 
       assert_patch(index_live, ~p"/tours/new")
@@ -57,35 +56,12 @@ defmodule GrandTourWeb.TourLiveTest do
       assert html =~ "Brand New Tour"
     end
 
-    test "updates tour in listing", %{conn: conn, tour: tour} do
+    test "clicking tour navigates to show page", %{conn: conn, tour: tour} do
       {:ok, index_live, _html} = live(conn, ~p"/tours")
 
-      assert index_live |> element("#tours-#{tour.id} a", "Edit") |> render_click() =~
-               "Edit Tour"
+      index_live |> element("#tours-#{tour.id}") |> render_click()
 
-      assert_patch(index_live, ~p"/tours/#{tour}/edit")
-
-      assert index_live
-             |> form("#tour-form", tour: @invalid_attrs)
-             |> render_change() =~ "can&#39;t be blank"
-
-      assert index_live
-             |> form("#tour-form", tour: @update_attrs)
-             |> render_submit()
-
-      assert_patch(index_live, ~p"/tours")
-
-      html = render(index_live)
-      assert html =~ "Tour updated successfully"
-      assert html =~ "Updated Tour"
-    end
-
-    test "deletes tour in listing", %{conn: conn, tour: tour} do
-      {:ok, index_live, _html} = live(conn, ~p"/tours")
-
-      assert index_live |> element("#tours-#{tour.id} button", "") |> render_click()
-
-      refute has_element?(index_live, "#tours-#{tour.id}")
+      assert_redirect(index_live, ~p"/tours/#{tour}")
     end
   end
 
@@ -99,14 +75,6 @@ defmodule GrandTourWeb.TourLiveTest do
       assert html =~ tour.subtitle
     end
 
-    test "edit link navigates to edit page", %{conn: conn, tour: tour} do
-      {:ok, show_live, _html} = live(conn, ~p"/tours/#{tour}")
-
-      # Edit Tour link navigates to the Index page edit modal
-      show_live |> element("a", "Edit Tour") |> render_click()
-
-      assert_redirect(show_live, ~p"/tours/#{tour}/edit")
-    end
   end
 
   describe "Unauthenticated access" do

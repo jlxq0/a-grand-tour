@@ -50,11 +50,64 @@ defmodule GrandTourWeb.Layouts do
             <.icon name="hero-globe-americas" class="w-8 h-8 text-primary" />
             <span class="text-lg font-bold">A Grand Tour</span>
           </.link>
-          <%= if @tour_title && @tour_id do %>
+          <%= if @tour_title do %>
             <span class="text-base-content/40 font-normal">—</span>
-            <.link navigate={~p"/tours/#{@tour_id}"} class="text-lg font-normal truncate max-w-md hover:opacity-80">
-              {@tour_title}
-            </.link>
+            <%= if @tour_id do %>
+              <.link
+                navigate={~p"/tours/#{@tour_id}"}
+                class="text-lg font-normal truncate max-w-md hover:opacity-80"
+              >
+                {@tour_title}
+              </.link>
+            <% else %>
+              <span class="text-lg font-normal truncate max-w-md">{@tour_title}</span>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="flex-none">
+          <%= if @current_scope do %>
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                <div class="w-9 rounded-full overflow-hidden">
+                  <img
+                    src={"https://api.dicebear.com/9.x/bottts-neutral/svg?seed=#{@current_scope.user.email}"}
+                    alt="Avatar"
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu bg-base-200 rounded-box z-50 w-56 p-2 shadow-lg mt-2"
+              >
+                <li class="menu-title px-2 py-1 text-xs text-base-content/50">
+                  {@current_scope.user.email}
+                </li>
+                <li>
+                  <.link navigate={~p"/users/settings"} class="flex items-center gap-2">
+                    <.icon name="hero-cog-6-tooth" class="w-4 h-4" /> Settings
+                  </.link>
+                </li>
+                <li>
+                  <div class="flex items-center justify-between px-2 py-2">
+                    <span class="flex items-center gap-2">
+                      <.icon name="hero-sun" class="w-4 h-4" /> Theme
+                    </span>
+                    <.inline_theme_toggle />
+                  </div>
+                </li>
+                <div class="divider my-1"></div>
+                <li>
+                  <.link
+                    href={~p"/users/log-out"}
+                    method="delete"
+                    class="flex items-center gap-2 text-error"
+                  >
+                    <.icon name="hero-arrow-right-on-rectangle" class="w-4 h-4" /> Log out
+                  </.link>
+                </li>
+              </ul>
+            </div>
           <% end %>
         </div>
       </header>
@@ -143,6 +196,40 @@ defmodule GrandTourWeb.Layouts do
         data-phx-theme="dark"
       >
         <.icon name="hero-moon-micro" class="size-4 opacity-75 hover:opacity-100" />
+      </button>
+    </div>
+    """
+  end
+
+  @doc """
+  Compact inline theme toggle for use in dropdowns.
+  """
+  def inline_theme_toggle(assigns) do
+    ~H"""
+    <div class="join">
+      <button
+        class="join-item btn btn-xs"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="light"
+        title="Light"
+      >
+        <.icon name="hero-sun-micro" class="size-3" />
+      </button>
+      <button
+        class="join-item btn btn-xs"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="dark"
+        title="Dark"
+      >
+        <.icon name="hero-moon-micro" class="size-3" />
+      </button>
+      <button
+        class="join-item btn btn-xs"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="system"
+        title="System"
+      >
+        <.icon name="hero-computer-desktop-micro" class="size-3" />
       </button>
     </div>
     """

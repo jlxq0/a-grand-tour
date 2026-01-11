@@ -180,7 +180,10 @@ defmodule GrandTourWeb.LandingLive do
         phx-click={Phoenix.LiveView.JS.dispatch("phx:set-theme")}
         data-phx-theme="light"
       >
-        <.icon name="hero-sun-micro" class="size-4 text-white/50 group-hover:text-white/90 transition-colors" />
+        <.icon
+          name="hero-sun-micro"
+          class="size-4 text-white/50 group-hover:text-white/90 transition-colors"
+        />
       </button>
 
       <button
@@ -188,7 +191,10 @@ defmodule GrandTourWeb.LandingLive do
         phx-click={Phoenix.LiveView.JS.dispatch("phx:set-theme")}
         data-phx-theme="dark"
       >
-        <.icon name="hero-moon-micro" class="size-4 text-white/50 group-hover:text-white/90 transition-colors" />
+        <.icon
+          name="hero-moon-micro"
+          class="size-4 text-white/50 group-hover:text-white/90 transition-colors"
+        />
       </button>
     </div>
     """

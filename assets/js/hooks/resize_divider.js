@@ -58,6 +58,9 @@ export const ResizeDivider = {
     // Apply the new widths
     this.mapPanel.style.width = `${percentage}%`
     this.contentPanel.style.width = `${100 - percentage}%`
+
+    // Trigger resize event so the map can update
+    window.dispatchEvent(new Event('resize'))
   },
 
   handleMouseUp() {

@@ -58,7 +58,12 @@ defmodule GrandTourWeb.AppLive do
   @impl true
   def render(assigns) do
     ~H"""
-    <Layouts.app flash={@flash} tour_title={@tour.name} tour_id={@tour.id}>
+    <Layouts.app
+      flash={@flash}
+      current_scope={@current_scope}
+      tour_title={@tour.name}
+      tour_id={@tour.id}
+    >
       <div id="app-container" class="flex flex-col h-[calc(100vh-4rem)]">
         <%!-- Navigation Tabs --%>
         <nav class="flex items-center border-b border-base-300 px-4 flex-shrink-0 h-12">
@@ -97,42 +102,6 @@ defmodule GrandTourWeb.AppLive do
             >
               <.icon name="hero-document-text" class="w-4 h-4 mr-2" /> Documents
             </button>
-          </div>
-
-          <%!-- Right: User Menu Dropdown --%>
-          <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-sm gap-2">
-              <.icon name="hero-user-circle" class="w-5 h-5" />
-              <span class="hidden sm:inline">Account</span>
-              <.icon name="hero-chevron-down" class="w-3 h-3" />
-            </div>
-            <ul tabindex="0" class="dropdown-content menu bg-base-200 rounded-box z-50 w-56 p-2 shadow-lg mt-2">
-              <li class="menu-title px-2 py-1 text-xs text-base-content/50">
-                {@current_scope.user.email}
-              </li>
-              <li>
-                <.link navigate={~p"/users/settings"} class="flex items-center gap-2">
-                  <.icon name="hero-cog-6-tooth" class="w-4 h-4" />
-                  Settings
-                </.link>
-              </li>
-              <li>
-                <div class="flex items-center justify-between px-2 py-2">
-                  <span class="flex items-center gap-2">
-                    <.icon name="hero-sun" class="w-4 h-4" />
-                    Theme
-                  </span>
-                  <.inline_theme_toggle />
-                </div>
-              </li>
-              <div class="divider my-1"></div>
-              <li>
-                <.link href={~p"/users/log-out"} method="delete" class="flex items-center gap-2 text-error">
-                  <.icon name="hero-arrow-right-on-rectangle" class="w-4 h-4" />
-                  Log out
-                </.link>
-              </li>
-            </ul>
           </div>
         </nav>
 
@@ -213,7 +182,7 @@ defmodule GrandTourWeb.AppLive do
     <div class="prose max-w-none">
       <div class="flex items-start justify-between">
         <div>
-          <h1 class="mb-2">{@tour.name}</h1>
+          <h1 class="mb-2 text-3xl">{@tour.name}</h1>
           <p :if={@tour.subtitle} class="lead text-lg text-base-content/70 mt-0">
             {@tour.subtitle}
           </p>
@@ -227,7 +196,7 @@ defmodule GrandTourWeb.AppLive do
         </span>
       </div>
 
-      <div class="stats stats-vertical lg:stats-horizontal shadow w-full mt-6">
+      <div class="stats stats-vertical lg:stats-horizontal w-full mt-6 border border-base-300 rounded">
         <div class="stat">
           <div class="stat-title">Trips</div>
           <div class="stat-value">{length(@trips)}</div>
@@ -247,16 +216,6 @@ defmodule GrandTourWeb.AppLive do
           </div>
           <div class="stat-desc">Last updated {Calendar.strftime(@tour.updated_at, "%b %d")}</div>
         </div>
-      </div>
-
-      <h2 class="mt-8">Quick Actions</h2>
-      <div class="flex gap-2 not-prose">
-        <.link patch={~p"/tours/#{@tour}/trips/new"} class="btn btn-primary btn-sm">
-          <.icon name="hero-plus" class="w-4 h-4" /> Add Trip
-        </.link>
-        <.link navigate={~p"/tours/#{@tour}/edit"} class="btn btn-ghost btn-sm">
-          <.icon name="hero-pencil" class="w-4 h-4" /> Edit Tour
-        </.link>
       </div>
     </div>
     """
@@ -281,7 +240,7 @@ defmodule GrandTourWeb.AppLive do
         <div
           :for={trip <- @trips}
           id={"trip-#{trip.id}"}
-          class="card card-compact bg-base-200 hover:bg-base-300 transition-colors"
+          class="card card-compact bg-base-200 hover:bg-base-300 transition-colors rounded border border-base-300"
         >
           <div class="card-body flex-row items-center gap-4">
             <div class="badge badge-lg badge-ghost font-mono">{trip.position}</div>
@@ -349,7 +308,7 @@ defmodule GrandTourWeb.AppLive do
       <p class="text-base-content/70">
         Visual timeline of your journey will appear here.
       </p>
-      <div class="alert alert-info mt-4">
+      <div class="alert alert-info mt-4 rounded">
         <.icon name="hero-information-circle" class="w-5 h-5" />
         <span>Timeline view coming soon</span>
       </div>
@@ -364,7 +323,7 @@ defmodule GrandTourWeb.AppLive do
       <p class="text-base-content/70">
         Your trip notes and documentation will appear here.
       </p>
-      <div class="alert alert-info mt-4">
+      <div class="alert alert-info mt-4 rounded">
         <.icon name="hero-information-circle" class="w-5 h-5" />
         <span>Document management coming soon</span>
       </div>
@@ -374,7 +333,7 @@ defmodule GrandTourWeb.AppLive do
 
   defp tab_content(assigns) do
     ~H"""
-    <div class="alert alert-warning">
+    <div class="alert alert-warning rounded">
       <.icon name="hero-exclamation-triangle" class="w-5 h-5" />
       <span>Unknown tab</span>
     </div>
@@ -453,37 +412,5 @@ defmodule GrandTourWeb.AppLive do
     else
       "#{Calendar.strftime(start_date, "%b %d, %Y")} - #{Calendar.strftime(end_date, "%b %d, %Y")}"
     end
-  end
-
-  # Compact inline theme toggle for dropdown menu
-  defp inline_theme_toggle(assigns) do
-    ~H"""
-    <div class="flex items-center gap-1 bg-base-300 rounded-full p-0.5">
-      <button
-        class="p-1 rounded-full hover:bg-base-100 [[data-theme=system]_&]:bg-base-100"
-        phx-click={JS.dispatch("phx:set-theme")}
-        data-phx-theme="system"
-        title="System"
-      >
-        <.icon name="hero-computer-desktop-micro" class="w-3 h-3" />
-      </button>
-      <button
-        class="p-1 rounded-full hover:bg-base-100 [[data-theme=light]_&]:bg-base-100"
-        phx-click={JS.dispatch("phx:set-theme")}
-        data-phx-theme="light"
-        title="Light"
-      >
-        <.icon name="hero-sun-micro" class="w-3 h-3" />
-      </button>
-      <button
-        class="p-1 rounded-full hover:bg-base-100 [[data-theme=dark]_&]:bg-base-100"
-        phx-click={JS.dispatch("phx:set-theme")}
-        data-phx-theme="dark"
-        title="Dark"
-      >
-        <.icon name="hero-moon-micro" class="w-3 h-3" />
-      </button>
-    </div>
-    """
   end
 end
