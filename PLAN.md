@@ -207,24 +207,27 @@ Each phase consists of small iterations. Each iteration follows the development 
 
 ## Phase 5: Users & Sharing
 
-### 5.1 Authentication
-- [ ] User schema with email/password
-- [ ] Registration flow
-- [ ] Login/logout
-- [ ] Session management
+### 5.1 Authentication ⚠️ Partial
+- [x] User schema with email/password
+- [x] Registration flow
+- [x] Login/logout
+- [x] Session management
 - [ ] Tests for auth
+- [ ] Refinement needed (UX, error handling, etc.)
 
-### 5.2 Authorization
-- [ ] Tour ownership
-- [ ] Tour belongs to user
-- [ ] Only owner can edit (for now)
+### 5.2 Authorization ⚠️ Partial
+- [x] Tour ownership
+- [x] Tour belongs to user
+- [x] Only owner can edit (for now)
 - [ ] Tests for authorization
+- [ ] Full enforcement verification needed
 
-### 5.3 Public Tours
-- [ ] Toggle tour public/private
+### 5.3 Public Tours ⚠️ Partial
+- [x] Toggle tour public/private
 - [ ] Public URL for tour (slug-based)
 - [ ] Read-only view for public tours
 - [ ] SEO metadata for public tours
+- [ ] Verify toggle actually works
 
 ### 5.4 Subscription (Placeholder)
 - [ ] Subscription tier field on User
@@ -247,6 +250,14 @@ Each phase consists of small iterations. Each iteration follows the development 
 
 ## Current Status
 
-**Phase 2.2 Complete** - Trips context with full CRUD, position reordering, and integration with Tours.
+| Phase | Status |
+|-------|--------|
+| 1. Foundation | ✅ Complete |
+| 2. Core Features | ⚠️ 2.1-2.2 done, 2.3-2.8 pending |
+| 3. Content | ❌ Not started |
+| 4. Polish | ❌ Not started |
+| 5. Users & Sharing | ⚠️ 5.1-5.3 partial, 5.4 pending |
+
+**Last completed:** Phase 2.2 - Trips context with full CRUD, position reordering, and integration with Tours.
 
 **Next:** Phase 2.3 - Routes (Basic).
