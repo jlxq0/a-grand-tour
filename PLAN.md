@@ -67,42 +67,47 @@ Each phase consists of small iterations. Each iteration follows the development 
 - [x] Trip detail view
 - [x] Tests for Trip context
 
-### 2.3 Routes - Basic
+### 2.3 Datasets - Data Model ✅ Complete
+- [x] Create Dataset schema with geometry_type (point/line/polygon/none)
+- [x] Create DatasetItem schema with PostGIS geometry and JSONB properties
+- [x] Create TourOverride schema for user modifications to system items
+- [x] Create TourAddition schema for user items added to system datasets
+- [x] Flexible field_schema for defining custom fields per dataset
+- [x] Spatial indexing (GIST) and JSONB indexing (GIN) for performance
+- [x] Generated bbox column for viewport-based queries
+- [x] Datasets context with full CRUD and combined queries
+- [x] Tests for Datasets context
+
+### 2.4 Datasets - UI
+- [ ] Data tab with submenu navigation
+- [ ] Dataset list view (system + user datasets)
+- [ ] Dataset item list with search/filter
+- [ ] Dataset item detail view on map
+- [ ] Create/edit user dataset
+- [ ] Create/edit user additions to system datasets
+- [ ] Override system items (hide, modify)
+- [ ] Tests for Datasets UI
+
+### 2.5 Routes - Basic
 - [ ] Create Route schema with segments (JSONB)
 - [ ] Waypoints as PostGIS MultiPoint
 - [ ] Simplified path as PostGIS LineString
 - [ ] Route display on map
 - [ ] Tests for Route schema
 
-### 2.4 Routes - Editing
+### 2.6 Routes - Editing
 - [ ] Add waypoint by clicking map
 - [ ] Remove waypoint
 - [ ] Reorder waypoints (drag)
 - [ ] Segment types (drive, ferry, flight, etc.)
 - [ ] Tests for route editing
 
-### 2.5 Routes - Generation
+### 2.7 Routes - Generation
 - [ ] Oban job for route generation
 - [ ] Integration with OSRM or Mapbox Directions API
 - [ ] Generate simplified path from full path
 - [ ] Calculate distance and duration
 - [ ] Tests for route generation
-
-### 2.6 POIs - Global
-- [ ] Create POI schema with PostGIS Point
-- [ ] POI categories and subcategories
-- [ ] POI display on map (markers)
-- [ ] POI popup/detail view
-- [ ] POI search/filter
-- [ ] Tests for POI context
-
-### 2.7 POIs - Per-Tour Customization
-- [ ] TourPOI schema for overrides
-- [ ] Add custom POI to tour
-- [ ] Edit global POI (creates override)
-- [ ] Hide global POI from tour
-- [ ] User rating for POIs
-- [ ] Tests for POI overrides
 
 ### 2.8 Itinerary
 - [ ] Create Itinerary and ItineraryDay schemas
@@ -253,11 +258,11 @@ Each phase consists of small iterations. Each iteration follows the development 
 | Phase | Status |
 |-------|--------|
 | 1. Foundation | ✅ Complete |
-| 2. Core Features | ⚠️ 2.1-2.2 done, 2.3-2.8 pending |
+| 2. Core Features | ⚠️ 2.1-2.3 done, 2.4-2.8 pending |
 | 3. Content | ❌ Not started |
 | 4. Polish | ❌ Not started |
 | 5. Users & Sharing | ⚠️ 5.1-5.3 partial, 5.4 pending |
 
-**Last completed:** Phase 2.2 - Trips context with full CRUD, position reordering, and integration with Tours.
+**Last completed:** Phase 2.3 - Datasets data model with flexible schema for POIs, scenic routes, ferries, risk regions, and user-created lists. Supports PostGIS geometry (points, lines, polygons), user overrides, and user additions to system datasets.
 
-**Next:** Phase 2.3 - Routes (Basic).
+**Next:** Phase 2.4 - Datasets UI (Data tab with submenu navigation).

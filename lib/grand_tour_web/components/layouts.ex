@@ -78,7 +78,7 @@ defmodule GrandTourWeb.Layouts do
               </div>
               <ul
                 tabindex="0"
-                class="dropdown-content menu bg-base-200 rounded-box z-50 w-56 p-2 shadow-lg mt-2"
+                class="dropdown-content menu bg-base-200 rounded z-50 w-56 p-2 shadow-lg mt-2"
               >
                 <li class="menu-title px-2 py-1 text-xs text-base-content/50">
                   {@current_scope.user.email}

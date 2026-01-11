@@ -5,13 +5,23 @@ defmodule GrandTourWeb.TourLive.Index do
   alias GrandTour.Tours.Tour
 
   @impl true
-  def mount(_params, _session, socket) do
+  def mount(params, _session, socket) do
     scope = socket.assigns.current_scope
+    user = scope.user
     tours = Tours.list_tours(scope)
+
+    # Handle redirect from /tours to /:username/tours
+    socket =
+      if is_nil(params["username"]) do
+        push_navigate(socket, to: ~p"/#{user.username}/tours")
+      else
+        socket
+      end
 
     {:ok,
      socket
      |> assign(:page_title, "Overview")
+     |> assign(:user, user)
      |> assign(:has_tours, tours != [])
      |> stream(:tours, tours)}
   end
@@ -19,14 +29,6 @@ defmodule GrandTourWeb.TourLive.Index do
   @impl true
   def handle_params(params, _url, socket) do
     {:noreply, apply_action(socket, socket.assigns.live_action, params)}
-  end
-
-  defp apply_action(socket, :edit, %{"id" => id}) do
-    scope = socket.assigns.current_scope
-
-    socket
-    |> assign(:page_title, "Edit Tour")
-    |> assign(:tour, Tours.get_tour!(scope, id))
   end
 
   defp apply_action(socket, :new, _params) do
@@ -42,11 +44,23 @@ defmodule GrandTourWeb.TourLive.Index do
   end
 
   @impl true
-  def handle_info({GrandTourWeb.TourLive.FormComponent, {:saved, tour}}, socket) do
+  def handle_info({GrandTourWeb.TourLive.FormComponent, {:created, tour}}, socket) do
+    # Navigate to the newly created tour
     {:noreply,
      socket
      |> assign(:has_tours, true)
-     |> stream_insert(:tours, tour, at: 0)}
+     |> stream_insert(:tours, tour, at: 0)
+     |> put_flash(:info, "Tour created successfully")
+     |> push_navigate(to: ~p"/#{socket.assigns.user.username}/#{tour.slug}")}
+  end
+
+  @impl true
+  def handle_info({GrandTourWeb.TourLive.FormComponent, {:updated, tour}}, socket) do
+    {:noreply,
+     socket
+     |> stream_insert(:tours, tour)
+     |> put_flash(:info, "Tour updated successfully")
+     |> push_navigate(to: ~p"/#{socket.assigns.user.username}/#{tour.slug}")}
   end
 
   @impl true
@@ -68,7 +82,7 @@ defmodule GrandTourWeb.TourLive.Index do
             :for={{id, tour} <- @streams.tours}
             id={id}
             class="group relative aspect-[16/10] rounded overflow-hidden cursor-pointer"
-            phx-click={JS.navigate(~p"/tours/#{tour}")}
+            phx-click={JS.navigate(~p"/#{@user.username}/#{tour.slug}")}
           >
             <img
               src={tour.cover_image || default_cover_image(tour)}
@@ -109,7 +123,7 @@ defmodule GrandTourWeb.TourLive.Index do
           <%!-- New Tour Card --%>
           <.link
             id="new-tour-card"
-            patch={~p"/tours/new"}
+            patch={~p"/#{@user.username}/tours/new"}
             class="group relative aspect-[16/10] rounded overflow-hidden bg-base-200 hover:bg-base-300 transition-colors"
           >
             <div class="absolute inset-0 flex flex-col items-center justify-center">
@@ -132,16 +146,16 @@ defmodule GrandTourWeb.TourLive.Index do
           <p class="text-base-content/60 text-sm max-w-sm mx-auto mb-6">
             Create your first tour to begin planning an overland adventure.
           </p>
-          <.link patch={~p"/tours/new"} class="btn btn-primary">
+          <.link patch={~p"/#{@user.username}/tours/new"} class="btn btn-primary">
             <.icon name="hero-plus" class="w-4 h-4" /> Create Tour
           </.link>
         </div>
 
         <.modal
-          :if={@live_action in [:new, :edit]}
+          :if={@live_action in [:new]}
           id="tour-modal"
           show
-          on_cancel={JS.patch(~p"/tours")}
+          on_cancel={JS.patch(~p"/#{@user.username}/tours")}
         >
           <.live_component
             module={GrandTourWeb.TourLive.FormComponent}
@@ -150,7 +164,8 @@ defmodule GrandTourWeb.TourLive.Index do
             action={@live_action}
             tour={@tour}
             scope={@current_scope}
-            patch={~p"/tours"}
+            user={@user}
+            patch={~p"/#{@user.username}/tours"}
           />
         </.modal>
       </div>

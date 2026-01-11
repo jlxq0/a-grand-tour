@@ -10,11 +10,13 @@ defmodule GrandTour.AccountsFixtures do
   alias GrandTour.Accounts.Scope
 
   def unique_user_email, do: "user#{System.unique_integer()}@example.com"
+  def unique_user_username, do: "user#{System.unique_integer() |> abs() |> rem(1_000_000)}"
   def valid_user_password, do: "hello world!"
 
   def valid_user_attributes(attrs \\ %{}) do
     Enum.into(attrs, %{
-      email: unique_user_email()
+      email: unique_user_email(),
+      username: unique_user_username()
     })
   end
 

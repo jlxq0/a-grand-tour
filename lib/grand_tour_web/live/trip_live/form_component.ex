@@ -76,12 +76,8 @@ defmodule GrandTourWeb.TripLive.FormComponent do
   defp save_trip(socket, :edit_trip, trip_params) do
     case Tours.update_trip(socket.assigns.trip, trip_params) do
       {:ok, trip} ->
-        notify_parent({:saved, trip})
-
-        {:noreply,
-         socket
-         |> put_flash(:info, "Trip updated successfully")
-         |> push_patch(to: socket.assigns.patch)}
+        notify_parent({:updated, trip})
+        {:noreply, socket}
 
       {:error, %Ecto.Changeset{} = changeset} ->
         {:noreply, assign(socket, form: to_form(changeset))}
@@ -91,12 +87,8 @@ defmodule GrandTourWeb.TripLive.FormComponent do
   defp save_trip(socket, :new_trip, trip_params) do
     case Tours.create_trip(socket.assigns.tour, trip_params) do
       {:ok, trip} ->
-        notify_parent({:saved, trip})
-
-        {:noreply,
-         socket
-         |> put_flash(:info, "Trip created successfully")
-         |> push_patch(to: socket.assigns.patch)}
+        notify_parent({:created, trip})
+        {:noreply, socket}
 
       {:error, %Ecto.Changeset{} = changeset} ->
         {:noreply, assign(socket, form: to_form(changeset))}

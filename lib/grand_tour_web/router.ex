@@ -17,6 +17,21 @@ defmodule GrandTourWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :authenticated_api do
+    plug :accepts, ["json"]
+    plug :fetch_session
+    plug :fetch_current_scope_for_user
+    plug :require_authenticated_user_api
+  end
+
+  # Media API routes (authenticated JSON endpoints)
+  scope "/api", GrandTourWeb do
+    pipe_through :authenticated_api
+
+    post "/media/presign-upload", MediaController, :presign_upload
+    get "/media/presign-download", MediaController, :presign_download
+  end
+
   # Public routes (landing page)
   scope "/", GrandTourWeb do
     pipe_through :browser
@@ -24,46 +39,7 @@ defmodule GrandTourWeb.Router do
     live "/", LandingLive, :index
   end
 
-  # Protected routes (require authentication)
-  scope "/", GrandTourWeb do
-    pipe_through [:browser, :require_authenticated_user]
-
-    live_session :authenticated, on_mount: [{GrandTourWeb.UserAuth, :ensure_authenticated}] do
-      live "/tours", TourLive.Index, :index
-      live "/tours/new", TourLive.Index, :new
-      live "/tours/:id/edit", TourLive.Index, :edit
-
-      # Tour detail with split-screen map view
-      live "/tours/:id", AppLive, :show
-      live "/tours/:id/trips/new", AppLive, :new_trip
-      live "/tours/:id/trips/:trip_id/edit", AppLive, :edit_trip
-    end
-  end
-
-  # Other scopes may use custom stacks.
-  # scope "/api", GrandTourWeb do
-  #   pipe_through :api
-  # end
-
-  # Enable LiveDashboard and Swoosh mailbox preview in development
-  if Application.compile_env(:grand_tour, :dev_routes) do
-    # If you want to use the LiveDashboard in production, you should put
-    # it behind authentication and allow only admins to access it.
-    # If your application does not have an admins-only section yet,
-    # you can use Plug.BasicAuth to set up some basic authentication
-    # as long as you are also using SSL (which you should anyway).
-    import Phoenix.LiveDashboard.Router
-
-    scope "/dev" do
-      pipe_through :browser
-
-      live_dashboard "/dashboard", metrics: GrandTourWeb.Telemetry
-      forward "/mailbox", Plug.Swoosh.MailboxPreview
-    end
-  end
-
-  ## Authentication routes
-
+  ## Authentication routes - MUST come before dynamic username routes
   scope "/", GrandTourWeb do
     pipe_through [:browser, :redirect_if_user_is_authenticated]
 
@@ -86,5 +62,51 @@ defmodule GrandTourWeb.Router do
     get "/users/log-in/:token", UserSessionController, :confirm
     post "/users/log-in", UserSessionController, :create
     delete "/users/log-out", UserSessionController, :delete
+  end
+
+  # Enable LiveDashboard and Swoosh mailbox preview in development
+  if Application.compile_env(:grand_tour, :dev_routes) do
+    import Phoenix.LiveDashboard.Router
+
+    scope "/dev" do
+      pipe_through :browser
+
+      live_dashboard "/dashboard", metrics: GrandTourWeb.Telemetry
+      forward "/mailbox", Plug.Swoosh.MailboxPreview
+    end
+  end
+
+  # Protected routes (require authentication) - Dynamic routes last
+  scope "/", GrandTourWeb do
+    pipe_through [:browser, :require_authenticated_user]
+
+    live_session :authenticated, on_mount: [{GrandTourWeb.UserAuth, :ensure_authenticated}] do
+      # Redirect old /tours route to user's tours list
+      live "/tours", TourLive.Index, :index
+
+      # User-scoped routes (new URL schema)
+      # User's tours list
+      live "/:username/tours", TourLive.Index, :index
+      live "/:username/tours/new", TourLive.Index, :new
+
+      # Tour overview and edit
+      live "/:username/:tour_slug", AppLive, :overview
+      live "/:username/:tour_slug/edit", AppLive, :edit_tour
+
+      # Timeline
+      live "/:username/:tour_slug/timeline", AppLive, :timeline
+
+      # Trips
+      live "/:username/:tour_slug/trips/new", AppLive, :new_trip
+      live "/:username/:tour_slug/trips/:trip_slug", AppLive, :trip
+      live "/:username/:tour_slug/trips/:trip_slug/edit", AppLive, :edit_trip
+
+      # Datasets
+      live "/:username/:tour_slug/datasets/new", AppLive, :new_dataset
+      live "/:username/:tour_slug/datasets/:dataset_id", AppLive, :dataset
+
+      # Documents
+      live "/:username/:tour_slug/documents", AppLive, :documents
+    end
   end
 end

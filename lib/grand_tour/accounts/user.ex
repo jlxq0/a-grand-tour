@@ -6,6 +6,7 @@ defmodule GrandTour.Accounts.User do
   @foreign_key_type :binary_id
   schema "users" do
     field :email, :string
+    field :username, :string
     field :password, :string, virtual: true, redact: true
     field :hashed_password, :string, redact: true
     field :confirmed_at, :utc_datetime
@@ -13,6 +14,52 @@ defmodule GrandTour.Accounts.User do
 
     timestamps(type: :utc_datetime)
   end
+
+  # Reserved usernames that conflict with routes or are commonly reserved
+  @reserved_usernames ~w(
+    about abuse account accounts admin administrator administrators
+    api app apps auth authentication authorize
+    billing blog bots business
+    cache callback cdn cgi client clients code config contact
+    copyright create css
+    dashboard data delete demo design dev developer developers docs
+    documentation download downloads
+    edit email emails embed error errors events example
+    faq favicon feed feedback file files fonts forum forums
+    get github google graphql guest guests guide
+    help home host hosting html http https
+    image images img info internal invite ios iphone
+    javascript jobs js json julian julian-lindner jlxq0
+    legal lib library linux login logout logs
+    mail mailbox mailer map maps marketing me media member members
+    message messages messenger mobile
+    new news newsletter nil notifications null
+    oauth offline official onboarding open openapi
+    page pages partner partners password passwords pay payment
+    ping pixel plans plugin plugins policies policy popular post posts
+    pricing privacy private product products profile profiles
+    public python
+    raw readme recent redirect register registration remove
+    replies reply report request requests reset resources review
+    root rss rules
+    sale sales sample save script scripts search security
+    server servers service services session sessions settings setup
+    share shop signin signout signup site sitemap sites
+    smtp source spam ssl sso staging start static stats status
+    store style styles subdomain submit subscribe success
+    superuser support survey sync system systems
+    tag tags team teams template templates terms test testing tests
+    theme themes timeline token tokens tools tos tour tours
+    trending trip trips trust tutorial tutorials
+    undefined unsubscribe update updates upgrade upload uploads
+    user username users
+    video videos
+    web webhook webhooks webmaster website websites widget widgets wiki
+    wordpress
+    xml xss
+    yaml you your
+    zero
+  )
 
   @doc """
   A user changeset for registering or changing the email.
@@ -107,6 +154,56 @@ defmodule GrandTour.Accounts.User do
       changeset
     end
   end
+
+  @doc """
+  A user changeset for setting or changing the username.
+
+  ## Options
+
+    * `:validate_unique` - Set to false if you don't want to validate the
+      uniqueness of the username, useful when displaying live validations.
+      Defaults to `true`.
+  """
+  def username_changeset(user, attrs, opts \\ []) do
+    user
+    |> cast(attrs, [:username])
+    |> validate_username(opts)
+  end
+
+  defp validate_username(changeset, opts) do
+    changeset =
+      changeset
+      |> validate_required([:username])
+      |> validate_length(:username, min: 3, max: 16)
+      |> validate_format(:username, ~r/^[a-z0-9][a-z0-9-]*[a-z0-9]$|^[a-z0-9]{1,2}$/,
+        message: "must be lowercase letters, numbers, and hyphens only"
+      )
+      |> validate_format(:username, ~r/^(?!.*--)/, message: "cannot contain consecutive hyphens")
+      |> validate_not_reserved()
+
+    if Keyword.get(opts, :validate_unique, true) do
+      changeset
+      |> unsafe_validate_unique(:username, GrandTour.Repo)
+      |> unique_constraint(:username)
+    else
+      changeset
+    end
+  end
+
+  defp validate_not_reserved(changeset) do
+    username = get_field(changeset, :username)
+
+    if username && String.downcase(username) in @reserved_usernames do
+      add_error(changeset, :username, "is reserved")
+    else
+      changeset
+    end
+  end
+
+  @doc """
+  Returns the list of reserved usernames.
+  """
+  def reserved_usernames, do: @reserved_usernames
 
   @doc """
   Confirms the account by setting `confirmed_at`.

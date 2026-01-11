@@ -27,10 +27,42 @@ import topbar from "../vendor/topbar"
 import Hooks from "./hooks"
 
 const csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
+
+// R2 Uploader for external uploads to Cloudflare R2
+const Uploaders = {
+  R2(entries, onViewError) {
+    entries.forEach(entry => {
+      const { url } = entry.meta
+
+      // Upload directly to R2 using the presigned URL
+      fetch(url, {
+        method: "PUT",
+        body: entry.file,
+        headers: {
+          "Content-Type": entry.file.type
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          entry.progress(100)
+        } else {
+          console.error("R2 upload failed:", response.status, response.statusText)
+          entry.error("Upload failed")
+        }
+      })
+      .catch(error => {
+        console.error("R2 upload error:", error)
+        entry.error("Upload failed")
+      })
+    })
+  }
+}
+
 const liveSocket = new LiveSocket("/live", Socket, {
   longPollFallbackMs: 2500,
   params: {_csrf_token: csrfToken},
   hooks: {...colocatedHooks, ...Hooks},
+  uploaders: Uploaders,
 })
 
 // Show progress bar on live navigation and form submits

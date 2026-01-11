@@ -120,12 +120,12 @@ defmodule GrandTour.ToursTest do
     end
 
     test "create_tour/2 with name too long returns error changeset", %{scope: scope} do
-      long_name = String.duplicate("a", 256)
+      long_name = String.duplicate("a", 101)
 
       assert {:error, %Ecto.Changeset{} = changeset} =
                Tours.create_tour(scope, %{name: long_name})
 
-      assert "should be at most 255 character(s)" in errors_on(changeset).name
+      assert "should be at most 100 character(s)" in errors_on(changeset).name
     end
 
     test "update_tour/2 with valid data updates the tour", %{scope: scope} do

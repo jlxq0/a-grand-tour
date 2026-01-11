@@ -8,6 +8,7 @@ defmodule GrandTour.Tours do
   alias GrandTour.Accounts.Scope
   alias GrandTour.Tours.Tour
   alias GrandTour.Tours.Trip
+  alias GrandTour.Workers.ImageProcessor
 
   @doc """
   Returns the list of tours for the current user.
@@ -67,6 +68,40 @@ defmodule GrandTour.Tours do
   """
   def get_tour(%Scope{user: user}, id) do
     Repo.one(from t in Tour, where: t.id == ^id and t.user_id == ^user.id)
+  end
+
+  @doc """
+  Gets a single tour by user and slug.
+
+  Raises `Ecto.NoResultsError` if the Tour does not exist.
+
+  ## Examples
+
+      iex> get_tour_by_slug!(user, "my-tour")
+      %Tour{}
+
+      iex> get_tour_by_slug!(user, "unknown")
+      ** (Ecto.NoResultsError)
+
+  """
+  def get_tour_by_slug!(user, slug) when is_binary(slug) do
+    Repo.one!(from t in Tour, where: t.user_id == ^user.id and t.slug == ^slug)
+  end
+
+  @doc """
+  Gets a single tour by user and slug, returns nil if not found.
+
+  ## Examples
+
+      iex> get_tour_by_slug(user, "my-tour")
+      %Tour{}
+
+      iex> get_tour_by_slug(user, "unknown")
+      nil
+
+  """
+  def get_tour_by_slug(user, slug) when is_binary(slug) do
+    Repo.one(from t in Tour, where: t.user_id == ^user.id and t.slug == ^slug)
   end
 
   @doc """
@@ -134,6 +169,27 @@ defmodule GrandTour.Tours do
     Tour.changeset(tour, attrs)
   end
 
+  @doc """
+  Enqueues a background job to process the tour's cover image.
+
+  Creates thumb, medium, and large WebP variants of the original image
+  and uploads them to R2. Updates the tour's cover_image_variants field.
+
+  ## Examples
+
+      iex> enqueue_cover_image_processing(tour)
+      {:ok, %Oban.Job{}}
+
+  """
+  def enqueue_cover_image_processing(%Tour{id: tour_id, cover_image: image_url})
+      when is_binary(image_url) and image_url != "" do
+    %{tour_id: tour_id, image_url: image_url}
+    |> ImageProcessor.new()
+    |> Oban.insert()
+  end
+
+  def enqueue_cover_image_processing(_tour), do: {:ok, :no_image}
+
   # Trip functions
 
   @doc """
@@ -187,6 +243,47 @@ defmodule GrandTour.Tours do
   end
 
   @doc """
+  Gets a single trip by tour and slug.
+
+  Raises `Ecto.NoResultsError` if the Trip does not exist.
+
+  ## Examples
+
+      iex> get_trip_by_slug!(tour, "europe-summer")
+      %Trip{}
+
+      iex> get_trip_by_slug!(tour, "unknown")
+      ** (Ecto.NoResultsError)
+
+  """
+  def get_trip_by_slug!(%Tour{} = tour, slug) when is_binary(slug) do
+    Repo.one!(from t in Trip, where: t.tour_id == ^tour.id and t.slug == ^slug)
+  end
+
+  @doc """
+  Gets a single trip by tour and slug, returns nil if not found.
+
+  ## Examples
+
+      iex> get_trip_by_slug(tour, "europe-summer")
+      %Trip{}
+
+      iex> get_trip_by_slug(tour, "unknown")
+      nil
+
+  """
+  def get_trip_by_slug(%Tour{} = tour, slug) when is_binary(slug) do
+    Repo.one(from t in Trip, where: t.tour_id == ^tour.id and t.slug == ^slug)
+  end
+
+  @doc """
+  Returns the number of trips in a tour.
+  """
+  def count_trips(%Tour{} = tour) do
+    Repo.one(from t in Trip, where: t.tour_id == ^tour.id, select: count(t.id))
+  end
+
+  @doc """
   Creates a trip for a tour.
 
   ## Examples
@@ -227,28 +324,39 @@ defmodule GrandTour.Tours do
   @doc """
   Deletes a trip and reorders remaining trips.
 
+  Returns `{:error, :last_trip}` if this is the only trip in the tour.
+
   ## Examples
 
       iex> delete_trip(trip)
       {:ok, %Trip{}}
 
+      iex> delete_trip(last_trip)
+      {:error, :last_trip}
+
   """
   def delete_trip(%Trip{} = trip) do
-    Repo.transaction(fn ->
-      case Repo.delete(trip) do
-        {:ok, deleted_trip} ->
-          # Reorder remaining trips to close the gap
-          from(t in Trip,
-            where: t.tour_id == ^trip.tour_id and t.position > ^trip.position
-          )
-          |> Repo.update_all(inc: [position: -1])
+    trip_count = Repo.one(from t in Trip, where: t.tour_id == ^trip.tour_id, select: count(t.id))
 
-          deleted_trip
+    if trip_count <= 1 do
+      {:error, :last_trip}
+    else
+      Repo.transaction(fn ->
+        case Repo.delete(trip) do
+          {:ok, deleted_trip} ->
+            # Reorder remaining trips to close the gap
+            from(t in Trip,
+              where: t.tour_id == ^trip.tour_id and t.position > ^trip.position
+            )
+            |> Repo.update_all(inc: [position: -1])
 
-        {:error, changeset} ->
-          Repo.rollback(changeset)
-      end
-    end)
+            deleted_trip
+
+          {:error, changeset} ->
+            Repo.rollback(changeset)
+        end
+      end)
+    end
   end
 
   @doc """

@@ -5,7 +5,7 @@ defmodule GrandTourWeb.UserRegistrationController do
   alias GrandTour.Accounts.User
 
   def new(conn, _params) do
-    changeset = Accounts.change_user_email(%User{})
+    changeset = Accounts.change_user_registration(%User{})
     render(conn, :new, changeset: changeset)
   end
 

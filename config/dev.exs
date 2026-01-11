@@ -96,3 +96,17 @@ config :phoenix_live_view,
 
 # Disable swoosh api client as it is only required for production adapters.
 config :swoosh, :api_client, false
+
+# R2 object storage configuration
+config :ex_aws,
+  access_key_id: "fb5b40fa70ae7eec753ca6d3a8bc740f",
+  secret_access_key: "50c0233cd97cc5e263c59d966e1a20915b17de38557cef41060d932ae69dde6a"
+
+config :ex_aws, :s3,
+  scheme: "https://",
+  host: "eda93eeb5abb5e4076853b686c73cf2d.r2.cloudflarestorage.com",
+  region: "auto"
+
+config :grand_tour, :media,
+  bucket: "grandtour-media-dev",
+  public_url: "https://pub-09f0383bae20471dae6f7aaed9695755.r2.dev"

@@ -23,6 +23,22 @@ end
 config :grand_tour, GrandTourWeb.Endpoint,
   http: [port: String.to_integer(System.get_env("PORT", "4001"))]
 
+# R2 configuration from environment variables (overrides dev.exs in production)
+if r2_access_key = System.get_env("R2_ACCESS_KEY_ID") do
+  config :ex_aws,
+    access_key_id: r2_access_key,
+    secret_access_key: System.get_env("R2_SECRET_ACCESS_KEY")
+
+  config :ex_aws, :s3,
+    scheme: "https://",
+    host: System.get_env("R2_ENDPOINT"),
+    region: "auto"
+
+  config :grand_tour, :media,
+    bucket: System.get_env("R2_BUCKET"),
+    public_url: System.get_env("R2_PUBLIC_URL")
+end
+
 if config_env() == :prod do
   database_url =
     System.get_env("DATABASE_URL") ||

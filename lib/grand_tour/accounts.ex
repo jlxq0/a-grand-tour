@@ -27,6 +27,40 @@ defmodule GrandTour.Accounts do
   end
 
   @doc """
+  Gets a user by username.
+
+  ## Examples
+
+      iex> get_user_by_username("alice")
+      %User{}
+
+      iex> get_user_by_username("unknown")
+      nil
+
+  """
+  def get_user_by_username(username) when is_binary(username) do
+    Repo.get_by(User, username: username)
+  end
+
+  @doc """
+  Gets a user by username.
+
+  Raises `Ecto.NoResultsError` if the User does not exist.
+
+  ## Examples
+
+      iex> get_user_by_username!("alice")
+      %User{}
+
+      iex> get_user_by_username!("unknown")
+      ** (Ecto.NoResultsError)
+
+  """
+  def get_user_by_username!(username) when is_binary(username) do
+    Repo.get_by!(User, username: username)
+  end
+
+  @doc """
   Gets a user by email and password.
 
   ## Examples
@@ -77,7 +111,25 @@ defmodule GrandTour.Accounts do
   def register_user(attrs) do
     %User{}
     |> User.email_changeset(attrs)
+    |> User.username_changeset(attrs)
     |> Repo.insert()
+  end
+
+  @doc """
+  Returns an `%Ecto.Changeset{}` for registering a new user.
+
+  Combines email and username validation for the registration form.
+
+  ## Examples
+
+      iex> change_user_registration(user)
+      %Ecto.Changeset{data: %User{}}
+
+  """
+  def change_user_registration(user, attrs \\ %{}) do
+    user
+    |> User.email_changeset(attrs)
+    |> User.username_changeset(attrs)
   end
 
   ## Settings
@@ -109,6 +161,39 @@ defmodule GrandTour.Accounts do
   """
   def change_user_email(user, attrs \\ %{}, opts \\ []) do
     User.email_changeset(user, attrs, opts)
+  end
+
+  @doc """
+  Returns an `%Ecto.Changeset{}` for changing the user username.
+
+  See `GrandTour.Accounts.User.username_changeset/3` for a list of supported options.
+
+  ## Examples
+
+      iex> change_user_username(user)
+      %Ecto.Changeset{data: %User{}}
+
+  """
+  def change_user_username(user, attrs \\ %{}, opts \\ []) do
+    User.username_changeset(user, attrs, opts)
+  end
+
+  @doc """
+  Updates the user username.
+
+  ## Examples
+
+      iex> update_user_username(user, %{username: "newname"})
+      {:ok, %User{}}
+
+      iex> update_user_username(user, %{username: "admin"})
+      {:error, %Ecto.Changeset{}}
+
+  """
+  def update_user_username(user, attrs) do
+    user
+    |> User.username_changeset(attrs)
+    |> Repo.update()
   end
 
   @doc """

@@ -23,6 +23,20 @@
         phx-mounted={JS.focus()}
       />
 
+      <.input
+        field={f[:username]}
+        type="text"
+        label="Username"
+        autocomplete="username"
+        required
+        pattern="[a-z0-9-]{3,16}"
+        title="3-16 lowercase letters, numbers, or hyphens"
+        placeholder="your-username"
+      />
+      <p class="text-xs text-base-content/60 -mt-2 mb-4">
+        Your profile will be at grandtour.com/<strong>{Phoenix.HTML.Form.input_value(f, :username) || "username"}</strong>
+      </p>
+
       <.button phx-disable-with="Creating account..." class="btn btn-primary w-full">
         Create an account
       </.button>

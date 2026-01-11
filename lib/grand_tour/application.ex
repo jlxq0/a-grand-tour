@@ -12,8 +12,8 @@ defmodule GrandTour.Application do
       GrandTour.Repo,
       {DNSCluster, query: Application.get_env(:grand_tour, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: GrandTour.PubSub},
-      # Start a worker by calling: GrandTour.Worker.start_link(arg)
-      # {GrandTour.Worker, arg},
+      # Background job processing
+      {Oban, Application.fetch_env!(:grand_tour, Oban)},
       # Start to serve requests, typically the last entry
       GrandTourWeb.Endpoint
     ]

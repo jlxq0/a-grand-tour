@@ -183,9 +183,18 @@ defmodule GrandTour.TripsTest do
 
     test "delete_trip/1 deletes the trip", %{scope: scope} do
       tour = tour_fixture(scope)
+      _trip1 = trip_fixture(tour, %{name: "First"})
+      trip2 = trip_fixture(tour, %{name: "Second"})
+      assert {:ok, %Trip{}} = Tours.delete_trip(trip2)
+      assert_raise Ecto.NoResultsError, fn -> Tours.get_trip!(trip2.id) end
+    end
+
+    test "delete_trip/1 returns error when deleting last trip", %{scope: scope} do
+      tour = tour_fixture(scope)
       trip = trip_fixture(tour)
-      assert {:ok, %Trip{}} = Tours.delete_trip(trip)
-      assert_raise Ecto.NoResultsError, fn -> Tours.get_trip!(trip.id) end
+      assert {:error, :last_trip} = Tours.delete_trip(trip)
+      # Trip should still exist
+      assert Tours.get_trip!(trip.id) == trip
     end
 
     test "delete_trip/1 reorders remaining trips", %{scope: scope} do

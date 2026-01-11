@@ -68,7 +68,15 @@ defmodule GrandTour.MixProject do
       {:dns_cluster, "~> 0.2.0"},
       {:bandit, "~> 1.5"},
       {:tidewave, "~> 0.5", only: :dev},
-      {:geo_postgis, "~> 3.6"}
+      {:geo_postgis, "~> 3.6"},
+      {:ex_aws, "~> 2.5"},
+      {:ex_aws_s3, "~> 2.5"},
+      {:sweet_xml, "~> 0.7"},
+      {:hackney, "~> 1.20"},
+      # Background jobs
+      {:oban, "~> 2.18"},
+      # Image processing (uses libvips)
+      {:image, "~> 0.54"}
     ]
   end
 
