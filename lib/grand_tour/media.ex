@@ -232,7 +232,7 @@ defmodule GrandTour.Media do
               key: obj.key,
               size: String.to_integer(obj.size),
               last_modified: obj.last_modified,
-              etag: obj.etag
+              etag: obj.e_tag
             }
           end)
 
