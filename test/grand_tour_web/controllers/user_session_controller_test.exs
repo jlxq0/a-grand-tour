@@ -61,7 +61,7 @@ defmodule GrandTourWeb.UserSessionControllerTest do
       conn = get(conn, ~p"/users/log-in/#{token}")
       html = html_response(conn, 200)
       refute html =~ "Confirm my account"
-      assert html =~ "Log in"
+      assert html =~ "Keep me logged in"
     end
 
     test "raises error for invalid token", %{conn: conn} do
