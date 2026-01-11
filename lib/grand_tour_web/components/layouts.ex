@@ -31,6 +31,10 @@ defmodule GrandTourWeb.Layouts do
     default: nil,
     doc: "the current [scope](https://hexdocs.pm/phoenix/scopes.html)"
 
+  attr :tour_title, :string,
+    default: nil,
+    doc: "optional tour title to display in header"
+
   slot :inner_block, required: true
 
   def app(assigns) do
@@ -41,6 +45,10 @@ defmodule GrandTourWeb.Layouts do
           <a href="/" class="flex items-center gap-3">
             <.icon name="hero-globe-americas" class="w-8 h-8 text-primary" />
             <span class="text-lg font-bold">A Grand Tour</span>
+            <%= if @tour_title do %>
+              <span class="text-base-content/40 font-normal">—</span>
+              <span class="text-lg font-normal truncate max-w-md">{@tour_title}</span>
+            <% end %>
           </a>
         </div>
         <div class="flex-none">

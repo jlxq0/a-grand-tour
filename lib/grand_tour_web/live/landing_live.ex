@@ -5,10 +5,7 @@ defmodule GrandTourWeb.LandingLive do
 
   @impl true
   def mount(_params, _session, socket) do
-    {:ok,
-     socket
-     |> assign(:page_title, "A Grand Tour - Plan Your Epic Journey")
-     |> assign(:hide_user_bar, true)}
+    {:ok, assign(socket, :page_title, "A Grand Tour - Plan Your Epic Journey")}
   end
 
   @impl true

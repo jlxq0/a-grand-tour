@@ -58,41 +58,82 @@ defmodule GrandTourWeb.AppLive do
   @impl true
   def render(assigns) do
     ~H"""
-    <Layouts.app flash={@flash}>
+    <Layouts.app flash={@flash} tour_title={@tour.name}>
       <div id="app-container" class="flex flex-col h-[calc(100vh-4rem)]">
         <%!-- Navigation Tabs --%>
-        <nav class="tabs tabs-border border-b border-base-300 px-4 flex-shrink-0">
+        <nav class="flex items-center border-b border-base-300 px-4 flex-shrink-0 h-12">
+          <%!-- Left: Back to Tours --%>
           <.link navigate={~p"/tours"} class="tab">
             <.icon name="hero-arrow-left" class="w-4 h-4 mr-2" /> Tours
           </.link>
-          <button
-            phx-click="switch_tab"
-            phx-value-tab="overview"
-            class={["tab", @active_tab == :overview && "tab-active"]}
-          >
-            <.icon name="hero-globe-alt" class="w-4 h-4 mr-2" /> Overview
-          </button>
-          <button
-            phx-click="switch_tab"
-            phx-value-tab="trips"
-            class={["tab", @active_tab == :trips && "tab-active"]}
-          >
-            <.icon name="hero-map" class="w-4 h-4 mr-2" /> Trips
-          </button>
-          <button
-            phx-click="switch_tab"
-            phx-value-tab="timeline"
-            class={["tab", @active_tab == :timeline && "tab-active"]}
-          >
-            <.icon name="hero-calendar" class="w-4 h-4 mr-2" /> Timeline
-          </button>
-          <button
-            phx-click="switch_tab"
-            phx-value-tab="documents"
-            class={["tab", @active_tab == :documents && "tab-active"]}
-          >
-            <.icon name="hero-document-text" class="w-4 h-4 mr-2" /> Documents
-          </button>
+
+          <%!-- Center: Tabs --%>
+          <div class="tabs tabs-border flex-1">
+            <button
+              phx-click="switch_tab"
+              phx-value-tab="overview"
+              class={["tab", @active_tab == :overview && "tab-active"]}
+            >
+              <.icon name="hero-globe-alt" class="w-4 h-4 mr-2" /> Overview
+            </button>
+            <button
+              phx-click="switch_tab"
+              phx-value-tab="trips"
+              class={["tab", @active_tab == :trips && "tab-active"]}
+            >
+              <.icon name="hero-map" class="w-4 h-4 mr-2" /> Trips
+            </button>
+            <button
+              phx-click="switch_tab"
+              phx-value-tab="timeline"
+              class={["tab", @active_tab == :timeline && "tab-active"]}
+            >
+              <.icon name="hero-calendar" class="w-4 h-4 mr-2" /> Timeline
+            </button>
+            <button
+              phx-click="switch_tab"
+              phx-value-tab="documents"
+              class={["tab", @active_tab == :documents && "tab-active"]}
+            >
+              <.icon name="hero-document-text" class="w-4 h-4 mr-2" /> Documents
+            </button>
+          </div>
+
+          <%!-- Right: User Menu Dropdown --%>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-sm gap-2">
+              <.icon name="hero-user-circle" class="w-5 h-5" />
+              <span class="hidden sm:inline">Account</span>
+              <.icon name="hero-chevron-down" class="w-3 h-3" />
+            </div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-200 rounded-box z-50 w-56 p-2 shadow-lg mt-2">
+              <li class="menu-title px-2 py-1 text-xs text-base-content/50">
+                {@current_scope.user.email}
+              </li>
+              <li>
+                <.link navigate={~p"/users/settings"} class="flex items-center gap-2">
+                  <.icon name="hero-cog-6-tooth" class="w-4 h-4" />
+                  Settings
+                </.link>
+              </li>
+              <li>
+                <div class="flex items-center justify-between px-2 py-2">
+                  <span class="flex items-center gap-2">
+                    <.icon name="hero-sun" class="w-4 h-4" />
+                    Theme
+                  </span>
+                  <.inline_theme_toggle />
+                </div>
+              </li>
+              <div class="divider my-1"></div>
+              <li>
+                <.link href={~p"/users/log-out"} method="delete" class="flex items-center gap-2 text-error">
+                  <.icon name="hero-arrow-right-on-rectangle" class="w-4 h-4" />
+                  Log out
+                </.link>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <%!-- Split View Container --%>
@@ -412,5 +453,37 @@ defmodule GrandTourWeb.AppLive do
     else
       "#{Calendar.strftime(start_date, "%b %d, %Y")} - #{Calendar.strftime(end_date, "%b %d, %Y")}"
     end
+  end
+
+  # Compact inline theme toggle for dropdown menu
+  defp inline_theme_toggle(assigns) do
+    ~H"""
+    <div class="flex items-center gap-1 bg-base-300 rounded-full p-0.5">
+      <button
+        class="p-1 rounded-full hover:bg-base-100 [[data-theme=system]_&]:bg-base-100"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="system"
+        title="System"
+      >
+        <.icon name="hero-computer-desktop-micro" class="w-3 h-3" />
+      </button>
+      <button
+        class="p-1 rounded-full hover:bg-base-100 [[data-theme=light]_&]:bg-base-100"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="light"
+        title="Light"
+      >
+        <.icon name="hero-sun-micro" class="w-3 h-3" />
+      </button>
+      <button
+        class="p-1 rounded-full hover:bg-base-100 [[data-theme=dark]_&]:bg-base-100"
+        phx-click={JS.dispatch("phx:set-theme")}
+        data-phx-theme="dark"
+        title="Dark"
+      >
+        <.icon name="hero-moon-micro" class="w-3 h-3" />
+      </button>
+    </div>
+    """
   end
 end
