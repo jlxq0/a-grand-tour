@@ -3,10 +3,13 @@ defmodule GrandTourWeb.AppLive do
 
   @impl true
   def mount(_params, _session, socket) do
+    mapbox_token = Application.get_env(:grand_tour, :mapbox)[:access_token]
+
     {:ok,
      socket
      |> assign(:page_title, "A Grand Tour")
-     |> assign(:active_tab, :overview)}
+     |> assign(:active_tab, :overview)
+     |> assign(:mapbox_token, mapbox_token)}
   end
 
   @impl true
@@ -51,18 +54,18 @@ defmodule GrandTourWeb.AppLive do
           <%!-- Map Panel (left on desktop, top on mobile) --%>
           <div
             id="map-panel"
-            class="w-full lg:w-1/2 h-1/2 lg:h-full bg-base-200 flex items-center justify-center relative"
+            class="w-full lg:w-1/2 h-1/2 lg:h-full bg-base-200 relative"
             phx-update="ignore"
           >
-            <div id="map-container" class="absolute inset-0">
-              <%!-- Mapbox will be mounted here --%>
-              <div class="flex items-center justify-center h-full text-base-content/50">
-                <div class="text-center">
-                  <.icon name="hero-globe-alt" class="w-16 h-16 mx-auto mb-4 opacity-50" />
-                  <p class="text-lg">Map will be here</p>
-                  <p class="text-sm">Mapbox GL JS integration coming in Phase 1.4</p>
-                </div>
-              </div>
+            <div
+              id="map-container"
+              class="absolute inset-0"
+              phx-hook="MapHook"
+              data-mapbox-token={@mapbox_token}
+              data-lng="20"
+              data-lat="20"
+              data-zoom="1.8"
+            >
             </div>
           </div>
 
@@ -186,5 +189,18 @@ defmodule GrandTourWeb.AppLive do
   @impl true
   def handle_event("switch_tab", %{"tab" => tab}, socket) do
     {:noreply, assign(socket, :active_tab, String.to_existing_atom(tab))}
+  end
+
+  @impl true
+  def handle_event("map_loaded", _params, socket) do
+    # Map is ready - could load initial data here
+    {:noreply, socket}
+  end
+
+  @impl true
+  def handle_event("map_clicked", %{"lng" => lng, "lat" => lat}, socket) do
+    # Handle map clicks - for now just log
+    IO.inspect({lng, lat}, label: "Map clicked at")
+    {:noreply, socket}
   end
 end

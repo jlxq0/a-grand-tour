@@ -37,10 +37,10 @@ Each phase consists of small iterations. Each iteration follows the development 
 - [x] Mobile responsive: stack layout
 
 ### 1.4 Mapbox Integration
-- [ ] Add Mapbox GL JS to assets
-- [ ] Create MapHook for LiveView integration
-- [ ] Display globe with basic styling
-- [ ] Test: map loads and renders
+- [x] Add Mapbox GL JS to assets
+- [x] Create MapHook for LiveView integration
+- [x] Display globe with basic styling
+- [x] Test: map loads and renders
 
 ### 1.5 LiveView ↔ Map Communication
 - [ ] Implement pushEvent from map to LiveView (click events)
@@ -247,6 +247,6 @@ Each phase consists of small iterations. Each iteration follows the development 
 
 ## Current Status
 
-**Phase 1.3 Complete** - Split-view layout with navigation tabs.
+**Phase 1.4 Complete** - Mapbox globe integrated with LiveView.
 
-**Next:** Phase 1.4 - Mapbox integration.
+**Next:** Phase 1.5 - LiveView ↔ Map Communication.

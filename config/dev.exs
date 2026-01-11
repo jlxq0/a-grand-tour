@@ -11,6 +11,11 @@ config :grand_tour, GrandTour.Repo,
   pool_size: 10,
   types: GrandTour.PostgresTypes
 
+# Mapbox configuration
+config :grand_tour, :mapbox,
+  access_token:
+    "pk.eyJ1Ijoiamx4cTAiLCJhIjoiY21qd2QwOGRpNXVuNzNnb2txNmdkemd2ZyJ9.JpfheNv0aknnk-pbhNOGQg"
+
 # For development, we disable any cache and enable
 # debugging and code reloading.
 #
