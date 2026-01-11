@@ -766,13 +766,20 @@ defmodule GrandTourWeb.AppLive do
   end
 
   @impl true
-  def handle_event("map_loaded", _params, socket) do
+  def handle_event("map_clicked", %{"lng" => lng, "lat" => lat}, socket) do
+    IO.inspect({lng, lat}, label: "Map clicked at")
     {:noreply, socket}
   end
 
-  @impl true
-  def handle_event("map_clicked", %{"lng" => lng, "lat" => lat}, socket) do
-    IO.inspect({lng, lat}, label: "Map clicked at")
+  def handle_event("map_loaded", _params, socket) do
+    # Load all dataset layers for the map in the background
+    send(self(), :load_map_layers)
+    {:noreply, socket}
+  end
+
+  def handle_event("poi_clicked", %{"id" => _id, "name" => name}, socket) do
+    # Log POI click for now - could navigate to detail view in future
+    IO.inspect(name, label: "POI clicked")
     {:noreply, socket}
   end
 
@@ -1054,6 +1061,14 @@ defmodule GrandTourWeb.AppLive do
      |> assign(:tour, tour)
      |> put_flash(:info, "Tour updated successfully")
      |> push_navigate(to: ~p"/#{socket.assigns.user.username}/#{tour.slug}")}
+  end
+
+  def handle_info(:load_map_layers, socket) do
+    # Fetch all map layers efficiently
+    layers = Datasets.get_all_map_layers()
+
+    # Send all layers to the map at once
+    {:noreply, push_event(socket, "update_all_layers", layers)}
   end
 
   # Helper functions

@@ -661,4 +661,156 @@ defmodule GrandTour.Datasets do
 
   defp parse_number(value) when is_number(value), do: {:ok, value}
   defp parse_number(_), do: :error
+
+  # ===========================================================================
+  # GeoJSON Export for Map Display
+  # ===========================================================================
+
+  @doc """
+  Returns all items from a dataset as GeoJSON FeatureCollection.
+  Optimized for map display - only includes necessary properties.
+  """
+  def get_dataset_geojson(dataset_name) when is_binary(dataset_name) do
+    dataset = Repo.get_by(Dataset, name: dataset_name)
+
+    if dataset do
+      get_dataset_geojson_by_id(dataset.id)
+    else
+      empty_geojson()
+    end
+  end
+
+  @doc """
+  Returns all items from a dataset by ID as GeoJSON FeatureCollection.
+  """
+  def get_dataset_geojson_by_id(dataset_id) do
+    items =
+      DatasetItem
+      |> where([i], i.dataset_id == ^dataset_id)
+      |> where([i], not is_nil(i.geometry))
+      |> select([i], %{
+        id: i.id,
+        name: i.name,
+        rating: i.rating,
+        geometry: i.geometry,
+        properties: i.properties
+      })
+      |> Repo.all()
+
+    features =
+      Enum.map(items, fn item ->
+        %{
+          "type" => "Feature",
+          "id" => item.id,
+          "geometry" => geo_to_geojson(item.geometry),
+          "properties" =>
+            Map.merge(
+              %{
+                "id" => item.id,
+                "name" => item.name,
+                "rating" => item.rating
+              },
+              item.properties || %{}
+            )
+        }
+      end)
+
+    %{
+      "type" => "FeatureCollection",
+      "features" => features
+    }
+  end
+
+  @doc """
+  Returns all map layer data as a map suitable for the map hook.
+  Fetches all datasets efficiently in parallel.
+  """
+  def get_all_map_layers do
+    datasets = list_system_datasets()
+    dataset_map = Map.new(datasets, fn d -> {dataset_name_to_slug(d.name), d.id} end)
+
+    # Fetch all datasets in parallel using Task.async_stream
+    tasks = [
+      {"pois", Map.get(dataset_map, "pois")},
+      {"scenic_routes", Map.get(dataset_map, "scenic-routes")},
+      {"ferries", Map.get(dataset_map, "ferries")},
+      {"shipping", Map.get(dataset_map, "shipping-routes")},
+      {"risk_regions", Map.get(dataset_map, "risk-regions")},
+      {"safe_corridors", Map.get(dataset_map, "safe-corridors")}
+    ]
+
+    tasks
+    |> Task.async_stream(
+      fn {key, dataset_id} ->
+        if dataset_id do
+          {key, get_dataset_geojson_by_id(dataset_id)}
+        else
+          {key, empty_geojson()}
+        end
+      end,
+      timeout: :infinity,
+      max_concurrency: 6
+    )
+    |> Enum.reduce(%{}, fn {:ok, {key, geojson}}, acc ->
+      Map.put(acc, key, geojson)
+    end)
+  end
+
+  defp empty_geojson do
+    %{"type" => "FeatureCollection", "features" => []}
+  end
+
+  defp geo_to_geojson(nil), do: nil
+
+  defp geo_to_geojson(%Geo.Point{coordinates: {lng, lat}}) do
+    %{"type" => "Point", "coordinates" => [lng, lat]}
+  end
+
+  defp geo_to_geojson(%Geo.LineString{coordinates: coords}) do
+    %{
+      "type" => "LineString",
+      "coordinates" => Enum.map(coords, fn {lng, lat} -> [lng, lat] end)
+    }
+  end
+
+  defp geo_to_geojson(%Geo.Polygon{coordinates: rings}) do
+    %{
+      "type" => "Polygon",
+      "coordinates" =>
+        Enum.map(rings, fn ring ->
+          Enum.map(ring, fn {lng, lat} -> [lng, lat] end)
+        end)
+    }
+  end
+
+  defp geo_to_geojson(%Geo.MultiPoint{coordinates: coords}) do
+    %{
+      "type" => "MultiPoint",
+      "coordinates" => Enum.map(coords, fn {lng, lat} -> [lng, lat] end)
+    }
+  end
+
+  defp geo_to_geojson(%Geo.MultiLineString{coordinates: lines}) do
+    %{
+      "type" => "MultiLineString",
+      "coordinates" =>
+        Enum.map(lines, fn line ->
+          Enum.map(line, fn {lng, lat} -> [lng, lat] end)
+        end)
+    }
+  end
+
+  defp geo_to_geojson(%Geo.MultiPolygon{coordinates: polygons}) do
+    %{
+      "type" => "MultiPolygon",
+      "coordinates" =>
+        Enum.map(polygons, fn polygon ->
+          Enum.map(polygon, fn ring ->
+            Enum.map(ring, fn {lng, lat} -> [lng, lat] end)
+          end)
+        end)
+    }
+  end
+
+  defp geo_to_geojson(_), do: nil
 end
