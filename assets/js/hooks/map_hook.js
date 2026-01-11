@@ -50,13 +50,8 @@ export const MapHook = {
 
     // Add atmosphere and fog for globe effect
     this.map.on('style.load', () => {
-      this.map.setFog({
-        color: 'rgb(186, 210, 235)',
-        'high-color': 'rgb(36, 92, 223)',
-        'horizon-blend': 0.02,
-        'space-color': 'rgb(11, 11, 25)',
-        'star-intensity': 0.6
-      })
+      this.updateFog()
+      this.setupThemeObserver()
 
       // Add empty source for route (will be populated later)
       this.map.addSource('route', {
@@ -157,8 +152,57 @@ export const MapHook = {
     if (this.resizeHandler) {
       window.removeEventListener('resize', this.resizeHandler)
     }
+    if (this.themeObserver) {
+      this.themeObserver.disconnect()
+    }
     if (this.map) {
       this.map.remove()
     }
+  },
+
+  getTheme() {
+    return document.documentElement.getAttribute('data-theme') || 'light'
+  },
+
+  updateFog() {
+    if (!this.map) return
+
+    const isDark = this.getTheme() === 'dark'
+
+    if (isDark) {
+      // Night sky with stars
+      this.map.setFog({
+        color: 'rgb(186, 210, 235)',
+        'high-color': 'rgb(36, 92, 223)',
+        'horizon-blend': 0.02,
+        'space-color': 'rgb(11, 11, 25)',
+        'star-intensity': 0.6
+      })
+    } else {
+      // Daytime sky - no stars, light blue space
+      this.map.setFog({
+        color: 'rgb(220, 235, 255)',
+        'high-color': 'rgb(135, 206, 235)',
+        'horizon-blend': 0.02,
+        'space-color': 'rgb(200, 225, 255)',
+        'star-intensity': 0
+      })
+    }
+  },
+
+  setupThemeObserver() {
+    // Watch for theme changes on the html element
+    this.themeObserver = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        if (mutation.attributeName === 'data-theme') {
+          this.updateFog()
+        }
+      }
+    })
+
+    this.themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    })
   }
 }
