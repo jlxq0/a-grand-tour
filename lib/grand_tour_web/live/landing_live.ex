@@ -1,9 +1,14 @@
 defmodule GrandTourWeb.LandingLive do
   use GrandTourWeb, :live_view
 
+  on_mount {GrandTourWeb.UserAuth, :mount_current_scope}
+
   @impl true
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, :page_title, "A Grand Tour - Plan Your Epic Journey")}
+    {:ok,
+     socket
+     |> assign(:page_title, "A Grand Tour - Plan Your Epic Journey")
+     |> assign(:hide_user_bar, true)}
   end
 
   @impl true
@@ -42,15 +47,21 @@ defmodule GrandTourWeb.LandingLive do
             manage routes, and document your adventures.
           </p>
           <div class="flex gap-4 justify-center flex-wrap">
-            <.link navigate={~p"/users/register"} class="btn btn-primary btn-lg">
-              Get Started
-            </.link>
-            <.link
-              navigate={~p"/users/log-in"}
-              class="btn btn-ghost btn-lg text-white border-white/50 hover:bg-white/20"
-            >
-              Sign In
-            </.link>
+            <%= if @current_scope && @current_scope.user do %>
+              <.link navigate={~p"/tours"} class="btn btn-primary btn-lg">
+                Show My Tours
+              </.link>
+            <% else %>
+              <.link navigate={~p"/users/register"} class="btn btn-primary btn-lg">
+                Get Started
+              </.link>
+              <.link
+                navigate={~p"/users/log-in"}
+                class="btn btn-ghost btn-lg text-white border-white/50 hover:bg-white/20"
+              >
+                Sign In
+              </.link>
+            <% end %>
           </div>
         </div>
       </div>
