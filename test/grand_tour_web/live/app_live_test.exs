@@ -25,11 +25,12 @@ defmodule GrandTourWeb.LandingLiveTest do
       assert html =~ "Documentation"
     end
 
-    test "has registration call to action", %{conn: conn} do
+    test "has footer", %{conn: conn} do
       {:ok, _view, html} = live(conn, ~p"/")
 
-      assert html =~ "Ready to Start Your Adventure?"
-      assert html =~ "Create Your First Tour"
+      assert html =~ "About"
+      assert html =~ "Privacy Policy"
+      assert html =~ "A Grand Tour. All rights reserved."
     end
   end
 end

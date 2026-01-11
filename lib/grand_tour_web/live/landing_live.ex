@@ -1,21 +1,9 @@
 defmodule GrandTourWeb.LandingLive do
   use GrandTourWeb, :live_view
 
-  @hero_images [
-    "hero_roozbeh_eslami_deLkLeJDAMc.webp",
-    "hero_diego_jimenez_A_NVHPka9Rk.webp",
-    "hero_holden_baxter_oxQ0egaQMfU.webp",
-    "hero_john_towner_3Kv48NS4WUU.webp"
-  ]
-
   @impl true
   def mount(_params, _session, socket) do
-    hero_image = Enum.random(@hero_images)
-
-    {:ok,
-     socket
-     |> assign(:page_title, "A Grand Tour - Plan Your Epic Journey")
-     |> assign(:hero_image, hero_image)}
+    {:ok, assign(socket, :page_title, "A Grand Tour - Plan Your Epic Journey")}
   end
 
   @impl true
@@ -29,18 +17,24 @@ defmodule GrandTourWeb.LandingLive do
 
       <%!-- Hero Section with Background Image --%>
       <div class="relative min-h-[80vh] flex items-center justify-center">
-        <%!-- Background Image --%>
+        <%!-- Background Image - Light mode (Roozbeh) --%>
         <div
-          class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={"background-image: url('/images/#{@hero_image}');"}
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat dark:hidden"
+          style="background-image: url('/images/hero_roozbeh_eslami_deLkLeJDAMc.webp');"
+        >
+        </div>
+        <%!-- Background Image - Dark mode (John Towner) --%>
+        <div
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat hidden dark:block"
+          style="background-image: url('/images/hero_john_towner_3Kv48NS4WUU.webp');"
         >
         </div>
         <%!-- Overlay for text readability --%>
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60"></div>
 
         <%!-- Hero Content --%>
-        <div class="relative z-10 text-center px-4 max-w-3xl mx-auto">
-          <h1 class="text-5xl md:text-6xl font-bold text-white drop-shadow-lg mb-6">
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 class="text-6xl md:text-8xl font-bold text-white/90 mb-6">
             A Grand Tour
           </h1>
           <p class="text-xl md:text-2xl text-white/90 drop-shadow mb-8 leading-relaxed">
@@ -134,19 +128,6 @@ defmodule GrandTourWeb.LandingLive do
         </div>
       </div>
 
-      <%!-- CTA Section --%>
-      <div class="bg-base-200 py-16">
-        <div class="container mx-auto px-4 text-center">
-          <h2 class="text-3xl font-bold mb-4">Ready to Start Your Adventure?</h2>
-          <p class="text-base-content/70 mb-8 max-w-xl mx-auto">
-            Join travelers who use A Grand Tour to plan their overland expeditions.
-          </p>
-          <.link navigate={~p"/users/register"} class="btn btn-primary btn-lg">
-            Create Your First Tour
-          </.link>
-        </div>
-      </div>
-
       <%!-- Footer --%>
       <footer class="footer footer-center p-10 bg-base-300 text-base-content">
         <nav class="grid grid-flow-col gap-6">
@@ -172,8 +153,8 @@ defmodule GrandTourWeb.LandingLive do
   # Theme toggle component (copied from Layouts for standalone use)
   defp theme_toggle(assigns) do
     ~H"""
-    <div class="card relative flex flex-row items-center border-2 border-white/30 bg-black/30 backdrop-blur-sm rounded-full">
-      <div class="absolute w-1/3 h-full rounded-full border-1 border-white/20 bg-white/30 left-0 [[data-theme=light]_&]:left-1/3 [[data-theme=dark]_&]:left-2/3 transition-[left]" />
+    <div class="group relative flex flex-row items-center border border-white/10 bg-white/5 backdrop-blur-sm rounded-full opacity-40 hover:opacity-100 hover:bg-white/10 hover:border-white/20 transition-all duration-200">
+      <div class="absolute w-1/3 h-full rounded-full bg-white/20 left-0 [[data-theme=light]_&]:left-1/3 [[data-theme=dark]_&]:left-2/3 transition-[left] opacity-0 group-hover:opacity-100" />
 
       <button
         class="flex p-2 cursor-pointer w-1/3"
@@ -182,7 +163,7 @@ defmodule GrandTourWeb.LandingLive do
       >
         <.icon
           name="hero-computer-desktop-micro"
-          class="size-4 text-white opacity-75 hover:opacity-100"
+          class="size-4 text-white/50 group-hover:text-white/90 transition-colors"
         />
       </button>
 
@@ -191,7 +172,7 @@ defmodule GrandTourWeb.LandingLive do
         phx-click={Phoenix.LiveView.JS.dispatch("phx:set-theme")}
         data-phx-theme="light"
       >
-        <.icon name="hero-sun-micro" class="size-4 text-white opacity-75 hover:opacity-100" />
+        <.icon name="hero-sun-micro" class="size-4 text-white/50 group-hover:text-white/90 transition-colors" />
       </button>
 
       <button
@@ -199,7 +180,7 @@ defmodule GrandTourWeb.LandingLive do
         phx-click={Phoenix.LiveView.JS.dispatch("phx:set-theme")}
         data-phx-theme="dark"
       >
-        <.icon name="hero-moon-micro" class="size-4 text-white opacity-75 hover:opacity-100" />
+        <.icon name="hero-moon-micro" class="size-4 text-white/50 group-hover:text-white/90 transition-colors" />
       </button>
     </div>
     """

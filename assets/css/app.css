@@ -82,13 +82,13 @@
   --color-warning-content: oklch(25% 0.02 85);
   --color-error: oklch(58% 0.22 25);
   --color-error-content: oklch(96% 0.01 25);
-  --radius-selector: 0;
-  --radius-field: 0;
-  --radius-box: 0;
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
   --size-selector: 0.21875rem;
   --size-field: 0.21875rem;
-  --border: 1px;
-  --depth: 0;
+  --border: 1.5px;
+  --depth: 1;
   --noise: 0;
 }
 
