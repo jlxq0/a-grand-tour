@@ -17,7 +17,7 @@ defmodule GrandTourWeb.Router do
   scope "/", GrandTourWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", AppLive
   end
 
   # Other scopes may use custom stacks.

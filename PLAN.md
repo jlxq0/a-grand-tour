@@ -31,10 +31,10 @@ Each phase consists of small iterations. Each iteration follows the development 
 - [x] Write test for spatial queries
 
 ### 1.3 Basic Layout
-- [ ] Create app layout with split view (map | content)
-- [ ] Add top navigation bar with placeholder tabs
-- [ ] Add resizable divider between map and content
-- [ ] Mobile responsive: stack layout
+- [x] Create app layout with split view (map | content)
+- [x] Add top navigation bar with placeholder tabs
+- [x] Add resizable divider between map and content
+- [x] Mobile responsive: stack layout
 
 ### 1.4 Mapbox Integration
 - [ ] Add Mapbox GL JS to assets
@@ -247,6 +247,6 @@ Each phase consists of small iterations. Each iteration follows the development 
 
 ## Current Status
 
-**Phase 1.2 Complete** - PostGIS support added with geo_postgis.
+**Phase 1.3 Complete** - Split-view layout with navigation tabs.
 
-**Next:** Phase 1.3 - Basic layout with split view.
+**Next:** Phase 1.4 - Mapbox integration.
