@@ -154,10 +154,14 @@ defmodule GrandTourWeb.AppLive do
       <p class="text-base-content/70">
         Manage your trips and routes here.
       </p>
-      <div class="alert alert-info mt-4">
-        <.icon name="hero-information-circle" class="w-5 h-5" />
-        <span>Trip management coming in Phase 2.2</span>
+      <div class="mt-4">
+        <.link navigate={~p"/tours"} class="btn btn-primary">
+          <.icon name="hero-map" class="w-5 h-5 mr-2" /> Go to Tours
+        </.link>
       </div>
+      <p class="text-sm text-base-content/50 mt-4">
+        Trips are managed within each tour. Select a tour to add and organize trips.
+      </p>
     </div>
     """
   end
