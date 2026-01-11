@@ -5,6 +5,10 @@ defmodule GrandTourWeb.AppLive do
   alias GrandTour.Tours
   alias GrandTour.Datasets
 
+  import GrandTourWeb.DatasetViews
+  import GrandTourWeb.DatasetFilter
+  import GrandTourWeb.SharedComponents, only: [section_header: 1]
+
   @impl true
   def mount(_params, _session, socket) do
     mapbox_token = Application.get_env(:grand_tour, :mapbox)[:access_token]
@@ -18,7 +22,28 @@ defmodule GrandTourWeb.AppLive do
      |> assign(:trip, nil)
      |> assign(:datasets, [])
      |> assign(:dataset, nil)
-     |> assign(:dataset_items, [])}
+     |> assign(:dataset_items, [])
+     # Dataset view state
+     |> assign(:view_type, "list")
+     |> assign(:view_prefs, %{})
+     |> assign(:quick_filter, "")
+     |> assign(:default_filter, "")
+     |> assign(:sort_field, "name")
+     |> assign(:sort_direction, "asc")
+     |> assign(:card_style, "image_overlay")
+     |> assign(:visible_fields, ["name", "description", "rating"])
+     |> assign(:visible_fields_list, ["name", "description", "rating"])
+     |> assign(:visible_fields_table, ["name", "rating", "country_code"])
+     |> assign(:visible_fields_card, ["name", "description", "rating", "images"])
+     |> assign(:dataset_page, 0)
+     |> assign(:dataset_has_more, false)
+     |> assign(:dataset_total, 0)
+     |> assign(:dataset_loading, false)
+     |> assign(:show_settings_modal, false)
+     |> assign(:settings_tab, "general")
+     |> assign(:show_filter_builder, false)
+     |> assign(:active_filters, [])
+     |> assign(:available_fields, [])}
   end
 
   @impl true
@@ -74,13 +99,77 @@ defmodule GrandTourWeb.AppLive do
   defp apply_action(socket, :dataset, %{"dataset_id" => dataset_id} = params) do
     socket = load_user_and_tour(socket, params)
     dataset = Datasets.get_dataset!(dataset_id)
-    items = Datasets.list_dataset_items(dataset_id)
+
+    # Get user's preferences for this dataset (or defaults)
+    current_user_id =
+      if socket.assigns[:scope], do: socket.assigns.scope.current_user_id, else: nil
+
+    prefs = Datasets.get_user_preferences(current_user_id, dataset_id)
+    view_type = Map.get(prefs, "view_type", "card")
+    sort_field = Map.get(prefs, "sort_field", "name")
+    sort_direction = Map.get(prefs, "sort_direction", "asc")
+    card_style = Map.get(prefs, "card_style", "image_overlay")
+    default_filter = Map.get(prefs, "default_filter") || ""
+
+    # Per-view visible fields
+    visible_fields_list =
+      Map.get(prefs, "visible_fields_list", ["name", "description", "rating", "images"])
+
+    visible_fields_table =
+      Map.get(prefs, "visible_fields_table", ["name", "rating", "country_code", "images"])
+
+    visible_fields_card =
+      Map.get(prefs, "visible_fields_card", ["name", "description", "rating", "images"])
+
+    # Get the visible fields for the current view type
+    visible_fields =
+      case view_type do
+        "list" -> visible_fields_list
+        "table" -> visible_fields_table
+        "card" -> visible_fields_card
+        _ -> visible_fields_list
+      end
+
+    # Get total count (with default filter if set)
+    filter_to_apply = if default_filter != "", do: default_filter, else: nil
+    total = Datasets.count_dataset_items(dataset_id, filter_to_apply)
+
+    # Load initial page of items (with default filter if set)
+    items =
+      Datasets.list_dataset_items_paginated(dataset_id,
+        limit: 50,
+        offset: 0,
+        sort_field: sort_field,
+        sort_direction: sort_direction,
+        filter: filter_to_apply
+      )
+
+    has_more = length(items) == 50 && total > 50
 
     socket
     |> assign(:page_title, "#{dataset.name} - #{socket.assigns.tour.name}")
     |> assign(:trip, nil)
     |> assign(:dataset, dataset)
     |> assign(:dataset_items, items)
+    |> assign(:view_type, view_type)
+    |> assign(:view_prefs, prefs)
+    |> assign(:sort_field, sort_field)
+    |> assign(:sort_direction, sort_direction)
+    |> assign(:card_style, card_style)
+    |> assign(:visible_fields, visible_fields)
+    |> assign(:visible_fields_list, visible_fields_list)
+    |> assign(:visible_fields_table, visible_fields_table)
+    |> assign(:visible_fields_card, visible_fields_card)
+    |> assign(:default_filter, default_filter)
+    |> assign(:quick_filter, default_filter)
+    |> assign(:dataset_page, 0)
+    |> assign(:dataset_has_more, has_more)
+    |> assign(:dataset_total, total)
+    |> assign(:dataset_loading, false)
+    |> assign(:settings_tab, "general")
+    |> assign(:show_filter_builder, false)
+    |> assign(:active_filters, [])
+    |> assign(:available_fields, get_dataset_fields(dataset))
   end
 
   defp apply_action(socket, :documents, params) do
@@ -290,6 +379,26 @@ defmodule GrandTourWeb.AppLive do
                 datasets={@datasets}
                 dataset={@dataset}
                 dataset_items={@dataset_items}
+                view_type={@view_type}
+                view_prefs={@view_prefs}
+                quick_filter={@quick_filter}
+                default_filter={@default_filter}
+                sort_field={@sort_field}
+                sort_direction={@sort_direction}
+                card_style={@card_style}
+                visible_fields={@visible_fields}
+                visible_fields_list={@visible_fields_list}
+                visible_fields_table={@visible_fields_table}
+                visible_fields_card={@visible_fields_card}
+                dataset_page={@dataset_page}
+                dataset_has_more={@dataset_has_more}
+                dataset_total={@dataset_total}
+                dataset_loading={@dataset_loading}
+                show_settings_modal={@show_settings_modal}
+                settings_tab={@settings_tab}
+                show_filter_builder={@show_filter_builder}
+                active_filters={@active_filters}
+                available_fields={@available_fields}
               />
             </div>
           </div>
@@ -349,6 +458,27 @@ defmodule GrandTourWeb.AppLive do
   attr :datasets, :list, required: true
   attr :dataset, :map
   attr :dataset_items, :list, default: []
+  # Dataset view state
+  attr :view_type, :string, default: "list"
+  attr :view_prefs, :map, default: %{}
+  attr :quick_filter, :string, default: ""
+  attr :default_filter, :string, default: ""
+  attr :sort_field, :string, default: "name"
+  attr :sort_direction, :string, default: "asc"
+  attr :card_style, :string, default: "image_overlay"
+  attr :visible_fields, :list, default: ["name", "description", "rating"]
+  attr :visible_fields_list, :list, default: ["name", "description", "rating"]
+  attr :visible_fields_table, :list, default: ["name", "rating", "country_code"]
+  attr :visible_fields_card, :list, default: ["name", "description", "rating", "images"]
+  attr :dataset_page, :integer, default: 0
+  attr :dataset_has_more, :boolean, default: false
+  attr :dataset_total, :integer, default: 0
+  attr :dataset_loading, :boolean, default: false
+  attr :show_settings_modal, :boolean, default: false
+  attr :settings_tab, :string, default: "general"
+  attr :show_filter_builder, :boolean, default: false
+  attr :active_filters, :list, default: []
+  attr :available_fields, :list, default: []
 
   defp page_content(%{live_action: :overview} = assigns) do
     ~H"""
@@ -464,59 +594,99 @@ defmodule GrandTourWeb.AppLive do
   end
 
   defp page_content(%{live_action: action} = assigns) when action in [:dataset, :new_dataset] do
+    # Determine label for new item based on dataset type
+    new_label = new_item_label(assigns.dataset)
+
+    assigns = assign(assigns, :new_label, new_label)
+
     ~H"""
     <div>
       <div :if={@dataset && @dataset.id}>
-        <div class="flex items-center justify-between mb-4">
-          <div>
-            <h1 class="text-2xl font-bold">{@dataset.name}</h1>
-            <p :if={@dataset.description} class="text-base-content/60">{@dataset.description}</p>
-          </div>
-          <div class="flex gap-2">
-            <span class="badge badge-outline">{@dataset.geometry_type}</span>
-            <span :if={@dataset.is_system} class="badge badge-info badge-outline">System</span>
-          </div>
-        </div>
+        <%!-- Header matching tour overview style --%>
+        <.section_header
+          title={@dataset.name}
+          subtitle={@dataset.description}
+          edit_event="open_settings"
+        />
 
-        <div class="mb-4">
-          <span class="badge badge-ghost">{length(@dataset_items)} items</span>
-        </div>
+        <%!-- Filter bar --%>
+        <.dataset_filter_bar
+          view_type={@view_type}
+          filter_value={@quick_filter}
+          item_count={@dataset_total}
+          available_fields={@available_fields}
+          active_filters={@active_filters}
+          show_filter_builder={@show_filter_builder}
+          on_view_change="switch_view"
+          on_filter_change="filter_items"
+          on_toggle_filter_builder="toggle_filter_builder"
+          on_add_filter="add_filter"
+          on_remove_filter="remove_filter"
+        />
 
-        <div :if={@dataset_items == []} class="text-center py-12 text-base-content/50">
-          <.icon name="hero-inbox" class="w-12 h-12 mx-auto mb-4 opacity-50" />
-          <p>No items in this dataset.</p>
-        </div>
-
-        <div :if={@dataset_items != []} class="space-y-2">
-          <div
-            :for={item <- Enum.take(@dataset_items, 50)}
-            class="p-3 bg-base-200 rounded-lg hover:bg-base-300 cursor-pointer transition-colors"
-          >
-            <div class="flex items-start gap-3">
-              <div :if={item.images != []} class="flex-shrink-0">
-                <img
-                  src={media_url(List.first(item.images))}
-                  alt={item.name}
-                  class="w-12 h-12 object-cover rounded"
-                />
-              </div>
-              <div class="flex-1 min-w-0">
-                <div class="font-medium truncate">{item.name}</div>
-                <div :if={item.description} class="text-sm text-base-content/60 line-clamp-2">
-                  {item.description}
-                </div>
-                <div :if={item.rating} class="mt-1">
-                  <span class="text-warning text-sm">
-                    {String.duplicate("★", item.rating)}{String.duplicate("☆", 5 - item.rating)}
-                  </span>
-                </div>
-              </div>
+        <%!-- Dataset items view (show even if empty to show + New card) --%>
+        <%= case @view_type do %>
+          <% "table" -> %>
+            <%!-- Empty state for table --%>
+            <div :if={@dataset_items == []} class="text-center py-12 text-base-content/50">
+              <.icon name="hero-inbox" class="w-12 h-12 mx-auto mb-4 opacity-50" />
+              <p>No items in this dataset.</p>
             </div>
-          </div>
-          <div :if={length(@dataset_items) > 50} class="text-center text-sm text-base-content/50 py-2">
-            Showing 50 of {length(@dataset_items)} items
-          </div>
-        </div>
+            <.dataset_table_view
+              :if={@dataset_items != []}
+              items={@dataset_items}
+              visible_fields={@visible_fields}
+              sort_field={@sort_field}
+              sort_direction={@sort_direction}
+              on_sort="sort"
+              on_click="select_item"
+              media_url_fn={&media_url/1}
+            />
+          <% "card" -> %>
+            <.dataset_card_view
+              items={@dataset_items}
+              visible_fields={@visible_fields}
+              card_style={@card_style}
+              on_click="select_item"
+              on_new="new_item"
+              new_label={@new_label}
+              media_url_fn={&media_url/1}
+            />
+          <% _ -> %>
+            <%!-- Empty state for list --%>
+            <div :if={@dataset_items == []} class="text-center py-12 text-base-content/50">
+              <.icon name="hero-inbox" class="w-12 h-12 mx-auto mb-4 opacity-50" />
+              <p>No items in this dataset.</p>
+            </div>
+            <.dataset_list_view
+              :if={@dataset_items != []}
+              items={@dataset_items}
+              visible_fields={@visible_fields}
+              on_click="select_item"
+              media_url_fn={&media_url/1}
+            />
+        <% end %>
+
+        <%!-- Load more trigger --%>
+        <.load_more_trigger
+          :if={@dataset_items != []}
+          has_more={@dataset_has_more}
+          loading={@dataset_loading}
+        />
+
+        <%!-- Settings Modal --%>
+        <.settings_modal
+          :if={@show_settings_modal}
+          dataset={@dataset}
+          view_type={@view_type}
+          visible_fields_list={@visible_fields_list}
+          visible_fields_table={@visible_fields_table}
+          visible_fields_card={@visible_fields_card}
+          sort_field={@sort_field}
+          sort_direction={@sort_direction}
+          default_filter={@default_filter}
+          settings_tab={@settings_tab}
+        />
       </div>
     </div>
     """
@@ -606,6 +776,251 @@ defmodule GrandTourWeb.AppLive do
     {:noreply, socket}
   end
 
+  # Dataset view events
+  def handle_event("switch_view", %{"view" => view}, socket) do
+    # Update visible_fields based on the selected view type
+    visible_fields =
+      case view do
+        "list" -> socket.assigns.visible_fields_list
+        "table" -> socket.assigns.visible_fields_table
+        "card" -> socket.assigns.visible_fields_card
+        _ -> socket.assigns.visible_fields
+      end
+
+    {:noreply,
+     socket
+     |> assign(:view_type, view)
+     |> assign(:visible_fields, visible_fields)}
+  end
+
+  def handle_event("settings_tab", %{"tab" => tab}, socket) do
+    {:noreply, assign(socket, :settings_tab, tab)}
+  end
+
+  def handle_event("filter_items", %{"filter" => filter}, socket) do
+    # Filter is applied client-side for instant feedback,
+    # but we also update the assign for when loading more items
+    {:noreply, assign(socket, :quick_filter, filter)}
+  end
+
+  def handle_event("toggle_filter_builder", _params, socket) do
+    {:noreply, assign(socket, :show_filter_builder, !socket.assigns.show_filter_builder)}
+  end
+
+  def handle_event("add_filter", %{"field" => field, "op" => op, "value" => value}, socket) do
+    new_filter = %{field: field, op: op, value: value}
+    active_filters = socket.assigns.active_filters ++ [new_filter]
+
+    # Apply filters to reload data
+    socket = reload_with_filters(socket, active_filters)
+
+    {:noreply,
+     socket
+     |> assign(:active_filters, active_filters)
+     |> assign(:show_filter_builder, false)}
+  end
+
+  def handle_event("remove_filter", %{"index" => index}, socket) do
+    index = String.to_integer(index)
+    active_filters = List.delete_at(socket.assigns.active_filters, index)
+
+    # Apply remaining filters to reload data
+    socket = reload_with_filters(socket, active_filters)
+
+    {:noreply, assign(socket, :active_filters, active_filters)}
+  end
+
+  def handle_event("sort", %{"field" => field}, socket) do
+    # Toggle direction if same field, otherwise default to asc
+    new_direction =
+      if socket.assigns.sort_field == field do
+        if socket.assigns.sort_direction == "asc", do: "desc", else: "asc"
+      else
+        "asc"
+      end
+
+    # Reload items with new sort
+    items =
+      Datasets.list_dataset_items_paginated(socket.assigns.dataset.id,
+        limit: 50,
+        offset: 0,
+        sort_field: field,
+        sort_direction: new_direction,
+        filter: socket.assigns.quick_filter
+      )
+
+    {:noreply,
+     socket
+     |> assign(:sort_field, field)
+     |> assign(:sort_direction, new_direction)
+     |> assign(:dataset_items, items)
+     |> assign(:dataset_page, 0)
+     |> assign(:dataset_has_more, length(items) == 50)}
+  end
+
+  def handle_event("load_more", _params, socket) do
+    if socket.assigns.dataset_loading || !socket.assigns.dataset_has_more do
+      {:noreply, socket}
+    else
+      socket = assign(socket, :dataset_loading, true)
+      page = socket.assigns.dataset_page + 1
+      offset = page * 50
+
+      # Enforce hard limit of 1000 items
+      if offset >= 1000 do
+        {:noreply, assign(socket, dataset_has_more: false, dataset_loading: false)}
+      else
+        new_items =
+          Datasets.list_dataset_items_paginated(socket.assigns.dataset.id,
+            limit: 50,
+            offset: offset,
+            sort_field: socket.assigns.sort_field,
+            sort_direction: socket.assigns.sort_direction,
+            filter: socket.assigns.quick_filter
+          )
+
+        has_more = length(new_items) == 50 && offset + 50 < 1000
+
+        {:noreply,
+         socket
+         |> assign(:dataset_items, socket.assigns.dataset_items ++ new_items)
+         |> assign(:dataset_page, page)
+         |> assign(:dataset_has_more, has_more)
+         |> assign(:dataset_loading, false)}
+      end
+    end
+  end
+
+  def handle_event("select_item", %{"id" => _id}, socket) do
+    # TODO: Implement item selection (show on map, open detail panel, etc.)
+    {:noreply, socket}
+  end
+
+  def handle_event("new_item", _params, socket) do
+    # TODO: Implement new item creation modal
+    {:noreply, put_flash(socket, :info, "New item creation coming soon")}
+  end
+
+  def handle_event("open_settings", _params, socket) do
+    {:noreply, assign(socket, :show_settings_modal, true)}
+  end
+
+  def handle_event("close_settings", _params, socket) do
+    {:noreply, assign(socket, :show_settings_modal, false)}
+  end
+
+  def handle_event("save_settings", params, socket) do
+    view_type = Map.get(params, "view_type", socket.assigns.view_type)
+    sort_field = Map.get(params, "sort_field", socket.assigns.sort_field)
+    sort_direction = Map.get(params, "sort_direction", socket.assigns.sort_direction)
+    default_filter = Map.get(params, "default_filter", "") |> String.trim()
+
+    # Extract per-view visible fields
+    visible_fields_list =
+      extract_checkbox_fields(params, "visible_fields_list", socket.assigns.visible_fields_list)
+
+    visible_fields_table =
+      extract_checkbox_fields(params, "visible_fields_table", socket.assigns.visible_fields_table)
+
+    visible_fields_card =
+      extract_checkbox_fields(params, "visible_fields_card", socket.assigns.visible_fields_card)
+
+    # Get the visible fields for the selected view type
+    visible_fields =
+      case view_type do
+        "list" -> visible_fields_list
+        "table" -> visible_fields_table
+        "card" -> visible_fields_card
+        _ -> visible_fields_list
+      end
+
+    # Save preferences if user is logged in
+    current_user_id =
+      if socket.assigns[:scope], do: socket.assigns.scope.current_user_id, else: nil
+
+    if current_user_id do
+      Datasets.update_user_preferences(current_user_id, socket.assigns.dataset.id, %{
+        "view_type" => view_type,
+        "sort_field" => sort_field,
+        "sort_direction" => sort_direction,
+        "visible_fields_list" => visible_fields_list,
+        "visible_fields_table" => visible_fields_table,
+        "visible_fields_card" => visible_fields_card,
+        "default_filter" => default_filter
+      })
+    end
+
+    # Reload items with new settings (apply default filter)
+    filter_to_apply = if default_filter != "", do: default_filter, else: nil
+
+    items =
+      Datasets.list_dataset_items_paginated(socket.assigns.dataset.id,
+        limit: 50,
+        offset: 0,
+        sort_field: sort_field,
+        sort_direction: sort_direction,
+        filter: filter_to_apply
+      )
+
+    total = Datasets.count_dataset_items(socket.assigns.dataset.id, filter_to_apply)
+
+    {:noreply,
+     socket
+     |> assign(:view_type, view_type)
+     |> assign(:sort_field, sort_field)
+     |> assign(:sort_direction, sort_direction)
+     |> assign(:visible_fields, visible_fields)
+     |> assign(:visible_fields_list, visible_fields_list)
+     |> assign(:visible_fields_table, visible_fields_table)
+     |> assign(:visible_fields_card, visible_fields_card)
+     |> assign(:default_filter, default_filter)
+     |> assign(:quick_filter, default_filter)
+     |> assign(:dataset_items, items)
+     |> assign(:dataset_page, 0)
+     |> assign(:dataset_has_more, length(items) == 50 && total > 50)
+     |> assign(:dataset_total, total)
+     |> assign(:show_settings_modal, false)}
+  end
+
+  def handle_event("reset_settings", _params, socket) do
+    current_user_id =
+      if socket.assigns[:scope], do: socket.assigns.scope.current_user_id, else: nil
+
+    if current_user_id do
+      Datasets.reset_user_preferences(current_user_id, socket.assigns.dataset.id)
+    end
+
+    # Reload with defaults
+    dataset_slug = Datasets.dataset_name_to_slug(socket.assigns.dataset.name)
+    prefs = Datasets.get_default_preferences(dataset_slug)
+    default_filter = prefs["default_filter"] || ""
+
+    total = Datasets.count_dataset_items(socket.assigns.dataset.id)
+
+    items =
+      Datasets.list_dataset_items_paginated(socket.assigns.dataset.id,
+        limit: 50,
+        offset: 0,
+        sort_field: prefs["sort_field"],
+        sort_direction: prefs["sort_direction"]
+      )
+
+    {:noreply,
+     socket
+     |> assign(:view_type, prefs["view_type"])
+     |> assign(:sort_field, prefs["sort_field"])
+     |> assign(:sort_direction, prefs["sort_direction"])
+     |> assign(:visible_fields, prefs["visible_fields"])
+     |> assign(:card_style, prefs["card_style"])
+     |> assign(:default_filter, default_filter)
+     |> assign(:quick_filter, default_filter)
+     |> assign(:dataset_items, items)
+     |> assign(:dataset_page, 0)
+     |> assign(:dataset_has_more, length(items) == 50 && total > 50)
+     |> assign(:dataset_total, total)
+     |> assign(:show_settings_modal, false)}
+  end
+
   @impl true
   def handle_info({GrandTourWeb.TripLive.FormComponent, {:created, trip}}, socket) do
     trips = Tours.list_trips(socket.assigns.tour)
@@ -674,10 +1089,79 @@ defmodule GrandTourWeb.AppLive do
   defp geometry_icon("polygon"), do: "hero-square-2-stack"
   defp geometry_icon(_), do: "hero-document"
 
+  # Determine label for new item button based on dataset type
+  defp new_item_label(nil), do: "New Item"
+  defp new_item_label(%{name: "Points of Interest"}), do: "New POI"
+  defp new_item_label(%{name: "Countries"}), do: "New Country"
+  defp new_item_label(%{name: "Scenic Routes"}), do: "New Route"
+  defp new_item_label(%{name: "Ferries"}), do: "New Ferry"
+  defp new_item_label(%{name: "Shipping"}), do: "New Shipping"
+  defp new_item_label(%{name: "Risk Regions"}), do: "New Region"
+  defp new_item_label(_), do: "New Item"
+
   defp media_url(path) when is_binary(path) do
     base_url = Application.get_env(:grand_tour, :media)[:public_url]
     "#{base_url}/#{path}"
   end
 
   defp media_url(_), do: nil
+
+  # Get available fields for a dataset based on its items' properties
+  # Uses actual JSONB key names (camelCase for properties)
+  defp get_dataset_fields(dataset) do
+    # Common fields available in most datasets
+    # Note: "name", "description", "rating" are top-level columns
+    # Properties like "countryCode" are in the JSONB properties column
+    base_fields = ["name", "description", "rating", "countryCode"]
+
+    # Dataset-specific fields based on type
+    type_fields =
+      case Datasets.dataset_name_to_slug(dataset.name) do
+        "pois" -> ["category", "country"]
+        "countries" -> ["continent", "safetyRating", "drivingSide", "currencyCode"]
+        "scenic-routes" -> ["distanceKm"]
+        "ferries" -> ["fromPort", "toPort", "operator", "duration"]
+        "shipping" -> ["fromPort", "toPort", "company", "routeType"]
+        "risk-regions" -> ["riskLevel", "reason"]
+        _ -> []
+      end
+
+    base_fields ++ type_fields
+  end
+
+  defp reload_with_filters(socket, active_filters) do
+    # Build filter conditions for query
+    items =
+      Datasets.list_dataset_items_paginated(socket.assigns.dataset.id,
+        limit: 50,
+        offset: 0,
+        sort_field: socket.assigns.sort_field,
+        sort_direction: socket.assigns.sort_direction,
+        filter: socket.assigns.quick_filter,
+        filters: active_filters
+      )
+
+    total =
+      Datasets.count_dataset_items(
+        socket.assigns.dataset.id,
+        socket.assigns.quick_filter,
+        active_filters
+      )
+
+    socket
+    |> assign(:dataset_items, items)
+    |> assign(:dataset_page, 0)
+    |> assign(:dataset_has_more, length(items) == 50 && total > 50)
+    |> assign(:dataset_total, total)
+  end
+
+  defp extract_checkbox_fields(params, param_key, default) do
+    fields =
+      params
+      |> Map.get(param_key, %{})
+      |> Enum.filter(fn {_k, v} -> v == "true" end)
+      |> Enum.map(fn {k, _v} -> k end)
+
+    if fields == [], do: default, else: fields
+  end
 end

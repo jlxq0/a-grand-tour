@@ -13,6 +13,82 @@ defmodule GrandTour.Datasets do
   alias GrandTour.Datasets.DatasetItem
   alias GrandTour.Datasets.TourOverride
   alias GrandTour.Datasets.TourAddition
+  alias GrandTour.Datasets.UserDatasetPreference
+
+  # Default view configurations per dataset type (by slug)
+  @dataset_defaults %{
+    "pois" => %{
+      "view_type" => "card",
+      "visible_fields" => ["name", "description", "rating", "country_code", "images"],
+      "card_style" => "image_overlay",
+      "sort_field" => "name",
+      "sort_direction" => "asc"
+    },
+    "countries" => %{
+      "view_type" => "card",
+      "visible_fields" => ["name", "flag_emoji", "continent", "safety_rating", "driving_side"],
+      "card_style" => "metadata",
+      "sort_field" => "name",
+      "sort_direction" => "asc"
+    },
+    "scenic-routes" => %{
+      "view_type" => "card",
+      "visible_fields" => [
+        "name",
+        "description",
+        "rating",
+        "country_code",
+        "distance_km",
+        "images"
+      ],
+      "card_style" => "image_overlay",
+      "sort_field" => "name",
+      "sort_direction" => "asc"
+    },
+    "ferries" => %{
+      "view_type" => "table",
+      "visible_fields" => ["name", "from_port", "to_port", "operator", "duration", "countries"],
+      "sort_field" => "name",
+      "sort_direction" => "asc"
+    },
+    "shipping" => %{
+      "view_type" => "table",
+      "visible_fields" => ["name", "from_port", "to_port", "company", "route_type"],
+      "sort_field" => "name",
+      "sort_direction" => "asc"
+    },
+    "risk-regions" => %{
+      "view_type" => "table",
+      "visible_fields" => ["name", "risk_level", "reason", "countries"],
+      "sort_field" => "name",
+      "sort_direction" => "asc"
+    }
+  }
+
+  @default_preferences %{
+    "view_type" => "list",
+    "visible_fields" => ["name", "description", "rating"],
+    "sort_field" => "name",
+    "sort_direction" => "asc",
+    "default_filter" => nil
+  }
+
+  # Map dataset names to slugs for default preferences lookup
+  @name_to_slug %{
+    "Points of Interest" => "pois",
+    "Countries" => "countries",
+    "Scenic Routes" => "scenic-routes",
+    "Ferries" => "ferries",
+    "Shipping" => "shipping",
+    "Risk Regions" => "risk-regions"
+  }
+
+  @doc """
+  Derives a slug from a dataset name for preferences lookup.
+  """
+  def dataset_name_to_slug(name) when is_binary(name) do
+    Map.get(@name_to_slug, name, name |> String.downcase() |> String.replace(~r/\s+/, "-"))
+  end
 
   # ===========================================================================
   # Datasets
@@ -334,4 +410,255 @@ defmodule GrandTour.Datasets do
     # Combine and return
     visible_system_items ++ user_additions
   end
+
+  # ===========================================================================
+  # User Dataset Preferences
+  # ===========================================================================
+
+  @doc """
+  Returns the default preferences for a dataset based on its slug.
+  Falls back to generic defaults if slug not found.
+  """
+  def get_default_preferences(dataset_slug) when is_binary(dataset_slug) do
+    Map.get(@dataset_defaults, dataset_slug, @default_preferences)
+  end
+
+  def get_default_preferences(_), do: @default_preferences
+
+  @doc """
+  Gets a user's preferences for a dataset.
+  Returns merged preferences (user overrides on top of defaults).
+  """
+  def get_user_preferences(user_id, dataset_id) when not is_nil(user_id) do
+    dataset = get_dataset!(dataset_id)
+    defaults = get_default_preferences(dataset_name_to_slug(dataset.name))
+
+    case Repo.get_by(UserDatasetPreference, user_id: user_id, dataset_id: dataset_id) do
+      nil ->
+        defaults
+
+      %{preferences: prefs} ->
+        Map.merge(defaults, prefs)
+    end
+  end
+
+  def get_user_preferences(nil, dataset_id) do
+    dataset = get_dataset!(dataset_id)
+    get_default_preferences(dataset_name_to_slug(dataset.name))
+  end
+
+  @doc """
+  Updates (upserts) a user's preferences for a dataset.
+  """
+  def update_user_preferences(user_id, dataset_id, attrs) do
+    case Repo.get_by(UserDatasetPreference, user_id: user_id, dataset_id: dataset_id) do
+      nil ->
+        %UserDatasetPreference{}
+        |> UserDatasetPreference.changeset(%{
+          user_id: user_id,
+          dataset_id: dataset_id,
+          preferences: attrs
+        })
+        |> Repo.insert()
+
+      existing ->
+        merged = Map.merge(existing.preferences, attrs)
+
+        existing
+        |> UserDatasetPreference.changeset(%{preferences: merged})
+        |> Repo.update()
+    end
+  end
+
+  @doc """
+  Resets a user's preferences for a dataset to defaults.
+  """
+  def reset_user_preferences(user_id, dataset_id) do
+    case Repo.get_by(UserDatasetPreference, user_id: user_id, dataset_id: dataset_id) do
+      nil -> :ok
+      existing -> Repo.delete(existing)
+    end
+  end
+
+  # ===========================================================================
+  # Paginated Dataset Items Query
+  # ===========================================================================
+
+  @doc """
+  Returns paginated dataset items with sorting and filtering.
+
+  ## Options
+    - `:limit` - max items to return (default: 50, max: 100)
+    - `:offset` - offset for pagination (default: 0)
+    - `:sort_field` - field to sort by (default: "name")
+    - `:sort_direction` - "asc" or "desc" (default: "asc")
+    - `:filter` - text to filter by (searches name and description)
+  """
+  def list_dataset_items_paginated(dataset_id, opts \\ []) do
+    limit = min(Keyword.get(opts, :limit, 50), 100)
+    offset = Keyword.get(opts, :offset, 0)
+    sort_field = Keyword.get(opts, :sort_field, "name")
+    sort_direction = Keyword.get(opts, :sort_direction, "asc")
+    filter = Keyword.get(opts, :filter)
+    filters = Keyword.get(opts, :filters, [])
+
+    query =
+      DatasetItem
+      |> where([i], i.dataset_id == ^dataset_id)
+      |> apply_filter(filter)
+      |> apply_filters(filters)
+      |> apply_sort(sort_field, sort_direction)
+      |> limit(^limit)
+      |> offset(^offset)
+
+    Repo.all(query)
+  end
+
+  @doc """
+  Returns the total count of items in a dataset, with optional filter.
+  """
+  def count_dataset_items(dataset_id, filter \\ nil, filters \\ []) do
+    DatasetItem
+    |> where([i], i.dataset_id == ^dataset_id)
+    |> apply_filter(filter)
+    |> apply_filters(filters)
+    |> Repo.aggregate(:count)
+  end
+
+  defp apply_filter(query, nil), do: query
+  defp apply_filter(query, ""), do: query
+
+  defp apply_filter(query, filter) when is_binary(filter) do
+    filter_term = "%#{filter}%"
+
+    query
+    |> where(
+      [i],
+      ilike(i.name, ^filter_term) or ilike(i.description, ^filter_term)
+    )
+  end
+
+  # Apply structured filter conditions from filter builder
+  defp apply_filters(query, []), do: query
+
+  defp apply_filters(query, filters) when is_list(filters) do
+    Enum.reduce(filters, query, fn filter, q ->
+      apply_single_filter(q, filter)
+    end)
+  end
+
+  defp apply_single_filter(query, %{field: field, op: op, value: value}) do
+    apply_single_filter(query, %{"field" => field, "op" => op, "value" => value})
+  end
+
+  defp apply_single_filter(query, %{"field" => field, "op" => op, "value" => value}) do
+    # Handle fields that might be in properties JSONB column
+    case field do
+      "name" -> apply_field_filter(query, :name, op, value)
+      "description" -> apply_field_filter(query, :description, op, value)
+      "rating" -> apply_field_filter(query, :rating, op, value)
+      # Other fields are stored in the properties JSONB column
+      _ -> apply_jsonb_filter(query, field, op, value)
+    end
+  end
+
+  defp apply_field_filter(query, field_atom, "equals", value) do
+    where(query, [i], field(i, ^field_atom) == ^value)
+  end
+
+  defp apply_field_filter(query, field_atom, "contains", value) do
+    term = "%#{value}%"
+    where(query, [i], ilike(field(i, ^field_atom), ^term))
+  end
+
+  defp apply_field_filter(query, field_atom, "starts_with", value) do
+    term = "#{value}%"
+    where(query, [i], ilike(field(i, ^field_atom), ^term))
+  end
+
+  defp apply_field_filter(query, field_atom, "ends_with", value) do
+    term = "%#{value}"
+    where(query, [i], ilike(field(i, ^field_atom), ^term))
+  end
+
+  defp apply_field_filter(query, field_atom, "greater_than", value) do
+    # For numeric fields like rating, convert value to number
+    case parse_number(value) do
+      {:ok, num} -> where(query, [i], field(i, ^field_atom) > ^num)
+      :error -> where(query, [i], field(i, ^field_atom) > ^value)
+    end
+  end
+
+  defp apply_field_filter(query, field_atom, "less_than", value) do
+    # For numeric fields like rating, convert value to number
+    case parse_number(value) do
+      {:ok, num} -> where(query, [i], field(i, ^field_atom) < ^num)
+      :error -> where(query, [i], field(i, ^field_atom) < ^value)
+    end
+  end
+
+  defp apply_field_filter(query, _field_atom, _op, _value), do: query
+
+  # JSONB filters for properties stored in the properties column
+  defp apply_jsonb_filter(query, field, "equals", value) do
+    where(query, [i], fragment("properties->>? = ?", ^field, ^value))
+  end
+
+  defp apply_jsonb_filter(query, field, "contains", value) do
+    where(query, [i], fragment("properties->>? ILIKE ?", ^field, ^"%#{value}%"))
+  end
+
+  defp apply_jsonb_filter(query, field, "starts_with", value) do
+    where(query, [i], fragment("properties->>? ILIKE ?", ^field, ^"#{value}%"))
+  end
+
+  defp apply_jsonb_filter(query, field, "ends_with", value) do
+    where(query, [i], fragment("properties->>? ILIKE ?", ^field, ^"%#{value}"))
+  end
+
+  defp apply_jsonb_filter(query, field, "greater_than", value) do
+    where(query, [i], fragment("(properties->>?)::float > ?", ^field, ^String.to_float(value)))
+  rescue
+    _ -> query
+  end
+
+  defp apply_jsonb_filter(query, field, "less_than", value) do
+    where(query, [i], fragment("(properties->>?)::float < ?", ^field, ^String.to_float(value)))
+  rescue
+    _ -> query
+  end
+
+  defp apply_jsonb_filter(query, _field, _op, _value), do: query
+
+  defp apply_sort(query, field, direction) do
+    # Only allow sorting by known fields for security
+    field_atom = safe_sort_field(field)
+    dir_atom = if direction == "desc", do: :desc, else: :asc
+
+    order_by(query, [i], [{^dir_atom, field(i, ^field_atom)}])
+  end
+
+  defp safe_sort_field("name"), do: :name
+  defp safe_sort_field("rating"), do: :rating
+  defp safe_sort_field("position"), do: :position
+  defp safe_sort_field("inserted_at"), do: :inserted_at
+  defp safe_sort_field("updated_at"), do: :updated_at
+  defp safe_sort_field(_), do: :name
+
+  # Try to parse a string as a number (integer or float)
+  defp parse_number(value) when is_binary(value) do
+    case Integer.parse(value) do
+      {int, ""} ->
+        {:ok, int}
+
+      _ ->
+        case Float.parse(value) do
+          {float, ""} -> {:ok, float}
+          _ -> :error
+        end
+    end
+  end
+
+  defp parse_number(value) when is_number(value), do: {:ok, value}
+  defp parse_number(_), do: :error
 end
