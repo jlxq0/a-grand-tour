@@ -495,7 +495,7 @@ defmodule GrandTourWeb.AppLive do
             <div class="flex items-start gap-3">
               <div :if={item.images != []} class="flex-shrink-0">
                 <img
-                  src={"/images/" <> List.first(item.images)}
+                  src={media_url(List.first(item.images))}
                   alt={item.name}
                   class="w-12 h-12 object-cover rounded"
                 />
@@ -673,4 +673,11 @@ defmodule GrandTourWeb.AppLive do
   defp geometry_icon("line"), do: "hero-arrow-trending-up"
   defp geometry_icon("polygon"), do: "hero-square-2-stack"
   defp geometry_icon(_), do: "hero-document"
+
+  defp media_url(path) when is_binary(path) do
+    base_url = Application.get_env(:grand_tour, :media)[:public_url]
+    "#{base_url}/#{path}"
+  end
+
+  defp media_url(_), do: nil
 end
