@@ -43,9 +43,9 @@ Each phase consists of small iterations. Each iteration follows the development 
 - [x] Test: map loads and renders
 
 ### 1.5 LiveView ↔ Map Communication
-- [ ] Implement pushEvent from map to LiveView (click events)
-- [ ] Implement handleEvent from LiveView to map (fly_to, update_data)
-- [ ] Test bidirectional communication
+- [x] Implement pushEvent from map to LiveView (click events)
+- [x] Implement handleEvent from LiveView to map (fly_to, update_data)
+- [x] Test bidirectional communication
 
 ---
 
@@ -247,6 +247,6 @@ Each phase consists of small iterations. Each iteration follows the development 
 
 ## Current Status
 
-**Phase 1.4 Complete** - Mapbox globe integrated with LiveView.
+**Phase 1 Complete** - Foundation complete with PostGIS, layout, Mapbox globe, and bidirectional LiveView ↔ Map communication.
 
-**Next:** Phase 1.5 - LiveView ↔ Map Communication.
+**Next:** Phase 2.1 - Tours Context.
