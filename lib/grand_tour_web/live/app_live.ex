@@ -59,7 +59,7 @@ defmodule GrandTourWeb.AppLive do
           >
             <div
               id="map-container"
-              class="absolute inset-0"
+              class="absolute inset-0 w-full h-full"
               phx-hook="MapHook"
               data-mapbox-token={@mapbox_token}
               data-lng="20"

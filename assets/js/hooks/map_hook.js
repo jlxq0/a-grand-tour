@@ -31,6 +31,13 @@ export const MapHook = {
 
     mapboxgl.accessToken = token
 
+    // Wait for next frame to ensure container has dimensions
+    requestAnimationFrame(() => {
+      this.initMap(lng, lat, zoom)
+    })
+  },
+
+  initMap(lng, lat, zoom) {
     // Initialize the map with globe projection
     this.map = new mapboxgl.Map({
       container: this.el,
@@ -106,8 +113,14 @@ export const MapHook = {
 
     // Notify LiveView when map is loaded
     this.map.on('load', () => {
+      // Resize to ensure proper dimensions after DOM is ready
+      this.map.resize()
       this.pushEvent('map_loaded', {})
     })
+
+    // Also resize on window resize
+    this.resizeHandler = () => this.map.resize()
+    window.addEventListener('resize', this.resizeHandler)
 
     // Handle events from LiveView
     this.handleEvent('fly_to', ({ lng, lat, zoom }) => {
@@ -141,6 +154,9 @@ export const MapHook = {
   },
 
   destroyed() {
+    if (this.resizeHandler) {
+      window.removeEventListener('resize', this.resizeHandler)
+    }
     if (this.map) {
       this.map.remove()
     }
