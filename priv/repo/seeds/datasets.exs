@@ -137,12 +137,18 @@ datasets_config = [
     ]
   },
   %{
-    name: "Safe Corridors",
-    description: "Recommended routes through challenging regions",
-    geometry_type: "line",
+    name: "Countries",
+    description: "World countries with travel information",
+    geometry_type: "polygon",
     position: 6,
     field_schema: [
-      %{"name" => "note", "type" => "text", "label" => "Notes"}
+      %{"name" => "continent", "type" => "string", "label" => "Continent"},
+      %{"name" => "subregion", "type" => "string", "label" => "Subregion"},
+      %{"name" => "flagEmoji", "type" => "string", "label" => "Flag"},
+      %{"name" => "drivingSide", "type" => "string", "label" => "Driving Side"},
+      %{"name" => "safetyRating", "type" => "integer", "label" => "Safety Rating"},
+      %{"name" => "carnetRequired", "type" => "boolean", "label" => "Carnet Required"},
+      %{"name" => "isoCode", "type" => "string", "label" => "ISO Code"}
     ]
   }
 ]
@@ -429,59 +435,72 @@ risk_count =
 IO.puts("Imported #{risk_count} risk regions")
 
 # ===========================================================================
-# 7. Import Safe Corridors
+# 7. Import Countries
 # ===========================================================================
 
-corridors_dataset = datasets["Safe Corridors"]
-corridors_dir = Path.join(data_dir, "safe-corridors")
+countries_dataset = datasets["Countries"]
+countries_path = Path.join(File.cwd!(), "priv/data/countries.geojson")
 
-corridor_files =
-  case File.ls(corridors_dir) do
-    {:ok, files} -> Enum.filter(files, &String.ends_with?(&1, ".geojson"))
-    _ -> []
+# Flag emoji lookup from ISO 2-letter code
+flag_emoji = fn iso_code ->
+  case iso_code do
+    nil -> ""
+    code when is_binary(code) and byte_size(code) == 2 ->
+      code
+      |> String.upcase()
+      |> String.to_charlist()
+      |> Enum.map(&(&1 - ?A + 0x1F1E6))
+      |> List.to_string()
+    _ -> ""
+  end
+end
+
+# Driving side lookup (left-hand drive countries)
+left_hand_countries = MapSet.new([
+  "AU", "BD", "BN", "BT", "BW", "CY", "FJ", "GB", "GY", "HK", "ID", "IE", "IN",
+  "JM", "JP", "KE", "LK", "MO", "MT", "MU", "MW", "MY", "MZ", "NA", "NP", "NZ",
+  "PK", "SG", "SR", "SZ", "TH", "TT", "TZ", "UG", "ZA", "ZM", "ZW"
+])
+
+driving_side = fn iso_code ->
+  if MapSet.member?(left_hand_countries, iso_code), do: "left", else: "right"
+end
+
+country_count =
+  case SeedHelpers.read_geojson(countries_path) do
+    %{"features" => features} ->
+      Enum.each(features, fn feature ->
+        props = feature["properties"] || %{}
+        iso_code = props["ISO_A2"]
+        name = props["NAME"] || props["ADMIN"]
+
+        # Skip Antarctica and countries without proper ISO codes
+        if iso_code && iso_code != "-99" && iso_code != "AQ" do
+          Datasets.create_dataset_item(%{
+            dataset_id: countries_dataset.id,
+            name: name,
+            description: props["FORMAL_EN"],
+            geometry: SeedHelpers.geometry_from_geojson(feature["geometry"]),
+            properties: %{
+              "continent" => props["CONTINENT"],
+              "subregion" => props["SUBREGION"],
+              "flagEmoji" => flag_emoji.(iso_code),
+              "drivingSide" => driving_side.(iso_code),
+              "safetyRating" => 3,  # Default, can be updated later
+              "carnetRequired" => false,  # Default, can be updated later
+              "isoCode" => iso_code
+            }
+          })
+        end
+      end)
+
+      length(features)
+
+    _ ->
+      0
   end
 
-corridor_count =
-  Enum.reduce(corridor_files, 0, fn file, acc ->
-    path = Path.join(corridors_dir, file)
-    name = file |> String.replace(".geojson", "") |> String.replace("-", " ") |> String.capitalize()
-
-    case SeedHelpers.read_geojson(path) do
-      %{"features" => features} ->
-        Enum.each(features, fn feature ->
-          props = feature["properties"] || %{}
-
-          Datasets.create_dataset_item(%{
-            dataset_id: corridors_dataset.id,
-            name: props["name"] || name,
-            description: props["note"],
-            geometry: SeedHelpers.geometry_from_geojson(feature["geometry"]),
-            properties: %{}
-          })
-        end)
-
-        acc + length(features)
-
-      %{"geometry" => geometry} = data when is_map(geometry) ->
-        # Single Feature
-        props = data["properties"] || %{}
-
-        Datasets.create_dataset_item(%{
-          dataset_id: corridors_dataset.id,
-          name: props["name"] || name,
-          description: props["note"],
-          geometry: SeedHelpers.geometry_from_geojson(geometry),
-          properties: %{}
-        })
-
-        acc + 1
-
-      _ ->
-        acc
-    end
-  end)
-
-IO.puts("Imported #{corridor_count} safe corridors")
+IO.puts("Imported #{country_count} countries")
 
 IO.puts("\n=== Seeding Complete ===\n")
 
