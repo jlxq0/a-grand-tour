@@ -25,7 +25,6 @@ export const MapHook = {
       'ferries': true,
       'shipping': true,
       'risk-regions': true,
-      'safe-corridors': true,
       'route': true
     }
 
@@ -127,27 +126,6 @@ export const MapHook = {
         ],
         'line-width': 1.5,
         'line-opacity': 0.7
-      }
-    })
-
-    // Safe corridors (dashed green lines)
-    this.map.addSource('safe-corridors', { type: 'geojson', data: emptyGeoJSON })
-    this.map.addLayer({
-      id: 'safe-corridors-line',
-      type: 'line',
-      source: 'safe-corridors',
-      filter: ['==', ['geometry-type'], 'LineString'],
-      paint: {
-        'line-color': '#27ae60',
-        'line-width': [
-          'interpolate', ['linear'], ['zoom'],
-          1, 1.5,
-          3, 2,
-          6, 3,
-          10, 4
-        ],
-        'line-opacity': 0.8,
-        'line-dasharray': [3, 2]
       }
     })
 
@@ -328,10 +306,6 @@ export const MapHook = {
         <div class="legend-icon"><div class="legend-line" style="background: #85c1e9;"></div></div>
         <span>Shipping</span>
       </div>
-      <div class="legend-item" data-layer="safe-corridors">
-        <div class="legend-icon"><div class="legend-line legend-dashed" style="color: #27ae60;"></div></div>
-        <span>Safe Corridors</span>
-      </div>
       <div class="legend-item" data-layer="risk-regions">
         <div class="legend-icon"><div class="legend-box" style="background: rgba(231, 76, 60, 0.35); border: 1px solid #c0392b;"></div></div>
         <span>Risk Regions</span>
@@ -462,7 +436,6 @@ export const MapHook = {
         'scenic-routes': ['scenic-routes-line'],
         'ferries': ['ferries-line'],
         'shipping': ['shipping-line'],
-        'safe-corridors': ['safe-corridors-line'],
         'risk-regions': ['risk-regions-fill', 'risk-regions-outline'],
         'route': ['route-line']
       }
@@ -528,13 +501,6 @@ export const MapHook = {
       }
     })
 
-    this.handleEvent('update_safe_corridors', ({ geojson }) => {
-      const source = this.map.getSource('safe-corridors')
-      if (source) {
-        source.setData(geojson)
-      }
-    })
-
     this.handleEvent('fit_bounds', ({ bounds, padding }) => {
       this.map.fitBounds(bounds, {
         padding: padding || 50,
@@ -564,10 +530,6 @@ export const MapHook = {
       if (data.risk_regions) {
         const source = this.map.getSource('risk-regions')
         if (source) source.setData(data.risk_regions)
-      }
-      if (data.safe_corridors) {
-        const source = this.map.getSource('safe-corridors')
-        if (source) source.setData(data.safe_corridors)
       }
     })
   },

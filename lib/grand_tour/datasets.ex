@@ -735,8 +735,7 @@ defmodule GrandTour.Datasets do
       {"scenic_routes", Map.get(dataset_map, "scenic-routes")},
       {"ferries", Map.get(dataset_map, "ferries")},
       {"shipping", Map.get(dataset_map, "shipping-routes")},
-      {"risk_regions", Map.get(dataset_map, "risk-regions")},
-      {"safe_corridors", Map.get(dataset_map, "safe-corridors")}
+      {"risk_regions", Map.get(dataset_map, "risk-regions")}
     ]
 
     tasks
